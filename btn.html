@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/all.css" />
+  </head>
+  <body>
+    <section class="parent">
+      <div class="button">
+        <button class="js-open-modal" data-num="modal1" type="button">
+          彈出視窗
+        </button>
+        <button class="js-open-modal" data-num="modal2" type="button">
+          彈出視窗2
+        </button>
+        <button class="js-open-modal" data-num="modal3" type="button">
+          彈出視窗2
+        </button>
+      </div>
+    </section>
+    <section class="modal" id="modal1">
+      <div class="modal-content">
+        <div class="button">
+          <div class="">aaaaaaa</div>
+          <button class="js-colse-modal" type="button">關閉視窗1</button>
+        </div>
+      </div>
+    </section>
+    <section class="modal" id="modal2">
+      <div class="modal-content">
+        <div class="button">
+          <div class="">bbbbbbbbb</div>
+          <button class="js-colse-modal" type="button">關閉視窗2</button>
+        </div>
+      </div>
+    </section>
+    <section class="modal" id="modal3">
+      <div class="modal-content">
+        <div class="button">
+          <div class="">cccccccc</div>
+          <button class="js-colse-modal" type="button">關閉視窗2</button>
+        </div>
+      </div>
+    </section>
+    <script>
+      let opbtn = document.querySelectorAll(".js-open-modal");
+      let mc = document.querySelectorAll(".modal");
+      //點擊視窗,若按鈕編號與id相符 則增加class
+      for (let o = 0; o < opbtn.length; o++) {
+        opbtn[o].addEventListener("click", function () {
+          let clickbtn = opbtn[o].dataset.num;
+          for (a = 0; a < mc.length; a++) {
+            if (mc[a].id == clickbtn) {
+              mc[a].classList.add("is-open");
+            }
+          }
+        });
+      }
+      //關閉視窗
+      let clmodal = document.querySelectorAll(".js-colse-modal");
+      for (let j = 0; j < clmodal.length; j++) {
+        clmodal[j].addEventListener("click", function () {
+          clmodal[j].parentNode.parentNode.parentNode.classList.remove(
+            "is-open"
+          );
+        });
+      }
+    </script>
+  </body>
+</html>

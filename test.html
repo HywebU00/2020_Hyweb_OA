@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/all.css" />
+    <script src="https://use.fontawesome.com/596494f16a.js"></script>
+    <title>Document</title>
+  </head>
+  <style>
+    .js-star--active {
+      width: 30px !important;
+      height: 30px !important;
+      background-color: blue !important;
+    }
+
+    .sidebar {
+      position: fixed;
+      box-sizing: border-box;
+      top: 0;
+      bottom: 0;
+      width: 200px;
+      background-color: gray;
+      height: 100%;
+      transition: all 0.5s;
+      padding: 2%;
+    }
+
+    .close {
+      position: fixed;
+      box-sizing: border-box;
+      top: 0;
+      bottom: 0;
+      width: 200px;
+      background-color: gray;
+      transition: all 0.5s;
+      /* padding: 1%; */
+      transform: translateX(-150px);
+    }
+
+    .name {
+      width: 100px;
+      height: 60px;
+      border-radius: 8%;
+      background-color: #fff;
+      transition: all 0.5s;
+    }
+
+    .name_sm {
+      position: absolute;
+      right: 5px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      transition: all 0.5s;
+      text-align: center;
+      line-height: 40px;
+    }
+
+    #left,
+    #right,
+    #new {
+      border: 1px solid #000;
+      width: 300px;
+      height: 600px;
+    }
+
+    .wrapper {
+      display: flex;
+    }
+
+    .box-content {
+      width: 250px;
+      height: 100px;
+      background-color: gray;
+      margin: 3%;
+    }
+
+    /*  */
+    .gu-mirror {
+      filter: alpha(opacity=80);
+      transform: skewX(-5deg) skewY(5deg);
+    }
+
+    .kanban-card {
+      cursor: pointer;
+    }
+
+    /* body {
+      margin: 10px;
+    } */
+
+    /* switch按鈕css */
+    label {
+      margin-top: 10px;
+      cursor: pointer;
+      color: #fff;
+      font-size: 12px;
+    }
+
+    input.ipx-switch {
+      padding: 0;
+      box-sizing: border-box;
+      margin: 0 10px 0 0;
+      border: none;
+      border-radius: 16px;
+      display: inline-block;
+      height: 32px;
+      width: 64px;
+      margin-top: -6px;
+      vertical-align: middle;
+      -webkit-appearance: none;
+      outline: 0;
+      background: #bbb;
+      position: relative;
+      cursor: pointer;
+      -webkit-transition: all 500ms;
+      transition: all 500ms;
+    }
+
+    input.ipx-switch[type="checkbox"]:checked {
+      background: #6db600;
+    }
+
+    input.ipx-switch[type="checkbox"]:before {
+      content: "";
+      display: block;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    input.ipx-switch[type="checkbox"]:checked:before {
+      left: calc(100% - 29px);
+    }
+
+    input.ipx-switch:before {
+      cursor: pointer;
+    }
+
+    /* tab切換 */
+    .box {
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+  </style>
+
+  <body>
+    <div class="">
+      <i
+        class="fa fa-star-o fa-star o-starBtn"
+        style="margin-left: 300px; font-size: 20px; color: rgb(165, 127, 255)"
+      ></i>
+    </div>
+    <button type="button" id="openModal" class="btn">開啟視窗</button>
+    <!--視窗-->
+    <div id="modal1" class="modal">
+      // div內的內容可以自行設定
+      <h2>標題</h2>
+      <p>內文</p>
+    </div>
+    <button style="margin-left: 300px" class="menu-btn">menu</button>
+    <div class="sidebar">
+      <div class="name">收</div>
+      <div class="accordion">
+        <ul>
+          <li>
+            <a href="#" title="">第一項說明</a>
+            <div class="accordion-content">...</div>
+          </li>
+          <li>
+            <a href="#" title="">第二項說明</a>
+            <div class="accordion-content">...</div>
+          </li>
+          <li>
+            <a href="#" title="">第三項說明</a>
+            <div class="accordion-content">...</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div id="left" class="container">
+        <div class="box-content">Item 1.</div>
+        <div class="box-content">Item 2.</div>
+        <div class="box-content">Item 3.</div>
+        <div class="box-content">Item 4.</div>
+      </div>
+      <div id="right" class="container">
+        <div class="box-content">Item 5.</div>
+        <div class="box-content">Item 6.</div>
+        <div class="box-content">Item 7.</div>
+      </div>
+      <div id="new"></div>
+      <label class="ix-input-swich"
+        ><input type="checkbox" id="myCheck" class="ipx-switch" /> Switch</label
+      >
+    </div>
+
+    <!-- tab切換效果 -->
+    <button class="btn" data-num="num-1">1號選手</button>
+    <button class="btn" data-num="num-2">2號選手</button>
+    <button class="btn" data-num="num-3">3號選手</button>
+    <div class="all">
+      <div data-box="num-1" class="box show" style="color: green">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+        culpa, hic vitae quia, repellendus possimus placeat exercitationem ut
+        eius pariatur excepturi. Dolorem fugiat odio animi magnam reprehenderit
+        facilis officia eos? Lorem ipsum dolor sit, amet consectetur adipisicing
+        elit. Perspiciatis culpa, hic vitae quia, repellendus possimus placeat
+        exercitationem ut eius pariatur excepturi. Dolorem fugiat odio animi
+        magnam reprehenderit facilis officia eos?
+      </div>
+      <div data-box="num-2" class="box" style="color: red">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+        culpa, hic vitae quia, repellendus possimus placeat exercitationem ut
+        eius pariatur excepturi. Dolorem fugiat odio animi magnam reprehenderit
+        facilis officia eos?
+      </div>
+      <div data-box="num-3" class="box" style="color: blue">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+        culpa, hic vitae quia, repellendus possimus placeat exercitationem ut
+      </div>
+    </div>
+    <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+  </body>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/moment.js"></script>
+  <script src="js/daterangepicker.js"></script>
+  <script src="js/dragula.js"></script>
+  <script src="test.js"></script>
+  <script></script>
+</html>
