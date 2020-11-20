@@ -64,6 +64,7 @@ for (let a = 0; a < menuItem.length; a++) {
 //+++++++++++++++++++++++
 //  subMenu 萬年曆
 //+++++++++++++++++++++++
+
 var Cal = function (divId) {
   //Store div id
   this.divId = divId;
@@ -231,3 +232,12 @@ function thisweek() {
     }
   }
 }
+
+//+++++++++++++++++++++++
+//  subMenu 收闔
+//+++++++++++++++++++++++
+const submenuBtn = document.querySelector(".c-submenu-btn");
+submenuBtn.addEventListener("click", function () {
+  let container = document.querySelector(".l-container");
+  container.classList.toggle("submenu__open");
+});

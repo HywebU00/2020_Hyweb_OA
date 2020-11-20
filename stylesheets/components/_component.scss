@@ -427,8 +427,20 @@
 
 }
 
-// accordion
+//breadcrumb
+.c-breadcrumb{
+    div{
+        padding:0 0.2%;
+    }
+display: flex;
+color: $gray2;
+border-bottom:1px solid $gray4;
+font-weight: 400;
+font-family: $font-family;
+padding-bottom: 0.5rem;
+}
 
+// accordion
 .c-accordion-group {
     width: 425px;
     border-radius: 10px;
@@ -663,7 +675,7 @@
     .c-general__title {
         font-size: $h2;
         font-weight: 700;
-        margin: 0 0 $m-2 $m-2;
+        margin: 0.8rem 0 0.8rem 0.8rem;
     }
 
     border-bottom: 1px solid #BDBDBD;
@@ -1250,8 +1262,7 @@
 .c-writeHours-title {
     display: flex;
     justify-content: space-between;
-    min-height: 230px;
-
+   
     .is-no-this-months {
         color: $gray3;
 
@@ -1282,6 +1293,7 @@
 
 .c-writeHours-title__item {
     padding: 0 1.5%;
+    padding-bottom: 0.8rem;
     color: $gray1;
     position: relative;
     width: 14.285714285714%;
@@ -1291,7 +1303,7 @@
         justify-content: center;
         align-items: center;
         font-size: $p;
-        padding-top: 30%;
+        padding-top: 2rem;
         font-weight: 400;
         font-family: $english-font;
 
@@ -1307,8 +1319,8 @@
 
     .c-writeHours-title__item__hours {
         display: flex;
-        margin: 10% 0;
-        height: 40%;
+        margin-bottom: 5% ;
+        height: 5rem;//40%;
         align-items: flex-end;
         border-bottom: 1px solid $hyweb-blue;
 

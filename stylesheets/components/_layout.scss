@@ -14,7 +14,6 @@
     height: 100vh;
     transition: all 0.5s;
     padding: 2% .8% 2% 0;
-    //transform: translateX(-125px);
     background: $sidebar-background ;
     background-image: url(../img/menu_bg.svg) no-repeat right bottom opacity($color: 0);
     
@@ -30,7 +29,7 @@
 
     .c-sidebar-content__logo {
         padding-left: 6%;
-        margin-bottom: 80px;//35%;
+        margin-bottom: 30px;//35%;
 
         .hylogo {
             display: none;
@@ -86,9 +85,7 @@
     }
 
     .c-sidebar-content__listGroup {
-        height:calc(100vh - 430px);
-       // height: 40vh;
-       // margin-top: 20%;
+        height:calc(100vh - 360px);
         overflow: scroll;
     }
 
@@ -118,14 +115,14 @@
     }
 
     .c-sidebar-btnlist__logout {
-        margin-bottom: 30%;
+        margin-bottom: 8rem;
     }
 
     .c-sidebar-btnlist__item {
         display: flex;
         justify-content: center;
         margin-left: 14px;
-        //justify-content: flex-end;
+
 
         .login-btn {
             display: none;
@@ -144,21 +141,44 @@
     }
 
 }
-
+.row{
+    margin-bottom:0;    
+}
 .l-main {
+    width: 100%;
+   // max-height: 100vh;
     padding: 2%;
     transition: all 0.5s;
-
+   .c-breadcrumb{
+    margin-bottom: 0.5rem;
+   } 
+.c-writeHours{
+    width: 100%;
+    margin-top: 1.5rem;
+    overflow: hidden;
+    max-height: 80vh;
+    .c-writeHours-content{
+       padding: 1.2rem 1rem;
+    }
+    .c-writeHours-content__list{
+        height:calc( 80vh - 300px);
+        margin-top:1rem;
+        overflow: scroll;
+    }
+    
+    
+}
 
 }
 
 .sidebar__is-open {
     .l-side {
       //  transform: translateX(0px);
-      width: 207px;
+        width: 207px;
         background: $sidebar-background url(../img/menu_bg.svg) no-repeat;
         background-position-x: right;
         background-position-y: bottom;
+        transition: all 0.5s;
 
         .c-sidebar-content__logo {
             margin-left: 0;
@@ -284,25 +304,45 @@
     }
 
     .l-main {
-        //padding-left: 207px; 
-        transition: all 0.5s;
-
+        transition: all .5s;
+    
     }
 
 }
-
+.c-submenu{
+    z-index: 97;
+    position: absolute;  
+    right: 0;
+    transition: ease .5s;
+    //overflow: hidden;
+   //width: 296px;
+    
+}
+.c-submenu-btn{
+    width: 43px;
+    height: 56px;
+    border-radius:$btn-radius 0 0 $btn-radius;
+    position: absolute;
+    margin-left: -40px;
+    background-color: #fff;
+    line-height: 60px;
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) -2px 0px 2px 0px;
+    z-index: 98;
+}
 .c-submenu-content{
     width:251px ;
-    
-    height: 100vh;
-    overflow: hidden;
-    position: absolute;
+     height: 100vh;
+     transition: ease .5s;
+    background-color: #fff;
     right: 0;
     box-shadow: $box-shadow;
+    overflow: hidden;
+    transition: ease .5s;
 }
 .c-submenu-content__calendar{
-    margin-top: 5%;
-    padding:24px 24px 0 24px;
+    padding:36px 24px 0 24px;
+    min-width: 251px;
     .calendar-wrapper {
         padding-bottom: 10%;
         border-radius: 5px;
@@ -387,7 +427,7 @@
 
 }
 .c-submenu-content__cardList{
-  
+    min-width: 251px;
     .cardList__title{
         font-size: $h2;
         font-weight: 700;
@@ -427,3 +467,9 @@
 
 }
 
+.submenu__open{
+.c-submenu-content{
+    transition: ease .5s;
+    width: 0;
+}
+}

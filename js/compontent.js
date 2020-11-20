@@ -75,102 +75,103 @@ if (starBtn != null) {
 //++++++++++++++++++
 // datePicker days
 //++++++++++++++++++
-$("#demo").daterangepicker(
-  {
-    timePickerSeconds: true,
-    locale: {
-      format: "MM/DD/YYYY",
-      separator: " - ",
-      applyLabel: "確認",
-      cancelLabel: "取消",
-      fromLabel: "From",
-      toLabel: "To",
-      customRangeLabel: "Custom",
-      weekLabel: "W",
-      daysOfWeek: ["日", "ㄧ", "二", "三", "四", "五", "六"],
-      monthNames: [
-        "1月",
-        "2月",
-        "3月",
-        "4月",
-        "5月",
-        "6月",
-        "7月",
-        "8月",
-        "9月",
-        "10月",
-        "11月",
-        "12月",
-      ],
-      firstDay: 1,
+if ($("#demo") != null) {
+  $("#demo").daterangepicker(
+    {
+      timePickerSeconds: true,
+      locale: {
+        format: "MM/DD/YYYY",
+        separator: " - ",
+        applyLabel: "確認",
+        cancelLabel: "取消",
+        fromLabel: "From",
+        toLabel: "To",
+        customRangeLabel: "Custom",
+        weekLabel: "W",
+        daysOfWeek: ["日", "ㄧ", "二", "三", "四", "五", "六"],
+        monthNames: [
+          "1月",
+          "2月",
+          "3月",
+          "4月",
+          "5月",
+          "6月",
+          "7月",
+          "8月",
+          "9月",
+          "10月",
+          "11月",
+          "12月",
+        ],
+        firstDay: 1,
+      },
+      linkedCalendars: false,
+      alwaysShowCalendars: true,
+      startDate: "11/07/2020",
+      endDate: "11/13/2020",
     },
-    linkedCalendars: false,
-    alwaysShowCalendars: true,
-    startDate: "11/07/2020",
-    endDate: "11/13/2020",
-  },
-  function (start, end, label) {
-    console.log(
-      "New date range selected: " +
-        start.format("YYYY-MM-DD") +
-        " to " +
-        end.format("YYYY-MM-DD") +
-        " (predefined range: " +
-        label +
-        ")"
-    );
-  }
-);
-
+    function (start, end, label) {
+      console.log(
+        "New date range selected: " +
+          start.format("YYYY-MM-DD") +
+          " to " +
+          end.format("YYYY-MM-DD") +
+          " (predefined range: " +
+          label +
+          ")"
+      );
+    }
+  );
+}
 //++++++++++++++++++
 // datePicker day
 //++++++++++++++++++
-
-$("#SingleDatePicker").daterangepicker(
-  {
-    singleDatePicker: true,
-    locale: {
-      format: "MM/DD/YYYY",
-      separator: " - ",
-      applyLabel: "確認",
-      cancelLabel: "Cancel",
-      fromLabel: "From",
-      toLabel: "To",
-      customRangeLabel: "Custom",
-      weekLabel: "W",
-      daysOfWeek: ["日", "ㄧ", "二", "三", "四", "五", "六"],
-      monthNames: [
-        "1月",
-        "2月",
-        "3月",
-        "4月",
-        "5月",
-        "6月",
-        "7月",
-        "8月",
-        "9月",
-        "10月",
-        "11月",
-        "12月",
-      ],
-      firstDay: 1,
+if ($("#SingleDatePicker") != null) {
+  $("#SingleDatePicker").daterangepicker(
+    {
+      singleDatePicker: true,
+      locale: {
+        format: "MM/DD/YYYY",
+        separator: " - ",
+        applyLabel: "確認",
+        cancelLabel: "Cancel",
+        fromLabel: "From",
+        toLabel: "To",
+        customRangeLabel: "Custom",
+        weekLabel: "W",
+        daysOfWeek: ["日", "ㄧ", "二", "三", "四", "五", "六"],
+        monthNames: [
+          "1月",
+          "2月",
+          "3月",
+          "4月",
+          "5月",
+          "6月",
+          "7月",
+          "8月",
+          "9月",
+          "10月",
+          "11月",
+          "12月",
+        ],
+        firstDay: 1,
+      },
+      startDate: "11/07/2020",
+      endDate: "11/13/2020",
     },
-    startDate: "11/07/2020",
-    endDate: "11/13/2020",
-  },
-  function (start, end, label) {
-    console.log(
-      "New date range selected: " +
-        start.format("YYYY-MM-DD") +
-        " to " +
-        end.format("YYYY-MM-DD") +
-        " (predefined range: " +
-        label +
-        ")"
-    );
-  }
-);
-
+    function (start, end, label) {
+      console.log(
+        "New date range selected: " +
+          start.format("YYYY-MM-DD") +
+          " to " +
+          end.format("YYYY-MM-DD") +
+          " (predefined range: " +
+          label +
+          ")"
+      );
+    }
+  );
+}
 //++++++++++++++++++
 //dropdown-input
 //++++++++++++++++++
