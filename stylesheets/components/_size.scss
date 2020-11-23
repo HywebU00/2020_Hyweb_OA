@@ -1,3 +1,9 @@
+@mixin ExtraLarge {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
 @mixin Large {
     @media (max-width: 1200px) {
       @content;

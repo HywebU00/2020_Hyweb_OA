@@ -141,36 +141,90 @@
     }
 
 }
-.row{
-    margin-bottom:0;    
-}
+
 .l-main {
     width: 100%;
-   // max-height: 100vh;
-    padding: 2%;
+    padding: 1% 2%;
     transition: all 0.5s;
    .c-breadcrumb{
     margin-bottom: 0.5rem;
    } 
 .c-writeHours{
     width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
     margin-top: 1.5rem;
     overflow: hidden;
     max-height: 80vh;
     .c-writeHours-content{
        padding: 1.2rem 1rem;
+       .row{
+        margin-bottom:0;
+           .col{
+               padding: 0 0.2rem;
+           }
+       }
     }
     .c-writeHours-content__list{
         height:calc( 80vh - 300px);
-        margin-top:1rem;
         overflow: scroll;
+        .c-writeHours-content__item{
+            .c-writeHours-content__item__title{
+                @include ellipsisText;
+            }
+            display: flex;
+            align-items: center;
+            .col{
+               margin-left: 1rem;
+              
+            }
+            padding:1.5rem 0 ;
+            border-bottom:1px solid  $gray-blue;
+            .c-writeHours-content__btnGroup{
+            display: flex;
+            justify-content: center;
+            padding-left: 0px;
+            div{
+                margin: 0 0.4rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                padding:1%;
+                cursor: pointer;
+                &:hover{
+                    transition: all 0.8s;
+                    background-color: $sec2;
+                }
+            }
+            }
+        }
+        .c-writeHours-content__select{
+            @extend .c-writeHours-content__item;
+             .col{
+                margin-left:0;
+                input[type=text]{
+                    margin:0;
+                }
+            }
+        }
+      .c-writeHours-content__text{
+          color: $gray3;
+       margin-top: 3rem;
+       font-size: $p;
+       display: flex;
+justify-content: center;       
+      }
     }
     
     
 }
 
 }
+.l-main-content{
+    margin-top: 1.5rem;
 
+}
 .sidebar__is-open {
     .l-side {
       //  transform: translateX(0px);

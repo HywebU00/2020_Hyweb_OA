@@ -1,0 +1,12 @@
+.l-main-content-title{
+    .l-main-content-text-sm{
+        font-size: $p;
+        font-family: $font-family;
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        img{
+            margin-right: 0.5rem;
+        }
+    }
+}

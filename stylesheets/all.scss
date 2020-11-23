@@ -1,5 +1,6 @@
 //css reset
 @import"../stylesheets/components/reset";
+@import"../stylesheets/components/size";
 
 @import"../stylesheets/components/variables";
 
@@ -16,4 +17,6 @@
 @import"../stylesheets/components/component";
 
 
-
+//page css
+@import"../stylesheets/pages/page_2.0";
+@import"../stylesheets/pages/page_2.1a";

@@ -3629,11 +3629,11 @@ var $jscomp$this = this;
 
             var positionInfo = this._getDropdownPosition();
             this.dropdownEl.style.left = positionInfo.x + "px";
-            this.dropdownEl.style.top = positionInfo.y - 20 + "px";
-            this.dropdownEl.style.height = positionInfo.height + "px";
+            this.dropdownEl.style.top = "-30px"; //positionInfo.y - 20 + "px";
+            this.dropdownEl.style.height = "50vh"; //positionInfo.height + "px";
             this.dropdownEl.style.width = "auto"; //positionInfo.width + "px";
             this.dropdownEl.style.paddingLeft = "15px"; //增加
-            this.dropdownEl.style.maxWidth = "500px";
+            this.dropdownEl.style.maxWidth = "600px";
             this.dropdownEl.style.backgroundColor = "#fff";
             this.dropdownEl.style.transformOrigin =
               (positionInfo.horizontalAlignment === "left" ? "0" : "100%") +
