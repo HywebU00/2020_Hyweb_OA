@@ -10,3 +10,12 @@
         }
     }
 }
+.l-main-have-nav-height{
+    height:calc(100vh - 260px);
+    overflow: scroll;
+}
+.toast-join-position{
+    position: fixed;
+    bottom:30px;
+    right: 20px;
+}

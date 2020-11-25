@@ -36,7 +36,7 @@
         line-height: 35px;
         border-bottom: 1px solid #BDBDBD;
         display: flex;
-        justify-content: space-between;
+        //justify-content: space-between;
     }
 
     .c-card__content {
@@ -611,8 +611,32 @@ padding-bottom: 0.5rem;
     }
 }
 
+.c-toast-join{
+    @extend .c-card;
+    border-radius: $toast-radius;
+    background-color: #fff;
+    z-index: 999;
+    width: 30%;
+    max-width: 370px;
+    height: 54px;
+    padding: 0.5rem ;
+    color:$gray1 ;
+    .c-toast-body{
+        display: flex;
+        padding:0 3%;
+        align-items: center;
+        justify-content: space-between;
 
-
+    }
+}
+.c-toast-joinCancel{
+    @extend .c-toast-join;
+    max-width: 189px;
+    .c-toast-body{
+        justify-content: center; 
+        line-height: 39px;
+    }
+}
 // tab
 .c-tabs {
     padding-top: $m;
@@ -1396,6 +1420,9 @@ padding-bottom: 0.5rem;
         padding: 0 .3%;
     }
 .input-title{
+    span{
+        color:$danger ;
+    }
     white-space: nowrap;
 }
     .hoursInput {

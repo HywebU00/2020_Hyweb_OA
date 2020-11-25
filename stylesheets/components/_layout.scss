@@ -9,14 +9,14 @@
     top: 0;
     left: 0;
     bottom: 0;
-    width:82px;//207px; 
+    width: 82px; //207px; 
     border-radius: 0 40px 40px 0;
     height: 100vh;
     transition: all 0.5s;
     padding: 2% .8% 2% 0;
-    background: $sidebar-background ;
+    background: $sidebar-background;
     background-image: url(../img/menu_bg.svg) no-repeat right bottom opacity($color: 0);
-    
+
 
     .c-sidebar-content__user {
         padding: 8% 5% 8% 10%;
@@ -29,7 +29,7 @@
 
     .c-sidebar-content__logo {
         padding-left: 6%;
-        margin-bottom: 30px;//35%;
+        margin-bottom: 30px; //35%;
 
         .hylogo {
             display: none;
@@ -43,10 +43,10 @@
     }
 
     .chinese__name {
-       // margin-left: 125px; 
+        // margin-left: 125px; 
         background-color: #fff;
         padding-bottom: 0;
-        display: bolck;//inline;
+        display: bolck; //inline;
         //padding: 5% 6%;
         width: 43px;
         height: 43px;
@@ -85,19 +85,19 @@
     }
 
     .c-sidebar-content__listGroup {
-        height:calc(100vh - 360px);
+        height: calc(100vh - 360px);
         overflow: scroll;
     }
 
     .c-sidebar-content__list__title {
-       justify-content: center;
+        justify-content: center;
         display: flex;
         color: #fff;
         font-size: $a;
         font-weight: 700;
         padding: 5% 0 5% 10%;
         margin-left: 12px;
-       
+
         align-items: center;
 
         img {
@@ -144,90 +144,189 @@
 
 .l-main {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
     padding: 1% 2%;
     transition: all 0.5s;
-   .c-breadcrumb{
-    margin-bottom: 0.5rem;
-   } 
-.c-writeHours{
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1200px;
-    margin-top: 1.5rem;
-    overflow: hidden;
-    max-height: 80vh;
-    .c-writeHours-content{
-       padding: 1.2rem 1rem;
-       .row{
-        margin-bottom:0;
-           .col{
-               padding: 0 0.2rem;
-           }
-       }
+
+    .c-breadcrumb {
+        margin-bottom: 0.5rem;
     }
-    .c-writeHours-content__list{
-        height:calc( 80vh - 300px);
-        overflow: scroll;
-        .c-writeHours-content__item{
-            .c-writeHours-content__item__title{
-                @include ellipsisText;
+
+    .c-writeHours {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1200px;
+        margin-top: 1.5rem;
+        overflow: hidden;
+        max-height: 80vh;
+
+        .c-writeHours-content {
+            padding: 1.2rem 1rem;
+
+            .row {
+                margin-bottom: 0;
+
+                .col {
+                    padding: 0 0.2rem;
+                }
             }
-            display: flex;
-            align-items: center;
-            .col{
-               margin-left: 1rem;
-              
+        }
+
+        .c-writeHours-content__list {
+            height: calc(80vh - 300px);
+            overflow: scroll;
+
+            .c-writeHours-content__item {
+                .c-writeHours-content__item__title {
+                    @include ellipsisText;
+                }
+
+                display: flex;
+                align-items: center;
+
+                .col {
+                    margin-left: 1rem;
+
+                }
+
+                padding:1.5rem 0;
+                border-bottom:1px solid $gray-blue;
+
+                .c-writeHours-content__btnGroup {
+                    display: flex;
+                    justify-content: center;
+                    padding-left: 0px;
+
+                    div {
+                        margin: 0 0.4rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        padding: 1%;
+                        cursor: pointer;
+
+                        &:hover {
+                            transition: all 0.8s;
+                            background-color: $sec2;
+                        }
+                    }
+                }
             }
-            padding:1.5rem 0 ;
-            border-bottom:1px solid  $gray-blue;
-            .c-writeHours-content__btnGroup{
-            display: flex;
-            justify-content: center;
-            padding-left: 0px;
-            div{
-                margin: 0 0.4rem;
+
+            .c-writeHours-content__select {
+                @extend .c-writeHours-content__item;
+
+                .col {
+                    margin-left: 0;
+
+                    input[type=text] {
+                        margin: 0;
+                    }
+                }
+            }
+
+            .c-writeHours-content__text {
+                color: $gray3;
+                margin-top: 3rem;
+                font-size: $p;
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                border-radius: 50%;
-                padding:1%;
-                cursor: pointer;
-                &:hover{
-                    transition: all 0.8s;
-                    background-color: $sec2;
-                }
-            }
             }
         }
-        .c-writeHours-content__select{
-            @extend .c-writeHours-content__item;
-             .col{
-                margin-left:0;
-                input[type=text]{
-                    margin:0;
-                }
-            }
-        }
-      .c-writeHours-content__text{
-          color: $gray3;
-       margin-top: 3rem;
-       font-size: $p;
-       display: flex;
-justify-content: center;       
-      }
+
+
     }
-    
-    
-}
 
 }
-.l-main-content{
+
+.l-main-content {
     margin-top: 1.5rem;
+    overflow: scroll;
+    height: calc(100vh - 210px);
 
+    .l-main-content__text {
+        color: $gray3;
+        font-size: $p;
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
 }
+
+
+.l-main-content-table {
+
+    .table-thead {
+        background-color: $hyweb-lighblue;
+        border-bottom: 1px solid $hyweb-blue;
+        border-radius: $table-radius $table-radius 0 0;
+        color: $gray1;
+        white-space: nowrap;
+        font-weight: 800;
+        font-size: $font-size-l;
+        padding: 1.5rem 0 1.5rem 3rem;
+
+        .row {
+            margin-bottom: 0;
+        }
+    }
+
+    .table-body {
+        .col {line-height: 1.5rem;
+           // @include ellipsisText;
+        }
+
+        .table-body-subtitle {
+            background-color: $sec3;
+            line-height: 24px;
+        }
+
+        .table-body-item {
+            .table-body-item__member {
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                div {
+                    display: flex;
+                    align-items: center;
+
+                }
+                .table-body-item__member__name {
+                    width: 70%;
+                }
+                .table-body-item__member__btn{
+                    width: 80px;
+                    padding: 2% 0;
+                    white-space: nowrap;
+                    border-radius:$btn-radius;
+                }
+                img {
+                    padding: 0 0.3rem;
+                }
+            }
+        }
+
+        .row {
+            margin-bottom: 0;
+            font-size: $p;
+            padding: 0 0 0 3rem;
+            height: 70px;
+            border-bottom: 1px solid $gray-blue;
+            display: flex;
+            align-items: center;
+        }
+
+    }
+}
+
 .sidebar__is-open {
     .l-side {
-      //  transform: translateX(0px);
+        //  transform: translateX(0px);
         width: 207px;
         background: $sidebar-background url(../img/menu_bg.svg) no-repeat;
         background-position-x: right;
@@ -256,7 +355,7 @@ justify-content: center;
         }
 
         .chinese__name {
-            font-size:$chinese-name;
+            font-size: $chinese-name;
             font-family: $font-family;
             font-weight: 700;
             padding: 0 0 2% 0;
@@ -291,7 +390,7 @@ justify-content: center;
             display: block;
             transition: ease .5s;
             font-family: $font-family;
-    
+
         }
 
         .menu-btn {
@@ -312,11 +411,13 @@ justify-content: center;
         .c-sidebar-content__list__content {
             display: block;
             transition: ease .5s;
+
             .is-active {
                 color: $hyweb-blue;
                 background: $sidebar-active-background;
             }
         }
+
         .c-sidebar-content__list {
             margin-bottom: 10%;
         }
@@ -328,6 +429,7 @@ justify-content: center;
             justify-content: space-between;
             width: 80%;
             height: 100px;
+
             .c-sidebar-btnlist__item {
                 display: flex;
                 white-space: nowrap;
@@ -359,23 +461,25 @@ justify-content: center;
 
     .l-main {
         transition: all .5s;
-    
+
     }
 
 }
-.c-submenu{
+
+.c-submenu {
     z-index: 97;
-    position: absolute;  
+    position: absolute;
     right: 0;
     transition: ease .5s;
     //overflow: hidden;
-   //width: 296px;
-    
+    //width: 296px;
+
 }
-.c-submenu-btn{
+
+.c-submenu-btn {
     width: 43px;
     height: 56px;
-    border-radius:$btn-radius 0 0 $btn-radius;
+    border-radius: $btn-radius 0 0 $btn-radius;
     position: absolute;
     margin-left: -40px;
     background-color: #fff;
@@ -384,118 +488,134 @@ justify-content: center;
     box-shadow: rgba(60, 64, 67, 0.3) -2px 0px 2px 0px;
     z-index: 98;
 }
-.c-submenu-content{
-    width:251px ;
-     height: 100vh;
-     transition: ease .5s;
+
+.c-submenu-content {
+    width: 251px;
+    height: 100vh;
+    transition: ease .5s;
     background-color: #fff;
     right: 0;
     box-shadow: $box-shadow;
     overflow: hidden;
     transition: ease .5s;
 }
-.c-submenu-content__calendar{
-    padding:36px 24px 0 24px;
+
+.c-submenu-content__calendar {
+    padding: 36px 24px 0 24px;
     min-width: 251px;
+
     .calendar-wrapper {
         padding-bottom: 10%;
         border-radius: 5px;
-        .calendar-wrapper__title{
+
+        .calendar-wrapper__title {
             display: flex;
             align-items: center;
             justify-content: space-between;
             font-size: $h2;
             font-weight: 700;
-            font-family:$font-family ;
+            font-family: $font-family;
             margin: 0 3% 6% 3%;
         }
-        .calendar_btn{
-            div{
-               height: 20px;
-               width: 20px;
-               justify-content: center;
-               display: flex;
-               border-radius: 50%;
-           }
-            
+
+        .calendar_btn {
+            div {
+                height: 20px;
+                width: 20px;
+                justify-content: center;
+                display: flex;
+                border-radius: 50%;
+            }
+
             display: flex;
             align-items: center;
         }
-      }
+    }
 
-      tr{
-          border:0;
-          display: flex;
-      }
-      td {
+    tr {
+        border: 0;
+        display: flex;
+    }
+
+    td {
         height: 30px;
         margin-bottom: 2%;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 14.28571429%;
-        font-family:$font-family;
+        font-family: $font-family;
         font-weight: 700;
         color: $gray1;
-       
-      }
-      td.not-current {
+
+    }
+
+    td.not-current {
         color: #c0c0c0;
-      }
-      td.today {
+    }
+
+    td.today {
         font-weight: 700;
         color: #fff;
-        background:$hy-background; 
+        background: $hy-background;
         height: 30px;
         border-radius: 50%;
 
-      }
-      thead td {
+    }
+
+    thead td {
         border: none;
         color: #28283b;
         text-transform: uppercase;
         font-size: 1.5em;
-      }
+    }
 
-      #btnPrev:before {
+    #btnPrev:before {
         padding-right: 4px;
-      }
+    }
 
-      #btnNext:after {
+    #btnNext:after {
         padding-left: 4px;
-      }
-      #btnPrev,
-      #btnNext {
+    }
+
+    #btnPrev,
+    #btnNext {
         cursor: pointer;
-      }
-      #btnPrev:hover,
-      #btnNext:hover {
+    }
+
+    #btnPrev:hover,
+    #btnNext:hover {
         color: #28283b;
         font-weight: bold;
-      }
-      .divCal{
-          table{
-              border:0;
-          }
-      }
+    }
+
+    .divCal {
+        table {
+            border: 0;
+        }
+    }
 
 }
-.c-submenu-content__cardList{
+
+.c-submenu-content__cardList {
     min-width: 251px;
-    .cardList__title{
+
+    .cardList__title {
         font-size: $h2;
         font-weight: 700;
-        font-family:$font-family ;
-        margin-bottom: 10%; 
-        padding:0 24px;
+        font-family: $font-family;
+        margin-bottom: 10%;
+        padding: 0 24px;
     }
-    .cardList__content{
-        height:calc(100vh - 330px) ;
+
+    .cardList__content {
+        height: calc(100vh - 330px);
         width: 100%;
         padding-top: 3%;
         overflow: scroll;
     }
-    .c-card-planHotkey{
+
+    .c-card-planHotkey {
         margin: 0 auto;
         margin-bottom: 10%;
     }
@@ -521,9 +641,9 @@ justify-content: center;
 
 }
 
-.submenu__open{
-.c-submenu-content{
-    transition: ease .5s;
-    width: 0;
-}
+.submenu__open {
+    .c-submenu-content {
+        transition: ease .5s;
+        width: 0;
+    }
 }
