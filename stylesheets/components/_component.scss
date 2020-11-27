@@ -428,16 +428,17 @@
 }
 
 //breadcrumb
-.c-breadcrumb{
-    div{
-        padding:0 0.2%;
+.c-breadcrumb {
+    div {
+        padding: 0 0.2%;
     }
-display: flex;
-color: $gray2;
-border-bottom:1px solid $gray4;
-font-weight: 400;
-font-family: $font-family;
-padding-bottom: 0.5rem;
+
+    display: flex;
+    color: $gray2;
+    border-bottom:1px solid $gray4;
+    font-weight: 400;
+    font-family: $font-family;
+    padding-bottom: 0.5rem;
 }
 
 // accordion
@@ -611,7 +612,7 @@ padding-bottom: 0.5rem;
     }
 }
 
-.c-toast-join{
+.c-toast-join {
     @extend .c-card;
     border-radius: $toast-radius;
     background-color: #fff;
@@ -619,24 +620,28 @@ padding-bottom: 0.5rem;
     width: 30%;
     max-width: 370px;
     height: 54px;
-    padding: 0.5rem ;
-    color:$gray1 ;
-    .c-toast-body{
+    padding: 0.5rem;
+    color: $gray1;
+
+    .c-toast-body {
         display: flex;
-        padding:0 3%;
+        padding: 0 3%;
         align-items: center;
         justify-content: space-between;
 
     }
 }
-.c-toast-joinCancel{
+
+.c-toast-joinCancel {
     @extend .c-toast-join;
     max-width: 189px;
-    .c-toast-body{
-        justify-content: center; 
+
+    .c-toast-body {
+        justify-content: center;
         line-height: 39px;
     }
 }
+
 // tab
 .c-tabs {
     padding-top: $m;
@@ -700,16 +705,19 @@ padding-bottom: 0.5rem;
         font-size: $h2;
         font-weight: 700;
         margin: 0.8rem 0 0.8rem 0;
-        
+
     }
+
     display: flex;
     align-items: center;
     border-bottom: 1px solid $gray4;
-    span{
+
+    span {
         padding: 0 0.5rem;
         color: $gray3;
     }
-    .c-general__subtitle{
+
+    .c-general__subtitle {
         font-size: $h2;
         font-weight: 400;
         color: $gray3;
@@ -934,9 +942,10 @@ padding-bottom: 0.5rem;
 
 .c-modal-department {
     @extend .c-modal-personAll;
-   .c-modal-content__calendar{
-    margin-bottom: 4%;
-   }
+
+    .c-modal-content__calendar {
+        margin-bottom: 4%;
+    }
 
     .c-modal-content__list {
         padding-top: 2%;
@@ -1084,10 +1093,15 @@ padding-bottom: 0.5rem;
         font-size: $a;
         cursor: pointer;
 
+        div {
+            display: flex;
+        }
+
         .c-dropdown__title__all {
             &:hover {
                 color: $hyweb-blue;
             }
+            margin-right: 0.5rem;
         }
 
         .c-dropdown__title__clear {
@@ -1274,17 +1288,94 @@ padding-bottom: 0.5rem;
 }
 
 
-.c-popover__content {
-    padding: $pd-3/2;
-    box-shadow: $box-shadow;
-    border-radius: $select-radius;
+//popover
 
-    li {
-        border-top: 1px solid $sec2;
+.c-popover-checkPoint {
+    position: relative;
+
+    .c-popover__content {
+        left: 0;
+        top: 40px;
+        z-index: 100;
+        background-color: #fff;
+        position: absolute;
+        max-width: 200px;
+        box-shadow: $box-shadow;
+        border-radius: $select-radius;
+        padding: 0.8rem;
+
+        li {
+            padding: 1rem 0.5rem;
+            color: $gray1;
+            font-size: $p;
+            font-family: $font-family;
+            border-top: 1px solid $sec2;
+
+            &:hover {
+                background-color: #F7FBFF;
+            }
+
+            &:active {
+                background-color: $hyweb-lighblue;
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            left: 50%;
+            z-index: 99;
+            margin-left: -8.75px;
+            width: 0;
+            margin-top: -21px;
+            border-style: solid;
+            border-width: 0 8px 10.3px 8px;
+            border-color: transparent transparent #fff transparent;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            left: 50%;
+            margin-left: -8.9px;
+            width: 0;
+            top: 0;
+            margin-top: -11px;
+            border-style: solid;
+            border-width: 0 8px 10.3px 8px;
+            border-color: transparent transparent #b1b1b152 transparent;
+        }
+
     }
-
 }
 
+.c-popover-filterS {
+    @extend .c-popover-checkPoint;
+
+    .c-popover__content {
+        &::before {
+            left: 75%;
+        }
+
+        &::after {
+            left: 75%;
+        }
+    }
+}
+
+.c-popover-filterM {
+    @extend .c-popover-filterS;
+}
+
+.c-popover-filterL {
+    @extend .c-popover-filterM;
+}
+
+.c-popover__content {
+    display: inline-block;
+}
 
 .c-writeHours {
     width: 85%;
@@ -1297,7 +1388,7 @@ padding-bottom: 0.5rem;
 .c-writeHours-title {
     display: flex;
     justify-content: space-between;
-   
+
     .is-no-this-months {
         color: $gray3;
 
@@ -1354,8 +1445,8 @@ padding-bottom: 0.5rem;
 
     .c-writeHours-title__item__hours {
         display: flex;
-        margin-bottom: 5% ;
-        height: 5rem;//40%;
+        margin-bottom: 5%;
+        height: 5rem; //40%;
         align-items: flex-end;
         border-bottom: 1px solid $hyweb-blue;
 
@@ -1419,12 +1510,15 @@ padding-bottom: 0.5rem;
     div {
         padding: 0 .3%;
     }
-.input-title{
-    span{
-        color:$danger ;
+
+    .input-title {
+        span {
+            color: $danger;
+        }
+
+        white-space: nowrap;
     }
-    white-space: nowrap;
-}
+
     .hoursInput {
         @extend .o-input;
 
@@ -1453,32 +1547,38 @@ padding-bottom: 0.5rem;
         margin-top: 1.6rem;
     }
 }
-.c-search{
+
+.c-search {
     display: flex;
     justify-content: space-between;
-    padding:0.8rem 0;
-    border-bottom:1px solid $gray4;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid $gray4;
     color: $gray1;
     font-size: $p;
 }
-.c-search-list{
-    display: flex; 
-.c-search-item{
-  display: flex;
-   align-items: center;
-   padding-right: 1.5rem;
-   white-space: nowrap;
-   .c-search-item__title{
-       padding-right: 0.5rem;
-   }
-   .c-search-item__input{
-    @extend .o-input;
-   input{
-    padding-left: 10px;
-    margin: 0;
-   }
-}
-}
+
+.c-search-list {
+    display: flex;
+
+    .c-search-item {
+        display: flex;
+        align-items: center;
+        padding-right: 1.5rem;
+        white-space: nowrap;
+
+        .c-search-item__title {
+            padding-right: 0.5rem;
+        }
+
+        .c-search-item__input {
+            @extend .o-input;
+
+            input {
+                padding-left: 10px;
+                margin: 0;
+            }
+        }
+    }
 }
 
 
@@ -1647,14 +1747,16 @@ padding-bottom: 0.5rem;
     }
 
 }
-.o-input-div{
+
+.o-input-div {
     height: 38px;
     width: 100%;
-   min-width: 200px;
+    min-width: 200px;
     border-radius: $input-radius;
     background-color: $hyweb-lighblue;
     position: relative;
-    &::after{
+
+    &::after {
         content: "";
         position: absolute;
         width: 20px;
@@ -1668,7 +1770,7 @@ padding-bottom: 0.5rem;
 
 .input-title {
     font-size: $p;
-    white-space:nowrap;
+    white-space: nowrap;
     color: $gray1;
     font-weight: 700;
     font-family: $font-family;
@@ -1695,7 +1797,26 @@ padding-bottom: 0.5rem;
 //====================
 //動態效果
 //====================
+.pop-content {
+    //display: none;
+    transition: ease 0.15s;
+    //transform: scale(0.0);
+    transform: scaleX(0) scaleY(0);
+    transform-origin: 0px 20px;
+    opacity: 0;
 
+}
+
+.pop-btn {
+    cursor: pointer;
+}
+
+.pop-modal {
+    .is-pop-show {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
 
 //====================
 //daterange css修改

@@ -134,8 +134,9 @@ Cal.prototype.showMonth = function (y, m) {
 
   // Write selected month and year
   let title = document.querySelector(".calendar_month");
-
-  title.innerHTML = y + " " + this.Months[m];
+  if (title != null) {
+    title.innerHTML = y + " " + this.Months[m];
+  }
 
   // Write the header of the days of the week
   html += '<tr class="days">';
@@ -194,9 +195,16 @@ Cal.prototype.showMonth = function (y, m) {
   html += "</table>";
 
   // Write HTML to the div
-  document.getElementById(this.divId).innerHTML = html;
+  let divId = document.getElementById(this.divId);
+  if (divId != null) {
+    divId.innerHTML = html;
+  }
+
   //document.getElementsByClassName(this.divId)[0].innerHTML = html;
-  document.querySelector("tbody").setAttribute("id", "clickDate");
+  let tbody = document.querySelector("tbody");
+  if (tbody != null) {
+    tbody.setAttribute("id", "clickDate");
+  }
 };
 
 // On Load of the window
@@ -206,12 +214,17 @@ window.onload = function () {
   c.showcurr();
 
   // Bind next and previous button clicks
-  getId("btnNext").onclick = function () {
-    c.nextMonth();
-  };
-  getId("btnPrev").onclick = function () {
-    c.previousMonth();
-  };
+  if (c.nextMonth() != null) {
+    getId("btnNext").onclick = function () {
+      c.nextMonth();
+    };
+  }
+  if (c.nextMonth() != null) {
+    getId("btnPrev").onclick = function () {
+      c.previousMonth();
+    };
+  }
+
   thisweek();
 };
 
@@ -237,7 +250,9 @@ function thisweek() {
 //  subMenu 收闔
 //+++++++++++++++++++++++
 const submenuBtn = document.querySelector(".c-submenu-btn");
-submenuBtn.addEventListener("click", function () {
-  let container = document.querySelector(".l-container");
-  container.classList.toggle("submenu__open");
-});
+if (submenuBtn != null) {
+  submenuBtn.addEventListener("click", function () {
+    let container = document.querySelector(".l-container");
+    container.classList.toggle("submenu__open");
+  });
+}

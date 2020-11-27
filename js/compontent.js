@@ -191,4 +191,51 @@ let dropdownInput = document.querySelectorAll(".dropdown-input");
 //++++++++++++++++++
 //popover 效果
 //++++++++++++++++++
-$(".dropdown-trigger").dropdown();
+//$(".dropdown-trigger").dropdown();
+const pop_modal = document.querySelectorAll(".pop-modal");
+const pop_btn = document.querySelectorAll(".pop-btn");
+const pop_content = document.querySelectorAll(".pop-content");
+const confirm__btn = document.querySelectorAll(".c-dropdown__title__confirm");
+
+for (let a = 0; a < pop_modal.length; a++) {
+  pop_btn[a].addEventListener("click", function () {
+    let item = pop_content[a].classList.contains("pop-content");
+    if (item === true) {
+      pop_content[a].classList.toggle("is-pop-show");
+    }
+  });
+  pop_content[a].addEventListener("click", function () {
+    let content = pop_content[a].childNodes;
+    for (let c = 0; c < content.length; c++) {
+      if (content[c].tagName == "LI") {
+        pop_content[a].classList.remove("is-pop-show");
+      }
+    }
+  });
+  if (confirm__btn[a] != null) {
+    confirm__btn[a].addEventListener("click", function () {
+      pop_content[a].classList.remove("is-pop-show");
+    });
+  }
+}
+
+// for (let a = 0; a < pop_modal.length; a++) {
+//   pop_btn[a].addEventListener("click", function () {
+//     let item = pop_modal[a].childNodes;
+//     const pop_btn = document.querySelectorAll(".pop-btn");
+//     for (let b = 0; b < item.length; b++) {
+//       //console.log(item[b].classList);
+//       if (item[b].tagName == "SPAN") {
+//         pop_content[a].classList.toggle("is-pop-show");
+//       }
+//     }
+//   });
+//   pop_content[a].addEventListener("click", function () {
+//     let content = pop_content[a].childNodes;
+//     for (let c = 0; c < content.length; c++) {
+//       if (content[c].tagName == "LI") {
+//         pop_content[a].classList.remove("is-pop-show");
+//       }
+//     }
+//   });
+// }

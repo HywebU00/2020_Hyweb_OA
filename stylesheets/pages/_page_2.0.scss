@@ -8,9 +8,22 @@
     }
 
     .l-main-content-text {
-        font-size: $h2;
-        font-family: $english-font;
-        font-weight: 700;
+        img{
+            margin-right: 0.5rem;
+        }
+        div{
+            font-size: $p;
+            font-family: $font-family;
+        }
+        .l-main-content-text__year{
+            font-size: $h2;
+            font-family: $english-font;
+            font-weight: 700;
+        }
+        display: flex;
+        justify-content: center;
+        line-height: 28px;
+
 
     }
 
@@ -23,8 +36,8 @@
 
         div {
             padding: 0 0.5rem;
-
-            img {
+display: flex;
+            .l-main-content-list__img {
                 padding:  0.2rem;
                 cursor: pointer;
                 border-radius: 50%;
@@ -36,8 +49,18 @@
                 display: none;
              
             }
-               
-            
+            .c-popover__content{
+                left:-130px; 
+                top:50px;
+                transform-origin:100px 20px;
+                &::before{
+                    left:93%;
+                }
+                &::after{
+                    left:93%;
+                }
+                
+            }  
         }
     }
 
