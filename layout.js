@@ -54,10 +54,11 @@ const menuItem = document.querySelectorAll(".c-sidebar-content__list__item");
 
 for (let a = 0; a < menuItem.length; a++) {
   menuItem[a].addEventListener("click", changeItemStyle);
+
   function changeItemStyle() {
-    const clickItem = document.querySelector(".sidebar__list__item__is-active");
-    clickItem.classList.remove("sidebar__list__item__is-active");
-    menuItem[a].classList.add("sidebar__list__item__is-active");
+    let clickItem = document.querySelector(".is-active");
+    clickItem.classList.remove("is-active");
+    menuItem[a].classList.add("is-active");
   }
 }
 
@@ -214,13 +215,16 @@ window.onload = function () {
   c.showcurr();
 
   // Bind next and previous button clicks
-  if (c.nextMonth() != null) {
-    getId("btnNext").onclick = function () {
+  let next = getId("btnNext");
+  if (next != null) {
+    next.onclick = function () {
       c.nextMonth();
     };
   }
-  if (c.nextMonth() != null) {
-    getId("btnPrev").onclick = function () {
+
+  let prev = getId("btnPrev");
+  if (prev != null) {
+    prev.onclick = function () {
       c.previousMonth();
     };
   }
@@ -255,4 +259,31 @@ if (submenuBtn != null) {
     let container = document.querySelector(".l-container");
     container.classList.toggle("submenu__open");
   });
+}
+
+//++++++++++++++++++
+//  工時填寫 切換效果
+//++++++++++++++++++
+let tag_item = document.querySelectorAll(".c-writeHours-title__item");
+let tag_content = document.querySelectorAll(".c-writeHours-content__list");
+let clickTag;
+if (tag_item != null && tag_content != null) {
+  for (let i = 0; i < tag_item.length; i++) {
+    tag_item[i].addEventListener("click", function () {
+      clickTag = tag_item[i].getAttribute("data-num");
+      compare();
+    });
+  }
+  function compare() {
+    for (let a = 0; a < tag_content.length; a++) {
+      let clickContent = tag_content[a].getAttribute("data-content");
+      if (clickContent == clickTag) {
+        tag_item[a].classList.add("is-active");
+        tag_content[a].classList.add("is-active");
+      } else {
+        tag_item[a].classList.remove("is-active");
+        tag_content[a].classList.remove("is-active");
+      }
+    }
+  }
 }

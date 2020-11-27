@@ -1695,7 +1695,7 @@
           <div class="c-dropdown__title__all ">全選</div>
           <div class="c-dropdown__title__clear ">清除</div>
         </div>
-         <div class="c-dropdown__title__confirm">確認</div>
+         <div class="c-dropdown__title__confirm pop-confirm-btn">確認</div>
       </div>
       <ul class="c-dropdown__content">
         <li>
@@ -1777,14 +1777,17 @@
   <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0">
     member
   </div>
-  <div class="c-dropdown-member">
-    <div class="c-dropdown__modal">
+  <div class="c-dropdown-member pop-modal">
+    <div class="dropdown-input c-dropdown__input pop-btn">
+      <input type="text">
+    </div>
+    <div class="c-dropdown__modal pop-content">
       <div class="c-dropdown__title">
         <div class="">
           <div class="c-dropdown__title__all ">全選</div>
           <div class="c-dropdown__title__clear ">清除</div>
         </div>
-         <div class="c-dropdown__title__confirm">確認</div>
+         <div class="c-dropdown__title__confirm pop-confirm-btn">確認</div>
       </div>
       <ul class="c-dropdown__content">
         <li>
@@ -1880,7 +1883,6 @@
   <div class="row">
     <div class="c-popover-checkPoint pop-modal">
       <span class="c-popover__btn pop-btn">checkPoint</span>
-      <!-- <a class="c-popover__btn pop-btn" href='#'>checkPoint</a> -->
       <ul class="c-popover__content pop-content">
         <li>刪除</li>
         <li>複製</li>
@@ -1895,9 +1897,8 @@
     <div class="c-popover-filterS pop-modal">
       <span class="c-popover__btn pop-btn">filterS</span>
       <ul class="c-popover__content pop-content">
-        <li>起始時間近到遠</li>
-        <li>總工時低到高</li>
-        <li>總工時高到低</li>
+        <li>區間工時低到高</li>
+        <li>區間工時高到低</li>
       </ul>
     </div>
   </div>
@@ -1950,7 +1951,6 @@
   <div class="row">
     <div class="c-datePicker-days">
       <input id="demo" type="text" value="" />
-      <!-- name="daterange"  -->
     </div>
   </div>
   <!-- datePicker day-->
@@ -1968,14 +1968,18 @@
     month
   </div>
   <div class="row">
-    <div class="c-datePicker-month">
-      <div class="c-datePicker__input">
-        <input type="text">
+    <div class="c-datePicker-month pop-modal">
+      <div class="c-datePicker__input pop-btn">
+        <div class="o-input-div"></div>
       </div>
-      <div class="c-datePicker__modal">
+      <div class="c-datePicker__modal pop-content">
         <div class="c-datePicker__title">
-          <div class="c-datePicker__title__all">全選</div>
-          <div class="c-datePicker__title__clear">全部清除</div>
+          <div class="c-datePicker__title__confirm pop-confirm-btn">確認</div>
+        </div>
+        <div class="c-datePicker__yearPicker">
+          <img src="img/o-arrowLeft-blue.svg" alt="">
+          <div class="">2020</div>
+          <img src="img/o-arrowRight-blue.svg" alt="">
         </div>
         <ul class="c-datePicker__content">
           <li>
