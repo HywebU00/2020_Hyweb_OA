@@ -339,8 +339,11 @@
 
 .c-card-lablePerson {
     display: flex;
-    width: 22.5%;
-    height: 77px;
+    width: 32.5%;
+    min-width: 230px;
+    max-width: 337px;
+    height: 4.5rem;
+    margin: 0 0 1rem 0.5rem;
     background-color: $card-lablePerson-background;
     border-radius: $card-lablePerson-radius;
 
@@ -356,62 +359,30 @@
     }
 
     .c-card-lablePerson-item {
-
-        margin-left: 6%;
+        margin: 0 6%;
+        width: 100%;
         font-size: $p;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
         div {
             line-height: 1.6rem;
         }
-    }
-}
 
-.c-card-lablePersonS {
-    @extend .c-card-lablePerson;
-
-    .c-card-lablePerson-item {
-        display: flex;
-        align-items: center;
-    }
-}
-
-.c-card-lablePersonL {
-    @extend .c-card-lablePerson;
-    width: 29%;
-    height: 48px;
-
-    .c-card-lablePerson-item {
-        display: flex;
-        margin-left: 0;
-        padding: 5%;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .c-card-lablePerson-item__user {
-        width: 80%;
-        display: flex;
-        align-items: center;
-
-        .user-name-chinese {
-            padding-left: 10%;
-        }
-
-        .user-name-english {
-            padding-left: 5%;
-        }
     }
 }
 
 .c-card-lableGroup {
     @extend .c-card;
     height: 63px;
-    width: 30.3%; //364px;
+    width: 32%; //364px;
+    min-width: 230px;
     padding: $pd $pd-2;
     display: flex;
     align-items: center;
     border-radius: $card-lableGroup;
+    margin: 0.2rem 0 0 0.2rem;
 
     .c-card-lableGroup__icon {
         display: flex;
@@ -419,9 +390,14 @@
         align-items: center;
         padding-right: $pd-3;
 
+        img {
+            padding-right: 0.5rem;
+        }
+
     }
 
     .c-card-lableGroup__item {
+        @include ellipsisText;
         font-size: $p;
     }
 
@@ -702,12 +678,37 @@
 
 .c-general {
     .c-general__title {
-        font-size: $h2;
-        font-weight: 700;
-        margin: 0.8rem 0 0.8rem 0;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+
+        h3 {
+            font-size: $h2;
+            font-weight: 700;
+            margin: 0.8rem 0 0.8rem 0;
+        }
 
     }
 
+    .c-general__img {
+        display: flex;
+        align-items: center;
+
+        .c-general__img__dele {
+            margin-right: 0.8rem;
+        }
+
+        img {
+            margin-right: 0.5rem;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    justify-content: space-between;
     display: flex;
     align-items: center;
     border-bottom: 1px solid $gray4;
@@ -748,11 +749,15 @@
 
 .c-fileInput-upload {
     @extend .c-fileInput;
+    width: 296px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 
     .c-fileInput__img {
         display: inline;
-        margin-top: 23%;
-        padding: 8%;
+        padding: 1.5rem;
         background-color: $hyweb-lighblue;
         border-radius: 50%;
     }
@@ -778,12 +783,22 @@
     box-shadow: $box-shadow;
     background-color: #fff;
 
+    .c-modal-title {
+        display: flex;
+        border-bottom: 1px solid $gray3;
+        padding-bottom: 0.5rem;
+        align-items: center;
+        div {
+            margin-left: 1rem;
+            color: $gray1;
+            font-size: $h2;
+            font-weight: 700;
+        }
+    }
+
     .c-modal-content {
         display: flex;
-        height: 60%;
-        align-items: center;
-        justify-content: center;
-
+        padding:24px 0 ;
         p {
             font-size: $p;
         }
@@ -796,7 +811,7 @@
         align-items: flex-end;
 
         button {
-            margin: 0 $m;
+            margin: 0 0.5rem;
         }
     }
 }
@@ -807,8 +822,204 @@
 
 .c-modal-alert {
     @extend .c-modal;
-    width: 27%;
+    width: 50%;
     height: 30%;
+    .c-modal-alert__content{
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        div{
+            width: 100%;
+        }
+    }
+    .modal-footer{
+       align-self: flex-end;
+        justify-content: flex-end;
+    }
+}
+
+.c-modal-chooseGroup {
+    @extend .c-modal;
+    width: 70%;
+    max-width: 80%;
+    height: auto;
+    max-height: 70vh;
+
+    .c-modal-closeBtn {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .c-modal-content {
+        display: block;
+        height: auto;
+
+        .c-modal-content__input {
+            display: flex;
+            align-items: center;
+            color: $gray1;
+            font-size: $p;
+            font-weight: 700;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid $sec2;
+
+            span {
+                color: $danger;
+            }
+
+            .o-input {
+                input {
+                    background-color: #fff;
+                    margin: 0 0 0 1rem;
+                }
+            }
+        }
+
+        .c-modal-content__addMember {
+            margin-top: 2rem;
+
+            .addMember-title {
+                display: flex;
+                align-items: center;
+                color: $gray1;
+                font-weight: 700;
+                font-size: $p;
+                margin: 0 1rem 0 0.75rem;
+
+                span {
+                    font-weight: 400;
+                    margin-left: 1.2rem;
+                    display: flex;
+                    align-items: center;
+
+                }
+            }
+
+            div {
+                font-size: $p;
+            }
+
+            .addMember-content {
+                margin-top: 2rem;
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+            }
+
+            .c-card-lablePersonL {
+                min-width: 300px;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    .c-modal-footer {
+        justify-content: flex-end;
+    }
+}
+
+.c-modal-addGroup {
+    @extend .c-modal;
+    width: 80%;
+    min-height: 76vh;
+    max-height: 90vh;
+
+    .c-modal-addGroup__content {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+
+        .c-modal-addGroup__content__item {
+            width: 100%;
+        }
+    }
+
+    .c-modal-content {
+        display: block;
+        height: auto;
+
+        .c-modal-content__select {
+            display: flex;
+            align-items: flex-end;
+            width: 100%;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid $sec2;
+
+            .input-title {
+                span {
+                    color: $danger;
+                }
+            }
+
+            input {
+                margin-bottom: 0;
+                padding: 0 0.5rem;
+            }
+
+        }
+
+        .c-modal-content__chooseMember {
+            display: flex;
+            margin: 0 0.75rem;
+
+            div {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .c-modal-content__chooseMember__title {
+                width: 100px;
+                padding: 0 0.5rem;
+            }
+
+            .chooseMember-tag {
+                .chooseMember-tag__name {
+                    margin-right: 1.5rem;
+                }
+
+                display: flex;
+                justify-content: space-between;
+                padding:0.5rem 1rem;
+                border-radius:$tag-radius;
+                color:#fff;
+                margin: 0 0.25rem 0.5rem 0.25rem;
+                font-weight: 400;
+                background: $hy-background;
+                font-family: $font-family;
+
+            }
+        }
+
+        .c-modal-content__memberList {
+            padding-left: 0.75rem;
+
+            .memberList__title {
+                margin-bottom: 1rem;
+                color: $gray3;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .memberList__group {
+                display: flex;
+                flex-wrap: wrap;
+
+                .c-card-lablePerson {
+                    margin: 0 0 1rem 0.5rem;
+                }
+
+                .is-active {
+                    background-color: $hyweb-lighblue;
+                }
+            }
+        }
+
+    }
+
+    .c-modal-footer {
+        align-self: flex-end;
+        justify-content: flex-end;
+    }
 }
 
 .c-modal-personAll {
@@ -1232,8 +1443,9 @@
 
 .c-datePicker-month {
     position: relative;
+
     .c-datePicker__input {
-       width: 25%;
+        width: 25%;
     }
 
     .c-datePicker__modal {
@@ -1242,7 +1454,7 @@
         z-index: 99;
         box-shadow: $box-shadow;
         border-radius: $select-radius;
-        width:280px;
+        width: 280px;
         max-height: 337px;
         overflow: scroll;
         padding: $pd-2;
@@ -1523,11 +1735,13 @@
     background-color: $sec3;
     min-height: 500px;
     padding: 3% 1.5%;
-    .c-writeHours-content__list{
+
+    .c-writeHours-content__list {
         display: none;
     }
-    .is-active{
-        display:block;
+
+    .is-active {
+        display: block;
     }
 
 }
@@ -1608,6 +1822,12 @@
                 margin: 0;
             }
         }
+    }
+}
+
+.c-search-btn {
+    a {
+        color: #fff;
     }
 }
 
@@ -1771,7 +1991,6 @@
         height: 38px;
         border-radius: $input-radius;
         background-color: $hyweb-lighblue;
-
         border-bottom: 0;
 
     }
@@ -1805,6 +2024,22 @@
     font-weight: 700;
     font-family: $font-family;
     margin-bottom: 10px;
+}
+
+.o-tag {
+    border-radius: $tag-radius;
+    padding: 0.5rem;
+    background-color: $hyweb-lighblue;
+}
+
+.o-tag-danger {
+    @extend .o-tag;
+    background: $hy-background-danger;
+    padding: 0.2rem 0.5rem;
+    margin-left: 0.8rem;
+
+    font-family: $english-font;
+    color: #fff;
 }
 
 //====================

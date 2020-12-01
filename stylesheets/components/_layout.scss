@@ -60,7 +60,7 @@
 
     .english__name {
         display: none;
-     transition: ease .5s;
+        transition: ease .5s;
     }
 
     .user__number {
@@ -253,6 +253,40 @@
         display: flex;
         justify-content: center;
         margin-top: 3rem;
+
+        img {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .l-main-content__fileInput {
+        display: flex;
+        height: calc(100vh - 210px);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .l-main-content-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: $p;
+        margin-bottom: 1.5rem;
+
+        .l-main-content-text {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    .l-main-content-data {
+        @extend .l-main-content-title;
+        display: flex;
+        justify-content: flex-end;
     }
 }
 
@@ -267,7 +301,7 @@
         white-space: nowrap;
         font-weight: 800;
         font-size: $font-size-l;
-        padding: 1.5rem 0 1.5rem 3rem;
+        padding: 1.5rem 0 1.5rem 2.5rem;
 
         .row {
             margin-bottom: 0;
@@ -275,10 +309,15 @@
     }
 
     .table-body {
-        .col {line-height: 1.5rem;
-           // @include ellipsisText;
+        .col {
+            line-height: 1.5rem;
+            // @include ellipsisText;
         }
-
+        .table-body__tag-item{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
         .table-body-subtitle {
             background-color: $sec3;
             line-height: 24px;
@@ -296,15 +335,18 @@
                     align-items: center;
 
                 }
+
                 .table-body-item__member__name {
                     width: 70%;
                 }
-                .table-body-item__member__btn{
+
+                .table-body-item__member__btn {
                     width: 80px;
                     padding: 2% 0;
                     white-space: nowrap;
-                    border-radius:$btn-radius;
+                    border-radius: $btn-radius;
                 }
+
                 img {
                     padding: 0 0.3rem;
                 }
@@ -314,13 +356,27 @@
         .row {
             margin-bottom: 0;
             font-size: $p;
-            padding: 0 0 0 3rem;
+            padding: 0 0 0 2.5rem;
             height: 70px;
             border-bottom: 1px solid $gray-blue;
             display: flex;
             align-items: center;
         }
 
+        .justify-content-between {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .delete-icon {
+            display: flex;
+            align-items: center;
+            color: $gray1;
+            cursor: pointer;
+            img{
+                margin-right: 0.5rem;
+            }
+        }
     }
 }
 
@@ -393,7 +449,7 @@
 
         }
 
-        
+
         .menu-btn {
             display: block;
             transition: ease .3s;
@@ -459,15 +515,16 @@
                 cursor: pointer;
             }
         }
+
         .c-sidebar-btnlist__logout {
             margin-bottom: 8rem;
         }
-        
+
     }
 
     .l-main {
         transition: all .5s;
-   
+
     }
 
 }
@@ -643,10 +700,11 @@
     margin-bottom: 1.5%;
     font-size: $a;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         color: $hyweb-green;
     }
-   
+
 
 
 }

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page_4.5</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/all.css" />
+  </head>
+
+  <body>
+    <div class="l-container sidebar__is-open">
+      <div class="l-side">
+        <div class="c-sidebar-content">
+          <div class="c-sidebar-content__logo">
+            <img class="hylogo" src="img/o-hylogo.svg" alt="" />
+            <img class="hylogo-sm" src="img/o-only_hylogo.svg" alt="" />
+          </div>
+          <div class="c-sidebar-content__user">
+            <div class="c-sidebar-content__user__item">
+              <div class="chinese__name">蘇紫瑜</div>
+              <div class="english__name">Michelle</div>
+            </div>
+            <div class="c-sidebar-content__user__item">
+              <div class="user__number">A9005</div>
+              <div class="user__department">U20使用者經驗企劃部</div>
+            </div>
+          </div>
+          <div class="c-sidebar-content__listGroup">
+            <div class="c-sidebar-content__list">
+              <div class="c-sidebar-content__list__title">
+                <img src="img/o-clock.svg" alt="" />
+                <div class="">我的工時紀錄</div>
+              </div>
+              <div class="c-sidebar-content__list__content">
+                <div class="c-sidebar-content__list__item is-active">
+                  填寫每日工時
+                </div>
+                <div class="c-sidebar-content__list__item">檢視計畫工時</div>
+              </div>
+            </div>
+            <div class="c-sidebar-content__list">
+              <div class="c-sidebar-content__list__title">
+                <img src="img/o-plan.svg" alt="" />
+                <div class="">我的計畫管理</div>
+              </div>
+              <div class="c-sidebar-content__list__content">
+                <div class="c-sidebar-content__list__item">常用計畫成員</div>
+                <div class="c-sidebar-content__list__item">計畫總覽</div>
+              </div>
+            </div>
+            <div class="c-sidebar-content__list">
+              <div class="c-sidebar-content__list__title">
+                <img src="img/o-report.svg" alt="" />
+                <div class="">統計報表</div>
+              </div>
+              <div class="c-sidebar-content__list__content">
+                <div class="c-sidebar-content__list__item">計畫統計</div>
+                <div class="c-sidebar-content__list__item">警示計畫</div>
+                <div class="c-sidebar-content__list__item">人員統計</div>
+                <div class="c-sidebar-content__list__item">財務統計總覽</div>
+              </div>
+            </div>
+            <div class="c-sidebar-content__list">
+              <div class="c-sidebar-content__list__title">
+                <img src="img/o-management.svg" alt="" />
+                <div class="">系統管理</div>
+              </div>
+              <div class="c-sidebar-content__list__content">
+                <div class="c-sidebar-content__list__item">休假日維護</div>
+                <div class="c-sidebar-content__list__item">關帳日期維護</div>
+                <div class="c-sidebar-content__list__item">工作類型維護</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c-sidebar-btnlist">
+          <div class="c-sidebar-btnlist__item c-sidebar-btnlist__logout">
+            <img src="img/o-logout.svg" alt="" />
+            <div class="login-btn">登出</div>
+          </div>
+          <div class="c-sidebar-btnlist__item">
+            <img class="menu-btn" src="img/o-arrowLeft.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="l-main">
+        <div class="c-breadcrumb">
+          <div class="">我的工作紀錄</div>
+          <div class="">></div>
+          <div class="">檢視計畫工作</div>
+        </div>
+        <div class="c-general">
+          <div class="c-general__title">
+            <h3 class="">常用計畫成員</h3>
+          </div>
+          <div class="c-general__img">
+            <img src="img/o-plus.svg" alt="" /> 新增群組
+          </div>
+        </div>
+        <div class="c-search">
+          <div class="c-search-list">
+            <div class="c-search-item">
+              <div class="c-search-item__title">關鍵字</div>
+              <div class="c-search-item__input">
+                <input type="text" class="" placeholder="群組名稱" />
+              </div>
+            </div>
+          </div>
+          <div class="c-search-btn">
+            <button class="o-btn-primary waves-effect waves-blue">
+              <a class="modal-trigger" href="#addGroup">搜尋</a>
+            </button>
+          </div>
+        </div>
+        <div class="l-main-content">
+          <div class="l-main-content__lableGroup">
+            <div class="c-card-lableGroup">
+              <div class="c-card-lableGroup__icon">
+                <img src="img/o-group.svg" alt="" />
+                <div class="">4</div>
+              </div>
+              <div class="c-card-lableGroup__item">業務群組</div>
+            </div>
+            <div class="c-card-lableGroup">
+              <div class="c-card-lableGroup__icon">
+                <img src="img/o-group.svg" alt="" />
+                <div class="">3</div>
+              </div>
+              <div class="c-card-lableGroup__item">
+                設計群組_109公路總局建置109公路總局建置
+              </div>
+            </div>
+            <div class="c-card-lableGroup">
+              <div class="c-card-lableGroup__icon">
+                <img src="img/o-group.svg" alt="" />
+                <div class="">12</div>
+              </div>
+              <div class="c-card-lableGroup__item">一般設計群組</div>
+            </div>
+            <div class="c-card-lableGroup">
+              <div class="c-card-lableGroup__icon">
+                <img src="img/o-group.svg" alt="" />
+                <div class="">7</div>
+              </div>
+              <div class="c-card-lableGroup__item">客服人員群組</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 視窗 -->
+    <div id="addGroup" class="c-modal-chooseGroup modal">
+      <div class="c-modal-closeBtn">
+        <img class="modal-close" src="img/o-cross.svg" alt="" />
+      </div>
+      <div class="modal-content c-modal-content">
+        <div class="c-modal-content__input">
+          <div class=""><span>*</span> 群組名稱</div>
+          <div class="o-input">
+            <input type="text" placeholder="中英文、數字皆可輸入" />
+          </div>
+        </div>
+        <div class="c-modal-content__addMember">
+          <div class="addMember-title">
+            <div class="">群組成員</div>
+            <span> <img src="img/o-plus.svg" alt="" /> 加入成員</span>
+          </div>
+          <div class="addMember-content">
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+                <div class=""><img src="img/o-delete.svg" alt="" /></div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+                <div class=""><img src="img/o-delete.svg" alt="" /></div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+                <div class=""><img src="img/o-delete.svg" alt="" /></div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+                <div class=""><img src="img/o-delete.svg" alt="" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer c-modal-footer">
+        <a class="modal-trigger" href="#alert1">
+          <button class="o-btn-primary waves-effect waves-blue">
+            新增群組
+          </button>
+        </a>
+      </div>
+    </div>
+    <!-- 視窗2 -->
+    <div id="alert1" class="c-modal-addGroup modal">
+      <div class="c-modal-content">
+        <div class="row c-modal-content__select">
+          <div class="col s6">
+            <div class="input-title"><span>* </span>計劃名稱</div>
+            <div class="input-field c-dropdown-planContent">
+              <select class="c-dropdown-plan-select">
+                <option value="" disabled selected>請選擇計劃名稱</option>
+                <optgroup label="籌備中">
+                  <option value="1">
+                    2020年度地方版公務出國報告系統無障礙2.0規範ＡＡ等級標章申請作業採購案
+                  </option>
+                  <option value="2">2020智慧空間管理理系</option>
+                  <option value="3">2020智慧空間管理理系慧空慧空</option>
+                  <option value="4">
+                    2020智慧空間管理理慧空慧空慧空慧空系
+                  </option>
+                </optgroup>
+                <optgroup label="執行中">
+                  <option value="5">2020智慧空間管理理慧空系</option>
+                  <option value="6">2020智慧空間管理理慧空系</option>
+                  <option value="7">2020智慧空間管理理慧空系</option>
+                  <option value="8">2020智慧空間管理理慧空系</option>
+                </optgroup>
+                <optgroup label="保固中">
+                  <option value="9">2020智慧空間管理理慧空系</option>
+                  <option value="10">
+                    2020智慧空間管理理慧空慧空慧空慧空系
+                  </option>
+                  <option value="11">2020智慧空間管理理系慧空慧空</option>
+                  <option value="12">
+                    2020智慧空間管理理慧空慧空慧空慧空系
+                  </option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="col s6">
+            <div class="input-title">備註</div>
+            <div class="o-input">
+              <input class="" type="text" />
+            </div>
+          </div>
+          <div class="col">
+            <button class="o-btn-primary waves-effect waves-blue">搜尋</button>
+          </div>
+        </div>
+        <div class="c-modal-content__chooseMember">
+          <div class="c-modal-content__chooseMember__title">已選成員</div>
+          <div class="">
+            <div class="chooseMember-tag">
+              <div class="chooseMember-tag__name">王小明 Mike</div>
+              <div class="">X</div>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="chooseMember-tag__name">王小明 Mike</div>
+              <div class="">X</div>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="chooseMember-tag__name">王小明 Jessica</div>
+              <div class="">X</div>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="chooseMember-tag__name">王小明 Michelle</div>
+              <div class="">X</div>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="chooseMember-tag__name">王小明 Jessica</div>
+              <div class="">X</div>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="chooseMember-tag__name">王小明 Jessica</div>
+              <div class="">X</div>
+            </div>
+          </div>
+        </div>
+        <div class="c-modal-content__memberList">
+          <div class="memberList__title">
+            <div class="">全選</div>
+            <div class="">全部清除</div>
+          </div>
+          <div class="memberList__group">
+            <div class="c-card-lablePerson is-active">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson is-active">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson is-active">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson is-active">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer c-modal-footer">
+        <button class="o-btn-primary waves-effect waves-blue modal-close">
+          加入
+        </button>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="layout.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <script src="js/compontent.js"></script>
+    <script src="js/page_function.js"></script>
+  </body>
+</html>

@@ -1,16 +1,7 @@
 .l-main-content {
-    .l-main-content-title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 1.5rem;
 
-    }
 
     .l-main-content-text {
-        img{
-            margin-right: 0.5rem;
-        }
         div{
             font-size: $p;
             font-family: $font-family;
@@ -20,11 +11,6 @@
             font-family: $english-font;
             font-weight: 700;
         }
-        display: flex;
-        justify-content: center;
-        line-height: 28px;
-
-
     }
 
     .l-main-content-list {
@@ -36,7 +22,7 @@
 
         div {
             padding: 0 0.5rem;
-display: flex;
+            display: flex;
             .l-main-content-list__img {
                 padding:  0.2rem;
                 cursor: pointer;
@@ -64,7 +50,7 @@ display: flex;
         }
     }
 
-    .l-main-content-item {
+     .l-main-content-item {
         .l-main-content-item__listTitle {
             display: none;
         }

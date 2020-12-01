@@ -256,11 +256,11 @@
     </div>
     <div class="c-card-planHotkey__btn">加入此工作</div>
   </div>
-  <!-- card lablePersonS -->
+  <!-- card lablePerson -->
   <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
-    card lablePersonS
+    card lablePerson
   </div>
-  <div class="c-card-lablePersonS">
+  <div class="c-card-lablePerson">
     <div class="c-card-lablePerson-title">U00</div>
     <div class="c-card-lablePerson-item">
       <div class="">
@@ -269,20 +269,14 @@
       </div>
     </div>
   </div>
-
-  <!-- card lablePersonL -->
-  <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
-    card lablePersonL
-  </div>
-  <div class="c-card-lablePersonL">
+  <div class="c-card-lablePerson">
     <div class="c-card-lablePerson-title">U00</div>
     <div class="c-card-lablePerson-item">
-      <div class="c-card-lablePerson-item__user">
-        <div class="user-num">A9025</div>
-        <div class="user-name-chinese">王小明</div>
-        <div class="user-name-english">Mike</div>
+      <div class="">
+        <div class="">A9025</div>
+        <div class="">王小明 Mike</div>
       </div>
-      <img src="img/o-delete.svg" alt="" />
+      <div class=""><img src="img/o-delete.svg" alt="" /></div>
     </div>
   </div>
   <!--card  lableGroup -->
@@ -466,7 +460,7 @@
           <div class="header__item__title">業務群組</div>
         </div>
         <div class="accordion-header__item">
-          <div class="o-accordion_plus">
+          <div class="o-accordion_plus collapsible-btn">
             <div class="plus-icon icon">
               <div class="horizontal"></div>
               <div class="vertical"></div>
@@ -528,7 +522,7 @@
             </div>
             <div class="accordion-header__item__hour__num">3</div>
           </div>
-          <div class="o-accordion_plus">
+          <div class="o-accordion_plus collapsible-btn">
             <div class="plus-icon icon">
               <div class="horizontal"></div>
               <div class="vertical"></div>
@@ -606,19 +600,23 @@
   </h3>
   <!-- fileInput upload-->
   <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
-    accordion general
+    fileInput upload
   </div>
   <div class="c-fileInput-upload">
+   <div class="">
     <img class="c-fileInput__img" src="img/o-uploadL.svg" alt="" />
     <div class="c-fileInput__title">上傳Excel</div>
+   </div>
   </div>
   <!-- fileInput add-->
   <div class="" style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%">
     fileInput add
   </div>
   <div class="c-fileInput-add">
-    <img class="c-fileInput__img" src="img/o-plusL.svg" alt="" />
-    <div class="c-fileInput__title">線上編輯</div>
+<div class="">
+  <img class="c-fileInput__img" src="img/o-plusL.svg" alt="" />
+  <div class="c-fileInput__title">線上編輯</div>
+</div>
   </div>
   <!-- toast  -->
   <h3 style="
@@ -796,17 +794,22 @@
   <a class="c-modal-alert__trigger modal-trigger" href="#alert1">alert</a>
   <!-- alert modal-->
   <div id="alert1" class="c-modal-alert modal">
-    <div class="modal-content c-modal-content">
-      <img src="img/o-alert.svg" alt="" />
-      <p>本文</p>
-    </div>
-    <div class="modal-footer c-modal-footer">
-      <button class="o-btn-secondary waves-effect waves-blue modal-close">
-        按鈕
-      </button>
-      <button class="o-btn-primary waves-effect waves-blue modal-close">
-        按鈕
-      </button>
+    <div class="c-modal-alert__content">
+      <div class="c-modal-title">
+        <img src="img/o-alert.svg" alt="" />
+        <div class="">刪除群組？</div>
+      </div>
+      <div class="modal-content c-modal-content">
+        <p>刪除後將無法回覆，是否刪除此群組？</p>
+      </div>
+      <div class="modal-footer c-modal-footer">
+        <button class="o-btn-secondary waves-effect waves-blue modal-close">
+          按鈕
+        </button>
+        <button class="o-btn-primary waves-effect waves-blue modal-close">
+          按鈕
+        </button>
+      </div>
     </div>
   </div>
   <!-- modal-personAll -->
@@ -1034,7 +1037,7 @@
                       </div>
                       <div class="accordion-header__item__hour__num">3</div>
                     </div>
-                    <div class="o-accordion_plus">
+                    <div class="o-accordion_plus collapsible-btn">
                       <div class="plus-icon icon">
                         <div class="horizontal"></div>
                         <div class="vertical"></div>
@@ -1082,7 +1085,7 @@
                       </div>
                       <div class="accordion-header__item__hour__num">3</div>
                     </div>
-                    <div class="o-accordion_plus">
+                    <div class="o-accordion_plus collapsible-btn">
                       <div class="plus-icon icon">
                         <div class="horizontal"></div>
                         <div class="vertical"></div>
@@ -1133,7 +1136,7 @@
                       </div>
                       <div class="accordion-header__item__hour__num">3</div>
                     </div>
-                    <div class="o-accordion_plus">
+                    <div class="o-accordion_plus collapsible-btn">
                       <div class="plus-icon icon">
                         <div class="horizontal"></div>
                         <div class="vertical"></div>
@@ -1435,7 +1438,7 @@
                     </div>
                     <div class="accordion-header__item__hour__num">3</div>
                   </div>
-                  <div class="o-accordion_plus">
+                  <div class="o-accordion_plus collapsible-btn">
                     <div class="plus-icon icon">
                       <div class="horizontal"></div>
                       <div class="vertical"></div>
@@ -1483,7 +1486,7 @@
                     </div>
                     <div class="accordion-header__item__hour__num">3</div>
                   </div>
-                  <div class="o-accordion_plus">
+                  <div class="o-accordion_plus collapsible-btn">
                     <div class="plus-icon icon">
                       <div class="horizontal"></div>
                       <div class="vertical"></div>
@@ -1531,7 +1534,7 @@
                     </div>
                     <div class="accordion-header__item__hour__num">3</div>
                   </div>
-                  <div class="o-accordion_plus">
+                  <div class="o-accordion_plus collapsible-btn">
                     <div class="plus-icon icon">
                       <div class="horizontal"></div>
                       <div class="vertical"></div>

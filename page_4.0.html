@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>page_3.0b</title>
+    <title>page_4.0</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -95,120 +95,134 @@
         </div>
         <div class="c-general">
           <div class="c-general__title">
-            <h3 class="">檢視計畫工作</h3>
+            <h3 class="">常用計畫成員</h3>
+          </div>
+          <div class="c-general__img">
+            <img src="img/o-plus.svg" alt="" /> 新增群組
           </div>
         </div>
         <div class="c-search">
           <div class="c-search-list">
             <div class="c-search-item">
-              <div class="c-search-item__title">工作區間</div>
-              <div class="c-search-item__input">
-                <div class="c-datePicker-month pop-modal">
-                  <div class="c-datePicker__input pop-btn">
-                    <div class="o-input-div"></div>
-                  </div>
-                  <div class="c-datePicker__modal pop-content">
-                    <div class="c-datePicker__title">
-                      <div class="c-datePicker__title__confirm pop-confirm-btn">
-                        確認
-                      </div>
-                    </div>
-                    <div class="c-datePicker__yearPicker">
-                      <img src="img/o-arrowLeft-blue.svg" alt="" />
-                      <div class="">2020</div>
-                      <img src="img/o-arrowRight-blue.svg" alt="" />
-                    </div>
-                    <ul class="c-datePicker__content">
-                      <li>
-                        <label>
-                          <input class="with-gap" name="group1" type="radio" />
-                          <span>01月</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label>
-                          <input class="with-gap" name="group1" type="radio" />
-                          <span>02月</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label>
-                          <input class="with-gap" name="group1" type="radio" />
-                          <span>03月</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label>
-                          <input class="with-gap" name="group1" type="radio" />
-                          <span>04月</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label>
-                          <input class="with-gap" name="group1" type="radio" />
-                          <span>05月</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label>
-                          <input class="with-gap" name="group1" type="radio" />
-                          <span>06月</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label>
-                          <input class="with-gap" name="group1" type="radio" />
-                          <span>07月</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label>
-                          <input class="with-gap" name="group1" type="radio" />
-                          <span>08月</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label>
-                          <input class="with-gap" name="group1" type="radio" />
-                          <span>09月</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label>
-                          <input class="with-gap" name="group1" type="radio" />
-                          <span>10月</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label>
-                          <input class="with-gap" name="group1" type="radio" />
-                          <span>11月</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label>
-                          <input class="with-gap" name="group1" type="radio" />
-                          <span>12月</span>
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="c-search-item">
               <div class="c-search-item__title">關鍵字</div>
               <div class="c-search-item__input">
-                <input type="text" class="" placeholder="計畫名稱及代號" />
+                <input type="text" class="" placeholder="群組名稱" />
               </div>
             </div>
           </div>
           <div class="c-search-btn">
-            <button class="o-btn-primary waves-effect waves-blue">按鈕</button>
+            <button class="o-btn-primary waves-effect waves-blue">
+              <a class="modal-trigger" href="#addGroup">搜尋</a>
+            </button>
           </div>
         </div>
         <div class="l-main-content">
-          <div class="l-main-content__text">未有符合此工作區間的資料</div>
+          <div class="l-main-content__fileInput">
+            <a class="modal-trigger" href="#addGroup">
+              <div class="c-fileInput-upload">
+                <div class="">
+                  <img
+                    class="c-fileInput__img"
+                    src="img/o-uploadL.svg"
+                    alt=""
+                  />
+                  <div class="c-fileInput__title">上傳Excel</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 視窗 -->
+    <div id="addGroup" class="c-modal-chooseGroup modal">
+      <div class="c-modal-closeBtn">
+        <img class="modal-close" src="img/o-cross.svg" alt="" />
+      </div>
+      <div class="modal-content c-modal-content">
+        <div class="c-modal-content__input">
+          <div class=""><span>*</span> 群組名稱</div>
+          <div class="o-input">
+            <input type="text" placeholder="中英文、數字皆可輸入" />
+          </div>
+        </div>
+        <div class="c-modal-content__addMember">
+          <div class="addMember-title">
+            <div class="">群組成員</div>
+            <span> <img src="img/o-plus.svg" alt="" /> 加入成員</span>
+          </div>
+          <div class="addMember-content"></div>
+        </div>
+      </div>
+      <div class="modal-footer c-modal-footer">
+        <a class="modal-trigger" href="#alert1">
+          <button class="o-btn-primary waves-effect waves-blue">
+            新增群組
+          </button>
+        </a>
+      </div>
+    </div>
+    <!-- 視窗2 -->
+    <div id="alert1" class="c-modal-addGroup modal">
+      <div class="c-modal-addGroup__content">
+        <div class="c-modal-addGroup__content__item c-modal-content">
+          <div class="row c-modal-content__select">
+            <div class="col s6">
+              <div class="input-title"><span>* </span>計劃名稱</div>
+              <div class="input-field c-dropdown-planContent">
+                <select class="c-dropdown-plan-select">
+                  <option value="" disabled selected>請選擇計劃名稱</option>
+                  <optgroup label="籌備中">
+                    <option value="1">
+                      2020年度地方版公務出國報告系統無障礙2.0規範ＡＡ等級標章申請作業採購案
+                    </option>
+                    <option value="2">2020智慧空間管理理系</option>
+                    <option value="3">2020智慧空間管理理系慧空慧空</option>
+                    <option value="4">
+                      2020智慧空間管理理慧空慧空慧空慧空系
+                    </option>
+                  </optgroup>
+                  <optgroup label="執行中">
+                    <option value="5">2020智慧空間管理理慧空系</option>
+                    <option value="6">2020智慧空間管理理慧空系</option>
+                    <option value="7">2020智慧空間管理理慧空系</option>
+                    <option value="8">2020智慧空間管理理慧空系</option>
+                  </optgroup>
+                  <optgroup label="保固中">
+                    <option value="9">2020智慧空間管理理慧空系</option>
+                    <option value="10">
+                      2020智慧空間管理理慧空慧空慧空慧空系
+                    </option>
+                    <option value="11">2020智慧空間管理理系慧空慧空</option>
+                    <option value="12">
+                      2020智慧空間管理理慧空慧空慧空慧空系
+                    </option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            <div class="col s6">
+              <div class="input-title">備註</div>
+              <div class="o-input">
+                <input class="" type="text" />
+              </div>
+            </div>
+            <div class="col">
+              <button class="o-btn-primary waves-effect waves-blue">
+                搜尋
+              </button>
+            </div>
+          </div>
+          <div class="c-modal-content__chooseMember">
+            <div class="c-modal-content__chooseMember__title">已選成員</div>
+          </div>
+        </div>
+        <div
+          class="c-modal-addGroup__content__item modal-footer c-modal-footer"
+        >
+          <button class="o-btn-primary waves-effect waves-blue modal-close">
+            加入
+          </button>
         </div>
       </div>
     </div>

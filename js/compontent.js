@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var instance = M.Collapsible.init(elem, {
     accordion: false,
   });
-  $(".accordion-header").click(function () {
+  $(".collapsible-btn").click(function () {
     $(this).find(".vertical").toggleClass("open");
     $(this).find(".horizontal").toggleClass("open");
   });
