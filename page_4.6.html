@@ -98,10 +98,12 @@
             <h3>設計群組 _ 109公路總局建置案專用群組</h3>
           </div>
           <div class="c-general__img">
-            <div class="c-general__img__dele">
+            <a class="modal-trigger c-general__img__dele" href="#">
               <img src="img/o-delete.svg" alt="" /> 刪除群組
-            </div>
-            <div class=""><img src="img/o-plus.svg" alt="" /> 新增群組</div>
+            </a>
+            <a class="modal-trigger" href="#addGroup">
+              <img src="img/o-plus.svg" alt="" /> 新增群組
+            </a>
           </div>
         </div>
         <div class="c-search">
@@ -197,6 +199,275 @@
             刪除
           </button>
         </div>
+      </div>
+    </div>
+    <!-- 視窗 -->
+    <div id="addGroup" class="c-modal-chooseGroup modal">
+      <div class="c-modal-closeBtn">
+        <img class="modal-close" src="img/o-cross.svg" alt="" />
+      </div>
+      <div class="modal-content c-modal-content">
+        <div class="c-modal-content__input">
+          <div class=""><span>*</span> 群組名稱</div>
+          <div class="o-input">
+            <input type="text" placeholder="中英文、數字皆可輸入" />
+          </div>
+        </div>
+        <div class="c-modal-content__addMember">
+          <div class="addMember-title">
+            <div class="">群組成員</div>
+            <span> <img src="img/o-plus.svg" alt="" /> 加入成員</span>
+          </div>
+          <div class="addMember-content">
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+                <div class=""><img src="img/o-delete.svg" alt="" /></div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+                <div class=""><img src="img/o-delete.svg" alt="" /></div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+                <div class=""><img src="img/o-delete.svg" alt="" /></div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+                <div class=""><img src="img/o-delete.svg" alt="" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer c-modal-footer">
+        <a class="modal-trigger" href="#alert1">
+          <button class="o-btn-primary waves-effect waves-blue">
+            新增群組
+          </button>
+        </a>
+      </div>
+    </div>
+    <!-- 視窗2 -->
+    <div id="alert1" class="c-modal-addGroup modal">
+      <div class="c-modal-content">
+        <div class="row c-modal-content__select">
+          <div class="col s6">
+            <div class="input-title"><span>* </span>計劃名稱</div>
+            <div class="input-field c-dropdown-planContent">
+              <select class="c-dropdown-plan-select">
+                <option value="" disabled selected>請選擇計劃名稱</option>
+                <optgroup label="籌備中">
+                  <option value="1">
+                    2020年度地方版公務出國報告系統無障礙2.0規範ＡＡ等級標章申請作業採購案
+                  </option>
+                  <option value="2">2020智慧空間管理理系</option>
+                  <option value="3">2020智慧空間管理理系慧空慧空</option>
+                  <option value="4">
+                    2020智慧空間管理理慧空慧空慧空慧空系
+                  </option>
+                </optgroup>
+                <optgroup label="執行中">
+                  <option value="5">2020智慧空間管理理慧空系</option>
+                  <option value="6">2020智慧空間管理理慧空系</option>
+                  <option value="7">2020智慧空間管理理慧空系</option>
+                  <option value="8">2020智慧空間管理理慧空系</option>
+                </optgroup>
+                <optgroup label="保固中">
+                  <option value="9">2020智慧空間管理理慧空系</option>
+                  <option value="10">
+                    2020智慧空間管理理慧空慧空慧空慧空系
+                  </option>
+                  <option value="11">2020智慧空間管理理系慧空慧空</option>
+                  <option value="12">
+                    2020智慧空間管理理慧空慧空慧空慧空系
+                  </option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="col s6">
+            <div class="input-title">備註</div>
+            <div class="o-input">
+              <input class="" type="text" />
+            </div>
+          </div>
+          <div class="col">
+            <button class="o-btn-primary waves-effect waves-blue">搜尋</button>
+          </div>
+        </div>
+        <div class="c-modal-content__chooseMember">
+          <div class="c-modal-content__chooseMember__title">已選成員</div>
+          <div class="">
+            <div class="chooseMember-tag">
+              <div class="chooseMember-tag__name">王小明 Mike</div>
+              <div class="">X</div>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="chooseMember-tag__name">王小明 Mike</div>
+              <div class="">X</div>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="chooseMember-tag__name">王小明 Jessica</div>
+              <div class="">X</div>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="chooseMember-tag__name">王小明 Michelle</div>
+              <div class="">X</div>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="chooseMember-tag__name">王小明 Jessica</div>
+              <div class="">X</div>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="chooseMember-tag__name">王小明 Jessica</div>
+              <div class="">X</div>
+            </div>
+          </div>
+        </div>
+        <div class="c-modal-content__memberList">
+          <div class="memberList__title">
+            <div class="">全選</div>
+            <div class="">全部清除</div>
+          </div>
+          <div class="memberList__group">
+            <div class="c-card-lablePerson is-active">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson is-active">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson is-active">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson is-active">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer c-modal-footer">
+        <button class="o-btn-primary waves-effect waves-blue modal-close">
+          加入
+        </button>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

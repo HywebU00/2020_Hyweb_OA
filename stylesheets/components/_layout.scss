@@ -241,7 +241,22 @@
     }
 
 }
-
+.l-main-tabs{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+margin-top: -36px;
+.l-main-tabs__item{
+    display: flex;
+    color: $gray1;
+    align-items: center;
+    margin-right: 1rem;
+    img{
+        margin-right: 0.3rem;
+    }
+}
+margin-bottom: 36px;
+}
 .l-main-content {
     margin-top: 1.5rem;
     overflow: scroll;
@@ -264,6 +279,18 @@
         height: calc(100vh - 210px);
         justify-content: center;
         align-items: center;
+        .l-main-content__fileInput__link{
+            color:$gray3 ;
+            margin-left: 1rem;
+            display: flex;
+            justify-content: center;
+            text-decoration:underline;
+            margin-top: 2rem;
+        }
+        .l-main-content__fileInput__position{
+            display: flex;
+            align-items: flex-start;
+        }
     }
 
     .l-main-content-title {
@@ -287,6 +314,89 @@
         @extend .l-main-content-title;
         display: flex;
         justify-content: flex-end;
+    }
+    .l-main-content__title{
+        color: $gray1;
+        font-size: $h2;
+        font-family: $font-family;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        div{
+            margin-left: 1.5rem;
+            font-size: $p;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 0.2rem;
+            }
+        }
+    }
+    .l-main-content__information{
+        background-color:$sec3;
+        padding: 3rem;
+        border-radius:$list-radius;
+        font-size: $p;
+        color:$gray1;
+        margin-bottom: 2rem;
+        .l-main-content__information__title{
+            font-weight: 700;
+        }
+        .row{
+            margin-bottom: 2rem;
+        }
+    }
+    .l-main-content__textarea{
+        textarea{
+            padding: 1rem;
+            border:1px solid $sec2;
+            border-radius: $textarea-radius;
+            height: 10rem;
+            font-size: $p;
+        }
+        margin-bottom: 2rem;
+    }
+    .l-main-content__upload{
+        margin-bottom: 2rem;
+        .c-fileInput-upload{
+            width: 100%;
+            padding:3rem 0;
+            margin:0;
+            border-radius: $upload-radius;
+            height: auto;
+            .c-fileInput__title{
+                padding-top: 1.5rem;
+            }
+        }
+        
+    }
+    .l-main-content__addMember{
+        margin-bottom: 2rem;
+        .c-fileInput-add{
+            width: 100%;
+            padding:3rem 0;
+            margin:0;
+            border-radius: $upload-radius;
+            height: auto;
+        }
+        .c-fileInput__title{
+            padding-top: 1.5rem;
+        }
+    }
+    .l-main-content__planlist{
+        .o-input{
+            input{
+                margin-bottom: 0;
+            }
+        }
+        .o-input-div{
+            min-width: auto;
+        }
+    }
+    .table-body__dragBtn{
+        display: flex;
     }
 }
 

@@ -421,26 +421,32 @@
 .c-accordion-group {
     width: 425px;
     border-radius: 10px;
-
+    box-shadow: none;
+    border: 2px solid $sec2;
+    .collapsible{
+        border:none;
+    }
     .accordion-header {
         font-size: $p;
         line-height: 26px;
         padding-right: 0;
         font-weight: 700;
         color: $gray1;
-        border-radius: 10px 10px 0 0;
-        background: $accordion-header-background;
+        border-radius: 10px 10px 10px;
+        background: #fff;
         display: flex;
         justify-content: space-between;
-
+        &:hover{
+            background:$accordion-header-background;
+        }
         .accordion-header__item {
             .header__item__icon {
                 display: flex;
                 align-items: center;
-                padding-right: 20%;
+                padding-right: 1rem;
 
                 div {
-                    padding-left: 10%;
+                    padding-left:0.2rem;
                 }
             }
 
@@ -448,7 +454,8 @@
             align-items: center;
 
             .header__item__title {
-                white-space: nowrap;
+            @include ellipsisText;
+            // white-space: nowrap;
             }
         }
     }
@@ -471,10 +478,6 @@
         padding: 4% 2%;
         background: $accordion-body-background;
         border-radius: $accordion-item-radius;
-
-        &:hover {
-            background: $hyweb-lighblue;
-        }
     }
 }
 
@@ -523,6 +526,13 @@
         .col {
             @include ellipsisText;
         }
+    }
+}
+
+.is-accordion-active{
+    box-shadow: $box-shadow;
+    .accordion-header{
+        background: $hyweb-lighblue;
     }
 }
 
@@ -626,7 +636,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        border-bottom: 1px solid $gray3;
+        border-bottom: 1px solid $gray4;
     }
 
     .c-tabs__title {
@@ -693,7 +703,12 @@
     .c-general__img {
         display: flex;
         align-items: center;
-
+        a{
+            display: flex;
+            align-items: center;
+            color:$gray1;
+        }
+       
         .c-general__img__dele {
             margin-right: 0.8rem;
         }
@@ -749,6 +764,7 @@
 
 .c-fileInput-upload {
     @extend .c-fileInput;
+    margin: 0 1rem ;
     width: 296px;
     display: flex;
     justify-content: center;
@@ -847,7 +863,13 @@
 
     .c-modal-closeBtn {
         display: flex;
+        //margin-top: -1rem;
         justify-content: flex-end;
+    }
+    .c-modal-btnList{
+        display: flex;
+        //margin-top: -1rem;
+        justify-content: space-between;
     }
 
     .c-modal-content {
@@ -923,11 +945,30 @@
     width: 80%;
     min-height: 76vh;
     max-height: 90vh;
+    .c-modal-closeBtn {
+        display: flex;
+       // margin-top: -1rem;
+        justify-content: flex-end;
 
+    }
+    .c-modal-btnList{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            display: flex;
+            color: $gray1;
+            cursor: pointer;
+            align-items: center;
+            img{
+                margin-right: 0.5rem;
+            }
+        }
+    }
     .c-modal-addGroup__content {
         display: flex;
         flex-wrap: wrap;
-        height: 100%;
+        height: 98%;
 
         .c-modal-addGroup__content__item {
             width: 100%;
@@ -1162,6 +1203,40 @@
         padding-top: 2%;
         height: 100%;
         overflow: scroll;
+    }
+}
+
+.c-modal-usuallyUseMember{
+    .c-modal-position{
+        display: flex;
+        flex-wrap: wrap;
+        height: 92%;
+    }
+    @extend .c-modal-addGroup;
+    width: 40%;
+    height: 85vh;
+    .c-modal-closeBtn{
+        width: 100%;
+    }
+    .c-modal-content__title{
+        font-size: $h2;
+        margin-top: -1rem;
+        color: $gray1;
+        font-weight: 700;
+        font-family: $font-family;
+        width: 100%;
+    }
+    .c-modal-content{
+        width: 100%;
+    }
+    .c-accordion-group{
+    width: 100%;
+    }
+    .c-modal-content__item{
+        margin:1rem 0 1rem 0;
+    }
+    .c-modal-footer{
+        align-self: flex-end;
     }
 }
 
@@ -1898,7 +1973,7 @@
             width: 100%;
             border-radius: 5px;
             height: 2px;
-            background: $gray1; //$word2
+            background: $hyweb-blue; //$word2
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -1913,7 +1988,7 @@
             width: 100%;
             border-radius: 5px;
             height: 2px;
-            background: $gray1; //$word2
+            background: $hyweb-blue; //$word2
             position: absolute;
             top: 50%;
             transform: translateY(-50%) rotate(90deg);
@@ -1992,6 +2067,8 @@
         border-radius: $input-radius;
         background-color: $hyweb-lighblue;
         border-bottom: 0;
+        padding:0 0.5rem;
+        box-sizing: border-box;
 
     }
 

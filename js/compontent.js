@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   $(".collapsible-btn").click(function () {
     $(this).find(".vertical").toggleClass("open");
     $(this).find(".horizontal").toggleClass("open");
+    //$(this).parent().parent().parent().addClass("is-accordion-active");
   });
 });
 
@@ -219,3 +220,19 @@ for (let a = 0; a < pop_modal.length; a++) {
     });
   }
 }
+//++++++++++++++++++
+//accordion 效果
+//++++++++++++++++++
+//點擊 accordion-header 底圖顏色變色
+const collapsible = document.querySelectorAll(".collapsible");
+
+collapsible.forEach(function (item) {
+  item.addEventListener("click", function () {
+    let a = item.classList.contains("is-accordion-active");
+    if (a === false) {
+      item.classList.add("is-accordion-active");
+    } else {
+      item.classList.remove("is-accordion-active");
+    }
+  });
+});
