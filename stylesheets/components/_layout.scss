@@ -241,22 +241,27 @@
     }
 
 }
-.l-main-tabs{
-display: flex;
-align-items: center;
-justify-content: flex-end;
-margin-top: -36px;
-.l-main-tabs__item{
+
+.l-main-tabs {
     display: flex;
-    color: $gray1;
     align-items: center;
-    margin-right: 1rem;
-    img{
-        margin-right: 0.3rem;
+    justify-content: flex-end;
+    margin-top: -36px;
+
+    .l-main-tabs__item {
+        display: flex;
+        color: $gray1;
+        align-items: center;
+        margin-left: 1rem;
+
+        img {
+            margin-right: 0.3rem;
+        }
     }
+
+    margin-bottom: 36px;
 }
-margin-bottom: 36px;
-}
+
 .l-main-content {
     margin-top: 1.5rem;
     overflow: scroll;
@@ -279,15 +284,17 @@ margin-bottom: 36px;
         height: calc(100vh - 210px);
         justify-content: center;
         align-items: center;
-        .l-main-content__fileInput__link{
-            color:$gray3 ;
+
+        .l-main-content__fileInput__link {
+            color: $gray3;
             margin-left: 1rem;
             display: flex;
             justify-content: center;
-            text-decoration:underline;
+            text-decoration: underline;
             margin-top: 2rem;
         }
-        .l-main-content__fileInput__position{
+
+        .l-main-content__fileInput__position {
             display: flex;
             align-items: flex-start;
         }
@@ -315,7 +322,8 @@ margin-bottom: 36px;
         display: flex;
         justify-content: flex-end;
     }
-    .l-main-content__title{
+
+    .l-main-content__title {
         color: $gray1;
         font-size: $h2;
         font-family: $font-family;
@@ -323,80 +331,266 @@ margin-bottom: 36px;
         margin-bottom: 1rem;
         display: flex;
         align-items: center;
-        div{
+
+        div {
             margin-left: 1.5rem;
             font-size: $p;
             font-weight: 400;
             display: flex;
             align-items: center;
-            img{
+
+            img {
                 margin-right: 0.2rem;
             }
         }
     }
-    .l-main-content__information{
-        background-color:$sec3;
+
+    .l-main-content__information {
+        background-color: $sec3;
         padding: 3rem;
-        border-radius:$list-radius;
+        border-radius: $list-radius;
         font-size: $p;
-        color:$gray1;
+        color: $gray1;
         margin-bottom: 2rem;
-        .l-main-content__information__title{
+
+        .l-main-content__information__title {
             font-weight: 700;
         }
-        .row{
+
+        .row {
             margin-bottom: 2rem;
         }
     }
-    .l-main-content__textarea{
-        textarea{
+
+    .l-main-content__textarea {
+        textarea {
             padding: 1rem;
-            border:1px solid $sec2;
+            border: 1px solid $sec2;
             border-radius: $textarea-radius;
             height: 10rem;
             font-size: $p;
         }
+
         margin-bottom: 2rem;
     }
-    .l-main-content__upload{
+
+    .l-main-content__upload {
         margin-bottom: 2rem;
-        .c-fileInput-upload{
+
+        .c-fileInput-upload {
             width: 100%;
-            padding:3rem 0;
-            margin:0;
+            padding: 3rem 0;
+            margin: 0;
             border-radius: $upload-radius;
             height: auto;
-            .c-fileInput__title{
+
+            .c-fileInput__title {
                 padding-top: 1.5rem;
             }
         }
-        
+
+        .row {
+            background-color: $hyweb-lighblue;
+            border-radius: $card-lableGroup;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            padding: 0.8rem;
+
+            .col {
+                @include ellipsisText;
+
+                img {
+                    padding: 0 0.2rem;
+                    cursor: pointer;
+                }
+            }
+
+        }
     }
-    .l-main-content__addMember{
+
+    .l-main-content__addMember {
         margin-bottom: 2rem;
-        .c-fileInput-add{
+        display: flex;
+        flex-wrap: wrap;
+
+        .c-fileInput-add {
             width: 100%;
-            padding:3rem 0;
-            margin:0;
+            padding: 3rem 0;
+            margin: 0;
             border-radius: $upload-radius;
             height: auto;
         }
-        .c-fileInput__title{
+
+        .c-fileInput__title {
             padding-top: 1.5rem;
         }
+
     }
-    .l-main-content__planlist{
-        .o-input{
-            input{
+
+    .l-main-content__planlist {
+        .table-body {
+            .row {
+                padding: 0;
+
+                .table-body__additem {
+                    display: flex;
+                    align-items: center;
+                    color: $gray1;
+                    font-size: $p;
+
+                    img {
+                        margin-right: 0.5rem;
+                    }
+                }
+
+            }
+        }
+
+        .o-input {
+            input {
                 margin-bottom: 0;
             }
         }
-        .o-input-div{
+
+        .c-datePicker-day {
+            width: 100%;
+            height: 3rem;
+        }
+
+        .o-input-div {
             min-width: auto;
         }
     }
-    .table-body__dragBtn{
+
+    .l-main-content__wbslist {
+        @extend .l-main-content__planlist;
+        overflow: scroll;
+        width: 1650px;
+    
+        .table-thead{
+            padding:1.5rem;
+            .row{
+                display: flex;
+                align-items: center;
+                .col{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        margin-right: 0.5rem;
+                    }  
+                }
+            }
+        }
+        .table-body{
+            .row{
+                padding:0 1.5rem;
+            }
+            .col{
+                display: flex;
+            }
+            .c-datePicker-days{
+                width: 100%;
+            }
+            .c-dropdown-member{
+                width: 100%;
+            }
+            .o-input{
+                input{
+                    height: 3rem;
+                }
+               }
+        }
+        .s1 {
+            width: 5%;
+        }
+        .s2{
+            width: 10%;
+        }
+        .s3{
+            width: 15%;
+        }
+        .s4{
+            width: 20%;
+        }
+    }
+
+    .table-body__dragBtn {
         display: flex;
+        align-items: center;
+
+        .c-popover__content {
+            left: -5px;
+
+            li {
+                white-space: nowrap;
+                padding: 0.5rem;
+            }
+
+            &::before {
+                left: 29%;
+            }
+
+            &::after {
+                left: 30%;
+            }
+        }
+    }
+
+    .l-main-content__workTypelist {
+        .table-thead {
+            text-align: center;
+            line-height: 1.5rem;
+            padding: 1rem;
+        }
+
+        .table-body {
+            .row {
+                padding: 0 1rem;
+            }
+        }
+
+        .row {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+
+            .s1 {
+                width: 7.6923076623076%;
+            }
+
+            .s2 {
+                width: 15.3846115384615%;
+            }
+
+            .col {
+                display: flex;
+                // margin-left: 0;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+
+        .table-footer {
+            background-color: $hyweb-lighblue;
+            border-top: 1px solid $hyweb-blue;
+            border-radius: 0 0 $table-radius $table-radius;
+            font-weight: 700;
+            font-size: $p;
+
+            .col {
+                height: 70px;
+            }
+
+            .row {
+                padding: 0 1rem;
+            }
+        }
     }
 }
 
@@ -409,8 +603,9 @@ margin-bottom: 36px;
         border-radius: $table-radius $table-radius 0 0;
         color: $gray1;
         white-space: nowrap;
-        font-weight: 800;
-        font-size: $font-size-l;
+        font-weight: 700;
+        font-size: $p;
+        //font-size: $font-size-l;
         padding: 1.5rem 0 1.5rem 2.5rem;
 
         .row {
@@ -423,11 +618,13 @@ margin-bottom: 36px;
             line-height: 1.5rem;
             // @include ellipsisText;
         }
-        .table-body__tag-item{
+
+        .table-body__tag-item {
             display: flex;
             align-items: center;
             flex-wrap: wrap;
         }
+
         .table-body-subtitle {
             background-color: $sec3;
             line-height: 24px;
@@ -483,7 +680,8 @@ margin-bottom: 36px;
             align-items: center;
             color: $gray1;
             cursor: pointer;
-            img{
+
+            img {
                 margin-right: 0.5rem;
             }
         }

@@ -3630,10 +3630,12 @@ var $jscomp$this = this;
 
             var positionInfo = this._getDropdownPosition();
             this.dropdownEl.style.left = positionInfo.x + "px";
-            this.dropdownEl.style.top = "-30px"; //positionInfo.y - 20 + "px";
-            this.dropdownEl.style.maxHeight = "50vh"; //positionInfo.height + "px";
+            this.dropdownEl.style.top = "30px"; //positionInfo.y - 20 + "px";
+            this.dropdownEl.style.maxHeight = "40vh"; //positionInfo.height + "px";
             this.dropdownEl.style.width = "auto"; //positionInfo.width + "px";
             this.dropdownEl.style.paddingLeft = "15px"; //增加
+            this.dropdownEl.style.paddingTop = "15px"; //增加
+            this.dropdownEl.style.paddingRight = "15px"; //增加
             this.dropdownEl.style.maxWidth = "600px";
             this.dropdownEl.style.backgroundColor = "#fff";
             this.dropdownEl.style.transformOrigin =

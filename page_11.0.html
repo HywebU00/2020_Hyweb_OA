@@ -271,7 +271,7 @@
             <div class="l-main-content-table l-main-content__planlist">
               <div class="table-thead">
                 <div class="row">
-                  <div class="col s3">填寫日期</div>
+                  <div class="col s3">完成及交付項目</div>
                   <div class="col s2">合約日期</div>
                   <div class="col s2">交付期程</div>
                   <div class="col s3">備註</div>
@@ -280,16 +280,43 @@
               </div>
               <div class="table-body">
                 <div class="row">
-                  <div class="col s3 o-input table-body__dragBtn">
-                    <img src="img/o-drag.svg" alt="" />
-                    <input type="text" />
+                  <div class="col s3 o-input-textarea table-body__dragBtn">
+                    <div class="c-popover-checkPoint pop-modal">
+                      <span class="c-popover__btn pop-btn">
+                        <img src="img/o-drag.svg" alt=""
+                      /></span>
+                      <ul class="c-popover__content pop-content">
+                        <li>刪除</li>
+                        <li>複製</li>
+                      </ul>
+                    </div>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
                   </div>
-                  <div class="col s2 o-input">
-                    <input type="text" />
+                  <div class="col s2 o-input-textarea">
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
                   </div>
-                  <div class="col s2"><div class="o-input-div"></div></div>
-                  <div class="col s3 o-input"><input type="text" /></div>
-                  <div class="col s2 o-input"><input type="text" /></div>
+                  <div class="col s2">
+                    <div class="c-datePicker-day">
+                      <input
+                        id="SingleDatePicker"
+                        type="text"
+                        name="birthday"
+                        value="10/24/1984"
+                      />
+                    </div>
+                  </div>
+                  <div class="col s3 o-input-textarea">
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                  </div>
+                  <div class="col s2 o-input-textarea">
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col table-body__additem">
+                    <img src="img/o-plus.svg" alt="" />
+                    <div class="">新增項目</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -298,7 +325,7 @@
         <div id="member">
           <div class="l-main-tabs">
             <a class="l-main-tabs__item modal-trigger" href="#addGroup">
-              <img src="img/o-plus.svg" alt="" />
+              <img src="img/o-upload.svg" alt="" />
               <div class="">新增成員</div>
             </a>
           </div>
@@ -372,7 +399,60 @@
             </div>
           </div>
         </div>
-        <div id="types">types</div>
+        <div id="types">
+          <div class="l-main-content">
+            <div class="l-main-content-table l-main-content__workTypelist">
+              <div class="table-thead">
+                <div class="row">
+                  <div class="col s1">編號</div>
+                  <div class="col s2">工作類型</div>
+                  <div class="col s2">
+                    所有年度 <br />
+                    預估工時總計
+                  </div>
+                  <div class="col s2">
+                    <img src="img/o-addYear.svg" alt="" />
+                    <span>2020年</span>
+                  </div>
+                  <div class="col s1">9月</div>
+                  <div class="col s1">10月</div>
+                  <div class="col s1">11月</div>
+                  <div class="col s1">12月</div>
+                  <div class="col s2">
+                    <img src="img/o-lessYear.svg" alt="" />
+                    <span>2021年</span>
+                  </div>
+                </div>
+              </div>
+              <div class="table-body">
+                <div class="row">
+                  <div class="col s1">01</div>
+                  <div class="col s2">專案管理</div>
+                  <div class="col s2">74</div>
+                  <div class="col s2">50</div>
+                  <div class="col s1">24</div>
+                  <div class="col s1">1</div>
+                  <div class="col s1">1</div>
+                  <div class="col s1">24</div>
+                  <div class="col s2">24</div>
+                </div>
+              </div>
+              <div class="table-footer">
+                <div class="row">
+                  <div class="col s1"></div>
+                  <div class="col s2">合計</div>
+                  <div class="col s2">238</div>
+                  <div class="col s2">160</div>
+                  <div class="col s1">30</div>
+                  <div class="col s1">9</div>
+                  <div class="col s1">1</div>
+                  <div class="col s1">120</div>
+                  <div class="col s2">78</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- 視窗 -->
