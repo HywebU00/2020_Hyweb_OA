@@ -287,3 +287,5 @@ if (tag_item != null && tag_content != null) {
     }
   }
 }
+
+dragula([document.querySelector("#list")]);

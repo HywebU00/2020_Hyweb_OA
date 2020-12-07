@@ -97,8 +97,8 @@
         color: #fff;
         font-size: $a;
         font-weight: 700;
-        padding: 5% 0 5% 10%;
-        margin-left: 12px;
+        padding: 0.5rem 0 0.5rem 1.2rem;
+        // margin-left: 12px;
 
         align-items: center;
 
@@ -265,6 +265,7 @@
 .l-main-content {
     margin-top: 1.5rem;
     overflow: scroll;
+    overflow-y: auto;
     height: calc(100vh - 210px);
 
     .l-main-content__text {
@@ -429,9 +430,17 @@
     }
 
     .l-main-content__planlist {
+        .table-thead{
+            .col{
+                padding:0;
+            }
+        }
         .table-body {
             .row {
                 padding: 0;
+                .col{
+                    padding:0.3rem;
+                }
 
                 .table-body__additem {
                     display: flex;
@@ -443,7 +452,14 @@
                         margin-right: 0.5rem;
                     }
                 }
-
+                .select-wrapper{
+                    height: 3rem;
+                    width: auto;
+                    .select-dropdown {
+                        padding-top: 15px;
+                        padding-right: 30px;
+                    }
+                }
             }
         }
 
@@ -467,7 +483,7 @@
         @extend .l-main-content__planlist;
         overflow: scroll;
         width: 1650px;
-    
+        height: 100%;
         .table-thead{
             padding:1.5rem;
             .row{
@@ -476,6 +492,8 @@
                 .col{
                     display: flex;
                     align-items: center;
+                    margin: 0;
+
                     img{
                         margin-right: 0.5rem;
                     }  
@@ -484,34 +502,56 @@
         }
         .table-body{
             .row{
-                padding:0 1.5rem;
+                padding:0 1.5rem 0 0;
+                
             }
             .col{
                 display: flex;
+                margin:0;
+                .c-popover-checkPoint{
+                    display: flex;
+                    align-items: center;
+                }
+                .c-dropdown__input{
+                    width: 100%;
+                }
             }
             .c-datePicker-days{
                 width: 100%;
+                height: 3rem;
             }
             .c-dropdown-member{
                 width: 100%;
+                .dropdown-input{
+                    height: 3rem;
+                }
             }
             .o-input{
                 input{
                     height: 3rem;
                 }
                }
+            .table-body__subtitle{
+                background-color: $sec3;
+            }
+            .table-body__additem{
+               margin-right: 1rem; 
+            }   
         }
         .s1 {
-            width: 5%;
+            width: 3.84615%;
         }
         .s2{
-            width: 10%;
+            width: 7.96320%;
         }
         .s3{
-            width: 15%;
+            width: 11.53845%;
         }
         .s4{
-            width: 20%;
+            width: 15.38461%;
+        }
+        .s5{
+            width: 19.23057%;
         }
     }
 
@@ -520,7 +560,7 @@
         align-items: center;
 
         .c-popover__content {
-            left: -5px;
+           left: -3px;
 
             li {
                 white-space: nowrap;
@@ -721,7 +761,7 @@
             font-size: $chinese-name;
             font-family: $font-family;
             font-weight: 700;
-            padding: 0 0 2% 0;
+            padding-bottom: 0.2rem;
             display: block;
             transition: ease 0.3s;
             color: $hyweb-blue;

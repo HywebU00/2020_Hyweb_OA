@@ -1383,7 +1383,7 @@
         display: flex;
         justify-content: space-between;
         color: $gray3;
-        font-size: $a;
+        font-size: $p;
         cursor: pointer;
 
         div {
@@ -1483,9 +1483,10 @@
 }
 
 .c-dropdown-member {
+    position: relative;
     .c-dropdown__modal {
         width: auto;
-        max-width: 337px;
+        width: 337px;
     }
 
     .c-dropdown__content {
