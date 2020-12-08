@@ -6,6 +6,7 @@
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
+    flex-shrink:0;
     top: 0;
     left: 0;
     bottom: 0;
@@ -89,6 +90,7 @@
     .c-sidebar-content__listGroup {
         height: calc(100vh - 380px);
         overflow: scroll;
+        padding-right: 0rem;
     }
 
     .c-sidebar-content__list__title {
@@ -144,7 +146,7 @@
 
 .l-main {
     width: 100%;
-    max-width: 1200px;
+    //max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 1% 2%;
@@ -447,7 +449,7 @@
                     align-items: center;
                     color: $gray1;
                     font-size: $p;
-
+                    cursor: pointer;
                     img {
                         margin-right: 0.5rem;
                     }
@@ -752,7 +754,6 @@
 
 
         .c-sidebar-content__user {
-
             margin-bottom: 15px;
             background: $sidebar-user-background;
         }
@@ -811,6 +812,9 @@
                 display: block;
                 transition: ease .5s;
             }
+        }
+        .c-sidebar-content__listGroup {
+            padding-right: 2rem;
         }
 
         .c-sidebar-content__list__content {

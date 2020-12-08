@@ -106,12 +106,13 @@
 
     .c-card__tag {
         padding-top: $pd;
+        display: inline-block;
         padding-bottom: $pd-2;
 
         span {
             background: $hy-background;
             color: #fff;
-            padding: 2% 9%;
+            padding: 0.5rem 1rem;
             font-weight: 400;
             border-radius: $tag-radius;
             font-size: $a;
@@ -200,7 +201,8 @@
 
 .c-card-planReport {
     @extend .c-card-planPerson;
-    width: 87%;
+    width:879px;
+    min-height: 166px;
     display: flex;
     padding: 0;
 
@@ -213,7 +215,11 @@
 
     }
 
-    .o-card__star {
+    // .o-card__star {
+    //     width: 24px;
+    //     height: 24px;
+    // }
+    .o-card__iconBtn {
         width: 24px;
         height: 24px;
     }
@@ -233,62 +239,55 @@
 
     .c-card__tag {
         display: flex;
-        justify-content: space-between;
         padding-top: 0;
-        padding-bottom: $pd;
+        justify-content: start;
+        align-items: center;
+        padding-bottom: 0;
+        .c-card__tag__btn{
+            padding: 0.6rem;
+            background-color:$gray5;
+            border-radius: $tag-radius-l;
+            margin-right: 1rem;
+        }
+        span{
+            background: #fff;
+            color: $gray3;
+            font-size: $p;
+            font-weight: 600;
+            padding:0.5rem;
+        }
 
         div {
             display: flex;
             white-space: nowrap;
 
-            span {
-                margin: 2%;
-            }
-
         }
     }
 
     .c-card__text {
-        font-size: $font-size-m;
-        margin-top: $pd-3;
+        font-size: $font-size;
         color: $gray3;
+       align-self: flex-end;
     }
 
     .c-card__item__title {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
         width: 88%;
-        line-height: 26px;
         border-right: 1px solid $gray3;
         align-content: space-between;
-        padding-right: $m-2;
+
+       
+        h2{
+            line-height: 26px;
+            padding-bottom: 1rem;
+        }
 
     }
 
     .c-card__item__content {
         @extend .c-card__item__title;
 
-        padding-left: $m-2;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .c-card__item__content__item {
-            .content__item__top {
-                margin-bottom: 22%;
-            }
-
-            h3 {
-                font-size: $h2;
-                font-family: $english-font;
-                color: $gray1;
-                font-weight: 700;
-            }
-
-            span {
-                font-size: $font-size-m;
-                color: $gray3;
-            }
-        }
 
     }
 
@@ -312,30 +311,7 @@
 
 }
 
-.c-card-planReport-danger {
-    @extend .c-card-planReport;
-    border: 1px solid $red;
 
-    .c-card__tag {
-        span {
-            background: $hy-background-danger;
-        }
-    }
-
-    .c-card__item__footer {
-        span {
-            color: #fff;
-        }
-
-        color: #fff;
-        background: $hy-background-danger;
-        border-radius: 0 $card-radius $card-radius 0;
-    }
-
-    .c-card__item__content {
-        border-right: 1px solid #fff;
-    }
-}
 
 .c-card-lablePerson {
     display: flex;
@@ -422,7 +398,7 @@
     width: 425px;
     border-radius: 10px;
     box-shadow: none;
-    border: 2px solid $sec2;
+    border: 2px solid $hyweb-lighblue;
     .collapsible{
         border:none;
     }
@@ -470,7 +446,7 @@
     }
 
     .accordion-body__title {
-        padding: 2% 2% 0% 2%;
+        padding: 1.5rem 1.5rem 0 1.5rem;
     }
 
     .accordion-body__item {
@@ -512,7 +488,7 @@
     }
 
     .accordion-body__item {
-        padding: 2% 2%;
+        padding: 1.5rem;
     }
 }
 
@@ -540,12 +516,13 @@
 
 .c-toast-uploadSuccess {
     @extend .c-card;
-    width: 30.83%;
+   //width: 30.83%;
+    width: 370px;
     padding: 0;
     border-radius: $toast-radius;
 
     .c-toast-header {
-        padding: $pd-2;
+        padding: 1rem;
         border-radius: $toast-radius $toast-radius 0 0;
         background: $toast-header-background;
         display: flex;
@@ -556,7 +533,7 @@
     }
 
     .c-toast-body {
-        padding: $pd-2;
+        padding: 1rem;
 
         .c-toast-body__item__title {
             display: flex;
@@ -1002,7 +979,7 @@
         .c-modal-content__chooseMember {
             display: flex;
             margin: 0 0.75rem;
-
+           
             div {
                 display: flex;
                 flex-wrap: wrap;
@@ -1010,7 +987,7 @@
 
             .c-modal-content__chooseMember__title {
                 width: 100px;
-                padding: 0 0.5rem;
+                //padding: 0 0.5rem;
             }
 
             .chooseMember-tag {
@@ -1238,6 +1215,24 @@
     .c-modal-footer{
         align-self: flex-end;
     }
+}
+
+.c-modal-sample{
+@extend .c-modal-usuallyUseMember;
+width: 65vw;
+height: auto;
+min-height: auto;
+.c-modal-content{
+    .header__item__title{
+      font-size: $font-size-l;  
+    }
+    .accordion-body__item{
+.col{
+    font-size: $font-size-l;  
+}
+    }
+}
+
 }
 
 //dropdown

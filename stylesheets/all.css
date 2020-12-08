@@ -9451,6 +9451,8 @@ input[type=range]::-ms-thumb {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   top: 0;
   left: 0;
   bottom: 0;
@@ -9539,6 +9541,7 @@ input[type=range]::-ms-thumb {
 .l-side .c-sidebar-content__listGroup {
   height: calc(100vh - 380px);
   overflow: scroll;
+  padding-right: 0rem;
 }
 
 .l-side .c-sidebar-content__list__title {
@@ -9600,7 +9603,6 @@ input[type=range]::-ms-thumb {
 
 .l-main {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -9976,6 +9978,7 @@ input[type=range]::-ms-thumb {
           align-items: center;
   color: #042340;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .l-main-content .l-main-content__planlist .table-body .row .table-body__additem img, .l-main-content .l-main-content__wbslist .table-body .row .table-body__additem img {
@@ -10396,6 +10399,10 @@ input[type=range]::-ms-thumb {
   transition: ease .5s;
 }
 
+.sidebar__is-open .l-side .c-sidebar-content__listGroup {
+  padding-right: 2rem;
+}
+
 .sidebar__is-open .l-side .c-sidebar-content__list__content {
   display: block;
   opacity: 1;
@@ -10697,7 +10704,7 @@ input[type=range]::-ms-thumb {
   font-family: "Noto Sans TC", "sans-serif";
 }
 
-.c-card, .c-card-manhourSofar, .c-card-manhourSearch, .c-card-percent, .c-card-percentCheck, .c-card-planPerson, .c-card-planHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-department, .c-card-lableGroup, .c-accordion-general, .c-toast-uploadSuccess, .c-toast-uploadFailure, .c-toast-join, .c-toast-joinCancel {
+.c-card, .c-card-manhourSofar, .c-card-manhourSearch, .c-card-percent, .c-card-percentCheck, .c-card-planPerson, .c-card-planHotkey, .c-card-planReport, .c-card-department, .c-card-lableGroup, .c-accordion-general, .c-toast-uploadSuccess, .c-toast-uploadFailure, .c-toast-join, .c-toast-joinCancel {
   border-radius: 20px;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -10705,20 +10712,20 @@ input[type=range]::-ms-thumb {
   width: 17%;
 }
 
-.c-card h2, .c-card-manhourSofar h2, .c-card-manhourSearch h2, .c-card-percent h2, .c-card-percentCheck h2, .c-card-planPerson h2, .c-card-planHotkey h2, .c-card-planReport h2, .c-card-planReport-danger h2, .c-card-department h2, .c-card-lableGroup h2, .c-accordion-general h2, .c-toast-uploadSuccess h2, .c-toast-uploadFailure h2, .c-toast-join h2, .c-toast-joinCancel h2 {
+.c-card h2, .c-card-manhourSofar h2, .c-card-manhourSearch h2, .c-card-percent h2, .c-card-percentCheck h2, .c-card-planPerson h2, .c-card-planHotkey h2, .c-card-planReport h2, .c-card-department h2, .c-card-lableGroup h2, .c-accordion-general h2, .c-toast-uploadSuccess h2, .c-toast-uploadFailure h2, .c-toast-join h2, .c-toast-joinCancel h2 {
   font-size: 22px;
   font-weight: 700;
   line-height: 32px;
 }
 
-.c-card h3, .c-card-manhourSofar h3, .c-card-manhourSearch h3, .c-card-percent h3, .c-card-percentCheck h3, .c-card-planPerson h3, .c-card-planHotkey h3, .c-card-planReport h3, .c-card-planReport-danger h3, .c-card-department h3, .c-card-lableGroup h3, .c-accordion-general h3, .c-toast-uploadSuccess h3, .c-toast-uploadFailure h3, .c-toast-join h3, .c-toast-joinCancel h3 {
+.c-card h3, .c-card-manhourSofar h3, .c-card-manhourSearch h3, .c-card-percent h3, .c-card-percentCheck h3, .c-card-planPerson h3, .c-card-planHotkey h3, .c-card-planReport h3, .c-card-department h3, .c-card-lableGroup h3, .c-accordion-general h3, .c-toast-uploadSuccess h3, .c-toast-uploadFailure h3, .c-toast-join h3, .c-toast-joinCancel h3 {
   font-size: 16px;
   font-weight: 500;
   line-height: 25px;
   font-family: "Baloo 2", cursive, "Noto Sans TC";
 }
 
-.c-card-manhourSofar .c-card__userInformation, .c-card-manhourSearch .c-card__userInformation, .c-card-percent .c-card__userInformation, .c-card-percentCheck .c-card__userInformation, .c-card-planPerson .c-card__userInformation, .c-card-planHotkey .c-card__userInformation, .c-card-planReport .c-card__userInformation, .c-card-planReport-danger .c-card__userInformation, .c-card-department .c-card__userInformation {
+.c-card-manhourSofar .c-card__userInformation, .c-card-manhourSearch .c-card__userInformation, .c-card-percent .c-card__userInformation, .c-card-percentCheck .c-card__userInformation, .c-card-planPerson .c-card__userInformation, .c-card-planHotkey .c-card__userInformation, .c-card-planReport .c-card__userInformation, .c-card-department .c-card__userInformation {
   margin-top: 40px;
   line-height: 35px;
   border-bottom: 1px solid #BDBDBD;
@@ -10727,15 +10734,15 @@ input[type=range]::-ms-thumb {
   display: flex;
 }
 
-.c-card-manhourSofar .c-card__userInformation h3, .c-card-manhourSearch .c-card__userInformation h3, .c-card-percent .c-card__userInformation h3, .c-card-percentCheck .c-card__userInformation h3, .c-card-planPerson .c-card__userInformation h3, .c-card-planHotkey .c-card__userInformation h3, .c-card-planReport .c-card__userInformation h3, .c-card-planReport-danger .c-card__userInformation h3, .c-card-department .c-card__userInformation h3 {
+.c-card-manhourSofar .c-card__userInformation h3, .c-card-manhourSearch .c-card__userInformation h3, .c-card-percent .c-card__userInformation h3, .c-card-percentCheck .c-card__userInformation h3, .c-card-planPerson .c-card__userInformation h3, .c-card-planHotkey .c-card__userInformation h3, .c-card-planReport .c-card__userInformation h3, .c-card-department .c-card__userInformation h3 {
   font-weight: 400;
 }
 
-.c-card-manhourSofar .c-card__content, .c-card-manhourSearch .c-card__content, .c-card-percent .c-card__content, .c-card-percentCheck .c-card__content, .c-card-planPerson .c-card__content, .c-card-planHotkey .c-card__content, .c-card-planReport .c-card__content, .c-card-planReport-danger .c-card__content, .c-card-department .c-card__content {
+.c-card-manhourSofar .c-card__content, .c-card-manhourSearch .c-card__content, .c-card-percent .c-card__content, .c-card-percentCheck .c-card__content, .c-card-planPerson .c-card__content, .c-card-planHotkey .c-card__content, .c-card-planReport .c-card__content, .c-card-department .c-card__content {
   margin-top: 10px;
 }
 
-.c-card-manhourSofar .c-card__item, .c-card-manhourSearch .c-card__item, .c-card-percent .c-card__item, .c-card-percentCheck .c-card__item, .c-card-planPerson .c-card__item, .c-card-planHotkey .c-card__item, .c-card-planReport .c-card__item, .c-card-planReport-danger .c-card__item, .c-card-department .c-card__item {
+.c-card-manhourSofar .c-card__item, .c-card-manhourSearch .c-card__item, .c-card-percent .c-card__item, .c-card-percentCheck .c-card__item, .c-card-planPerson .c-card__item, .c-card-planHotkey .c-card__item, .c-card-planReport .c-card__item, .c-card-department .c-card__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10748,13 +10755,13 @@ input[type=range]::-ms-thumb {
   margin-top: 15px;
 }
 
-.c-card-manhourSofar .c-card__item .c-card__item__title, .c-card-manhourSearch .c-card__item .c-card__item__title, .c-card-percent .c-card__item .c-card__item__title, .c-card-percentCheck .c-card__item .c-card__item__title, .c-card-planPerson .c-card__item .c-card__item__title, .c-card-planHotkey .c-card__item .c-card__item__title, .c-card-planReport .c-card__item .c-card__item__title, .c-card-planReport-danger .c-card__item .c-card__item__title, .c-card-department .c-card__item .c-card__item__title, .c-card-manhourSofar .c-card__item .c-card-planReport .c-card__item__content, .c-card-manhourSearch .c-card__item .c-card-planReport .c-card__item__content, .c-card-percent .c-card__item .c-card-planReport .c-card__item__content, .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__content, .c-card-planPerson .c-card__item .c-card-planReport .c-card__item__content, .c-card-planHotkey .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport .c-card__item .c-card__item__content, .c-card-department .c-card__item .c-card-planReport .c-card__item__content, .c-card-manhourSofar .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-manhourSearch .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planPerson .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planHotkey .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger .c-card__item .c-card__item__content, .c-card-department .c-card__item .c-card-planReport-danger .c-card__item__content {
+.c-card-manhourSofar .c-card__item .c-card__item__title, .c-card-manhourSearch .c-card__item .c-card__item__title, .c-card-percent .c-card__item .c-card__item__title, .c-card-percentCheck .c-card__item .c-card__item__title, .c-card-planPerson .c-card__item .c-card__item__title, .c-card-planHotkey .c-card__item .c-card__item__title, .c-card-planReport .c-card__item .c-card__item__title, .c-card-department .c-card__item .c-card__item__title, .c-card-manhourSofar .c-card__item .c-card-planReport .c-card__item__content, .c-card-manhourSearch .c-card__item .c-card-planReport .c-card__item__content, .c-card-percent .c-card__item .c-card-planReport .c-card__item__content, .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__content, .c-card-planPerson .c-card__item .c-card-planReport .c-card__item__content, .c-card-planHotkey .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport .c-card__item .c-card__item__content, .c-card-department .c-card__item .c-card-planReport .c-card__item__content {
   color: #1E4160;
   font-size: 16px;
   font-weight: 400;
 }
 
-.c-card-manhourSofar .c-card__item .c-card__item__time, .c-card-manhourSearch .c-card__item .c-card__item__time, .c-card-percent .c-card__item .c-card__item__time, .c-card-percentCheck .c-card__item .c-card__item__time, .c-card-planPerson .c-card__item .c-card__item__time, .c-card-planHotkey .c-card__item .c-card__item__time, .c-card-planReport .c-card__item .c-card__item__time, .c-card-planReport-danger .c-card__item .c-card__item__time, .c-card-department .c-card__item .c-card__item__time {
+.c-card-manhourSofar .c-card__item .c-card__item__time, .c-card-manhourSearch .c-card__item .c-card__item__time, .c-card-percent .c-card__item .c-card__item__time, .c-card-percentCheck .c-card__item .c-card__item__time, .c-card-planPerson .c-card__item .c-card__item__time, .c-card-planHotkey .c-card__item .c-card__item__time, .c-card-planReport .c-card__item .c-card__item__time, .c-card-department .c-card__item .c-card__item__time {
   font-size: 22px;
   font-weight: 700;
   font-family: "Baloo 2", cursive, "Noto Sans TC";
@@ -10790,32 +10797,33 @@ input[type=range]::-ms-thumb {
   margin-right: 12%;
 }
 
-.c-card-planPerson, .c-card-planHotkey, .c-card-planReport, .c-card-planReport-danger {
+.c-card-planPerson, .c-card-planHotkey, .c-card-planReport {
   width: 21.5%;
 }
 
-.c-card-planPerson .c-card__tag, .c-card-planHotkey .c-card__tag, .c-card-planReport .c-card__tag, .c-card-planReport-danger .c-card__tag {
+.c-card-planPerson .c-card__tag, .c-card-planHotkey .c-card__tag, .c-card-planReport .c-card__tag {
   padding-top: 10px;
+  display: inline-block;
   padding-bottom: 20px;
 }
 
-.c-card-planPerson .c-card__tag span, .c-card-planHotkey .c-card__tag span, .c-card-planReport .c-card__tag span, .c-card-planReport-danger .c-card__tag span {
+.c-card-planPerson .c-card__tag span, .c-card-planHotkey .c-card__tag span, .c-card-planReport .c-card__tag span {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
   background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
   color: #fff;
-  padding: 2% 9%;
+  padding: 0.5rem 1rem;
   font-weight: 400;
   border-radius: 5px;
   font-size: 14px;
   font-family: "Noto Sans TC", "sans-serif";
 }
 
-.c-card-planPerson h2, .c-card-planHotkey h2, .c-card-planReport h2, .c-card-planReport-danger h2 {
+.c-card-planPerson h2, .c-card-planHotkey h2, .c-card-planReport h2 {
   font-size: 16px;
   line-height: 28px;
 }
 
-.c-card-planPerson .c-card__userInformation, .c-card-planHotkey .c-card__userInformation, .c-card-planReport .c-card__userInformation, .c-card-planReport-danger .c-card__userInformation {
+.c-card-planPerson .c-card__userInformation, .c-card-planHotkey .c-card__userInformation, .c-card-planReport .c-card__userInformation {
   font-size: 14px;
   margin-top: 10px;
   color: #8495A4;
@@ -10878,7 +10886,7 @@ input[type=range]::-ms-thumb {
   font-family: "Baloo 2", cursive, "Noto Sans TC";
 }
 
-.c-card-department .c-card__item__title, .c-card-department .c-card-planReport .c-card__item__content, .c-card-planReport .c-card-department .c-card__item__content, .c-card-department .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger .c-card-department .c-card__item__content {
+.c-card-department .c-card__item__title, .c-card-department .c-card-planReport .c-card__item__content, .c-card-planReport .c-card-department .c-card__item__content {
   line-height: 1.8rem;
 }
 
@@ -10890,15 +10898,16 @@ input[type=range]::-ms-thumb {
   margin-top: 15px;
 }
 
-.c-card-planReport, .c-card-planReport-danger {
-  width: 87%;
+.c-card-planReport {
+  width: 879px;
+  min-height: 166px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0;
 }
 
-.c-card-planReport .c-card__item, .c-card-planReport-danger .c-card__item {
+.c-card-planReport .c-card__item {
   padding: 20px 0 20px 20px;
   -webkit-box-align: normal;
       -ms-flex-align: normal;
@@ -10910,92 +10919,85 @@ input[type=range]::-ms-thumb {
   width: 90%;
 }
 
-.c-card-planReport .o-card__star, .c-card-planReport-danger .o-card__star {
+.c-card-planReport .o-card__iconBtn {
   width: 24px;
   height: 24px;
 }
 
-.c-card-planReport .o-card__star-active, .c-card-planReport-danger .o-card__star-active {
+.c-card-planReport .o-card__star-active {
   background-image: url(../../img/o-star_active.svg);
 }
 
-.c-card-planReport .o-card__star-default, .c-card-planReport-danger .o-card__star-default {
+.c-card-planReport .o-card__star-default {
   background-image: url(../../img/o-star_default.svg);
 }
 
-.c-card-planReport h2, .c-card-planReport-danger h2 {
+.c-card-planReport h2 {
   margin-right: 20px;
   color: #042340;
 }
 
-.c-card-planReport .c-card__tag, .c-card-planReport-danger .c-card__tag {
+.c-card-planReport .c-card__tag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-top: 0;
-  padding-bottom: 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 0;
 }
 
-.c-card-planReport .c-card__tag div, .c-card-planReport-danger .c-card__tag div {
+.c-card-planReport .c-card__tag .c-card__tag__btn {
+  padding: 0.6rem;
+  background-color: #EDF2F5;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.c-card-planReport .c-card__tag span {
+  background: #fff;
+  color: #8495A4;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+
+.c-card-planReport .c-card__tag div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   white-space: nowrap;
 }
 
-.c-card-planReport .c-card__tag div span, .c-card-planReport-danger .c-card__tag div span {
-  margin: 2%;
-}
-
-.c-card-planReport .c-card__text, .c-card-planReport-danger .c-card__text {
-  font-size: 14px;
-  margin-top: 30px;
+.c-card-planReport .c-card__text {
+  font-size: 12px;
   color: #8495A4;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
-.c-card-planReport .c-card__item__title, .c-card-planReport-danger .c-card__item__title, .c-card-planReport .c-card__item__content, .c-card-planReport-danger .c-card__item__content {
-  display: block;
-  width: 88%;
-  line-height: 26px;
-  border-right: 1px solid #8495A4;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  padding-right: 20px;
-}
-
-.c-card-planReport .c-card__item__content, .c-card-planReport-danger .c-card__item__content {
-  padding-left: 20px;
+.c-card-planReport .c-card__item__title, .c-card-planReport .c-card__item__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 88%;
+  border-right: 1px solid #8495A4;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
 }
 
-.c-card-planReport .c-card__item__content .c-card__item__content__item .content__item__top, .c-card-planReport-danger .c-card__item__content .c-card__item__content__item .content__item__top {
-  margin-bottom: 22%;
+.c-card-planReport .c-card__item__title h2, .c-card-planReport .c-card__item__content h2 {
+  line-height: 26px;
+  padding-bottom: 1rem;
 }
 
-.c-card-planReport .c-card__item__content .c-card__item__content__item h3, .c-card-planReport-danger .c-card__item__content .c-card__item__content__item h3 {
-  font-size: 22px;
-  font-family: "Baloo 2", cursive, "Noto Sans TC";
-  color: #042340;
-  font-weight: 700;
-}
-
-.c-card-planReport .c-card__item__content .c-card__item__content__item span, .c-card-planReport-danger .c-card__item__content .c-card__item__content__item span {
-  font-size: 14px;
-  color: #8495A4;
-}
-
-.c-card-planReport .c-card__item__footer, .c-card-planReport-danger .c-card__item__footer {
+.c-card-planReport .c-card__item__footer {
   width: 12%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11008,39 +11010,15 @@ input[type=range]::-ms-thumb {
           align-items: center;
 }
 
-.c-card-planReport .c-card__item__footer h3, .c-card-planReport-danger .c-card__item__footer h3 {
+.c-card-planReport .c-card__item__footer h3 {
   font-size: 30px;
   font-weight: 700;
   margin: 20px 0;
 }
 
-.c-card-planReport .c-card__item__footer span, .c-card-planReport-danger .c-card__item__footer span {
+.c-card-planReport .c-card__item__footer span {
   font-size: 14px;
   color: #8495A4;
-}
-
-.c-card-planReport-danger {
-  border: 1px solid #FB5B29;
-}
-
-.c-card-planReport-danger .c-card__tag span {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #FB5B29;
-  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #FB5B29;
-}
-
-.c-card-planReport-danger .c-card__item__footer {
-  color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #FB5B29;
-  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #FB5B29;
-  border-radius: 0 20px 20px 0;
-}
-
-.c-card-planReport-danger .c-card__item__footer span {
-  color: #fff;
-}
-
-.c-card-planReport-danger .c-card__item__content {
-  border-right: 1px solid #fff;
 }
 
 .c-card-lablePerson {
@@ -11147,7 +11125,7 @@ input[type=range]::-ms-thumb {
   border-radius: 10px;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border: 2px solid #BAD4E5;
+  border: 2px solid #E2F1FE;
 }
 
 .c-accordion-group .collapsible, .c-accordion-plan .collapsible, .c-accordion-general .collapsible {
@@ -11213,7 +11191,7 @@ input[type=range]::-ms-thumb {
 }
 
 .c-accordion-group .accordion-body__title, .c-accordion-plan .accordion-body__title, .c-accordion-general .accordion-body__title {
-  padding: 2% 2% 0% 2%;
+  padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .c-accordion-group .accordion-body__item, .c-accordion-plan .accordion-body__item, .c-accordion-general .accordion-body__item {
@@ -11254,7 +11232,7 @@ input[type=range]::-ms-thumb {
 }
 
 .c-accordion-plan .accordion-body__item, .c-accordion-general .accordion-body__item {
-  padding: 2% 2%;
+  padding: 1.5rem;
 }
 
 .c-accordion-general .accordion-body__item {
@@ -11277,13 +11255,13 @@ input[type=range]::-ms-thumb {
 }
 
 .c-toast-uploadSuccess, .c-toast-uploadFailure {
-  width: 30.83%;
+  width: 370px;
   padding: 0;
   border-radius: 10px;
 }
 
 .c-toast-uploadSuccess .c-toast-header, .c-toast-uploadFailure .c-toast-header {
-  padding: 20px;
+  padding: 1rem;
   border-radius: 10px 10px 0 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
   background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
@@ -11301,7 +11279,7 @@ input[type=range]::-ms-thumb {
 }
 
 .c-toast-uploadSuccess .c-toast-body, .c-toast-uploadFailure .c-toast-body {
-  padding: 20px;
+  padding: 1rem;
 }
 
 .c-toast-uploadSuccess .c-toast-body .c-toast-body__item__title, .c-toast-uploadFailure .c-toast-body .c-toast-body__item__title {
@@ -11575,7 +11553,7 @@ input[type=range]::-ms-thumb {
   color: #1E4160;
 }
 
-.c-modal, .c-modal-systemDialog, .c-modal-alert, .c-modal-chooseGroup, .c-modal-addGroup, .c-modal-usuallyUseMember {
+.c-modal, .c-modal-systemDialog, .c-modal-alert, .c-modal-chooseGroup, .c-modal-addGroup, .c-modal-usuallyUseMember, .c-modal-sample {
   width: 41%;
   height: 40%;
   padding: 2%;
@@ -11585,7 +11563,7 @@ input[type=range]::-ms-thumb {
   background-color: #fff;
 }
 
-.c-modal .c-modal-title, .c-modal-systemDialog .c-modal-title, .c-modal-alert .c-modal-title, .c-modal-chooseGroup .c-modal-title, .c-modal-addGroup .c-modal-title, .c-modal-usuallyUseMember .c-modal-title {
+.c-modal .c-modal-title, .c-modal-systemDialog .c-modal-title, .c-modal-alert .c-modal-title, .c-modal-chooseGroup .c-modal-title, .c-modal-addGroup .c-modal-title, .c-modal-usuallyUseMember .c-modal-title, .c-modal-sample .c-modal-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11596,25 +11574,25 @@ input[type=range]::-ms-thumb {
           align-items: center;
 }
 
-.c-modal .c-modal-title div, .c-modal-systemDialog .c-modal-title div, .c-modal-alert .c-modal-title div, .c-modal-chooseGroup .c-modal-title div, .c-modal-addGroup .c-modal-title div, .c-modal-usuallyUseMember .c-modal-title div {
+.c-modal .c-modal-title div, .c-modal-systemDialog .c-modal-title div, .c-modal-alert .c-modal-title div, .c-modal-chooseGroup .c-modal-title div, .c-modal-addGroup .c-modal-title div, .c-modal-usuallyUseMember .c-modal-title div, .c-modal-sample .c-modal-title div {
   margin-left: 1rem;
   color: #042340;
   font-size: 22px;
   font-weight: 700;
 }
 
-.c-modal .c-modal-content, .c-modal-systemDialog .c-modal-content, .c-modal-alert .c-modal-content, .c-modal-chooseGroup .c-modal-content, .c-modal-addGroup .c-modal-content, .c-modal-usuallyUseMember .c-modal-content {
+.c-modal .c-modal-content, .c-modal-systemDialog .c-modal-content, .c-modal-alert .c-modal-content, .c-modal-chooseGroup .c-modal-content, .c-modal-addGroup .c-modal-content, .c-modal-usuallyUseMember .c-modal-content, .c-modal-sample .c-modal-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 24px 0;
 }
 
-.c-modal .c-modal-content p, .c-modal-systemDialog .c-modal-content p, .c-modal-alert .c-modal-content p, .c-modal-chooseGroup .c-modal-content p, .c-modal-addGroup .c-modal-content p, .c-modal-usuallyUseMember .c-modal-content p {
+.c-modal .c-modal-content p, .c-modal-systemDialog .c-modal-content p, .c-modal-alert .c-modal-content p, .c-modal-chooseGroup .c-modal-content p, .c-modal-addGroup .c-modal-content p, .c-modal-usuallyUseMember .c-modal-content p, .c-modal-sample .c-modal-content p {
   font-size: 16px;
 }
 
-.c-modal .c-modal-footer, .c-modal-systemDialog .c-modal-footer, .c-modal-alert .c-modal-footer, .c-modal-chooseGroup .c-modal-footer, .c-modal-addGroup .c-modal-footer, .c-modal-usuallyUseMember .c-modal-footer {
+.c-modal .c-modal-footer, .c-modal-systemDialog .c-modal-footer, .c-modal-alert .c-modal-footer, .c-modal-chooseGroup .c-modal-footer, .c-modal-addGroup .c-modal-footer, .c-modal-usuallyUseMember .c-modal-footer, .c-modal-sample .c-modal-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11627,7 +11605,7 @@ input[type=range]::-ms-thumb {
           align-items: flex-end;
 }
 
-.c-modal .c-modal-footer button, .c-modal-systemDialog .c-modal-footer button, .c-modal-alert .c-modal-footer button, .c-modal-chooseGroup .c-modal-footer button, .c-modal-addGroup .c-modal-footer button, .c-modal-usuallyUseMember .c-modal-footer button {
+.c-modal .c-modal-footer button, .c-modal-systemDialog .c-modal-footer button, .c-modal-alert .c-modal-footer button, .c-modal-chooseGroup .c-modal-footer button, .c-modal-addGroup .c-modal-footer button, .c-modal-usuallyUseMember .c-modal-footer button, .c-modal-sample .c-modal-footer button {
   margin: 0 0.5rem;
 }
 
@@ -11765,13 +11743,13 @@ input[type=range]::-ms-thumb {
           justify-content: flex-end;
 }
 
-.c-modal-addGroup, .c-modal-usuallyUseMember {
+.c-modal-addGroup, .c-modal-usuallyUseMember, .c-modal-sample {
   width: 80%;
   min-height: 76vh;
   max-height: 90vh;
 }
 
-.c-modal-addGroup .c-modal-closeBtn, .c-modal-usuallyUseMember .c-modal-closeBtn {
+.c-modal-addGroup .c-modal-closeBtn, .c-modal-usuallyUseMember .c-modal-closeBtn, .c-modal-sample .c-modal-closeBtn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11780,7 +11758,7 @@ input[type=range]::-ms-thumb {
           justify-content: flex-end;
 }
 
-.c-modal-addGroup .c-modal-btnList, .c-modal-usuallyUseMember .c-modal-btnList {
+.c-modal-addGroup .c-modal-btnList, .c-modal-usuallyUseMember .c-modal-btnList, .c-modal-sample .c-modal-btnList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11792,7 +11770,7 @@ input[type=range]::-ms-thumb {
           align-items: center;
 }
 
-.c-modal-addGroup .c-modal-btnList a, .c-modal-usuallyUseMember .c-modal-btnList a {
+.c-modal-addGroup .c-modal-btnList a, .c-modal-usuallyUseMember .c-modal-btnList a, .c-modal-sample .c-modal-btnList a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11803,11 +11781,11 @@ input[type=range]::-ms-thumb {
           align-items: center;
 }
 
-.c-modal-addGroup .c-modal-btnList a img, .c-modal-usuallyUseMember .c-modal-btnList a img {
+.c-modal-addGroup .c-modal-btnList a img, .c-modal-usuallyUseMember .c-modal-btnList a img, .c-modal-sample .c-modal-btnList a img {
   margin-right: 0.5rem;
 }
 
-.c-modal-addGroup .c-modal-addGroup__content, .c-modal-usuallyUseMember .c-modal-addGroup__content {
+.c-modal-addGroup .c-modal-addGroup__content, .c-modal-usuallyUseMember .c-modal-addGroup__content, .c-modal-sample .c-modal-addGroup__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11816,16 +11794,16 @@ input[type=range]::-ms-thumb {
   height: 98%;
 }
 
-.c-modal-addGroup .c-modal-addGroup__content .c-modal-addGroup__content__item, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-addGroup__content__item {
+.c-modal-addGroup .c-modal-addGroup__content .c-modal-addGroup__content__item, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-addGroup__content__item, .c-modal-sample .c-modal-addGroup__content .c-modal-addGroup__content__item {
   width: 100%;
 }
 
-.c-modal-addGroup .c-modal-content, .c-modal-usuallyUseMember .c-modal-content {
+.c-modal-addGroup .c-modal-content, .c-modal-usuallyUseMember .c-modal-content, .c-modal-sample .c-modal-content {
   display: block;
   height: auto;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__select, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__select {
+.c-modal-addGroup .c-modal-content .c-modal-content__select, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__select, .c-modal-sample .c-modal-content .c-modal-content__select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11837,23 +11815,23 @@ input[type=range]::-ms-thumb {
   border-bottom: 1px solid #BAD4E5;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__select .input-title span, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__select .input-title span {
+.c-modal-addGroup .c-modal-content .c-modal-content__select .input-title span, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__select .input-title span, .c-modal-sample .c-modal-content .c-modal-content__select .input-title span {
   color: #FB5B29;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__select input, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__select input {
+.c-modal-addGroup .c-modal-content .c-modal-content__select input, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__select input, .c-modal-sample .c-modal-content .c-modal-content__select input {
   margin-bottom: 0;
   padding: 0 0.5rem;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember {
+.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember, .c-modal-sample .c-modal-content .c-modal-content__chooseMember {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 0.75rem;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember div, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember div {
+.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember div, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember div, .c-modal-sample .c-modal-content .c-modal-content__chooseMember div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11861,12 +11839,11 @@ input[type=range]::-ms-thumb {
       flex-wrap: wrap;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .c-modal-content__chooseMember__title, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .c-modal-content__chooseMember__title {
+.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .c-modal-content__chooseMember__title, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .c-modal-content__chooseMember__title, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .c-modal-content__chooseMember__title {
   width: 100px;
-  padding: 0 0.5rem;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember-tag, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember-tag {
+.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember-tag, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember-tag, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember-tag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11883,15 +11860,15 @@ input[type=range]::-ms-thumb {
   font-family: "Noto Sans TC", "sans-serif";
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember-tag .chooseMember-tag__name, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember-tag .chooseMember-tag__name {
+.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember-tag .chooseMember-tag__name, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember-tag .chooseMember-tag__name, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember-tag .chooseMember-tag__name {
   margin-right: 1.5rem;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__memberList, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList {
+.c-modal-addGroup .c-modal-content .c-modal-content__memberList, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList, .c-modal-sample .c-modal-content .c-modal-content__memberList {
   padding-left: 0.75rem;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__title, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__title {
+.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__title, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__title, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__title {
   margin-bottom: 1rem;
   color: #8495A4;
   display: -webkit-box;
@@ -11902,7 +11879,7 @@ input[type=range]::-ms-thumb {
           justify-content: space-between;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__group, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__group {
+.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__group, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__group, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11910,15 +11887,15 @@ input[type=range]::-ms-thumb {
       flex-wrap: wrap;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__group .c-card-lablePerson {
+.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__group .c-card-lablePerson {
   margin: 0 0 1rem 0.5rem;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__group .is-active, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__group .is-active {
+.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__group .is-active, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__group .is-active, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__group .is-active {
   background-color: #E2F1FE;
 }
 
-.c-modal-addGroup .c-modal-footer, .c-modal-usuallyUseMember .c-modal-footer {
+.c-modal-addGroup .c-modal-footer, .c-modal-usuallyUseMember .c-modal-footer, .c-modal-sample .c-modal-footer {
   -ms-flex-item-align: end;
       align-self: flex-end;
   -webkit-box-pack: end;
@@ -12063,12 +12040,12 @@ input[type=range]::-ms-thumb {
   overflow: scroll;
 }
 
-.c-modal-usuallyUseMember {
+.c-modal-usuallyUseMember, .c-modal-sample {
   width: 40%;
   height: 85vh;
 }
 
-.c-modal-usuallyUseMember .c-modal-position {
+.c-modal-usuallyUseMember .c-modal-position, .c-modal-sample .c-modal-position {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12077,11 +12054,11 @@ input[type=range]::-ms-thumb {
   height: 92%;
 }
 
-.c-modal-usuallyUseMember .c-modal-closeBtn {
+.c-modal-usuallyUseMember .c-modal-closeBtn, .c-modal-sample .c-modal-closeBtn {
   width: 100%;
 }
 
-.c-modal-usuallyUseMember .c-modal-content__title {
+.c-modal-usuallyUseMember .c-modal-content__title, .c-modal-sample .c-modal-content__title {
   font-size: 22px;
   margin-top: -1rem;
   color: #042340;
@@ -12090,21 +12067,35 @@ input[type=range]::-ms-thumb {
   width: 100%;
 }
 
-.c-modal-usuallyUseMember .c-modal-content {
+.c-modal-usuallyUseMember .c-modal-content, .c-modal-sample .c-modal-content {
   width: 100%;
 }
 
-.c-modal-usuallyUseMember .c-accordion-group, .c-modal-usuallyUseMember .c-accordion-plan, .c-modal-usuallyUseMember .c-accordion-general {
+.c-modal-usuallyUseMember .c-accordion-group, .c-modal-sample .c-accordion-group, .c-modal-usuallyUseMember .c-accordion-plan, .c-modal-sample .c-accordion-plan, .c-modal-usuallyUseMember .c-accordion-general, .c-modal-sample .c-accordion-general {
   width: 100%;
 }
 
-.c-modal-usuallyUseMember .c-modal-content__item {
+.c-modal-usuallyUseMember .c-modal-content__item, .c-modal-sample .c-modal-content__item {
   margin: 1rem 0 1rem 0;
 }
 
-.c-modal-usuallyUseMember .c-modal-footer {
+.c-modal-usuallyUseMember .c-modal-footer, .c-modal-sample .c-modal-footer {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.c-modal-sample {
+  width: 65vw;
+  height: auto;
+  min-height: auto;
+}
+
+.c-modal-sample .c-modal-content .header__item__title {
+  font-size: 18px;
+}
+
+.c-modal-sample .c-modal-content .accordion-body__item .col {
+  font-size: 18px;
 }
 
 .c-dropdown-plan .select-wrapper, .c-dropdown-planContent .select-wrapper, .c-dropdown-status .select-wrapper, .c-dropdown-general .select-wrapper, .c-dropdown-department .select-wrapper, .c-dropdown-departmentCheck .select-wrapper {
@@ -13166,7 +13157,7 @@ input[type=range]::-ms-thumb {
   display: none;
 }
 
-.l-main-content .l-main-content-item .c-card-planPerson, .l-main-content .l-main-content-item .c-card-planHotkey, .l-main-content .l-main-content-item .c-card-planReport, .l-main-content .l-main-content-item .c-card-planReport-danger {
+.l-main-content .l-main-content-item .c-card-planPerson, .l-main-content .l-main-content-item .c-card-planHotkey, .l-main-content .l-main-content-item .c-card-planReport {
   width: 23%;
   margin: 0 1% 2.5% 1%;
   max-width: 300px;
@@ -13222,7 +13213,7 @@ input[type=range]::-ms-thumb {
   font-weight: 400;
 }
 
-.change-card-to-list .l-main-content-item .c-card-planPerson, .change-card-to-list .l-main-content-item .c-card-planHotkey, .change-card-to-list .l-main-content-item .c-card-planReport, .change-card-to-list .l-main-content-item .c-card-planReport-danger {
+.change-card-to-list .l-main-content-item .c-card-planPerson, .change-card-to-list .l-main-content-item .c-card-planHotkey, .change-card-to-list .l-main-content-item .c-card-planReport {
   width: 100%;
   margin: 0;
   padding: 20px 0px 20px 3rem;
@@ -13239,7 +13230,7 @@ input[type=range]::-ms-thumb {
   border-bottom: 1px solid #BAD4E5;
 }
 
-.change-card-to-list .l-main-content-item .c-card-planPerson .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-planReport-danger .c-card__userInformation {
+.change-card-to-list .l-main-content-item .c-card-planPerson .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__userInformation {
   width: 10%;
   margin-top: 0;
   color: #042340;
@@ -13250,25 +13241,25 @@ input[type=range]::-ms-thumb {
   font-size: 16px;
 }
 
-.change-card-to-list .l-main-content-item .c-card-planPerson .c-card__userInformation .c-card__userInformation__position, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__userInformation .c-card__userInformation__position, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__userInformation .c-card__userInformation__position, .change-card-to-list .l-main-content-item .c-card-planReport-danger .c-card__userInformation .c-card__userInformation__position {
+.change-card-to-list .l-main-content-item .c-card-planPerson .c-card__userInformation .c-card__userInformation__position, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__userInformation .c-card__userInformation__position, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__userInformation .c-card__userInformation__position {
   display: none;
 }
 
-.change-card-to-list .l-main-content-item .c-card-planPerson .c-card__content, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__content, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__content, .change-card-to-list .l-main-content-item .c-card-planReport-danger .c-card__content {
+.change-card-to-list .l-main-content-item .c-card-planPerson .c-card__content, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__content, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__content {
   margin-top: 0;
   width: 10%;
 }
 
-.change-card-to-list .l-main-content-item .c-card-planPerson .c-card__item, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__item, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__item, .change-card-to-list .l-main-content-item .c-card-planReport-danger .c-card__item {
+.change-card-to-list .l-main-content-item .c-card-planPerson .c-card__item, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__item, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__item {
   margin-top: 0;
 }
 
-.change-card-to-list .l-main-content-item .c-card-planPerson .c-card__item__title, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__item__title, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__item__title, .change-card-to-list .l-main-content-item .c-card-planReport-danger .c-card__item__title, .c-card-planReport .change-card-to-list .l-main-content-item .c-card-planPerson .c-card__item__content, .c-card-planReport .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__item__content, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__item__content, .c-card-planReport-danger .change-card-to-list .l-main-content-item .c-card-planPerson .c-card__item__content, .c-card-planReport-danger .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__item__content, .change-card-to-list .l-main-content-item .c-card-planReport-danger .c-card__item__content {
+.change-card-to-list .l-main-content-item .c-card-planPerson .c-card__item__title, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__item__title, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__item__title, .c-card-planReport .change-card-to-list .l-main-content-item .c-card-planPerson .c-card__item__content, .c-card-planReport .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__item__content, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__item__content {
   display: none;
   margin-top: 0;
 }
 
-.change-card-to-list .l-main-content-item .c-card-planPerson .c-card__item__time, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__item__time, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__item__time, .change-card-to-list .l-main-content-item .c-card-planReport-danger .c-card__item__time {
+.change-card-to-list .l-main-content-item .c-card-planPerson .c-card__item__time, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__item__time, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__item__time {
   font-size: 16px;
   font-family: "Noto Sans TC", "sans-serif";
 }
