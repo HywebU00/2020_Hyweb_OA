@@ -201,24 +201,21 @@
 
 .c-card-planReport {
     @extend .c-card-planPerson;
-    width:879px;
+    //width:879px;
+    //max-width: 879px;
+    min-width:879px;
     min-height: 166px;
     display: flex;
     padding: 0;
 
     .c-card__item {
-        padding: $pd-2 0 $pd-2 $pd-2;
+        padding: $pd-2 $pd-3;
         align-items: normal;
         margin-top: 0;
         justify-content: normal;
-        width: 90%;
+        width: 100%;
 
     }
-
-    // .o-card__star {
-    //     width: 24px;
-    //     height: 24px;
-    // }
     .o-card__iconBtn {
         width: 24px;
         height: 24px;
@@ -233,7 +230,6 @@
     }
 
     h2 {
-        margin-right: $m-2;
         color: $gray1;
     }
 
@@ -243,6 +239,7 @@
         justify-content: start;
         align-items: center;
         padding-bottom: 0;
+        // margin-bottom: 0.5rem;
         .c-card__tag__btn{
             padding: 0.6rem;
             background-color:$gray5;
@@ -266,53 +263,131 @@
 
     .c-card__text {
         font-size: $font-size;
+        width: 100%;
         color: $gray3;
-       align-self: flex-end;
+        align-self: flex-end;
+        display: flex;
+        justify-content: space-between;
+        div{
+            border-right: 1px solid $gray4;
+            padding:0 0.5rem;
+            &:first-child{
+                padding-left:0; 
+            }
+            &:last-child{
+                border:0;
+                padding-right: 0;
+            }
+        }
+       
     }
 
     .c-card__item__title {
         display: flex;
         flex-wrap: wrap;
-        width: 88%;
-        border-right: 1px solid $gray3;
+        width: 45%;
+        border-right: 1px solid $gray4;
         align-content: space-between;
+        padding-right: $pd-2;
 
-       
         h2{
             line-height: 26px;
-            padding-bottom: 1rem;
+            margin-bottom: 1rem;
         }
 
     }
 
     .c-card__item__content {
         @extend .c-card__item__title;
-
+        width: 20%;
+        padding: 0 $pd-2;
+        .c-card__item__content__list{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            .row{
+                width: 100%;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-bottom: 0;
+            }
+          
+            .list__item{
+                display: flex; 
+                margin:0.5rem 0;
+                height: $pd-2;
+                
+                justify-content: space-between;
+                .col{
+                    padding: 0;
+                }
+                .list__item__num{
+                    color: $gray1;
+                    font-family: $english-font;
+                }
+                .list__item__title{
+                   font-size:$font-size ;
+                   color: $gray3;
+                   margin-right: $pd-2;
+                }
+                &:last-child{
+                   margin-bottom:0; 
+                }
+            }
+        }
 
     }
 
     .c-card__item__footer {
-        width: 12%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        h3 {
-            font-size: 30px;
+        @extend .c-card__item__content ;
+        width: 35%;
+        padding: 0 0 0 $pd-2;
+        border-right: 0;
+        .row{
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .list__item__percent{
+            font-family: $english-font;
+            font-size: $h2;
             font-weight: 700;
-            margin: $m-2 0;
         }
 
-        span {
-            font-size: $font-size-m;
-            color: $gray3;
-        }
     }
 
 }
+.c-card-planReport-danger{
+    @extend .c-card-planReport;
+    .c-card__item__footer{
+        .c-card__item__content__list{
+            .list__item{
+                .is-danger{
+                    color: $danger;
+                } 
+             }
+        }
+       
+    }
+   
+}
 
-
-
+.c-card-alertPlan{
+    @extend .c-card-planReport-danger;
+    .c-card__tag{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        span{
+            padding: 0 0.5rem;
+            &:first-child{
+                padding-left:0 ;
+            }
+        }
+    }
+    
+}
 .c-card-lablePerson {
     display: flex;
     width: 32.5%;

@@ -72,6 +72,9 @@
 
 .change-card-to-list {
     .l-main-content-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         .l-main-content-item__listTitle {
             display: block;
             background-color: $hyweb-lighblue;
@@ -83,8 +86,8 @@
             border-bottom: 1px solid $hyweb-blue;
             font-weight: 700;
             width: 100%;
-            line-height: 28px;
-
+            line-height: 28px; 
+            max-width: 2560px;
             .listTitle__num {
                 width: 20%;
             }
@@ -126,7 +129,7 @@
             width: 100%;
             margin: 0;
             padding: 20px 0px 20px 3rem;
-            max-width: 1200px;
+            max-width: 2560px;
             display: flex;
             align-items: center;
             box-shadow: none;
