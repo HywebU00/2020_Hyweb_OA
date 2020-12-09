@@ -149,7 +149,8 @@
     //max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 1% 2%;
+    padding:1rem 2rem;
+   // padding: 1% 2%;
     transition: all 0.5s;
 
     .c-breadcrumb {
@@ -269,6 +270,7 @@
     overflow: scroll;
     overflow-y: auto;
     height: calc(100vh - 210px);
+    //width: calc(100vw - 267px);
 
     .l-main-content__text {
         color: $gray3;
@@ -484,13 +486,14 @@
     .l-main-content__wbslist {
         @extend .l-main-content__planlist;
         overflow: scroll;
-        width: 1650px;
+        width:1600px;
         height: 100%;
         .table-thead{
             padding:1.5rem;
             .row{
                 display: flex;
                 align-items: center;
+                width: auto;
                 .col{
                     display: flex;
                     align-items: center;
@@ -505,7 +508,7 @@
         .table-body{
             .row{
                 padding:0 1.5rem 0 0;
-                
+                touch-action: none;
             }
             .col{
                 display: flex;
@@ -541,19 +544,24 @@
             }   
         }
         .s1 {
-            width: 3.84615%;
+            width: 120px;
+           // width: 3.84615%;
         }
         .s2{
-            width: 7.96320%;
+            width: 240px;
+            //width: 7.96320%;
         }
         .s3{
-            width: 11.53845%;
+            width: 360px;
+           // width: 11.53845%;
         }
         .s4{
-            width: 15.38461%;
+            width: 480px;
+           // width: 15.38461%;
         }
         .s5{
-            width: 19.23057%;
+            width: 600px;
+           // width: 19.23057%;
         }
     }
 

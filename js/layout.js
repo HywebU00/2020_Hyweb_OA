@@ -4,6 +4,8 @@
 const sidebar = document.querySelector(".l-container");
 const menu = document.querySelector(".l-side");
 const nametag = document.querySelector(".chinese__name");
+//const l_Main_Content = document.querySelector(".l-main-content");
+const l_Main_Content = document.querySelectorAll(".l-main-content");
 const name = [];
 
 //open menu
@@ -11,6 +13,9 @@ if (menu != null) {
   menu.addEventListener("mouseover", opemmenu);
   function opemmenu() {
     sidebar.classList.add("sidebar__is-open");
+    l_Main_Content.forEach((item) => {
+      item.style.width = "calc(100vw - 267px)";
+    });
     menu.removeEventListener("mouseover", opemmenu);
     fullname();
   }
@@ -20,6 +25,9 @@ const menu_btn = document.querySelector(".menu-btn");
 if (menu_btn != null) {
   function closemenu() {
     sidebar.classList.remove("sidebar__is-open");
+    l_Main_Content.forEach((item) => {
+      item.style.width = "calc(100vw - 142px)";
+    });
     setTimeout(function () {
       menu.addEventListener("mouseover", opemmenu);
     }, 500);
@@ -288,4 +296,7 @@ if (tag_item != null && tag_content != null) {
   }
 }
 
-dragula([document.querySelector("#list")]);
+const list = document.querySelector("#list");
+if (list != null) {
+  dragula([document.querySelector("#list")]);
+}

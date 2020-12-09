@@ -174,6 +174,7 @@ for (let a = 0; a < pop_modal.length; a++) {
   });
   pop_content[a].addEventListener("click", function () {
     let content = pop_content[a].childNodes;
+    // console.log(content);
     for (let c = 0; c < content.length; c++) {
       if (content[c].tagName == "LI") {
         pop_content[a].classList.remove("is-pop-show");
@@ -181,8 +182,10 @@ for (let a = 0; a < pop_modal.length; a++) {
     }
   });
   if (confirm_btn[a] != null) {
+    console.log(confirm_btn[a]);
     confirm_btn[a].addEventListener("click", function () {
-      pop_content[a].classList.remove("is-pop-show");
+      let parentlist = confirm_btn[a].parentNode.parentNode;
+      parentlist.classList.remove("is-pop-show");
     });
   }
 }
