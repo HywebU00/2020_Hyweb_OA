@@ -296,7 +296,8 @@ if (tag_item != null && tag_content != null) {
   }
 }
 
-const list = document.querySelector("#list");
+const list = document.querySelector(".Draglist");
+//const list = document.querySelectorAll(".Draglist");
 if (list != null) {
-  dragula([document.querySelector("#list")]);
+  dragula([document.querySelector(".Draglist")]);
 }
