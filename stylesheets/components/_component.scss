@@ -1404,7 +1404,7 @@
 
                 span {
                     color: $gray1;
-                    font-size: $font-size-m;//$p;
+                    font-size: $font-size-m; //$p;
                     font-weight: 700;
                 }
 
@@ -1483,31 +1483,35 @@
     .c-dropdown__modal {
         height: 337px;
         overflow: hidden;
-        .c-dropdown__content{
-            li{
-                padding:0.2rem 0;
-                span{
+
+        .c-dropdown__content {
+            li {
+                padding: 0.2rem 0;
+
+                span {
                     font-size: $font-size-m;
                 }
             }
         }
-       
+
 
         .c-dropdown__content__height {
             height: 230px;
             overflow: scroll;
         }
-          .c-dropdown__footer{
-        .o-btn-primary{
-             height: 32px;
-            padding: 0 20px;
+
+        .c-dropdown__footer {
+            .o-btn-primary {
+                height: 32px;
+                padding: 0 20px;
+            }
+
+            .o-btn-secondary {
+                height: 32px;
+                padding: 0 20px;
+            }
         }
-       .o-btn-secondary{
-        height: 32px;
-        padding: 0 20px;
-       }
-    }
-        
+
     }
 
 }
@@ -1676,7 +1680,8 @@
             padding: 0.3rem 0;
             display: flex;
             justify-content: center;
-            span{
+
+            span {
                 font-size: $font-size-m;
             }
 
@@ -1688,15 +1693,17 @@
             margin-left: 0.75rem;
         }
     }
-    .c-dropdown__footer{
-        .o-btn-primary{
-             height: 32px;
+
+    .c-dropdown__footer {
+        .o-btn-primary {
+            height: 32px;
             padding: 0 20px;
         }
-       .o-btn-secondary{
-        height: 32px;
-        padding: 0 20px;
-       }
+
+        .o-btn-secondary {
+            height: 32px;
+            padding: 0 20px;
+        }
     }
 }
 
@@ -1790,17 +1797,20 @@
 }
 
 .c-datePicker-days {
-    @extend .c-datePicker-day ;
-   
-    .c-datePicker__group{
+    @extend .c-datePicker-day;
+
+    .c-datePicker__group {
         display: flex;
-        .c-datePicker__item{
+
+        .c-datePicker__item {
             padding-right: 1.2rem;
-            &:last-child{
+
+            &:last-child {
                 padding-right: 0;
             }
-            .c-datePicker__yearPicker{
-                div{
+
+            .c-datePicker__yearPicker {
+                div {
                     font-family: $font-family;
                     font-weight: bolder;
                 }
@@ -1812,65 +1822,75 @@
 
 .c-datePicker-day {
     @extend .c-datePicker;
-    .c-datePicker__input{
+
+    .c-datePicker__input {
         width: 200px;
     }
-    .c-datePicker__modal{
+
+    .c-datePicker__modal {
         width: auto;
         box-sizing: border-box;
-        padding:1rem 1.5rem;
-        .c-datePicker__yearPicker{
-            div{
+        padding: 1rem 1.5rem;
+
+        .c-datePicker__yearPicker {
+            div {
                 font-family: $font-family;
                 font-weight: bolder;
             }
         }
     }
-    .c-datePicker__content{
-        
-        th{
+
+    .c-datePicker__content {
+
+        th {
             width: 28px;
             height: 28px;
             text-align: center;
             font-weight: 700;
             line-height: 28px;
-            font-size:$font-size-m;
-            
+            font-size: $font-size-m;
+
             margin-bottom: 0.2rem;
         }
-        td{
+
+        td {
             width: 28px;
             height: 28px;
             line-height: 28px;
             text-align: center;
             font-weight: 500;
-            font-size:$font-size-m;
+            font-size: $font-size-m;
             font-family: $english-font;
         }
-        tr{
-            border-bottom: 0 ;
+
+        tr {
+            border-bottom: 0;
             display: block;
             margin-bottom: 0.3rem;
         }
-       
-        .is-no-this-month{
+
+        .is-no-this-month {
             color: $gray4;
         }
-        .is-no-work{
+
+        .is-no-work {
             color: $gray3;
         }
-        .is-select-day{
-            
-            background-color:$hyweb-blue;
+
+        .is-select-day {
+
+            background-color: $hyweb-blue;
             border-radius: 50%;
             color: #fff;
         }
-        
-        .is-select-range{
+
+        .is-select-range {
             position: relative;
-            &::before{
+
+            &::before {
                 content: '';
-                position: absolute;;
+                position: absolute;
+                ;
                 display: block;
                 width: 28px;
                 background-color: $hyweb-lighblue;
@@ -1878,50 +1898,113 @@
                 z-index: -1;
             }
         }
-        .is-select-range-first{
+
+        .is-select-range-first {
             @extend .is-select-range;
-            &::before{
+
+            &::before {
                 border-radius: 50% 0 0 50%;
             }
-           }
-           .is-select-range-lest{
+        }
+
+        .is-select-range-lest {
             @extend .is-select-range;
-            &::before{
+
+            &::before {
                 border-radius: 0 50% 50% 0;
             }
-           }
-    }
-    .c-datePicker__footer{
-        .o-btn-primary{
-             height: 32px;
-        padding: 0 20px;
         }
-       
     }
-    
+
+    .c-datePicker__footer {
+        .o-btn-primary {
+            height: 32px;
+            padding: 0 20px;
+        }
+
+    }
+
 }
 
 .c-datePicker-month {
     @extend .c-datePicker;
-    .c-datePicker__modal{
-        .c-datePicker__yearPicker{
-            div{
+
+    .c-datePicker__modal {
+        .c-datePicker__yearPicker {
+            div {
                 font-family: $font-family;
                 font-weight: bolder;
             }
         }
     }
-    
-    .c-datePicker__footer{
-        .o-btn-primary{
-             height: 32px;
-        padding: 0 20px;
+
+    .c-datePicker__footer {
+        .o-btn-primary {
+            height: 32px;
+            padding: 0 20px;
         }
-       
+
     }
-  
+
 }
 
+.c-datePicker-months {
+    @extend .c-datePicker-days;
+
+    .c-datePicker__group {
+        width: 100%;
+
+        .c-datePicker__item {
+            .c-datePicker__yearPicker {
+                margin-bottom: 1rem;
+            }
+
+            width: 50%;
+
+            .c-datePicker__content {
+                table {
+                    width: 100%;
+
+                    tr {
+                        margin-bottom: 0.75rem;
+                    }
+
+                    td {
+                        width: 50px;
+                        font-family: $font-family;
+
+                    }
+                    .is-select-day{
+                        border-radius: 20px;
+                    }
+                    .is-select-range{
+                        &::before{
+                            width: 50px;
+                        }
+                    }
+                    .is-select-range-first{
+                        &::before{
+                            width: 50px;
+                            border-radius: 20px 0 0 20px;
+                        }
+                       
+                    }
+                    .is-select-range-lest{
+                        &::before{
+                            width: 50px;
+                            border-radius:0 20px 20px 0;
+                        }
+                       
+                    }
+
+                }
+             
+            }
+
+        }
+    }
+
+}
 
 //popover
 
@@ -1937,7 +2020,7 @@
         max-width: 200px;
         box-shadow: $box-shadow;
         border-radius: $select-radius;
-        padding: 0.8rem 0.8rem 0 0.8rem;
+        padding: 0.8rem 0.8rem 0.8rem 0.8rem;
 
         li {
             padding: 1rem 0.5rem;
@@ -2015,7 +2098,41 @@
 .c-popover__content {
     display: inline-block;
 }
-
+.c-popover-wbsEdit{
+    @extend .c-popover-filterM;
+    .c-popover__content{
+ 
+        &::before{
+            left:20%; 
+         }
+        &::after{
+           left:20%; 
+        }
+    }
+}
+.c-popover-perspective{
+    @extend .c-popover-checkPoint;
+    .c-popover__content{
+        width: 200px;
+       .c-popover__text{
+           margin-bottom: 1.5rem;
+          div{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0.5rem; 
+            &:last-child{
+                margin-bottom: 0; 
+            }
+          }
+        
+     } 
+     .c-popover__footer{
+        display: flex;
+        justify-content: center;
+     }
+    }
+           
+}
 .c-writeHours {
     width: 85%;
     min-height: 80vh;

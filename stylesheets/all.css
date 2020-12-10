@@ -9999,7 +9999,7 @@ input[type=range]::-ms-thumb {
   margin-bottom: 0;
 }
 
-.l-main-content .l-main-content__planlist .c-datePicker-day, .l-main-content .l-main-content__wbslist .c-datePicker-day, .l-main-content .l-main-content__planlist .c-datePicker-days, .l-main-content .l-main-content__wbslist .c-datePicker-days {
+.l-main-content .l-main-content__planlist .c-datePicker-day, .l-main-content .l-main-content__wbslist .c-datePicker-day, .l-main-content .l-main-content__planlist .c-datePicker-days, .l-main-content .l-main-content__wbslist .c-datePicker-days, .l-main-content .l-main-content__planlist .c-datePicker-months, .l-main-content .l-main-content__wbslist .c-datePicker-months {
   width: 100%;
   height: 3rem;
 }
@@ -10085,7 +10085,7 @@ input[type=range]::-ms-thumb {
   margin: 0;
 }
 
-.l-main-content .l-main-content__wbslist .table-body .col .c-popover-checkPoint, .l-main-content .l-main-content__wbslist .table-body .col .c-popover-filterS, .l-main-content .l-main-content__wbslist .table-body .col .c-popover-filterM, .l-main-content .l-main-content__wbslist .table-body .col .c-popover-filterL {
+.l-main-content .l-main-content__wbslist .table-body .col .c-popover-checkPoint, .l-main-content .l-main-content__wbslist .table-body .col .c-popover-filterS, .l-main-content .l-main-content__wbslist .table-body .col .c-popover-filterM, .l-main-content .l-main-content__wbslist .table-body .col .c-popover-filterL, .l-main-content .l-main-content__wbslist .table-body .col .c-popover-wbsEdit, .l-main-content .l-main-content__wbslist .table-body .col .c-popover-perspective {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10098,7 +10098,7 @@ input[type=range]::-ms-thumb {
   width: 100%;
 }
 
-.l-main-content .l-main-content__wbslist .table-body .c-datePicker-days {
+.l-main-content .l-main-content__wbslist .table-body .c-datePicker-days, .l-main-content .l-main-content__wbslist .table-body .c-datePicker-months {
   width: 100%;
   height: 3rem;
 }
@@ -12552,15 +12552,15 @@ input[type=range]::-ms-thumb {
   padding: 0 20px;
 }
 
-.c-datePicker, .c-datePicker-day, .c-datePicker-days, .c-datePicker-month {
+.c-datePicker, .c-datePicker-day, .c-datePicker-days, .c-datePicker-months, .c-datePicker-month {
   position: relative;
 }
 
-.c-datePicker .c-datePicker__input, .c-datePicker-day .c-datePicker__input, .c-datePicker-days .c-datePicker__input, .c-datePicker-month .c-datePicker__input {
+.c-datePicker .c-datePicker__input, .c-datePicker-day .c-datePicker__input, .c-datePicker-days .c-datePicker__input, .c-datePicker-months .c-datePicker__input, .c-datePicker-month .c-datePicker__input {
   width: 25%;
 }
 
-.c-datePicker .c-datePicker__modal, .c-datePicker-day .c-datePicker__modal, .c-datePicker-days .c-datePicker__modal, .c-datePicker-month .c-datePicker__modal {
+.c-datePicker .c-datePicker__modal, .c-datePicker-day .c-datePicker__modal, .c-datePicker-days .c-datePicker__modal, .c-datePicker-months .c-datePicker__modal, .c-datePicker-month .c-datePicker__modal {
   position: absolute;
   background-color: #fff;
   z-index: 99;
@@ -12573,7 +12573,7 @@ input[type=range]::-ms-thumb {
   padding: 20px;
 }
 
-.c-datePicker .c-datePicker__modal .c-datePicker__title, .c-datePicker-day .c-datePicker__modal .c-datePicker__title, .c-datePicker-days .c-datePicker__modal .c-datePicker__title, .c-datePicker-month .c-datePicker__modal .c-datePicker__title {
+.c-datePicker .c-datePicker__modal .c-datePicker__title, .c-datePicker-day .c-datePicker__modal .c-datePicker__title, .c-datePicker-days .c-datePicker__modal .c-datePicker__title, .c-datePicker-months .c-datePicker__modal .c-datePicker__title, .c-datePicker-month .c-datePicker__modal .c-datePicker__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12585,19 +12585,19 @@ input[type=range]::-ms-thumb {
   cursor: pointer;
 }
 
-.c-datePicker .c-datePicker__modal .c-datePicker__title .c-datePicker__title__all:hover, .c-datePicker-day .c-datePicker__modal .c-datePicker__title .c-datePicker__title__all:hover, .c-datePicker-days .c-datePicker__modal .c-datePicker__title .c-datePicker__title__all:hover, .c-datePicker-month .c-datePicker__modal .c-datePicker__title .c-datePicker__title__all:hover {
+.c-datePicker .c-datePicker__modal .c-datePicker__title .c-datePicker__title__all:hover, .c-datePicker-day .c-datePicker__modal .c-datePicker__title .c-datePicker__title__all:hover, .c-datePicker-days .c-datePicker__modal .c-datePicker__title .c-datePicker__title__all:hover, .c-datePicker-months .c-datePicker__modal .c-datePicker__title .c-datePicker__title__all:hover, .c-datePicker-month .c-datePicker__modal .c-datePicker__title .c-datePicker__title__all:hover {
   color: #0156A2;
 }
 
-.c-datePicker .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm, .c-datePicker-day .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm, .c-datePicker-days .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm, .c-datePicker-month .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm {
+.c-datePicker .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm, .c-datePicker-day .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm, .c-datePicker-days .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm, .c-datePicker-months .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm, .c-datePicker-month .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm {
   margin-bottom: 1rem;
 }
 
-.c-datePicker .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm:hover, .c-datePicker-day .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm:hover, .c-datePicker-days .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm:hover, .c-datePicker-month .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm:hover {
+.c-datePicker .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm:hover, .c-datePicker-day .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm:hover, .c-datePicker-days .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm:hover, .c-datePicker-months .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm:hover, .c-datePicker-month .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm:hover {
   color: #0156A2;
 }
 
-.c-datePicker .c-datePicker__modal .c-datePicker__yearPicker, .c-datePicker-day .c-datePicker__modal .c-datePicker__yearPicker, .c-datePicker-days .c-datePicker__modal .c-datePicker__yearPicker, .c-datePicker-month .c-datePicker__modal .c-datePicker__yearPicker {
+.c-datePicker .c-datePicker__modal .c-datePicker__yearPicker, .c-datePicker-day .c-datePicker__modal .c-datePicker__yearPicker, .c-datePicker-days .c-datePicker__modal .c-datePicker__yearPicker, .c-datePicker-months .c-datePicker__modal .c-datePicker__yearPicker, .c-datePicker-month .c-datePicker__modal .c-datePicker__yearPicker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12610,13 +12610,13 @@ input[type=range]::-ms-thumb {
   margin-top: 0.5rem;
 }
 
-.c-datePicker .c-datePicker__modal .c-datePicker__yearPicker div, .c-datePicker-day .c-datePicker__modal .c-datePicker__yearPicker div, .c-datePicker-days .c-datePicker__modal .c-datePicker__yearPicker div, .c-datePicker-month .c-datePicker__modal .c-datePicker__yearPicker div {
+.c-datePicker .c-datePicker__modal .c-datePicker__yearPicker div, .c-datePicker-day .c-datePicker__modal .c-datePicker__yearPicker div, .c-datePicker-days .c-datePicker__modal .c-datePicker__yearPicker div, .c-datePicker-months .c-datePicker__modal .c-datePicker__yearPicker div, .c-datePicker-month .c-datePicker__modal .c-datePicker__yearPicker div {
   font-family: "Baloo 2", cursive, "Noto Sans TC";
   font-size: 16px;
   font-weight: 700;
 }
 
-.c-datePicker .c-datePicker__modal .c-datePicker__content, .c-datePicker-day .c-datePicker__modal .c-datePicker__content, .c-datePicker-days .c-datePicker__modal .c-datePicker__content, .c-datePicker-month .c-datePicker__modal .c-datePicker__content {
+.c-datePicker .c-datePicker__modal .c-datePicker__content, .c-datePicker-day .c-datePicker__modal .c-datePicker__content, .c-datePicker-days .c-datePicker__modal .c-datePicker__content, .c-datePicker-months .c-datePicker__modal .c-datePicker__content, .c-datePicker-month .c-datePicker__modal .c-datePicker__content {
   margin-top: 5%;
   width: 99.999%;
   display: -webkit-box;
@@ -12629,14 +12629,14 @@ input[type=range]::-ms-thumb {
       flex-wrap: wrap;
 }
 
-.c-datePicker .c-datePicker__modal .c-datePicker__content span, .c-datePicker-day .c-datePicker__modal .c-datePicker__content span, .c-datePicker-days .c-datePicker__modal .c-datePicker__content span, .c-datePicker-month .c-datePicker__modal .c-datePicker__content span {
+.c-datePicker .c-datePicker__modal .c-datePicker__content span, .c-datePicker-day .c-datePicker__modal .c-datePicker__content span, .c-datePicker-days .c-datePicker__modal .c-datePicker__content span, .c-datePicker-months .c-datePicker__modal .c-datePicker__content span, .c-datePicker-month .c-datePicker__modal .c-datePicker__content span {
   color: #042340;
   font-size: 16px;
   padding-left: 25px;
   padding-right: 5px;
 }
 
-.c-datePicker .c-datePicker__modal .c-datePicker__content li, .c-datePicker-day .c-datePicker__modal .c-datePicker__content li, .c-datePicker-days .c-datePicker__modal .c-datePicker__content li, .c-datePicker-month .c-datePicker__modal .c-datePicker__content li {
+.c-datePicker .c-datePicker__modal .c-datePicker__content li, .c-datePicker-day .c-datePicker__modal .c-datePicker__content li, .c-datePicker-days .c-datePicker__modal .c-datePicker__content li, .c-datePicker-months .c-datePicker__modal .c-datePicker__content li, .c-datePicker-month .c-datePicker__modal .c-datePicker__content li {
   padding: 0.3rem 0;
   width: 33.333333333333333333%;
   display: -webkit-box;
@@ -12647,11 +12647,11 @@ input[type=range]::-ms-thumb {
           justify-content: center;
 }
 
-.c-datePicker .c-datePicker__modal .c-datePicker__content li:hover, .c-datePicker-day .c-datePicker__modal .c-datePicker__content li:hover, .c-datePicker-days .c-datePicker__modal .c-datePicker__content li:hover, .c-datePicker-month .c-datePicker__modal .c-datePicker__content li:hover {
+.c-datePicker .c-datePicker__modal .c-datePicker__content li:hover, .c-datePicker-day .c-datePicker__modal .c-datePicker__content li:hover, .c-datePicker-days .c-datePicker__modal .c-datePicker__content li:hover, .c-datePicker-months .c-datePicker__modal .c-datePicker__content li:hover, .c-datePicker-month .c-datePicker__modal .c-datePicker__content li:hover {
   background-color: #F7FBFF;
 }
 
-.c-datePicker .c-datePicker__modal .c-datePicker__footer, .c-datePicker-day .c-datePicker__modal .c-datePicker__footer, .c-datePicker-days .c-datePicker__modal .c-datePicker__footer, .c-datePicker-month .c-datePicker__modal .c-datePicker__footer {
+.c-datePicker .c-datePicker__modal .c-datePicker__footer, .c-datePicker-day .c-datePicker__modal .c-datePicker__footer, .c-datePicker-days .c-datePicker__modal .c-datePicker__footer, .c-datePicker-months .c-datePicker__modal .c-datePicker__footer, .c-datePicker-month .c-datePicker__modal .c-datePicker__footer {
   margin-top: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12661,42 +12661,42 @@ input[type=range]::-ms-thumb {
           justify-content: flex-end;
 }
 
-.c-datePicker-days .c-datePicker__group {
+.c-datePicker-days .c-datePicker__group, .c-datePicker-months .c-datePicker__group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c-datePicker-days .c-datePicker__group .c-datePicker__item {
+.c-datePicker-days .c-datePicker__group .c-datePicker__item, .c-datePicker-months .c-datePicker__group .c-datePicker__item {
   padding-right: 1.2rem;
 }
 
-.c-datePicker-days .c-datePicker__group .c-datePicker__item:last-child {
+.c-datePicker-days .c-datePicker__group .c-datePicker__item:last-child, .c-datePicker-months .c-datePicker__group .c-datePicker__item:last-child {
   padding-right: 0;
 }
 
-.c-datePicker-days .c-datePicker__group .c-datePicker__item .c-datePicker__yearPicker div {
+.c-datePicker-days .c-datePicker__group .c-datePicker__item .c-datePicker__yearPicker div, .c-datePicker-months .c-datePicker__group .c-datePicker__item .c-datePicker__yearPicker div {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: bolder;
 }
 
-.c-datePicker-day .c-datePicker__input, .c-datePicker-days .c-datePicker__input {
+.c-datePicker-day .c-datePicker__input, .c-datePicker-days .c-datePicker__input, .c-datePicker-months .c-datePicker__input {
   width: 200px;
 }
 
-.c-datePicker-day .c-datePicker__modal, .c-datePicker-days .c-datePicker__modal {
+.c-datePicker-day .c-datePicker__modal, .c-datePicker-days .c-datePicker__modal, .c-datePicker-months .c-datePicker__modal {
   width: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 1rem 1.5rem;
 }
 
-.c-datePicker-day .c-datePicker__modal .c-datePicker__yearPicker div, .c-datePicker-days .c-datePicker__modal .c-datePicker__yearPicker div {
+.c-datePicker-day .c-datePicker__modal .c-datePicker__yearPicker div, .c-datePicker-days .c-datePicker__modal .c-datePicker__yearPicker div, .c-datePicker-months .c-datePicker__modal .c-datePicker__yearPicker div {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: bolder;
 }
 
-.c-datePicker-day .c-datePicker__content th, .c-datePicker-days .c-datePicker__content th {
+.c-datePicker-day .c-datePicker__content th, .c-datePicker-days .c-datePicker__content th, .c-datePicker-months .c-datePicker__content th {
   width: 28px;
   height: 28px;
   text-align: center;
@@ -12706,7 +12706,7 @@ input[type=range]::-ms-thumb {
   margin-bottom: 0.2rem;
 }
 
-.c-datePicker-day .c-datePicker__content td, .c-datePicker-days .c-datePicker__content td {
+.c-datePicker-day .c-datePicker__content td, .c-datePicker-days .c-datePicker__content td, .c-datePicker-months .c-datePicker__content td {
   width: 28px;
   height: 28px;
   line-height: 28px;
@@ -12716,31 +12716,31 @@ input[type=range]::-ms-thumb {
   font-family: "Baloo 2", cursive, "Noto Sans TC";
 }
 
-.c-datePicker-day .c-datePicker__content tr, .c-datePicker-days .c-datePicker__content tr {
+.c-datePicker-day .c-datePicker__content tr, .c-datePicker-days .c-datePicker__content tr, .c-datePicker-months .c-datePicker__content tr {
   border-bottom: 0;
   display: block;
   margin-bottom: 0.3rem;
 }
 
-.c-datePicker-day .c-datePicker__content .is-no-this-month, .c-datePicker-days .c-datePicker__content .is-no-this-month {
+.c-datePicker-day .c-datePicker__content .is-no-this-month, .c-datePicker-days .c-datePicker__content .is-no-this-month, .c-datePicker-months .c-datePicker__content .is-no-this-month {
   color: #D2DAE0;
 }
 
-.c-datePicker-day .c-datePicker__content .is-no-work, .c-datePicker-days .c-datePicker__content .is-no-work {
+.c-datePicker-day .c-datePicker__content .is-no-work, .c-datePicker-days .c-datePicker__content .is-no-work, .c-datePicker-months .c-datePicker__content .is-no-work {
   color: #8495A4;
 }
 
-.c-datePicker-day .c-datePicker__content .is-select-day, .c-datePicker-days .c-datePicker__content .is-select-day {
+.c-datePicker-day .c-datePicker__content .is-select-day, .c-datePicker-days .c-datePicker__content .is-select-day, .c-datePicker-months .c-datePicker__content .is-select-day {
   background-color: #0156A2;
   border-radius: 50%;
   color: #fff;
 }
 
-.c-datePicker-day .c-datePicker__content .is-select-range, .c-datePicker-days .c-datePicker__content .is-select-range, .c-datePicker-day .c-datePicker__content .is-select-range-first, .c-datePicker-days .c-datePicker__content .is-select-range-first, .c-datePicker-day .c-datePicker__content .is-select-range-lest, .c-datePicker-days .c-datePicker__content .is-select-range-lest {
+.c-datePicker-day .c-datePicker__content .is-select-range, .c-datePicker-days .c-datePicker__content .is-select-range, .c-datePicker-months .c-datePicker__content .is-select-range, .c-datePicker-day .c-datePicker__content .is-select-range-first, .c-datePicker-days .c-datePicker__content .is-select-range-first, .c-datePicker-months .c-datePicker__content .is-select-range-first, .c-datePicker-day .c-datePicker__content .is-select-range-lest, .c-datePicker-days .c-datePicker__content .is-select-range-lest, .c-datePicker-months .c-datePicker__content .is-select-range-lest {
   position: relative;
 }
 
-.c-datePicker-day .c-datePicker__content .is-select-range::before, .c-datePicker-days .c-datePicker__content .is-select-range::before, .c-datePicker-day .c-datePicker__content .is-select-range-first::before, .c-datePicker-days .c-datePicker__content .is-select-range-first::before, .c-datePicker-day .c-datePicker__content .is-select-range-lest::before, .c-datePicker-days .c-datePicker__content .is-select-range-lest::before {
+.c-datePicker-day .c-datePicker__content .is-select-range::before, .c-datePicker-days .c-datePicker__content .is-select-range::before, .c-datePicker-months .c-datePicker__content .is-select-range::before, .c-datePicker-day .c-datePicker__content .is-select-range-first::before, .c-datePicker-days .c-datePicker__content .is-select-range-first::before, .c-datePicker-months .c-datePicker__content .is-select-range-first::before, .c-datePicker-day .c-datePicker__content .is-select-range-lest::before, .c-datePicker-days .c-datePicker__content .is-select-range-lest::before, .c-datePicker-months .c-datePicker__content .is-select-range-lest::before {
   content: '';
   position: absolute;
   display: block;
@@ -12750,15 +12750,15 @@ input[type=range]::-ms-thumb {
   z-index: -1;
 }
 
-.c-datePicker-day .c-datePicker__content .is-select-range-first::before, .c-datePicker-days .c-datePicker__content .is-select-range-first::before {
+.c-datePicker-day .c-datePicker__content .is-select-range-first::before, .c-datePicker-days .c-datePicker__content .is-select-range-first::before, .c-datePicker-months .c-datePicker__content .is-select-range-first::before {
   border-radius: 50% 0 0 50%;
 }
 
-.c-datePicker-day .c-datePicker__content .is-select-range-lest::before, .c-datePicker-days .c-datePicker__content .is-select-range-lest::before {
+.c-datePicker-day .c-datePicker__content .is-select-range-lest::before, .c-datePicker-days .c-datePicker__content .is-select-range-lest::before, .c-datePicker-months .c-datePicker__content .is-select-range-lest::before {
   border-radius: 0 50% 50% 0;
 }
 
-.c-datePicker-day .c-datePicker__footer .o-btn-primary, .c-datePicker-days .c-datePicker__footer .o-btn-primary {
+.c-datePicker-day .c-datePicker__footer .o-btn-primary, .c-datePicker-days .c-datePicker__footer .o-btn-primary, .c-datePicker-months .c-datePicker__footer .o-btn-primary {
   height: 32px;
   padding: 0 20px;
 }
@@ -12773,11 +12773,54 @@ input[type=range]::-ms-thumb {
   padding: 0 20px;
 }
 
-.c-popover-checkPoint, .c-popover-filterS, .c-popover-filterM, .c-popover-filterL {
+.c-datePicker-months .c-datePicker__group {
+  width: 100%;
+}
+
+.c-datePicker-months .c-datePicker__group .c-datePicker__item {
+  width: 50%;
+}
+
+.c-datePicker-months .c-datePicker__group .c-datePicker__item .c-datePicker__yearPicker {
+  margin-bottom: 1rem;
+}
+
+.c-datePicker-months .c-datePicker__group .c-datePicker__item .c-datePicker__content table {
+  width: 100%;
+}
+
+.c-datePicker-months .c-datePicker__group .c-datePicker__item .c-datePicker__content table tr {
+  margin-bottom: 0.75rem;
+}
+
+.c-datePicker-months .c-datePicker__group .c-datePicker__item .c-datePicker__content table td {
+  width: 50px;
+  font-family: "Noto Sans TC", "sans-serif";
+}
+
+.c-datePicker-months .c-datePicker__group .c-datePicker__item .c-datePicker__content table .is-select-day {
+  border-radius: 20px;
+}
+
+.c-datePicker-months .c-datePicker__group .c-datePicker__item .c-datePicker__content table .is-select-range::before, .c-datePicker-months .c-datePicker__group .c-datePicker__item .c-datePicker__content table .is-select-range-first::before, .c-datePicker-months .c-datePicker__group .c-datePicker__item .c-datePicker__content table .is-select-range-lest::before {
+  width: 50px;
+}
+
+.c-datePicker-months .c-datePicker__group .c-datePicker__item .c-datePicker__content table .is-select-range-first::before {
+  width: 50px;
+  border-radius: 20px 0 0 20px;
+}
+
+.c-datePicker-months .c-datePicker__group .c-datePicker__item .c-datePicker__content table .is-select-range-lest::before {
+  width: 50px;
+  border-radius: 0 20px 20px 0;
+}
+
+.c-popover-checkPoint, .c-popover-filterS, .c-popover-filterM, .c-popover-filterL, .c-popover-wbsEdit, .c-popover-perspective {
   position: relative;
 }
 
-.c-popover-checkPoint .c-popover__content, .c-popover-filterS .c-popover__content, .c-popover-filterM .c-popover__content, .c-popover-filterL .c-popover__content {
+.c-popover-checkPoint .c-popover__content, .c-popover-filterS .c-popover__content, .c-popover-filterM .c-popover__content, .c-popover-filterL .c-popover__content, .c-popover-wbsEdit .c-popover__content, .c-popover-perspective .c-popover__content {
   left: 0;
   top: 40px;
   z-index: 100;
@@ -12787,10 +12830,10 @@ input[type=range]::-ms-thumb {
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 5px;
-  padding: 0.8rem 0.8rem 0 0.8rem;
+  padding: 0.8rem 0.8rem 0.8rem 0.8rem;
 }
 
-.c-popover-checkPoint .c-popover__content li, .c-popover-filterS .c-popover__content li, .c-popover-filterM .c-popover__content li, .c-popover-filterL .c-popover__content li {
+.c-popover-checkPoint .c-popover__content li, .c-popover-filterS .c-popover__content li, .c-popover-filterM .c-popover__content li, .c-popover-filterL .c-popover__content li, .c-popover-wbsEdit .c-popover__content li, .c-popover-perspective .c-popover__content li {
   padding: 1rem 0.5rem;
   color: #042340;
   font-size: 16px;
@@ -12798,19 +12841,19 @@ input[type=range]::-ms-thumb {
   border-top: 1px solid #BAD4E5;
 }
 
-.c-popover-checkPoint .c-popover__content li:first-child, .c-popover-filterS .c-popover__content li:first-child, .c-popover-filterM .c-popover__content li:first-child, .c-popover-filterL .c-popover__content li:first-child {
+.c-popover-checkPoint .c-popover__content li:first-child, .c-popover-filterS .c-popover__content li:first-child, .c-popover-filterM .c-popover__content li:first-child, .c-popover-filterL .c-popover__content li:first-child, .c-popover-wbsEdit .c-popover__content li:first-child, .c-popover-perspective .c-popover__content li:first-child {
   border-top: none;
 }
 
-.c-popover-checkPoint .c-popover__content li:hover, .c-popover-filterS .c-popover__content li:hover, .c-popover-filterM .c-popover__content li:hover, .c-popover-filterL .c-popover__content li:hover {
+.c-popover-checkPoint .c-popover__content li:hover, .c-popover-filterS .c-popover__content li:hover, .c-popover-filterM .c-popover__content li:hover, .c-popover-filterL .c-popover__content li:hover, .c-popover-wbsEdit .c-popover__content li:hover, .c-popover-perspective .c-popover__content li:hover {
   background-color: #F7FBFF;
 }
 
-.c-popover-checkPoint .c-popover__content li:active, .c-popover-filterS .c-popover__content li:active, .c-popover-filterM .c-popover__content li:active, .c-popover-filterL .c-popover__content li:active {
+.c-popover-checkPoint .c-popover__content li:active, .c-popover-filterS .c-popover__content li:active, .c-popover-filterM .c-popover__content li:active, .c-popover-filterL .c-popover__content li:active, .c-popover-wbsEdit .c-popover__content li:active, .c-popover-perspective .c-popover__content li:active {
   background-color: #E2F1FE;
 }
 
-.c-popover-checkPoint .c-popover__content::before, .c-popover-filterS .c-popover__content::before, .c-popover-filterM .c-popover__content::before, .c-popover-filterL .c-popover__content::before {
+.c-popover-checkPoint .c-popover__content::before, .c-popover-filterS .c-popover__content::before, .c-popover-filterM .c-popover__content::before, .c-popover-filterL .c-popover__content::before, .c-popover-wbsEdit .c-popover__content::before, .c-popover-perspective .c-popover__content::before {
   content: "";
   position: absolute;
   display: block;
@@ -12824,7 +12867,7 @@ input[type=range]::-ms-thumb {
   border-color: transparent transparent #fff transparent;
 }
 
-.c-popover-checkPoint .c-popover__content::after, .c-popover-filterS .c-popover__content::after, .c-popover-filterM .c-popover__content::after, .c-popover-filterL .c-popover__content::after {
+.c-popover-checkPoint .c-popover__content::after, .c-popover-filterS .c-popover__content::after, .c-popover-filterM .c-popover__content::after, .c-popover-filterL .c-popover__content::after, .c-popover-wbsEdit .c-popover__content::after, .c-popover-perspective .c-popover__content::after {
   content: "";
   position: absolute;
   display: block;
@@ -12838,16 +12881,55 @@ input[type=range]::-ms-thumb {
   border-color: transparent transparent #b1b1b152 transparent;
 }
 
-.c-popover-filterS .c-popover__content::before, .c-popover-filterM .c-popover__content::before, .c-popover-filterL .c-popover__content::before {
+.c-popover-filterS .c-popover__content::before, .c-popover-filterM .c-popover__content::before, .c-popover-filterL .c-popover__content::before, .c-popover-wbsEdit .c-popover__content::before {
   left: 75%;
 }
 
-.c-popover-filterS .c-popover__content::after, .c-popover-filterM .c-popover__content::after, .c-popover-filterL .c-popover__content::after {
+.c-popover-filterS .c-popover__content::after, .c-popover-filterM .c-popover__content::after, .c-popover-filterL .c-popover__content::after, .c-popover-wbsEdit .c-popover__content::after {
   left: 75%;
 }
 
 .c-popover__content {
   display: inline-block;
+}
+
+.c-popover-wbsEdit .c-popover__content::before {
+  left: 20%;
+}
+
+.c-popover-wbsEdit .c-popover__content::after {
+  left: 20%;
+}
+
+.c-popover-perspective .c-popover__content {
+  width: 200px;
+}
+
+.c-popover-perspective .c-popover__content .c-popover__text {
+  margin-bottom: 1.5rem;
+}
+
+.c-popover-perspective .c-popover__content .c-popover__text div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.c-popover-perspective .c-popover__content .c-popover__text div:last-child {
+  margin-bottom: 0;
+}
+
+.c-popover-perspective .c-popover__content .c-popover__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .c-writeHours {
