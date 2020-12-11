@@ -364,33 +364,54 @@
 
         .row {
             margin-bottom: 2rem;
+            .col{
+                @include ellipsisText;
+            }
         }
     }
 
     .l-main-content__textarea {
         textarea {
             padding: 1rem;
+            border: 2px solid $hyweb-blue;
+            border-radius: $textarea-radius;
+            height: 180px;
+            font-size: $p;
+        }
+        .o-textarea-div{
+            padding: 1rem;
             border: 1px solid $sec2;
             border-radius: $textarea-radius;
-            height: 10rem;
+            height: 180px;
             font-size: $p;
+            color: $gray1;
+            overflow-y:scroll ;
+            line-height: 1.5rem;
+            .is-placeholder-text{
+                color: $gray3;  
+            }
         }
 
         margin-bottom: 2rem;
     }
 
     .l-main-content__upload {
+        
         margin-bottom: 2rem;
 
         .c-fileInput-upload {
+            height: 180px;
             width: 100%;
-            padding: 3rem 0;
             margin: 0;
             border-radius: $upload-radius;
-            height: auto;
+           
 
             .c-fileInput__title {
                 padding-top: 1.5rem;
+            }
+            .c-fileInput__img{
+                padding: 1rem; 
+                width: 76px; 
             }
         }
 
@@ -420,42 +441,52 @@
         flex-wrap: wrap;
 
         .c-fileInput-add {
+            height: 180px;
             width: 100%;
-            padding: 3rem 0;
             margin: 0;
             border-radius: $upload-radius;
-            height: auto;
+            
         }
 
         .c-fileInput__title {
             padding-top: 1.5rem;
+        }
+        .c-fileInput__img{
+            padding: 1rem; 
+            width: 76px; 
+        }
+        .c-card-lablePerson{
+            &:first-child{
+              margin-left: 0;  
+            }
         }
 
     }
 
     .l-main-content__planlist {
         .table-thead{
-            .col{
-                padding:0;
-            }
+            padding-left: 24px;
+            // .col{
+            //     border:1px solid;
+            // }
         }
         .table-body {
+            .table-body__item{
+                border-bottom: $gray-blue solid 1px;
+                display: flex;
+                align-items: center;
+                .table-body__item__icon{
+                    width: 24px;
+                }
+            }
+            // .col{
+            //     border:1px solid;
+            // }
             .row {
-                padding: 0;
-                .col{
-                    padding:0.3rem;
-                }
-
-                .table-body__additem {
-                    display: flex;
-                    align-items: center;
-                    color: $gray1;
-                    font-size: $p;
-                    cursor: pointer;
-                    img {
-                        margin-right: 0.5rem;
-                    }
-                }
+               // padding-left:1.5rem;
+                width: 100%;
+                padding: 0; 
+                border-bottom: 0;               
                 .select-wrapper{
                     height: 3rem;
                     width: auto;
@@ -465,6 +496,7 @@
                     }
                 }
             }
+
         }
 
         .o-input {
@@ -472,15 +504,31 @@
                 margin-bottom: 0;
             }
         }
-
+        .o-text{
+            @include db_ellipsisText;
+            margin-left: 0;
+        }
         .c-datePicker-day {
-            width: 100%;
-            height: 3rem;
+         .c-datePicker__input{
+             width: auto;
+          
+             .o-input-div {
+                min-width: auto;
+                height: 3rem;
+                &::after{
+                    margin-top: 10px;
+                }
+            }
+         }
+         .c-datePicker__modal{
+            //  width: 256px;
+             table{
+                 width: 210px;
+             }
+         }
         }
 
-        .o-input-div {
-            min-width: auto;
-        }
+      
     }
 
     .l-main-content__wbslist {
@@ -670,8 +718,7 @@
         white-space: nowrap;
         font-weight: 700;
         font-size: $p;
-        //font-size: $font-size-l;
-        padding: 1.5rem 0 1.5rem 2.5rem;
+        padding: 1.5rem 0 1.5rem 1.5rem;
 
         .row {
             margin-bottom: 0;
@@ -681,7 +728,7 @@
     .table-body {
         .col {
             line-height: 1.5rem;
-            // @include ellipsisText;
+            @include db_ellipsisText;
         }
 
         .table-body__tag-item {
@@ -709,7 +756,9 @@
                 }
 
                 .table-body-item__member__name {
+                    @include db_ellipsisText;
                     width: 70%;
+                    -webkit-box-orient: horizontal;
                 }
 
                 .table-body-item__member__btn {
@@ -728,7 +777,7 @@
         .row {
             margin-bottom: 0;
             font-size: $p;
-            padding: 0 0 0 2.5rem;
+            padding: 0 0 0 1.5rem;
             height: 70px;
             border-bottom: 1px solid $gray-blue;
             display: flex;

@@ -9884,16 +9884,37 @@ input[type=range]::-ms-thumb {
   margin-bottom: 2rem;
 }
 
+.l-main-content .l-main-content__information .row .col {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .l-main-content .l-main-content__textarea {
   margin-bottom: 2rem;
 }
 
 .l-main-content .l-main-content__textarea textarea {
   padding: 1rem;
+  border: 2px solid #0156A2;
+  border-radius: 10px;
+  height: 180px;
+  font-size: 16px;
+}
+
+.l-main-content .l-main-content__textarea .o-textarea-div {
+  padding: 1rem;
   border: 1px solid #BAD4E5;
   border-radius: 10px;
-  height: 10rem;
+  height: 180px;
   font-size: 16px;
+  color: #042340;
+  overflow-y: scroll;
+  line-height: 1.5rem;
+}
+
+.l-main-content .l-main-content__textarea .o-textarea-div .is-placeholder-text {
+  color: #8495A4;
 }
 
 .l-main-content .l-main-content__upload {
@@ -9901,15 +9922,19 @@ input[type=range]::-ms-thumb {
 }
 
 .l-main-content .l-main-content__upload .c-fileInput-upload, .l-main-content .l-main-content__upload .c-fileInput-add {
+  height: 180px;
   width: 100%;
-  padding: 3rem 0;
   margin: 0;
   border-radius: 10px;
-  height: auto;
 }
 
 .l-main-content .l-main-content__upload .c-fileInput-upload .c-fileInput__title, .l-main-content .l-main-content__upload .c-fileInput-add .c-fileInput__title {
   padding-top: 1.5rem;
+}
+
+.l-main-content .l-main-content__upload .c-fileInput-upload .c-fileInput__img, .l-main-content .l-main-content__upload .c-fileInput-add .c-fileInput__img {
+  padding: 1rem;
+  width: 76px;
 }
 
 .l-main-content .l-main-content__upload .row {
@@ -9946,43 +9971,47 @@ input[type=range]::-ms-thumb {
 }
 
 .l-main-content .l-main-content__addMember .c-fileInput-add {
+  height: 180px;
   width: 100%;
-  padding: 3rem 0;
   margin: 0;
   border-radius: 10px;
-  height: auto;
 }
 
 .l-main-content .l-main-content__addMember .c-fileInput__title {
   padding-top: 1.5rem;
 }
 
-.l-main-content .l-main-content__planlist .table-thead .col, .l-main-content .l-main-content__wbslist .table-thead .col {
-  padding: 0;
+.l-main-content .l-main-content__addMember .c-fileInput__img {
+  padding: 1rem;
+  width: 76px;
 }
 
-.l-main-content .l-main-content__planlist .table-body .row, .l-main-content .l-main-content__wbslist .table-body .row {
-  padding: 0;
+.l-main-content .l-main-content__addMember .c-card-lablePerson:first-child {
+  margin-left: 0;
 }
 
-.l-main-content .l-main-content__planlist .table-body .row .col, .l-main-content .l-main-content__wbslist .table-body .row .col {
-  padding: 0.3rem;
+.l-main-content .l-main-content__planlist .table-thead, .l-main-content .l-main-content__wbslist .table-thead {
+  padding-left: 24px;
 }
 
-.l-main-content .l-main-content__planlist .table-body .row .table-body__additem, .l-main-content .l-main-content__wbslist .table-body .row .table-body__additem {
+.l-main-content .l-main-content__planlist .table-body .table-body__item, .l-main-content .l-main-content__wbslist .table-body .table-body__item {
+  border-bottom: #BAD4E5 solid 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #042340;
-  font-size: 16px;
-  cursor: pointer;
 }
 
-.l-main-content .l-main-content__planlist .table-body .row .table-body__additem img, .l-main-content .l-main-content__wbslist .table-body .row .table-body__additem img {
-  margin-right: 0.5rem;
+.l-main-content .l-main-content__planlist .table-body .table-body__item .table-body__item__icon, .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__icon {
+  width: 24px;
+}
+
+.l-main-content .l-main-content__planlist .table-body .row, .l-main-content .l-main-content__wbslist .table-body .row {
+  width: 100%;
+  padding: 0;
+  border-bottom: 0;
 }
 
 .l-main-content .l-main-content__planlist .table-body .row .select-wrapper, .l-main-content .l-main-content__wbslist .table-body .row .select-wrapper {
@@ -9999,13 +10028,31 @@ input[type=range]::-ms-thumb {
   margin-bottom: 0;
 }
 
-.l-main-content .l-main-content__planlist .c-datePicker-day, .l-main-content .l-main-content__wbslist .c-datePicker-day, .l-main-content .l-main-content__planlist .c-datePicker-days, .l-main-content .l-main-content__wbslist .c-datePicker-days, .l-main-content .l-main-content__planlist .c-datePicker-months, .l-main-content .l-main-content__wbslist .c-datePicker-months {
-  width: 100%;
+.l-main-content .l-main-content__planlist .o-text, .l-main-content .l-main-content__wbslist .o-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 44px;
+  margin-left: 0;
+}
+
+.l-main-content .l-main-content__planlist .c-datePicker-day .c-datePicker__input, .l-main-content .l-main-content__wbslist .c-datePicker-day .c-datePicker__input, .l-main-content .l-main-content__planlist .c-datePicker-days .c-datePicker__input, .l-main-content .l-main-content__wbslist .c-datePicker-days .c-datePicker__input, .l-main-content .l-main-content__planlist .c-datePicker-months .c-datePicker__input, .l-main-content .l-main-content__wbslist .c-datePicker-months .c-datePicker__input {
+  width: auto;
+}
+
+.l-main-content .l-main-content__planlist .c-datePicker-day .c-datePicker__input .o-input-div, .l-main-content .l-main-content__wbslist .c-datePicker-day .c-datePicker__input .o-input-div, .l-main-content .l-main-content__planlist .c-datePicker-days .c-datePicker__input .o-input-div, .l-main-content .l-main-content__wbslist .c-datePicker-days .c-datePicker__input .o-input-div, .l-main-content .l-main-content__planlist .c-datePicker-months .c-datePicker__input .o-input-div, .l-main-content .l-main-content__wbslist .c-datePicker-months .c-datePicker__input .o-input-div {
+  min-width: auto;
   height: 3rem;
 }
 
-.l-main-content .l-main-content__planlist .o-input-div, .l-main-content .l-main-content__wbslist .o-input-div {
-  min-width: auto;
+.l-main-content .l-main-content__planlist .c-datePicker-day .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__wbslist .c-datePicker-day .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__planlist .c-datePicker-days .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__wbslist .c-datePicker-days .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__planlist .c-datePicker-months .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__wbslist .c-datePicker-months .c-datePicker__input .o-input-div::after {
+  margin-top: 10px;
+}
+
+.l-main-content .l-main-content__planlist .c-datePicker-day .c-datePicker__modal table, .l-main-content .l-main-content__wbslist .c-datePicker-day .c-datePicker__modal table, .l-main-content .l-main-content__planlist .c-datePicker-days .c-datePicker__modal table, .l-main-content .l-main-content__wbslist .c-datePicker-days .c-datePicker__modal table, .l-main-content .l-main-content__planlist .c-datePicker-months .c-datePicker__modal table, .l-main-content .l-main-content__wbslist .c-datePicker-months .c-datePicker__modal table {
+  width: 210px;
 }
 
 .l-main-content .l-main-content__wbslist {
@@ -10240,7 +10287,7 @@ input[type=range]::-ms-thumb {
   white-space: nowrap;
   font-weight: 700;
   font-size: 16px;
-  padding: 1.5rem 0 1.5rem 2.5rem;
+  padding: 1.5rem 0 1.5rem 1.5rem;
 }
 
 .l-main-content-table .table-thead .row {
@@ -10249,6 +10296,12 @@ input[type=range]::-ms-thumb {
 
 .l-main-content-table .table-body .col {
   line-height: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 44px;
 }
 
 .l-main-content-table .table-body .table-body__tag-item {
@@ -10289,7 +10342,14 @@ input[type=range]::-ms-thumb {
 }
 
 .l-main-content-table .table-body .table-body-item .table-body-item__member .table-body-item__member__name {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 44px;
   width: 70%;
+  -webkit-box-orient: horizontal;
 }
 
 .l-main-content-table .table-body .table-body-item .table-body-item__member .table-body-item__member__btn {
@@ -10306,7 +10366,7 @@ input[type=range]::-ms-thumb {
 .l-main-content-table .table-body .row {
   margin-bottom: 0;
   font-size: 16px;
-  padding: 0 0 0 2.5rem;
+  padding: 0 0 0 1.5rem;
   height: 70px;
   border-bottom: 1px solid #BAD4E5;
   display: -webkit-box;
@@ -10832,6 +10892,7 @@ input[type=range]::-ms-thumb {
 
 .c-card-planPerson, .c-card-planHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan {
   width: 21.5%;
+  min-width: 240px;
 }
 
 .c-card-planPerson .c-card__tag, .c-card-planHotkey .c-card__tag, .c-card-planReport .c-card__tag, .c-card-planReport-danger .c-card__tag, .c-card-alertPlan .c-card__tag {
@@ -11647,7 +11708,7 @@ input[type=range]::-ms-thumb {
 .c-fileInput, .c-fileInput-upload, .c-fileInput-add {
   text-align: center;
   border-radius: 20px;
-  border: 2px dashed #BAD4E5;
+  border: 1px dashed #BAD4E5;
   padding: 20px;
   width: 24.65%;
   height: 334px;
@@ -12826,7 +12887,7 @@ input[type=range]::-ms-thumb {
   z-index: 100;
   background-color: #fff;
   position: absolute;
-  max-width: 200px;
+  width: 72px;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 5px;
@@ -13616,6 +13677,13 @@ input[type=range]::-ms-thumb {
 .change-card-to-list .l-main-content-item h2 {
   width: 60%;
   font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 44px;
+  max-height: 56px;
 }
 
 .change-card-to-list .l-main-content-item .c-card-planPerson, .change-card-to-list .l-main-content-item .c-card-planHotkey, .change-card-to-list .l-main-content-item .c-card-planReport, .change-card-to-list .l-main-content-item .c-card-planReport-danger, .change-card-to-list .l-main-content-item .c-card-alertPlan {

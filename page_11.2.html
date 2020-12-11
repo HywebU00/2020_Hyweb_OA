@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>page_13.2</title>
+  <title>page_11.2</title>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="stylesheets/all.css" />
 </head>
@@ -106,13 +106,13 @@
         <div class="c-tabs__content">
           <ul class="c-tabs__item tabs">
             <li class="c-tabs__item__link tab col s3">
-              <a href="#introduction">基本資訊</a>
+              <a class="active" href="#introduction">基本資訊</a>
             </li>
             <li class="c-tabs__item__link tab col s3">
               <a href="#member">計畫成員</a>
             </li>
             <li class="c-tabs__item__link tab col s3">
-              <a class="active" href="#WBS">WBS</a>
+              <a  href="#WBS">WBS</a>
             </li>
             <li class="c-tabs__item__link tab col s3">
               <a href="#types">工作類型</a>
@@ -223,7 +223,12 @@
           </div>
           <div class="l-main-content__title">提醒事項</div>
           <div class="l-main-content__textarea">
-            <textarea name="" id="" cols="30" rows="10" placeholder="此欄位可輸入欲特別提醒成員的事項"></textarea>
+            <div class="o-textarea-div">
+              <div class="">
+                專案重要連結<br>https://www.uidesigndaily.com/posts/studio-pricing-table-price-day-912 <br> <br>
+公只運我子全電天。模己己方的。起兩維義著光我這大大的流不另青座河結物名全別全三夫生理力這果他收面師能表：的樹民，本這地展，臺一麼打於國業理常都到，社程有特電別變買自的？觀才。公只運我子全電天。模己己方的。起兩維義著光我這大大的流不另青座河結物名全別全三夫生理力這果他收面師能表：的樹民，本這地展，臺一麼打於國業理常都到，社程有特電別變買自的？觀才。公只運我子全電天。模己己方的。起兩維義著光我這大大的流不另青座河結物名全別全三夫生理力這果他收面師能表：的樹民，本這地展，臺一麼打於國業理常都到，社
+              </div>
+            </div>
           </div>
           <div class="l-main-content__title">
             計畫附件
@@ -291,7 +296,7 @@
           <div class="l-main-content-table l-main-content__planlist">
             <div class="table-thead">
               <div class="row">
-                <div class="col s3">填寫日期</div>
+                <div class="col s3">完成及交付項目</div>
                 <div class="col s2">合約日期</div>
                 <div class="col s2">交付期程</div>
                 <div class="col s3">備註</div>
@@ -299,37 +304,29 @@
               </div>
             </div>
             <div class="table-body">
-              <div class="row">
-                <div class="col s3 o-input-textarea table-body__dragBtn">
-                  <div class="c-popover-checkPoint pop-modal">
-                    <span class="c-popover__btn pop-btn">
-                      <img src="img/o-drag.svg" alt="" /></span>
-                    <ul class="c-popover__content pop-content">
-                      <li>刪除</li>
-                      <li>複製</li>
-                    </ul>
+              <div id="list">
+                <div class="table-body__item">
+                  <div class="table-body__item__icon"></div>
+                  <div class="row">
+                    <div class="col s3 o-text">
+                      <div class="">
+                        現行版LOGO與貴局局徽結合，開發第二版
+                        現行版LOGO與貴局局徽結合，開發第二版
+                      </div>
+                    </div>
+                    <div class="col s2 o-text">
+                      <div class="">契約生效日180日曆天內必須完成</div>
+                    </div>
+                    <div class="col s2 o-text">
+                      <div class="">2020.07.08</div>
+                    </div>
+                    <div class="col s3 o-text">
+                      <div class="">契約生效日180日曆天內必須完成</div>
+                    </div>
+                    <div class="col s2 o-text">
+                      <div class="">完成，契約生效日180日曆天內</div>
+                    </div>
                   </div>
-                  <textarea name="" id="" cols="30" rows="2"></textarea>
-                </div>
-                <div class="col s2 o-input-textarea">
-                  <textarea name="" id="" cols="30" rows="2"></textarea>
-                </div>
-                <div class="col s2">
-                  <div class="c-datePicker-day">
-                    <input id="SingleDatePicker" type="text" name="birthday" value="10/24/1984" />
-                  </div>
-                </div>
-                <div class="col s3 o-input-textarea">
-                  <textarea name="" id="" cols="30" rows="2"></textarea>
-                </div>
-                <div class="col s2 o-input-textarea">
-                  <textarea name="" id="" cols="30" rows="2"></textarea>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col table-body__additem">
-                  <img src="img/o-plus.svg" alt="" />
-                  <div class="">新增項目</div>
                 </div>
               </div>
             </div>
@@ -442,6 +439,14 @@
                   <img src="img/o-addYear.svg" alt="" />
                   <span>2020年</span>
                 </div>
+                <div class="col s1">1月</div>
+                <div class="col s1">2月</div>
+                <div class="col s1">3月</div>
+                <div class="col s1">4月</div>
+                <div class="col s1">5月</div>
+                <div class="col s1">6月</div>
+                <div class="col s1">7月</div>
+                <div class="col s1">8月</div>
                 <div class="col s1">9月</div>
                 <div class="col s1">10月</div>
                 <div class="col s1">11月</div>
@@ -453,7 +458,7 @@
               </div>
             </div>
             <div class="table-body">
-              <div id="list">
+              <div id="list" class="Draglist">
                 <div class="row table-body__subtitle">
                   <div class="col s2 o-input-textarea table-body__dragBtn">
                     <div class="c-popover-checkPoint pop-modal">
@@ -512,9 +517,6 @@
                   </div>
                   <div class="col s3 o-input-textarea">
                     <textarea name="" cols="30" rows="10"></textarea>
-                    <!-- <div class="c-datePicker-days">
-                    <textarea name="" id="demo" cols="30" rows="10"></textarea>
-                  </div> -->
                   </div>
                   <div class="col s2">
                     <div class="input-field c-dropdown-general ">
@@ -621,6 +623,30 @@
                     </div>
                   </div>
                   <div class="col s2">
+                  </div>
+                  <div class="col s1 o-input">
+                    <input type="text">
+                  </div>
+                  <div class="col s1 o-input">
+                    <input type="text">
+                  </div>
+                  <div class="col s1 o-input">
+                    <input type="text">
+                  </div>
+                  <div class="col s1 o-input">
+                    <input type="text">
+                  </div>
+                  <div class="col s1 o-input">
+                    <input type="text">
+                  </div>
+                  <div class="col s1 o-input">
+                    <input type="text">
+                  </div>
+                  <div class="col s1 o-input">
+                    <input type="text">
+                  </div>
+                  <div class="col s1 o-input">
+                    <input type="text">
                   </div>
                   <div class="col s1 o-input">
                     <input type="text">
@@ -648,17 +674,13 @@
                     </div>
                     <textarea name="" cols="30" rows="10"></textarea>
                   </div>
-                  <div class="col s3 o-input-textarea">
-                    <textarea name="" cols="30" rows="10"></textarea>
+                  <div class="col s3 ">
                   </div>
                   <div class="col s3 o-input-textarea">
                     <textarea name="" cols="30" rows="10"></textarea>
                   </div>
                   <div class="col s3 o-input-textarea">
                     <textarea name="" cols="30" rows="10"></textarea>
-                    <!-- <div class="c-datePicker-days">
-                    <textarea name="" id="demo" cols="30" rows="10"></textarea>
-                  </div> -->
                   </div>
                   <div class="col s2">
                     <div class="input-field c-dropdown-general ">
@@ -765,6 +787,30 @@
                     </div>
                   </div>
                   <div class="col s2">
+                  </div>
+                  <div class="col s1 o-input">
+                    <input type="text">
+                  </div>
+                  <div class="col s1 o-input">
+                    <input type="text">
+                  </div>
+                  <div class="col s1 o-input">
+                    <input type="text">
+                  </div>
+                  <div class="col s1 o-input">
+                    <input type="text">
+                  </div>
+                  <div class="col s1 o-input">
+                    <input type="text">
+                  </div>
+                  <div class="col s1 o-input">
+                    <input type="text">
+                  </div>
+                  <div class="col s1 o-input">
+                    <input type="text">
+                  </div>
+                  <div class="col s1 o-input">
+                    <input type="text">
                   </div>
                   <div class="col s1 o-input">
                     <input type="text">
@@ -1538,25 +1584,6 @@
           <button class="o-btn-primary waves-effect waves-blue modal-close">
             加入
           </button>
-        </div>
-      </div>
-    </div>
-    <!-- toast -->
-
-    <div class="c-toast-uploadSuccess toast-join-position">
-      <div class="c-toast-header">
-        <div class="">成功上傳 1 個檔案</div>
-        <img src="img/o-corss.svg" alt="" />
-      </div>
-      <div class="c-toast-body">
-        <div class="c-toast-body__item">
-          <div class="c-toast-body__item__title">
-            <div class="">
-              <img src="img/o-fileXls.svg" alt="" />
-              <div class="">檔案名稱.xls</div>
-            </div>
-            <img src="img/o-uploadSuccess.svg" alt="" />
-          </div>
         </div>
       </div>
     </div>

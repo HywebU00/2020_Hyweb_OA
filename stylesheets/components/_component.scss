@@ -103,7 +103,7 @@
 .c-card-planPerson {
     @extend .c-card-manhourSofar;
     width: 21.5%;
-
+    min-width: 240px;
     .c-card__tag {
         padding-top: $pd;
         display: inline-block;
@@ -832,7 +832,7 @@
 .c-fileInput {
     text-align: center;
     border-radius: $card-radius;
-    border: 2px dashed $fileInput_border;
+    border: 1px dashed $fileInput_border;
     padding: $pd-2;
     width: 24.65%; //296px;
     height: 334px;
@@ -2017,7 +2017,7 @@
         z-index: 100;
         background-color: #fff;
         position: absolute;
-        max-width: 200px;
+        width: 72px;
         box-shadow: $box-shadow;
         border-radius: $select-radius;
         padding: 0.8rem 0.8rem 0.8rem 0.8rem;

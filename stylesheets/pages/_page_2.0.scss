@@ -123,6 +123,8 @@
         h2 {
             width: 60%;
             font-weight: 400;
+            @include db_ellipsisText;
+            max-height: 56px;
         }
 
         .c-card-planPerson {
