@@ -31,12 +31,23 @@
           </div>
           <div class="c-sidebar-content__listGroup">
             <div class="c-sidebar-content__list">
-              <div class="c-sidebar-content__list__title">
-                <img src="img/o-clock.svg" alt="" />
+              <div class="c-sidebar-content__list__title menuParent-is-active">
+                <div class="list__title__icon icon-is-active">
+                  <img
+                    class="list__title__icon__default"
+                    src="img/o-clock.svg"
+                    alt=""
+                  />
+                  <img
+                    class="list__title__icon__active"
+                    src="img/o-clock-green.svg"
+                    alt=""
+                  />
+                </div>
                 <div class="">我的工時紀錄</div>
               </div>
               <div class="c-sidebar-content__list__content">
-                <div class="c-sidebar-content__list__item is-active">
+                <div class="c-sidebar-content__list__item menuItem-is-active">
                   填寫每日工時
                 </div>
                 <div class="c-sidebar-content__list__item">檢視計畫工時</div>
@@ -44,7 +55,18 @@
             </div>
             <div class="c-sidebar-content__list">
               <div class="c-sidebar-content__list__title">
-                <img src="img/o-plan.svg" alt="" />
+                <div class="list__title__icon">
+                  <img
+                    class="list__title__icon__default"
+                    src="img/o-plan.svg"
+                    alt=""
+                  />
+                  <img
+                    class="list__title__icon__active"
+                    src="img/o-plan-green.svg"
+                    alt=""
+                  />
+                </div>
                 <div class="">我的計畫管理</div>
               </div>
               <div class="c-sidebar-content__list__content">
@@ -54,7 +76,18 @@
             </div>
             <div class="c-sidebar-content__list">
               <div class="c-sidebar-content__list__title">
-                <img src="img/o-report.svg" alt="" />
+                <div class="list__title__icon">
+                  <img
+                    class="list__title__icon__default"
+                    src="img/o-report.svg"
+                    alt=""
+                  />
+                  <img
+                    class="list__title__icon__active"
+                    src="img/o-report-green.svg"
+                    alt=""
+                  />
+                </div>
                 <div class="">統計報表</div>
               </div>
               <div class="c-sidebar-content__list__content">
@@ -66,7 +99,18 @@
             </div>
             <div class="c-sidebar-content__list">
               <div class="c-sidebar-content__list__title">
-                <img src="img/o-management.svg" alt="" />
+                <div class="list__title__icon">
+                  <img
+                    class="list__title__icon__default"
+                    src="img/o-management.svg"
+                    alt=""
+                  />
+                  <img
+                    class="list__title__icon__active"
+                    src="img/o-management-green.svg"
+                    alt=""
+                  />
+                </div>
                 <div class="">系統管理</div>
               </div>
               <div class="c-sidebar-content__list__content">
@@ -84,6 +128,7 @@
           </div>
           <div class="c-sidebar-btnlist__item">
             <img class="menu-btn" src="img/o-arrowLeft.svg" alt="" />
+            <img class="menu-btn__open" src="img/o-arrowRight.svg" alt="" />
           </div>
         </div>
       </div>
@@ -337,7 +382,7 @@
                 </div>
               </div>
               <div class="table-body">
-                <div id="list">
+                <div class="Draglist">
                   <div class="table-body__item">
                     <div class="c-popover-checkPoint pop-modal">
                       <span class="c-popover__btn pop-btn">
@@ -355,7 +400,7 @@
                       <div class="col s2 o-input-textarea">
                         <textarea name="" id="" rows="2"></textarea>
                       </div>
-                      <div class="col s2">
+                      <div class="col is-popmodal-show s2">
                         <div class="c-datePicker-day pop-modal">
                           <div class="c-datePicker__input pop-btn">
                             <div class="o-input-div"></div>
@@ -446,13 +491,11 @@
                   </div>
                 </div>
                 <div class="table-body__item">
-                  <div class="table-body__item__icon">
-                    <img src="img/o-plus.svg" alt="" />
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="">新增項目</div>
+                  <div class="table-body__item__project">
+                    <div class="table-body__item__project__icon">
+                      <img src="img/o-plus.svg" alt="" />
                     </div>
+                    <div class="table-body__item__project__title">新增項目</div>
                   </div>
                 </div>
               </div>
@@ -541,9 +584,9 @@
             <div class="l-main-content-table l-main-content__workTypelist">
               <div class="table-thead">
                 <div class="row">
-                  <div class="col s1">編號</div>
-                  <div class="col s2">工作類型</div>
-                  <div class="col s2">
+                  <div class="col s2">編號</div>
+                  <div class="col s3">工作階段</div>
+                  <div class="col s3">
                     所有年度 <br />
                     預估工時總計
                   </div>
@@ -551,6 +594,14 @@
                     <img src="img/o-addYear.svg" alt="" />
                     <span>2020年</span>
                   </div>
+                  <div class="col s1">1月</div>
+                  <div class="col s1">2月</div>
+                  <div class="col s1">3月</div>
+                  <div class="col s1">4月</div>
+                  <div class="col s1">5月</div>
+                  <div class="col s1">6月</div>
+                  <div class="col s1">7月</div>
+                  <div class="col s1">8月</div>
                   <div class="col s1">9月</div>
                   <div class="col s1">10月</div>
                   <div class="col s1">11月</div>
@@ -562,29 +613,68 @@
                 </div>
               </div>
               <div class="table-body">
-                <div class="row">
-                  <div class="col s1">01</div>
-                  <div class="col s2">專案管理</div>
-                  <div class="col s2">74</div>
-                  <div class="col s2">50</div>
-                  <div class="col s1">24</div>
-                  <div class="col s1">1</div>
-                  <div class="col s1">1</div>
-                  <div class="col s1">24</div>
-                  <div class="col s2">24</div>
+                <div class="table-body__item">
+                  <div class="row">
+                    <div class="col s2">01</div>
+                    <div class="col s3">專案管理</div>
+                    <div class="col s3">74</div>
+                    <div class="col s2">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">24</div>
+                    <div class="col s2">24</div>
+                  </div>
                 </div>
-              </div>
-              <div class="table-footer">
-                <div class="row">
-                  <div class="col s1"></div>
-                  <div class="col s2">合計</div>
-                  <div class="col s2">238</div>
-                  <div class="col s2">160</div>
-                  <div class="col s1">30</div>
-                  <div class="col s1">9</div>
-                  <div class="col s1">1</div>
-                  <div class="col s1">120</div>
-                  <div class="col s2">78</div>
+                <div class="table-body__item">
+                  <div class="row">
+                    <div class="col s2">01</div>
+                    <div class="col s3">專案管理</div>
+                    <div class="col s3">74</div>
+                    <div class="col s2">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">24</div>
+                    <div class="col s2">24</div>
+                  </div>
+                </div>
+                <div class="table-footer">
+                  <div class="row">
+                    <div class="col s2"></div>
+                    <div class="col s3">合計</div>
+                    <div class="col s3">238</div>
+                    <div class="col s2">160</div>
+                    <div class="col s1">30</div>
+                    <div class="col s1">9</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">1</div>
+                    <div class="col s1">120</div>
+                    <div class="col s2">78</div>
+                  </div>
                 </div>
               </div>
             </div>

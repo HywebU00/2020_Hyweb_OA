@@ -182,7 +182,6 @@ for (let a = 0; a < pop_modal.length; a++) {
     }
   });
   if (confirm_btn[a] != null) {
-    console.log(confirm_btn[a]);
     confirm_btn[a].addEventListener("click", function () {
       let parentlist = confirm_btn[a].parentNode.parentNode;
       parentlist.classList.remove("is-pop-show");
@@ -203,4 +202,12 @@ collapsible.forEach(function (item) {
       item.classList.remove("is-accordion-active");
     }
   });
+});
+
+//++++++++++++++++++
+//tooltip 效果
+//++++++++++++++++++
+
+$(document).ready(function () {
+  $(".tooltipped").tooltip();
 });

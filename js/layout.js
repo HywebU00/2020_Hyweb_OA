@@ -2,40 +2,37 @@
 //  側邊收闔效果
 //++++++++++++++++++
 const sidebar = document.querySelector(".l-container");
-const menu = document.querySelector(".l-side");
 const nametag = document.querySelector(".chinese__name");
-//const l_Main_Content = document.querySelector(".l-main-content");
 const l_Main_Content = document.querySelectorAll(".l-main-content");
 const name = [];
-
+const menu_btn_open = document.querySelector(".menu-btn__open");
+const menu_btn = document.querySelector(".menu-btn");
 //open menu
-if (menu != null) {
-  menu.addEventListener("mouseover", opemmenu);
+if (menu_btn_open != null) {
+  menu_btn_open.addEventListener("click", opemmenu);
   function opemmenu() {
     sidebar.classList.add("sidebar__is-open");
+    menu_btn.style.display = "block";
+    menu_btn_open.style.display = "none";
     l_Main_Content.forEach((item) => {
       item.style.width = "calc(100vw - 267px)";
     });
-    menu.removeEventListener("mouseover", opemmenu);
     fullname();
   }
 }
 //close menu
-const menu_btn = document.querySelector(".menu-btn");
 if (menu_btn != null) {
   function closemenu() {
     sidebar.classList.remove("sidebar__is-open");
+    menu_btn.style.display = "none";
+    menu_btn_open.style.display = "block";
     l_Main_Content.forEach((item) => {
       item.style.width = "calc(100vw - 142px)";
     });
-    setTimeout(function () {
-      menu.addEventListener("mouseover", opemmenu);
-    }, 500);
     firstname();
   }
   menu_btn.addEventListener("click", closemenu);
 }
-
 //get  username
 if (nametag != null) {
   getname();
@@ -64,9 +61,27 @@ for (let a = 0; a < menuItem.length; a++) {
   menuItem[a].addEventListener("click", changeItemStyle);
 
   function changeItemStyle() {
-    let clickItem = document.querySelector(".is-active");
-    clickItem.classList.remove("is-active");
-    menuItem[a].classList.add("is-active");
+    let clickItem = document.querySelector(".menuItem-is-active");
+    clickItem.classList.remove("menuItem-is-active");
+    let menuParent = document.querySelector(".menuParent-is-active");
+    menuParent.classList.remove("menuParent-is-active");
+    let icon_active = document.querySelector(".icon-is-active");
+    icon_active.classList.remove("icon-is-active");
+
+    menuItem[a].classList.add("menuItem-is-active");
+    let menuParentList = menuItem[a].parentNode.parentNode.childNodes;
+    // 增加menutitle的border 樣式
+    menuParentList.forEach(function (item) {
+      if (item.className === "c-sidebar-content__list__title") {
+        item.classList.add("menuParent-is-active");
+        let list = item.childNodes;
+        list.forEach(function (item) {
+          if (item.className === "list__title__icon") {
+            item.classList.add("icon-is-active");
+          }
+        });
+      }
+    });
   }
 }
 
@@ -297,7 +312,6 @@ if (tag_item != null && tag_content != null) {
 }
 
 const list = document.querySelector(".Draglist");
-//const list = document.querySelectorAll(".Draglist");
 if (list != null) {
   dragula([document.querySelector(".Draglist")]);
 }

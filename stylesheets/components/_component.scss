@@ -138,6 +138,7 @@
     padding: 0;
     width: 100%;
     max-width: 204px;
+    min-width: auto;
 
     .c-card__content {
         margin-top: 0px;
@@ -2522,7 +2523,7 @@
 .o-input-textarea {
     display: flex;
     align-items: center;
-
+    -webkit-box-align: initial;
     textarea {
         border: 0;
         border-radius: $input-radius;

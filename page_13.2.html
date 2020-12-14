@@ -29,12 +29,23 @@
         </div>
         <div class="c-sidebar-content__listGroup">
           <div class="c-sidebar-content__list">
-            <div class="c-sidebar-content__list__title">
-              <img src="img/o-clock.svg" alt="" />
+            <div class="c-sidebar-content__list__title menuParent-is-active">
+              <div class="list__title__icon icon-is-active">
+                <img
+                  class="list__title__icon__default"
+                  src="img/o-clock.svg"
+                  alt=""
+                />
+                <img
+                  class="list__title__icon__active"
+                  src="img/o-clock-green.svg"
+                  alt=""
+                />
+              </div>
               <div class="">我的工時紀錄</div>
             </div>
             <div class="c-sidebar-content__list__content">
-              <div class="c-sidebar-content__list__item is-active">
+              <div class="c-sidebar-content__list__item menuItem-is-active">
                 填寫每日工時
               </div>
               <div class="c-sidebar-content__list__item">檢視計畫工時</div>
@@ -42,7 +53,18 @@
           </div>
           <div class="c-sidebar-content__list">
             <div class="c-sidebar-content__list__title">
-              <img src="img/o-plan.svg" alt="" />
+              <div class="list__title__icon">
+                <img
+                  class="list__title__icon__default"
+                  src="img/o-plan.svg"
+                  alt=""
+                />
+                <img
+                  class="list__title__icon__active"
+                  src="img/o-plan-green.svg"
+                  alt=""
+                />
+              </div>
               <div class="">我的計畫管理</div>
             </div>
             <div class="c-sidebar-content__list__content">
@@ -52,7 +74,18 @@
           </div>
           <div class="c-sidebar-content__list">
             <div class="c-sidebar-content__list__title">
-              <img src="img/o-report.svg" alt="" />
+              <div class="list__title__icon">
+                <img
+                  class="list__title__icon__default"
+                  src="img/o-report.svg"
+                  alt=""
+                />
+                <img
+                  class="list__title__icon__active"
+                  src="img/o-report-green.svg"
+                  alt=""
+                />
+              </div>
               <div class="">統計報表</div>
             </div>
             <div class="c-sidebar-content__list__content">
@@ -64,7 +97,18 @@
           </div>
           <div class="c-sidebar-content__list">
             <div class="c-sidebar-content__list__title">
-              <img src="img/o-management.svg" alt="" />
+              <div class="list__title__icon">
+                <img
+                  class="list__title__icon__default"
+                  src="img/o-management.svg"
+                  alt=""
+                />
+                <img
+                  class="list__title__icon__active"
+                  src="img/o-management-green.svg"
+                  alt=""
+                />
+              </div>
               <div class="">系統管理</div>
             </div>
             <div class="c-sidebar-content__list__content">
@@ -82,6 +126,7 @@
         </div>
         <div class="c-sidebar-btnlist__item">
           <img class="menu-btn" src="img/o-arrowLeft.svg" alt="" />
+          <img class="menu-btn__open" src="img/o-arrowRight.svg" alt="" />
         </div>
       </div>
     </div>
@@ -291,7 +336,7 @@
           <div class="l-main-content-table l-main-content__planlist">
             <div class="table-thead">
               <div class="row">
-                <div class="col s3">填寫日期</div>
+                <div class="col s3">完成及交付項目</div>
                 <div class="col s2">合約日期</div>
                 <div class="col s2">交付期程</div>
                 <div class="col s3">備註</div>
@@ -299,37 +344,29 @@
               </div>
             </div>
             <div class="table-body">
-              <div class="row">
-                <div class="col s3 o-input-textarea table-body__dragBtn">
-                  <div class="c-popover-checkPoint pop-modal">
-                    <span class="c-popover__btn pop-btn">
-                      <img src="img/o-drag.svg" alt="" /></span>
-                    <ul class="c-popover__content pop-content">
-                      <li>刪除</li>
-                      <li>複製</li>
-                    </ul>
+              <div id="list">
+                <div class="table-body__item">
+                  <div class="table-body__item__icon"></div>
+                  <div class="row">
+                    <div class="col s3 ">
+                      <div class="">
+                        現行版LOGO與貴局局徽結合，開發第二版
+                        現行版LOGO與貴局局徽結合，開發第二版
+                      </div>
+                    </div>
+                    <div class="col s2 ">
+                      <div class="">契約生效日180日曆天內必須完成</div>
+                    </div>
+                    <div class="col s2 ">
+                      <div class="">2020.07.08</div>
+                    </div>
+                    <div class="col s3 ">
+                      <div class="">契約生效日180日曆天內必須完成</div>
+                    </div>
+                    <div class="col s2 ">
+                      <div class="">完成，契約生效日180日曆天內</div>
+                    </div>
                   </div>
-                  <textarea name="" id="" cols="30" rows="2"></textarea>
-                </div>
-                <div class="col s2 o-input-textarea">
-                  <textarea name="" id="" cols="30" rows="2"></textarea>
-                </div>
-                <div class="col s2">
-                  <div class="c-datePicker-day">
-                    <input id="SingleDatePicker" type="text" name="birthday" value="10/24/1984" />
-                  </div>
-                </div>
-                <div class="col s3 o-input-textarea">
-                  <textarea name="" id="" cols="30" rows="2"></textarea>
-                </div>
-                <div class="col s2 o-input-textarea">
-                  <textarea name="" id="" cols="30" rows="2"></textarea>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col table-body__additem">
-                  <img src="img/o-plus.svg" alt="" />
-                  <div class="">新增項目</div>
                 </div>
               </div>
             </div>
