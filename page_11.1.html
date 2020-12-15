@@ -381,8 +381,9 @@
                   <div class="col s2">狀態</div>
                 </div>
               </div>
+              <div class=""></div>
               <div class="table-body">
-                <div class="Draglist">
+                <div class="Draglist_sec">
                   <div class="table-body__item">
                     <div class="c-popover-checkPoint pop-modal">
                       <span class="c-popover__btn pop-btn">
@@ -505,21 +506,21 @@
         <div id="member">
           <div class="l-main-tabs">
             <a class="l-main-tabs__item modal-trigger" href="#addGroup">
-              <img src="img/o-upload.svg" alt="" />
+              <img src="img/o-plus.svg" alt="" />
               <div class="">新增成員</div>
             </a>
           </div>
           <div class="l-main-content">
             <div class="l-main-content__fileInput">
               <a class="modal-trigger" href="#addGroup">
-                <div class="c-fileInput-upload">
+                <div class="c-fileInput-add">
                   <div class="">
                     <img
                       class="c-fileInput__img"
-                      src="img/o-uploadL.svg"
+                      src="img/o-plusL.svg"
                       alt=""
                     />
-                    <div class="c-fileInput__title">上傳Excel</div>
+                    <div class="c-fileInput__title">新增計畫成員</div>
                   </div>
                 </div>
               </a>
@@ -533,53 +534,3399 @@
               <div class="">上傳Excel</div>
             </a>
             <a class="l-main-tabs__item modal-trigger" href="#">
+              <img src="img/o-cencel.svg" alt="" />
+              <div class="">取消</div>
+            </a>
+            <a class="l-main-tabs__item modal-trigger" href="#">
               <img src="img/o-save.svg" alt="" />
               <div class="">儲存</div>
             </a>
-            <a class="l-main-tabs__item modal-trigger" href="#">
-              <img src="img/o-export.svg" alt="" />
-              <div class="">匯出</div>
-            </a>
-            <a class="l-main-tabs__item modal-trigger" href="#">
-              <img src="img/o-confirm.svg" alt="" />
-              <div class="">發布給成員</div>
-            </a>
           </div>
           <div class="l-main-content">
-            <div class="l-main-content__fileInput">
-              <div class="l-main-content__fileInput__position">
-                <div class="c-fileInput-add">
-                  <div class="">
-                    <img
-                      class="c-fileInput__img"
-                      src="img/o-plusL.svg"
-                      alt=""
-                    />
-                    <div class="c-fileInput__title">線上編輯</div>
+            <div class="l-main-content__downloadlink"><a class="modal-trigger" href="#sample">＊下載WBS Excel範本</a></div>
+            <div class="l-main-content-table l-main-content__wbslist">
+              <div class="table-thead">
+                <div class="row">
+                  <div class="col s2">編號</div>
+                  <div class="col s3">工作階段</div>
+                  <div class="col s3">工作內容</div>
+                  <div class="col s3">起訖時間</div>
+                  <div class="col s2">工作類型</div>
+                  <div class="col s5">執行成員</div>
+                  <div class="col s2">
+                    <img src="img/o-addYear.svg" alt="" />
+                    <span>2020年</span>
+                  </div>
+                  <div class="col s1">1月</div>
+                  <div class="col s1">2月</div>
+                  <div class="col s1">3月</div>
+                  <div class="col s1">4月</div>
+                  <div class="col s1">5月</div>
+                  <div class="col s1">6月</div>
+                  <div class="col s1">7月</div>
+                  <div class="col s1">8月</div>
+                  <div class="col s1">9月</div>
+                  <div class="col s1">10月</div>
+                  <div class="col s1">11月</div>
+                  <div class="col s1">12月</div>
+                  <div class="col s2">
+                    <img src="img/o-lessYear.svg" alt="" />
+                    <span>2021年</span>
                   </div>
                 </div>
-                <div class="">
-                  <a class="modal-trigger" href="#addGroup">
-                    <div class="c-fileInput-upload">
-                      <div class="">
-                        <img
-                          class="c-fileInput__img"
-                          src="img/o-uploadL.svg"
-                          alt=""
-                        />
-                        <div class="c-fileInput__title">上傳Excel</div>
-                      </div>
+              </div>
+              <div class="table-body">
+                <div class="Draglist">
+                  <div class="table-body__item table-body__subtitle">
+                    <div class="c-popover-checkPoint pop-modal">
+                      <span class="c-popover__btn pop-btn">
+                        <img src="img/o-more.svg" alt=""
+                      /></span>
+                      <ul class="c-popover__content pop-content">
+                        <li>刪除</li>
+                        <li>複製</li>
+                      </ul>
                     </div>
-                  </a>
-                  <a class="l-main-content__fileInput__link" href="#"
-                    >下載WBS Excel範本</a
-                  >
+                    <div class="row">
+                      <div class="col s2 o-input-textarea">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3"></div>
+                      <div class="col s3 o-input-textarea is-popmodal-show">
+                        <div class="c-datePicker-days pop-modal">
+                          <div class="c-datePicker__input pop-btn">
+                            <div class="o-input-div"></div>
+                          </div>
+                          <div class="c-datePicker__modal pop-content">
+                            <div class="c-datePicker__group">
+                              <div class="c-datePicker__item">
+                                <div class="c-datePicker__yearPicker">
+                                  <img src="img/o-arrowLeft-blue.svg" alt="" />
+                                  <div class="">2020 7月</div>
+                                  <div class=""></div>
+                                </div>
+                                <div class="c-datePicker__content">
+                                  <table>
+                                    <tbody>
+                                      <tr>
+                                        <th>日</th>
+                                        <th>一</th>
+                                        <th>二</th>
+                                        <th>三</th>
+                                        <th>四</th>
+                                        <th>五</th>
+                                        <th>六</th>
+                                      </tr>
+                                      <tr>
+                                        <td class="is-no-this-month">28</td>
+                                        <td class="is-no-this-month">29</td>
+                                        <td class="is-no-this-month">30</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td
+                                          class="is-select-day is-select-range-first"
+                                        >
+                                          3
+                                        </td>
+                                        <td
+                                          class="is-no-work is-select-range-lest"
+                                        >
+                                          4
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td
+                                          class="is-no-work is-select-range-first"
+                                        >
+                                          5
+                                        </td>
+                                        <td class="is-select-range">6</td>
+                                        <td class="is-select-range">7</td>
+                                        <td class="is-select-range">8</td>
+                                        <td class="is-select-range">9</td>
+                                        <td
+                                          class="is-select-day is-select-range-lest"
+                                        >
+                                          10
+                                        </td>
+                                        <td class="is-no-work">11</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="is-no-work">12</td>
+                                        <td>13</td>
+                                        <td>14</td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td>17</td>
+                                        <td class="is-no-work">18</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="is-no-work">19</td>
+                                        <td>20</td>
+                                        <td>21</td>
+                                        <td>22</td>
+                                        <td>23</td>
+                                        <td>24</td>
+                                        <td class="is-no-work">25</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="is-no-work">26</td>
+                                        <td>27</td>
+                                        <td>28</td>
+                                        <td>29</td>
+                                        <td>30</td>
+                                        <td>31</td>
+                                        <td class="is-no-work">1</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="c-datePicker__item">
+                                <div class="c-datePicker__yearPicker">
+                                  <div class=""></div>
+                                  <div class="">2020 8月</div>
+                                  <img src="img/o-arrowRight-blue.svg" alt="" />
+                                </div>
+                                <div class="c-datePicker__content">
+                                  <table>
+                                    <tbody>
+                                      <tr>
+                                        <th>日</th>
+                                        <th>一</th>
+                                        <th>二</th>
+                                        <th>三</th>
+                                        <th>四</th>
+                                        <th>五</th>
+                                        <th>六</th>
+                                      </tr>
+                                      <tr>
+                                        <td class="is-no-this-month">28</td>
+                                        <td class="is-no-this-month">29</td>
+                                        <td class="is-no-this-month">30</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td class="">3</td>
+                                        <td class="is-no-work">4</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="is-no-work">5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                        <td>10</td>
+                                        <td class="is-no-work">11</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="is-no-work">12</td>
+                                        <td>13</td>
+                                        <td>14</td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td>17</td>
+                                        <td class="is-no-work">18</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="is-no-work">19</td>
+                                        <td>20</td>
+                                        <td>21</td>
+                                        <td>22</td>
+                                        <td>23</td>
+                                        <td>24</td>
+                                        <td class="is-no-work">25</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="is-no-work">26</td>
+                                        <td>27</td>
+                                        <td>28</td>
+                                        <td>29</td>
+                                        <td>30</td>
+                                        <td>31</td>
+                                        <td class="is-no-work">1</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="c-datePicker__footer">
+                              <button
+                                class="o-btn-primary waves-effect waves-blue pop-confirm-btn"
+                              >
+                                確認
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s2"></div>
+                      <div class="col s5"></div>
+                      <div class="col s2"></div>
+                      <div class="col s1"></div>
+                      <div class="col s1"></div>
+                      <div class="col s1"></div>
+                      <div class="col s1"></div>
+                      <div class="col s1"></div>
+                      <div class="col s1"></div>
+                      <div class="col s1"></div>
+                      <div class="col s1"></div>
+                      <div class="col s1"></div>
+                      <div class="col s1"></div>
+                      <div class="col s1"></div>
+                      <div class="col s1"></div>
+                      <div class="col s2"></div>
+                    </div>
+                  </div>
+                  <div class=" table-body__item ">
+                    <div class="c-popover-checkPoint pop-modal">
+                      <span class="c-popover__btn pop-btn">
+                        <img src="img/o-more.svg" alt="" /></span>
+                      <ul class="c-popover__content pop-content">
+                        <li>刪除</li>
+                        <li>複製</li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <div class="col s2 o-input-textarea table-body__dragBtn">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea ">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea is-popmodal-show">
+                        <div class="c-datePicker-days pop-modal">
+                          <div class="c-datePicker__input pop-btn">
+                            <div class="o-input-div"></div>
+                          </div>
+                          <div class="c-datePicker__modal pop-content">
+                            <div class="c-datePicker__group">
+                              <div class="c-datePicker__item">
+                              <div class="c-datePicker__yearPicker">
+                                <img src="img/o-arrowLeft-blue.svg" alt="">
+                                <div class="">2020 7月</div>
+                               <div class=""></div>
+                              </div>
+                              <div class="c-datePicker__content">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>日</th>
+                                      <th>一</th>
+                                      <th>二</th>
+                                      <th>三</th>
+                                      <th>四</th>
+                                      <th>五</th>
+                                      <th>六</th>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-this-month">28</td>
+                                      <td class="is-no-this-month">29</td>
+                                      <td class="is-no-this-month">30</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td class="is-select-day is-select-range-first">3</td>
+                                      <td class="is-no-work is-select-range-lest">4</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work is-select-range-first">5</td>
+                                      <td class="is-select-range">6</td>
+                                      <td class="is-select-range">7</td>
+                                      <td class="is-select-range">8</td>
+                                      <td class="is-select-range">9</td>
+                                      <td class="is-select-day is-select-range-lest">10</td>
+                                      <td class="is-no-work">11</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">12</td>
+                                      <td>13</td>
+                                      <td>14</td>
+                                      <td>15</td>
+                                      <td>16</td>
+                                      <td>17</td>
+                                      <td class="is-no-work">18</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">19</td>
+                                      <td>20</td>
+                                      <td>21</td>
+                                      <td>22</td>
+                                      <td>23</td>
+                                      <td>24</td>
+                                      <td class="is-no-work">25</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">26</td>
+                                      <td>27</td>
+                                      <td>28</td>
+                                      <td>29</td>
+                                      <td>30</td>
+                                      <td>31</td>
+                                      <td class="is-no-work">1</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="c-datePicker__item">
+                              <div class="c-datePicker__yearPicker">
+                               <div class=""></div>
+                                <div class="">2020 8月</div>
+                                <img src="img/o-arrowRight-blue.svg" alt="">
+                              </div>
+                              <div class="c-datePicker__content">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>日</th>
+                                      <th>一</th>
+                                      <th>二</th>
+                                      <th>三</th>
+                                      <th>四</th>
+                                      <th>五</th>
+                                      <th>六</th>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-this-month">28</td>
+                                      <td class="is-no-this-month">29</td>
+                                      <td class="is-no-this-month">30</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td class="">3</td>
+                                      <td class="is-no-work">4</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">5</td>
+                                      <td>6</td>
+                                      <td>7</td>
+                                      <td>8</td>
+                                      <td>9</td>
+                                      <td>10</td>
+                                      <td class="is-no-work">11</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">12</td>
+                                      <td>13</td>
+                                      <td>14</td>
+                                      <td>15</td>
+                                      <td>16</td>
+                                      <td>17</td>
+                                      <td class="is-no-work">18</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">19</td>
+                                      <td>20</td>
+                                      <td>21</td>
+                                      <td>22</td>
+                                      <td>23</td>
+                                      <td>24</td>
+                                      <td class="is-no-work">25</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">26</td>
+                                      <td>27</td>
+                                      <td>28</td>
+                                      <td>29</td>
+                                      <td>30</td>
+                                      <td>31</td>
+                                      <td class="is-no-work">1</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div> 
+                            </div>
+                            <div class="c-datePicker__footer">
+                              <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s2 is-popmodal-show">
+                        <div class="input-field c-dropdown-general ">
+                          <select class="c-dropdown-plan-select">
+                            <option value="1">全部(預設)</option>
+                            <option value="2">A/專案</option>
+                            <option value="3">B/產品發展</option>
+                            <option value="4">C/服務</option>
+                            <option value="5">D/技術研究</option>
+                            <option value="6">E/共通計畫</option>
+                            <option value="7">F/小型計畫</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col s5 is-popmodal-show">
+                        <div class="c-dropdown-member pop-modal">
+                          <div class="dropdown-input c-dropdown__input pop-btn">
+                            <input type="text">
+                          </div>
+                          <div class="c-dropdown__modal pop-content">
+                            <div class="c-dropdown__title">
+                              <div class="">
+                                <div class="c-dropdown__title__all ">全選</div>
+                              </div>
+                            </div>
+                            <div class="c-dropdown__content__height">
+                              <ul class="c-dropdown__content">
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="c-dropdown__footer">
+                              <button class="o-btn-secondary waves-effect waves-blue ">重設</button>
+                              <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s2">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s2"></div>
+                    </div>
+                  </div>
+                  <div class=" table-body__item ">
+                    <div class="c-popover-checkPoint pop-modal">
+                      <span class="c-popover__btn pop-btn">
+                        <img src="img/o-more.svg" alt="" /></span>
+                      <ul class="c-popover__content pop-content">
+                        <li>刪除</li>
+                        <li>複製</li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <div class="col s2 o-input-textarea table-body__dragBtn">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea ">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea is-popmodal-show">
+                        <div class="c-datePicker-days pop-modal">
+                          <div class="c-datePicker__input pop-btn">
+                            <div class="o-input-div"></div>
+                          </div>
+                          <div class="c-datePicker__modal pop-content">
+                            <div class="c-datePicker__group">
+                              <div class="c-datePicker__item">
+                              <div class="c-datePicker__yearPicker">
+                                <img src="img/o-arrowLeft-blue.svg" alt="">
+                                <div class="">2020 7月</div>
+                               <div class=""></div>
+                              </div>
+                              <div class="c-datePicker__content">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>日</th>
+                                      <th>一</th>
+                                      <th>二</th>
+                                      <th>三</th>
+                                      <th>四</th>
+                                      <th>五</th>
+                                      <th>六</th>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-this-month">28</td>
+                                      <td class="is-no-this-month">29</td>
+                                      <td class="is-no-this-month">30</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td class="is-select-day is-select-range-first">3</td>
+                                      <td class="is-no-work is-select-range-lest">4</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work is-select-range-first">5</td>
+                                      <td class="is-select-range">6</td>
+                                      <td class="is-select-range">7</td>
+                                      <td class="is-select-range">8</td>
+                                      <td class="is-select-range">9</td>
+                                      <td class="is-select-day is-select-range-lest">10</td>
+                                      <td class="is-no-work">11</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">12</td>
+                                      <td>13</td>
+                                      <td>14</td>
+                                      <td>15</td>
+                                      <td>16</td>
+                                      <td>17</td>
+                                      <td class="is-no-work">18</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">19</td>
+                                      <td>20</td>
+                                      <td>21</td>
+                                      <td>22</td>
+                                      <td>23</td>
+                                      <td>24</td>
+                                      <td class="is-no-work">25</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">26</td>
+                                      <td>27</td>
+                                      <td>28</td>
+                                      <td>29</td>
+                                      <td>30</td>
+                                      <td>31</td>
+                                      <td class="is-no-work">1</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="c-datePicker__item">
+                              <div class="c-datePicker__yearPicker">
+                               <div class=""></div>
+                                <div class="">2020 8月</div>
+                                <img src="img/o-arrowRight-blue.svg" alt="">
+                              </div>
+                              <div class="c-datePicker__content">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>日</th>
+                                      <th>一</th>
+                                      <th>二</th>
+                                      <th>三</th>
+                                      <th>四</th>
+                                      <th>五</th>
+                                      <th>六</th>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-this-month">28</td>
+                                      <td class="is-no-this-month">29</td>
+                                      <td class="is-no-this-month">30</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td class="">3</td>
+                                      <td class="is-no-work">4</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">5</td>
+                                      <td>6</td>
+                                      <td>7</td>
+                                      <td>8</td>
+                                      <td>9</td>
+                                      <td>10</td>
+                                      <td class="is-no-work">11</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">12</td>
+                                      <td>13</td>
+                                      <td>14</td>
+                                      <td>15</td>
+                                      <td>16</td>
+                                      <td>17</td>
+                                      <td class="is-no-work">18</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">19</td>
+                                      <td>20</td>
+                                      <td>21</td>
+                                      <td>22</td>
+                                      <td>23</td>
+                                      <td>24</td>
+                                      <td class="is-no-work">25</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">26</td>
+                                      <td>27</td>
+                                      <td>28</td>
+                                      <td>29</td>
+                                      <td>30</td>
+                                      <td>31</td>
+                                      <td class="is-no-work">1</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div> 
+                            </div>
+                            <div class="c-datePicker__footer">
+                              <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s2 is-popmodal-show">
+                        <div class="input-field c-dropdown-general ">
+                          <select class="c-dropdown-plan-select">
+                            <option value="1">全部(預設)</option>
+                            <option value="2">A/專案</option>
+                            <option value="3">B/產品發展</option>
+                            <option value="4">C/服務</option>
+                            <option value="5">D/技術研究</option>
+                            <option value="6">E/共通計畫</option>
+                            <option value="7">F/小型計畫</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col s5 is-popmodal-show">
+                        <div class="c-dropdown-member pop-modal">
+                          <div class="dropdown-input c-dropdown__input pop-btn">
+                            <input type="text">
+                          </div>
+                          <div class="c-dropdown__modal pop-content">
+                            <div class="c-dropdown__title">
+                              <div class="">
+                                <div class="c-dropdown__title__all ">全選</div>
+                              </div>
+                            </div>
+                            <div class="c-dropdown__content__height">
+                              <ul class="c-dropdown__content">
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="c-dropdown__footer">
+                              <button class="o-btn-secondary waves-effect waves-blue ">重設</button>
+                              <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s2">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s2"></div>
+                    </div>
+                  </div>
+                  <div class=" table-body__item ">
+                    <div class="c-popover-checkPoint pop-modal">
+                      <span class="c-popover__btn pop-btn">
+                        <img src="img/o-more.svg" alt="" /></span>
+                      <ul class="c-popover__content pop-content">
+                        <li>刪除</li>
+                        <li>複製</li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <div class="col s2 o-input-textarea table-body__dragBtn">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea ">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea is-popmodal-show">
+                        <div class="c-datePicker-days pop-modal">
+                          <div class="c-datePicker__input pop-btn">
+                            <div class="o-input-div"></div>
+                          </div>
+                          <div class="c-datePicker__modal pop-content">
+                            <div class="c-datePicker__group">
+                              <div class="c-datePicker__item">
+                              <div class="c-datePicker__yearPicker">
+                                <img src="img/o-arrowLeft-blue.svg" alt="">
+                                <div class="">2020 7月</div>
+                               <div class=""></div>
+                              </div>
+                              <div class="c-datePicker__content">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>日</th>
+                                      <th>一</th>
+                                      <th>二</th>
+                                      <th>三</th>
+                                      <th>四</th>
+                                      <th>五</th>
+                                      <th>六</th>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-this-month">28</td>
+                                      <td class="is-no-this-month">29</td>
+                                      <td class="is-no-this-month">30</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td class="is-select-day is-select-range-first">3</td>
+                                      <td class="is-no-work is-select-range-lest">4</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work is-select-range-first">5</td>
+                                      <td class="is-select-range">6</td>
+                                      <td class="is-select-range">7</td>
+                                      <td class="is-select-range">8</td>
+                                      <td class="is-select-range">9</td>
+                                      <td class="is-select-day is-select-range-lest">10</td>
+                                      <td class="is-no-work">11</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">12</td>
+                                      <td>13</td>
+                                      <td>14</td>
+                                      <td>15</td>
+                                      <td>16</td>
+                                      <td>17</td>
+                                      <td class="is-no-work">18</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">19</td>
+                                      <td>20</td>
+                                      <td>21</td>
+                                      <td>22</td>
+                                      <td>23</td>
+                                      <td>24</td>
+                                      <td class="is-no-work">25</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">26</td>
+                                      <td>27</td>
+                                      <td>28</td>
+                                      <td>29</td>
+                                      <td>30</td>
+                                      <td>31</td>
+                                      <td class="is-no-work">1</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="c-datePicker__item">
+                              <div class="c-datePicker__yearPicker">
+                               <div class=""></div>
+                                <div class="">2020 8月</div>
+                                <img src="img/o-arrowRight-blue.svg" alt="">
+                              </div>
+                              <div class="c-datePicker__content">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>日</th>
+                                      <th>一</th>
+                                      <th>二</th>
+                                      <th>三</th>
+                                      <th>四</th>
+                                      <th>五</th>
+                                      <th>六</th>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-this-month">28</td>
+                                      <td class="is-no-this-month">29</td>
+                                      <td class="is-no-this-month">30</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td class="">3</td>
+                                      <td class="is-no-work">4</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">5</td>
+                                      <td>6</td>
+                                      <td>7</td>
+                                      <td>8</td>
+                                      <td>9</td>
+                                      <td>10</td>
+                                      <td class="is-no-work">11</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">12</td>
+                                      <td>13</td>
+                                      <td>14</td>
+                                      <td>15</td>
+                                      <td>16</td>
+                                      <td>17</td>
+                                      <td class="is-no-work">18</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">19</td>
+                                      <td>20</td>
+                                      <td>21</td>
+                                      <td>22</td>
+                                      <td>23</td>
+                                      <td>24</td>
+                                      <td class="is-no-work">25</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">26</td>
+                                      <td>27</td>
+                                      <td>28</td>
+                                      <td>29</td>
+                                      <td>30</td>
+                                      <td>31</td>
+                                      <td class="is-no-work">1</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div> 
+                            </div>
+                            <div class="c-datePicker__footer">
+                              <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s2 is-popmodal-show">
+                        <div class="input-field c-dropdown-general ">
+                          <select class="c-dropdown-plan-select">
+                            <option value="1">全部(預設)</option>
+                            <option value="2">A/專案</option>
+                            <option value="3">B/產品發展</option>
+                            <option value="4">C/服務</option>
+                            <option value="5">D/技術研究</option>
+                            <option value="6">E/共通計畫</option>
+                            <option value="7">F/小型計畫</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col s5 is-popmodal-show">
+                        <div class="c-dropdown-member pop-modal">
+                          <div class="dropdown-input c-dropdown__input pop-btn">
+                            <input type="text">
+                          </div>
+                          <div class="c-dropdown__modal pop-content">
+                            <div class="c-dropdown__title">
+                              <div class="">
+                                <div class="c-dropdown__title__all ">全選</div>
+                              </div>
+                            </div>
+                            <div class="c-dropdown__content__height">
+                              <ul class="c-dropdown__content">
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="c-dropdown__footer">
+                              <button class="o-btn-secondary waves-effect waves-blue ">重設</button>
+                              <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s2">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s2"></div>
+                    </div>
+                  </div>
+                  <div class=" table-body__item ">
+                    <div class="c-popover-checkPoint pop-modal">
+                      <span class="c-popover__btn pop-btn">
+                        <img src="img/o-more.svg" alt="" /></span>
+                      <ul class="c-popover__content pop-content">
+                        <li>刪除</li>
+                        <li>複製</li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <div class="col s2 o-input-textarea table-body__dragBtn">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea ">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea is-popmodal-show">
+                        <div class="c-datePicker-days pop-modal">
+                          <div class="c-datePicker__input pop-btn">
+                            <div class="o-input-div"></div>
+                          </div>
+                          <div class="c-datePicker__modal pop-content">
+                            <div class="c-datePicker__group">
+                              <div class="c-datePicker__item">
+                              <div class="c-datePicker__yearPicker">
+                                <img src="img/o-arrowLeft-blue.svg" alt="">
+                                <div class="">2020 7月</div>
+                               <div class=""></div>
+                              </div>
+                              <div class="c-datePicker__content">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>日</th>
+                                      <th>一</th>
+                                      <th>二</th>
+                                      <th>三</th>
+                                      <th>四</th>
+                                      <th>五</th>
+                                      <th>六</th>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-this-month">28</td>
+                                      <td class="is-no-this-month">29</td>
+                                      <td class="is-no-this-month">30</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td class="is-select-day is-select-range-first">3</td>
+                                      <td class="is-no-work is-select-range-lest">4</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work is-select-range-first">5</td>
+                                      <td class="is-select-range">6</td>
+                                      <td class="is-select-range">7</td>
+                                      <td class="is-select-range">8</td>
+                                      <td class="is-select-range">9</td>
+                                      <td class="is-select-day is-select-range-lest">10</td>
+                                      <td class="is-no-work">11</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">12</td>
+                                      <td>13</td>
+                                      <td>14</td>
+                                      <td>15</td>
+                                      <td>16</td>
+                                      <td>17</td>
+                                      <td class="is-no-work">18</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">19</td>
+                                      <td>20</td>
+                                      <td>21</td>
+                                      <td>22</td>
+                                      <td>23</td>
+                                      <td>24</td>
+                                      <td class="is-no-work">25</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">26</td>
+                                      <td>27</td>
+                                      <td>28</td>
+                                      <td>29</td>
+                                      <td>30</td>
+                                      <td>31</td>
+                                      <td class="is-no-work">1</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="c-datePicker__item">
+                              <div class="c-datePicker__yearPicker">
+                               <div class=""></div>
+                                <div class="">2020 8月</div>
+                                <img src="img/o-arrowRight-blue.svg" alt="">
+                              </div>
+                              <div class="c-datePicker__content">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>日</th>
+                                      <th>一</th>
+                                      <th>二</th>
+                                      <th>三</th>
+                                      <th>四</th>
+                                      <th>五</th>
+                                      <th>六</th>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-this-month">28</td>
+                                      <td class="is-no-this-month">29</td>
+                                      <td class="is-no-this-month">30</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td class="">3</td>
+                                      <td class="is-no-work">4</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">5</td>
+                                      <td>6</td>
+                                      <td>7</td>
+                                      <td>8</td>
+                                      <td>9</td>
+                                      <td>10</td>
+                                      <td class="is-no-work">11</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">12</td>
+                                      <td>13</td>
+                                      <td>14</td>
+                                      <td>15</td>
+                                      <td>16</td>
+                                      <td>17</td>
+                                      <td class="is-no-work">18</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">19</td>
+                                      <td>20</td>
+                                      <td>21</td>
+                                      <td>22</td>
+                                      <td>23</td>
+                                      <td>24</td>
+                                      <td class="is-no-work">25</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">26</td>
+                                      <td>27</td>
+                                      <td>28</td>
+                                      <td>29</td>
+                                      <td>30</td>
+                                      <td>31</td>
+                                      <td class="is-no-work">1</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div> 
+                            </div>
+                            <div class="c-datePicker__footer">
+                              <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s2 is-popmodal-show">
+                        <div class="input-field c-dropdown-general ">
+                          <select class="c-dropdown-plan-select">
+                            <option value="1">全部(預設)</option>
+                            <option value="2">A/專案</option>
+                            <option value="3">B/產品發展</option>
+                            <option value="4">C/服務</option>
+                            <option value="5">D/技術研究</option>
+                            <option value="6">E/共通計畫</option>
+                            <option value="7">F/小型計畫</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col s5 is-popmodal-show">
+                        <div class="c-dropdown-member pop-modal">
+                          <div class="dropdown-input c-dropdown__input pop-btn">
+                            <input type="text">
+                          </div>
+                          <div class="c-dropdown__modal pop-content">
+                            <div class="c-dropdown__title">
+                              <div class="">
+                                <div class="c-dropdown__title__all ">全選</div>
+                              </div>
+                            </div>
+                            <div class="c-dropdown__content__height">
+                              <ul class="c-dropdown__content">
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="c-dropdown__footer">
+                              <button class="o-btn-secondary waves-effect waves-blue ">重設</button>
+                              <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s2">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s2"></div>
+                    </div>
+                  </div>
+                  <div class=" table-body__item ">
+                    <div class="c-popover-checkPoint pop-modal">
+                      <span class="c-popover__btn pop-btn">
+                        <img src="img/o-more.svg" alt="" /></span>
+                      <ul class="c-popover__content pop-content">
+                        <li>刪除</li>
+                        <li>複製</li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <div class="col s2 o-input-textarea table-body__dragBtn">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea ">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea is-popmodal-show">
+                        <div class="c-datePicker-days pop-modal">
+                          <div class="c-datePicker__input pop-btn">
+                            <div class="o-input-div"></div>
+                          </div>
+                          <div class="c-datePicker__modal pop-content">
+                            <div class="c-datePicker__group">
+                              <div class="c-datePicker__item">
+                              <div class="c-datePicker__yearPicker">
+                                <img src="img/o-arrowLeft-blue.svg" alt="">
+                                <div class="">2020 7月</div>
+                               <div class=""></div>
+                              </div>
+                              <div class="c-datePicker__content">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>日</th>
+                                      <th>一</th>
+                                      <th>二</th>
+                                      <th>三</th>
+                                      <th>四</th>
+                                      <th>五</th>
+                                      <th>六</th>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-this-month">28</td>
+                                      <td class="is-no-this-month">29</td>
+                                      <td class="is-no-this-month">30</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td class="is-select-day is-select-range-first">3</td>
+                                      <td class="is-no-work is-select-range-lest">4</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work is-select-range-first">5</td>
+                                      <td class="is-select-range">6</td>
+                                      <td class="is-select-range">7</td>
+                                      <td class="is-select-range">8</td>
+                                      <td class="is-select-range">9</td>
+                                      <td class="is-select-day is-select-range-lest">10</td>
+                                      <td class="is-no-work">11</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">12</td>
+                                      <td>13</td>
+                                      <td>14</td>
+                                      <td>15</td>
+                                      <td>16</td>
+                                      <td>17</td>
+                                      <td class="is-no-work">18</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">19</td>
+                                      <td>20</td>
+                                      <td>21</td>
+                                      <td>22</td>
+                                      <td>23</td>
+                                      <td>24</td>
+                                      <td class="is-no-work">25</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">26</td>
+                                      <td>27</td>
+                                      <td>28</td>
+                                      <td>29</td>
+                                      <td>30</td>
+                                      <td>31</td>
+                                      <td class="is-no-work">1</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="c-datePicker__item">
+                              <div class="c-datePicker__yearPicker">
+                               <div class=""></div>
+                                <div class="">2020 8月</div>
+                                <img src="img/o-arrowRight-blue.svg" alt="">
+                              </div>
+                              <div class="c-datePicker__content">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>日</th>
+                                      <th>一</th>
+                                      <th>二</th>
+                                      <th>三</th>
+                                      <th>四</th>
+                                      <th>五</th>
+                                      <th>六</th>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-this-month">28</td>
+                                      <td class="is-no-this-month">29</td>
+                                      <td class="is-no-this-month">30</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td class="">3</td>
+                                      <td class="is-no-work">4</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">5</td>
+                                      <td>6</td>
+                                      <td>7</td>
+                                      <td>8</td>
+                                      <td>9</td>
+                                      <td>10</td>
+                                      <td class="is-no-work">11</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">12</td>
+                                      <td>13</td>
+                                      <td>14</td>
+                                      <td>15</td>
+                                      <td>16</td>
+                                      <td>17</td>
+                                      <td class="is-no-work">18</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">19</td>
+                                      <td>20</td>
+                                      <td>21</td>
+                                      <td>22</td>
+                                      <td>23</td>
+                                      <td>24</td>
+                                      <td class="is-no-work">25</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">26</td>
+                                      <td>27</td>
+                                      <td>28</td>
+                                      <td>29</td>
+                                      <td>30</td>
+                                      <td>31</td>
+                                      <td class="is-no-work">1</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div> 
+                            </div>
+                            <div class="c-datePicker__footer">
+                              <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s2 is-popmodal-show">
+                        <div class="input-field c-dropdown-general ">
+                          <select class="c-dropdown-plan-select">
+                            <option value="1">全部(預設)</option>
+                            <option value="2">A/專案</option>
+                            <option value="3">B/產品發展</option>
+                            <option value="4">C/服務</option>
+                            <option value="5">D/技術研究</option>
+                            <option value="6">E/共通計畫</option>
+                            <option value="7">F/小型計畫</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col s5 is-popmodal-show">
+                        <div class="c-dropdown-member pop-modal">
+                          <div class="dropdown-input c-dropdown__input pop-btn">
+                            <input type="text">
+                          </div>
+                          <div class="c-dropdown__modal pop-content">
+                            <div class="c-dropdown__title">
+                              <div class="">
+                                <div class="c-dropdown__title__all ">全選</div>
+                              </div>
+                            </div>
+                            <div class="c-dropdown__content__height">
+                              <ul class="c-dropdown__content">
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="c-dropdown__footer">
+                              <button class="o-btn-secondary waves-effect waves-blue ">重設</button>
+                              <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s2">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s2"></div>
+                    </div>
+                  </div>
+                  <div class=" table-body__item ">
+                    <div class="c-popover-checkPoint pop-modal">
+                      <span class="c-popover__btn pop-btn">
+                        <img src="img/o-more.svg" alt="" /></span>
+                      <ul class="c-popover__content pop-content">
+                        <li>刪除</li>
+                        <li>複製</li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <div class="col s2 o-input-textarea table-body__dragBtn">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea ">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea is-popmodal-show">
+                        <div class="c-datePicker-days pop-modal">
+                          <div class="c-datePicker__input pop-btn">
+                            <div class="o-input-div"></div>
+                          </div>
+                          <div class="c-datePicker__modal pop-content">
+                            <div class="c-datePicker__group">
+                              <div class="c-datePicker__item">
+                              <div class="c-datePicker__yearPicker">
+                                <img src="img/o-arrowLeft-blue.svg" alt="">
+                                <div class="">2020 7月</div>
+                               <div class=""></div>
+                              </div>
+                              <div class="c-datePicker__content">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>日</th>
+                                      <th>一</th>
+                                      <th>二</th>
+                                      <th>三</th>
+                                      <th>四</th>
+                                      <th>五</th>
+                                      <th>六</th>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-this-month">28</td>
+                                      <td class="is-no-this-month">29</td>
+                                      <td class="is-no-this-month">30</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td class="is-select-day is-select-range-first">3</td>
+                                      <td class="is-no-work is-select-range-lest">4</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work is-select-range-first">5</td>
+                                      <td class="is-select-range">6</td>
+                                      <td class="is-select-range">7</td>
+                                      <td class="is-select-range">8</td>
+                                      <td class="is-select-range">9</td>
+                                      <td class="is-select-day is-select-range-lest">10</td>
+                                      <td class="is-no-work">11</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">12</td>
+                                      <td>13</td>
+                                      <td>14</td>
+                                      <td>15</td>
+                                      <td>16</td>
+                                      <td>17</td>
+                                      <td class="is-no-work">18</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">19</td>
+                                      <td>20</td>
+                                      <td>21</td>
+                                      <td>22</td>
+                                      <td>23</td>
+                                      <td>24</td>
+                                      <td class="is-no-work">25</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">26</td>
+                                      <td>27</td>
+                                      <td>28</td>
+                                      <td>29</td>
+                                      <td>30</td>
+                                      <td>31</td>
+                                      <td class="is-no-work">1</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="c-datePicker__item">
+                              <div class="c-datePicker__yearPicker">
+                               <div class=""></div>
+                                <div class="">2020 8月</div>
+                                <img src="img/o-arrowRight-blue.svg" alt="">
+                              </div>
+                              <div class="c-datePicker__content">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>日</th>
+                                      <th>一</th>
+                                      <th>二</th>
+                                      <th>三</th>
+                                      <th>四</th>
+                                      <th>五</th>
+                                      <th>六</th>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-this-month">28</td>
+                                      <td class="is-no-this-month">29</td>
+                                      <td class="is-no-this-month">30</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td class="">3</td>
+                                      <td class="is-no-work">4</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">5</td>
+                                      <td>6</td>
+                                      <td>7</td>
+                                      <td>8</td>
+                                      <td>9</td>
+                                      <td>10</td>
+                                      <td class="is-no-work">11</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">12</td>
+                                      <td>13</td>
+                                      <td>14</td>
+                                      <td>15</td>
+                                      <td>16</td>
+                                      <td>17</td>
+                                      <td class="is-no-work">18</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">19</td>
+                                      <td>20</td>
+                                      <td>21</td>
+                                      <td>22</td>
+                                      <td>23</td>
+                                      <td>24</td>
+                                      <td class="is-no-work">25</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">26</td>
+                                      <td>27</td>
+                                      <td>28</td>
+                                      <td>29</td>
+                                      <td>30</td>
+                                      <td>31</td>
+                                      <td class="is-no-work">1</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div> 
+                            </div>
+                            <div class="c-datePicker__footer">
+                              <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s2 is-popmodal-show">
+                        <div class="input-field c-dropdown-general ">
+                          <select class="c-dropdown-plan-select">
+                            <option value="1">全部(預設)</option>
+                            <option value="2">A/專案</option>
+                            <option value="3">B/產品發展</option>
+                            <option value="4">C/服務</option>
+                            <option value="5">D/技術研究</option>
+                            <option value="6">E/共通計畫</option>
+                            <option value="7">F/小型計畫</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col s5 is-popmodal-show">
+                        <div class="c-dropdown-member pop-modal">
+                          <div class="dropdown-input c-dropdown__input pop-btn">
+                            <input type="text">
+                          </div>
+                          <div class="c-dropdown__modal pop-content">
+                            <div class="c-dropdown__title">
+                              <div class="">
+                                <div class="c-dropdown__title__all ">全選</div>
+                              </div>
+                            </div>
+                            <div class="c-dropdown__content__height">
+                              <ul class="c-dropdown__content">
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="c-dropdown__footer">
+                              <button class="o-btn-secondary waves-effect waves-blue ">重設</button>
+                              <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s2">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s2"></div>
+                    </div>
+                  </div>
+                  <div class=" table-body__item ">
+                    <div class="c-popover-checkPoint pop-modal">
+                      <span class="c-popover__btn pop-btn">
+                        <img src="img/o-more.svg" alt="" /></span>
+                      <ul class="c-popover__content pop-content">
+                        <li>刪除</li>
+                        <li>複製</li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <div class="col s2 o-input-textarea table-body__dragBtn">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea ">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea is-popmodal-show">
+                        <div class="c-datePicker-days pop-modal">
+                          <div class="c-datePicker__input pop-btn">
+                            <div class="o-input-div"></div>
+                          </div>
+                          <div class="c-datePicker__modal pop-content">
+                            <div class="c-datePicker__group">
+                              <div class="c-datePicker__item">
+                              <div class="c-datePicker__yearPicker">
+                                <img src="img/o-arrowLeft-blue.svg" alt="">
+                                <div class="">2020 7月</div>
+                               <div class=""></div>
+                              </div>
+                              <div class="c-datePicker__content">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>日</th>
+                                      <th>一</th>
+                                      <th>二</th>
+                                      <th>三</th>
+                                      <th>四</th>
+                                      <th>五</th>
+                                      <th>六</th>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-this-month">28</td>
+                                      <td class="is-no-this-month">29</td>
+                                      <td class="is-no-this-month">30</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td class="is-select-day is-select-range-first">3</td>
+                                      <td class="is-no-work is-select-range-lest">4</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work is-select-range-first">5</td>
+                                      <td class="is-select-range">6</td>
+                                      <td class="is-select-range">7</td>
+                                      <td class="is-select-range">8</td>
+                                      <td class="is-select-range">9</td>
+                                      <td class="is-select-day is-select-range-lest">10</td>
+                                      <td class="is-no-work">11</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">12</td>
+                                      <td>13</td>
+                                      <td>14</td>
+                                      <td>15</td>
+                                      <td>16</td>
+                                      <td>17</td>
+                                      <td class="is-no-work">18</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">19</td>
+                                      <td>20</td>
+                                      <td>21</td>
+                                      <td>22</td>
+                                      <td>23</td>
+                                      <td>24</td>
+                                      <td class="is-no-work">25</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">26</td>
+                                      <td>27</td>
+                                      <td>28</td>
+                                      <td>29</td>
+                                      <td>30</td>
+                                      <td>31</td>
+                                      <td class="is-no-work">1</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="c-datePicker__item">
+                              <div class="c-datePicker__yearPicker">
+                               <div class=""></div>
+                                <div class="">2020 8月</div>
+                                <img src="img/o-arrowRight-blue.svg" alt="">
+                              </div>
+                              <div class="c-datePicker__content">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>日</th>
+                                      <th>一</th>
+                                      <th>二</th>
+                                      <th>三</th>
+                                      <th>四</th>
+                                      <th>五</th>
+                                      <th>六</th>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-this-month">28</td>
+                                      <td class="is-no-this-month">29</td>
+                                      <td class="is-no-this-month">30</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td class="">3</td>
+                                      <td class="is-no-work">4</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">5</td>
+                                      <td>6</td>
+                                      <td>7</td>
+                                      <td>8</td>
+                                      <td>9</td>
+                                      <td>10</td>
+                                      <td class="is-no-work">11</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">12</td>
+                                      <td>13</td>
+                                      <td>14</td>
+                                      <td>15</td>
+                                      <td>16</td>
+                                      <td>17</td>
+                                      <td class="is-no-work">18</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">19</td>
+                                      <td>20</td>
+                                      <td>21</td>
+                                      <td>22</td>
+                                      <td>23</td>
+                                      <td>24</td>
+                                      <td class="is-no-work">25</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">26</td>
+                                      <td>27</td>
+                                      <td>28</td>
+                                      <td>29</td>
+                                      <td>30</td>
+                                      <td>31</td>
+                                      <td class="is-no-work">1</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div> 
+                            </div>
+                            <div class="c-datePicker__footer">
+                              <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s2 is-popmodal-show">
+                        <div class="input-field c-dropdown-general ">
+                          <select class="c-dropdown-plan-select">
+                            <option value="1">全部(預設)</option>
+                            <option value="2">A/專案</option>
+                            <option value="3">B/產品發展</option>
+                            <option value="4">C/服務</option>
+                            <option value="5">D/技術研究</option>
+                            <option value="6">E/共通計畫</option>
+                            <option value="7">F/小型計畫</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col s5 is-popmodal-show">
+                        <div class="c-dropdown-member pop-modal">
+                          <div class="dropdown-input c-dropdown__input pop-btn">
+                            <input type="text">
+                          </div>
+                          <div class="c-dropdown__modal pop-content">
+                            <div class="c-dropdown__title">
+                              <div class="">
+                                <div class="c-dropdown__title__all ">全選</div>
+                              </div>
+                            </div>
+                            <div class="c-dropdown__content__height">
+                              <ul class="c-dropdown__content">
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="c-dropdown__footer">
+                              <button class="o-btn-secondary waves-effect waves-blue ">重設</button>
+                              <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s2">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s2"></div>
+                    </div>
+                  </div>
+                  <div class=" table-body__item ">
+                    <div class="c-popover-checkPoint pop-modal">
+                      <span class="c-popover__btn pop-btn">
+                        <img src="img/o-more.svg" alt="" /></span>
+                      <ul class="c-popover__content pop-content">
+                        <li>刪除</li>
+                        <li>複製</li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <div class="col s2 o-input-textarea table-body__dragBtn">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea ">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea">
+                        <textarea name="" cols="30" rows="10"></textarea>
+                      </div>
+                      <div class="col s3 o-input-textarea is-popmodal-show">
+                        <div class="c-datePicker-days pop-modal">
+                          <div class="c-datePicker__input pop-btn">
+                            <div class="o-input-div"></div>
+                          </div>
+                          <div class="c-datePicker__modal pop-content">
+                            <div class="c-datePicker__group">
+                              <div class="c-datePicker__item">
+                              <div class="c-datePicker__yearPicker">
+                                <img src="img/o-arrowLeft-blue.svg" alt="">
+                                <div class="">2020 7月</div>
+                               <div class=""></div>
+                              </div>
+                              <div class="c-datePicker__content">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>日</th>
+                                      <th>一</th>
+                                      <th>二</th>
+                                      <th>三</th>
+                                      <th>四</th>
+                                      <th>五</th>
+                                      <th>六</th>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-this-month">28</td>
+                                      <td class="is-no-this-month">29</td>
+                                      <td class="is-no-this-month">30</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td class="is-select-day is-select-range-first">3</td>
+                                      <td class="is-no-work is-select-range-lest">4</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work is-select-range-first">5</td>
+                                      <td class="is-select-range">6</td>
+                                      <td class="is-select-range">7</td>
+                                      <td class="is-select-range">8</td>
+                                      <td class="is-select-range">9</td>
+                                      <td class="is-select-day is-select-range-lest">10</td>
+                                      <td class="is-no-work">11</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">12</td>
+                                      <td>13</td>
+                                      <td>14</td>
+                                      <td>15</td>
+                                      <td>16</td>
+                                      <td>17</td>
+                                      <td class="is-no-work">18</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">19</td>
+                                      <td>20</td>
+                                      <td>21</td>
+                                      <td>22</td>
+                                      <td>23</td>
+                                      <td>24</td>
+                                      <td class="is-no-work">25</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">26</td>
+                                      <td>27</td>
+                                      <td>28</td>
+                                      <td>29</td>
+                                      <td>30</td>
+                                      <td>31</td>
+                                      <td class="is-no-work">1</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="c-datePicker__item">
+                              <div class="c-datePicker__yearPicker">
+                               <div class=""></div>
+                                <div class="">2020 8月</div>
+                                <img src="img/o-arrowRight-blue.svg" alt="">
+                              </div>
+                              <div class="c-datePicker__content">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>日</th>
+                                      <th>一</th>
+                                      <th>二</th>
+                                      <th>三</th>
+                                      <th>四</th>
+                                      <th>五</th>
+                                      <th>六</th>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-this-month">28</td>
+                                      <td class="is-no-this-month">29</td>
+                                      <td class="is-no-this-month">30</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td class="">3</td>
+                                      <td class="is-no-work">4</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">5</td>
+                                      <td>6</td>
+                                      <td>7</td>
+                                      <td>8</td>
+                                      <td>9</td>
+                                      <td>10</td>
+                                      <td class="is-no-work">11</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">12</td>
+                                      <td>13</td>
+                                      <td>14</td>
+                                      <td>15</td>
+                                      <td>16</td>
+                                      <td>17</td>
+                                      <td class="is-no-work">18</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">19</td>
+                                      <td>20</td>
+                                      <td>21</td>
+                                      <td>22</td>
+                                      <td>23</td>
+                                      <td>24</td>
+                                      <td class="is-no-work">25</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="is-no-work">26</td>
+                                      <td>27</td>
+                                      <td>28</td>
+                                      <td>29</td>
+                                      <td>30</td>
+                                      <td>31</td>
+                                      <td class="is-no-work">1</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div> 
+                            </div>
+                            <div class="c-datePicker__footer">
+                              <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s2 is-popmodal-show">
+                        <div class="input-field c-dropdown-general ">
+                          <select class="c-dropdown-plan-select">
+                            <option value="1">全部(預設)</option>
+                            <option value="2">A/專案</option>
+                            <option value="3">B/產品發展</option>
+                            <option value="4">C/服務</option>
+                            <option value="5">D/技術研究</option>
+                            <option value="6">E/共通計畫</option>
+                            <option value="7">F/小型計畫</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col s5 is-popmodal-show">
+                        <div class="c-dropdown-member pop-modal">
+                          <div class="dropdown-input c-dropdown__input pop-btn">
+                            <input type="text">
+                          </div>
+                          <div class="c-dropdown__modal pop-content">
+                            <div class="c-dropdown__title">
+                              <div class="">
+                                <div class="c-dropdown__title__all ">全選</div>
+                              </div>
+                            </div>
+                            <div class="c-dropdown__content__height">
+                              <ul class="c-dropdown__content">
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>王小明</span>
+                                  </label>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="c-dropdown__footer">
+                              <button class="o-btn-secondary waves-effect waves-blue ">重設</button>
+                              <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s2">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s1 o-input">
+                        <input type="text">
+                      </div>
+                      <div class="col s2"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-body__item">
+                  <div class="table-body__item__project">
+                    <div class="table-body__item__project__icon">
+                      <img src="img/o-plus.svg" alt="" />
+                    </div>
+                    <div class="table-body__item__project__title">新增項目</div>
+                  </div>
+                  <div class="table-body__item__project">
+                    <div class="table-body__item__project__icon">
+                      <img src="img/o-plus.svg" alt="" />
+                    </div>
+                    <div class="table-body__item__project__title">
+                      新增工作內容
+                    </div>
+                  </div>
+                  <div class="table-body__item__project">
+                    <div class="table-body__item__project__icon">
+                      <img src="img/o-plus.svg" alt="" />
+                    </div>
+                    <div class="table-body__item__project__title">新增範本</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div id="types">
+          <div class="l-main-tabs">
+            <a class="l-main-tabs__item modal-trigger" href="#">
+              <img src="img/o-export.svg" alt="" />
+              <div class="">匯出</div>
+            </a>
+          </div>
           <div class="l-main-content">
             <div class="l-main-content-table l-main-content__workTypelist">
               <div class="table-thead">
@@ -613,7 +3960,7 @@
                 </div>
               </div>
               <div class="table-body">
-                <div class="table-body__item">
+                <div class="table-body__item lp">
                   <div class="row">
                     <div class="col s2">01</div>
                     <div class="col s3">專案管理</div>
@@ -634,9 +3981,9 @@
                     <div class="col s2">24</div>
                   </div>
                 </div>
-                <div class="table-body__item">
+                <div class="table-body__item lp">
                   <div class="row">
-                    <div class="col s2">01</div>
+                    <div class="col s2">02</div>
                     <div class="col s3">專案管理</div>
                     <div class="col s3">74</div>
                     <div class="col s2">1</div>
@@ -920,6 +4267,188 @@
                     <div class="col s3">A9025</div>
                     <div class="col s3">王小明</div>
                     <div class="col s4">Mike</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer c-modal-footer">
+          <button class="o-btn-primary waves-effect waves-blue modal-close">
+            加入
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="sample" class="c-modal-sample modal ">
+      <div class="c-modal-closeBtn">
+        <img class="modal-close" src="img/o-cross.svg" alt="" />
+      </div>
+      <div class="c-modal-position">
+        <div class="modal-content c-modal-content">
+          <div class="c-modal-content__title">計畫範本</div>
+          <div class="c-modal-content__item">
+            <ul class="collapsible c-accordion-plan">
+              <li>
+                <div class="collapsible-header accordion-header">
+                  <div class="accordion-header__item">
+                    <div class="header__item__title">
+                      標案設計
+                    </div>
+                  </div>
+                  <div class="accordion-header__item">
+                    <div class="o-accordion_plus collapsible-btn">
+                      <div class="plus-icon icon">
+                        <div class="horizontal"></div>
+                        <div class="vertical"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-body accordion-body">
+                  <div class="row accordion-body__item">
+                    <div class="col s12">網站GUI設計</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s12">html/前端畫面製作</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s12">其他視覺設計</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s12">溝通/會議/其他</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="collapsible c-accordion-plan">
+              <li>
+                <div class="collapsible-header accordion-header">
+                  <div class="accordion-header__item">
+                    <div class="header__item__title">
+                      網站專案設計
+                    </div>
+                  </div>
+                  <div class="accordion-header__item">
+                    <div class="o-accordion_plus collapsible-btn">
+                      <div class="plus-icon icon">
+                        <div class="horizontal"></div>
+                        <div class="vertical"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-body accordion-body">
+                  <div class="row accordion-body__item">
+                    <div class="col s12">網站GUI設計</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s12">html/前端畫面製作</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s12">其他視覺設計</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s12">溝通/會議/其他</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="collapsible c-accordion-plan">
+              <li>
+                <div class="collapsible-header accordion-header">
+                  <div class="accordion-header__item">
+                    <div class="header__item__title">
+                      產品設計
+                    </div>
+                  </div>
+                  <div class="accordion-header__item">
+                    <div class="o-accordion_plus collapsible-btn">
+                      <div class="plus-icon icon">
+                        <div class="horizontal"></div>
+                        <div class="vertical"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-body accordion-body">
+                  <div class="row accordion-body__item">
+                    <div class="col s12">網站GUI設計</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s12">html/前端畫面製作</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s12">其他視覺設計</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s12">溝通/會議/其他</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="collapsible c-accordion-plan">
+              <li>
+                <div class="collapsible-header accordion-header">
+                  <div class="accordion-header__item">
+                    <div class="header__item__title">
+                      書籍設計
+                    </div>
+                  </div>
+                  <div class="accordion-header__item">
+                    <div class="o-accordion_plus collapsible-btn">
+                      <div class="plus-icon icon">
+                        <div class="horizontal"></div>
+                        <div class="vertical"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-body accordion-body">
+                  <div class="row accordion-body__item">
+                    <div class="col s12">網站GUI設計</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s12">html/前端畫面製作</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s12">其他視覺設計</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s12">溝通/會議/其他</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="collapsible c-accordion-plan">
+              <li>
+                <div class="collapsible-header accordion-header">
+                  <div class="accordion-header__item">
+                    <div class="header__item__title">
+                      平面設計
+                    </div>
+                  </div>
+                  <div class="accordion-header__item">
+                    <div class="o-accordion_plus collapsible-btn">
+                      <div class="plus-icon icon">
+                        <div class="horizontal"></div>
+                        <div class="vertical"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-body accordion-body">
+                  <div class="row accordion-body__item">
+                    <div class="col s12">網站GUI設計</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s12">html/前端畫面製作</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s12">其他視覺設計</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s12">溝通/會議/其他</div>
                   </div>
                 </div>
               </li>

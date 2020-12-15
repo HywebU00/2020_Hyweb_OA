@@ -104,6 +104,7 @@
     @extend .c-card-manhourSofar;
     width: 21.5%;
     min-width: 240px;
+
     .c-card__tag {
         padding-top: $pd;
         display: inline-block;
@@ -883,8 +884,11 @@
         padding-bottom: 0.5rem;
         align-items: center;
 
+        img {
+            margin-right: 1rem;
+        }
+
         div {
-            margin-left: 1rem;
             color: $gray1;
             font-size: $h2;
             font-weight: 700;
@@ -946,19 +950,19 @@
 
     .c-modal-closeBtn {
         display: flex;
-        //margin-top: -1rem;
         justify-content: flex-end;
     }
 
     .c-modal-btnList {
         display: flex;
-        //margin-top: -1rem;
         justify-content: space-between;
     }
+
 
     .c-modal-content {
         display: block;
         height: auto;
+        min-height: 40vh;
 
         .c-modal-content__input {
             display: flex;
@@ -1022,7 +1026,17 @@
     .c-modal-footer {
         justify-content: flex-end;
     }
+
+    .is-error-status {
+        .c-modal-content__input {
+            div {
+                color: $danger;
+            }
+            border-bottom: 1px solid $danger;
+        }
+    }
 }
+
 
 .c-modal-addGroup {
     @extend .c-modal;
@@ -1032,7 +1046,6 @@
 
     .c-modal-closeBtn {
         display: flex;
-        // margin-top: -1rem;
         justify-content: flex-end;
 
     }
@@ -1062,6 +1075,7 @@
         .c-modal-addGroup__content__item {
             width: 100%;
         }
+      
     }
 
     .c-modal-content {
@@ -1150,6 +1164,27 @@
         align-self: flex-end;
         justify-content: flex-end;
     }
+    .is-error-status{
+        .c-modal-addGroup__content__item{
+            .c-modal-content__select{
+                .input-title{
+                    color: $danger;
+                }
+                .select-wrapper{
+                    background-color: #fff;
+                    border: 1px solid $danger;
+                }
+                .o-input{
+                    input{
+                        background-color: #fff;
+                    border: 1px solid $danger;
+                    }
+                }
+            }
+        }
+        
+    }
+
 }
 
 .c-modal-personAll {
@@ -1296,6 +1331,7 @@
 }
 
 .c-modal-usuallyUseMember {
+
     .c-modal-position {
         display: flex;
         flex-wrap: wrap;
@@ -1321,6 +1357,7 @@
 
     .c-modal-content {
         width: 100%;
+        height: 65vh;
     }
 
     .c-accordion-group {
@@ -1328,6 +1365,8 @@
     }
 
     .c-modal-content__item {
+        height: 100%;
+        overflow: scroll;
         margin: 1rem 0 1rem 0;
     }
 
@@ -1339,12 +1378,19 @@
 .c-modal-sample {
     @extend .c-modal-usuallyUseMember;
     width: 65vw;
-    height: auto;
+    height: 85vh;
     min-height: auto;
 
     .c-modal-content {
+        height: 90%;
+
         .header__item__title {
             font-size: $font-size-l;
+        }
+
+        .c-modal-content__item {
+            height: 100%;
+            overflow: scroll;
         }
 
         .accordion-body__item {
@@ -1975,31 +2021,35 @@
                         font-family: $font-family;
 
                     }
-                    .is-select-day{
+
+                    .is-select-day {
                         border-radius: 20px;
                     }
-                    .is-select-range{
-                        &::before{
+
+                    .is-select-range {
+                        &::before {
                             width: 50px;
                         }
                     }
-                    .is-select-range-first{
-                        &::before{
+
+                    .is-select-range-first {
+                        &::before {
                             width: 50px;
                             border-radius: 20px 0 0 20px;
                         }
-                       
+
                     }
-                    .is-select-range-lest{
-                        &::before{
+
+                    .is-select-range-lest {
+                        &::before {
                             width: 50px;
-                            border-radius:0 20px 20px 0;
+                            border-radius: 0 20px 20px 0;
                         }
-                       
+
                     }
 
                 }
-             
+
             }
 
         }
@@ -2099,41 +2149,51 @@
 .c-popover__content {
     display: inline-block;
 }
-.c-popover-wbsEdit{
+
+.c-popover-wbsEdit {
     @extend .c-popover-filterM;
-    .c-popover__content{
- 
-        &::before{
-            left:20%; 
-         }
-        &::after{
-           left:20%; 
+
+    .c-popover__content {
+
+        &::before {
+            left: 20%;
+        }
+
+        &::after {
+            left: 20%;
         }
     }
 }
-.c-popover-perspective{
+
+.c-popover-perspective {
     @extend .c-popover-checkPoint;
-    .c-popover__content{
+
+    .c-popover__content {
         width: 200px;
-       .c-popover__text{
-           margin-bottom: 1.5rem;
-          div{
+
+        .c-popover__text {
+            margin-bottom: 1.5rem;
+
+            div {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 0.5rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+        }
+
+        .c-popover__footer {
             display: flex;
             justify-content: center;
-            margin-bottom: 0.5rem; 
-            &:last-child{
-                margin-bottom: 0; 
-            }
-          }
-        
-     } 
-     .c-popover__footer{
-        display: flex;
-        justify-content: center;
-     }
+        }
     }
-           
+
 }
+
 .c-writeHours {
     width: 85%;
     min-height: 80vh;
@@ -2180,6 +2240,7 @@
     color: $gray1;
     position: relative;
     width: 14.285714285714%;
+    cursor: pointer;
 
     .c-writeHours-title__item__date {
         display: flex;
@@ -2265,11 +2326,65 @@
         display: block;
     }
 
+    .is-error-status {
+        .col {
+            .input-title {
+                color: $danger;
+            }
+
+            .select-wrapper {
+                background-color: #fff;
+                border: 1px solid $danger;
+            }
+        }
+
+        .hoursInput {
+            input {
+
+                border: 1px solid $danger;
+                border-bottom: 1px solid $danger;
+                box-sizing: border-box;
+            }
+
+            input[type=text]:not(.browser-default) {
+                border-bottom: 1px solid $danger;
+                background-color: #fff;
+            }
+
+            position: relative;
+
+            &:after {
+                position: absolute;
+                white-space: nowrap;
+                color: $danger;
+                font-size: 12px;
+                padding-top: .01rem;
+                margin-top: 0.2rem;
+                content: "僅能填寫至小數點第一位";
+            }
+        }
+
+        .otherInput {
+            input {
+                background-color: #fff;
+                border: 1px solid $danger;
+                border-bottom: 1px solid $danger;
+                box-sizing: border-box;
+            }
+
+            input[type=text]:not(.browser-default) {
+                border-bottom: 1px solid $danger;
+                background-color: #fff;
+            }
+
+        }
+    }
+
 }
 
 .c-writeHours-content__select {
     display: flex;
-    padding-bottom: 1%;
+    padding-bottom: 1.2rem;
     border-bottom: 1px solid $gray3;
 
     div {
@@ -2310,6 +2425,10 @@
     button {
         margin-left: .8%;
         margin-top: 1.6rem;
+    }
+
+    input[type=text]:not(.browser-default) {
+        margin: 1px;
     }
 }
 
@@ -2524,6 +2643,7 @@
     display: flex;
     align-items: center;
     -webkit-box-align: initial;
+
     textarea {
         border: 0;
         border-radius: $input-radius;
@@ -2561,12 +2681,13 @@
     color: $gray1;
     font-weight: 700;
     font-family: $font-family;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .o-tag {
     border-radius: $tag-radius;
     padding: 0.5rem;
+    display: inline-block;
     background-color: $hyweb-lighblue;
 }
 

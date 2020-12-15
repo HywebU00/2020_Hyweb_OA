@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -9779,6 +9780,14 @@ input[type=range]::-ms-thumb {
   width: calc(100vw - 267px);
 }
 
+.l-main-content .l-main-content__downloadlink {
+  margin-bottom: 1.5rem;
+}
+
+.l-main-content .l-main-content__downloadlink a {
+  color: #042340;
+}
+
 .l-main-content .l-main-content__text {
   color: #8495A4;
   font-size: 16px;
@@ -10161,9 +10170,6 @@ input[type=range]::-ms-thumb {
 }
 
 .l-main-content .l-main-content__wbslist .table-body .col, .l-main-content .l-main-content__workTypelist .table-body .col {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0;
 }
 
@@ -10199,6 +10205,10 @@ input[type=range]::-ms-thumb {
 
 .l-main-content .l-main-content__wbslist .table-body .table-body__subtitle, .l-main-content .l-main-content__workTypelist .table-body .table-body__subtitle {
   background-color: #F7FBFF;
+}
+
+.l-main-content .l-main-content__wbslist .table-body .pl, .l-main-content .l-main-content__workTypelist .table-body .pl {
+  padding-left: 24px;
 }
 
 .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project {
@@ -10286,7 +10296,7 @@ input[type=range]::-ms-thumb {
           justify-content: center;
 }
 
-.l-main-content .l-main-content__workTypelist .table-body .table-body__item {
+.l-main-content .l-main-content__workTypelist .table-body .lp {
   padding-left: 24px;
 }
 
@@ -11850,8 +11860,11 @@ input[type=range]::-ms-thumb {
           align-items: center;
 }
 
+.c-modal .c-modal-title img, .c-modal-systemDialog .c-modal-title img, .c-modal-alert .c-modal-title img, .c-modal-chooseGroup .c-modal-title img, .c-modal-addGroup .c-modal-title img, .c-modal-usuallyUseMember .c-modal-title img, .c-modal-sample .c-modal-title img {
+  margin-right: 1rem;
+}
+
 .c-modal .c-modal-title div, .c-modal-systemDialog .c-modal-title div, .c-modal-alert .c-modal-title div, .c-modal-chooseGroup .c-modal-title div, .c-modal-addGroup .c-modal-title div, .c-modal-usuallyUseMember .c-modal-title div, .c-modal-sample .c-modal-title div {
-  margin-left: 1rem;
   color: #042340;
   font-size: 22px;
   font-weight: 700;
@@ -11939,6 +11952,7 @@ input[type=range]::-ms-thumb {
 .c-modal-chooseGroup .c-modal-content {
   display: block;
   height: auto;
+  min-height: 40vh;
 }
 
 .c-modal-chooseGroup .c-modal-content .c-modal-content__input {
@@ -12017,6 +12031,14 @@ input[type=range]::-ms-thumb {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.c-modal-chooseGroup .is-error-status .c-modal-content__input {
+  border-bottom: 1px solid #FB5B29;
+}
+
+.c-modal-chooseGroup .is-error-status .c-modal-content__input div {
+  color: #FB5B29;
 }
 
 .c-modal-addGroup, .c-modal-usuallyUseMember, .c-modal-sample {
@@ -12177,6 +12199,20 @@ input[type=range]::-ms-thumb {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.c-modal-addGroup .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .input-title, .c-modal-usuallyUseMember .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .input-title, .c-modal-sample .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .input-title {
+  color: #FB5B29;
+}
+
+.c-modal-addGroup .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .select-wrapper, .c-modal-usuallyUseMember .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .select-wrapper, .c-modal-sample .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .select-wrapper {
+  background-color: #fff;
+  border: 1px solid #FB5B29;
+}
+
+.c-modal-addGroup .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .o-input input, .c-modal-usuallyUseMember .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .o-input input, .c-modal-sample .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .o-input input, .c-modal-addGroup .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-addGroup .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .hoursInput input, .c-modal-usuallyUseMember .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-usuallyUseMember .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .hoursInput input, .c-modal-sample .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-sample .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .hoursInput input, .c-modal-addGroup .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-addGroup .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .otherInput input, .c-modal-usuallyUseMember .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-usuallyUseMember .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .otherInput input, .c-modal-sample .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-sample .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .otherInput input, .c-modal-addGroup .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-addGroup .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .c-search-item__input input, .c-modal-usuallyUseMember .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-usuallyUseMember .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .c-search-item__input input, .c-modal-sample .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-sample .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .c-search-item__input input {
+  background-color: #fff;
+  border: 1px solid #FB5B29;
 }
 
 .c-modal-personAll, .c-modal-personCalendar, .c-modal-department {
@@ -12345,6 +12381,7 @@ input[type=range]::-ms-thumb {
 
 .c-modal-usuallyUseMember .c-modal-content, .c-modal-sample .c-modal-content {
   width: 100%;
+  height: 65vh;
 }
 
 .c-modal-usuallyUseMember .c-accordion-group, .c-modal-sample .c-accordion-group, .c-modal-usuallyUseMember .c-accordion-plan, .c-modal-sample .c-accordion-plan, .c-modal-usuallyUseMember .c-accordion-general, .c-modal-sample .c-accordion-general {
@@ -12352,6 +12389,8 @@ input[type=range]::-ms-thumb {
 }
 
 .c-modal-usuallyUseMember .c-modal-content__item, .c-modal-sample .c-modal-content__item {
+  height: 100%;
+  overflow: scroll;
   margin: 1rem 0 1rem 0;
 }
 
@@ -12362,12 +12401,21 @@ input[type=range]::-ms-thumb {
 
 .c-modal-sample {
   width: 65vw;
-  height: auto;
+  height: 85vh;
   min-height: auto;
+}
+
+.c-modal-sample .c-modal-content {
+  height: 90%;
 }
 
 .c-modal-sample .c-modal-content .header__item__title {
   font-size: 18px;
+}
+
+.c-modal-sample .c-modal-content .c-modal-content__item {
+  height: 100%;
+  overflow: scroll;
 }
 
 .c-modal-sample .c-modal-content .accordion-body__item .col {
@@ -13129,6 +13177,7 @@ input[type=range]::-ms-thumb {
   color: #042340;
   position: relative;
   width: 14.285714285714%;
+  cursor: pointer;
 }
 
 .c-writeHours-title__item .c-writeHours-title__item__date {
@@ -13227,11 +13276,59 @@ input[type=range]::-ms-thumb {
   display: block;
 }
 
+.c-writeHours-content .is-error-status .col .input-title {
+  color: #FB5B29;
+}
+
+.c-writeHours-content .is-error-status .col .select-wrapper {
+  background-color: #fff;
+  border: 1px solid #FB5B29;
+}
+
+.c-writeHours-content .is-error-status .hoursInput {
+  position: relative;
+}
+
+.c-writeHours-content .is-error-status .hoursInput input {
+  border: 1px solid #FB5B29;
+  border-bottom: 1px solid #FB5B29;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.c-writeHours-content .is-error-status .hoursInput input[type=text]:not(.browser-default) {
+  border-bottom: 1px solid #FB5B29;
+  background-color: #fff;
+}
+
+.c-writeHours-content .is-error-status .hoursInput:after {
+  position: absolute;
+  white-space: nowrap;
+  color: #FB5B29;
+  font-size: 12px;
+  padding-top: .01rem;
+  margin-top: 0.2rem;
+  content: "僅能填寫至小數點第一位";
+}
+
+.c-writeHours-content .is-error-status .otherInput input {
+  background-color: #fff;
+  border: 1px solid #FB5B29;
+  border-bottom: 1px solid #FB5B29;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.c-writeHours-content .is-error-status .otherInput input[type=text]:not(.browser-default) {
+  border-bottom: 1px solid #FB5B29;
+  background-color: #fff;
+}
+
 .c-writeHours-content__select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 1%;
+  padding-bottom: 1.2rem;
   border-bottom: 1px solid #8495A4;
 }
 
@@ -13264,6 +13361,10 @@ input[type=range]::-ms-thumb {
 .c-writeHours-content__select button {
   margin-left: .8%;
   margin-top: 1.6rem;
+}
+
+.c-writeHours-content__select input[type=text]:not(.browser-default) {
+  margin: 1px;
 }
 
 .c-search {
@@ -13519,12 +13620,13 @@ input[type=range]::-ms-thumb {
   color: #042340;
   font-weight: 700;
   font-family: "Noto Sans TC", "sans-serif";
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .o-tag, .o-tag-danger {
   border-radius: 5px;
   padding: 0.5rem;
+  display: inline-block;
   background-color: #E2F1FE;
 }
 

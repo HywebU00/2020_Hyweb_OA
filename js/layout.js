@@ -313,5 +313,8 @@ if (tag_item != null && tag_content != null) {
 
 const list = document.querySelector(".Draglist");
 if (list != null) {
-  dragula([document.querySelector(".Draglist")]);
+  dragula([
+    document.querySelector(".Draglist"),
+    document.querySelector(".Draglist_sec"),
+  ]);
 }
