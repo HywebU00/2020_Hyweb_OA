@@ -222,6 +222,7 @@
     .o-card__iconBtn {
         width: 24px;
         height: 24px;
+        cursor: pointer;
     }
 
     .o-card__star-active {
@@ -275,7 +276,7 @@
         justify-content: space-between;
 
         div {
-            border-right: 1px solid $gray4;
+            // border-right: 1px solid $gray4;
             padding: 0 0.5rem;
 
             &:first-child {
@@ -441,6 +442,14 @@
 
         div {
             line-height: 1.6rem;
+        }
+        .c-card-lablePerson-item__btn{
+            height: 33px;
+            width: 33px;
+            text-align: center;
+            padding: 0.1rem;
+            border-radius: 50%;
+            cursor: pointer;
         }
 
     }
@@ -632,6 +641,9 @@
         color: #fff;
         align-items: center;
         letter-spacing: 0.05em;
+        img{
+cursor: pointer;
+        }
     }
 
     .c-toast-body {
@@ -697,6 +709,9 @@
         font-size: $a;
         align-items: center;
         justify-content: space-between;
+        img{
+            cursor: pointer;
+        }
 
     }
 }
@@ -996,11 +1011,12 @@
                 font-size: $p;
                 margin: 0 1rem 0 0.75rem;
 
-                span {
+                a {
                     font-weight: 400;
                     margin-left: 1.2rem;
                     display: flex;
                     align-items: center;
+                    color: $gray3;
 
                 }
             }
@@ -1040,9 +1056,11 @@
 
 .c-modal-addGroup {
     @extend .c-modal;
+   
     width: 80%;
-    min-height: 76vh;
-    max-height: 90vh;
+    height: 85vh;
+    // min-height: 76vh;
+    max-height: 85vh;
 
     .c-modal-closeBtn {
         display: flex;
@@ -1070,7 +1088,7 @@
     .c-modal-addGroup__content {
         display: flex;
         flex-wrap: wrap;
-        height: 98%;
+        height: 95%;
 
         .c-modal-addGroup__content__item {
             width: 100%;
@@ -1142,12 +1160,16 @@
                 color: $gray3;
                 display: flex;
                 justify-content: space-between;
+                div{
+                    cursor: pointer;
+                }
             }
 
             .memberList__group {
                 display: flex;
                 flex-wrap: wrap;
-
+                height: 40vh;
+                overflow: scroll;
                 .c-card-lablePerson {
                     margin: 0 0 1rem 0.5rem;
                 }
@@ -1163,6 +1185,7 @@
     .c-modal-footer {
         align-self: flex-end;
         justify-content: flex-end;
+        margin-bottom: 1rem;
     }
     .is-error-status{
         .c-modal-addGroup__content__item{
@@ -1809,7 +1832,7 @@
         }
 
         .c-datePicker__content {
-            margin-top: 5%;
+            margin-top: 1rem;
             width: 99.999%;
             display: flex;
             justify-content: space-between;
@@ -1820,10 +1843,13 @@
                 font-size: $p;
                 padding-left: 25px;
                 padding-right: 5px;
+                width: 73px;
+                display: flex;
+                justify-content: center;
             }
 
             li {
-                padding: 0.3rem 0;
+                padding: 0.4em 0;
                 width: 33.333333333333333333%;
                 display: flex;
                 justify-content: center;
@@ -1997,7 +2023,9 @@
 
 .c-datePicker-months {
     @extend .c-datePicker-days;
-
+    .c-datePicker__modal{
+        width: 337px;
+    }
     .c-datePicker__group {
         width: 100%;
 
@@ -2053,6 +2081,7 @@
             }
 
         }
+
     }
 
 }
@@ -2063,7 +2092,7 @@
     position: relative;
 
     .c-popover__content {
-        left: 0;
+        left: 5px;
         top: 40px;
         z-index: 100;
         background-color: #fff;
@@ -2097,7 +2126,7 @@
             content: "";
             position: absolute;
             display: block;
-            left: 50%;
+            left: 25%;
             z-index: 99;
             margin-left: -8.75px;
             width: 0;
@@ -2111,7 +2140,7 @@
             content: "";
             position: absolute;
             display: block;
-            left: 50%;
+            left: 25%;
             margin-left: -8.9px;
             width: 0;
             top: 0;
@@ -2126,8 +2155,9 @@
 
 .c-popover-filterS {
     @extend .c-popover-checkPoint;
-
+        
     .c-popover__content {
+        width: 160px;
         &::before {
             left: 75%;
         }
@@ -2144,6 +2174,9 @@
 
 .c-popover-filterL {
     @extend .c-popover-filterM;
+    .c-popover__content {
+        width: 183px;
+    }
 }
 
 .c-popover__content {
@@ -2154,7 +2187,7 @@
     @extend .c-popover-filterM;
 
     .c-popover__content {
-
+        width: 173px;
         &::before {
             left: 20%;
         }

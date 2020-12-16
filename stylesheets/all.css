@@ -9899,6 +9899,7 @@ input[type=range]::-ms-thumb {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .l-main-content .l-main-content__title div img {
@@ -11113,6 +11114,7 @@ input[type=range]::-ms-thumb {
 .c-card-planReport .o-card__iconBtn, .c-card-planReport-danger .o-card__iconBtn, .c-card-alertPlan .o-card__iconBtn {
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
 
 .c-card-planReport .o-card__star-active, .c-card-planReport-danger .o-card__star-active, .c-card-alertPlan .o-card__star-active {
@@ -11178,7 +11180,6 @@ input[type=range]::-ms-thumb {
 }
 
 .c-card-planReport .c-card__text div, .c-card-planReport-danger .c-card__text div, .c-card-alertPlan .c-card__text div {
-  border-right: 1px solid #D2DAE0;
   padding: 0 0.5rem;
 }
 
@@ -11357,6 +11358,15 @@ input[type=range]::-ms-thumb {
 
 .c-card-lablePerson .c-card-lablePerson-item div {
   line-height: 1.6rem;
+}
+
+.c-card-lablePerson .c-card-lablePerson-item .c-card-lablePerson-item__btn {
+  height: 33px;
+  width: 33px;
+  text-align: center;
+  padding: 0.1rem;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .c-card-lableGroup {
@@ -11569,6 +11579,10 @@ input[type=range]::-ms-thumb {
   letter-spacing: 0.05em;
 }
 
+.c-toast-uploadSuccess .c-toast-header img, .c-toast-uploadFailure .c-toast-header img {
+  cursor: pointer;
+}
+
 .c-toast-uploadSuccess .c-toast-body, .c-toast-uploadFailure .c-toast-body {
   padding: 1rem;
   background-color: #fff;
@@ -11647,6 +11661,10 @@ input[type=range]::-ms-thumb {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.c-toast-join .c-toast-body img, .c-toast-joinCancel .c-toast-body img {
+  cursor: pointer;
 }
 
 .c-tabs {
@@ -11995,7 +12013,7 @@ input[type=range]::-ms-thumb {
   margin: 0 1rem 0 0.75rem;
 }
 
-.c-modal-chooseGroup .c-modal-content .c-modal-content__addMember .addMember-title span {
+.c-modal-chooseGroup .c-modal-content .c-modal-content__addMember .addMember-title a {
   font-weight: 400;
   margin-left: 1.2rem;
   display: -webkit-box;
@@ -12004,6 +12022,7 @@ input[type=range]::-ms-thumb {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #8495A4;
 }
 
 .c-modal-chooseGroup .c-modal-content .c-modal-content__addMember div {
@@ -12043,8 +12062,8 @@ input[type=range]::-ms-thumb {
 
 .c-modal-addGroup, .c-modal-usuallyUseMember, .c-modal-sample {
   width: 80%;
-  min-height: 76vh;
-  max-height: 90vh;
+  height: 85vh;
+  max-height: 85vh;
 }
 
 .c-modal-addGroup .c-modal-closeBtn, .c-modal-usuallyUseMember .c-modal-closeBtn, .c-modal-sample .c-modal-closeBtn {
@@ -12089,7 +12108,7 @@ input[type=range]::-ms-thumb {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 98%;
+  height: 95%;
 }
 
 .c-modal-addGroup .c-modal-addGroup__content .c-modal-addGroup__content__item, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-addGroup__content__item, .c-modal-sample .c-modal-addGroup__content .c-modal-addGroup__content__item {
@@ -12177,12 +12196,18 @@ input[type=range]::-ms-thumb {
           justify-content: space-between;
 }
 
+.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__title div, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__title div, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__title div {
+  cursor: pointer;
+}
+
 .c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__group, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__group, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  height: 40vh;
+  overflow: scroll;
 }
 
 .c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__group .c-card-lablePerson {
@@ -12199,6 +12224,7 @@ input[type=range]::-ms-thumb {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-bottom: 1rem;
 }
 
 .c-modal-addGroup .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .input-title, .c-modal-usuallyUseMember .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .input-title, .c-modal-sample .is-error-status .c-modal-addGroup__content__item .c-modal-content__select .input-title {
@@ -12813,7 +12839,7 @@ input[type=range]::-ms-thumb {
 }
 
 .c-datePicker .c-datePicker__modal .c-datePicker__content, .c-datePicker-day .c-datePicker__modal .c-datePicker__content, .c-datePicker-days .c-datePicker__modal .c-datePicker__content, .c-datePicker-months .c-datePicker__modal .c-datePicker__content, .c-datePicker-month .c-datePicker__modal .c-datePicker__content {
-  margin-top: 5%;
+  margin-top: 1rem;
   width: 99.999%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12830,10 +12856,17 @@ input[type=range]::-ms-thumb {
   font-size: 16px;
   padding-left: 25px;
   padding-right: 5px;
+  width: 73px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .c-datePicker .c-datePicker__modal .c-datePicker__content li, .c-datePicker-day .c-datePicker__modal .c-datePicker__content li, .c-datePicker-days .c-datePicker__modal .c-datePicker__content li, .c-datePicker-months .c-datePicker__modal .c-datePicker__content li, .c-datePicker-month .c-datePicker__modal .c-datePicker__content li {
-  padding: 0.3rem 0;
+  padding: 0.4em 0;
   width: 33.333333333333333333%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12969,6 +13002,10 @@ input[type=range]::-ms-thumb {
   padding: 0 20px;
 }
 
+.c-datePicker-months .c-datePicker__modal {
+  width: 337px;
+}
+
 .c-datePicker-months .c-datePicker__group {
   width: 100%;
 }
@@ -13017,7 +13054,7 @@ input[type=range]::-ms-thumb {
 }
 
 .c-popover-checkPoint .c-popover__content, .c-popover-filterS .c-popover__content, .c-popover-filterM .c-popover__content, .c-popover-filterL .c-popover__content, .c-popover-wbsEdit .c-popover__content, .c-popover-perspective .c-popover__content {
-  left: 0;
+  left: 5px;
   top: 40px;
   z-index: 100;
   background-color: #fff;
@@ -13053,7 +13090,7 @@ input[type=range]::-ms-thumb {
   content: "";
   position: absolute;
   display: block;
-  left: 50%;
+  left: 25%;
   z-index: 99;
   margin-left: -8.75px;
   width: 0;
@@ -13067,7 +13104,7 @@ input[type=range]::-ms-thumb {
   content: "";
   position: absolute;
   display: block;
-  left: 50%;
+  left: 25%;
   margin-left: -8.9px;
   width: 0;
   top: 0;
@@ -13075,6 +13112,10 @@ input[type=range]::-ms-thumb {
   border-style: solid;
   border-width: 0 8px 10.3px 8px;
   border-color: transparent transparent #b1b1b152 transparent;
+}
+
+.c-popover-filterS .c-popover__content, .c-popover-filterM .c-popover__content, .c-popover-filterL .c-popover__content, .c-popover-wbsEdit .c-popover__content {
+  width: 160px;
 }
 
 .c-popover-filterS .c-popover__content::before, .c-popover-filterM .c-popover__content::before, .c-popover-filterL .c-popover__content::before, .c-popover-wbsEdit .c-popover__content::before {
@@ -13085,8 +13126,16 @@ input[type=range]::-ms-thumb {
   left: 75%;
 }
 
+.c-popover-filterL .c-popover__content {
+  width: 183px;
+}
+
 .c-popover__content {
   display: inline-block;
+}
+
+.c-popover-wbsEdit .c-popover__content {
+  width: 173px;
 }
 
 .c-popover-wbsEdit .c-popover__content::before {
