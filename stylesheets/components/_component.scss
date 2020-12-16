@@ -203,12 +203,15 @@
 
 .c-card-planReport {
     @extend .c-card-planPerson;
-    //width:879px;
-    //max-width: 879px;
     min-width: 879px;
     min-height: 166px;
     display: flex;
     padding: 0;
+    // &:active{
+    //     transition: all 0.2s;
+    //     transform: translateY(1px) translateX(1px);
+    // }
+    // transition: all 0.2s;
 
     .c-card__item {
         padding: $pd-2 $pd-3;
