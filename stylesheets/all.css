@@ -9993,10 +9993,16 @@ input[type=range]::-ms-thumb {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .l-main-content .l-main-content__upload .row .col img {
-  padding: 0 0.2rem;
+  padding: 0 0.5rem 0 0.2rem;
   cursor: pointer;
 }
 
