@@ -26,7 +26,8 @@
 
 .c-card-manhourSofar {
     @extend .c-card;
-
+    width: 10%;
+    min-width: 210px;
     .c-card__userInformation {
         h3 {
             font-weight: 400;
@@ -36,7 +37,7 @@
         line-height: 35px;
         border-bottom: 1px solid #BDBDBD;
         display: flex;
-        //justify-content: space-between;
+        justify-content: space-between;
     }
 
     .c-card__content {
@@ -123,8 +124,11 @@
     }
 
     h2 {
+        @include db_ellipsisText;
         font-size: $p;
         line-height: 28px;
+        max-height: 56px;
+        
     }
 
     .c-card__userInformation {
@@ -132,6 +136,29 @@
         margin-top: $m;
         color: $gray3;
     }
+}
+.c-card-planClosed{
+@extend .c-card-planPerson; 
+.c-card__userInformation{
+    margin: 0;
+    line-height: 30px;
+    justify-content: flex-start;
+    .c-card__userInformation__block{
+        display: inline-block;
+        padding: 0 0.5rem;
+     }
+    .c-card__userInformation__pm{
+        padding: 0;
+    }
+    .c-card__userInformation__sale{
+        padding: 0;
+    }
+    
+}
+.c-card__date{
+    margin-top: 10px;
+    color: $gray3;
+}
 }
 
 .c-card-planHotkey {
@@ -241,19 +268,22 @@
     }
 
     .c-card__tag {
+        div{
+            align-items: center;
+        }
         display: flex;
         padding-top: 0;
         justify-content: start;
         align-items: center;
         padding-bottom: 0;
-
-        // margin-bottom: 0.5rem;
         .c-card__tag__btn {
             padding: 0.6rem;
             background-color: $gray5;
             border-radius: $tag-radius-l;
             margin-right: 1rem;
+           
         }
+       
 
         span {
             background: #fff;
@@ -268,6 +298,7 @@
             white-space: nowrap;
 
         }
+        
     }
 
     .c-card__text {
@@ -305,6 +336,15 @@
         h2 {
             line-height: 26px;
             margin-bottom: 1rem;
+        }
+        .c-card__text__startTime{
+            div{
+                display: inline;
+                padding:0;
+            }
+            span{
+               display: none; 
+            }
         }
 
     }
@@ -373,7 +413,11 @@
             font-size: $h2;
             font-weight: 700;
         }
-
+        .c-card__item__content__list{
+            .list__item {
+                align-items: center
+            }
+        }
     }
 
 }
@@ -384,6 +428,7 @@
     .c-card__item__footer {
         .c-card__item__content__list {
             .list__item {
+              
                 .is-danger {
                     color: $danger;
                 }
@@ -608,9 +653,12 @@
 .c-accordion-general {
     @extend.c-card;
     @extend .c-accordion-plan;
-
+    max-width: 800px;
+    border: 0;
+    box-shadow: $box-shadow;
     .accordion-body__item {
         background: $hyweb-lighblue;
+        padding:1rem 1.5rem;
 
         .col {
             @include ellipsisText;
@@ -634,6 +682,7 @@
     width: 370px;
     padding: 0;
     border-radius: $toast-radius;
+    z-index: 1000;
 
     .c-toast-header {
         padding: 1rem;
@@ -1214,14 +1263,18 @@ cursor: pointer;
 }
 
 .c-modal-personAll {
-    width: 90%;
-    height: 85vh;
+    //width: 90%;
+    //height: 85vh;
+    width: 80%;
+    height: 70vh;
+    min-height: 580px;
+    max-width:880px;
     overflow: hidden;
     border-radius: $modal-radius;
     box-shadow: $box-shadow;
     background-color: #fff;
 
-
+   
     .c-modal-content__sidebar {
         padding: 2%;
         background-color: $sec3;
@@ -1236,7 +1289,7 @@ cursor: pointer;
         .user__name {
             font-size: $h2;
             font-weight: 700;
-            margin-top: 20%;
+            margin-top: 2rem;
             margin-bottom: 5%;
         }
 
@@ -1265,7 +1318,6 @@ cursor: pointer;
 
         .sidebar__months__item {
             margin-bottom: 15%;
-
             .item__years {
                 font-size: $p;
                 font-weight: 700;
@@ -1301,12 +1353,23 @@ cursor: pointer;
         padding: 2%;
 
         .c-modal-content__calendar__content {
-            height: 65vh;
+            height: 75vh;
             overflow: scroll;
         }
 
         .c-modal-content__calendar__tebs {
-            margin-bottom: 3%;
+            margin-top: -0.8rem;
+            margin-bottom: 1.5rem;
+            .c-tabs{
+                padding-top: 0; 
+                .tabs{
+                   height: 42px;
+                    .tab{
+                       height: 42px;
+                       line-height: 42px;
+                    }
+                }  
+               }
         }
 
         .c-modal-content__calendar__btn {
@@ -1316,7 +1379,7 @@ cursor: pointer;
 
         .c-modal-content__calendar__title {
             font-size: $calendar-title-font;
-            padding-bottom: 3%;
+            padding-bottom: 1.5rem;
             font-weight: 700;
         }
     }
@@ -1340,6 +1403,7 @@ cursor: pointer;
 
 .c-modal-personCalendar {
     @extend .c-modal-personAll;
+  
 }
 
 .c-modal-department {
@@ -1900,7 +1964,7 @@ cursor: pointer;
     @extend .c-datePicker;
 
     .c-datePicker__input {
-        width: 200px;
+        width: 160px;
     }
 
     .c-datePicker__modal {
@@ -2026,6 +2090,9 @@ cursor: pointer;
 
 .c-datePicker-months {
     @extend .c-datePicker-days;
+    .c-datePicker__input{
+        width: 160px;
+    }
     .c-datePicker__modal{
         width: 337px;
     }
@@ -2475,6 +2542,7 @@ cursor: pointer;
     border-bottom: 1px solid $gray4;
     color: $gray1;
     font-size: $p;
+    // overflow-x:scroll ;
 }
 
 .c-search-list {
@@ -2606,7 +2674,6 @@ cursor: pointer;
 .o-calendar {
     .o-calendar__week__title {
         display: flex;
-
         div {
             width: 100%;
             padding-bottom: 1%;
@@ -2631,7 +2698,7 @@ cursor: pointer;
             border-bottom: solid 1px $sec2;
             border-left: solid 1px $sec2;
             width: 100%;
-            height: 100px;
+            height: 75px;//100px;
             position: relative;
             display: flex;
 
@@ -2694,7 +2761,7 @@ cursor: pointer;
 .o-input-div {
     height: 38px;
     width: 100%;
-    min-width: 200px;
+    min-width: 160px;
     border-radius: $input-radius;
     background-color: $hyweb-lighblue;
     position: relative;
@@ -2773,6 +2840,7 @@ cursor: pointer;
 
 .pop-modal {
     .is-pop-show {
+       
         transform: scale(1.1);
         opacity: 1;
     }

@@ -17,6 +17,14 @@ if (menu_btn_open != null) {
     l_Main_Content.forEach((item) => {
       item.style.width = "calc(100vw - 267px)";
     });
+    // search bar 寬度更動
+    let searchWidth = document.querySelectorAll(".c-search");
+    if (searchWidth != null) {
+      searchWidth.forEach((item) => {
+        item.style.width = "calc(100vw - 267px)";
+      });
+    }
+
     fullname();
   }
 }
@@ -29,6 +37,13 @@ if (menu_btn != null) {
     l_Main_Content.forEach((item) => {
       item.style.width = "calc(100vw - 142px)";
     });
+    // search bar 寬度更動
+    let searchWidth = document.querySelectorAll(".c-search");
+    if (searchWidth != null) {
+      searchWidth.forEach((item) => {
+        item.style.width = "calc(100vw - 142px)";
+      });
+    }
     firstname();
   }
   menu_btn.addEventListener("click", closemenu);
@@ -59,7 +74,6 @@ const menuItem = document.querySelectorAll(".c-sidebar-content__list__item");
 
 for (let a = 0; a < menuItem.length; a++) {
   menuItem[a].addEventListener("click", changeItemStyle);
-
   function changeItemStyle() {
     let clickItem = document.querySelector(".menuItem-is-active");
     clickItem.classList.remove("menuItem-is-active");

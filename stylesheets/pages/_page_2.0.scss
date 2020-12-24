@@ -2,11 +2,12 @@
 
 
     .l-main-content-text {
-        div{
+        div {
             font-size: $p;
             font-family: $font-family;
         }
-        .l-main-content-text__year{
+
+        .l-main-content-text__year {
             font-size: $h2;
             font-family: $english-font;
             font-weight: 700;
@@ -23,40 +24,46 @@
         div {
             padding: 0 0.5rem;
             display: flex;
+
             .l-main-content-list__img {
-                padding:  0.2rem;
+                padding: 0.2rem;
                 cursor: pointer;
                 border-radius: 50%;
-                &:hover{
-                    background-color:$hyweb-lighblue;
+
+                &:hover {
+                    background-color: $hyweb-lighblue;
                 }
             }
-            .o-card{
+
+            .o-card {
                 display: none;
-             
+
             }
-            .c-popover__content{
-                left:-130px; 
-                top:50px;
-                transform-origin:100px 20px;
-                &::before{
-                    left:93%;
+
+            .c-popover__content {
+                left: -130px;
+                top: 50px;
+                transform-origin: 100px 20px;
+
+                &::before {
+                    left: 93%;
                 }
-                &::after{
-                    left:93%;
+
+                &::after {
+                    left: 93%;
                 }
-                
-            }  
+
+            }
         }
     }
 
-     .l-main-content-item {
+    .l-main-content-item {
         .l-main-content-item__listTitle {
             display: none;
         }
+
         .c-card-planPerson {
-            width: 23%;
-            margin: 0 1% 2.5% 1%;
+            margin: 0 0.5rem 2.5rem 0.5rem;
             max-width: 300px;
         }
 
@@ -69,12 +76,12 @@
 }
 
 //改變資料樣式
-
 .change-card-to-list {
     .l-main-content-item {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+
         .l-main-content-item__listTitle {
             display: block;
             background-color: $hyweb-lighblue;
@@ -86,8 +93,9 @@
             border-bottom: 1px solid $hyweb-blue;
             font-weight: 700;
             width: 100%;
-            line-height: 28px; 
+            line-height: 28px;
             max-width: 2560px;
+
             .listTitle__num {
                 width: 20%;
             }
@@ -105,29 +113,28 @@
             }
         }
 
-        .c-card__tag {
-            width: 20%;
-
-            padding: 0;
-
-            span {
-                background: #fff;
-                color: $gray1;
+        .c-card-planPerson {
+            .c-card__tag {
+                width: 20%;
                 padding: 0;
-                font-size: $p;
-                font-family: $font-family;
+
+                span {
+                    background: #fff;
+                    color: $gray1;
+                    padding: 0;
+                    font-size: $p;
+                    font-family: $font-family;
+                }
+
             }
 
-        }
+            h2 {
+                width: 60%;
+                font-weight: 400;
+                @include db_ellipsisText;
+                max-height: 56px;
+            }
 
-        h2 {
-            width: 60%;
-            font-weight: 400;
-            @include db_ellipsisText;
-            max-height: 56px;
-        }
-
-        .c-card-planPerson {
             width: 100%;
             margin: 0;
             padding: 20px 0px 20px 3rem;

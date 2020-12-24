@@ -18,7 +18,329 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+      
+    }
+   
+    .list-width{
+        justify-content: flex-start;
+        overflow: scroll;
+        flex-shrink: 0;
+        .l-main-content-item__listTitle{
+            align-items: center;
+            width: auto; 
+            
+            div{
+                padding: 0 0.5rem;
+                flex-shrink: 0;
+            }
+            .listTitle__num{
+                width:150px;
+                
+            }
+            .listTitle__status{
+                width:100px ;
+            }
+            .listTitle__name{
+                width:400px ;
+            }
+            .listTitle__startTime{
+                width:150px ;
+            }
+            .listTitle__position{
+                width:100px ;
+            }
+            .listTitle__time{
+                width:150px ;
+            }
+            .listTitle__cost{
+                width: 100px;
+            }
+       
+           .listTitle__costTime{
+               width: 100px;
+           }
+        }
+        .l-main-content-item__listGroup{
+           .c-card-planReport{
+            padding:0;
+            max-width: none;
+            flex-shrink: 0;
+            height: 90px;
+            min-height: auto;
+            
+            .c-card__item{
+                padding: 0;
+            }
+           .c-card__item__title{
+               display:flex;
+               flex-wrap: nowrap;
+               width: auto;
+               align-items:center ;
+               
+               border-right: 0;
+               padding: 0;
+            
+               .c-card__tag{
+                   width: auto;
+                   font-weight: 400;
+                   align-items: center;
+                .c-card__tag__num{
+                    width:195px;
+                    padding: 0 0.5rem;
+                    span{
+                        font-weight: 400;
+                        display: inline-block;
+                        padding: 0.5rem;
+                    }
+                   }
+                   .c-card__tag__btn{
+                       padding: 0;
+                       background-color: #fff;
+                   }
+                   .c-card__tag__status{
+                       display: block;
+                       font-weight: 400;
+                       width: 100px;
+                       padding: 0 0.5rem;
+                   }
+               }
+               h2{
+                   width: 400px;
+                   margin-bottom: 0;
+                   padding: 0 0.5rem;
+               }
+               .c-card__text{
+                width: auto;
+                align-self: center;
+                align-items: center;
+                .c-card__text__block{
+                    display: none;
+                }
+                .c-card__text__startTime{
+                 width:150px ;
+                 padding: 0 0.5rem;
+                 line-height: 24px;
+                 font-size: $p;
+                 color: $gray1;
+                 span{
+                     display: block;
+                 }
+                 div{
+                     display: none;
+                 }
+                }
+                .c-card__position{
+                 width: 100px;
+                 padding: 0 0.5rem;
+                 font-size: $p;
+                 color: $gray1;
+                 span{
+                     display: none;
+                 }
+                }
+                }
+           } 
+           
+           .c-card__item__content{
+            .c-card__tag{
+               display: none;
+            }
+            .c-card__item__content__list{
+                flex-wrap:nowrap;
+                .list__item {
+                    font-size: $p;
+                    width: 100px;
+                    margin: 0;
+                    padding: 0 0.5rem;
+                    align-items: center;
+                    .list__item__num{
+                        width: 100px;
+                        padding: 0 0.5rem;
+                        font-weight: 400;
+                        font-size: $p;
+                        font-family: $font-family;
+                        padding-left: 0;
+
+                    }
+                }
+            }
+            .o-card__iconBtn{
+                display: none;
+            }
+            .list__item__title{
+                display: none;
+            }
+           
+           }
+           .c-card__item__footer{
+               .c-card__item__content__list{
+                  .list__item{
+                      width: auto;
+                      align-items: center;
+                      padding: 0;
+                      margin: 0;
+                      .list__item__num{
+                          width: 150px;
+                          padding: 0 0.5rem;
+                          font-size: $p;
+                          font-family: $font-family;
+                          span{
+                              padding: 0.5rem;
+                              display: inline-block;
+                          }
+                      }
+                      .list__item__percent{
+                          width: 100px;
+                          padding: 0 0.5rem;
+                          font-weight: 400;
+                          font-size: $p;
+                          font-family: $font-family;
+                          span{
+                            padding: 0.5rem;
+                            display: inline-block;
+                        }
+
+                      }
+                  } 
+               }
+           }
+        } 
+            .c-card-planReport-danger{
+                
+                .c-card__item{
+                    .c-card__item__title{
+                        .c-card__tag__num{
+                            span{
+                                display: inline-block;
+                                padding:0.5rem;
+                                color: #fff;
+                                background: $hy-background-danger;
+                            }
+                        }
+                    }
+                    .c-card__item__footer{
+                        .c-card__item__content__list{
+                            .list__item__num{
+                                span{
+                                display: inline-block;
+                                color: #fff;
+                                padding:0.5rem;
+                                background: $hy-background-danger;
+                                border-radius: $tag-radius;
+                                }
+                            }
+                            .list__item__percent {
+                                span{
+                                    display: inline-block;
+                                color: #fff;
+                                padding:0.5rem;
+                                background: $hy-background-danger;
+                                border-radius: $tag-radius;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                // .is-danger{
+                //     color: #fff;
+                //     background: $hy-background-danger;
+                // } 
+            }
+
+        }
+        
+        
+
+    }
+    .l-main-content-title{
+        .l-main-content-text{
+            div{
+                font-weight: bolder;
+                font-size: $font-size-l;
+            }
+        }
     }
     
+}
+#complete {
+    .l-main-tabs {
+        margin-bottom: 1rem;
+    }
+    
+    .l-main-content-item__listTitle{
+        padding:20px 2rem;
+        .listTitle__num{
+            padding: 0 0.2rem;
+            width: 15%;
+        }
+        .listTitle__name{
+            padding: 0 0.5rem;
+            width: 40%;
+        }
+        .listTitle__workTime{
+            padding: 0 0.5rem;
+            width: 15%;
+        }
+        .listTitle__position{
+            padding: 0 0.5rem;
+            width: 10%;
+        }
+        .listTitle__time{
+            padding: 0 0.5rem;
+            width: 10%;
+        } 
+    }
+    .change-card-to-list{
+        .c-card-planClosed{
+            padding:20px 2rem;
+            .c-card__tag{
+                padding: 0 0.5rem;
+                width: 15%;
+            }
+            h2{
+                width: 40%;
+                padding: 0 0.5rem;
+                line-height: 24px;
+            }
+            .c-card__date{
+                width: 15%;
+                margin-top: 0;
+                padding: 0 0.5rem;
+                line-height: 24px;
+                color: $gray1;
+                .br{
+                    display: block;
+                }
+                .dash{
+                    display: none;
+                }
+            }
+            .c-card__userInformation{
+                padding: 0 0.5rem;
+                width: 20%;
+                .c-card__userInformation__pm{
+                   
+                    .c-card__userInformation__pm__title{
+                        display: none;
+                    }
+                    width: 50%;
+                }
+                .c-card__userInformation__sale{
+                    span{
+                        display: none;
+                    }
+                    width: 50%;
+                }
+                .c-card__userInformation__block{
+                    display: none;
+                }
+            }
+            .c-card__content{
+                padding: 0 0.5rem;
+                width: 10%;
+            }
+            
+        }
+    }
 }
