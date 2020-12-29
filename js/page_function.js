@@ -6,34 +6,53 @@ const o_list = document.querySelectorAll(".o-list");
 const o_card = document.querySelectorAll(".o-card");
 const l_main = document.querySelectorAll(".l-main ");
 const l_Main_ChangeStyle = document.querySelectorAll(".l-main-changeStyle");
-const manhourSofarCard = document.querySelectorAll(".c-card-manhourSofar");
-const cardChineseName = document.querySelectorAll(
-  ".c-card-manhourSofar__userName"
-);
-const cardEnglishName = document.querySelectorAll(
-  ".c-card-manhourSofar__englishName"
-);
-const appendUserName = document.querySelectorAll(".c-card__appendUserName");
+const addNameCard = document.querySelectorAll(".js-c-card-addName");
+const cardChineseName = document.querySelectorAll(".js-c-card__userName");
+const cardEnglishName = document.querySelectorAll(".js-c-card__englishName");
+const appendUserName = document.querySelectorAll(".js-c-card__appendUserName");
 
 //增加節點
 let addUserName = function () {
-  for (let a = 0; a < cardChineseName.length; a++) {
-    let chineseName = cardChineseName[a].innerHTML;
-    let englishName = cardEnglishName[a].innerHTML;
-
-    let beforeChild = document.querySelectorAll(".c-card__content");
+  let arr = [];
+  for (let p = 0; p < addNameCard.length; p++) {
+    //抓出有改變樣式的列表
+    if (
+      addNameCard[p].parentNode.parentNode.classList.contains(
+        "change-card-to-list"
+      ) === true
+    ) {
+      //將變成列表的卡片抓出來放入陣列arr中
+      arr.push(addNameCard[p]);
+    }
+  }
+  for (let a = 0; a < arr.length; a++) {
+    let chineseName = arr[a].querySelector(".js-c-card__userName").innerHTML;
+    let englishName = arr[a].querySelector(".js-c-card__englishName").innerHTML;
+    let userNumber = arr[a].querySelector(".js-c-card__userNumber").innerHTML;
+    let beforeChild = arr[a].querySelector(".c-card__content");
     let div = document.createElement("div");
-    div.setAttribute("class", "c-card__appendUserName");
-    div.innerHTML = `<h2>${chineseName}</h2><h3>${englishName}</h3>`;
-    manhourSofarCard[a].insertBefore(div, beforeChild[a]);
+    //將陣列中尚未append姓名的卡片抓出來 塞入姓名
+    div.setAttribute("class", "js-c-card__appendUserName");
+    div.innerHTML = `<h2>${userNumber}</h2><h2>${chineseName}</h2><h3>${englishName}</h3>`;
+    if (arr[a].querySelector(".js-c-card__appendUserName") === null) {
+      arr[a].insertBefore(div, beforeChild);
+    }
   }
 };
 //刪除節點
 let removeAppendName = function () {
-  let appendUserName = document.querySelectorAll(".c-card__appendUserName");
-  if (manhourSofarCard != null) {
-    for (let q = 0; q < manhourSofarCard.length; q++) {
-      manhourSofarCard[q].removeChild(appendUserName[q]);
+  for (let b = 0; b < addNameCard.length; b++) {
+    //將轉成卡片樣式的列表抓出來
+    if (
+      addNameCard[b].parentNode.parentNode.classList.contains(
+        "change-card-to-list"
+      ) === false
+    ) {
+      //抓到有append姓名的並刪除
+      let append = addNameCard[b].querySelector(".js-c-card__appendUserName");
+      if (append != null) {
+        addNameCard[b].removeChild(append);
+      }
     }
   }
 };
@@ -42,8 +61,10 @@ for (let r = 0; r < l_Main_Content.length; r++) {
   if (o_list[r] != null) {
     o_list[r].addEventListener("click", function () {
       l_Main_ChangeStyle[r].classList.add("change-card-to-list");
+      //修改icon樣式
       o_list[r].style.display = "none";
       o_card[r].style.display = "inline";
+      //append 中文及英文姓名
       if (cardChineseName != null) {
         addUserName();
       }
@@ -60,6 +81,7 @@ for (let r = 0; r < l_Main_Content.length; r++) {
       l_Main_ChangeStyle[r].classList.remove("change-card-to-list");
       o_card[r].style.display = "none";
       o_list[r].style.display = "inline";
+      //remove 中文及英文姓名
       if (appendUserName != null) {
         removeAppendName();
       }

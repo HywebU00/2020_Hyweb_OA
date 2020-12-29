@@ -110,3 +110,19 @@ collapsible.forEach(function (item) {
 $(document).ready(function () {
   $(".tooltipped").tooltip();
 });
+
+//++++++++++++++++++
+//card alertPlan 改變卡片顏色 效果
+//++++++++++++++++++
+
+const alertPlanInput = document.querySelectorAll(".js-inputStyle");
+// console.log(alertPlanInput);
+
+alertPlanInput.forEach((item) => {
+  item.addEventListener("click", inputChangeCardColor);
+  function inputChangeCardColor() {
+    item.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.classList.toggle(
+      "is-changeBackground"
+    );
+  }
+});

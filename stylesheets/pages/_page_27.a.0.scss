@@ -1,0 +1,116 @@
+#memberstime{
+    .l-main-tabs{
+        margin-bottom: 1rem;
+    }
+    .change-card-to-list{
+        .c-card-manhourSearch__userName{
+            display: none;
+        }
+        .c-card-manhourSearch__englishName{
+            display: none;
+        }
+        .listTitle__user{
+            width: 10%;
+        }
+        .listTitle__englishName{
+             width: 60%;
+        }
+        .listTitle__workTime{
+            width: 10%;
+        }
+        .js-c-card__appendUserName{
+            width: 80%;
+            h2{
+                width: 12.5%;
+            }
+            h3{
+                width: 75%;
+            }
+        }
+        .c-card__content{
+            width: 10%;
+        }
+    }
+}
+
+#departmenttime{
+    .l-main-tabs{
+        margin-bottom: 1rem;
+    } 
+    .change-card-to-list{
+        .c-card-manhourSearch__userName{
+            display: none;
+        }
+        .c-card-manhourSearch__englishName{
+            display: none;
+        }
+        .listTitle__user{
+            width: 10%;
+        }
+        .listTitle__englishName{
+             width: 60%;
+        }
+        .listTitle__workTime{
+            width: 10%;
+        }
+        .js-c-card__appendUserName{
+            width: 80%;
+            h2{
+                width: 12.5%;
+            }
+            h3{
+                width: 75%;
+            }
+        }
+        .c-card__content{
+            width: 10%;
+        }
+    }
+}
+#supporttime{
+    .l-main-tabs{
+        margin-bottom: 1rem;
+    } 
+    .change-card-to-list{
+        .l-main-content-item{
+            .c-card-department{
+            h2{
+                font-weight: 400;
+                font-size: $p;
+                width: 10%;
+            }
+            .c-card__userInformation{
+                display: none;
+            }
+            }
+        }
+        
+        .c-card-manhourSearch__userName{
+            display: none;
+        }
+        .c-card-manhourSearch__englishName{
+            display: none;
+        }
+        .listTitle__user{
+            width: 10%;
+        }
+        .listTitle__englishName{
+             width: 60%;
+        }
+        .listTitle__workTime{
+            width: 10%;
+        }
+        .js-c-card__appendUserName{
+            width: 80%;
+            h2{
+                width: 12.5%;
+            }
+            h3{
+                width: 75%;
+            }
+        }
+        .c-card__content{
+            width: 10%;
+        }
+    }
+}

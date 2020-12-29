@@ -9871,6 +9871,11 @@ input[type=range]::-ms-thumb {
   margin-right: 0.5rem;
 }
 
+.l-main-content .l-main-content-title .l-main-content-text .l-main-content-text__inputText, .l-main-content .l-main-content-data .l-main-content-text .l-main-content-text__inputText {
+  margin-left: 1.8rem;
+  font-weight: 400;
+}
+
 .l-main-content .l-main-content-data {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11225,7 +11230,8 @@ input[type=range]::-ms-thumb {
 }
 
 .c-card-department {
-  width: 21.5%;
+  width: 20%;
+  max-width: 260px;
 }
 
 .c-card-department h2 {
@@ -11271,6 +11277,11 @@ input[type=range]::-ms-thumb {
   cursor: pointer;
 }
 
+.c-card-planReport .o-card__icon, .c-card-planReport-danger .o-card__icon, .c-card-alertPlan .o-card__icon {
+  width: 24px;
+  height: 24px;
+}
+
 .c-card-planReport .o-card__star-active, .c-card-planReport-danger .o-card__star-active, .c-card-alertPlan .o-card__star-active {
   background-image: url(../../img/o-star_active.svg);
 }
@@ -11311,7 +11322,7 @@ input[type=range]::-ms-thumb {
 }
 
 .c-card-planReport .c-card__tag span, .c-card-planReport-danger .c-card__tag span, .c-card-alertPlan .c-card__tag span {
-  background: #fff;
+  background: none;
   color: #8495A4;
   font-size: 16px;
   font-weight: 600;
@@ -12918,6 +12929,10 @@ input[type=range]::-ms-thumb {
   position: relative;
 }
 
+.c-dropdown-member .c-dropdown__input {
+  width: 100%;
+}
+
 .c-dropdown-member .c-dropdown__modal {
   width: 300px;
   height: 285px;
@@ -13905,6 +13920,15 @@ input[type=range]::-ms-thumb {
   color: #FB5B29;
 }
 
+.is-changeBackground {
+  background-color: #F7FBFF;
+}
+
+.is-disabled {
+  color: #8495A4;
+  cursor: default;
+}
+
 .pop-content {
   -webkit-transition: ease 0.15s;
   transition: ease 0.15s;
@@ -14497,9 +14521,23 @@ input[type=range]::-ms-thumb {
   border-radius: 5px;
 }
 
+#todo .l-main-content-title, #todo .l-main-content .l-main-content-data, .l-main-content #todo .l-main-content-data {
+  margin: 1.5rem 0;
+}
+
+#todo .l-main-content-title:first-child, #todo .l-main-content .l-main-content-data:first-child, .l-main-content #todo .l-main-content-data:first-child {
+  margin-top: 0;
+}
+
 #todo .l-main-content-title .l-main-content-text div, #todo .l-main-content .l-main-content-data .l-main-content-text div, .l-main-content #todo .l-main-content-data .l-main-content-text div {
   font-weight: bolder;
   font-size: 18px;
+}
+
+#todo .l-main-content-title .l-main-content-text .l-main-content-text__inputText, #todo .l-main-content .l-main-content-data .l-main-content-text .l-main-content-text__inputText, .l-main-content #todo .l-main-content-data .l-main-content-text .l-main-content-text__inputText {
+  margin-left: 1.8rem;
+  font-weight: 400;
+  padding-bottom: 0.3rem;
 }
 
 #complete .l-main-tabs {
@@ -14596,6 +14634,109 @@ input[type=range]::-ms-thumb {
   width: 10%;
 }
 
+#safe {
+  width: 42%;
+  height: auto;
+}
+
+#safe .c-modal-btnList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#safe .c-modal-title {
+  border: 0px;
+}
+
+#safe .c-modal-content {
+  display: block;
+}
+
+#safe .c-modal-content p {
+  line-height: 23px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#safe .c-modal-content p span {
+  color: #0156A2;
+}
+
+#safe .c-modal-content .c-modal-content__inputList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0 0 0;
+}
+
+#safe .c-modal-content .c-modal-content__inputList .o-input, #safe .c-modal-content .c-modal-content__inputList .c-writeHours-content__select .hoursInput, .c-writeHours-content__select #safe .c-modal-content .c-modal-content__inputList .hoursInput, #safe .c-modal-content .c-modal-content__inputList .c-writeHours-content__select .otherInput, .c-writeHours-content__select #safe .c-modal-content .c-modal-content__inputList .otherInput, #safe .c-modal-content .c-modal-content__inputList .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item #safe .c-modal-content .c-modal-content__inputList .c-search-item__input {
+  width: 40%;
+}
+
+#safe .c-modal-content .c-modal-content__inputList .inputList__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 10%;
+  padding: 0 0.5rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 8px;
+}
+
+#execute .c-modal-btnList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#execute .c-search {
+  border-bottom: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#execute .c-search .c-search-list {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#execute .c-search .c-search-list .c-search-item {
+  padding-right: 0;
+  width: auto;
+}
+
+#execute .c-search .c-search-list .c-search-item .c-search-item__title {
+  margin: 0 1rem;
+  padding: 0;
+  font-weight: 700;
+}
+
+#execute .c-search .c-search-list .c-search-item .c-dropdown-department {
+  min-width: 250px;
+}
+
+#execute .c-search .c-search-list .c-search-btn {
+  width: auto;
+}
+
 #membertime .l-main-tabs {
   margin-bottom: 1rem;
 }
@@ -14624,11 +14765,11 @@ input[type=range]::-ms-thumb {
 }
 
 .change-card-to-list .l-main-content-item__listTitle .listTitle__user {
-  width: 20%;
+  width: 10%;
 }
 
 .change-card-to-list .l-main-content-item__listTitle .listTitle__englishName {
-  width: 40%;
+  width: 50%;
 }
 
 .change-card-to-list .l-main-content-item__listTitle .listTitle__workTime {
@@ -14668,17 +14809,17 @@ input[type=range]::-ms-thumb {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 20%;
+  width: 10%;
   border: 0;
   margin: 0;
 }
 
-.change-card-to-list .c-card-manhourSofar .c-card__userInformation h3, .change-card-to-list .c-card-manhourSearch .c-card__userInformation h3, .change-card-to-list .c-card-percent .c-card__userInformation h3, .change-card-to-list .c-card-percentCheck .c-card__userInformation h3, .change-card-to-list .c-card-planPerson .c-card__userInformation h3, .change-card-to-list .c-card-planClosed .c-card__userInformation h3, .change-card-to-list .c-card-planHotkey .c-card__userInformation h3, .change-card-to-list .c-card-planReport .c-card__userInformation h3, .change-card-to-list .c-card-planReport-danger .c-card__userInformation h3, .change-card-to-list .c-card-alertPlan .c-card__userInformation h3, .change-card-to-list .c-card-department .c-card__userInformation h3 {
-  width: 50%;
+.change-card-to-list .c-card-manhourSofar .c-card__userInformation .js-c-card__userNumber, .change-card-to-list .c-card-manhourSearch .c-card__userInformation .js-c-card__userNumber, .change-card-to-list .c-card-percent .c-card__userInformation .js-c-card__userNumber, .change-card-to-list .c-card-percentCheck .c-card__userInformation .js-c-card__userNumber, .change-card-to-list .c-card-planPerson .c-card__userInformation .js-c-card__userNumber, .change-card-to-list .c-card-planClosed .c-card__userInformation .js-c-card__userNumber, .change-card-to-list .c-card-planHotkey .c-card__userInformation .js-c-card__userNumber, .change-card-to-list .c-card-planReport .c-card__userInformation .js-c-card__userNumber, .change-card-to-list .c-card-planReport-danger .c-card__userInformation .js-c-card__userNumber, .change-card-to-list .c-card-alertPlan .c-card__userInformation .js-c-card__userNumber, .change-card-to-list .c-card-department .c-card__userInformation .js-c-card__userNumber {
+  display: none;
 }
 
-.change-card-to-list .c-card-manhourSofar .c-card__appendUserName, .change-card-to-list .c-card-manhourSearch .c-card__appendUserName, .change-card-to-list .c-card-percent .c-card__appendUserName, .change-card-to-list .c-card-percentCheck .c-card__appendUserName, .change-card-to-list .c-card-planPerson .c-card__appendUserName, .change-card-to-list .c-card-planClosed .c-card__appendUserName, .change-card-to-list .c-card-planHotkey .c-card__appendUserName, .change-card-to-list .c-card-planReport .c-card__appendUserName, .change-card-to-list .c-card-planReport-danger .c-card__appendUserName, .change-card-to-list .c-card-alertPlan .c-card__appendUserName, .change-card-to-list .c-card-department .c-card__appendUserName {
-  width: 60%;
+.change-card-to-list .c-card-manhourSofar .js-c-card__appendUserName, .change-card-to-list .c-card-manhourSearch .js-c-card__appendUserName, .change-card-to-list .c-card-percent .js-c-card__appendUserName, .change-card-to-list .c-card-percentCheck .js-c-card__appendUserName, .change-card-to-list .c-card-planPerson .js-c-card__appendUserName, .change-card-to-list .c-card-planClosed .js-c-card__appendUserName, .change-card-to-list .c-card-planHotkey .js-c-card__appendUserName, .change-card-to-list .c-card-planReport .js-c-card__appendUserName, .change-card-to-list .c-card-planReport-danger .js-c-card__appendUserName, .change-card-to-list .c-card-alertPlan .js-c-card__appendUserName, .change-card-to-list .c-card-department .js-c-card__appendUserName {
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14687,18 +14828,18 @@ input[type=range]::-ms-thumb {
           align-items: center;
 }
 
-.change-card-to-list .c-card-manhourSofar .c-card__appendUserName h2, .change-card-to-list .c-card-manhourSearch .c-card__appendUserName h2, .change-card-to-list .c-card-percent .c-card__appendUserName h2, .change-card-to-list .c-card-percentCheck .c-card__appendUserName h2, .change-card-to-list .c-card-planPerson .c-card__appendUserName h2, .change-card-to-list .c-card-planClosed .c-card__appendUserName h2, .change-card-to-list .c-card-planHotkey .c-card__appendUserName h2, .change-card-to-list .c-card-planReport .c-card__appendUserName h2, .change-card-to-list .c-card-planReport-danger .c-card__appendUserName h2, .change-card-to-list .c-card-alertPlan .c-card__appendUserName h2, .change-card-to-list .c-card-department .c-card__appendUserName h2 {
+.change-card-to-list .c-card-manhourSofar .js-c-card__appendUserName h2, .change-card-to-list .c-card-manhourSearch .js-c-card__appendUserName h2, .change-card-to-list .c-card-percent .js-c-card__appendUserName h2, .change-card-to-list .c-card-percentCheck .js-c-card__appendUserName h2, .change-card-to-list .c-card-planPerson .js-c-card__appendUserName h2, .change-card-to-list .c-card-planClosed .js-c-card__appendUserName h2, .change-card-to-list .c-card-planHotkey .js-c-card__appendUserName h2, .change-card-to-list .c-card-planReport .js-c-card__appendUserName h2, .change-card-to-list .c-card-planReport-danger .js-c-card__appendUserName h2, .change-card-to-list .c-card-alertPlan .js-c-card__appendUserName h2, .change-card-to-list .c-card-department .js-c-card__appendUserName h2 {
   font-size: 16px;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
-  width: 33.3333333333%;
+  width: 16.66666%;
 }
 
-.change-card-to-list .c-card-manhourSofar .c-card__appendUserName h3, .change-card-to-list .c-card-manhourSearch .c-card__appendUserName h3, .change-card-to-list .c-card-percent .c-card__appendUserName h3, .change-card-to-list .c-card-percentCheck .c-card__appendUserName h3, .change-card-to-list .c-card-planPerson .c-card__appendUserName h3, .change-card-to-list .c-card-planClosed .c-card__appendUserName h3, .change-card-to-list .c-card-planHotkey .c-card__appendUserName h3, .change-card-to-list .c-card-planReport .c-card__appendUserName h3, .change-card-to-list .c-card-planReport-danger .c-card__appendUserName h3, .change-card-to-list .c-card-alertPlan .c-card__appendUserName h3, .change-card-to-list .c-card-department .c-card__appendUserName h3 {
+.change-card-to-list .c-card-manhourSofar .js-c-card__appendUserName h3, .change-card-to-list .c-card-manhourSearch .js-c-card__appendUserName h3, .change-card-to-list .c-card-percent .js-c-card__appendUserName h3, .change-card-to-list .c-card-percentCheck .js-c-card__appendUserName h3, .change-card-to-list .c-card-planPerson .js-c-card__appendUserName h3, .change-card-to-list .c-card-planClosed .js-c-card__appendUserName h3, .change-card-to-list .c-card-planHotkey .js-c-card__appendUserName h3, .change-card-to-list .c-card-planReport .js-c-card__appendUserName h3, .change-card-to-list .c-card-planReport-danger .js-c-card__appendUserName h3, .change-card-to-list .c-card-alertPlan .js-c-card__appendUserName h3, .change-card-to-list .c-card-department .js-c-card__appendUserName h3 {
   font-size: 16px;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
-  width: 66.6666666%;
+  width: 83.33333%;
 }
 
 .change-card-to-list .c-card-manhourSofar .c-card__content, .change-card-to-list .c-card-manhourSearch .c-card__content, .change-card-to-list .c-card-percent .c-card__content, .change-card-to-list .c-card-percentCheck .c-card__content, .change-card-to-list .c-card-planPerson .c-card__content, .change-card-to-list .c-card-planClosed .c-card__content, .change-card-to-list .c-card-planHotkey .c-card__content, .change-card-to-list .c-card-planReport .c-card__content, .change-card-to-list .c-card-planReport-danger .c-card__content, .change-card-to-list .c-card-alertPlan .c-card__content, .change-card-to-list .c-card-department .c-card__content {
@@ -14723,5 +14864,135 @@ input[type=range]::-ms-thumb {
   font-size: 16px;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
+}
+
+#memberstime .l-main-tabs {
+  margin-bottom: 1rem;
+}
+
+#memberstime .change-card-to-list .c-card-manhourSearch__userName {
+  display: none;
+}
+
+#memberstime .change-card-to-list .c-card-manhourSearch__englishName {
+  display: none;
+}
+
+#memberstime .change-card-to-list .listTitle__user {
+  width: 10%;
+}
+
+#memberstime .change-card-to-list .listTitle__englishName {
+  width: 60%;
+}
+
+#memberstime .change-card-to-list .listTitle__workTime {
+  width: 10%;
+}
+
+#memberstime .change-card-to-list .js-c-card__appendUserName {
+  width: 80%;
+}
+
+#memberstime .change-card-to-list .js-c-card__appendUserName h2 {
+  width: 12.5%;
+}
+
+#memberstime .change-card-to-list .js-c-card__appendUserName h3 {
+  width: 75%;
+}
+
+#memberstime .change-card-to-list .c-card__content {
+  width: 10%;
+}
+
+#departmenttime .l-main-tabs {
+  margin-bottom: 1rem;
+}
+
+#departmenttime .change-card-to-list .c-card-manhourSearch__userName {
+  display: none;
+}
+
+#departmenttime .change-card-to-list .c-card-manhourSearch__englishName {
+  display: none;
+}
+
+#departmenttime .change-card-to-list .listTitle__user {
+  width: 10%;
+}
+
+#departmenttime .change-card-to-list .listTitle__englishName {
+  width: 60%;
+}
+
+#departmenttime .change-card-to-list .listTitle__workTime {
+  width: 10%;
+}
+
+#departmenttime .change-card-to-list .js-c-card__appendUserName {
+  width: 80%;
+}
+
+#departmenttime .change-card-to-list .js-c-card__appendUserName h2 {
+  width: 12.5%;
+}
+
+#departmenttime .change-card-to-list .js-c-card__appendUserName h3 {
+  width: 75%;
+}
+
+#departmenttime .change-card-to-list .c-card__content {
+  width: 10%;
+}
+
+#supporttime .l-main-tabs {
+  margin-bottom: 1rem;
+}
+
+#supporttime .change-card-to-list .l-main-content-item .c-card-department h2 {
+  font-weight: 400;
+  font-size: 16px;
+  width: 10%;
+}
+
+#supporttime .change-card-to-list .l-main-content-item .c-card-department .c-card__userInformation {
+  display: none;
+}
+
+#supporttime .change-card-to-list .c-card-manhourSearch__userName {
+  display: none;
+}
+
+#supporttime .change-card-to-list .c-card-manhourSearch__englishName {
+  display: none;
+}
+
+#supporttime .change-card-to-list .listTitle__user {
+  width: 10%;
+}
+
+#supporttime .change-card-to-list .listTitle__englishName {
+  width: 60%;
+}
+
+#supporttime .change-card-to-list .listTitle__workTime {
+  width: 10%;
+}
+
+#supporttime .change-card-to-list .js-c-card__appendUserName {
+  width: 80%;
+}
+
+#supporttime .change-card-to-list .js-c-card__appendUserName h2 {
+  width: 12.5%;
+}
+
+#supporttime .change-card-to-list .js-c-card__appendUserName h3 {
+  width: 75%;
+}
+
+#supporttime .change-card-to-list .c-card__content {
+  width: 10%;
 }
 /*# sourceMappingURL=all.css.map */

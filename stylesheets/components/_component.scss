@@ -209,7 +209,8 @@
 
 .c-card-department {
     @extend .c-card-manhourSofar;
-    width: 21.5%;
+    width: 20%;
+    max-width: 260px;
 
     h2 {
         font-family: $english-font;
@@ -254,7 +255,10 @@
         height: 24px;
         cursor: pointer;
     }
-
+    .o-card__icon{
+        width: 24px;
+        height: 24px;
+    }
     .o-card__star-active {
         background-image: url(../../img/o-star_active.svg);
     }
@@ -286,7 +290,7 @@
        
 
         span {
-            background: #fff;
+            background: none;
             color: $gray3;
             font-size: $p;
             font-weight: 600;
@@ -1792,7 +1796,9 @@ cursor: pointer;
 .c-dropdown-member {
 
     position: relative;
-
+    .c-dropdown__input{
+        width: 100%;
+    }
     .c-dropdown__modal {
         width: 300px;
         height: 285px;
@@ -2821,6 +2827,14 @@ cursor: pointer;
     color: $danger;
 }
 
+.is-changeBackground{
+    background-color: $sec3;
+    
+}
+.is-disabled{
+    color: $gray3;
+    cursor:default;
+}
 //====================
 //動態效果
 //====================
