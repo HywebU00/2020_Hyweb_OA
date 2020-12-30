@@ -14995,4 +14995,109 @@ input[type=range]::-ms-thumb {
 #supporttime .change-card-to-list .c-card__content {
   width: 10%;
 }
+
+#notReachedtime .l-main-tabs {
+  margin-bottom: 1rem;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent__userName {
+  display: none;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent__englishName {
+  display: none;
+}
+
+#notReachedtime .change-card-to-list .c-card-manhourSearch__userName {
+  display: none;
+}
+
+#notReachedtime .change-card-to-list .c-card-manhourSearch__englishName {
+  display: none;
+}
+
+#notReachedtime .change-card-to-list .listTitle__user {
+  width: 10%;
+}
+
+#notReachedtime .change-card-to-list .listTitle__englishName {
+  width: 60%;
+}
+
+#notReachedtime .change-card-to-list .listTitle__workTime {
+  width: 10%;
+}
+
+#notReachedtime .change-card-to-list .js-c-card__appendUserName {
+  width: 80%;
+}
+
+#notReachedtime .change-card-to-list .js-c-card__appendUserName h2 {
+  width: 12.5%;
+}
+
+#notReachedtime .change-card-to-list .js-c-card__appendUserName h3 {
+  width: 75%;
+}
+
+#notReachedtime .change-card-to-list .c-card__content {
+  width: 10%;
+}
+
+#notReachedtime .change-card-to-list .card-percent__listTitle .listTitle__englishName {
+  width: 15%;
+}
+
+#notReachedtime .change-card-to-list .card-percent__listTitle .listTitle__workTime {
+  width: 15%;
+}
+
+#notReachedtime .change-card-to-list .card-percent__listTitle .listTitle__leaveTime {
+  width: 30%;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent .js-c-card__appendUserName, #notReachedtime .change-card-to-list .c-card-percentCheck .js-c-card__appendUserName {
+  width: 35%;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent .js-c-card__appendUserName h2, #notReachedtime .change-card-to-list .c-card-percentCheck .js-c-card__appendUserName h2 {
+  width: 28.5714%;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent .js-c-card__appendUserName h3, #notReachedtime .change-card-to-list .c-card-percentCheck .js-c-card__appendUserName h3 {
+  width: 42.857142%;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent .c-card__content, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__content {
+  width: 55%;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent .c-card__content .c-card__item, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__content .c-card__item {
+  width: auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent .c-card__content .c-card__item div, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__content .c-card__item div {
+  padding: 0;
+  margin: 0;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent .c-card__content .c-card-percent__workTime, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__content .c-card-percent__workTime {
+  width: 27.272727%;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent .c-card__content .c-card-percent__workTime .c-card__item__totaltime, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__content .c-card-percent__workTime .c-card__item__totaltime {
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent .c-card__content .c-card-percent__leaveTime, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__content .c-card-percent__leaveTime {
+  width: 54.5454545%;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent .c-card__content .c-card-percent__percent, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__content .c-card-percent__percent {
+  width: 18.181818%;
+}
 /*# sourceMappingURL=all.css.map */
