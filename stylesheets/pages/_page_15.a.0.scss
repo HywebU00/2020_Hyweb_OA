@@ -1,7 +1,27 @@
+.l-main-content-title{
+    margin:1.5rem 0;
+    &:first-child{
+        margin-top:0;
+    }
+    .l-main-content-text{
+        // div{
+        //     font-weight: bolder;
+        //     font-size: $font-size-l;
+        // }
+        .l-main-content-text__inputText{
+            margin-left: 1.8rem;
+            font-weight: 400;
+            padding-bottom: 0.3rem;
+            font-weight: bolder;
+            font-size: $font-size-l;
+        }
+
+    }
+}
 #todo{
     
     .l-main-tabs{
-        margin-bottom: 1rem;
+        margin-bottom: 12px;
     }
     .c-card-planReport{
         min-width: 879px;
@@ -253,30 +273,12 @@
         
 
     }
-    .l-main-content-title{
-        margin:1.5rem 0;
-        &:first-child{
-            margin-top:0;
-        }
-        .l-main-content-text{
-            div{
-                //line-height: 32px;
-                font-weight: bolder;
-                font-size: $font-size-l;
-            }
-            .l-main-content-text__inputText{
-                margin-left: 1.8rem;
-                font-weight: 400;
-                padding-bottom: 0.3rem;
-            }
 
-        }
-    }
     
 }
 #complete {
     .l-main-tabs {
-        margin-bottom: 1rem;
+        margin-bottom: 12px;
     }
     
     .l-main-content-item__listTitle{
@@ -355,7 +357,6 @@
         }
     }
 }
-
 #safe{
     width: 42%;
     height: auto;

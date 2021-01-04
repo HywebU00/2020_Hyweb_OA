@@ -1,6 +1,6 @@
 #memberstime{
     .l-main-tabs{
-        margin-bottom: 1rem;
+        margin-bottom: 12px;
     }
     .change-card-to-list{
         .c-card-manhourSearch__userName{
@@ -35,7 +35,7 @@
 
 #departmenttime{
     .l-main-tabs{
-        margin-bottom: 1rem;
+        margin-bottom: 12px;
     } 
     .change-card-to-list{
         .c-card-manhourSearch__userName{
@@ -69,7 +69,7 @@
 }
 #supporttime{
     .l-main-tabs{
-        margin-bottom: 1rem;
+        margin-bottom: 12px;
     } 
     .change-card-to-list{
         .l-main-content-item{
@@ -116,7 +116,7 @@
 }
 #notReachedtime{
     .l-main-tabs{
-        margin-bottom: 1rem;
+        margin-bottom: 12px;
     }
     .change-card-to-list{
         .c-card-percent__userName{
@@ -185,7 +185,7 @@
                 }
                 .c-card-percent__workTime{
                     width:27.272727% ;
-                    .c-card__item__totaltime{
+                     .c-card__item__totaltime{
                         font-weight: 400;
                         letter-spacing: 0;
                     }
@@ -196,6 +196,14 @@
                 }
                 .c-card-percent__percent{
                     width: 18.181818%;
+                }
+            }
+        }
+        .c-card-percentCheck{
+            .c-card-title{
+                span{
+                    right: 30px;
+                    top: 5px;
                 }
             }
         }
