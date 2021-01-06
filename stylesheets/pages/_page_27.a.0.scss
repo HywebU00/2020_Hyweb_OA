@@ -209,4 +209,23 @@
         }
 
     }
+    .is-error-status{
+        .c-search-list{
+            .c-search-item{
+                .c-search-item__percentTitle{
+                    color: $danger;
+                }
+                .c-search-item__input{
+                    input{
+                    background-color: #fff;
+                    border: 1px solid $danger;
+                    }
+                    
+                    
+                   
+                }
+            }
+        }
+    }
+
 }

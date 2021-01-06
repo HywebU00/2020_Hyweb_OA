@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>page_30.a.0.2</title>
+  <title>page_35.c.0_error_status</title>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="stylesheets/all.css" />
 </head>
@@ -119,7 +119,7 @@
         <div class="c-tabs__content">
           <ul class="c-tabs__item tabs">
             <li class="c-tabs__item__link tab col s3">
-              <a class="active" href="#memberstime">人員工時</a>
+              <a href="#memberstime">人員工時</a>
             </li>
             <li class="c-tabs__item__link tab col s3">
               <a href="#departmenttime">部門委託工時</a>
@@ -636,21 +636,7 @@
         </div>
       </div>
       <div id="notReachedtime">
-        <div class="l-main-tabs">
-          <a class="l-main-tabs__item " href="#">
-            <img src="img/o-person-gray.svg" alt="" />
-            <div class="is-disabled">Ｍ00</div>
-          </a>
-          <a class="l-main-tabs__item " href="#">
-            <img src="img/o-email.svg" alt="" />
-            <div class="">發送通知</div>
-          </a>
-          <a class="l-main-tabs__item modal-trigger" href="#">
-            <img src="img/o-export.svg" alt="" />
-            <div class="">匯出</div>
-          </a>
-        </div>
-        <div class="c-search">
+        <div class="c-search is-error-status">
           <div class="c-search-list">
             <div class="c-search-item">
               <div class="c-search-item__title">工作區間</div>
@@ -737,6 +723,12 @@
                 </div>
               </div>
             </div>
+            <div class="c-search-item ">
+              <div class="c-search-item__percentTitle "><span class="text-danger">*</span> 比例</div>
+              <div class="c-search-item__input">
+                <input type="text" class="" placeholder="" />
+              </div>
+            </div>
           </div>
           <div class="c-search-btn">
             <button class="o-btn-primary waves-effect waves-blue">
@@ -745,7 +737,7 @@
           </div>
         </div>
         <div class="l-main-content l-main-changeStyle l-main-have-nav-height">
-          <div class="l-main-content__text">未有符合此工作區間的資料</div>
+          <div class="l-main-content__text">請設定搜尋條件</div>
         </div>
       </div>
     </div>

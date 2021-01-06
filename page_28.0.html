@@ -9,10 +9,10 @@
     />
 
     <link rel="stylesheet" href="stylesheets/all.css" />
-    <title>page_23.0 月曆總覽視窗</title>
+    <title>page_28.0 月曆總覽視窗</title>
   </head>
 
-  <body style="width: 1200px; margin: 0 auto">
+  <body style="width: 1200px; margin: 0 auto; overflow-y: scroll">
     <!-- modal-personCalendar -->
     <h3
       style="
@@ -23,15 +23,16 @@
         color: #fff;
       "
     >
-      page_23.0 月曆總覽視窗
+      page_28.0 月曆總覽視窗
     </h3>
+    <!-- modal-personAll -->
     <div
       class=""
       style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0"
     >
-      personCalendar
+      personAllCalendar
     </div>
-    <div class="c-modal-personCalendar">
+    <div class="c-modal-personAll">
       <div class="c-modal-content row">
         <div class="c-modal-content__sidebar col s3">
           <div class="c-modal-content__sidebar__user">
@@ -71,14 +72,18 @@
               <div class="c-tabs__content">
                 <ul class="c-tabs__item tabs">
                   <li class="c-tabs__item__link tab">
-                    <a class="active">月曆總覽</a>
+                    <a href="#calendar">月曆總覽</a>
+                  </li>
+                  <li class="c-tabs__item__link tab">
+                    <a href="#plan">計畫總覽</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="c-modal-content__calendar__content">
-            <div class="c-modal-content__calendar__title">2020 9月</div>
+          <!-- id="calendar" -->
+          <div id="calendar" class="c-modal-content__calendar__content">
+            <div class="c-modal-content__calendar__title">2020 九月</div>
             <!-- 單人月曆 -->
             <div class="o-calendar">
               <div class="o-calendar__week__title">
@@ -235,24 +240,176 @@
               </div>
             </div>
           </div>
+          <!-- id="department"  -->
+          <div id="department" class="c-modal-content__calendar__content">
+            <div class="c-modal-content__list">
+              <div class="c-modal-content__list__title">U00</div>
+              <ul class="collapsible c-accordion-plan">
+                <li>
+                  <div class="collapsible-header accordion-header">
+                    <div class="accordion-header__item">
+                      <div class="header__item__title">
+                        國立臺北科技大學-本校圖書館入口網建置案國立臺北科技大學-本校圖書館入口網建置案口網建置案國立臺北科技大學-本校圖書館入口網建置案
+                      </div>
+                    </div>
+                    <div class="accordion-header__item">
+                      <div class="accordion-header__item__hour">
+                        <div class="accordion-header__item__hour__title">
+                          此月填入工時
+                        </div>
+                        <div class="accordion-header__item__hour__num">3</div>
+                      </div>
+                      <div class="o-accordion_plus collapsible-btn">
+                        <div class="plus-icon icon">
+                          <div class="horizontal"></div>
+                          <div class="vertical"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="collapsible-body accordion-body">
+                    <div class="row accordion-body__title">
+                      <div class="col s2">填寫日期</div>
+                      <div class="col s3">工作階段</div>
+                      <div class="col s3">工作內容</div>
+                      <div class="col s2">時數</div>
+                      <div class="col s2">備註</div>
+                    </div>
+                    <div class="row accordion-body__item">
+                      <div class="col s2">2020.09.15</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s2">4</div>
+                      <div class="col s2">5個樣板</div>
+                    </div>
+                    <div class="row accordion-body__item">
+                      <div class="col s2">2020.09.15</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s2">4</div>
+                      <div class="col s2">5個樣板</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="collapsible c-accordion-plan">
+                <li>
+                  <div class="collapsible-header accordion-header">
+                    <div class="accordion-header__item">
+                      <div class="header__item__title">
+                        國立臺北科技大學-本校圖書館入口網建置案
+                      </div>
+                    </div>
+                    <div class="accordion-header__item">
+                      <div class="accordion-header__item__hour">
+                        <div class="accordion-header__item__hour__title">
+                          此月填入工時
+                        </div>
+                        <div class="accordion-header__item__hour__num">3</div>
+                      </div>
+                      <div class="o-accordion_plus collapsible-btn">
+                        <div class="plus-icon icon">
+                          <div class="horizontal"></div>
+                          <div class="vertical"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="collapsible-body accordion-body">
+                    <div class="row accordion-body__title">
+                      <div class="col s2">填寫日期</div>
+                      <div class="col s3">工作階段</div>
+                      <div class="col s3">工作內容</div>
+                      <div class="col s2">時數</div>
+                      <div class="col s2">備註</div>
+                    </div>
+                    <div class="row accordion-body__item">
+                      <div class="col s2">2020.09.15</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s2">4</div>
+                      <div class="col s2">5個樣板</div>
+                    </div>
+                    <div class="row accordion-body__item">
+                      <div class="col s2">2020.09.15</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s2">4</div>
+                      <div class="col s2">5個樣板</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="c-modal-content__list">
+              <div class="c-modal-content__list__title">P00</div>
+              <ul class="collapsible c-accordion-plan">
+                <li>
+                  <div class="collapsible-header accordion-header">
+                    <div class="accordion-header__item">
+                      <div class="header__item__title">
+                        國立臺北科技大學-本校圖書館入口網建置案
+                      </div>
+                    </div>
+                    <div class="accordion-header__item">
+                      <div class="accordion-header__item__hour">
+                        <div class="accordion-header__item__hour__title">
+                          此月填入工時
+                        </div>
+                        <div class="accordion-header__item__hour__num">3</div>
+                      </div>
+                      <div class="o-accordion_plus collapsible-btn">
+                        <div class="plus-icon icon">
+                          <div class="horizontal"></div>
+                          <div class="vertical"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="collapsible-body accordion-body">
+                    <div class="row accordion-body__title">
+                      <div class="col s2">填寫日期</div>
+                      <div class="col s3">工作階段</div>
+                      <div class="col s3">工作內容</div>
+                      <div class="col s2">時數</div>
+                      <div class="col s2">備註</div>
+                    </div>
+                    <div class="row accordion-body__item">
+                      <div class="col s2">2020.09.15</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s2">4</div>
+                      <div class="col s2">5個樣板</div>
+                    </div>
+                    <div class="row accordion-body__item">
+                      <div class="col s2">2020.09.15</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s2">4</div>
+                      <div class="col s2">5個樣板</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
     <div
       class=""
       style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0"
     >
-      personCalendar 點擊效果
+      personAllCalendar 點擊效果
     </div>
     <!-- 月曆點擊按鈕 -->
     <a
       class="c-modal-systemDialog__trigger modal-trigger"
-      href="#personCalendar"
-      >personCalendar</a
+      href="#personAllCalendar"
+      >personAllCalendar</a
     >
     <!-- modal-personCalendar -->
-    <div id="personCalendar" class="modal c-modal-personCalendar">
+    <!-- <div id="personAllCalendar" class="modal c-modal-personAll">
       <div class="c-modal-content row">
         <div class="c-modal-content__sidebar col s3">
           <div class="c-modal-content__sidebar__user">
@@ -292,15 +449,17 @@
               <div class="c-tabs__content">
                 <ul class="c-tabs__item tabs">
                   <li class="c-tabs__item__link tab">
-                    <a class="active">人員工時</a>
+                    <a href="#calendar" class="active">月曆總覽</a>
+                  </li>
+                  <li class="c-tabs__item__link tab">
+                    <a href="#plan">計畫總覽</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="c-modal-content__calendar__content">
-            <div class="c-modal-content__calendar__title">2020 9月</div>
-            <!-- 單人月曆 -->
+          <div id="calendar" class="c-modal-content__calendar__content">
+            <div class="c-modal-content__calendar__title">2020 九月</div>
             <div class="o-calendar">
               <div class="o-calendar__week__title">
                 <div class="">週ㄧ</div>
@@ -456,9 +615,161 @@
               </div>
             </div>
           </div>
+          <div id="department" class="c-modal-content__calendar__content">
+            <div class="c-modal-content__list">
+              <div class="c-modal-content__list__title">U00</div>
+              <ul class="collapsible c-accordion-plan">
+                <li>
+                  <div class="collapsible-header accordion-header">
+                    <div class="accordion-header__item">
+                      <div class="header__item__title">
+                        國立臺北科技大學-本校圖書館入口網建置案國立臺北科技大學-本校圖書館入口網建置案口網建置案國立臺北科技大學-本校圖書館入口網建置案
+                      </div>
+                    </div>
+                    <div class="accordion-header__item">
+                      <div class="accordion-header__item__hour">
+                        <div class="accordion-header__item__hour__title">
+                          此月填入工時
+                        </div>
+                        <div class="accordion-header__item__hour__num">3</div>
+                      </div>
+                      <div class="o-accordion_plus collapsible-btn">
+                        <div class="plus-icon icon">
+                          <div class="horizontal"></div>
+                          <div class="vertical"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="collapsible-body accordion-body">
+                    <div class="row accordion-body__title">
+                      <div class="col s2">填寫日期</div>
+                      <div class="col s3">工作階段</div>
+                      <div class="col s3">工作內容</div>
+                      <div class="col s2">時數</div>
+                      <div class="col s2">備註</div>
+                    </div>
+                    <div class="row accordion-body__item">
+                      <div class="col s2">2020.09.15</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s2">4</div>
+                      <div class="col s2">5個樣板</div>
+                    </div>
+                    <div class="row accordion-body__item">
+                      <div class="col s2">2020.09.15</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s2">4</div>
+                      <div class="col s2">5個樣板</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="collapsible c-accordion-plan">
+                <li>
+                  <div class="collapsible-header accordion-header">
+                    <div class="accordion-header__item">
+                      <div class="header__item__title">
+                        國立臺北科技大學-本校圖書館入口網建置案
+                      </div>
+                    </div>
+                    <div class="accordion-header__item">
+                      <div class="accordion-header__item__hour">
+                        <div class="accordion-header__item__hour__title">
+                          此月填入工時
+                        </div>
+                        <div class="accordion-header__item__hour__num">3</div>
+                      </div>
+                      <div class="o-accordion_plus collapsible-btn">
+                        <div class="plus-icon icon">
+                          <div class="horizontal"></div>
+                          <div class="vertical"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="collapsible-body accordion-body">
+                    <div class="row accordion-body__title">
+                      <div class="col s2">填寫日期</div>
+                      <div class="col s3">工作階段</div>
+                      <div class="col s3">工作內容</div>
+                      <div class="col s2">時數</div>
+                      <div class="col s2">備註</div>
+                    </div>
+                    <div class="row accordion-body__item">
+                      <div class="col s2">2020.09.15</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s2">4</div>
+                      <div class="col s2">5個樣板</div>
+                    </div>
+                    <div class="row accordion-body__item">
+                      <div class="col s2">2020.09.15</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s2">4</div>
+                      <div class="col s2">5個樣板</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="c-modal-content__list">
+              <div class="c-modal-content__list__title">P00</div>
+              <ul class="collapsible c-accordion-plan">
+                <li>
+                  <div class="collapsible-header accordion-header">
+                    <div class="accordion-header__item">
+                      <div class="header__item__title">
+                        國立臺北科技大學-本校圖書館入口網建置案
+                      </div>
+                    </div>
+                    <div class="accordion-header__item">
+                      <div class="accordion-header__item__hour">
+                        <div class="accordion-header__item__hour__title">
+                          此月填入工時
+                        </div>
+                        <div class="accordion-header__item__hour__num">3</div>
+                      </div>
+                      <div class="o-accordion_plus collapsible-btn">
+                        <div class="plus-icon icon">
+                          <div class="horizontal"></div>
+                          <div class="vertical"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="collapsible-body accordion-body">
+                    <div class="row accordion-body__title">
+                      <div class="col s2">填寫日期</div>
+                      <div class="col s3">工作階段</div>
+                      <div class="col s3">工作內容</div>
+                      <div class="col s2">時數</div>
+                      <div class="col s2">備註</div>
+                    </div>
+                    <div class="row accordion-body__item">
+                      <div class="col s2">2020.09.15</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s2">4</div>
+                      <div class="col s2">5個樣板</div>
+                    </div>
+                    <div class="row accordion-body__item">
+                      <div class="col s2">2020.09.15</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s3">網站介面規劃與設計</div>
+                      <div class="col s2">4</div>
+                      <div class="col s2">5個樣板</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- accordion general -->
     <div

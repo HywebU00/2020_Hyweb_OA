@@ -1,0 +1,35 @@
+#memberstime{
+    .table-body{
+        .table-body__item{
+            .row{
+                .col{
+                    div{
+                        display: flex;
+                    align-items: center;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+#departmenttime{
+    @extend #memberstime;     
+}
+#universalPlan{
+    @extend #memberstime;    
+}
+.l-main-content__statisticsPlan{
+    @extend .l-main-content__planlist;
+    .table-body{
+        .table-body__item{
+            .row{
+                padding: 0 0 0 1.5rem;
+                img{
+                    margin-right: 0.5rem;
+                }
+                }
+        }
+    }
+  
+}

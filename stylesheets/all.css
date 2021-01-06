@@ -9442,6 +9442,10 @@ input[type=range]::-ms-thumb {
   width: 300px;
 }
 
+body {
+  overflow: hidden;
+}
+
 .l-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10069,11 +10073,11 @@ input[type=range]::-ms-thumb {
   margin-left: 0;
 }
 
-.l-main-content .l-main-content__planlist .table-thead, .l-main-content .l-main-content__wbslist .table-thead, .l-main-content .l-main-content__workTypelist .table-thead {
+.l-main-content .l-main-content__planlist .table-thead, .l-main-content .l-main-content__wbslist .table-thead, .l-main-content .l-main-content__workTypelist .table-thead, .l-main-content .l-main-content__statisticsPlan .table-thead {
   padding-left: 24px;
 }
 
-.l-main-content .l-main-content__planlist .table-body .table-body__item, .l-main-content .l-main-content__wbslist .table-body .table-body__item, .l-main-content .l-main-content__workTypelist .table-body .table-body__item {
+.l-main-content .l-main-content__planlist .table-body .table-body__item, .l-main-content .l-main-content__wbslist .table-body .table-body__item, .l-main-content .l-main-content__workTypelist .table-body .table-body__item, .l-main-content .l-main-content__statisticsPlan .table-body .table-body__item {
   border-bottom: #BAD4E5 solid 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10083,11 +10087,11 @@ input[type=range]::-ms-thumb {
           align-items: center;
 }
 
-.l-main-content .l-main-content__planlist .table-body .table-body__item .table-body__item__icon, .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__icon, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__icon {
+.l-main-content .l-main-content__planlist .table-body .table-body__item .table-body__item__icon, .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__icon, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__icon, .l-main-content .l-main-content__statisticsPlan .table-body .table-body__item .table-body__item__icon {
   width: 24px;
 }
 
-.l-main-content .l-main-content__planlist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project {
+.l-main-content .l-main-content__planlist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__statisticsPlan .table-body .table-body__item .table-body__item__project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10101,52 +10105,52 @@ input[type=range]::-ms-thumb {
           align-items: center;
 }
 
-.l-main-content .l-main-content__planlist .table-body .table-body__item .table-body__item__project img, .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project img, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project img {
+.l-main-content .l-main-content__planlist .table-body .table-body__item .table-body__item__project img, .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project img, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project img, .l-main-content .l-main-content__statisticsPlan .table-body .table-body__item .table-body__item__project img {
   width: 24px;
 }
 
-.l-main-content .l-main-content__planlist .table-body .table-body__item .table-body__item__project .table-body__item__project__title, .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project .table-body__item__project__title, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project .table-body__item__project__title {
+.l-main-content .l-main-content__planlist .table-body .table-body__item .table-body__item__project .table-body__item__project__title, .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project .table-body__item__project__title, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project .table-body__item__project__title, .l-main-content .l-main-content__statisticsPlan .table-body .table-body__item .table-body__item__project .table-body__item__project__title {
   padding: 0 0.75rem;
 }
 
-.l-main-content .l-main-content__planlist .table-body .row, .l-main-content .l-main-content__wbslist .table-body .row, .l-main-content .l-main-content__workTypelist .table-body .row {
+.l-main-content .l-main-content__planlist .table-body .row, .l-main-content .l-main-content__wbslist .table-body .row, .l-main-content .l-main-content__workTypelist .table-body .row, .l-main-content .l-main-content__statisticsPlan .table-body .row {
   width: 100%;
   padding: 0;
   border-bottom: 0;
 }
 
-.l-main-content .l-main-content__planlist .table-body .row .select-wrapper, .l-main-content .l-main-content__wbslist .table-body .row .select-wrapper, .l-main-content .l-main-content__workTypelist .table-body .row .select-wrapper {
+.l-main-content .l-main-content__planlist .table-body .row .select-wrapper, .l-main-content .l-main-content__wbslist .table-body .row .select-wrapper, .l-main-content .l-main-content__workTypelist .table-body .row .select-wrapper, .l-main-content .l-main-content__statisticsPlan .table-body .row .select-wrapper {
   height: 3rem;
   width: auto;
 }
 
-.l-main-content .l-main-content__planlist .table-body .row .select-wrapper .select-dropdown, .l-main-content .l-main-content__wbslist .table-body .row .select-wrapper .select-dropdown, .l-main-content .l-main-content__workTypelist .table-body .row .select-wrapper .select-dropdown {
+.l-main-content .l-main-content__planlist .table-body .row .select-wrapper .select-dropdown, .l-main-content .l-main-content__wbslist .table-body .row .select-wrapper .select-dropdown, .l-main-content .l-main-content__workTypelist .table-body .row .select-wrapper .select-dropdown, .l-main-content .l-main-content__statisticsPlan .table-body .row .select-wrapper .select-dropdown {
   padding-top: 15px;
   padding-right: 30px;
 }
 
-.l-main-content .l-main-content__planlist .table-body .row .is-popmodal-show, .l-main-content .l-main-content__wbslist .table-body .row .is-popmodal-show, .l-main-content .l-main-content__workTypelist .table-body .row .is-popmodal-show {
+.l-main-content .l-main-content__planlist .table-body .row .is-popmodal-show, .l-main-content .l-main-content__wbslist .table-body .row .is-popmodal-show, .l-main-content .l-main-content__workTypelist .table-body .row .is-popmodal-show, .l-main-content .l-main-content__statisticsPlan .table-body .row .is-popmodal-show {
   overflow: inherit;
 }
 
-.l-main-content .l-main-content__planlist .o-input input, .l-main-content .l-main-content__wbslist .o-input input, .l-main-content .l-main-content__workTypelist .o-input input, .l-main-content .l-main-content__planlist .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__planlist .hoursInput input, .l-main-content .l-main-content__wbslist .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__wbslist .hoursInput input, .l-main-content .l-main-content__workTypelist .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__workTypelist .hoursInput input, .l-main-content .l-main-content__planlist .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__planlist .otherInput input, .l-main-content .l-main-content__wbslist .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__wbslist .otherInput input, .l-main-content .l-main-content__workTypelist .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__workTypelist .otherInput input, .l-main-content .l-main-content__planlist .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__planlist .c-search-item__input input, .l-main-content .l-main-content__wbslist .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__wbslist .c-search-item__input input, .l-main-content .l-main-content__workTypelist .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__workTypelist .c-search-item__input input {
+.l-main-content .l-main-content__planlist .o-input input, .l-main-content .l-main-content__wbslist .o-input input, .l-main-content .l-main-content__workTypelist .o-input input, .l-main-content .l-main-content__statisticsPlan .o-input input, .l-main-content .l-main-content__planlist .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__planlist .hoursInput input, .l-main-content .l-main-content__wbslist .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__wbslist .hoursInput input, .l-main-content .l-main-content__workTypelist .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__workTypelist .hoursInput input, .l-main-content .l-main-content__statisticsPlan .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__statisticsPlan .hoursInput input, .l-main-content .l-main-content__planlist .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__planlist .otherInput input, .l-main-content .l-main-content__wbslist .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__wbslist .otherInput input, .l-main-content .l-main-content__workTypelist .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__workTypelist .otherInput input, .l-main-content .l-main-content__statisticsPlan .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__statisticsPlan .otherInput input, .l-main-content .l-main-content__planlist .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__planlist .c-search-item__input input, .l-main-content .l-main-content__wbslist .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__wbslist .c-search-item__input input, .l-main-content .l-main-content__workTypelist .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__workTypelist .c-search-item__input input, .l-main-content .l-main-content__statisticsPlan .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__statisticsPlan .c-search-item__input input {
   margin-bottom: 0;
 }
 
-.l-main-content .l-main-content__planlist .c-datePicker-day .c-datePicker__input, .l-main-content .l-main-content__wbslist .c-datePicker-day .c-datePicker__input, .l-main-content .l-main-content__workTypelist .c-datePicker-day .c-datePicker__input, .l-main-content .l-main-content__planlist .c-datePicker-days .c-datePicker__input, .l-main-content .l-main-content__wbslist .c-datePicker-days .c-datePicker__input, .l-main-content .l-main-content__workTypelist .c-datePicker-days .c-datePicker__input, .l-main-content .l-main-content__planlist .c-datePicker-months .c-datePicker__input, .l-main-content .l-main-content__wbslist .c-datePicker-months .c-datePicker__input, .l-main-content .l-main-content__workTypelist .c-datePicker-months .c-datePicker__input {
+.l-main-content .l-main-content__planlist .c-datePicker-day .c-datePicker__input, .l-main-content .l-main-content__wbslist .c-datePicker-day .c-datePicker__input, .l-main-content .l-main-content__workTypelist .c-datePicker-day .c-datePicker__input, .l-main-content .l-main-content__statisticsPlan .c-datePicker-day .c-datePicker__input, .l-main-content .l-main-content__planlist .c-datePicker-days .c-datePicker__input, .l-main-content .l-main-content__wbslist .c-datePicker-days .c-datePicker__input, .l-main-content .l-main-content__workTypelist .c-datePicker-days .c-datePicker__input, .l-main-content .l-main-content__statisticsPlan .c-datePicker-days .c-datePicker__input, .l-main-content .l-main-content__planlist .c-datePicker-months .c-datePicker__input, .l-main-content .l-main-content__wbslist .c-datePicker-months .c-datePicker__input, .l-main-content .l-main-content__workTypelist .c-datePicker-months .c-datePicker__input, .l-main-content .l-main-content__statisticsPlan .c-datePicker-months .c-datePicker__input {
   width: auto;
 }
 
-.l-main-content .l-main-content__planlist .c-datePicker-day .c-datePicker__input .o-input-div, .l-main-content .l-main-content__wbslist .c-datePicker-day .c-datePicker__input .o-input-div, .l-main-content .l-main-content__workTypelist .c-datePicker-day .c-datePicker__input .o-input-div, .l-main-content .l-main-content__planlist .c-datePicker-days .c-datePicker__input .o-input-div, .l-main-content .l-main-content__wbslist .c-datePicker-days .c-datePicker__input .o-input-div, .l-main-content .l-main-content__workTypelist .c-datePicker-days .c-datePicker__input .o-input-div, .l-main-content .l-main-content__planlist .c-datePicker-months .c-datePicker__input .o-input-div, .l-main-content .l-main-content__wbslist .c-datePicker-months .c-datePicker__input .o-input-div, .l-main-content .l-main-content__workTypelist .c-datePicker-months .c-datePicker__input .o-input-div {
+.l-main-content .l-main-content__planlist .c-datePicker-day .c-datePicker__input .o-input-div, .l-main-content .l-main-content__wbslist .c-datePicker-day .c-datePicker__input .o-input-div, .l-main-content .l-main-content__workTypelist .c-datePicker-day .c-datePicker__input .o-input-div, .l-main-content .l-main-content__statisticsPlan .c-datePicker-day .c-datePicker__input .o-input-div, .l-main-content .l-main-content__planlist .c-datePicker-days .c-datePicker__input .o-input-div, .l-main-content .l-main-content__wbslist .c-datePicker-days .c-datePicker__input .o-input-div, .l-main-content .l-main-content__workTypelist .c-datePicker-days .c-datePicker__input .o-input-div, .l-main-content .l-main-content__statisticsPlan .c-datePicker-days .c-datePicker__input .o-input-div, .l-main-content .l-main-content__planlist .c-datePicker-months .c-datePicker__input .o-input-div, .l-main-content .l-main-content__wbslist .c-datePicker-months .c-datePicker__input .o-input-div, .l-main-content .l-main-content__workTypelist .c-datePicker-months .c-datePicker__input .o-input-div, .l-main-content .l-main-content__statisticsPlan .c-datePicker-months .c-datePicker__input .o-input-div {
   min-width: auto;
   height: 3rem;
 }
 
-.l-main-content .l-main-content__planlist .c-datePicker-day .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__wbslist .c-datePicker-day .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__workTypelist .c-datePicker-day .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__planlist .c-datePicker-days .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__wbslist .c-datePicker-days .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__workTypelist .c-datePicker-days .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__planlist .c-datePicker-months .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__wbslist .c-datePicker-months .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__workTypelist .c-datePicker-months .c-datePicker__input .o-input-div::after {
+.l-main-content .l-main-content__planlist .c-datePicker-day .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__wbslist .c-datePicker-day .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__workTypelist .c-datePicker-day .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__statisticsPlan .c-datePicker-day .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__planlist .c-datePicker-days .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__wbslist .c-datePicker-days .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__workTypelist .c-datePicker-days .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__statisticsPlan .c-datePicker-days .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__planlist .c-datePicker-months .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__wbslist .c-datePicker-months .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__workTypelist .c-datePicker-months .c-datePicker__input .o-input-div::after, .l-main-content .l-main-content__statisticsPlan .c-datePicker-months .c-datePicker__input .o-input-div::after {
   margin-top: 10px;
 }
 
-.l-main-content .l-main-content__planlist .c-datePicker-day .c-datePicker__modal table, .l-main-content .l-main-content__wbslist .c-datePicker-day .c-datePicker__modal table, .l-main-content .l-main-content__workTypelist .c-datePicker-day .c-datePicker__modal table, .l-main-content .l-main-content__planlist .c-datePicker-days .c-datePicker__modal table, .l-main-content .l-main-content__wbslist .c-datePicker-days .c-datePicker__modal table, .l-main-content .l-main-content__workTypelist .c-datePicker-days .c-datePicker__modal table, .l-main-content .l-main-content__planlist .c-datePicker-months .c-datePicker__modal table, .l-main-content .l-main-content__wbslist .c-datePicker-months .c-datePicker__modal table, .l-main-content .l-main-content__workTypelist .c-datePicker-months .c-datePicker__modal table {
+.l-main-content .l-main-content__planlist .c-datePicker-day .c-datePicker__modal table, .l-main-content .l-main-content__wbslist .c-datePicker-day .c-datePicker__modal table, .l-main-content .l-main-content__workTypelist .c-datePicker-day .c-datePicker__modal table, .l-main-content .l-main-content__statisticsPlan .c-datePicker-day .c-datePicker__modal table, .l-main-content .l-main-content__planlist .c-datePicker-days .c-datePicker__modal table, .l-main-content .l-main-content__wbslist .c-datePicker-days .c-datePicker__modal table, .l-main-content .l-main-content__workTypelist .c-datePicker-days .c-datePicker__modal table, .l-main-content .l-main-content__statisticsPlan .c-datePicker-days .c-datePicker__modal table, .l-main-content .l-main-content__planlist .c-datePicker-months .c-datePicker__modal table, .l-main-content .l-main-content__wbslist .c-datePicker-months .c-datePicker__modal table, .l-main-content .l-main-content__workTypelist .c-datePicker-months .c-datePicker__modal table, .l-main-content .l-main-content__statisticsPlan .c-datePicker-months .c-datePicker__modal table {
   width: 210px;
 }
 
@@ -12449,25 +12453,25 @@ input[type=range]::-ms-thumb {
 }
 
 .c-modal-personAll .c-modal-content__sidebar, .c-modal-personCalendar .c-modal-content__sidebar, .c-modal-department .c-modal-content__sidebar {
-  padding: 2%;
+  padding: 1rem;
   background-color: #F7FBFF;
   height: 100%;
   overflow: scroll;
   border-radius: 10px;
 }
 
-.c-modal-personAll .c-modal-content__sidebar__user .user__name, .c-modal-personCalendar .c-modal-content__sidebar__user .user__name, .c-modal-department .c-modal-content__sidebar__user .user__name {
+.c-modal-personAll .c-modal-content__sidebar__user .user__name, .c-modal-personCalendar .c-modal-content__sidebar__user .user__name, .c-modal-department .c-modal-content__sidebar__user .user__name, .c-modal-department .c-modal-content__sidebar .c-modal-content__sidebar__user .user__department {
   font-size: 22px;
   font-weight: 700;
   margin-top: 2rem;
-  margin-bottom: 5%;
+  margin-bottom: 0.5rem;
 }
 
 .c-modal-personAll .c-modal-content__sidebar__user .user__number, .c-modal-personCalendar .c-modal-content__sidebar__user .user__number, .c-modal-department .c-modal-content__sidebar__user .user__number {
   font-size: 16px;
   color: #8495A4;
   font-weight: 200;
-  margin-bottom: 20%;
+  margin-bottom: 1.5rem;
 }
 
 .c-modal-personAll .c-modal-content__sidebar__time, .c-modal-personCalendar .c-modal-content__sidebar__time, .c-modal-department .c-modal-content__sidebar__time {
@@ -12475,25 +12479,25 @@ input[type=range]::-ms-thumb {
 }
 
 .c-modal-personAll .c-modal-content__sidebar__time div, .c-modal-personCalendar .c-modal-content__sidebar__time div, .c-modal-department .c-modal-content__sidebar__time div {
-  margin-bottom: 4%;
+  margin-bottom: 0.5rem;
 }
 
 .c-modal-personAll .c-modal-content__sidebar__time .o-btn-primary, .c-modal-personCalendar .c-modal-content__sidebar__time .o-btn-primary, .c-modal-department .c-modal-content__sidebar__time .o-btn-primary {
-  margin-top: 10%;
-  margin-bottom: 30%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-.c-modal-personAll .c-modal-content__sidebar__months .sidebar__months__item, .c-modal-personCalendar .c-modal-content__sidebar__months .sidebar__months__item, .c-modal-department .c-modal-content__sidebar__months .sidebar__months__item {
-  margin-bottom: 15%;
+.c-modal-personAll .c-modal-content__sidebar__months .sidebar__months__item, .c-modal-personCalendar .c-modal-content__sidebar__months .sidebar__months__item, .c-modal-department .c-modal-content__sidebar__months .sidebar__months__item, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item {
+  margin-bottom: 2rem;
 }
 
-.c-modal-personAll .c-modal-content__sidebar__months .sidebar__months__item .item__years, .c-modal-personCalendar .c-modal-content__sidebar__months .sidebar__months__item .item__years, .c-modal-department .c-modal-content__sidebar__months .sidebar__months__item .item__years {
+.c-modal-personAll .c-modal-content__sidebar__months .sidebar__months__item .item__years, .c-modal-personCalendar .c-modal-content__sidebar__months .sidebar__months__item .item__years, .c-modal-department .c-modal-content__sidebar__months .sidebar__months__item .item__years, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__years, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projectsTitle {
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 5%;
+  margin-bottom: 1.2rem;
 }
 
-.c-modal-personAll .c-modal-content__sidebar__months .sidebar__months__item .item__months, .c-modal-personCalendar .c-modal-content__sidebar__months .sidebar__months__item .item__months, .c-modal-department .c-modal-content__sidebar__months .sidebar__months__item .item__months {
+.c-modal-personAll .c-modal-content__sidebar__months .sidebar__months__item .item__months, .c-modal-personCalendar .c-modal-content__sidebar__months .sidebar__months__item .item__months, .c-modal-department .c-modal-content__sidebar__months .sidebar__months__item .item__months, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__months, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12504,15 +12508,15 @@ input[type=range]::-ms-thumb {
       flex-wrap: wrap;
 }
 
-.c-modal-personAll .c-modal-content__sidebar__months .sidebar__months__item .item__months div, .c-modal-personCalendar .c-modal-content__sidebar__months .sidebar__months__item .item__months div, .c-modal-department .c-modal-content__sidebar__months .sidebar__months__item .item__months div {
-  padding: 4% 4%;
-  margin: 1% 3% 1% 0;
+.c-modal-personAll .c-modal-content__sidebar__months .sidebar__months__item .item__months div, .c-modal-personCalendar .c-modal-content__sidebar__months .sidebar__months__item .item__months div, .c-modal-department .c-modal-content__sidebar__months .sidebar__months__item .item__months div, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__months div, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projects div {
+  padding: 0.5rem;
+  margin: 0.2rem 0.5rem 0.5rem 0;
   white-space: nowrap;
   background: #E2F1FE;
   border-radius: 8px;
 }
 
-.c-modal-personAll .c-modal-content__sidebar__months .sidebar__months__item .item__months .is-active, .c-modal-personCalendar .c-modal-content__sidebar__months .sidebar__months__item .item__months .is-active, .c-modal-department .c-modal-content__sidebar__months .sidebar__months__item .item__months .is-active {
+.c-modal-personAll .c-modal-content__sidebar__months .sidebar__months__item .item__months .is-active, .c-modal-personCalendar .c-modal-content__sidebar__months .sidebar__months__item .item__months .is-active, .c-modal-department .c-modal-content__sidebar__months .sidebar__months__item .item__months .is-active, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__months .is-active, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projects .is-active {
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
   background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
@@ -12521,7 +12525,7 @@ input[type=range]::-ms-thumb {
 .c-modal-personAll .c-modal-content__calendar, .c-modal-personCalendar .c-modal-content__calendar, .c-modal-department .c-modal-content__calendar {
   margin-bottom: 140px;
   max-height: 100%;
-  padding: 2%;
+  padding: 1rem;
 }
 
 .c-modal-personAll .c-modal-content__calendar .c-modal-content__calendar__content, .c-modal-personCalendar .c-modal-content__calendar .c-modal-content__calendar__content, .c-modal-department .c-modal-content__calendar .c-modal-content__calendar__content {
@@ -12566,6 +12570,33 @@ input[type=range]::-ms-thumb {
   margin-bottom: 5%;
 }
 
+.c-modal-personAll .c-modal-content__list .c-accordion-plan .accordion-header__item .header__item__title, .c-modal-personCalendar .c-modal-content__list .c-accordion-plan .accordion-header__item .header__item__title, .c-modal-department .c-modal-content__list .c-accordion-plan .accordion-header__item .header__item__title, .c-modal-personAll .c-modal-content__list .c-accordion-general .accordion-header__item .header__item__title, .c-modal-personCalendar .c-modal-content__list .c-accordion-general .accordion-header__item .header__item__title, .c-modal-department .c-modal-content__list .c-accordion-general .accordion-header__item .header__item__title {
+  white-space: normal;
+  line-height: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 45px;
+}
+
+.c-modal-personAll .c-modal-content__list .c-accordion-plan .accordion-body__title, .c-modal-personCalendar .c-modal-content__list .c-accordion-plan .accordion-body__title, .c-modal-department .c-modal-content__list .c-accordion-plan .accordion-body__title, .c-modal-personAll .c-modal-content__list .c-accordion-general .accordion-body__title, .c-modal-personCalendar .c-modal-content__list .c-accordion-general .accordion-body__title, .c-modal-department .c-modal-content__list .c-accordion-general .accordion-body__title {
+  padding: 0.5rem 0;
+  font-weight: 700;
+}
+
+.c-modal-personAll .c-modal-content__list .c-accordion-plan .accordion-body__item, .c-modal-personCalendar .c-modal-content__list .c-accordion-plan .accordion-body__item, .c-modal-department .c-modal-content__list .c-accordion-plan .accordion-body__item, .c-modal-personAll .c-modal-content__list .c-accordion-general .accordion-body__item, .c-modal-personCalendar .c-modal-content__list .c-accordion-general .accordion-body__item, .c-modal-department .c-modal-content__list .c-accordion-general .accordion-body__item {
+  padding: 1rem 0;
+}
+
+.c-modal-personAll .c-modal-content__list .c-accordion-plan .accordion-body__item .col, .c-modal-personCalendar .c-modal-content__list .c-accordion-plan .accordion-body__item .col, .c-modal-department .c-modal-content__list .c-accordion-plan .accordion-body__item .col, .c-modal-personAll .c-modal-content__list .c-accordion-general .accordion-body__item .col, .c-modal-personCalendar .c-modal-content__list .c-accordion-general .accordion-body__item .col, .c-modal-department .c-modal-content__list .c-accordion-general .accordion-body__item .col {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-height: 30px;
+}
+
 .c-modal-personAll .c-modal-content__list__title, .c-modal-personCalendar .c-modal-content__list__title, .c-modal-department .c-modal-content__list__title {
   padding-bottom: 3%;
   font-weight: 700;
@@ -12584,9 +12615,36 @@ input[type=range]::-ms-thumb {
 }
 
 .c-modal-department .c-modal-content__list {
-  padding-top: 2%;
+  padding-top: 0.5rem;
   height: 100%;
   overflow: scroll;
+}
+
+.c-modal-department .c-modal-content__list .accordion-header__item .header__item__departmentNum {
+  margin-right: 1.5rem;
+}
+
+.c-modal-department .c-modal-content__list .accordion-header__item .header__item__userNum {
+  margin-right: 1.5rem;
+}
+
+.c-modal-department .c-modal-content__sidebar .c-modal-content__sidebar__user .user__department {
+  margin-bottom: 2rem;
+}
+
+.c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projects div {
+  white-space: normal;
+  line-height: 1.5rem;
+  padding: 0.8rem 0.5rem;
+}
+
+.c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projects div p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 45px;
 }
 
 .c-modal-usuallyUseMember, .c-modal-sample {
@@ -12751,6 +12809,10 @@ input[type=range]::-ms-thumb {
 
 .c-dropdown-departmentCheck {
   position: relative;
+}
+
+.c-dropdown-departmentCheck .dropdown-input {
+  width: 100%;
 }
 
 .c-dropdown-departmentCheck .select-wrapper {
@@ -13666,6 +13728,10 @@ input[type=range]::-ms-thumb {
 }
 
 .c-search-list .c-search-item .c-search-item__title {
+  padding-right: 0.5rem;
+}
+
+.c-search-list .c-search-item .c-search-item__percentTitle {
   padding-right: 0.5rem;
 }
 
@@ -14742,11 +14808,16 @@ input[type=range]::-ms-thumb {
   margin: 0 0.5rem 2.5rem 0.2rem;
 }
 
-.l-main-content .l-main-content-text .l-main-content-text__hour {
+.l-main-content .l-main-content-text .l-main-content-text__title, .l-main-content .l-main-content-text .l-main-content-text__ListTitle {
   font-size: 18px;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: bolder;
   margin-bottom: 1.5rem;
+}
+
+.l-main-content .l-main-content-text .l-main-content-text__ListTitle {
+  margin-bottom: 0.3rem;
+  margin-right: 1rem;
 }
 
 .change-card-to-list .l-main-content-item__listTitle {
@@ -14863,43 +14934,43 @@ input[type=range]::-ms-thumb {
   font-weight: 400;
 }
 
-#memberstime .l-main-tabs {
+#memberstime .l-main-tabs, #departmenttime .l-main-tabs, #universalPlan .l-main-tabs {
   margin-bottom: 12px;
 }
 
-#memberstime .change-card-to-list .c-card-manhourSearch__userName {
+#memberstime .change-card-to-list .c-card-manhourSearch__userName, #departmenttime .change-card-to-list .c-card-manhourSearch__userName, #universalPlan .change-card-to-list .c-card-manhourSearch__userName {
   display: none;
 }
 
-#memberstime .change-card-to-list .c-card-manhourSearch__englishName {
+#memberstime .change-card-to-list .c-card-manhourSearch__englishName, #departmenttime .change-card-to-list .c-card-manhourSearch__englishName, #universalPlan .change-card-to-list .c-card-manhourSearch__englishName {
   display: none;
 }
 
-#memberstime .change-card-to-list .listTitle__user {
+#memberstime .change-card-to-list .listTitle__user, #departmenttime .change-card-to-list .listTitle__user, #universalPlan .change-card-to-list .listTitle__user {
   width: 10%;
 }
 
-#memberstime .change-card-to-list .listTitle__englishName {
+#memberstime .change-card-to-list .listTitle__englishName, #departmenttime .change-card-to-list .listTitle__englishName, #universalPlan .change-card-to-list .listTitle__englishName {
   width: 60%;
 }
 
-#memberstime .change-card-to-list .listTitle__workTime {
+#memberstime .change-card-to-list .listTitle__workTime, #departmenttime .change-card-to-list .listTitle__workTime, #universalPlan .change-card-to-list .listTitle__workTime {
   width: 10%;
 }
 
-#memberstime .change-card-to-list .js-c-card__appendUserName {
+#memberstime .change-card-to-list .js-c-card__appendUserName, #departmenttime .change-card-to-list .js-c-card__appendUserName, #universalPlan .change-card-to-list .js-c-card__appendUserName {
   width: 80%;
 }
 
-#memberstime .change-card-to-list .js-c-card__appendUserName h2 {
+#memberstime .change-card-to-list .js-c-card__appendUserName h2, #departmenttime .change-card-to-list .js-c-card__appendUserName h2, #universalPlan .change-card-to-list .js-c-card__appendUserName h2 {
   width: 12.5%;
 }
 
-#memberstime .change-card-to-list .js-c-card__appendUserName h3 {
+#memberstime .change-card-to-list .js-c-card__appendUserName h3, #departmenttime .change-card-to-list .js-c-card__appendUserName h3, #universalPlan .change-card-to-list .js-c-card__appendUserName h3 {
   width: 75%;
 }
 
-#memberstime .change-card-to-list .c-card__content {
+#memberstime .change-card-to-list .c-card__content, #departmenttime .change-card-to-list .c-card__content, #universalPlan .change-card-to-list .c-card__content {
   width: 10%;
 }
 
@@ -15101,5 +15172,31 @@ input[type=range]::-ms-thumb {
 #notReachedtime .change-card-to-list .c-card-percentCheck .c-card-title span {
   right: 30px;
   top: 5px;
+}
+
+#notReachedtime .is-error-status .c-search-list .c-search-item .c-search-item__percentTitle {
+  color: #FB5B29;
+}
+
+#notReachedtime .is-error-status .c-search-list .c-search-item .c-search-item__input input {
+  background-color: #fff;
+  border: 1px solid #FB5B29;
+}
+
+#memberstime .table-body .table-body__item .row .col div, #departmenttime .table-body .table-body__item .row .col div, #universalPlan .table-body .table-body__item .row .col div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-main-content__statisticsPlan .table-body .table-body__item .row {
+  padding: 0 0 0 1.5rem;
+}
+
+.l-main-content__statisticsPlan .table-body .table-body__item .row img {
+  margin-right: 0.5rem;
 }
 /*# sourceMappingURL=all.css.map */

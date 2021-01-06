@@ -1106,6 +1106,7 @@ cursor: pointer;
             }
             border-bottom: 1px solid $danger;
         }
+
     }
 }
 
@@ -1267,8 +1268,6 @@ cursor: pointer;
 }
 
 .c-modal-personAll {
-    //width: 90%;
-    //height: 85vh;
     width: 80%;
     height: 70vh;
     min-height: 580px;
@@ -1280,7 +1279,7 @@ cursor: pointer;
 
    
     .c-modal-content__sidebar {
-        padding: 2%;
+        padding: 1rem;
         background-color: $sec3;
 
         height: 100%;
@@ -1294,14 +1293,14 @@ cursor: pointer;
             font-size: $h2;
             font-weight: 700;
             margin-top: 2rem;
-            margin-bottom: 5%;
+            margin-bottom: 0.5rem;
         }
 
         .user__number {
             font-size: $p;
             color: $gray3;
             font-weight: 200;
-            margin-bottom: 20%;
+            margin-bottom: 1.5rem;
         }
     }
 
@@ -1309,23 +1308,23 @@ cursor: pointer;
         font-size: $p;
 
         div {
-            margin-bottom: 4%;
+            margin-bottom: 0.5rem;
         }
 
         .o-btn-primary {
-            margin-top: 10%;
-            margin-bottom: 30%;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
         }
     }
 
     .c-modal-content__sidebar__months {
 
         .sidebar__months__item {
-            margin-bottom: 15%;
+            margin-bottom: 2rem;
             .item__years {
                 font-size: $p;
                 font-weight: 700;
-                margin-bottom: 5%;
+                margin-bottom: 1.2rem;
             }
 
             .item__months {
@@ -1334,8 +1333,8 @@ cursor: pointer;
                 flex-wrap: wrap;
 
                 div {
-                    padding: 4% 4%;
-                    margin: 1% 3% 1% 0;
+                    padding: 0.5rem;
+                    margin: 0.2rem 0.5rem 0.5rem 0;
                     white-space: nowrap;
                     background: $hyweb-lighblue;
                     border-radius: $sidebar-months-item-radius;
@@ -1354,7 +1353,7 @@ cursor: pointer;
 
         margin-bottom: $m*14;
         max-height: 100%; // 926px;
-        padding: 2%;
+        padding: 1rem;
 
         .c-modal-content__calendar__content {
             height: 75vh;
@@ -1390,19 +1389,39 @@ cursor: pointer;
 
     .c-modal-content__list {
         margin-bottom: 5%;
+        .c-accordion-plan{
+        .accordion-header__item{
+            .header__item__title{
+                white-space: normal;
+                line-height: 1.5rem;
+                @include db_ellipsisText;
+            }
+        }
+        .accordion-body__title{
+            padding: 0.5rem 0;
+            font-weight: 700;
+        }
+        .accordion-body__item{
+           padding:1rem 0;
+           .col{
+               @include ellipsisText;
+               max-height: 30px;
+           }
+        }
+        }
     }
 
     .c-modal-content__list__title {
         padding-bottom: 3%;
         font-weight: 700;
         font-size: $h2;
-        //font-family: $font-family;
     }
 
     .c-modal-content {
         display: flex;
         height: 100%;
     }
+
 }
 
 .c-modal-personCalendar {
@@ -1418,10 +1437,49 @@ cursor: pointer;
     }
 
     .c-modal-content__list {
-        padding-top: 2%;
+        padding-top: 0.5rem;
         height: 100%;
         overflow: scroll;
+        .accordion-header__item{
+            .header__item__departmentNum{
+                margin-right: 1.5rem;
+            }
+            .header__item__userNum{
+                margin-right: 1.5rem;
+            }
+        }
     }
+    .c-modal-content__sidebar{
+        .c-modal-content__sidebar__user{
+            .user__department{
+                @extend .user__name;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    .c-modal-content__sidebar__months{
+        .sidebar__project__item{
+            @extend .sidebar__months__item;
+            .item__projectsTitle{
+                @extend .item__years; 
+            }
+            .item__projects{
+                @extend .item__months;
+                
+                div{
+                    white-space: normal;
+                    line-height: 1.5rem;
+                    padding: 0.8rem 0.5rem;
+                    p{
+                        @include db_ellipsisText;
+                    }
+                }
+                
+    
+            }
+        }
+    }
+    
 }
 
 .c-modal-usuallyUseMember {
@@ -1616,7 +1674,9 @@ cursor: pointer;
 .c-dropdown-departmentCheck {
     @extend .c-dropdown-plan;
     position: relative;
-
+    .dropdown-input{
+        width: 100%;
+    }
     .select-wrapper {
         width: 500px;
     }
@@ -2563,7 +2623,9 @@ cursor: pointer;
         .c-search-item__title {
             padding-right: 0.5rem;
         }
-
+        .c-search-item__percentTitle {
+            padding-right: 0.5rem;
+        }
         .c-search-item__input {
             @extend .o-input;
 
