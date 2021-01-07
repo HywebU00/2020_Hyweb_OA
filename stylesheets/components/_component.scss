@@ -469,7 +469,7 @@
     min-width: 230px;
     max-width: 337px;
     height: 4.5rem;
-    margin: 0 0 1rem 0.5rem;
+    margin: 0 0.5rem 1rem 0;
     background-color: $card-lablePerson-background;
     border-radius: $card-lablePerson-radius;
 
@@ -2870,6 +2870,54 @@ cursor: pointer;
 
     font-family: $english-font;
     color: #fff;
+}
+.o-switch{
+    label{
+        color:$gray1;
+        font-size: $p; 
+        .lever{
+            width: 60px;
+            height: 28px;
+            background-color: $gray4;
+            &::before{
+                background-color:$hyweb-lighblue;
+                opacity: 0.5;
+                width: 28px;
+                height: 28px;
+                top:0;
+            }
+            &::after{
+               background-color: #fff;
+                width: 28px;
+                height: 28px;
+                top:0;
+            }
+            
+        } 
+        input[type=checkbox]:checked + .lever:after{
+            background-color: #fff;
+            border: $hyweb-blue 1px solid;
+                left:32px;
+                top:0;
+            }  
+            input[type=checkbox]:checked + .lever:before{
+                left:32px;
+                top:0;
+            }
+            input[type=checkbox]:checked + .lever{
+                background: $hy-background;
+                margin: 0 ;
+            }      
+            input[type=checkbox]:checked:not(:disabled) ~ .lever:active::before{
+                background-color:$hyweb-lighblue;
+            }
+            
+        }
+        .switch-text{
+            display: inline-block;
+            margin-left: 0.5rem;
+        }
+    
 }
 
 //====================

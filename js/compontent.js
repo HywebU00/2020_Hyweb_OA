@@ -142,3 +142,21 @@ percentCheckInput.forEach((item) => {
     );
   }
 });
+//++++++++++++++++++
+//switch-workTime 改變卡片顏色 效果
+//++++++++++++++++++
+const switchBtn = document.querySelector(".js-switch-workTime");
+let switchFooter = document.querySelector(".l-main-content__switchFooter");
+switchBtn.addEventListener("click", function () {
+  let active = switchFooter.classList.contains("is-switch-active");
+  let switchText = document.querySelector(".switch-text");
+  if (active === false) {
+    switchFooter.classList.add("is-switch-active");
+    switchFooter.innerHTML = `成員可填工時`;
+    switchText.innerHTML = `開啟`;
+  } else {
+    switchFooter.classList.remove("is-switch-active");
+    switchFooter.innerHTML = `成員不可填工時`;
+    switchText.innerHTML = `關閉`;
+  }
+});
