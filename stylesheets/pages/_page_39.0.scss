@@ -36,8 +36,15 @@
     
     .l-main-content__planlist{
         .table-body{
-            max-height: 355px;
+            height: 355px;
             overflow-y: scroll;
+            overflow-x: hidden;
+            .o-input{
+                height: 45px;
+                input{
+                    height: 45px;
+                }
+            }
         }
         
     }
@@ -54,7 +61,7 @@
             font-family: $font-family;
             font-size: $p;
             color: $gray1;
-            padding:0 2rem;
+            padding:0 0.5rem;
             padding-bottom: 1rem;
             white-space: nowrap;
         }
@@ -63,6 +70,23 @@
             font-size:60px ;
             font-weight: 700;
             color: $hyweb-blue;
+            .o-input{
+                input{
+                    width: 80px;
+                    height: 60px;
+                    font-family: $english-font;
+                    font-weight: 700;
+                    padding: 0.5rem;
+                    font-size:60px ;
+                    color: $hyweb-blue;
+                }
+            }
+            .o-input-lg{
+                input{
+                    width: 120px;
+                }   
+            }
+      
         }
     }
 }

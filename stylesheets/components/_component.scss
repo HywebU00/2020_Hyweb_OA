@@ -2833,6 +2833,8 @@ cursor: pointer;
     border-radius: $input-radius;
     background-color: $hyweb-lighblue;
     position: relative;
+    padding:0.3rem 0  0.3rem 0.5rem;
+    line-height: 1.2rem;
 
     &::after {
         content: "";
@@ -2840,7 +2842,9 @@ cursor: pointer;
         width: 20px;
         height: 20px;
         right: 0;
-        margin-right: .5rem;
+        top:0;
+        margin-right: 0.5rem;
+        
         margin-top: 8px;
         background-image: url(../../img/o-date.svg);
     }
@@ -2874,6 +2878,7 @@ cursor: pointer;
 .o-switch{
     label{
         color:$gray1;
+        display: inline-block;
         font-size: $p; 
         .lever{
             width: 60px;
