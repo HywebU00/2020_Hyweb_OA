@@ -12540,10 +12540,12 @@ body {
   content: "";
   position: absolute;
   display: block;
-  right: 4px;
+  right: 0px;
+  background-color: #E2F1FE;
   top: 8px;
   width: 30px;
   height: 30px;
+  border-radius: 5px;
   border-width: 1em 0.875em 0 0.875em;
   background-image: url(../../img/o-arrowDown.svg);
 }
@@ -14817,6 +14819,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#memberstime .is-error-status .c-dropdown__input, #departmenttime .is-error-status .c-dropdown__input, #universalPlan .is-error-status .c-dropdown__input {
+  background-color: #fff;
+  border: 1px #FB5B29 solid;
+}
+
+#memberstime .is-error-status .c-dropdown__input::after, #departmenttime .is-error-status .c-dropdown__input::after, #universalPlan .is-error-status .c-dropdown__input::after {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .l-main-content__statisticsPlan .table-body .table-body__item .row {
