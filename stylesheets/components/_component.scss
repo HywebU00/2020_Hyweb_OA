@@ -779,8 +779,7 @@ cursor: pointer;
 
 // tab
 .c-tabs {
-    padding-top: $m;
-
+    //padding-top: $m;
     .c-tabs__content {
         display: flex;
         justify-content: space-between;
@@ -944,7 +943,7 @@ cursor: pointer;
 .c-modal {
     width: 41%;
     height: 40%;
-    padding: 2%;
+    padding: 1rem;
     border-radius: $modal-radius;
     box-shadow: $box-shadow;
     background-color: #fff;
@@ -1109,7 +1108,6 @@ cursor: pointer;
 
     }
 }
-
 
 .c-modal-addGroup {
     @extend .c-modal;
@@ -1554,6 +1552,15 @@ cursor: pointer;
 
 }
 
+.c-modal-select{
+    overflow-y: visible;
+    height: 120px;
+    min-width: 600px;
+    .c-search{
+        padding: 0;
+        height: 65px;
+    }
+}
 //dropdown
 
 .c-dropdown-plan {
@@ -1562,7 +1569,6 @@ cursor: pointer;
         height: 38px;
         width: 100%;
         padding: 1%;
-        //padding-right: 40px;
         background-color: $hyweb-lighblue;
         border-radius: $select-radius;
 
@@ -2371,6 +2377,15 @@ cursor: pointer;
     box-shadow: $box-shadow;
 }
 
+.c-popover__bg{
+    background-color: #fff;
+    opacity: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+
 .c-writeHours-title {
     display: flex;
     justify-content: space-between;
@@ -2846,7 +2861,7 @@ cursor: pointer;
         margin-right: 0.5rem;
         
         margin-top: 8px;
-        background-image: url(../../img/o-date.svg);
+        background-image: url(../img/o-date.svg);
     }
 }
 

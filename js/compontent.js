@@ -69,14 +69,22 @@ for (let a = 0; a < pop_modal.length; a++) {
     let item = pop_content[a].classList.contains("pop-content");
     if (item === true) {
       pop_content[a].classList.toggle("is-pop-show");
+      let popBg = document.createElement("div");
+      popBg.setAttribute("class", "c-popover__bg");
+      document.body.prepend(popBg);
+      closePop();
     }
   });
   pop_content[a].addEventListener("click", function () {
     let content = pop_content[a].childNodes;
-    // console.log(content);
     for (let c = 0; c < content.length; c++) {
       if (content[c].tagName == "LI") {
         pop_content[a].classList.remove("is-pop-show");
+        //移除背景遮罩
+        let popBg = document.querySelector(".c-popover__bg");
+        if (popBg != null) {
+          document.body.removeChild(popBg);
+        }
       }
     }
   });
@@ -86,7 +94,16 @@ for (let a = 0; a < pop_modal.length; a++) {
       parentlist.classList.remove("is-pop-show");
     });
   }
+  //點擊背景 關閉popmodal
+  function closePop() {
+    const popBg = document.querySelector(".c-popover__bg");
+    popBg.addEventListener("click", function () {
+      pop_content[a].classList.remove("is-pop-show");
+      document.body.removeChild(popBg);
+    });
+  }
 }
+
 //++++++++++++++++++
 //accordion 效果
 //++++++++++++++++++
@@ -119,6 +136,7 @@ const alertPlanInput = document.querySelectorAll(".js-inputStyle");
 
 alertPlanInput.forEach((item) => {
   item.addEventListener("click", inputChangeCardColor);
+
   function inputChangeCardColor() {
     item.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.classList.toggle(
       "is-changeBackground"
@@ -136,6 +154,7 @@ const percentCheckInput = document.querySelectorAll(
 
 percentCheckInput.forEach((item) => {
   item.addEventListener("click", inputChangeCardColor);
+
   function inputChangeCardColor() {
     item.parentNode.parentNode.parentNode.parentNode.parentNode.classList.toggle(
       "is-changeBackground"
