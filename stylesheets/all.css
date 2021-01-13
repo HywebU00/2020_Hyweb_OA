@@ -10986,11 +10986,11 @@ body {
 }
 
 .c-card-planReport .o-card__star-active, .c-card-planReport-danger .o-card__star-active, .c-card-alertPlan .o-card__star-active {
-  background-image: url(../../img/o-star_active.svg);
+  background-image: url(../img/o-star_active.svg);
 }
 
 .c-card-planReport .o-card__star-default, .c-card-planReport-danger .o-card__star-default, .c-card-alertPlan .o-card__star-default {
-  background-image: url(../../img/o-star_default.svg);
+  background-image: url(../img/o-star_default.svg);
 }
 
 .c-card-planReport h2, .c-card-planReport-danger h2, .c-card-alertPlan h2 {
