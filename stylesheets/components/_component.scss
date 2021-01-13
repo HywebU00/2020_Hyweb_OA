@@ -103,9 +103,14 @@
 
 .c-card-planPerson {
     @extend .c-card-manhourSofar;
+    padding: 0;
     width: 21.5%;
     min-width: 240px;
-
+    a{
+        color: $gray1;
+        display: block;
+        padding:20px;
+    }
     .c-card__tag {
         padding-top: $pd;
         display: inline-block;
@@ -235,7 +240,10 @@
     min-width: 879px;
     min-height: 166px;
     display: flex;
-    padding: 0;
+    padding: 0px;
+    a{
+        padding: 0px;
+    }
     // &:active{
     //     transition: all 0.2s;
     //     transform: translateY(1px) translateX(1px);

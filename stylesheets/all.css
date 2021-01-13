@@ -10153,6 +10153,10 @@ body {
   margin-bottom: 0;
 }
 
+.l-main-content-table .table-body a {
+  color: #042340;
+}
+
 .l-main-content-table .table-body .col {
   line-height: 1.5rem;
   display: -webkit-box;
@@ -10814,8 +10818,15 @@ body {
 }
 
 .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan {
+  padding: 0;
   width: 21.5%;
   min-width: 240px;
+}
+
+.c-card-planPerson a, .c-card-planClosed a, .c-card-planHotkey a, .c-card-planReport a, .c-card-planReport-danger a, .c-card-alertPlan a {
+  color: #042340;
+  display: block;
+  padding: 20px;
 }
 
 .c-card-planPerson .c-card__tag, .c-card-planClosed .c-card__tag, .c-card-planHotkey .c-card__tag, .c-card-planReport .c-card__tag, .c-card-planReport-danger .c-card__tag, .c-card-alertPlan .c-card__tag {
@@ -10959,7 +10970,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
+  padding: 0px;
+}
+
+.c-card-planReport a, .c-card-planReport-danger a, .c-card-alertPlan a {
+  padding: 0px;
 }
 
 .c-card-planReport .c-card__item, .c-card-planReport-danger .c-card__item, .c-card-alertPlan .c-card__item {
@@ -14080,6 +14095,14 @@ body {
 
 .change-card-to-list .l-main-content-item .l-main-content-item__listTitle .listTitle__time {
   width: 10%;
+}
+
+.change-card-to-list .l-main-content-item a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
 }
 
 .change-card-to-list .l-main-content-item .c-card-planPerson, .change-card-to-list .l-main-content-item .c-card-planClosed, .change-card-to-list .l-main-content-item .c-card-planHotkey, .change-card-to-list .l-main-content-item .c-card-planReport, .change-card-to-list .l-main-content-item .c-card-planReport-danger, .change-card-to-list .l-main-content-item .c-card-alertPlan {

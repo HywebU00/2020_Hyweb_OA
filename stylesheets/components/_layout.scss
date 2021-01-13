@@ -563,7 +563,7 @@ body{
         }
 
         .table-body {
-
+            
             .table-body__item {
                 border-bottom: $gray-blue solid 1px;
                 display: flex;
@@ -981,6 +981,9 @@ body{
     }
 
     .table-body {
+        a{
+            color:$gray1;
+        }
         .col {
             line-height: 1.5rem;
             @include db_ellipsisText;

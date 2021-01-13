@@ -136,7 +136,11 @@
                 width: 10%;
             }
         }
-
+        a{
+            width: 100%;
+            display: flex;
+            padding: 0;
+        }
         .c-card-planPerson {
             .c-card__tag {
                 width: 20%;
