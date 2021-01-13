@@ -1,6 +1,13 @@
 #memberstime{
     .l-main-tabs{
-        margin-bottom: 12px;
+        margin-bottom: 5px;
+    }
+    .c-datePicker__modal {
+        .c-datePicker__yearPicker{
+            button{
+             border-radius: 50%;   
+            }
+        }
     }
     .change-card-to-list{
         .c-card-manhourSearch__userName{
@@ -35,8 +42,15 @@
 
 #departmenttime{
     .l-main-tabs{
-        margin-bottom: 12px;
+        margin-bottom: 5px;
     } 
+    .c-datePicker__modal {
+        .c-datePicker__yearPicker{
+            button{
+             border-radius: 50%;   
+            }
+        }
+    }
     .change-card-to-list{
         .c-card-manhourSearch__userName{
             display: none;
@@ -69,8 +83,15 @@
 }
 #supporttime{
     .l-main-tabs{
-        margin-bottom: 12px;
+        margin-bottom: 5px;
     } 
+    .c-datePicker__modal {
+        .c-datePicker__yearPicker{
+            button{
+             border-radius: 50%;   
+            }
+        }
+    }
     .change-card-to-list{
         .l-main-content-item{
             .c-card-department{
@@ -116,7 +137,14 @@
 }
 #notReachedtime{
     .l-main-tabs{
-        margin-bottom: 12px;
+        margin-bottom: 5px;
+    }
+    .c-datePicker__modal {
+        .c-datePicker__yearPicker{
+            button{
+             border-radius: 50%;   
+            }
+        }
     }
     .change-card-to-list{
         .c-card-percent__userName{

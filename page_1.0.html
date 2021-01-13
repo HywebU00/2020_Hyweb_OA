@@ -31,7 +31,7 @@
           </div>
           <div class="c-sidebar-content__listGroup">
             <div class="c-sidebar-content__list">
-              <div class="c-sidebar-content__list__title menuParent-is-active">
+              <div class="c-sidebar-content__list__title">
                 <div class="list__title__icon icon-is-active">
                   <img
                     class="list__title__icon__default"
@@ -47,10 +47,14 @@
                 <div class="">我的工時紀錄</div>
               </div>
               <div class="c-sidebar-content__list__content">
-                <div class="c-sidebar-content__list__item menuItem-is-active">
-                  填寫每日工時
-                </div>
-                <div class="c-sidebar-content__list__item">檢視計畫工時</div>
+                <a
+                  href="page_1.0.html"
+                  class="c-sidebar-content__list__item menuItem-is-active"
+                  >填寫每日工時
+                </a>
+                <a href="page_2.0.html" class="c-sidebar-content__list__item"
+                  >檢視計畫工時
+                </a>
               </div>
             </div>
             <div class="c-sidebar-content__list">
@@ -70,8 +74,12 @@
                 <div class="">我的計畫管理</div>
               </div>
               <div class="c-sidebar-content__list__content">
-                <div class="c-sidebar-content__list__item">常用計畫成員</div>
-                <div class="c-sidebar-content__list__item">計畫總覽</div>
+                <a href="page_4.0.html" class="c-sidebar-content__list__item"
+                  >常用計畫成員
+                </a>
+                <a href="page_10.0.html" class="c-sidebar-content__list__item"
+                  >計畫總覽
+                </a>
               </div>
             </div>
             <div class="c-sidebar-content__list">
@@ -91,10 +99,18 @@
                 <div class="">統計報表</div>
               </div>
               <div class="c-sidebar-content__list__content">
-                <div class="c-sidebar-content__list__item">計畫統計</div>
-                <div class="c-sidebar-content__list__item">警示計畫</div>
-                <div class="c-sidebar-content__list__item">人員統計</div>
-                <div class="c-sidebar-content__list__item">財務統計總覽</div>
+                <a href="page_15.a.0.html" class="c-sidebar-content__list__item"
+                  >計畫統計
+                </a>
+                <a href="page_26.a.0.html" class="c-sidebar-content__list__item"
+                  >警示計畫
+                </a>
+                <a href="page_27.a.0.html" class="c-sidebar-content__list__item"
+                  >人員統計
+                </a>
+                <a href="page_36.0.html" class="c-sidebar-content__list__item"
+                  >財務統計總覽
+                </a>
               </div>
             </div>
             <div class="c-sidebar-content__list">
@@ -114,9 +130,9 @@
                 <div class="">系統管理</div>
               </div>
               <div class="c-sidebar-content__list__content">
-                <div class="c-sidebar-content__list__item">休假日維護</div>
-                <div class="c-sidebar-content__list__item">關帳日期維護</div>
-                <div class="c-sidebar-content__list__item">工作類型維護</div>
+                <a href="page_39.0.html" class="c-sidebar-content__list__item"
+                  >系統維護
+                </a>
               </div>
             </div>
           </div>
@@ -358,12 +374,12 @@
                 <div class="col s1">2</div>
                 <div class="col s2">無</div>
                 <div class="col s1 c-writeHours-content__btnGroup">
-                  <div class="">
+                  <button class="">
                     <img src="img/o-edit.svg" alt="" />
-                  </div>
-                  <div class="">
+                  </button>
+                  <button class="">
                     <img src="img/o-delete.svg" alt="" />
-                  </div>
+                  </button>
                 </div>
               </div>
               <div class="row c-writeHours-content__item">
@@ -373,12 +389,12 @@
                 <div class="col s1">2</div>
                 <div class="col s2">無</div>
                 <div class="col s1 c-writeHours-content__btnGroup">
-                  <div class="">
+                  <button class="">
                     <img src="img/o-edit.svg" alt="" />
-                  </div>
-                  <div class="">
+                  </button>
+                  <button class="">
                     <img src="img/o-delete.svg" alt="" />
-                  </div>
+                  </button>
                 </div>
               </div>
               <div class="row c-writeHours-content__item">
@@ -388,12 +404,12 @@
                 <div class="col s1">2</div>
                 <div class="col s2">無</div>
                 <div class="col s1 c-writeHours-content__btnGroup">
-                  <div class="">
+                  <button class="">
                     <img src="img/o-edit.svg" alt="" />
-                  </div>
-                  <div class="">
+                  </button>
+                  <button class="">
                     <img src="img/o-delete.svg" alt="" />
-                  </div>
+                  </button>
                 </div>
               </div>
               <div class="row c-writeHours-content__select">
@@ -475,12 +491,12 @@
                   </div>
                 </div>
                 <div class="col s1 c-writeHours-content__btnGroup">
-                  <div class="">
+                  <button class="">
                     <img src="img/o-cencel.svg" alt="" />
-                  </div>
-                  <div class="">
+                  </button>
+                  <button class="">
                     <img src="img/o-confirm.svg" alt="" />
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -495,21 +511,21 @@
       
       <div class="l-side-left">
         <div class="c-submenu">
-          <div class="c-submenu-btn waves-effect waves-blue">
+          <button type="button" class="c-submenu-btn waves-effect waves-blue">
             <img src="img/o-arrowRight-gray.svg" alt="" />
-          </div>
+          </button>
           <div class="c-submenu-content">
             <div class="c-submenu-content__calendar">
               <div class="calendar-wrapper">
                 <div class="calendar-wrapper__title">
                   <div class="calendar_month"></div>
                   <div class="calendar_btn">
-                    <div id="btnPrev" class="waves-effect waves-blue">
+                    <button id="btnPrev" class="waves-effect waves-blue">
                       <img src="img/o-arrowLeft-blue.svg" alt="" />
-                    </div>
-                    <div id="btnNext" class="waves-effect waves-blue">
+                    </button>
+                    <button id="btnNext" class="waves-effect waves-blue">
                       <img src="img/o-arrowRight-blue.svg" alt="" />
-                    </div>
+                    </button>
                   </div>
                 </div>
                 <div id="divCal"></div>

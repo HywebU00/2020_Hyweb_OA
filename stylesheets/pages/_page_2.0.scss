@@ -24,11 +24,25 @@
         div {
             padding: 0 0.5rem;
             display: flex;
+            align-items: center;
 
             .l-main-content-list__img {
+                height: 33px;
+                width: 33px;
                 padding: 0.2rem;
                 cursor: pointer;
                 border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                button {
+                    span {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
 
                 &:hover {
                     background-color: $hyweb-lighblue;
@@ -54,7 +68,17 @@
                 }
 
             }
+
+            button {
+                border-radius: 50%;
+                width: 33px;
+                height: 33px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
+
     }
 
     .l-main-content-item {

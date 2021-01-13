@@ -47,10 +47,14 @@
                 <div class="">我的工時紀錄</div>
               </div>
               <div class="c-sidebar-content__list__content">
-                <div class="c-sidebar-content__list__item menuItem-is-active">
-                  填寫每日工時
-                </div>
-                <div class="c-sidebar-content__list__item">檢視計畫工時</div>
+                <a href="page_1.0.html" class="c-sidebar-content__list__item"
+                  >填寫每日工時
+                </a>
+                <a
+                  href="page_2.0.html"
+                  class="c-sidebar-content__list__item menuItem-is-active"
+                  >檢視計畫工時
+                </a>
               </div>
             </div>
             <div class="c-sidebar-content__list">
@@ -70,8 +74,12 @@
                 <div class="">我的計畫管理</div>
               </div>
               <div class="c-sidebar-content__list__content">
-                <div class="c-sidebar-content__list__item">常用計畫成員</div>
-                <div class="c-sidebar-content__list__item">計畫總覽</div>
+                <a href="page_4.0.html" class="c-sidebar-content__list__item"
+                  >常用計畫成員
+                </a>
+                <a href="page_10.0.html" class="c-sidebar-content__list__item"
+                  >計畫總覽
+                </a>
               </div>
             </div>
             <div class="c-sidebar-content__list">
@@ -91,10 +99,18 @@
                 <div class="">統計報表</div>
               </div>
               <div class="c-sidebar-content__list__content">
-                <div class="c-sidebar-content__list__item">計畫統計</div>
-                <div class="c-sidebar-content__list__item">警示計畫</div>
-                <div class="c-sidebar-content__list__item">人員統計</div>
-                <div class="c-sidebar-content__list__item">財務統計總覽</div>
+                <a href="page_15.a.0.html" class="c-sidebar-content__list__item"
+                  >計畫統計
+                </a>
+                <a href="page_26.a.0.html" class="c-sidebar-content__list__item"
+                  >警示計畫
+                </a>
+                <a href="page_27.a.0.html" class="c-sidebar-content__list__item"
+                  >人員統計
+                </a>
+                <a href="page_36.0.html" class="c-sidebar-content__list__item"
+                  >財務統計總覽
+                </a>
               </div>
             </div>
             <div class="c-sidebar-content__list">
@@ -114,9 +130,9 @@
                 <div class="">系統管理</div>
               </div>
               <div class="c-sidebar-content__list__content">
-                <div class="c-sidebar-content__list__item">休假日維護</div>
-                <div class="c-sidebar-content__list__item">關帳日期維護</div>
-                <div class="c-sidebar-content__list__item">工作類型維護</div>
+                <a href="page_39.0.html" class="c-sidebar-content__list__item"
+                  >系統維護
+                </a>
               </div>
             </div>
           </div>
@@ -145,10 +161,12 @@
         </div>
         <div id="todo">
           <div class="l-main-tabs">
-            <a class="l-main-tabs__item modal-trigger" href="#execute">
-              <img src="img/o-person.svg" alt="" />
-              <div class="">執行部門</div>
-            </a>
+            <button class="waves-effect waves-blue">
+              <a class="l-main-tabs__item modal-trigger" href="#execute">
+                <img src="img/o-person.svg" alt="" />
+                <div class="">執行部門</div>
+              </a>
+            </button>
           </div>
           <div
             class="l-main-content l-main-changeStyle l-main-have-nav-height l-main-list-width"
@@ -191,9 +209,11 @@
       </div>
     </div>
     <!-- 視窗一 safe modal -->
-    <div id="execute" class="c-modal-alert modal">
-      <div class="c-modal-btnList">
-        <img class="modal-close" src="img/o-cross.svg" alt="" />
+    <div id="execute" class="c-modal-alert modal c-modal-select">
+      <div class="c-modal-btnList ">
+        <button type="button">
+          <img class="modal-close" src="img/o-cross.svg" alt="" />
+        </button> 
       </div>
       <div class="c-modal-alert__content">
         <div class="c-search">

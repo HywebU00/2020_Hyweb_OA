@@ -6076,7 +6076,6 @@ select:focus {
 
 button:focus {
   outline: none;
-  background-color: #2ab7a9;
 }
 
 label {
@@ -9259,7 +9258,7 @@ body {
   padding-left: 0px;
 }
 
-.l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__item .c-writeHours-content__btnGroup div, .l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__select .c-writeHours-content__btnGroup div {
+.l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__item .c-writeHours-content__btnGroup button, .l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__select .c-writeHours-content__btnGroup button {
   margin: 0 0.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9275,10 +9274,10 @@ body {
   cursor: pointer;
 }
 
-.l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__item .c-writeHours-content__btnGroup div:hover, .l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__select .c-writeHours-content__btnGroup div:hover {
+.l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__item .c-writeHours-content__btnGroup button:hover, .l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__select .c-writeHours-content__btnGroup button:hover {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
-  background-color: #BAD4E5;
+  background-color: #E2F1FE;
 }
 
 .l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__select .col {
@@ -9311,8 +9310,27 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-top: -36px;
-  margin-bottom: 36px;
+  margin-top: -44px;
+  margin-bottom: 44px;
+}
+
+.l-main-tabs button {
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+}
+
+.l-main-tabs button img {
+  margin-right: 0.3rem;
+}
+
+.l-main-tabs .disabled {
+  cursor: default;
 }
 
 .l-main-tabs .l-main-tabs__item {
@@ -9323,11 +9341,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 1rem;
-}
-
-.l-main-tabs .l-main-tabs__item img {
-  margin-right: 0.3rem;
 }
 
 .l-main-content {
@@ -9434,6 +9447,10 @@ body {
   font-weight: 400;
 }
 
+.l-main-content .l-main-content-title .is-display-none, .l-main-content .l-main-content-data .is-display-none {
+  display: none;
+}
+
 .l-main-content .l-main-content-data {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9457,8 +9474,10 @@ body {
           align-items: center;
 }
 
-.l-main-content .l-main-content__title div {
+.l-main-content .l-main-content__title button {
   margin-left: 1.5rem;
+  border-radius: 40px;
+  padding: 0.2rem;
   font-size: 16px;
   font-weight: 400;
   display: -webkit-box;
@@ -9470,7 +9489,7 @@ body {
   cursor: pointer;
 }
 
-.l-main-content .l-main-content__title div img {
+.l-main-content .l-main-content__title button img {
   margin-right: 0.2rem;
 }
 
@@ -9592,6 +9611,25 @@ body {
           justify-content: flex-end;
 }
 
+.l-main-content .l-main-content__upload .row .s1 button {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-main-content .l-main-content__upload .row .s1 button img {
+  padding: 0;
+}
+
 .l-main-content .l-main-content__addMember {
   margin-bottom: 2rem;
   display: -webkit-box;
@@ -9708,6 +9746,25 @@ body {
   width: 210px;
 }
 
+.l-main-content .l-main-content__planlist .c-datePicker-day .c-datePicker__modal .c-datePicker__yearPicker button, .l-main-content .l-main-content__wbslist .c-datePicker-day .c-datePicker__modal .c-datePicker__yearPicker button, .l-main-content .l-main-content__workTypelist .c-datePicker-day .c-datePicker__modal .c-datePicker__yearPicker button, .l-main-content .l-main-content__statisticsPlan .c-datePicker-day .c-datePicker__modal .c-datePicker__yearPicker button, .l-main-content .l-main-content__planlist .c-datePicker-days .c-datePicker__modal .c-datePicker__yearPicker button, .l-main-content .l-main-content__wbslist .c-datePicker-days .c-datePicker__modal .c-datePicker__yearPicker button, .l-main-content .l-main-content__workTypelist .c-datePicker-days .c-datePicker__modal .c-datePicker__yearPicker button, .l-main-content .l-main-content__statisticsPlan .c-datePicker-days .c-datePicker__modal .c-datePicker__yearPicker button, .l-main-content .l-main-content__planlist .c-datePicker-months .c-datePicker__modal .c-datePicker__yearPicker button, .l-main-content .l-main-content__wbslist .c-datePicker-months .c-datePicker__modal .c-datePicker__yearPicker button, .l-main-content .l-main-content__workTypelist .c-datePicker-months .c-datePicker__modal .c-datePicker__yearPicker button, .l-main-content .l-main-content__statisticsPlan .c-datePicker-months .c-datePicker__modal .c-datePicker__yearPicker button {
+  height: 20px;
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-main-content .l-main-content__planlist .c-datePicker-day .c-datePicker__modal .c-datePicker__footer .o-btn-primary, .l-main-content .l-main-content__wbslist .c-datePicker-day .c-datePicker__modal .c-datePicker__footer .o-btn-primary, .l-main-content .l-main-content__workTypelist .c-datePicker-day .c-datePicker__modal .c-datePicker__footer .o-btn-primary, .l-main-content .l-main-content__statisticsPlan .c-datePicker-day .c-datePicker__modal .c-datePicker__footer .o-btn-primary, .l-main-content .l-main-content__planlist .c-datePicker-days .c-datePicker__modal .c-datePicker__footer .o-btn-primary, .l-main-content .l-main-content__wbslist .c-datePicker-days .c-datePicker__modal .c-datePicker__footer .o-btn-primary, .l-main-content .l-main-content__workTypelist .c-datePicker-days .c-datePicker__modal .c-datePicker__footer .o-btn-primary, .l-main-content .l-main-content__statisticsPlan .c-datePicker-days .c-datePicker__modal .c-datePicker__footer .o-btn-primary, .l-main-content .l-main-content__planlist .c-datePicker-months .c-datePicker__modal .c-datePicker__footer .o-btn-primary, .l-main-content .l-main-content__wbslist .c-datePicker-months .c-datePicker__modal .c-datePicker__footer .o-btn-primary, .l-main-content .l-main-content__workTypelist .c-datePicker-months .c-datePicker__modal .c-datePicker__footer .o-btn-primary, .l-main-content .l-main-content__statisticsPlan .c-datePicker-months .c-datePicker__modal .c-datePicker__footer .o-btn-primary {
+  height: 32px;
+  padding: 0 20px;
+}
+
 .l-main-content .l-main-content__wbslist, .l-main-content .l-main-content__workTypelist {
   overflow: scroll;
   display: -webkit-box;
@@ -9760,6 +9817,20 @@ body {
           justify-content: center;
 }
 
+.l-main-content .l-main-content__wbslist .table-thead .row .num-position button, .l-main-content .l-main-content__workTypelist .table-thead .row .num-position button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 .l-main-content .l-main-content__wbslist .table-body, .l-main-content .l-main-content__workTypelist .table-body {
   height: calc(100vh - 277px);
   overflow: scroll;
@@ -9797,6 +9868,29 @@ body {
 
 .l-main-content .l-main-content__wbslist .table-body .col span, .l-main-content .l-main-content__workTypelist .table-body .col span {
   color: #042340;
+}
+
+.l-main-content .l-main-content__wbslist .table-body .col .c-datePicker-days .c-datePicker__modal button, .l-main-content .l-main-content__workTypelist .table-body .col .c-datePicker-days .c-datePicker__modal button, .l-main-content .l-main-content__wbslist .table-body .col .c-datePicker-months .c-datePicker__modal button, .l-main-content .l-main-content__workTypelist .table-body .col .c-datePicker-months .c-datePicker__modal button {
+  padding: 0 20px;
+}
+
+.l-main-content .l-main-content__wbslist .table-body .col .c-datePicker-days .c-datePicker__modal .c-datePicker__yearPicker button, .l-main-content .l-main-content__workTypelist .table-body .col .c-datePicker-days .c-datePicker__modal .c-datePicker__yearPicker button, .l-main-content .l-main-content__wbslist .table-body .col .c-datePicker-months .c-datePicker__modal .c-datePicker__yearPicker button, .l-main-content .l-main-content__workTypelist .table-body .col .c-datePicker-months .c-datePicker__modal .c-datePicker__yearPicker button {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-main-content .l-main-content__wbslist .table-body .col .c-dropdown-member button, .l-main-content .l-main-content__workTypelist .table-body .col .c-dropdown-member button {
+  padding: 0 20px;
 }
 
 .l-main-content .l-main-content__wbslist .table-body .num-position, .l-main-content .l-main-content__workTypelist .table-body .num-position {
@@ -9967,6 +10061,20 @@ body {
           justify-content: center;
 }
 
+.l-main-content .l-main-content__workTypelist .table-thead .row .col button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 .l-main-content .l-main-content__workTypelist .table-body .lp {
   padding-left: 24px;
 }
@@ -10092,6 +10200,15 @@ body {
           align-items: center;
 }
 
+.l-main-content-table .table-body .table-body-item .table-body-item__member button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .l-main-content-table .table-body .table-body-item .table-body-item__member .table-body-item__member__name {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -10128,13 +10245,21 @@ body {
           align-items: center;
 }
 
-.l-main-content-table .table-body .justify-content-between {
+.l-main-content-table .table-body .row button {
+  padding: 0.5rem 0.5rem;
+  border-radius: 40px;
+}
+
+.l-main-content-table .table-body .deleteBtn-position {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .l-main-content-table .table-body .delete-icon {
@@ -10359,6 +10484,12 @@ body {
   z-index: 98;
 }
 
+.c-submenu-btn:hover {
+  background-color: #fff;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) -2px 0px 2px 0px;
+          box-shadow: rgba(60, 64, 67, 0.3) -2px 0px 2px 0px;
+}
+
 .c-submenu-content {
   width: 251px;
   height: 100vh;
@@ -10407,12 +10538,15 @@ body {
           align-items: center;
 }
 
-.c-submenu-content__calendar .calendar-wrapper .calendar_btn div {
+.c-submenu-content__calendar .calendar-wrapper .calendar_btn button {
   height: 20px;
   width: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10520,16 +10654,24 @@ body {
 
 .c-sidebar-content__list__item {
   padding: 5% 0 5% 27%;
-  color: #fff;
+  display: block;
   font-weight: 400;
   border-radius: 0 25px 25px 0;
   margin-bottom: 1.5%;
   font-size: 14px;
   cursor: pointer;
+  color: #fff;
 }
 
 .c-sidebar-content__list__item:hover {
   color: #1febba;
+}
+
+.submenu__open .c-submenu-btn img {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .submenu__open .c-submenu-content {
@@ -10709,6 +10851,9 @@ body {
   font-size: 14px;
   margin-top: 10px;
   color: #8495A4;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .c-card-planClosed .c-card__userInformation {
@@ -11104,7 +11249,7 @@ body {
   line-height: 1.6rem;
 }
 
-.c-card-lablePerson .c-card-lablePerson-item .c-card-lablePerson-item__btn {
+.c-card-lablePerson .c-card-lablePerson-item .c-card-lablePerson-item__btn button {
   height: 33px;
   width: 33px;
   text-align: center;
@@ -11336,6 +11481,15 @@ body {
   cursor: pointer;
 }
 
+.c-toast-uploadSuccess .c-toast-header button, .c-toast-uploadFailure .c-toast-header button {
+  padding: 0;
+}
+
+.c-toast-uploadSuccess .c-toast-header button img, .c-toast-uploadFailure .c-toast-header button img {
+  width: 25px;
+  height: 25px;
+}
+
 .c-toast-uploadSuccess .c-toast-body, .c-toast-uploadFailure .c-toast-body {
   padding: 1rem;
   background-color: #fff;
@@ -11523,6 +11677,17 @@ body {
           align-items: center;
 }
 
+.c-general .c-general__img button {
+  border-radius: 40px;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .c-general .c-general__img a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11683,6 +11848,14 @@ body {
   width: 100%;
 }
 
+.c-modal-alert .c-modal-alert__content .o-btn-secondary {
+  padding: 0 25px;
+}
+
+.c-modal-alert .c-modal-alert__content .o-btn-primary {
+  padding: 0 25px;
+}
+
 .c-modal-alert .modal-footer {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -11764,7 +11937,6 @@ body {
 
 .c-modal-chooseGroup .c-modal-content .c-modal-content__addMember .addMember-title a {
   font-weight: 400;
-  margin-left: 1.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11772,6 +11944,16 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #8495A4;
+}
+
+.c-modal-chooseGroup .c-modal-content .c-modal-content__addMember .addMember-title a img {
+  margin-right: 0.5rem;
+}
+
+.c-modal-chooseGroup .c-modal-content .c-modal-content__addMember .addMember-title button {
+  border-radius: 40px;
+  padding: 0.5rem;
+  margin-left: 1.2rem;
 }
 
 .c-modal-chooseGroup .c-modal-content .c-modal-content__addMember div {
@@ -11834,6 +12016,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.c-modal-addGroup .c-modal-btnList button, .c-modal-usuallyUseMember .c-modal-btnList button, .c-modal-sample .c-modal-btnList button {
+  border-radius: 40px;
+  padding: 0.5rem;
 }
 
 .c-modal-addGroup .c-modal-btnList a, .c-modal-usuallyUseMember .c-modal-btnList a, .c-modal-sample .c-modal-btnList a {
@@ -11916,7 +12103,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0.5rem 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.2rem 1rem;
   border-radius: 5px;
   color: #fff;
   margin: 0 0.25rem 0.5rem 0.25rem;
@@ -11927,15 +12117,25 @@ body {
 }
 
 .c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember-tag .chooseMember-tag__name, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember-tag .chooseMember-tag__name, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember-tag .chooseMember-tag__name {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
+}
+
+.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember-tag button, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember-tag button, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember-tag button {
+  padding: 0;
+  cursor: pointer;
+}
+
+.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember-tag button img, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember-tag button img, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember-tag button img {
+  width: 25px;
+  height: 25px;
 }
 
 .c-modal-addGroup .c-modal-content .c-modal-content__memberList, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList, .c-modal-sample .c-modal-content .c-modal-content__memberList {
-  padding-left: 0.75rem;
+  padding: 0 0.75rem;
 }
 
 .c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__title, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__title, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__title {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   color: #8495A4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12672,6 +12872,10 @@ body {
   margin-top: 0.5rem;
 }
 
+.c-datePicker .c-datePicker__modal .c-datePicker__yearPicker img, .c-datePicker-day .c-datePicker__modal .c-datePicker__yearPicker img, .c-datePicker-days .c-datePicker__modal .c-datePicker__yearPicker img, .c-datePicker-months .c-datePicker__modal .c-datePicker__yearPicker img, .c-datePicker-month .c-datePicker__modal .c-datePicker__yearPicker img {
+  cursor: pointer;
+}
+
 .c-datePicker .c-datePicker__modal .c-datePicker__yearPicker div, .c-datePicker-day .c-datePicker__modal .c-datePicker__yearPicker div, .c-datePicker-days .c-datePicker__modal .c-datePicker__yearPicker div, .c-datePicker-months .c-datePicker__modal .c-datePicker__yearPicker div, .c-datePicker-month .c-datePicker__modal .c-datePicker__yearPicker div {
   font-family: "Baloo 2", cursive, "Noto Sans TC";
   font-size: 16px;
@@ -12835,6 +13039,21 @@ body {
 .c-datePicker-month .c-datePicker__modal .c-datePicker__yearPicker div {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: bolder;
+}
+
+.c-datePicker-month .c-datePicker__modal .c-datePicker__yearPicker button {
+  height: 20px;
+  width: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
 }
 
 .c-datePicker-month .c-datePicker__footer .o-btn-primary {
@@ -13344,6 +13563,7 @@ body {
 .o-btn-secondary {
   background: #E2F1FE;
   color: #1E4160;
+  padding: 0;
 }
 
 .o-btn-secondary:hover {
@@ -13725,12 +13945,38 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .l-main-content .l-main-content-list div .l-main-content-list__img {
+  height: 33px;
+  width: 33px;
   padding: 0.2rem;
   cursor: pointer;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-main-content .l-main-content-list div .l-main-content-list__img button span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .l-main-content .l-main-content-list div .l-main-content-list__img:hover {
@@ -13754,6 +14000,21 @@ body {
 
 .l-main-content .l-main-content-list div .c-popover__content::after {
   left: 93%;
+}
+
+.l-main-content .l-main-content-list div button {
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .l-main-content .l-main-content-item {
@@ -13953,7 +14214,14 @@ body {
 }
 
 #todo .l-main-tabs {
-  margin-bottom: 12px;
+  margin-bottom: 5px;
+}
+
+#todo .c-datePicker__modal .c-datePicker__yearPicker button {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border-radius: 50%;
 }
 
 #todo .c-card-planReport, #todo .c-card-planReport-danger, #todo .c-card-alertPlan {
@@ -14233,7 +14501,7 @@ body {
 }
 
 #complete .l-main-tabs {
-  margin-bottom: 12px;
+  margin-bottom: 5px;
 }
 
 #complete .l-main-content-item__listTitle {
@@ -14430,7 +14698,11 @@ body {
 }
 
 #membertime .l-main-tabs {
-  margin-bottom: 12px;
+  margin-bottom: 5px;
+}
+
+#membertime .c-datePicker__modal .c-datePicker__yearPicker button {
+  border-radius: 50%;
 }
 
 .l-main-content .c-card-manhourSofar, .l-main-content .c-card-manhourSearch, .l-main-content .c-card-percent, .l-main-content .c-card-percentCheck, .l-main-content .c-card-planPerson, .l-main-content .c-card-planClosed, .l-main-content .c-card-planHotkey, .l-main-content .c-card-planReport, .l-main-content .c-card-planReport-danger, .l-main-content .c-card-alertPlan, .l-main-content .c-card-department {
@@ -14441,7 +14713,7 @@ body {
   font-size: 18px;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: bolder;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .l-main-content .l-main-content-text .l-main-content-text__ListTitle {
@@ -14564,7 +14836,11 @@ body {
 }
 
 #memberstime .l-main-tabs, #departmenttime .l-main-tabs, #universalPlan .l-main-tabs {
-  margin-bottom: 12px;
+  margin-bottom: 5px;
+}
+
+#memberstime .c-datePicker__modal .c-datePicker__yearPicker button, #departmenttime .c-datePicker__modal .c-datePicker__yearPicker button, #universalPlan .c-datePicker__modal .c-datePicker__yearPicker button {
+  border-radius: 50%;
 }
 
 #memberstime .change-card-to-list .c-card-manhourSearch__userName, #departmenttime .change-card-to-list .c-card-manhourSearch__userName, #universalPlan .change-card-to-list .c-card-manhourSearch__userName {
@@ -14604,7 +14880,11 @@ body {
 }
 
 #departmenttime .l-main-tabs {
-  margin-bottom: 12px;
+  margin-bottom: 5px;
+}
+
+#departmenttime .c-datePicker__modal .c-datePicker__yearPicker button {
+  border-radius: 50%;
 }
 
 #departmenttime .change-card-to-list .c-card-manhourSearch__userName {
@@ -14644,7 +14924,11 @@ body {
 }
 
 #supporttime .l-main-tabs {
-  margin-bottom: 12px;
+  margin-bottom: 5px;
+}
+
+#supporttime .c-datePicker__modal .c-datePicker__yearPicker button {
+  border-radius: 50%;
 }
 
 #supporttime .change-card-to-list .l-main-content-item .c-card-department h2 {
@@ -14694,7 +14978,11 @@ body {
 }
 
 #notReachedtime .l-main-tabs {
-  margin-bottom: 12px;
+  margin-bottom: 5px;
+}
+
+#notReachedtime .c-datePicker__modal .c-datePicker__yearPicker button {
+  border-radius: 50%;
 }
 
 #notReachedtime .change-card-to-list .c-card-percent__userName {

@@ -4,10 +4,6 @@
         margin-top:0;
     }
     .l-main-content-text{
-        // div{
-        //     font-weight: bolder;
-        //     font-size: $font-size-l;
-        // }
         .l-main-content-text__inputText{
             margin-left: 1.8rem;
             font-weight: 400;
@@ -21,7 +17,17 @@
 #todo{
     
     .l-main-tabs{
-        margin-bottom: 12px;
+        margin-bottom: 5px;
+    }
+    .c-datePicker__modal{
+        .c-datePicker__yearPicker{
+            button{
+                width: 20px;
+                height: 20px;
+                padding: 0;
+                border-radius: 50%;
+            }
+        }
     }
     .c-card-planReport{
         min-width: 879px;
@@ -278,7 +284,7 @@
 }
 #complete {
     .l-main-tabs {
-        margin-bottom: 12px;
+        margin-bottom: 5px;
     }
     
     .l-main-content-item__listTitle{

@@ -63,7 +63,7 @@ for (let r = 0; r < l_Main_Content.length; r++) {
       l_Main_ChangeStyle[r].classList.add("change-card-to-list");
       //修改icon樣式
       o_list[r].style.display = "none";
-      o_card[r].style.display = "inline";
+      o_card[r].style.display = "flex";
       //append 中文及英文姓名
       if (cardChineseName != null) {
         addUserName();
@@ -80,7 +80,7 @@ for (let r = 0; r < l_Main_Content.length; r++) {
     o_card[r].addEventListener("click", function () {
       l_Main_ChangeStyle[r].classList.remove("change-card-to-list");
       o_card[r].style.display = "none";
-      o_list[r].style.display = "inline";
+      o_list[r].style.display = "flex";
       //remove 中文及英文姓名
       if (appendUserName != null) {
         removeAppendName();

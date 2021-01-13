@@ -31,58 +31,106 @@
           <div class="c-sidebar-content__list">
             <div class="c-sidebar-content__list__title menuParent-is-active">
               <div class="list__title__icon icon-is-active">
-                <img class="list__title__icon__default" src="img/o-clock.svg" alt="" />
-                <img class="list__title__icon__active" src="img/o-clock-green.svg" alt="" />
+                <img
+                  class="list__title__icon__default"
+                  src="img/o-clock.svg"
+                  alt=""
+                />
+                <img
+                  class="list__title__icon__active"
+                  src="img/o-clock-green.svg"
+                  alt=""
+                />
               </div>
               <div class="">我的工時紀錄</div>
             </div>
             <div class="c-sidebar-content__list__content">
-              <div class="c-sidebar-content__list__item menuItem-is-active">
-                填寫每日工時
-              </div>
-              <div class="c-sidebar-content__list__item">檢視計畫工時</div>
+              <a href="page_1.0.html" class="c-sidebar-content__list__item"
+                >填寫每日工時
+              </a>
+              <a
+                href="page_2.0.html"
+                class="c-sidebar-content__list__item menuItem-is-active"
+                >檢視計畫工時
+              </a>
             </div>
           </div>
           <div class="c-sidebar-content__list">
             <div class="c-sidebar-content__list__title">
               <div class="list__title__icon">
-                <img class="list__title__icon__default" src="img/o-plan.svg" alt="" />
-                <img class="list__title__icon__active" src="img/o-plan-green.svg" alt="" />
+                <img
+                  class="list__title__icon__default"
+                  src="img/o-plan.svg"
+                  alt=""
+                />
+                <img
+                  class="list__title__icon__active"
+                  src="img/o-plan-green.svg"
+                  alt=""
+                />
               </div>
               <div class="">我的計畫管理</div>
             </div>
             <div class="c-sidebar-content__list__content">
-              <div class="c-sidebar-content__list__item">常用計畫成員</div>
-              <div class="c-sidebar-content__list__item">計畫總覽</div>
+              <a href="page_4.0.html" class="c-sidebar-content__list__item"
+                >常用計畫成員
+              </a>
+              <a href="page_10.0.html" class="c-sidebar-content__list__item"
+                >計畫總覽
+              </a>
             </div>
           </div>
           <div class="c-sidebar-content__list">
             <div class="c-sidebar-content__list__title">
               <div class="list__title__icon">
-                <img class="list__title__icon__default" src="img/o-report.svg" alt="" />
-                <img class="list__title__icon__active" src="img/o-report-green.svg" alt="" />
+                <img
+                  class="list__title__icon__default"
+                  src="img/o-report.svg"
+                  alt=""
+                />
+                <img
+                  class="list__title__icon__active"
+                  src="img/o-report-green.svg"
+                  alt=""
+                />
               </div>
               <div class="">統計報表</div>
             </div>
             <div class="c-sidebar-content__list__content">
-              <div class="c-sidebar-content__list__item">計畫統計</div>
-              <div class="c-sidebar-content__list__item">警示計畫</div>
-              <div class="c-sidebar-content__list__item">人員統計</div>
-              <div class="c-sidebar-content__list__item">財務統計總覽</div>
+              <a href="page_15.a.0.html" class="c-sidebar-content__list__item"
+                >計畫統計
+              </a>
+              <a href="page_26.a.0.html" class="c-sidebar-content__list__item"
+                >警示計畫
+              </a>
+              <a href="page_27.a.0.html" class="c-sidebar-content__list__item"
+                >人員統計
+              </a>
+              <a href="page_36.0.html" class="c-sidebar-content__list__item"
+                >財務統計總覽
+              </a>
             </div>
           </div>
           <div class="c-sidebar-content__list">
             <div class="c-sidebar-content__list__title">
               <div class="list__title__icon">
-                <img class="list__title__icon__default" src="img/o-management.svg" alt="" />
-                <img class="list__title__icon__active" src="img/o-management-green.svg" alt="" />
+                <img
+                  class="list__title__icon__default"
+                  src="img/o-management.svg"
+                  alt=""
+                />
+                <img
+                  class="list__title__icon__active"
+                  src="img/o-management-green.svg"
+                  alt=""
+                />
               </div>
               <div class="">系統管理</div>
             </div>
             <div class="c-sidebar-content__list__content">
-              <div class="c-sidebar-content__list__item">休假日維護</div>
-              <div class="c-sidebar-content__list__item">關帳日期維護</div>
-              <div class="c-sidebar-content__list__item">工作類型維護</div>
+              <a href="page_39.0.html" class="c-sidebar-content__list__item"
+                >系統維護
+              </a>
             </div>
           </div>
         </div>
@@ -135,14 +183,19 @@
       </div>
       <div id="memberstime">
         <div class="l-main-tabs">
-          <a class="l-main-tabs__item " href="#">
-            <img src="img/o-person-gray.svg" alt="" />
-            <div class="is-disabled">Ｍ00</div>
-          </a>
-          <a class="l-main-tabs__item modal-trigger" href="#">
-            <img src="img/o-export.svg" alt="" />
-            <div class="">匯出</div>
-          </a>
+          <button class="">
+            <a class="l-main-tabs__item " href="#">
+              <img src="img/o-person-gray.svg" alt="" />
+              <div class="is-disabled">Ｍ00</div>
+            </a>
+          </button>
+          <button class="waves-effect waves-blue">
+            <a class="l-main-tabs__item modal-trigger" href="#">
+              <img src="img/o-export.svg" alt="" />
+              <div class="">匯出</div>
+            </a>
+          </button>
+          
         </div>
         <div class="c-search">
           <div class="c-search-list">
@@ -479,14 +532,19 @@
       </div>
       <div id="departmenttime">
         <div class="l-main-tabs">
-          <a class="l-main-tabs__item " href="#">
-            <img src="img/o-person.svg" alt="" />
-            <div class="">Ｍ00</div>
-          </a>
-          <a class="l-main-tabs__item modal-trigger" href="#">
-            <img src="img/o-export.svg" alt="" />
-            <div class="">匯出</div>
-          </a>
+          <button class="waves-effect waves-blue">
+            <a class="l-main-tabs__item " href="#">
+              <img src="img/o-person.svg" alt="" />
+              <div class="">Ｍ00</div>
+            </a>
+          </button>
+          <button class="waves-effect waves-blue">
+            <a class="l-main-tabs__item modal-trigger" href="#">
+              <img src="img/o-export.svg" alt="" />
+              <div class="">匯出</div>
+            </a>
+          </button>
+          
         </div>
         <div class="c-search">
           <div class="c-search-list">
@@ -651,14 +709,19 @@
       </div>
       <div id="supporttime">
         <div class="l-main-tabs">
-          <a class="l-main-tabs__item " href="#">
-            <img src="img/o-person.svg" alt="" />
-            <div class="">U20</div>
-          </a>
-          <a class="l-main-tabs__item modal-trigger" href="#">
-            <img src="img/o-export.svg" alt="" />
-            <div class="">匯出</div>
-          </a>
+          <button class="waves-effect waves-blue">
+            <a class="l-main-tabs__item " href="#">
+              <img src="img/o-person.svg" alt="" />
+              <div class="">U20</div>
+            </a>
+          </button>
+          <button class="waves-effect waves-blue">
+            <a class="l-main-tabs__item modal-trigger" href="#">
+              <img src="img/o-export.svg" alt="" />
+              <div class="">匯出</div>
+            </a>
+          </button>
+          
         </div>
         <div class="c-search">
           <div class="c-search-list">
@@ -830,14 +893,18 @@
       </div>
       <div id="notReachedtime">
         <div class="l-main-tabs">
-          <a class="l-main-tabs__item modal-trigger" href="#">
-            <img src="img/o-email.svg" alt="" />
-            <div class="">發送通知</div>
-          </a>
-          <a class="l-main-tabs__item modal-trigger" href="#">
-            <img src="img/o-export.svg" alt="" />
-            <div class="">匯出</div>
-          </a>
+          <button class="waves-effect waves-blue">
+            <a class="l-main-tabs__item " href="#">
+              <img src="img/o-email.svg" alt="" />
+              <div>發送通知</div>
+            </a>
+          </button>
+          <button class="waves-effect waves-blue">
+            <a class="l-main-tabs__item modal-trigger" href="#">
+              <img src="img/o-export.svg" alt="" />
+              <div class="">匯出</div>
+            </a>
+          </button>         
         </div>
         <div class="c-search">
           <div class="c-search-list">

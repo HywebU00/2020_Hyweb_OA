@@ -232,7 +232,7 @@ body{
                     justify-content: center;
                     padding-left: 0px;
 
-                    div {
+                    button {
                         margin: 0 0.4rem;
                         display: flex;
                         justify-content: center;
@@ -243,7 +243,7 @@ body{
 
                         &:hover {
                             transition: all 0.8s;
-                            background-color: $sec2;
+                            background-color: $hyweb-lighblue;
                         }
                     }
                 }
@@ -279,20 +279,29 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-top: -36px;
-
-    .l-main-tabs__item {
+    margin-top: -44px;
+    button{
+        border-radius: 40px;
         display: flex;
-        color: $gray1;
         align-items: center;
-        margin-left: 1rem;
-
+        padding:0.5rem;
         img {
             margin-right: 0.3rem;
         }
     }
+    .disabled{
+        cursor: default; 
+    }
+    .l-main-tabs__item {
+        display: flex;
+        color: $gray1;
+        align-items: center;
+        // margin-left: 1rem;
 
-    margin-bottom: 36px;
+        
+    }
+
+    margin-bottom: 44px;
 }
 
 .l-main-content {
@@ -363,6 +372,9 @@ body{
             }
 
         }
+        .is-display-none{
+            display: none;
+        }
     }
 
     .l-main-content-data {
@@ -380,8 +392,10 @@ body{
         display: flex;
         align-items: center;
 
-        div {
+        button {
             margin-left: 1.5rem;
+            border-radius: 40px;
+            padding: 0.2rem;
             font-size: $p;
             font-weight: 400;
             display: flex;
@@ -493,6 +507,17 @@ body{
             }
             .s1{
                 justify-content: flex-end;
+                button{
+                    width: 33px;
+                    height: 33px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        padding: 0;
+                    }
+                }
             }
 
         }
@@ -609,10 +634,27 @@ body{
 
             .c-datePicker__modal {
 
-                //  width: 256px;
                 table {
                     width: 210px;
                 }
+                .c-datePicker__yearPicker{
+                     button{
+                    height: 20px;
+                    width: 20px; 
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                }
+               
+                .c-datePicker__footer{
+                    .o-btn-primary{                     
+                         height: 32px;
+                         padding: 0 20px;
+                     
+                     }
+                }
+                
             }
         }
 
@@ -649,6 +691,13 @@ body{
                 }
                 .num-position{
                     justify-content: center;
+                    button{
+                        justify-content: center;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 700;
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -666,7 +715,6 @@ body{
             }
 
             .col {
-                //display: flex;
                 margin: 0;
 
                 .c-popover-checkPoint {
@@ -679,6 +727,28 @@ body{
                 }
                 span{
                     color: $gray1;
+                }
+                .c-datePicker-days {
+                    .c-datePicker__modal{
+                        button{
+                            padding: 0 20px;
+                        } 
+                        .c-datePicker__yearPicker{
+                            button{
+                                width: 20px;
+                                height: 20px;
+                                padding: 0;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+                .c-dropdown-member{
+                    button{
+                        padding: 0 20px;
+                    }
                 }
                
             }
@@ -826,6 +896,13 @@ body{
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    button{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 700;
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -845,6 +922,7 @@ body{
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    
                 }
             }
         }
@@ -931,6 +1009,11 @@ body{
                     align-items: center;
 
                 }
+                button{
+                    display: flex;
+                    align-items: center;
+
+                }
 
                 .table-body-item__member__name {
                     @include db_ellipsisText;
@@ -959,11 +1042,16 @@ body{
             border-bottom: 1px solid $gray-blue;
             display: flex;
             align-items: center;
+            button{
+              padding:0.5rem 0.5rem;
+              border-radius: 40px;  
+            }
         }
 
-        .justify-content-between {
+        .deleteBtn-position {
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
 
         .delete-icon {
@@ -1076,7 +1164,7 @@ body{
 
 
             .menuItem-is-active {
-                color: $hyweb-blue;
+                color: $hyweb-blue;   
                 background: $sidebar-active-background;
 
 
@@ -1186,6 +1274,10 @@ body{
     text-align: center;
     box-shadow: rgba(60, 64, 67, 0.3) -2px 0px 2px 0px;
     z-index: 98;
+    &:hover{
+        background-color: #fff;
+        box-shadow: rgba(60, 64, 67, 0.3) -2px 0px 2px 0px;
+    }
 }
 
 .c-submenu-content {
@@ -1218,10 +1310,11 @@ body{
         }
 
         .calendar_btn {
-            div {
+            button {
                 height: 20px;
                 width: 20px;
                 justify-content: center;
+                align-items: center;
                 display: flex;
                 border-radius: 50%;
             }
@@ -1330,13 +1423,13 @@ body{
 
 .c-sidebar-content__list__item {
     padding: 5% 0 5% 27%;
-    color: #fff;
+    display: block;
     font-weight: 400;
     border-radius: 0 25px 25px 0;
     margin-bottom: 1.5%;
     font-size: $a;
     cursor: pointer;
-
+    color: #fff;
     &:hover {
         color: $hyweb-green;
     }
@@ -1346,6 +1439,13 @@ body{
 }
 
 .submenu__open {
+    .c-submenu-btn{
+        img{
+            transform: rotate(-180deg);
+            transition: 0.5s ease;
+        }
+        
+    }
     .c-submenu-content {
         transition: ease .5s;
         width: 0;

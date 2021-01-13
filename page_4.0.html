@@ -31,8 +31,8 @@
           </div>
           <div class="c-sidebar-content__listGroup">
             <div class="c-sidebar-content__list">
-              <div class="c-sidebar-content__list__title menuParent-is-active">
-                <div class="list__title__icon icon-is-active">
+              <div class="c-sidebar-content__list__title">
+                <div class="list__title__icon">
                   <img
                     class="list__title__icon__default"
                     src="img/o-clock.svg"
@@ -47,15 +47,17 @@
                 <div class="">我的工時紀錄</div>
               </div>
               <div class="c-sidebar-content__list__content">
-                <div class="c-sidebar-content__list__item menuItem-is-active">
-                  填寫每日工時
-                </div>
-                <div class="c-sidebar-content__list__item">檢視計畫工時</div>
+                <a href="page_1.0.html" class="c-sidebar-content__list__item"
+                  >填寫每日工時
+                </a>
+                <a href="page_2.0.html" class="c-sidebar-content__list__item"
+                  >檢視計畫工時
+                </a>
               </div>
             </div>
             <div class="c-sidebar-content__list">
-              <div class="c-sidebar-content__list__title">
-                <div class="list__title__icon">
+              <div class="c-sidebar-content__list__title menuParent-is-active">
+                <div class="list__title__icon icon-is-active">
                   <img
                     class="list__title__icon__default"
                     src="img/o-plan.svg"
@@ -70,8 +72,14 @@
                 <div class="">我的計畫管理</div>
               </div>
               <div class="c-sidebar-content__list__content">
-                <div class="c-sidebar-content__list__item">常用計畫成員</div>
-                <div class="c-sidebar-content__list__item">計畫總覽</div>
+                <a
+                  href="page_4.0.html"
+                  class="c-sidebar-content__list__item menuItem-is-active"
+                  >常用計畫成員
+                </a>
+                <a href="page_10.0.html" class="c-sidebar-content__list__item"
+                  >計畫總覽
+                </a>
               </div>
             </div>
             <div class="c-sidebar-content__list">
@@ -91,10 +99,18 @@
                 <div class="">統計報表</div>
               </div>
               <div class="c-sidebar-content__list__content">
-                <div class="c-sidebar-content__list__item">計畫統計</div>
-                <div class="c-sidebar-content__list__item">警示計畫</div>
-                <div class="c-sidebar-content__list__item">人員統計</div>
-                <div class="c-sidebar-content__list__item">財務統計總覽</div>
+                <a href="page_15.a.0.html" class="c-sidebar-content__list__item"
+                  >計畫統計
+                </a>
+                <a href="page_26.a.0.html" class="c-sidebar-content__list__item"
+                  >警示計畫
+                </a>
+                <a href="page_27.a.0.html" class="c-sidebar-content__list__item"
+                  >人員統計
+                </a>
+                <a href="page_36.0.html" class="c-sidebar-content__list__item"
+                  >財務統計總覽
+                </a>
               </div>
             </div>
             <div class="c-sidebar-content__list">
@@ -114,9 +130,9 @@
                 <div class="">系統管理</div>
               </div>
               <div class="c-sidebar-content__list__content">
-                <div class="c-sidebar-content__list__item">休假日維護</div>
-                <div class="c-sidebar-content__list__item">關帳日期維護</div>
-                <div class="c-sidebar-content__list__item">工作類型維護</div>
+                <a href="page_39.0.html" class="c-sidebar-content__list__item"
+                  >系統維護
+                </a>
               </div>
             </div>
           </div>
@@ -143,9 +159,11 @@
             <h3 class="">常用計畫成員</h3>
           </div>
           <div class="c-general__img">
-            <a class="modal-trigger" href="#addGroup">
-              <img src="img/o-plus.svg" alt="" /> 新增群組
-            </a>
+            <button class="waves-effect waves-blue">
+              <a class="modal-trigger" href="#addGroup">
+                <img src="img/o-plus.svg" alt="" /> 新增群組
+              </a>
+            </button>
           </div>
         </div>
         <div class="c-search">
@@ -184,7 +202,9 @@
     <!-- 視窗 -->
     <div id="addGroup" class="c-modal-chooseGroup modal">
       <div class="c-modal-closeBtn">
-        <img class="modal-close" src="img/o-cross.svg" alt="" />
+        <button type="button">
+          <img class="modal-close" src="img/o-cross.svg" alt="" />
+        </button>
       </div>
       <div class="modal-content c-modal-content">
         <div class="c-modal-content__input">
@@ -196,9 +216,11 @@
         <div class="c-modal-content__addMember">
           <div class="addMember-title">
             <div class="">群組成員</div>
-            <a href="#alert1" class="modal-trigger"
-              ><img src="img/o-plus.svg" alt="" /> 加入成員</a
-            >
+            <button type="button" class="waves-effect waves-blue">
+              <a class="modal-trigger" href="#alert1">
+                <img src="img/o-plus.svg" alt="" /> 加入成員
+              </a>
+            </button>
           </div>
           <div class="addMember-content"></div>
         </div>
@@ -210,7 +232,9 @@
     <!-- 視窗2 -->
     <div id="alert1" class="c-modal-addGroup modal">
       <div class="c-modal-closeBtn">
-        <img class="modal-close" src="img/o-cross.svg" alt="" />
+        <button type="button">
+          <img class="modal-close" src="img/o-cross.svg" alt="" />
+        </button>
       </div>
       <div class="c-modal-addGroup__content">
         <div class="c-modal-addGroup__content__item c-modal-content">

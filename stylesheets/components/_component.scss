@@ -135,6 +135,7 @@
         font-size: 14px;
         margin-top: $m;
         color: $gray3;
+        justify-content: flex-start;
     }
 }
 .c-card-planClosed{
@@ -496,12 +497,14 @@
             line-height: 1.6rem;
         }
         .c-card-lablePerson-item__btn{
+           button{
             height: 33px;
             width: 33px;
             text-align: center;
             padding: 0.1rem;
             border-radius: 50%;
             cursor: pointer;
+           }
         }
 
     }
@@ -682,7 +685,6 @@
 
 .c-toast-uploadSuccess {
     @extend .c-card;
-    //width: 30.83%;
     width: 370px;
     padding: 0;
     border-radius: $toast-radius;
@@ -698,7 +700,14 @@
         align-items: center;
         letter-spacing: 0.05em;
         img{
-cursor: pointer;
+        cursor: pointer;
+        }
+        button{
+            padding: 0;
+            img{
+                width: 25px;
+                height: 25px;
+            }
         }
     }
 
@@ -850,7 +859,13 @@ cursor: pointer;
 
     .c-general__img {
         display: flex;
-        align-items: center;
+        align-items: center;   
+        button{
+            border-radius: 40px;
+            padding: 0.5rem ;
+            display: flex;
+            align-items: center;   
+        }
 
         a {
             display: flex;
@@ -1003,6 +1018,12 @@ cursor: pointer;
         div {
             width: 100%;
         }
+        .o-btn-secondary{
+            padding: 0 25px;
+        }
+        .o-btn-primary{
+            padding: 0 25px;
+        }
     }
 
     .modal-footer {
@@ -1068,11 +1089,19 @@ cursor: pointer;
 
                 a {
                     font-weight: 400;
-                    margin-left: 1.2rem;
+                   
                     display: flex;
                     align-items: center;
                     color: $gray3;
+                    img{
+                        margin-right: 0.5rem;
+                    }
 
+                }
+                button{
+                    border-radius: 40px;
+                    padding:0.5rem;
+                    margin-left: 1.2rem;
                 }
             }
 
@@ -1114,7 +1143,6 @@ cursor: pointer;
    
     width: 80%;
     height: 85vh;
-    // min-height: 76vh;
     max-height: 85vh;
 
     .c-modal-closeBtn {
@@ -1127,6 +1155,11 @@ cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
+        button{
+          border-radius: 40px;  
+          padding: 0.5rem;
+        }
 
         a {
             display: flex;
@@ -1191,12 +1224,20 @@ cursor: pointer;
 
             .chooseMember-tag {
                 .chooseMember-tag__name {
-                    margin-right: 1.5rem;
+                    margin-right: 1rem;
                 }
-
+                button{
+                    padding: 0;
+                    cursor: pointer;
+                    img{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
                 display: flex;
                 justify-content: space-between;
-                padding:0.5rem 1rem;
+                align-items: center;
+                padding:0.2rem 1rem;
                 border-radius:$tag-radius;
                 color:#fff;
                 margin: 0 0.25rem 0.5rem 0.25rem;
@@ -1208,10 +1249,10 @@ cursor: pointer;
         }
 
         .c-modal-content__memberList {
-            padding-left: 0.75rem;
+            padding: 0 0.75rem;
 
             .memberList__title {
-                margin-bottom: 1rem;
+                margin: 1rem 0;
                 color: $gray3;
                 display: flex;
                 justify-content: space-between;
@@ -1965,7 +2006,9 @@ cursor: pointer;
             justify-content: space-between;
             align-items: center;
             margin-top: 0.5rem;
-
+            img{
+                cursor: pointer;
+            }
             div {
                 font-family: $english-font;
                 font-size: $p;
@@ -2149,6 +2192,15 @@ cursor: pointer;
             div {
                 font-family: $font-family;
                 font-weight: bolder;
+            }
+            button{
+                height: 20px;
+                width: 20px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                border-radius: 50%;
+                
             }
         }
     }
@@ -2697,6 +2749,7 @@ cursor: pointer;
     @extend .o-btn;
     background: $hyweb-lighblue;
     color: $gray2;
+    padding: 0;
 
     &:hover {
         background: $hyweb-lighblue;
