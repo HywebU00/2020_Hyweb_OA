@@ -24,17 +24,18 @@ $(document).ready(function () {
 //  accordion手風琴效果
 //+++++++++++++++++++++++++
 
-document.addEventListener("DOMContentLoaded", function () {
-  let elem = document.querySelectorAll(".collapsible");
-  var instance = M.Collapsible.init(elem, {
-    accordion: false,
-  });
-  $(".collapsible-btn").click(function () {
-    $(this).find(".vertical").toggleClass("open");
-    $(this).find(".horizontal").toggleClass("open");
-    //$(this).parent().parent().parent().addClass("is-accordion-active");
-  });
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   let elem = document.querySelectorAll(".collapsible");
+
+//   var instance = M.Collapsible.init(elem, {
+//     accordion: false,
+//   });
+//   $(".collapsible-btn").click(function (e) {
+//     $(this).find(".vertical").toggleClass("open");
+//     $(this).find(".horizontal").toggleClass("open");
+//     //$(this).parent().parent().parent().addClass("is-accordion-active");
+//   });
+// });
 
 //++++++++++++++++++
 //  星星樣式改變
@@ -108,14 +109,56 @@ for (let a = 0; a < pop_modal.length; a++) {
 //accordion 效果
 //++++++++++++++++++
 //點擊 accordion-header 底圖顏色變色
-const collapsible = document.querySelectorAll(".collapsible");
+const collapsible = document.querySelectorAll(".collapsible-header");
 collapsible.forEach(function (item) {
   item.addEventListener("click", function () {
-    let a = item.classList.contains("is-accordion-active");
-    if (a === false) {
-      item.classList.add("is-accordion-active");
+    let clickHeader = item.parentNode.parentNode.classList.contains(
+      "is-accordion-active"
+    );
+    let clickItem = item.parentNode.parentNode;
+    if (clickHeader === false) {
+      clickItem.classList.add("is-accordion-active");
     } else {
-      item.classList.remove("is-accordion-active");
+      clickItem.classList.remove("is-accordion-active");
+    }
+  });
+});
+
+//點擊 accordion-header 打開選單
+document.addEventListener("DOMContentLoaded", function () {
+  let elems = document.querySelectorAll(".collapsible");
+  let instances = M.Collapsible.init(elems, open());
+  let header = document.querySelectorAll(".collapsible-header");
+  //點擊 o-accordion_arrow 旋轉點擊icon
+  header.forEach((item, index) => {
+    item.addEventListener("click", function () {
+      this.classList.toggle("is-arrow-active");
+    });
+  });
+});
+
+//點擊 accordion-header 增加 c-accordion-addIcon 的圖示
+const accordionIcon = document.querySelectorAll(".c-accordion-addIcon");
+//console.log(accordionIcon);
+accordionIcon.forEach(function (item, index) {
+  item.addEventListener("click", function () {
+    if (this.classList.contains("is-accordion-active")) {
+      let div = document.createElement("div");
+      div.setAttribute("class", "collapsible-activeIcon");
+      let li = document.querySelectorAll(".c-accordion-addIcon li");
+      //獲取li裡的第一個children 增加icon
+      li[index].prepend(div);
+      //li[index].children[0].prepend(div);
+    } else {
+      //抓出li標籤下有的 collapsible-activeIcon的標籤 並檢查是否是第[0]個 並刪除
+      item.childNodes.forEach(function (item) {
+        if (
+          item.tagName === "LI" &&
+          item.childNodes[0].classList.contains("collapsible-activeIcon")
+        ) {
+          item.childNodes[0].remove();
+        }
+      });
     }
   });
 });
@@ -165,33 +208,77 @@ percentCheckInput.forEach((item) => {
 //switch-workTime 改變卡片顏色 效果
 //+++++++++++++++++++++++++++++++
 const switchBtn = document.querySelectorAll(".js-switch-workTime");
-const switchFooter = document.querySelectorAll(".l-main-content__switchFooter");
+const switchSubtext = document.querySelectorAll(
+  ".l-main-content__switchSubtext"
+);
 
 const switchText = document.querySelectorAll(".switch-text");
 for (let s = 0; s < switchBtn.length; s++) {
   switchBtn[s].addEventListener("click", function () {
-    let switchActive = switchFooter[s].classList.contains("is-switch-active");
+    let switchActive = switchSubtext[s].classList.contains("is-switch-active");
     if (switchActive === false) {
-      switchFooter[s].classList.add("is-switch-active");
-      switchFooter[s].innerHTML = `成員可填工時`;
+      switchSubtext[s].classList.add("is-switch-active");
+      switchSubtext[
+        s
+      ].innerHTML = `(目前：成員<span class="text-danger" >可</span> 填前月工時)`;
       switchText[s].innerHTML = `開啟`;
     } else {
-      switchFooter[s].classList.remove("is-switch-active");
-      switchFooter[s].innerHTML = `成員不可填工時`;
+      switchSubtext[s].classList.remove("is-switch-active");
+      switchSubtext[
+        s
+      ].innerHTML = `(目前：成員<span class="text-danger" >不可</span> 填前月工時)`;
       switchText[s].innerHTML = `關閉`;
     }
   });
 }
-// switchBtn.addEventListener("click", function () {
-//   let active = switchFooter.classList.contains("is-switch-active");
-//   let switchText = document.querySelector(".switch-text");
-//   if (active === false) {
-//     switchFooter.classList.add("is-switch-active");
-//     switchFooter.innerHTML = `成員可填工時`;
-//     switchText.innerHTML = `開啟`;
-//   } else {
-//     switchFooter.classList.remove("is-switch-active");
-//     switchFooter.innerHTML = `成員不可填工時`;
-//     switchText.innerHTML = `關閉`;
-//   }
-// });
+
+//+++++++++++++++++++++++++++++++
+// c-card-lablePerson 改變樣式
+//+++++++++++++++++++++++++++++++
+
+const cardLablePerson = document.querySelectorAll(
+  ".c-card-lablePerson__additem"
+);
+for (let a = 0; a < cardLablePerson.length; a++) {
+  cardLablePerson[a].addEventListener("click", function () {
+    console.log(this);
+    this.classList.toggle("is-active");
+  });
+}
+
+//+++++++++++++++++++++++++++++++
+// personAllCalendar  改變樣式
+//+++++++++++++++++++++++++++++++
+const CalendarBtn = document.querySelectorAll(".item__months__btn");
+CalendarBtn.forEach((item) => {
+  item.addEventListener("click", changeStyle);
+
+  //月份按鈕點擊更改顏色
+  function changeStyle() {
+    let activeBtn = document.querySelector(".is-month-active");
+    activeBtn.classList.remove("is-month-active");
+    item.classList.add("is-month-active");
+  }
+});
+
+//日期點擊更改顏色
+const CalendarBtn_date = document.querySelectorAll(".item__date");
+CalendarBtn_date.forEach((item) => {
+  item.addEventListener("click", changeDateStyle);
+  function changeDateStyle() {
+    let activeBtn = document.querySelector(".is-date-active");
+    activeBtn.classList.remove("is-date-active");
+    item.classList.add("is-date-active");
+  }
+});
+
+//專案點擊更改顏色
+const CalendarBtn_project = document.querySelectorAll(".item__projects__btn");
+CalendarBtn_project.forEach((item) => {
+  item.addEventListener("click", changeProjectStyle);
+  function changeProjectStyle() {
+    let activeBtn = document.querySelector(".is-project-active");
+    activeBtn.classList.remove("is-project-active");
+    item.classList.add("is-project-active");
+  }
+});

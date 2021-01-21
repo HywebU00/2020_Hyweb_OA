@@ -190,7 +190,7 @@ body{
     .c-writeHours {
         width: 100%;
         margin: 0 auto;
-        max-width: 1200px;
+        //max-width: 1200px;
         margin-top: 1.5rem;
         overflow: hidden;
         max-height: 80vh;
@@ -409,7 +409,7 @@ body{
     }
 
     .l-main-content__information {
-        background-color: $sec3;
+        background-color: $hyweb-lighblue;
         padding: 3rem;
         border-radius: $list-radius;
         font-size: $p;
@@ -669,7 +669,7 @@ body{
 
         .table-thead {
             position: sticky;
-            padding: 1.5rem 0 1.5rem 0;
+            padding: 1rem 0 1rem 0;
             flex-shrink: 0;
             box-sizing: border-box;
 
@@ -775,7 +775,7 @@ body{
             }
 
             .table-body__subtitle {
-                background-color: $sec3;
+                background-color: $after-blue;//$sec3;
             }
 
             .pl{
@@ -1342,6 +1342,7 @@ body{
         font-family: $font-family;
         font-weight: 700;
         color: $gray1;
+        cursor: pointer;
 
     }
 

@@ -11,7 +11,18 @@
     <link rel="stylesheet" href="stylesheets/all.css" />
     <title>page_32.0 月曆總覽視窗</title>
   </head>
-
+  <!-- +++++++++++ -->
+  <!--  注意事項    -->
+  <!--
+    1. 點擊月份按鈕(item__months__btn) 會增添 class“is-month-active” 改變樣式 (component.js--224)
+    2. 月曆中系統顯示 當下日期 會增添 class "is-today"
+    3. 點擊月份按鈕 會更改右邊視窗的資訊內容
+    4. 點擊日曆中的日期(item__date) 會增添 class "is-date-active" 改變樣式(component.js--232)
+    5. 點擊日曆中的日期 會出現 元件 accordion general(視窗出現位置會因點選的位置不同 而有不同位置）
+    6. 點擊專案按鈕(item__projects__btn) 會增添 class "is-project-active" 改變樣式(component.js--244)
+    7. 點擊專案按鈕 會更改右邊視窗的資訊內容
+  -->
+  <!-- +++++++++++ -->
   <body style="width: 1200px; margin: 0 auto; overflow-y: scroll">
     <h3
       style="
@@ -39,42 +50,44 @@
           </div>
           <div class="c-modal-content__sidebar__time">
             <div class="">區間支援工時<span>60</span></div>
-            <button class="o-btn-primary waves-effect waves-blue">匯出</button>
+            <button class="o-btn-primary">匯出</button>
           </div>
           <div class="c-modal-content__sidebar__months">
             <div class="sidebar__months__item">
               <div class="item__years">2020</div>
               <div class="item__months">
-                <div class="is-active">09月</div>
-                <div class="">10月</div>
-                <div class="">11月</div>
-                <div class="">12月</div>
+                <button class="item__months__btn is-month-active">9月</button>
+                <button class="item__months__btn">10月</button>
+                <button class="item__months__btn">11月</button>
+                <button class="item__months__btn">12月</button>
               </div>
             </div>
             <div class="sidebar__months__item">
               <div class="item__years">2021</div>
               <div class="item__months">
-                <div class="">09月</div>
-                <div class="">10月</div>
+                <button class="item__months__btn">9月</button>
+                <button class="item__months__btn">10月</button>
               </div>
             </div>
             <div class="sidebar__project__item">
               <div class="item__projectsTitle">計畫名稱</div>
               <div class="item__projects">
-                <div class="is-active">
+                <button class="item__projects__btn is-project-active">
                   <p>國立臺北科技大學-本校圖書館入口網建置案口網建置案</p>
-                </div>
-                <div class="">
+                </button>
+                <button class="item__projects__btn">
                   <p>國立臺灣戲曲學院-本校圖書館入口網建置案</p>
-                </div>
-                <div class=""><p>國立臺灣戲曲學院-學校圖書館查詢系統</p></div>
+                </button>
+                <button class="item__projects__btn">
+                  <p>國立臺灣戲曲學院-學校圖書館查詢系統</p>
+                </button>
               </div>
             </div>
           </div>
         </div>
         <div class="c-modal-content__calendar col s9">
           <div class="c-modal-content__calendar__btn">
-            <img src="img/o-cross.svg" alt="" />
+            <button type="button"><img src="img/o-cross.svg" alt="" /></button>
           </div>
           <div class="c-modal-content__list">
             <ul class="collapsible c-accordion-plan">
@@ -92,10 +105,9 @@
                       </div>
                       <div class="accordion-header__item__hour__num">12</div>
                     </div>
-                    <div class="o-accordion_plus collapsible-btn">
-                      <div class="plus-icon icon">
-                        <div class="horizontal"></div>
-                        <div class="vertical"></div>
+                    <div class="collapsible-btn">
+                      <div class="o-accordion_arrow">
+                        <div class="arrow-icon"></div>
                       </div>
                     </div>
                   </div>
@@ -140,10 +152,9 @@
                       </div>
                       <div class="accordion-header__item__hour__num">19</div>
                     </div>
-                    <div class="o-accordion_plus collapsible-btn">
-                      <div class="plus-icon icon">
-                        <div class="horizontal"></div>
-                        <div class="vertical"></div>
+                    <div class="collapsible-btn">
+                      <div class="o-accordion_arrow">
+                        <div class="arrow-icon"></div>
                       </div>
                     </div>
                   </div>
@@ -183,160 +194,6 @@
     >
       departmentCalendar 點擊效果
     </div>
-    <!-- 月曆點擊按鈕 -->
-    <a
-      class="c-modal-systemDialog__trigger modal-trigger"
-      href="#departmentCalendar"
-      >departmentCalendar</a
-    >
-    <!-- modal-personCalendar -->
-    <div id="departmentCalendar" class="modal c-modal-department">
-      <div class="c-modal-content row">
-        <div class="c-modal-content__sidebar col s3">
-          <div class="c-modal-content__sidebar__user">
-            <div class="user__department">M10</div>
-          </div>
-          <div class="c-modal-content__sidebar__time">
-            <div class="">區間支援工時<span>60</span></div>
-            <button class="o-btn-primary waves-effect waves-blue">匯出</button>
-          </div>
-          <div class="c-modal-content__sidebar__months">
-            <div class="sidebar__months__item">
-              <div class="item__years">2020</div>
-              <div class="item__months">
-                <div class="is-active">09月</div>
-                <div class="">10月</div>
-                <div class="">11月</div>
-                <div class="">12月</div>
-              </div>
-            </div>
-            <div class="sidebar__months__item">
-              <div class="item__years">2021</div>
-              <div class="item__months">
-                <div class="">09月</div>
-                <div class="">10月</div>
-              </div>
-            </div>
-            <div class="sidebar__project__item">
-              <div class="item__projectsTitle">計畫名稱</div>
-              <div class="item__projects">
-                <div class="is-active">
-                  <p>國立臺北科技大學-本校圖書館入口網建置案口網建置案</p>
-                </div>
-                <div class="">
-                  <p>國立臺灣戲曲學院-本校圖書館入口網建置案</p>
-                </div>
-                <div class=""><p>國立臺灣戲曲學院-學校圖書館查詢系統</p></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="c-modal-content__calendar col s9">
-          <div class="c-modal-content__calendar__btn">
-            <img class="modal-close" src="img/o-cross.svg" alt="" />
-          </div>
-          <div class="c-modal-content__list">
-            <ul class="collapsible c-accordion-plan">
-              <li>
-                <div class="collapsible-header accordion-header">
-                  <div class="accordion-header__item">
-                    <div class="header__item__departmentNum">U20</div>
-                    <div class="header__item__userNum">A9235</div>
-                    <div class="header__item__name">蘇紫瑜</div>
-                  </div>
-                  <div class="accordion-header__item">
-                    <div class="accordion-header__item__hour">
-                      <div class="accordion-header__item__hour__title">
-                        此月填入工時
-                      </div>
-                      <div class="accordion-header__item__hour__num">12</div>
-                    </div>
-                    <div class="o-accordion_plus collapsible-btn">
-                      <div class="plus-icon icon">
-                        <div class="horizontal"></div>
-                        <div class="vertical"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="collapsible-body accordion-body">
-                  <div class="row accordion-body__title">
-                    <div class="col s2">填寫日期</div>
-                    <div class="col s3">工作階段</div>
-                    <div class="col s3">工作內容</div>
-                    <div class="col s2">時數</div>
-                    <div class="col s2">備註</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s2">2020.09.15</div>
-                    <div class="col s3">網站介面規劃與設計</div>
-                    <div class="col s3">網站介面規劃與設計</div>
-                    <div class="col s2">4</div>
-                    <div class="col s2">5個樣板</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s2">2020.09.15</div>
-                    <div class="col s3">網站介面規劃與設計</div>
-                    <div class="col s3">網站介面規劃與設計</div>
-                    <div class="col s2">4</div>
-                    <div class="col s2">5個樣板</div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <ul class="collapsible c-accordion-plan">
-              <li>
-                <div class="collapsible-header accordion-header">
-                  <div class="accordion-header__item">
-                    <div class="header__item__departmentNum">U20</div>
-                    <div class="header__item__userNum">A9032</div>
-                    <div class="header__item__name">陳國華</div>
-                  </div>
-                  <div class="accordion-header__item">
-                    <div class="accordion-header__item__hour">
-                      <div class="accordion-header__item__hour__title">
-                        此月填入工時
-                      </div>
-                      <div class="accordion-header__item__hour__num">19</div>
-                    </div>
-                    <div class="o-accordion_plus collapsible-btn">
-                      <div class="plus-icon icon">
-                        <div class="horizontal"></div>
-                        <div class="vertical"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="collapsible-body accordion-body">
-                  <div class="row accordion-body__title">
-                    <div class="col s2">填寫日期</div>
-                    <div class="col s3">工作階段</div>
-                    <div class="col s3">工作內容</div>
-                    <div class="col s2">時數</div>
-                    <div class="col s2">備註</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s2">2020.09.15</div>
-                    <div class="col s3">網站介面規劃與設計</div>
-                    <div class="col s3">網站介面規劃與設計</div>
-                    <div class="col s2">4</div>
-                    <div class="col s2">5個樣板</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s2">2020.09.15</div>
-                    <div class="col s3">網站介面規劃與設計</div>
-                    <div class="col s3">網站介面規劃與設計</div>
-                    <div class="col s2">4</div>
-                    <div class="col s2">5個樣板</div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- accordion general -->
     <div
       class=""

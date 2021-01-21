@@ -2736,8 +2736,9 @@ var $jscomp$this = this;
         {
           key: "_handleCollapsibleClick",
           value: function _handleCollapsibleClick(e) {
+            var $header = $(e.target).closest(".collapsible-header");
             //var $header = $(e.target).closest(".collapsible-header");
-            var $header = $(e.target).closest(".collapsible-btn");
+            //var $header = $(e.target).closest(".collapsible-btn");
             if (e.target && $header.length) {
               var $collapsible = $header.closest(".collapsible");
               if ($collapsible[0] === this.el) {

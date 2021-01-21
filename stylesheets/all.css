@@ -2700,7 +2700,7 @@ a {
 }
 
 /* 2dp elevation modified*/
-.z-depth-1, nav, .card-panel, .card, .l-main-content__card, .l-main-content__switchCard, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
+.z-depth-1, nav, .card-panel, .card, .l-main-content__card, .l-main-content__dbcard, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
@@ -4748,7 +4748,7 @@ small {
   background-color: #fff;
 }
 
-.card, .l-main-content__card, .l-main-content__switchCard {
+.card, .l-main-content__card, .l-main-content__dbcard {
   position: relative;
   margin: 0.5rem 0 1rem 0;
   background-color: #fff;
@@ -4759,79 +4759,79 @@ small {
   border-radius: 2px;
 }
 
-.card .card-title, .l-main-content__card .card-title, .l-main-content__switchCard .card-title {
+.card .card-title, .l-main-content__card .card-title, .l-main-content__dbcard .card-title {
   font-size: 24px;
   font-weight: 300;
 }
 
-.card .card-title.activator, .l-main-content__card .card-title.activator, .l-main-content__switchCard .card-title.activator {
+.card .card-title.activator, .l-main-content__card .card-title.activator, .l-main-content__dbcard .card-title.activator {
   cursor: pointer;
 }
 
-.card.small, .small.l-main-content__card, .small.l-main-content__switchCard, .card.medium, .medium.l-main-content__card, .medium.l-main-content__switchCard, .card.large, .large.l-main-content__card, .large.l-main-content__switchCard {
+.card.small, .small.l-main-content__card, .small.l-main-content__dbcard, .card.medium, .medium.l-main-content__card, .medium.l-main-content__dbcard, .card.large, .large.l-main-content__card, .large.l-main-content__dbcard {
   position: relative;
 }
 
-.card.small .card-image, .small.l-main-content__card .card-image, .small.l-main-content__switchCard .card-image, .card.medium .card-image, .medium.l-main-content__card .card-image, .medium.l-main-content__switchCard .card-image, .card.large .card-image, .large.l-main-content__card .card-image, .large.l-main-content__switchCard .card-image {
+.card.small .card-image, .small.l-main-content__card .card-image, .small.l-main-content__dbcard .card-image, .card.medium .card-image, .medium.l-main-content__card .card-image, .medium.l-main-content__dbcard .card-image, .card.large .card-image, .large.l-main-content__card .card-image, .large.l-main-content__dbcard .card-image {
   max-height: 60%;
   overflow: hidden;
 }
 
-.card.small .card-image + .card-content, .small.l-main-content__card .card-image + .card-content, .small.l-main-content__switchCard .card-image + .card-content, .card.medium .card-image + .card-content, .medium.l-main-content__card .card-image + .card-content, .medium.l-main-content__switchCard .card-image + .card-content, .card.large .card-image + .card-content, .large.l-main-content__card .card-image + .card-content, .large.l-main-content__switchCard .card-image + .card-content {
+.card.small .card-image + .card-content, .small.l-main-content__card .card-image + .card-content, .small.l-main-content__dbcard .card-image + .card-content, .card.medium .card-image + .card-content, .medium.l-main-content__card .card-image + .card-content, .medium.l-main-content__dbcard .card-image + .card-content, .card.large .card-image + .card-content, .large.l-main-content__card .card-image + .card-content, .large.l-main-content__dbcard .card-image + .card-content {
   max-height: 40%;
 }
 
-.card.small .card-content, .small.l-main-content__card .card-content, .small.l-main-content__switchCard .card-content, .card.medium .card-content, .medium.l-main-content__card .card-content, .medium.l-main-content__switchCard .card-content, .card.large .card-content, .large.l-main-content__card .card-content, .large.l-main-content__switchCard .card-content {
+.card.small .card-content, .small.l-main-content__card .card-content, .small.l-main-content__dbcard .card-content, .card.medium .card-content, .medium.l-main-content__card .card-content, .medium.l-main-content__dbcard .card-content, .card.large .card-content, .large.l-main-content__card .card-content, .large.l-main-content__dbcard .card-content {
   max-height: 100%;
   overflow: hidden;
 }
 
-.card.small .card-action, .small.l-main-content__card .card-action, .small.l-main-content__switchCard .card-action, .card.medium .card-action, .medium.l-main-content__card .card-action, .medium.l-main-content__switchCard .card-action, .card.large .card-action, .large.l-main-content__card .card-action, .large.l-main-content__switchCard .card-action {
+.card.small .card-action, .small.l-main-content__card .card-action, .small.l-main-content__dbcard .card-action, .card.medium .card-action, .medium.l-main-content__card .card-action, .medium.l-main-content__dbcard .card-action, .card.large .card-action, .large.l-main-content__card .card-action, .large.l-main-content__dbcard .card-action {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
 }
 
-.card.small, .small.l-main-content__card, .small.l-main-content__switchCard {
+.card.small, .small.l-main-content__card, .small.l-main-content__dbcard {
   height: 300px;
 }
 
-.card.medium, .medium.l-main-content__card, .medium.l-main-content__switchCard {
+.card.medium, .medium.l-main-content__card, .medium.l-main-content__dbcard {
   height: 400px;
 }
 
-.card.large, .large.l-main-content__card, .large.l-main-content__switchCard {
+.card.large, .large.l-main-content__card, .large.l-main-content__dbcard {
   height: 500px;
 }
 
-.card.horizontal, .horizontal.l-main-content__card, .horizontal.l-main-content__switchCard {
+.card.horizontal, .horizontal.l-main-content__card, .horizontal.l-main-content__dbcard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.card.horizontal.small .card-image, .horizontal.small.l-main-content__card .card-image, .horizontal.small.l-main-content__switchCard .card-image, .card.horizontal.medium .card-image, .horizontal.medium.l-main-content__card .card-image, .horizontal.medium.l-main-content__switchCard .card-image, .card.horizontal.large .card-image, .horizontal.large.l-main-content__card .card-image, .horizontal.large.l-main-content__switchCard .card-image {
+.card.horizontal.small .card-image, .horizontal.small.l-main-content__card .card-image, .horizontal.small.l-main-content__dbcard .card-image, .card.horizontal.medium .card-image, .horizontal.medium.l-main-content__card .card-image, .horizontal.medium.l-main-content__dbcard .card-image, .card.horizontal.large .card-image, .horizontal.large.l-main-content__card .card-image, .horizontal.large.l-main-content__dbcard .card-image {
   height: 100%;
   max-height: none;
   overflow: visible;
 }
 
-.card.horizontal.small .card-image img, .horizontal.small.l-main-content__card .card-image img, .horizontal.small.l-main-content__switchCard .card-image img, .card.horizontal.medium .card-image img, .horizontal.medium.l-main-content__card .card-image img, .horizontal.medium.l-main-content__switchCard .card-image img, .card.horizontal.large .card-image img, .horizontal.large.l-main-content__card .card-image img, .horizontal.large.l-main-content__switchCard .card-image img {
+.card.horizontal.small .card-image img, .horizontal.small.l-main-content__card .card-image img, .horizontal.small.l-main-content__dbcard .card-image img, .card.horizontal.medium .card-image img, .horizontal.medium.l-main-content__card .card-image img, .horizontal.medium.l-main-content__dbcard .card-image img, .card.horizontal.large .card-image img, .horizontal.large.l-main-content__card .card-image img, .horizontal.large.l-main-content__dbcard .card-image img {
   height: 100%;
 }
 
-.card.horizontal .card-image, .horizontal.l-main-content__card .card-image, .horizontal.l-main-content__switchCard .card-image {
+.card.horizontal .card-image, .horizontal.l-main-content__card .card-image, .horizontal.l-main-content__dbcard .card-image {
   max-width: 50%;
 }
 
-.card.horizontal .card-image img, .horizontal.l-main-content__card .card-image img, .horizontal.l-main-content__switchCard .card-image img {
+.card.horizontal .card-image img, .horizontal.l-main-content__card .card-image img, .horizontal.l-main-content__dbcard .card-image img {
   border-radius: 2px 0 0 2px;
   max-width: 100%;
   width: auto;
 }
 
-.card.horizontal .card-stacked, .horizontal.l-main-content__card .card-stacked, .horizontal.l-main-content__switchCard .card-stacked {
+.card.horizontal .card-stacked, .horizontal.l-main-content__card .card-stacked, .horizontal.l-main-content__dbcard .card-stacked {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4845,26 +4845,26 @@ small {
   position: relative;
 }
 
-.card.horizontal .card-stacked .card-content, .horizontal.l-main-content__card .card-stacked .card-content, .horizontal.l-main-content__switchCard .card-stacked .card-content {
+.card.horizontal .card-stacked .card-content, .horizontal.l-main-content__card .card-stacked .card-content, .horizontal.l-main-content__dbcard .card-stacked .card-content {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.card.sticky-action .card-action, .sticky-action.l-main-content__card .card-action, .sticky-action.l-main-content__switchCard .card-action {
+.card.sticky-action .card-action, .sticky-action.l-main-content__card .card-action, .sticky-action.l-main-content__dbcard .card-action {
   z-index: 2;
 }
 
-.card.sticky-action .card-reveal, .sticky-action.l-main-content__card .card-reveal, .sticky-action.l-main-content__switchCard .card-reveal {
+.card.sticky-action .card-reveal, .sticky-action.l-main-content__card .card-reveal, .sticky-action.l-main-content__dbcard .card-reveal {
   z-index: 1;
   padding-bottom: 64px;
 }
 
-.card .card-image, .l-main-content__card .card-image, .l-main-content__switchCard .card-image {
+.card .card-image, .l-main-content__card .card-image, .l-main-content__dbcard .card-image {
   position: relative;
 }
 
-.card .card-image img, .l-main-content__card .card-image img, .l-main-content__switchCard .card-image img {
+.card .card-image img, .l-main-content__card .card-image img, .l-main-content__dbcard .card-image img {
   display: block;
   border-radius: 2px 2px 0 0;
   position: relative;
@@ -4875,7 +4875,7 @@ small {
   width: 100%;
 }
 
-.card .card-image .card-title, .l-main-content__card .card-image .card-title, .l-main-content__switchCard .card-image .card-title {
+.card .card-image .card-title, .l-main-content__card .card-image .card-title, .l-main-content__dbcard .card-image .card-title {
   color: #fff;
   position: absolute;
   bottom: 0;
@@ -4884,37 +4884,37 @@ small {
   padding: 24px;
 }
 
-.card .card-content, .l-main-content__card .card-content, .l-main-content__switchCard .card-content {
+.card .card-content, .l-main-content__card .card-content, .l-main-content__dbcard .card-content {
   padding: 24px;
   border-radius: 0 0 2px 2px;
 }
 
-.card .card-content p, .l-main-content__card .card-content p, .l-main-content__switchCard .card-content p {
+.card .card-content p, .l-main-content__card .card-content p, .l-main-content__dbcard .card-content p {
   margin: 0;
 }
 
-.card .card-content .card-title, .l-main-content__card .card-content .card-title, .l-main-content__switchCard .card-content .card-title {
+.card .card-content .card-title, .l-main-content__card .card-content .card-title, .l-main-content__dbcard .card-content .card-title {
   display: block;
   line-height: 32px;
   margin-bottom: 8px;
 }
 
-.card .card-content .card-title i, .l-main-content__card .card-content .card-title i, .l-main-content__switchCard .card-content .card-title i {
+.card .card-content .card-title i, .l-main-content__card .card-content .card-title i, .l-main-content__dbcard .card-content .card-title i {
   line-height: 32px;
 }
 
-.card .card-action, .l-main-content__card .card-action, .l-main-content__switchCard .card-action {
+.card .card-action, .l-main-content__card .card-action, .l-main-content__dbcard .card-action {
   background-color: inherit;
   border-top: 1px solid rgba(160, 160, 160, 0.2);
   position: relative;
   padding: 16px 24px;
 }
 
-.card .card-action:last-child, .l-main-content__card .card-action:last-child, .l-main-content__switchCard .card-action:last-child {
+.card .card-action:last-child, .l-main-content__card .card-action:last-child, .l-main-content__dbcard .card-action:last-child {
   border-radius: 0 0 2px 2px;
 }
 
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating), .l-main-content__card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating), .l-main-content__switchCard .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating), .l-main-content__card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating), .l-main-content__dbcard .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
   color: #ffab40;
   margin-right: 24px;
   -webkit-transition: color .3s ease;
@@ -4922,11 +4922,11 @@ small {
   text-transform: uppercase;
 }
 
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover, .l-main-content__card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover, .l-main-content__switchCard .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover, .l-main-content__card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover, .l-main-content__dbcard .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
   color: #ffd8a6;
 }
 
-.card .card-reveal, .l-main-content__card .card-reveal, .l-main-content__switchCard .card-reveal {
+.card .card-reveal, .l-main-content__card .card-reveal, .l-main-content__dbcard .card-reveal {
   padding: 24px;
   position: absolute;
   background-color: #fff;
@@ -4939,7 +4939,7 @@ small {
   display: none;
 }
 
-.card .card-reveal .card-title, .l-main-content__card .card-reveal .card-title, .l-main-content__switchCard .card-reveal .card-title {
+.card .card-reveal .card-title, .l-main-content__card .card-reveal .card-title, .l-main-content__dbcard .card-reveal .card-title {
   cursor: pointer;
   display: block;
 }
@@ -9204,7 +9204,6 @@ body {
 .l-main .c-writeHours {
   width: 100%;
   margin: 0 auto;
-  max-width: 1200px;
   margin-top: 1.5rem;
   overflow: hidden;
   max-height: 80vh;
@@ -9494,7 +9493,7 @@ body {
 }
 
 .l-main-content .l-main-content__information {
-  background-color: #F7FBFF;
+  background-color: #E2F1FE;
   padding: 3rem;
   border-radius: 10px;
   font-size: 16px;
@@ -9777,7 +9776,7 @@ body {
 .l-main-content .l-main-content__wbslist .table-thead, .l-main-content .l-main-content__workTypelist .table-thead {
   position: -webkit-sticky;
   position: sticky;
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 1rem 0 1rem 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-sizing: border-box;
@@ -9915,7 +9914,7 @@ body {
 }
 
 .l-main-content .l-main-content__wbslist .table-body .table-body__subtitle, .l-main-content .l-main-content__workTypelist .table-body .table-body__subtitle {
-  background-color: #F7FBFF;
+  background-color: #cfe3f5;
 }
 
 .l-main-content .l-main-content__wbslist .table-body .pl, .l-main-content .l-main-content__workTypelist .table-body .pl {
@@ -10580,6 +10579,7 @@ body {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
   color: #042340;
+  cursor: pointer;
 }
 
 .c-submenu-content__calendar td.not-current {
@@ -10821,6 +10821,22 @@ body {
   padding: 0;
   width: 21.5%;
   min-width: 240px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.c-card-planPerson:hover, .c-card-planClosed:hover, .c-card-planHotkey:hover, .c-card-planReport:hover, .c-card-planReport-danger:hover, .c-card-alertPlan:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: translateY(2px) translateX(2px);
+          transform: translateY(2px) translateX(2px);
+}
+
+.c-card-planPerson:active, .c-card-planClosed:active, .c-card-planHotkey:active, .c-card-planReport:active, .c-card-planReport-danger:active, .c-card-alertPlan:active {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: translateY(4px) translateX(4px);
+          transform: translateY(4px) translateX(4px);
 }
 
 .c-card-planPerson a, .c-card-planClosed a, .c-card-planHotkey a, .c-card-planReport a, .c-card-planReport-danger a, .c-card-alertPlan a {
@@ -10909,10 +10925,12 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  white-space: normal;
+  height: 1.5rem;
 }
 
 .c-card-planHotkey .c-card__development {
-  line-height: 26px;
+  line-height: 1.625rem;
   font-size: 16px;
 }
 
@@ -10937,9 +10955,11 @@ body {
 
 .c-card-planHotkey .c-card-planHotkey__btn {
   text-align: center;
+  width: 100%;
   background-color: #E2F1FE;
   padding: 10px 20px;
   color: #1E4160;
+  cursor: pointer;
   border-radius: 0 0 20px 20px;
 }
 
@@ -11218,6 +11238,7 @@ body {
 }
 
 .c-card-lablePerson {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11274,10 +11295,8 @@ body {
 }
 
 .c-card-lableGroup {
-  height: 63px;
+  cursor: pointer;
   width: 32%;
-  min-width: 230px;
-  padding: 10px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11286,6 +11305,21 @@ body {
           align-items: center;
   border-radius: 10px;
   margin: 0.2rem 0 0 0.2rem;
+  padding: 0;
+}
+
+.c-card-lableGroup a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  height: 63px;
+  min-width: 230px;
+  color: #042340;
 }
 
 .c-card-lableGroup .c-card-lableGroup__icon {
@@ -11337,6 +11371,19 @@ body {
   border: none;
 }
 
+.c-accordion-group li, .c-accordion-plan li, .c-accordion-general li {
+  position: relative;
+}
+
+.c-accordion-group .collapsible-activeIcon, .c-accordion-plan .collapsible-activeIcon, .c-accordion-general .collapsible-activeIcon {
+  position: absolute;
+  top: -0.8rem;
+  left: -0.8rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  background-image: url(../../img/o-activeIcon.svg);
+}
+
 .c-accordion-group .accordion-header, .c-accordion-plan .accordion-header, .c-accordion-general .accordion-header {
   font-size: 16px;
   line-height: 26px;
@@ -11384,6 +11431,8 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  height: 30px;
+  white-space: normal;
 }
 
 .c-accordion-group .accordion-body, .c-accordion-plan .accordion-body, .c-accordion-general .accordion-body {
@@ -11509,6 +11558,8 @@ body {
   padding: 1rem;
   background-color: #fff;
   border-radius: 0 0 10px 10px;
+  max-height: 15rem;
+  overflow-y: scroll;
 }
 
 .c-toast-uploadSuccess .c-toast-body .c-toast-body__item__title, .c-toast-uploadFailure .c-toast-body .c-toast-body__item__title {
@@ -11784,6 +11835,15 @@ body {
   font-size: 16px;
   padding-top: 30px;
   color: #1E4160;
+}
+
+.c-fileInput-add {
+  padding: 0;
+}
+
+.c-fileInput-add a {
+  width: 100%;
+  padding: 6rem 1.33rem;
 }
 
 .c-modal, .c-modal-systemDialog, .c-modal-alert, .c-modal-chooseGroup, .c-modal-addGroup, .c-modal-usuallyUseMember, .c-modal-sample {
@@ -12170,7 +12230,6 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 40vh;
   overflow: scroll;
 }
 
@@ -12239,15 +12298,15 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.c-modal-personAll .c-modal-content__sidebar__time, .c-modal-personCalendar .c-modal-content__sidebar__time, .c-modal-department .c-modal-content__sidebar__time {
+.c-modal-personAll .c-modal-content__sidebar__time, .c-modal-personCalendar .c-modal-content__sidebar__time, .c-modal-department .c-modal-content__sidebar__time, .c-modal-personAll .c-modal-content__sidebar__timearea, .c-modal-personCalendar .c-modal-content__sidebar__timearea, .c-modal-department .c-modal-content__sidebar__timearea {
   font-size: 16px;
 }
 
-.c-modal-personAll .c-modal-content__sidebar__time div, .c-modal-personCalendar .c-modal-content__sidebar__time div, .c-modal-department .c-modal-content__sidebar__time div {
+.c-modal-personAll .c-modal-content__sidebar__time div, .c-modal-personCalendar .c-modal-content__sidebar__time div, .c-modal-department .c-modal-content__sidebar__time div, .c-modal-personAll .c-modal-content__sidebar__timearea div, .c-modal-personCalendar .c-modal-content__sidebar__timearea div, .c-modal-department .c-modal-content__sidebar__timearea div {
   margin-bottom: 0.5rem;
 }
 
-.c-modal-personAll .c-modal-content__sidebar__time .o-btn-primary, .c-modal-personCalendar .c-modal-content__sidebar__time .o-btn-primary, .c-modal-department .c-modal-content__sidebar__time .o-btn-primary {
+.c-modal-personAll .c-modal-content__sidebar__time .o-btn-primary, .c-modal-personCalendar .c-modal-content__sidebar__time .o-btn-primary, .c-modal-department .c-modal-content__sidebar__time .o-btn-primary, .c-modal-personAll .c-modal-content__sidebar__timearea .o-btn-primary, .c-modal-personCalendar .c-modal-content__sidebar__timearea .o-btn-primary, .c-modal-department .c-modal-content__sidebar__timearea .o-btn-primary {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -12273,15 +12332,17 @@ body {
       flex-wrap: wrap;
 }
 
-.c-modal-personAll .c-modal-content__sidebar__months .sidebar__months__item .item__months div, .c-modal-personCalendar .c-modal-content__sidebar__months .sidebar__months__item .item__months div, .c-modal-department .c-modal-content__sidebar__months .sidebar__months__item .item__months div, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__months div, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projects div {
+.c-modal-personAll .c-modal-content__sidebar__months .sidebar__months__item .item__months button, .c-modal-personCalendar .c-modal-content__sidebar__months .sidebar__months__item .item__months button, .c-modal-department .c-modal-content__sidebar__months .sidebar__months__item .item__months button, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__months button, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projects button {
   padding: 0.5rem;
   margin: 0.2rem 0.5rem 0.5rem 0;
   white-space: nowrap;
   background: #E2F1FE;
   border-radius: 8px;
+  cursor: pointer;
+  width: 3rem;
 }
 
-.c-modal-personAll .c-modal-content__sidebar__months .sidebar__months__item .item__months .is-active, .c-modal-personCalendar .c-modal-content__sidebar__months .sidebar__months__item .item__months .is-active, .c-modal-department .c-modal-content__sidebar__months .sidebar__months__item .item__months .is-active, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__months .is-active, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projects .is-active {
+.c-modal-personAll .c-modal-content__sidebar__months .sidebar__months__item .item__months .is-month-active, .c-modal-personCalendar .c-modal-content__sidebar__months .sidebar__months__item .item__months .is-month-active, .c-modal-department .c-modal-content__sidebar__months .sidebar__months__item .item__months .is-month-active, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__months .is-month-active, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projects .is-month-active {
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
   background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
@@ -12397,19 +12458,26 @@ body {
   margin-bottom: 2rem;
 }
 
-.c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projects div {
+.c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projects button {
   white-space: normal;
+  width: auto;
   line-height: 1.5rem;
   padding: 0.8rem 0.5rem;
 }
 
-.c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projects div p {
+.c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projects button p {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   max-height: 45px;
+}
+
+.c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projects .is-project-active {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+  color: #fff;
 }
 
 .c-modal-usuallyUseMember, .c-modal-sample {
@@ -12452,6 +12520,11 @@ body {
   height: 100%;
   overflow: scroll;
   margin: 1rem 0 1rem 0;
+}
+
+.c-modal-usuallyUseMember .c-modal-content__item .c-accordion-group, .c-modal-sample .c-modal-content__item .c-accordion-group, .c-modal-usuallyUseMember .c-modal-content__item .c-accordion-plan, .c-modal-sample .c-modal-content__item .c-accordion-plan, .c-modal-usuallyUseMember .c-modal-content__item .c-accordion-general, .c-modal-sample .c-modal-content__item .c-accordion-general {
+  width: 90%;
+  margin: 1rem auto;
 }
 
 .c-modal-usuallyUseMember .c-modal-footer, .c-modal-sample .c-modal-footer {
@@ -13293,14 +13366,24 @@ body {
   background-color: #F7FBFF;
 }
 
+.c-writeHours-title .is-active .c-writeHours-title__tag {
+  background-color: #042340;
+  color: #fff;
+}
+
 .c-writeHours-title .is-today-tag {
   background-color: none;
+}
+
+.c-writeHours-title .is-today-tag .hours {
+  color: #0868BD;
 }
 
 .c-writeHours-title .is-today-tag::before {
   content: "";
   position: absolute;
-  background-color: #0156A2;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
   width: 100%;
   height: 10px;
   margin-left: -10%;
@@ -13311,6 +13394,7 @@ body {
   padding: 0 1.5%;
   padding-bottom: 0.8rem;
   color: #042340;
+  background-color: #cfe3f5;
   position: relative;
   width: 14.285714285714%;
   cursor: pointer;
@@ -13326,7 +13410,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 16px;
+  font-size: 18px;
   padding-top: 2rem;
   font-weight: 400;
   font-family: "Baloo 2", cursive, "Noto Sans TC";
@@ -13349,7 +13433,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  border-bottom: 1px solid #0156A2;
+  border-bottom: 1px solid #042340;
 }
 
 .c-writeHours-title__item .c-writeHours-title__item__hours .text {
@@ -13578,7 +13662,6 @@ body {
 .o-btn-secondary {
   background: #E2F1FE;
   color: #1E4160;
-  padding: 0;
 }
 
 .o-btn-secondary:hover {
@@ -13640,6 +13723,22 @@ body {
   opacity: 0;
 }
 
+.o-accordion_arrow .arrow-icon {
+  margin-right: 1.25rem;
+  height: 1.6rem;
+  width: 1.6rem;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  background-image: url(../img/o-arrowDown.svg);
+}
+
+.is-arrow-active .o-accordion_arrow .arrow-icon {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 .o-calendar .o-calendar__week__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13676,13 +13775,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 .o-calendar .o-calendar__week__item .item__date .item__date__num {
-  padding: 5% 4%;
-  margin: 5%;
+  padding: 0.25rem;
+  margin: 0.3rem;
   position: absolute;
   font-size: 16px;
+  width: 1.8rem;
+  height: 1.8rem;
+  text-align: center;
 }
 
 .o-calendar .o-calendar__week__item .item__date .item__date__time {
@@ -13702,7 +13805,7 @@ body {
   font-family: "Baloo 2", cursive, "Noto Sans TC";
 }
 
-.o-calendar .o-calendar__week__item .is-active {
+.o-calendar .o-calendar__week__item .is-date-active {
   background-color: #E2F1FE;
 }
 
@@ -13777,7 +13880,7 @@ body {
 .o-tag-danger {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #FB5B29;
   background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #FB5B29;
-  padding: 0.2rem 0.5rem;
+  padding: 0.08rem 0.5rem;
   margin-left: 0.8rem;
   font-family: "Baloo 2", cursive, "Noto Sans TC";
   color: #fff;
@@ -13932,6 +14035,70 @@ body {
   display: none;
 }
 
+.c-modal-content__sidebar__timearea {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.c-modal-content__sidebar__timearea .o-btn-primary {
+  border-radius: 10px;
+  margin: 0;
+  height: 2rem;
+  width: 11rem;
+  text-align: center;
+}
+
+.c-modal-content__highchart__title .c-card-chart {
+  border: 2px solid #042340;
+  border-radius: 10px;
+  width: 10rem;
+  margin-left: 2rem;
+}
+
+.c-modal-content__highchart__title .c-card-chart .c-card-chart__header {
+  background-color: #042340;
+  text-align: center;
+  padding: 0.5rem 0;
+  color: #fff;
+}
+
+.c-modal-content__highchart__title .c-card-chart .c-card-chart__body {
+  padding: 0.5rem;
+}
+
+.c-modal-content__highchart__title .c-card-chart .c-card-chart__body .chart__body__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.3rem;
+}
+
+.c-modal-content__highchart {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-top: -1.8rem;
+}
+
+.c-modal-content__highchart figure {
+  margin: 0;
+}
+
+.c-modal-content__highchart .highcharts-tip__title {
+  font-family: "Baloo 2", cursive, "Noto Sans TC";
+  font-weight: 500;
+}
+
+.c-modal-content__highchart .highcharts-button {
+  display: none;
+}
+
+.c-modal-content__highchart .highcharts-menu {
+  display: none;
+}
+
 .l-main-content .l-main-content-text div {
   font-size: 16px;
   font-family: "Noto Sans TC", "sans-serif";
@@ -14053,6 +14220,16 @@ body {
   max-width: 300px;
 }
 
+.l-main-content .l-main-content__upload .c-fileInput-upload, .l-main-content .l-main-content__upload .c-fileInput-add {
+  padding: 0;
+}
+
+.l-main-content .l-main-content__upload .c-fileInput-upload a, .l-main-content .l-main-content__upload .c-fileInput-add a {
+  width: 100%;
+  padding: 1.33rem;
+  height: 12rem;
+}
+
 .change-card-to-list .l-main-content-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14102,13 +14279,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
 }
 
 .change-card-to-list .l-main-content-item .c-card-planPerson, .change-card-to-list .l-main-content-item .c-card-planClosed, .change-card-to-list .l-main-content-item .c-card-planHotkey, .change-card-to-list .l-main-content-item .c-card-planReport, .change-card-to-list .l-main-content-item .c-card-planReport-danger, .change-card-to-list .l-main-content-item .c-card-alertPlan {
   width: 100%;
   margin: 0;
-  padding: 20px 0px 20px 3rem;
+  padding: 0;
   max-width: 2560px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14122,9 +14298,29 @@ body {
   border-bottom: 1px solid #BAD4E5;
 }
 
+.change-card-to-list .l-main-content-item .c-card-planPerson:hover, .change-card-to-list .l-main-content-item .c-card-planClosed:hover, .change-card-to-list .l-main-content-item .c-card-planHotkey:hover, .change-card-to-list .l-main-content-item .c-card-planReport:hover, .change-card-to-list .l-main-content-item .c-card-planReport-danger:hover, .change-card-to-list .l-main-content-item .c-card-alertPlan:hover {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
+}
+
+.change-card-to-list .l-main-content-item .c-card-planPerson:active, .change-card-to-list .l-main-content-item .c-card-planClosed:active, .change-card-to-list .l-main-content-item .c-card-planHotkey:active, .change-card-to-list .l-main-content-item .c-card-planReport:active, .change-card-to-list .l-main-content-item .c-card-planReport-danger:active, .change-card-to-list .l-main-content-item .c-card-alertPlan:active {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
+}
+
 .change-card-to-list .l-main-content-item .c-card-planPerson .c-card__tag, .change-card-to-list .l-main-content-item .c-card-planClosed .c-card__tag, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__tag, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__tag, .change-card-to-list .l-main-content-item .c-card-planReport-danger .c-card__tag, .change-card-to-list .l-main-content-item .c-card-alertPlan .c-card__tag {
   width: 20%;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .change-card-to-list .l-main-content-item .c-card-planPerson .c-card__tag span, .change-card-to-list .l-main-content-item .c-card-planClosed .c-card__tag span, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__tag span, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__tag span, .change-card-to-list .l-main-content-item .c-card-planReport-danger .c-card__tag span, .change-card-to-list .l-main-content-item .c-card-alertPlan .c-card__tag span {
@@ -14145,6 +14341,15 @@ body {
   text-overflow: ellipsis;
   max-height: 45px;
   max-height: 56px;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.change-card-to-list .l-main-content-item .c-card-planPerson a, .change-card-to-list .l-main-content-item .c-card-planClosed a, .change-card-to-list .l-main-content-item .c-card-planHotkey a, .change-card-to-list .l-main-content-item .c-card-planReport a, .change-card-to-list .l-main-content-item .c-card-planReport-danger a, .change-card-to-list .l-main-content-item .c-card-alertPlan a {
+  padding: 1.33rem 0rem 20px 1.33rem;
 }
 
 .change-card-to-list .l-main-content-item .c-card-planPerson .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-planClosed .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-planReport-danger .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-alertPlan .c-card__userInformation {
@@ -15149,6 +15354,18 @@ body {
   margin-right: 0.5rem;
 }
 
+.l-main-content__statisticsPlan .table-body .table-body__item .row button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .l-main-content__cardGroup {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15180,17 +15397,17 @@ body {
   width: 25%;
 }
 
-.l-main-content__card, .l-main-content__switchCard {
+.l-main-content__card, .l-main-content__dbcard {
   padding: 1rem;
   margin: 0.1rem 1rem 1rem 0;
   border-radius: 10px;
 }
 
-.l-main-content__card:last-child, .l-main-content__switchCard:last-child {
+.l-main-content__card:last-child, .l-main-content__dbcard:last-child {
   margin-right: 0;
 }
 
-.l-main-content__card .l-main-content__title, .l-main-content__switchCard .l-main-content__title {
+.l-main-content__card .l-main-content__title, .l-main-content__dbcard .l-main-content__title {
   margin-bottom: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15200,26 +15417,26 @@ body {
           justify-content: space-between;
 }
 
-.l-main-content__card .l-main-content__planlist .table-body, .l-main-content__switchCard .l-main-content__planlist .table-body, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body, .l-main-content__switchCard .l-main-content .l-main-content__wbslist .table-body, .l-main-content .l-main-content__switchCard .l-main-content__wbslist .table-body, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body, .l-main-content__switchCard .l-main-content .l-main-content__workTypelist .table-body, .l-main-content .l-main-content__switchCard .l-main-content__workTypelist .table-body, .l-main-content__card .l-main-content__statisticsPlan .table-body, .l-main-content__switchCard .l-main-content__statisticsPlan .table-body {
+.l-main-content__card .l-main-content__planlist .table-body, .l-main-content__dbcard .l-main-content__planlist .table-body, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body, .l-main-content__card .l-main-content__statisticsPlan .table-body, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body {
   height: 355px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-.l-main-content__card .l-main-content__planlist .table-body .o-input, .l-main-content__switchCard .l-main-content__planlist .table-body .o-input, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .o-input, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .o-input, .l-main-content__switchCard .l-main-content .l-main-content__wbslist .table-body .o-input, .l-main-content .l-main-content__switchCard .l-main-content__wbslist .table-body .o-input, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .o-input, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .o-input, .l-main-content__switchCard .l-main-content .l-main-content__workTypelist .table-body .o-input, .l-main-content .l-main-content__switchCard .l-main-content__workTypelist .table-body .o-input, .l-main-content__card .l-main-content__statisticsPlan .table-body .o-input, .l-main-content__switchCard .l-main-content__statisticsPlan .table-body .o-input, .l-main-content__card .l-main-content__planlist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__card .l-main-content__planlist .table-body .hoursInput, .l-main-content__switchCard .l-main-content__planlist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__switchCard .l-main-content__planlist .table-body .hoursInput, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .hoursInput, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .hoursInput, .l-main-content__switchCard .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__switchCard .l-main-content .l-main-content__wbslist .table-body .hoursInput, .l-main-content .l-main-content__switchCard .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content .l-main-content__switchCard .l-main-content__wbslist .table-body .hoursInput, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .hoursInput, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .hoursInput, .l-main-content__switchCard .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__switchCard .l-main-content .l-main-content__workTypelist .table-body .hoursInput, .l-main-content .l-main-content__switchCard .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content .l-main-content__switchCard .l-main-content__workTypelist .table-body .hoursInput, .l-main-content__card .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__card .l-main-content__statisticsPlan .table-body .hoursInput, .l-main-content__switchCard .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__switchCard .l-main-content__statisticsPlan .table-body .hoursInput, .l-main-content__card .l-main-content__planlist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__card .l-main-content__planlist .table-body .otherInput, .l-main-content__switchCard .l-main-content__planlist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__switchCard .l-main-content__planlist .table-body .otherInput, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .otherInput, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .otherInput, .l-main-content__switchCard .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__switchCard .l-main-content .l-main-content__wbslist .table-body .otherInput, .l-main-content .l-main-content__switchCard .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content .l-main-content__switchCard .l-main-content__wbslist .table-body .otherInput, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .otherInput, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .otherInput, .l-main-content__switchCard .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__switchCard .l-main-content .l-main-content__workTypelist .table-body .otherInput, .l-main-content .l-main-content__switchCard .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content .l-main-content__switchCard .l-main-content__workTypelist .table-body .otherInput, .l-main-content__card .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__card .l-main-content__statisticsPlan .table-body .otherInput, .l-main-content__switchCard .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__switchCard .l-main-content__statisticsPlan .table-body .otherInput, .l-main-content__card .l-main-content__planlist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__card .l-main-content__planlist .table-body .c-search-item__input, .l-main-content__switchCard .l-main-content__planlist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__switchCard .l-main-content__planlist .table-body .c-search-item__input, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-search-item__input, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-search-item__input, .l-main-content__switchCard .l-main-content .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__switchCard .l-main-content .l-main-content__wbslist .table-body .c-search-item__input, .l-main-content .l-main-content__switchCard .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content .l-main-content__switchCard .l-main-content__wbslist .table-body .c-search-item__input, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-search-item__input, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-search-item__input, .l-main-content__switchCard .l-main-content .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__switchCard .l-main-content .l-main-content__workTypelist .table-body .c-search-item__input, .l-main-content .l-main-content__switchCard .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content .l-main-content__switchCard .l-main-content__workTypelist .table-body .c-search-item__input, .l-main-content__card .l-main-content__statisticsPlan .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__card .l-main-content__statisticsPlan .table-body .c-search-item__input, .l-main-content__switchCard .l-main-content__statisticsPlan .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__switchCard .l-main-content__statisticsPlan .table-body .c-search-item__input {
+.l-main-content__card .l-main-content__planlist .table-body .o-input, .l-main-content__dbcard .l-main-content__planlist .table-body .o-input, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .o-input, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .o-input, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .o-input, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .o-input, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .o-input, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .o-input, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .o-input, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .o-input, .l-main-content__card .l-main-content__statisticsPlan .table-body .o-input, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .o-input, .l-main-content__card .l-main-content__planlist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__card .l-main-content__planlist .table-body .hoursInput, .l-main-content__dbcard .l-main-content__planlist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__planlist .table-body .hoursInput, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .hoursInput, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .hoursInput, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .hoursInput, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .hoursInput, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .hoursInput, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .hoursInput, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .hoursInput, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .hoursInput, .l-main-content__card .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__card .l-main-content__statisticsPlan .table-body .hoursInput, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .hoursInput, .l-main-content__card .l-main-content__planlist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__card .l-main-content__planlist .table-body .otherInput, .l-main-content__dbcard .l-main-content__planlist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__planlist .table-body .otherInput, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .otherInput, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .otherInput, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .otherInput, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .otherInput, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .otherInput, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .otherInput, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .otherInput, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .otherInput, .l-main-content__card .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__card .l-main-content__statisticsPlan .table-body .otherInput, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .otherInput, .l-main-content__card .l-main-content__planlist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__card .l-main-content__planlist .table-body .c-search-item__input, .l-main-content__dbcard .l-main-content__planlist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content__planlist .table-body .c-search-item__input, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-search-item__input, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-search-item__input, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .c-search-item__input, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .c-search-item__input, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-search-item__input, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-search-item__input, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .c-search-item__input, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .c-search-item__input, .l-main-content__card .l-main-content__statisticsPlan .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__card .l-main-content__statisticsPlan .table-body .c-search-item__input, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .c-search-item__input {
   height: 45px;
 }
 
-.l-main-content__card .l-main-content__planlist .table-body .o-input input, .l-main-content__switchCard .l-main-content__planlist .table-body .o-input input, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .o-input input, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .o-input input, .l-main-content__switchCard .l-main-content .l-main-content__wbslist .table-body .o-input input, .l-main-content .l-main-content__switchCard .l-main-content__wbslist .table-body .o-input input, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .o-input input, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .o-input input, .l-main-content__switchCard .l-main-content .l-main-content__workTypelist .table-body .o-input input, .l-main-content .l-main-content__switchCard .l-main-content__workTypelist .table-body .o-input input, .l-main-content__card .l-main-content__statisticsPlan .table-body .o-input input, .l-main-content__switchCard .l-main-content__statisticsPlan .table-body .o-input input, .l-main-content__card .l-main-content__planlist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__planlist .table-body .hoursInput input, .l-main-content__switchCard .l-main-content__planlist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__switchCard .l-main-content__planlist .table-body .hoursInput input, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .hoursInput input, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .hoursInput input, .l-main-content__switchCard .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__switchCard .l-main-content .l-main-content__wbslist .table-body .hoursInput input, .l-main-content .l-main-content__switchCard .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__switchCard .l-main-content__wbslist .table-body .hoursInput input, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .hoursInput input, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .hoursInput input, .l-main-content__switchCard .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__switchCard .l-main-content .l-main-content__workTypelist .table-body .hoursInput input, .l-main-content .l-main-content__switchCard .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__switchCard .l-main-content__workTypelist .table-body .hoursInput input, .l-main-content__card .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__statisticsPlan .table-body .hoursInput input, .l-main-content__switchCard .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__switchCard .l-main-content__statisticsPlan .table-body .hoursInput input, .l-main-content__card .l-main-content__planlist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__planlist .table-body .otherInput input, .l-main-content__switchCard .l-main-content__planlist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__switchCard .l-main-content__planlist .table-body .otherInput input, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .otherInput input, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .otherInput input, .l-main-content__switchCard .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__switchCard .l-main-content .l-main-content__wbslist .table-body .otherInput input, .l-main-content .l-main-content__switchCard .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__switchCard .l-main-content__wbslist .table-body .otherInput input, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .otherInput input, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .otherInput input, .l-main-content__switchCard .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__switchCard .l-main-content .l-main-content__workTypelist .table-body .otherInput input, .l-main-content .l-main-content__switchCard .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__switchCard .l-main-content__workTypelist .table-body .otherInput input, .l-main-content__card .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__statisticsPlan .table-body .otherInput input, .l-main-content__switchCard .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__switchCard .l-main-content__statisticsPlan .table-body .otherInput input, .l-main-content__card .l-main-content__planlist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content__planlist .table-body .c-search-item__input input, .l-main-content__switchCard .l-main-content__planlist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__switchCard .l-main-content__planlist .table-body .c-search-item__input input, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-search-item__input input, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-search-item__input input, .l-main-content__switchCard .l-main-content .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__switchCard .l-main-content .l-main-content__wbslist .table-body .c-search-item__input input, .l-main-content .l-main-content__switchCard .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__switchCard .l-main-content__wbslist .table-body .c-search-item__input input, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-search-item__input input, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-search-item__input input, .l-main-content__switchCard .l-main-content .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__switchCard .l-main-content .l-main-content__workTypelist .table-body .c-search-item__input input, .l-main-content .l-main-content__switchCard .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__switchCard .l-main-content__workTypelist .table-body .c-search-item__input input, .l-main-content__card .l-main-content__statisticsPlan .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content__statisticsPlan .table-body .c-search-item__input input, .l-main-content__switchCard .l-main-content__statisticsPlan .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__switchCard .l-main-content__statisticsPlan .table-body .c-search-item__input input {
+.l-main-content__card .l-main-content__planlist .table-body .o-input input, .l-main-content__dbcard .l-main-content__planlist .table-body .o-input input, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .o-input input, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .o-input input, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .o-input input, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .o-input input, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .o-input input, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .o-input input, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .o-input input, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .o-input input, .l-main-content__card .l-main-content__statisticsPlan .table-body .o-input input, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .o-input input, .l-main-content__card .l-main-content__planlist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__planlist .table-body .hoursInput input, .l-main-content__dbcard .l-main-content__planlist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__planlist .table-body .hoursInput input, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .hoursInput input, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .hoursInput input, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .hoursInput input, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .hoursInput input, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .hoursInput input, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .hoursInput input, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .hoursInput input, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .hoursInput input, .l-main-content__card .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__statisticsPlan .table-body .hoursInput input, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .hoursInput input, .l-main-content__card .l-main-content__planlist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__planlist .table-body .otherInput input, .l-main-content__dbcard .l-main-content__planlist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__planlist .table-body .otherInput input, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .otherInput input, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .otherInput input, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .otherInput input, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .otherInput input, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .otherInput input, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .otherInput input, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .otherInput input, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .otherInput input, .l-main-content__card .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__statisticsPlan .table-body .otherInput input, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .otherInput input, .l-main-content__card .l-main-content__planlist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content__planlist .table-body .c-search-item__input input, .l-main-content__dbcard .l-main-content__planlist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content__planlist .table-body .c-search-item__input input, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-search-item__input input, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-search-item__input input, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .c-search-item__input input, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .c-search-item__input input, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-search-item__input input, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-search-item__input input, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .c-search-item__input input, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .c-search-item__input input, .l-main-content__card .l-main-content__statisticsPlan .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content__statisticsPlan .table-body .c-search-item__input input, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .c-search-item__input input {
   height: 45px;
 }
 
-.l-main-content__card .l-main-content__addMember, .l-main-content__switchCard .l-main-content__addMember {
+.l-main-content__card .l-main-content__addMember, .l-main-content__dbcard .l-main-content__addMember {
   max-height: 180px;
   overflow-y: scroll;
 }
 
-.l-main-content__card .l-main-content__maintain, .l-main-content__switchCard .l-main-content__maintain {
+.l-main-content__card .l-main-content__maintain, .l-main-content__dbcard .l-main-content__maintain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15231,7 +15448,7 @@ body {
           align-items: flex-end;
 }
 
-.l-main-content__card .l-main-content__maintain .l-main-content__maintain__text, .l-main-content__switchCard .l-main-content__maintain .l-main-content__maintain__text {
+.l-main-content__card .l-main-content__maintain .l-main-content__maintain__text, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__text {
   font-family: "Noto Sans TC", "sans-serif";
   font-size: 16px;
   color: #042340;
@@ -15240,14 +15457,16 @@ body {
   white-space: nowrap;
 }
 
-.l-main-content__card .l-main-content__maintain .l-main-content__maintain__num, .l-main-content__switchCard .l-main-content__maintain .l-main-content__maintain__num {
+.l-main-content__card .l-main-content__maintain .l-main-content__maintain__num, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num {
   font-family: "Baloo 2", cursive, "Noto Sans TC";
+  width: 6.33rem;
   font-size: 60px;
   font-weight: 700;
+  text-align: center;
   color: #0156A2;
 }
 
-.l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .o-input input, .l-main-content__switchCard .l-main-content__maintain .l-main-content__maintain__num .o-input input, .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .hoursInput input, .l-main-content__switchCard .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__switchCard .l-main-content__maintain .l-main-content__maintain__num .hoursInput input, .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .otherInput input, .l-main-content__switchCard .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__switchCard .l-main-content__maintain .l-main-content__maintain__num .otherInput input, .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-search-item__input input, .l-main-content__switchCard .l-main-content__maintain .l-main-content__maintain__num .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__switchCard .l-main-content__maintain .l-main-content__maintain__num .c-search-item__input input {
+.l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .o-input input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .o-input input, .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .hoursInput input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .hoursInput input, .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .otherInput input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .otherInput input, .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-search-item__input input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-search-item__input input {
   width: 80px;
   height: 60px;
   font-family: "Baloo 2", cursive, "Noto Sans TC";
@@ -15257,69 +15476,64 @@ body {
   color: #0156A2;
 }
 
-.l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .o-input-lg input, .l-main-content__switchCard .l-main-content__maintain .l-main-content__maintain__num .o-input-lg input {
+.l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .o-input-lg input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .o-input-lg input {
   width: 120px;
 }
 
-.l-main-content__switchCard {
-  padding: 0;
+.l-main-content__card .l-main-content__maintain__text, .l-main-content__dbcard .l-main-content__maintain__text {
+  text-align: center;
 }
 
-.l-main-content__switchCard .l-main-content__switchTitle {
-  padding-top: 1rem;
+.l-main-content__dbcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.l-main-content__dbcard .l-main-content__card__item {
+  border-right: 1px solid #BAD4E5;
+  padding-right: 1rem;
+}
+
+.l-main-content__dbcard .l-main-content__card__item .l-main-content__title {
+  line-height: 2.2rem;
+}
+
+.l-main-content__dbcard .l-main-content__card__item:last-child {
+  border: 0;
+  margin-left: 1rem;
+}
+
+.l-main-content__dbcard .l-main-content__card__item .l-main-content__switch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.l-main-content__switchCard .l-main-content__switch {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 0;
-  height: calc(100% - 59.5px);
 }
 
-.l-main-content__switchCard .l-main-content__switch .o-switch {
-  width: 100%;
+.l-main-content__dbcard .l-main-content__card__item .l-main-content__switch .o-switch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  width: 100%;
 }
 
-.l-main-content__switchCard .l-main-content__switch .o-switch .lever {
+.l-main-content__dbcard .l-main-content__card__item .l-main-content__switch .o-switch .lever {
   margin: 0;
 }
 
-.l-main-content__switchCard .l-main-content__switch .l-main-content__switch__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 1rem 0;
-  width: 100%;
-  background-color: #D2DAE0;
-  border-radius: 0 0 10px 10px;
-}
-
-.l-main-content__switchCard .l-main-content__switch .is-switch-active {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
-  color: #fff;
+.l-main-content__dbcard .l-main-content__card__item .l-main-content__switch .l-main-content__switchSubtext .text-danger {
+  font-weight: bold;
 }
 /*# sourceMappingURL=all.css.map */

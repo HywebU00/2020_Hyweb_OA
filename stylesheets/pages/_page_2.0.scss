@@ -97,6 +97,17 @@
         margin-bottom: 2.5rem;
 
     }
+    .l-main-content__upload{
+        .c-fileInput-upload{
+            padding: 0;
+            a{
+                width: 100%;
+                padding:1.33rem;
+                height: 12rem;
+            }
+        }
+    }
+
 }
 
 //改變資料樣式
@@ -139,12 +150,22 @@
         a{
             width: 100%;
             display: flex;
-            padding: 0;
+           
         }
         .c-card-planPerson {
+            &:hover{
+                transition: all 0; 
+                transform: translateY(0px) translateX(0px);
+            }
+                &:active{
+                transition: all 0;
+                transform: translateY(0px) translateX(0px);
+            }
             .c-card__tag {
                 width: 20%;
                 padding: 0;
+                display: flex;
+                align-items: center;
 
                 span {
                     background: #fff;
@@ -161,11 +182,15 @@
                 font-weight: 400;
                 @include db_ellipsisText;
                 max-height: 56px;
+                display: flex;
+                align-items: center;
             }
-
+            a{
+                padding: 1.33rem 0rem 20px 1.33rem;
+            }
             width: 100%;
             margin: 0;
-            padding: 20px 0px 20px 3rem;
+            padding: 0;
             max-width: 2560px;
             display: flex;
             align-items: center;

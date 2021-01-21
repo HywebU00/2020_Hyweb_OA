@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="stylesheets/all.css" />
+    <title>page_31.1 統計圖表視窗</title>
+  </head>
+  <!-- +++++++++++ -->
+  <!--  注意事項    -->
+  <!--
+    1. 點擊月份按鈕(item__months__btn) 會增添 class“is-month-active” 改變樣式 (component.js--224)
+    2. 月曆中系統顯示 當下日期 會增添 class "is-today"
+    3. 點擊月份按鈕 會更改右邊視窗的資訊內容
+    4. 點擊日曆中的日期(item__date) 會增添 class "is-date-active" 改變樣式(component.js--232)
+    5. 點擊日曆中的日期 會出現 元件 accordion general(視窗出現位置會因點選的位置不同 而有不同位置）
+    6. 點擊專案按鈕(item__projects__btn) 會增添 class "is-project-active" 改變樣式(component.js--244)
+    7. 點擊專案按鈕 會更改右邊視窗的資訊內容
+  -->
+  <!-- +++++++++++ -->
+  <body style="width: 1200px; margin: 0 auto; overflow-y: scroll">
+    <h3
+      style="
+        font-size: 18px;
+        margin: 2% 0;
+        padding: 1% 1%;
+        background: #1d5299;
+        color: #fff;
+      "
+    >
+      page_31.1 統計圖表視窗
+    </h3>
+    <!-- modal-department -->
+    <div
+      class=""
+      style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0"
+    >
+      支援統計圖表
+    </div>
+    <div class="c-modal-department">
+      <div class="c-modal-content row">
+        <div class="c-modal-content__sidebar col s3">
+          <div class="c-modal-content__sidebar__user">
+            <div class="user__department">支援統計圖表</div>
+          </div>
+          <div class="c-modal-content__sidebar__export">
+            <button class="o-btn-primary">匯出</button>
+          </div>
+          <div class="c-modal-content__sidebar__timearea">
+            <button class="o-btn-primary">涵蓋以下時間區間</button>
+          </div>
+          <div class="c-modal-content__sidebar__months">
+            <div class="sidebar__months__item">
+              <div class="item__years">2020</div>
+              <div class="item__months">
+                <button class="item__months__btn is-month-active">9月</button>
+                <button class="item__months__btn">10月</button>
+                <button class="item__months__btn">11月</button>
+                <button class="item__months__btn">12月</button>
+              </div>
+            </div>
+            <div class="sidebar__months__item">
+              <div class="item__years">2021</div>
+              <div class="item__months">
+                <button class="item__months__btn">9月</button>
+                <button class="item__months__btn">10月</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c-modal-content__calendar col s9">
+          <div class="c-modal-content__calendar__btn">
+            <button type="button"><img src="img/o-cross.svg" alt="" /></button>
+          </div>
+          <div class="c-modal-content__highchart__title">
+            <div class="c-card-chart">
+              <div class="c-card-chart__header">總計</div>
+              <div class="c-card-chart__body">
+                <div class="chart__body__item">
+                  <div class="">區間工時</div>
+                  <div class="">1690.5</div>
+                </div>
+                <div class="chart__body__item">
+                  <div class="">工時比例</div>
+                  <div class="">100%</div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="c-modal-content__highchart__list">
+              
+              <div class="highchart__item">
+                <div class="highchart__item__tag tag__color"></div>
+                <div class="highchart__item__title">A00</div>
+              </div>
+            </div> -->
+          </div>
+          <div class="c-modal-content c-modal-content__highchart">
+            <div class="">
+              <figure class="highcharts-figure">
+                <div id="container"></div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <script src="js/materialize.js"></script>
+    <script src="js/compontent.js"></script>
+    <script src="js/Highcharts/highcharts.js"></script>
+    <script src="js/Highcharts/export-data.js"></script>
+    <script src="js/Highcharts/exporting.js"></script>
+    <script src="js/Highcharts/accessibility.js"></script>
+
+    <script src="js/highcharts__data.js"></script>
+  </body>
+</html>

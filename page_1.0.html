@@ -164,7 +164,7 @@
               data-num="1"
             >
               <div class="c-writeHours-title__item__date">
-                <div>08/31</div>
+                <div>8/31</div>
                 <span>ㄧ</span>
               </div>
               <div class="c-writeHours-title__item__hours">
@@ -175,7 +175,7 @@
             </div>
             <div class="c-writeHours-title__item" data-num="2">
               <div class="c-writeHours-title__item__date">
-                <div class="">09/01</div>
+                <div class="">9/1</div>
                 <span>二</span>
               </div>
               <div class="c-writeHours-title__item__hours">
@@ -188,7 +188,7 @@
             </div>
             <div class="c-writeHours-title__item" data-num="3">
               <div class="c-writeHours-title__item__date">
-                09/01 <span>三</span>
+                9/1 <span>三</span>
               </div>
               <div class="c-writeHours-title__item__hours">
                 <div class="text">已填<br />時數</div>
@@ -200,7 +200,7 @@
             </div>
             <div class="c-writeHours-title__item" data-num="4">
               <div class="c-writeHours-title__item__date">
-                09/03 <span>四</span>
+                9/3 <span>四</span>
               </div>
               <div class="c-writeHours-title__item__hours">
                 <div class="text">已填<br />時數</div>
@@ -211,9 +211,10 @@
                 <div class="text-danger">尚有0.5小時未填</div>
               </div>
             </div>
+            <!-- 系統自動帶入當天 並增添class "is-today-tag" -->
             <div class="c-writeHours-title__item is-today-tag" data-num="5">
               <div class="c-writeHours-title__item__date">
-                09/04 <span>五</span>
+                9/4 <span>五</span>
               </div>
               <div class="c-writeHours-title__item__hours">
                 <div class="text">已填<br />時數</div>
@@ -223,9 +224,11 @@
                 <div class="text-danger">尚有8小時未填</div>
               </div>
             </div>
+            <!-- 點擊日期 會切換頁籤 增加 class "is-active" -->
+
             <div class="c-writeHours-title__item is-active" data-num="6">
               <div class="c-writeHours-title__item__date">
-                09/05 <span>六</span>
+                9/5 <span>六</span>
               </div>
               <div class="c-writeHours-title__item__hours">
                 <div class="text">已填<br />時數</div>
@@ -237,7 +240,7 @@
             </div>
             <div class="c-writeHours-title__item" data-num="7">
               <div class="c-writeHours-title__item__date">
-                09/06 <span>日</span>
+                9/6 <span>日</span>
               </div>
               <div class="c-writeHours-title__item__hours">
                 <div class="text">已填<br />時數</div>
@@ -510,10 +513,12 @@
       </div>
       
       <div class="l-side-left">
+        <!-- 點擊button "c-submenu-btn"右手邊日曆menuc會收合 "l-container"會增加及刪除“submenu__open”(js/layout.js 293) -->
         <div class="c-submenu">
           <button type="button" class="c-submenu-btn waves-effect waves-blue">
             <img src="img/o-arrowRight-gray.svg" alt="" />
           </button>
+          <!-- 點擊日期 會自動更新 左手邊周次日期 點擊當日class名稱為“today” -->
           <div class="c-submenu-content">
             <div class="c-submenu-content__calendar">
               <div class="calendar-wrapper">
@@ -553,7 +558,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="c-card-planHotkey__btn">加入此工作</div>
+                  <button class="c-card-planHotkey__btn">加入此工作</button>
                 </div>
                 <div class="c-card-planHotkey">
                   <div class="c-card__content">
@@ -574,7 +579,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="c-card-planHotkey__btn">加入此工作</div>
+                  <button class="c-card-planHotkey__btn">加入此工作</button>
                 </div>
                 <div class="c-card-planHotkey">
                   <div class="c-card__content">
@@ -595,7 +600,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="c-card-planHotkey__btn">加入此工作</div>
+                  <button class="c-card-planHotkey__btn">加入此工作</button>
                 </div>
               </div>
             </div>
