@@ -149,11 +149,11 @@
         </div>
       </div>
       <div class="l-main">
-        <div class="c-breadcrumb">
-          <div class="">統計報表</div>
+        <ul class="c-breadcrumb">
+          <li class=""><a href="#">我的工作紀錄</a></li>
           <div class="">></div>
-          <div class="">警示計畫</div>
-        </div>
+          <li class=""><a href="">計畫統計</a></li>
+        </ul>
         <div class="c-general">
           <div class="c-general__title">
             <h3 class="">警示計畫</h3>
@@ -319,13 +319,29 @@
               <div class="l-main-content-list">
                 <div class="">共7筆</div>
                 <div class="">
-                  <button class="waves-effect waves-blue o-information">
-                    <img
-                      class="l-main-content-list__img"
-                      src="img/o-information.svg"
-                      alt=""
-                    />
-                  </button>
+                  <div class="c-popover-information pop-modal">
+                    <button
+                      class="waves-effect waves-blue o-information c-popover__btn pop-btn"
+                    >
+                      <img
+                        class="l-main-content-list__img"
+                        src="img/o-information.svg"
+                        alt=""
+                      />
+                    </button>
+                    <div class="c-popover__content pop-content">
+                      
+                      <div class="c-popover__text">
+                        <div class="">區間工時：搜尋區間內的實際與預估工時</div>
+                        <div class="">
+                          累計工時：計畫起始到目前的實際與預估工時
+                        </div>
+                        <div class="">
+                          全案工時：計畫起始到結束的實際與預估工時
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <button class="waves-effect waves-blue o-list">
                     <img
                       class="l-main-content-list__img"
@@ -382,12 +398,12 @@
               </div>
               <div class="l-main-content-item__listGroup">
                 <div class="c-card-planReport">
-                  <a href="#">
+                  <a href="#">
                     <div class="c-card__item">
                       <div class="c-card__item__title">
                         <div class="c-card__tag">
                           <div class="c-card__tag__num">
-                            <div class="c-card__tag__btn">
+                            <div class="c-card__star__btn">
                               <div
                                 class="o-card__iconBtn o-card__star-default"
                               ></div>
@@ -401,10 +417,10 @@
                         </h2>
                         <div class="c-card__text">
                           <div class="c-card__text__startTime">
-                            2020.07.02
+                            2020/07/02
                             <div>-</div>
                             <span></span>
-                            2020.08.03
+                            2020/08/03
                           </div>
                           <div class="c-card__text__block">|</div>
                           <div class="c-card__position">
@@ -427,15 +443,21 @@
                         <div class="c-card__item__content__list">
                           <div class="list__item row">
                             <div class="list__item__title col">收入</div>
-                            <div class="col list__item__num col">87714299</div>
+                            <div class="col list__item__num col">
+                              87,714,299
+                            </div>
                           </div>
                           <div class="list__item row">
                             <div class="list__item__title col">成本</div>
-                            <div class="col list__item__num col">77714299</div>
+                            <div class="col list__item__num col">
+                              77,714,299
+                            </div>
                           </div>
                           <div class="list__item row">
                             <div class="list__item__title col">毛利</div>
-                            <div class="col list__item__num col">10000000</div>
+                            <div class="col list__item__num col">
+                              10,000,000
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -484,7 +506,7 @@
                       <div class="c-card__item__title">
                         <div class="c-card__tag">
                           <div class="c-card__tag__num">
-                            <div class="c-card__tag__btn">
+                            <div class="c-card__star__btn">
                               <div
                                 class="o-card__iconBtn o-card__star-default"
                               ></div>
@@ -498,10 +520,10 @@
                         </h2>
                         <div class="c-card__text">
                           <div class="c-card__text__startTime">
-                            2020.07.02
+                            2020/07/02
                             <div>-</div>
                             <span></span>
-                            2020.08.03
+                            2020/08/03
                           </div>
                           <div class="c-card__text__block">|</div>
                           <div class="c-card__position">
@@ -524,15 +546,21 @@
                         <div class="c-card__item__content__list">
                           <div class="list__item row">
                             <div class="list__item__title col">收入</div>
-                            <div class="col list__item__num col">87714299</div>
+                            <div class="col list__item__num col">
+                              87,714,299
+                            </div>
                           </div>
                           <div class="list__item row">
                             <div class="list__item__title col">成本</div>
-                            <div class="col list__item__num col">77714299</div>
+                            <div class="col list__item__num col">
+                              77,714,299
+                            </div>
                           </div>
                           <div class="list__item row">
                             <div class="list__item__title col">毛利</div>
-                            <div class="col list__item__num col">10000000</div>
+                            <div class="col list__item__num col">
+                              10,000,000
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -581,7 +609,7 @@
                       <div class="c-card__item__title">
                         <div class="c-card__tag">
                           <div class="c-card__tag__num">
-                            <div class="c-card__tag__btn">
+                            <div class="c-card__star__btn">
                               <div
                                 class="o-card__iconBtn o-card__star-default"
                               ></div>
@@ -595,10 +623,10 @@
                         </h2>
                         <div class="c-card__text">
                           <div class="c-card__text__startTime">
-                            2020.07.02
+                            2020/07/02
                             <div>-</div>
                             <span></span>
-                            2020.08.03
+                            2020/08/03
                           </div>
                           <div class="c-card__text__block">|</div>
                           <div class="c-card__position">
@@ -621,15 +649,21 @@
                         <div class="c-card__item__content__list">
                           <div class="list__item row">
                             <div class="list__item__title col">收入</div>
-                            <div class="col list__item__num col">87714299</div>
+                            <div class="col list__item__num col">
+                              87,714,299
+                            </div>
                           </div>
                           <div class="list__item row">
                             <div class="list__item__title col">成本</div>
-                            <div class="col list__item__num col">77714299</div>
+                            <div class="col list__item__num col">
+                              77,714,299
+                            </div>
                           </div>
                           <div class="list__item row">
                             <div class="list__item__title col">毛利</div>
-                            <div class="col list__item__num col">10000000</div>
+                            <div class="col list__item__num col">
+                              10,000,000
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -678,7 +712,7 @@
                       <div class="c-card__item__title">
                         <div class="c-card__tag">
                           <div class="c-card__tag__num">
-                            <div class="c-card__tag__btn">
+                            <div class="c-card__star__btn">
                               <div
                                 class="o-card__iconBtn o-card__star-default"
                               ></div>
@@ -692,10 +726,10 @@
                         </h2>
                         <div class="c-card__text">
                           <div class="c-card__text__startTime">
-                            2020.07.02
+                            2020/07/02
                             <div>-</div>
                             <span></span>
-                            2020.08.03
+                            2020/08/03
                           </div>
                           <div class="c-card__text__block">|</div>
                           <div class="c-card__position">
@@ -718,15 +752,21 @@
                         <div class="c-card__item__content__list">
                           <div class="list__item row">
                             <div class="list__item__title col">收入</div>
-                            <div class="col list__item__num col">87714299</div>
+                            <div class="col list__item__num col">
+                              87,714,299
+                            </div>
                           </div>
                           <div class="list__item row">
                             <div class="list__item__title col">成本</div>
-                            <div class="col list__item__num col">77714299</div>
+                            <div class="col list__item__num col">
+                              77,714,299
+                            </div>
                           </div>
                           <div class="list__item row">
                             <div class="list__item__title col">毛利</div>
-                            <div class="col list__item__num col">10000000</div>
+                            <div class="col list__item__num col">
+                              10,000,000
+                            </div>
                           </div>
                         </div>
                       </div>

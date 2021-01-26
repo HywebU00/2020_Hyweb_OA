@@ -127,13 +127,14 @@
         padding-bottom: $pd-2;
 
         span {
-            background: $hy-background;
-            color: #fff;
+            background: $after-blue;//$hy-background;
+            color:$gray1;// #fff;
             padding: 0.5rem 1rem;
             font-weight: 400;
             border-radius: $tag-radius;
-            font-size: $a;
-            font-family: $font-family;
+            font-size: $p;
+            font-weight: 600;;
+            font-family:$font-family;
 
         }
     }
@@ -149,7 +150,7 @@
     .c-card__userInformation {
         font-size: 14px;
         margin-top: $m;
-        color: $gray3;
+       // color: $gray3;
         justify-content: flex-start;
     }
 }
@@ -181,7 +182,7 @@
     @extend .c-card-planPerson;
     padding: 0;
     width: 100%;
-    max-width: 204px;
+    max-width: 22rem;
     min-width: auto;
 
     .c-card__content {
@@ -218,9 +219,9 @@
     .c-card-planHotkey__btn {
         text-align: center;
         width: 100%;;
-        background-color: $hyweb-lighblue;
+        background: $hy-background;
         padding: $pd $pd-2;
-        color: $gray2;
+        color: #fff;
         cursor: pointer;
         border-radius: 0 0 $card-radius $card-radius;
     }
@@ -273,6 +274,14 @@
         height: 24px;
         cursor: pointer;
     }
+    .c-card__star__btn{
+        .o-card__iconBtn{
+            width:2rem;
+            height: 2rem;
+            cursor: pointer;
+        }
+    }
+   
     .o-card__icon{
         width: 24px;
         height: 24px;
@@ -305,7 +314,14 @@
             margin-right: 1rem;
            
         }
-       
+       .c-card__star__btn {
+        @extend .c-card__tag__btn ;
+        background-color: rgba(255,255,255,0);
+        padding:0;
+        width:2.8rem ;
+        height: 2.8rem;
+      
+       }
 
         span {
             background: none;
@@ -599,7 +615,7 @@
         left: -0.8rem;
         width: 1.8rem;
         height: 1.8rem;
-        background-image: url(../../img/o-activeIcon.svg);
+        background-image: url(../img/o-activeIcon.svg);
     }
     .accordion-header {
         font-size: $p;
@@ -1053,7 +1069,8 @@
 .c-modal-alert {
     @extend .c-modal;
     width: 50%;
-    height: 30%;
+    height: 30vh;
+    // max-height: 50vh;
 
     .c-modal-alert__content {
         height: 100%;
@@ -1064,25 +1081,39 @@
             width: 100%;
         }
         .o-btn-secondary{
-            padding: 0 25px;
+            padding: 0 1.66rem;
         }
         .o-btn-primary{
-            padding: 0 25px;
+            padding:0 1.66rem;
+        }
+
+        .c-modal-content__scroll{
+            @extend .c-modal-content;
+            overflow-y:scroll; 
+            display: block;
+            height: calc(40vh - 120px) ;
+            p{
+                margin-bottom: 1rem;
+            }
+           
         }
     }
-
+   
     .modal-footer {
         align-self: flex-end;
         justify-content: flex-end;
     }
 }
 
+.c-modal-alert-scroll{
+    height: 40vh;
+}
+
 .c-modal-chooseGroup {
     @extend .c-modal;
-    width: 70%;
-    max-width: 80%;
-    height: auto;
-    max-height: 70vh;
+    width: 80%;
+    overflow: hidden;
+    height: 75vh;
 
     .c-modal-closeBtn {
         display: flex;
@@ -1091,7 +1122,15 @@
 
     .c-modal-btnList {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
+        .member-btn{
+            justify-self:start ;
+        }
+        // .cross-btn{
+            
+            
+        // }
+        //justify-content: space-between;
     }
 
 
@@ -1155,10 +1194,15 @@
             }
 
             .addMember-content {
-                margin-top: 2rem;
+                margin-top: 1.5rem;
                 display: flex;
                 justify-content: flex-start;
                 flex-wrap: wrap;
+                height: 10rem;
+                overflow-y: scroll;
+                height: calc(75vh - 360px);
+               
+
             }
 
             .c-card-lablePersonL {
@@ -1185,10 +1229,9 @@
 
 .c-modal-addGroup {
     @extend .c-modal;
-   
     width: 80%;
     height: 85vh;
-    max-height: 85vh;
+    overflow: hidden;
 
     .c-modal-closeBtn {
         display: flex;
@@ -1198,9 +1241,9 @@
 
     .c-modal-btnList {
         display: flex;
-        justify-content: space-between;
+        //justify-content: space-between;
         align-items: center;
-        
+        margin-bottom: 0.2rem;
         button{
           border-radius: 40px;  
           padding: 0.5rem;
@@ -1216,22 +1259,49 @@
                 margin-right: 0.5rem;
             }
         }
+        justify-content: flex-end;
+        .member-btn{
+            margin-right: calc(75vw - 110px);
+            white-space: nowrap;
+            min-width: 60px;
+
+        }
+        
     }
 
     .c-modal-addGroup__content {
         display: flex;
         flex-wrap: wrap;
-        height: 95%;
-
+        height: calc(85vh - 200px);
         .c-modal-addGroup__content__item {
             width: 100%;
         }
+        .c-modal-content__select{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            .o-input{
+                input{
+                    margin-bottom: 0;
+                }
+            }
+            .o-btn-primary{
+                margin-top: 1.5rem;
+            }
+            .input-title{
+                span{
+                    color: $danger;
+                }
+            }
+        }
+        
       
     }
 
     .c-modal-content {
         display: block;
-        height: auto;
+        height: calc(85vh - 350px);
+        overflow-y: scroll;
 
         .c-modal-content__select {
             display: flex;
@@ -1255,7 +1325,8 @@
 
         .c-modal-content__chooseMember {
             display: flex;
-            margin: 0 0.75rem;
+            padding:0 0.75rem 1rem 0.75rem;
+            border-bottom:1px solid $gray-blue;
 
             div {
                 display: flex;
@@ -1310,7 +1381,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 //height: 40vh;
-                overflow: scroll;
+                overflow-y: scroll;
                 .c-card-lablePerson {
                     margin: 0 0 1rem 0.5rem;
                 }
@@ -1329,20 +1400,18 @@
         margin-bottom: 1rem;
     }
     .is-error-status{
-        .c-modal-addGroup__content__item{
-            .c-modal-content__select{
-                .input-title{
-                    color: $danger;
-                }
-                .select-wrapper{
+        .c-modal-content__select{
+            .input-title{
+                color: $danger;
+            }
+            .select-wrapper{
+                background-color: #fff;
+                border: 1px solid $danger;
+            }
+            .o-input{
+                input{
                     background-color: #fff;
-                    border: 1px solid $danger;
-                }
-                .o-input{
-                    input{
-                        background-color: #fff;
-                    border: 1px solid $danger;
-                    }
+                border: 1px solid $danger;
                 }
             }
         }
@@ -1367,7 +1436,7 @@
         background-color: $sec3;
 
         height: 100%;
-        overflow: scroll;
+        overflow-y: scroll;
 
         border-radius: $modal-radius;
     }
@@ -1443,7 +1512,7 @@
 
         .c-modal-content__calendar__content {
             height: 75vh;
-            overflow: scroll;
+            overflow-y: scroll;
         }
 
         .c-modal-content__calendar__tebs {
@@ -1479,8 +1548,9 @@
         .accordion-header__item{
             .header__item__title{
                 white-space: normal;
-                line-height: 1.5rem;
+                line-height: 1.2rem;
                 @include db_ellipsisText;
+                height: auto;
             }
         }
         .accordion-body__title{
@@ -1525,7 +1595,7 @@
     .c-modal-content__list {
         padding-top: 0.5rem;
         height: 100%;
-        overflow: scroll;
+        overflow-y: scroll;
         .accordion-header__item{
             .header__item__departmentNum{
                 margin-right: 1.5rem;
@@ -1608,7 +1678,7 @@
 
     .c-modal-content__item {
         height: 100%;
-        overflow: scroll;
+        overflow-y: scroll;
         // display: flex;
         // justify-content: center;
         // flex-wrap: wrap;
@@ -1640,7 +1710,7 @@
 
         .c-modal-content__item {
             height: 100%;
-            overflow: scroll;
+            overflow-y: scroll;
         }
 
         .accordion-body__item {
@@ -1804,7 +1874,7 @@
 
         .c-dropdown__content__height {
             height: 230px;
-            overflow: scroll;
+            overflow-y: scroll;
         }
 
         .c-dropdown__footer {
@@ -1829,7 +1899,7 @@
     background-color: #fff;
     border-radius: $dropdown-radius;
     max-height: 337px;
-    overflow: scroll;
+    overflow-y: scroll;
     padding: $pd-2;
 }
 
@@ -1957,7 +2027,7 @@
         height: 30px;
         border-radius: 5px;
         border-width: 1em 0.875em 0 0.875em;
-        background-image: url(../../img/o-arrowDown.svg);
+        background-image: url(../img/o-arrowDown.svg);
         //border-color: #555759 transparent transparent transparent;
     }
 }
@@ -1977,7 +2047,7 @@
 
     .c-dropdown__content__height {
         height: 185px;
-        overflow: scroll;
+        overflow-y: scroll;
     }
 
     .c-dropdown__content {
@@ -2035,7 +2105,7 @@
         border-radius: $select-radius;
         width: 280px;
         max-height: 337px;
-        overflow: scroll;
+        overflow-y: scroll;
         padding: $pd-2;
 
         .c-datePicker__title {
@@ -2483,6 +2553,28 @@
 
 }
 
+.c-popover-information {
+@extend .c-popover-perspective;
+.c-popover__content{
+    &::before{
+        margin-left: 188.75px;
+    }
+    &::after{
+        margin-left: 188.9px;
+    }
+    max-width: 330px;
+    width: auto;
+.c-popover__text {
+    margin-bottom: 0;
+    div{
+        justify-content:start;
+        border-bottom: 1px solid $hyweb-lighblue;
+        padding-bottom: 0.5rem;
+    }
+}
+
+}
+}
 .c-writeHours {
     width: 85%;
     min-height: 80vh;
@@ -2666,7 +2758,7 @@
                 font-size: 12px;
                 padding-top: .01rem;
                 margin-top: 0.2rem;
-                content: "僅能填寫至小數點第一位";
+                content: "僅能填寫至小數點第一位及阿拉伯數字";
             }
         }
 

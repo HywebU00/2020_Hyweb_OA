@@ -104,15 +104,15 @@
       </div>
     </div>
     <div class="l-main">
-      <div class="c-breadcrumb">
-        <div class="">我的計畫管理</div>
+      <ul class="c-breadcrumb">
+        <li class=""><a href="#">我的工作紀錄</a></li>
         <div class="">></div>
-        <div class="">計畫總覽</div>
+        <li class=""><a href="">計畫總覽</a></li>
         <div class="">></div>
-        <div class="">計畫名稱</div>
+        <li class=""><a href="">計畫名稱</a></li>
         <div class="">></div>
-        <div class="">基本資訊</div>
-      </div>
+        <li class=""><a href="">工作明細</a></li>
+      </ul>
       <div class="c-general">
         <div class="c-general__title">
           <h3 class="">2020WEV24H</h3>
@@ -374,13 +374,14 @@
       <div id="member">
         <div class="l-main-tabs">
           <button class="waves-effect waves-blue">
-            <a class="l-main-tabs__item modal-trigger" href="#addGroup">
+            <a class="l-main-tabs__item modal-trigger" href="#addGroupModal">
               <img src="img/o-plus.svg" alt="" /> 新增成員
             </a>
           </button>
         </div>
         <div class="l-main-content">
-          <div class="l-main-content-data">
+          <div class="l-main-content-between-title">
+            <div class="">＊工時系統與OA系統的計畫成員會相互同步</div>
             <div class="">共4筆</div>
           </div>
           <div class="l-main-content-table">
@@ -497,8 +498,9 @@
                 <div class="col s1 num-position">11月</div>
                 <div class="col s1 num-position">12月</div>
                 <div class="col s2 num-position">
-                  <button type="button">
-                    <img src="img/o-lessYear.svg" alt="" />
+                   <!-- 點擊列表展開時 按鈕處增加class is-wbslist-btn-active -->  
+                  <button class="is-wbslist-btn-active" type="button">
+                    <img src="img/o-addYear.svg" alt="" />
                     <span>2021年</span>
                   </button>
                 </div>
@@ -518,8 +520,8 @@
 
                     </div>
                     <div class="col s3 ">
-                      2020.07.01<br>
-                      2020.08.31
+                      2020/07/01 <br />
+                      2020/08/31
                     </div>
                     <div class="col s2 ">
 
@@ -581,8 +583,8 @@
                       進行需求訪談
                     </div>
                     <div class="col s3 ">
-                      2020.07.01<br>
-                      2020.08.31
+                      2020/07/01 <br />
+                      2020/08/31
                     </div>
                     <div class="col s2 ">
                       分析企劃
@@ -644,8 +646,8 @@
                       前台查詢功能訪談分析
                     </div>
                     <div class="col s3 ">
-                      2020.07.01<br>
-                      2020.08.31
+                      2020/07/01 <br />
+                      2020/08/31
                     </div>
                     <div class="col s2 ">
                       分析企劃
@@ -707,8 +709,8 @@
                       GUI討論
                     </div>
                     <div class="col s3 ">
-                      2020.07.01<br>
-                      2020.08.31
+                      2020/07/01 <br />
+                      2020/08/31
                     </div>
                     <div class="col s2 ">
                       分析企劃
@@ -770,8 +772,8 @@
 
                     </div>
                     <div class="col s3 ">
-                      2020.07.01<br>
-                      2020.08.31
+                      2020/07/01 <br />
+                      2020/08/31
                     </div>
                     <div class="col s2 ">
 
@@ -833,8 +835,8 @@
                       技術方案討論
                     </div>
                     <div class="col s3 ">
-                      2020.07.01<br>
-                      2020.08.31
+                      2020/07/01 <br />
+                      2020/08/31
                     </div>
                     <div class="col s2 ">
                       分析企劃
@@ -896,8 +898,8 @@
                       製作系統設計規格書&RTM
                     </div>
                     <div class="col s3 ">
-                      2020.07.01<br>
-                      2020.08.31
+                      2020/07/01 <br />
+                      2020/08/31
                     </div>
                     <div class="col s2 ">
                       分析企劃
@@ -959,8 +961,8 @@
                       製作系統設計規格書&RTM
                     </div>
                     <div class="col s3 ">
-                      2020.07.01<br>
-                      2020.08.31
+                      2020/07/01 <br />
+                      2020/08/31
                     </div>
                     <div class="col s2 ">
                       分析企劃
@@ -1022,8 +1024,8 @@
                       製作系統設計規格書&RTM
                     </div>
                     <div class="col s3 ">
-                      2020.07.01<br>
-                      2020.08.31
+                      2020/07/01 <br />
+                      2020/08/31
                     </div>
                     <div class="col s2 ">
                       分析企劃
@@ -1115,8 +1117,9 @@
                 <div class="col s1">11月</div>
                 <div class="col s1">12月</div>
                 <div class="col s2">
-                  <button type="button">
-                    <img src="img/o-lessYear.svg" alt="" />
+                <!-- 點擊列表展開時 按鈕處增加class is-wbslist-btn-active -->  
+                  <button class="is-wbslist-btn-active" type="button">
+                    <img src="img/o-addYear.svg" alt="" />
                     <span>2021年</span>
                   </button>
                 </div>
@@ -1211,68 +1214,67 @@
         </div>
       </div>
     </div>
-    <!-- 視窗 -->
-    <div id="addGroup" class="c-modal-addGroup modal">
+   <!--addGroupModal 新增人員視窗 -->
+    <!-- c-modal-btnList 新增 常用成員的button -->
+    <div id="addGroupModal" class="c-modal-addGroup modal">
       <div class="c-modal-btnList">
-        <button class="waves-effect waves-blue">
-          <a class="modal-trigger" href="#usually">
+        <button class="member-btn waves-effect waves-blue">
+          <a class="modal-trigger" href="#usuallyModal">
             <img class="" src="img/o-group.svg" alt="" />
             <div class="">常用成員</div>
           </a>
         </button>
-        <button type="button">
+        <button class="cross-btn" type="button">
           <img class="modal-close" src="img/o-cross.svg" alt="" />
         </button>
       </div>
       <div class="c-modal-addGroup__content">
-        <div class="c-modal-content">
-          <div class="row c-modal-content__select">
-            <div class="col s6">
-              <div class="input-title"><span>* </span>計劃名稱</div>
-              <div class="input-field c-dropdown-planContent">
-                <select class="c-dropdown-plan-select">
-                  <option value="" disabled selected>請選擇計劃名稱</option>
-                  <optgroup label="籌備中">
-                    <option value="1">
-                      2020年度地方版公務出國報告系統無障礙2.0規範ＡＡ等級標章申請作業採購案
-                    </option>
-                    <option value="2">2020智慧空間管理理系</option>
-                    <option value="3">2020智慧空間管理理系慧空慧空</option>
-                    <option value="4">
-                      2020智慧空間管理理慧空慧空慧空慧空系
-                    </option>
-                  </optgroup>
-                  <optgroup label="執行中">
-                    <option value="5">2020智慧空間管理理慧空系</option>
-                    <option value="6">2020智慧空間管理理慧空系</option>
-                    <option value="7">2020智慧空間管理理慧空系</option>
-                    <option value="8">2020智慧空間管理理慧空系</option>
-                  </optgroup>
-                  <optgroup label="保固中">
-                    <option value="9">2020智慧空間管理理慧空系</option>
-                    <option value="10">
-                      2020智慧空間管理理慧空慧空慧空慧空系
-                    </option>
-                    <option value="11">2020智慧空間管理理系慧空慧空</option>
-                    <option value="12">
-                      2020智慧空間管理理慧空慧空慧空慧空系
-                    </option>
-                  </optgroup>
-                </select>
-              </div>
-            </div>
-            <div class="col s6">
-              <div class="input-title">備註</div>
-              <div class="o-input">
-                <input class="" type="text" />
-              </div>
-            </div>
-            <div class="col">
-              <button class="o-btn-primary waves-effect waves-blue">
-                搜尋
-              </button>
+        <div class="row c-modal-content__select">
+          <div class="col s6">
+            <div class="input-title"><span>* </span>計劃名稱</div>
+            <div class="input-field c-dropdown-planContent">
+              <select class="c-dropdown-plan-select">
+                <option value="" disabled selected>請選擇計劃名稱</option>
+                <optgroup label="籌備中">
+                  <option value="1">
+                    2020年度地方版公務出國報告系統無障礙2.0規範ＡＡ等級標章申請作業採購案
+                  </option>
+                  <option value="2">2020智慧空間管理理系</option>
+                  <option value="3">2020智慧空間管理理系慧空慧空</option>
+                  <option value="4">
+                    2020智慧空間管理理慧空慧空慧空慧空系
+                  </option>
+                </optgroup>
+                <optgroup label="執行中">
+                  <option value="5">2020智慧空間管理理慧空系</option>
+                  <option value="6">2020智慧空間管理理慧空系</option>
+                  <option value="7">2020智慧空間管理理慧空系</option>
+                  <option value="8">2020智慧空間管理理慧空系</option>
+                </optgroup>
+                <optgroup label="保固中">
+                  <option value="9">2020智慧空間管理理慧空系</option>
+                  <option value="10">
+                    2020智慧空間管理理慧空慧空慧空慧空系
+                  </option>
+                  <option value="11">2020智慧空間管理理系慧空慧空</option>
+                  <option value="12">
+                    2020智慧空間管理理慧空慧空慧空慧空系
+                  </option>
+                </optgroup>
+              </select>
             </div>
           </div>
+          <div class="col s5">
+            <div class="input-title">備註</div>
+            <div class="o-input">
+              <input class="" type="text" />
+            </div>
+          </div>
+          <div class="col">
+            <button class="o-btn-primary waves-effect waves-blue">搜尋</button>
+          </div>
+        </div>
+        <div class="c-modal-content">
           <div class="c-modal-content__chooseMember">
             <div class="c-modal-content__chooseMember__title">已選成員</div>
             <div class="">
@@ -1285,19 +1287,19 @@
                 <button><img src="img/o-cross-white.svg" alt="" /></button>
               </div>
               <div class="chooseMember-tag">
-                <div class="chooseMember-tag__name">王小明 Mike</div>
+                <div class="chooseMember-tag__name">王小明 Jessica</div>
                 <button><img src="img/o-cross-white.svg" alt="" /></button>
               </div>
               <div class="chooseMember-tag">
-                <div class="chooseMember-tag__name">王小明 Mike</div>
+                <div class="chooseMember-tag__name">王小明 Michelle</div>
                 <button><img src="img/o-cross-white.svg" alt="" /></button>
               </div>
               <div class="chooseMember-tag">
-                <div class="chooseMember-tag__name">王小明 Mike</div>
+                <div class="chooseMember-tag__name">王小明 Jessica</div>
                 <button><img src="img/o-cross-white.svg" alt="" /></button>
               </div>
               <div class="chooseMember-tag">
-                <div class="chooseMember-tag__name">王小明 Mike</div>
+                <div class="chooseMember-tag__name">王小明 Jessica</div>
                 <button><img src="img/o-cross-white.svg" alt="" /></button>
               </div>
             </div>
@@ -1308,7 +1310,10 @@
               <div class="">全部清除</div>
             </div>
             <div class="memberList__group">
-              <div class="c-card-lablePerson c-card-lablePerson__additem is-active">
+              <!-- "c-card-lablePerson__additem" 監聽樣式 點擊後動態新增或刪除"is-active" -->
+              <div
+                class="c-card-lablePerson c-card-lablePerson__additem is-active"
+              >
                 <div class="c-card-lablePerson-title">U00</div>
                 <div class="c-card-lablePerson-item">
                   <div class="">
@@ -1354,51 +1359,6 @@
                 </div>
               </div>
               <div class="c-card-lablePerson c-card-lablePerson__additem">
-                <div class="c-card-lablePerson-title">U00</div>
-                <div class="c-card-lablePerson-item">
-                  <div class="">
-                    <div class="">A9025</div>
-                    <div class="">王小明 Mike</div>
-                  </div>
-                </div>
-              </div>
-              <div class="c-card-lablePerson c-card-lablePerson__additem">
-                <div class="c-card-lablePerson-title">U00</div>
-                <div class="c-card-lablePerson-item">
-                  <div class="">
-                    <div class="">A9025</div>
-                    <div class="">王小明 Mike</div>
-                  </div>
-                </div>
-              </div>
-              <div class="c-card-lablePerson c-card-lablePerson__additem">
-                <div class="c-card-lablePerson-title">U00</div>
-                <div class="c-card-lablePerson-item">
-                  <div class="">
-                    <div class="">A9025</div>
-                    <div class="">王小明 Mike</div>
-                  </div>
-                </div>
-              </div>
-              <div class="c-card-lablePerson c-card-lablePerson__additem is-active">
-                <div class="c-card-lablePerson-title">U00</div>
-                <div class="c-card-lablePerson-item">
-                  <div class="">
-                    <div class="">A9025</div>
-                    <div class="">王小明 Mike</div>
-                  </div>
-                </div>
-              </div>
-              <div class="c-card-lablePerson c-card-lablePerson__additem is-active">
-                <div class="c-card-lablePerson-title">U00</div>
-                <div class="c-card-lablePerson-item">
-                  <div class="">
-                    <div class="">A9025</div>
-                    <div class="">王小明 Mike</div>
-                  </div>
-                </div>
-              </div>
-              <div class="c-card-lablePerson c-card-lablePerson__additem is-active">
                 <div class="c-card-lablePerson-title">U00</div>
                 <div class="c-card-lablePerson-item">
                   <div class="">
@@ -1426,8 +1386,8 @@
         </div>
       </div>
     </div>
-    <!-- 視窗2 -->
-    <div id="usually" class="c-modal-usuallyUseMember modal">
+    <!-- usuallyModal  常用計畫成員視窗-->
+    <div id="usuallyModal" class="c-modal-usuallyUseMember modal">
       <div class="c-modal-closeBtn">
         <button type="button">
           <img class="modal-close" src="img/o-cross.svg" alt="" />
@@ -1604,186 +1564,7 @@
         </div>
       </div>
     </div>
-    <!-- 視窗3 -->
-    <!-- <div id="sample" class="c-modal-sample modal ">
-      <div class="c-modal-closeBtn">
-        <button type="button">
-          <img class="modal-close" src="img/o-cross.svg" alt="" />
-        </button>
-      </div>
-      <div class="c-modal-position">
-        <div class="modal-content c-modal-content">
-          <div class="c-modal-content__title">計畫範本</div>
-          <div class="c-modal-content__item">
-            <ul class="collapsible c-accordion-plan c-accordion-addIcon">
-              <li>
-                <div class="collapsible-header accordion-header">
-                  <div class="accordion-header__item">
-                    <div class="header__item__title">
-                      標案設計
-                    </div>
-                  </div>
-                  <div class="accordion-header__item">
-                    <div class="collapsible-btn">
-                      <div class="o-accordion_arrow">
-                        <div class="arrow-icon"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="collapsible-body accordion-body">
-                  <div class="row accordion-body__item">
-                    <div class="col s12">網站GUI設計</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s12">html/前端畫面製作</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s12">其他視覺設計</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s12">溝通/會議/其他</div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <ul class="collapsible c-accordion-plan c-accordion-addIcon">
-              <li>
-                <div class="collapsible-header accordion-header">
-                  <div class="accordion-header__item">
-                    <div class="header__item__title">
-                      網站專案設計
-                    </div>
-                  </div>
-                  <div class="accordion-header__item">
-                    <div class="collapsible-btn">
-                      <div class="o-accordion_arrow">
-                        <div class="arrow-icon"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="collapsible-body accordion-body">
-                  <div class="row accordion-body__item">
-                    <div class="col s12">網站GUI設計</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s12">html/前端畫面製作</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s12">其他視覺設計</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s12">溝通/會議/其他</div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <ul class="collapsible c-accordion-plan c-accordion-addIcon">
-              <li>
-                <div class="collapsible-header accordion-header">
-                  <div class="accordion-header__item">
-                    <div class="header__item__title">
-                      產品設計
-                    </div>
-                  </div>
-                  <div class="accordion-header__item">
-                    <div class="collapsible-btn">
-                      <div class="o-accordion_arrow">
-                        <div class="arrow-icon"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="collapsible-body accordion-body">
-                  <div class="row accordion-body__item">
-                    <div class="col s12">網站GUI設計</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s12">html/前端畫面製作</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s12">其他視覺設計</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s12">溝通/會議/其他</div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <ul class="collapsible c-accordion-plan c-accordion-addIcon">
-              <li>
-                <div class="collapsible-header accordion-header">
-                  <div class="accordion-header__item">
-                    <div class="header__item__title">
-                      書籍設計
-                    </div>
-                  </div>
-                  <div class="accordion-header__item">
-                    <div class="collapsible-btn">
-                      <div class="o-accordion_arrow">
-                        <div class="arrow-icon"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="collapsible-body accordion-body">
-                  <div class="row accordion-body__item">
-                    <div class="col s12">網站GUI設計</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s12">html/前端畫面製作</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s12">其他視覺設計</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s12">溝通/會議/其他</div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <ul class="collapsible c-accordion-plan c-accordion-addIcon">
-              <li>
-                <div class="collapsible-header accordion-header">
-                  <div class="accordion-header__item">
-                    <div class="header__item__title">
-                      平面設計
-                    </div>
-                  </div>
-                  <div class="accordion-header__item">
-                    <div class="collapsible-btn">
-                      <div class="o-accordion_arrow">
-                        <div class="arrow-icon"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="collapsible-body accordion-body">
-                  <div class="row accordion-body__item">
-                    <div class="col s12">網站GUI設計</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s12">html/前端畫面製作</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s12">其他視覺設計</div>
-                  </div>
-                  <div class="row accordion-body__item">
-                    <div class="col s12">溝通/會議/其他</div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="modal-footer c-modal-footer">
-          <button class="o-btn-primary waves-effect waves-blue modal-close">
-            加入
-          </button>
-        </div>
-      </div>
-    </div> -->
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="js/materialize.js"></script>

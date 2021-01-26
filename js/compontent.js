@@ -20,30 +20,14 @@ $(document).ready(function () {
   $("select").formSelect();
 });
 
-//+++++++++++++++++++++++++
-//  accordion手風琴效果
-//+++++++++++++++++++++++++
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   let elem = document.querySelectorAll(".collapsible");
-
-//   var instance = M.Collapsible.init(elem, {
-//     accordion: false,
-//   });
-//   $(".collapsible-btn").click(function (e) {
-//     $(this).find(".vertical").toggleClass("open");
-//     $(this).find(".horizontal").toggleClass("open");
-//     //$(this).parent().parent().parent().addClass("is-accordion-active");
-//   });
-// });
-
 //++++++++++++++++++
 //  星星樣式改變
 //++++++++++++++++++
 let starBtn = document.querySelectorAll(".o-card__iconBtn");
 if (starBtn != null) {
   for (let i = 0; i < starBtn.length; i++) {
-    starBtn[i].addEventListener("click", function () {
+    starBtn[i].addEventListener("click", function (e) {
+      e.preventDefault();
       if (starBtn[i].classList.contains("o-card__star-active") === true) {
         starBtn[i].classList.remove("o-card__star-active");
         starBtn[i].classList.add("o-card__star-default");

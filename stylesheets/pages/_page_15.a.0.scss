@@ -19,6 +19,26 @@
     .l-main-tabs{
         margin-bottom: 5px;
     }
+    .c-popover-information{
+        .c-popover__content{
+            left: -280px;
+            padding:1rem;
+            &::before{
+                left: 90px;
+                margin-top: -118px;
+            }
+            &::after{
+                left: 90.5px;
+            }
+        }
+        .c-popover__text{
+            flex-wrap: wrap;
+            font-size: $a;
+            left: -280px;
+            padding:0;
+           
+        }
+    }
     .c-datePicker__modal{
         .c-datePicker__yearPicker{
             button{
@@ -279,7 +299,15 @@
         
 
     }
-
+    .change-card-to-list{
+        .c-card-planReport{
+            .c-card__item{ 
+                .c-card__star__btn{
+                    margin: 0;
+                }
+            }
+        }
+    }
     
 }
 #complete {

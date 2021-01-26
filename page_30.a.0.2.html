@@ -147,13 +147,13 @@
       </div>
     </div>
     <div class="l-main">
-      <div class="c-breadcrumb">
-        <div class="">統計報表</div>
+      <ul class="c-breadcrumb">
+        <li class=""><a href="#">我的工作紀錄</a></li>
         <div class="">></div>
-        <div class="">人員統計</div>
+        <li class=""><a href="">計畫統計</a></li>
         <div class="">></div>
-        <div class="">人員工時</div>
-      </div>
+        <li class=""><a href="">未結案</a></li>
+      </ul>
       <div class="c-general">
         <div class="c-general__title">
           <h3 class="">2020WEV24H</h3>
@@ -183,12 +183,27 @@
       </div>
       <div id="memberstime">
         <div class="l-main-tabs">
-          <button class="">
-            <a class="l-main-tabs__item disabled" href="#">
-              <img src="img/o-person-gray.svg" alt="" />
-              <div class="">Ｍ00</div>
-            </a>
-          </button>
+          <div class="c-popover-perspective pop-modal">
+            <button class="waves-effect waves-blue c-popover__btn pop-btn">
+              <a class="l-main-tabs__item" href="#">
+                <img src="img/o-person.svg" alt="" />
+                <div class="">M00</div>
+              </a>
+            </button>
+            <div class="c-popover__content pop-content">    
+              <div class="c-popover__text">
+                <div class="">T00</div>
+                <div class="">資訊與服務整合事業處</div>
+              </div>
+              <div class="c-popover__footer">
+                <button
+                  class="o-btn-primary waves-effect waves-blue pop-confirm-btn"
+                >
+                  切換其他部門
+                </button>
+              </div>
+            </div>
+          </div>
           <button class="waves-effect waves-blue">
             <a class="l-main-tabs__item modal-trigger" href="#">
               <img src="img/o-export.svg" alt="" />

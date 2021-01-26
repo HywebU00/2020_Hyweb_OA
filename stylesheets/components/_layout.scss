@@ -185,6 +185,9 @@ body{
 
     .c-breadcrumb {
         margin-bottom: 0.5rem;
+        a{
+            color: $gray1;
+        }
     }
 
     .c-writeHours {
@@ -220,7 +223,8 @@ body{
                 align-items: center;
 
                 .col {
-                    margin-left: 1rem;
+                  margin-left: 1rem;
+                  //padding-left:1.5rem ;
 
                 }
 
@@ -238,7 +242,7 @@ body{
                         justify-content: center;
                         align-items: center;
                         border-radius: 50%;
-                        padding: 1%;
+                        padding: 0.2rem;
                         cursor: pointer;
 
                         &:hover {
@@ -254,10 +258,11 @@ body{
 
                 .col {
                     margin-left: 0;
-
+                    //padding-left: 0;
                     input[type=text] {
                         margin: 0;
                     }
+                   
                 }
             }
 
@@ -377,10 +382,16 @@ body{
         }
     }
 
+    
     .l-main-content-data {
         @extend .l-main-content-title;
         display: flex;
         justify-content: flex-end;
+    }
+    .l-main-content-between-title {
+        @extend .l-main-content-title;
+        display: flex;
+        justify-content: space-between;
     }
 
     .l-main-content__title {
@@ -697,6 +708,16 @@ body{
                         align-items: center;
                         font-weight: 700;
                         cursor: pointer;
+                        img{
+                            width: 22px;
+                        height: 22px;
+                        }
+                    }
+                    .is-wbslist-btn-active{
+                        img{
+                            transform: rotate(-90deg);
+                            transition: ease 0.5s;
+                        }
                     }
                 }
             }
@@ -797,6 +818,59 @@ body{
                         padding: 0 0.75rem;
                     }
                 }
+            }
+
+            //---錯誤狀態樣式---
+            .is-error-status{
+                padding-bottom: 1rem;
+                .is-error-status-item{
+                    .c-datePicker-days {
+                        .o-input-div{
+                            background-color: #fff;
+                            border: 1px solid $danger;
+                        }
+                        &::after{
+                           color: $danger;
+                            content: "格式：yyyy/mm/dd";
+                            font-size: 0.8rem;
+                        }
+                    }
+                    .c-dropdown-general {
+                        .select-wrapper{
+                            background-color: #fff;
+                            border: 1px solid $danger;
+                        }
+                        &::after{
+                            color: $danger;
+                             content: "請確認項目有在選單內";
+                             font-size: 0.8rem;
+                         }
+                    }
+                    .c-dropdown-member{
+                        .c-dropdown__input{
+                            background-color: #fff;
+                            border: 1px solid $danger;
+                            &::after{
+                                background-color: #fff;
+                            }
+                        }
+    
+                        &::after{
+                            color: $danger;
+                             content: "請確認成員皆有在選單內且成員間以頓號區隔";
+                             font-size: 0.8rem;
+                         }
+                    }
+                   .o-input{
+                       input{
+                        background-color: #fff;
+                        border: 1px solid $danger;
+                        
+                       }
+                     
+                   } 
+                }
+                
             }
         }
 
@@ -902,6 +976,17 @@ body{
                         align-items: center;
                         font-weight: 700;
                         cursor: pointer;
+                    
+                    }
+                    img{
+                        width: 22px;
+                        height: 22px;
+                    }
+                    .is-wbslist-btn-active{
+                        img{
+                            transform: rotate(-90deg);
+                            transition: ease 0.5s;
+                        }
                     }
                 }
             }
@@ -1284,9 +1369,9 @@ body{
 }
 
 .c-submenu-content {
-    width: 251px;
+    width: 25.33rem;
     height: 100vh;
-    transition: ease .5s;
+    //transition: ease .5s;
     background-color: #fff;
     right: 0;
     box-shadow: $box-shadow;
@@ -1314,12 +1399,16 @@ body{
 
         .calendar_btn {
             button {
-                height: 20px;
-                width: 20px;
+                height: 1.5rem;
+                width: 1.5rem;
                 justify-content: center;
                 align-items: center;
                 display: flex;
                 border-radius: 50%;
+                margin-right:1.8rem;
+                &:last-child{
+                    margin: 0;
+                }
             }
 
             display: flex;
@@ -1351,11 +1440,23 @@ body{
     }
 
     td.today {
+        //position: relative;
         font-weight: 700;
+        
         color: #fff;
-        background: $hy-background;
+        z-index: 100;
+        //background: $hy-background;
         height: 30px;
         border-radius: 50%;
+        &::after{
+            position: absolute;
+            content: "";
+            background: $hy-background;
+            border-radius: 50%;
+            height: 2rem;
+            width: 2rem;
+            z-index: -1;
+        }
 
     }
 
@@ -1400,7 +1501,7 @@ body{
         font-size: $h2;
         font-weight: 700;
         font-family: $font-family;
-        margin-bottom: 10%;
+        margin-bottom: 1rem;
         padding: 0 24px;
     }
 

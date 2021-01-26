@@ -104,15 +104,15 @@
       </div>
     </div>
     <div class="l-main">
-      <div class="c-breadcrumb">
-        <div class="">我的計畫管理</div>
+      <ul class="c-breadcrumb">
+        <li class=""><a href="#">我的工作紀錄</a></li>
         <div class="">></div>
-        <div class="">計畫總覽</div>
+        <li class=""><a href="">計畫總覽</a></li>
         <div class="">></div>
-        <div class="">計畫名稱</div>
+        <li class=""><a href="">計畫名稱</a></li>
         <div class="">></div>
-        <div class="">基本資訊</div>
-      </div>
+        <li class=""><a href="">工作明細</a></li>
+      </ul>
       <div class="c-general">
         <div class="c-general__title">
           <h3 class="">2020WEV24H</h3>
@@ -487,7 +487,7 @@
       <div id="member">
         <div class="l-main-tabs">
           <button class="waves-effect waves-blue">
-            <a class="l-main-tabs__item modal-trigger" href="#addGroup">
+            <a class="l-main-tabs__item modal-trigger" href="#addGroupModal">
               <img src="img/o-plus.svg" alt="" /> 新增成員
             </a>
           </button>
@@ -495,11 +495,11 @@
         <div class="l-main-content">
           <div class="l-main-content__fileInput">
             <div class="c-fileInput-add">
-              <a class="modal-trigger" href="#addGroup">
-               <img class="c-fileInput__img" src="img/o-plusL.svg" alt="" />
-               <div class="c-fileInput__title">新增計畫成員</div>
+              <a class="modal-trigger" href="#addGroupModal">
+                <img class="c-fileInput__img" src="img/o-plusL.svg" alt="" />
+                <div class="c-fileInput__title">新增計畫成員</div>
               </a>
-             </div>
+            </div>
           </div>
         </div>
       </div>
@@ -521,7 +521,7 @@
         <div class="l-main-content">
           <div class="l-main-content__downloadlink">
             <button>
-              <a class="modal-trigger" href="#sample">＊下載WBS Excel範本</a>
+              <a class="modal-trigger" href="#">＊下載WBS Excel範本</a>
             </button>
           </div>
           <div class="l-main-content-table l-main-content__wbslist">
@@ -552,8 +552,9 @@
                 <div class="col s1 num-position">11月</div>
                 <div class="col s1 num-position">12月</div>
                 <div class="col s2 num-position">
-                  <button type="button">
-                    <img src="img/o-lessYear.svg" alt="" />
+                  <!-- 點擊列表展開時 按鈕處增加class is-wbslist-btn-active -->
+                  <button class="is-wbslist-btn-active" type="button">
+                    <img src="img/o-addYear.svg" alt="" />
                     <span>2021年</span>
                   </button>
                 </div>
@@ -593,7 +594,7 @@
                                 <div class="">2020 7月</div>
                                 <button></button>
                               </div>
-                              
+
                               <div class="c-datePicker__content">
                                 <table>
                                   <tbody>
@@ -670,7 +671,7 @@
                                 <button type="button" class="waves-effect waves-blue">
                                   <img src="img/o-arrowRight-blue.svg" alt="" />
                                 </button>
-                                
+
                               </div>
                               <div class="c-datePicker__content">
                                 <table>
@@ -794,7 +795,7 @@
                                 <div class="">2020 7月</div>
                                 <button></button>
                               </div>
-                              
+
                               <div class="c-datePicker__content">
                                 <table>
                                   <tbody>
@@ -871,7 +872,7 @@
                                 <button type="button" class="waves-effect waves-blue">
                                   <img src="img/o-arrowRight-blue.svg" alt="" />
                                 </button>
-                                
+
                               </div>
                               <div class="c-datePicker__content">
                                 <table>
@@ -1199,7 +1200,7 @@
                                 <div class="">2020 7月</div>
                                 <button></button>
                               </div>
-                              
+
                               <div class="c-datePicker__content">
                                 <table>
                                   <tbody>
@@ -1276,7 +1277,7 @@
                                 <button type="button" class="waves-effect waves-blue">
                                   <img src="img/o-arrowRight-blue.svg" alt="" />
                                 </button>
-                                
+
                               </div>
                               <div class="c-datePicker__content">
                                 <table>
@@ -1604,7 +1605,7 @@
                                 <div class="">2020 7月</div>
                                 <button></button>
                               </div>
-                              
+
                               <div class="c-datePicker__content">
                                 <table>
                                   <tbody>
@@ -1681,7 +1682,7 @@
                                 <button type="button" class="waves-effect waves-blue">
                                   <img src="img/o-arrowRight-blue.svg" alt="" />
                                 </button>
-                                
+
                               </div>
                               <div class="c-datePicker__content">
                                 <table>
@@ -2009,7 +2010,7 @@
                                 <div class="">2020 7月</div>
                                 <button></button>
                               </div>
-                              
+
                               <div class="c-datePicker__content">
                                 <table>
                                   <tbody>
@@ -2086,7 +2087,7 @@
                                 <button type="button" class="waves-effect waves-blue">
                                   <img src="img/o-arrowRight-blue.svg" alt="" />
                                 </button>
-                                
+
                               </div>
                               <div class="c-datePicker__content">
                                 <table>
@@ -2414,7 +2415,7 @@
                                 <div class="">2020 7月</div>
                                 <button></button>
                               </div>
-                              
+
                               <div class="c-datePicker__content">
                                 <table>
                                   <tbody>
@@ -2491,7 +2492,7 @@
                                 <button type="button" class="waves-effect waves-blue">
                                   <img src="img/o-arrowRight-blue.svg" alt="" />
                                 </button>
-                                
+
                               </div>
                               <div class="c-datePicker__content">
                                 <table>
@@ -2819,7 +2820,7 @@
                                 <div class="">2020 7月</div>
                                 <button></button>
                               </div>
-                              
+
                               <div class="c-datePicker__content">
                                 <table>
                                   <tbody>
@@ -2896,7 +2897,7 @@
                                 <button type="button" class="waves-effect waves-blue">
                                   <img src="img/o-arrowRight-blue.svg" alt="" />
                                 </button>
-                                
+
                               </div>
                               <div class="c-datePicker__content">
                                 <table>
@@ -3224,7 +3225,7 @@
                                 <div class="">2020 7月</div>
                                 <button></button>
                               </div>
-                              
+
                               <div class="c-datePicker__content">
                                 <table>
                                   <tbody>
@@ -3301,7 +3302,7 @@
                                 <button type="button" class="waves-effect waves-blue">
                                   <img src="img/o-arrowRight-blue.svg" alt="" />
                                 </button>
-                                
+
                               </div>
                               <div class="c-datePicker__content">
                                 <table>
@@ -3629,7 +3630,7 @@
                                 <div class="">2020 7月</div>
                                 <button></button>
                               </div>
-                              
+
                               <div class="c-datePicker__content">
                                 <table>
                                   <tbody>
@@ -3706,7 +3707,7 @@
                                 <button type="button" class="waves-effect waves-blue">
                                   <img src="img/o-arrowRight-blue.svg" alt="" />
                                 </button>
-                                
+
                               </div>
                               <div class="c-datePicker__content">
                                 <table>
@@ -4020,7 +4021,9 @@
                   <div class="table-body__item__project__icon">
                     <img src="img/o-plus.svg" alt="" />
                   </div>
-                  <div class="table-body__item__project__title">新增範本</div>
+                  <div class="table-body__item__project__title">
+                    <a class="modal-trigger" href="#sampleModal">新增範本</a>
+                  </div>
                 </button>
               </div>
             </div>
@@ -4063,8 +4066,9 @@
                 <div class="col s1">11月</div>
                 <div class="col s1">12月</div>
                 <div class="col s2">
-                  <button type="button">
-                    <img src="img/o-lessYear.svg" alt="" />
+                  <!-- 點擊列表展開時 按鈕處增加class is-wbslist-btn-active -->
+                  <button class="is-wbslist-btn-active" type="button">
+                    <img src="img/o-addYear.svg" alt="" />
                     <span>2021年</span>
                   </button>
                 </div>
@@ -4140,82 +4144,178 @@
       </div>
     </div>
   </div>
-  <!-- 視窗 -->
-  <div id="addGroup" class="c-modal-addGroup modal">
-    <div class=""></div>
+  <!--addGroupModal 新增人員視窗 -->
+  <!-- c-modal-btnList 新增 常用成員的button -->
+  <div id="addGroupModal" class="c-modal-addGroup modal">
     <div class="c-modal-btnList">
-      <button class="waves-effect waves-blue">
-        <a class="modal-trigger" href="#usually">
+      <button class="member-btn waves-effect waves-blue">
+        <a class="modal-trigger" href="#usuallyModal">
           <img class="" src="img/o-group.svg" alt="" />
           <div class="">常用成員</div>
         </a>
       </button>
-      <button type="button">
+      <button class="cross-btn" type="button">
         <img class="modal-close" src="img/o-cross.svg" alt="" />
       </button>
     </div>
     <div class="c-modal-addGroup__content">
-      <div class="c-modal-addGroup__content__item c-modal-content">
-        <div class="row c-modal-content__select">
-          <div class="col s6">
-            <div class="input-title"><span>* </span>計劃名稱</div>
-            <div class="input-field c-dropdown-planContent">
-              <select class="c-dropdown-plan-select">
-                <option value="" disabled selected>請選擇計劃名稱</option>
-                <optgroup label="籌備中">
-                  <option value="1">
-                    2020年度地方版公務出國報告系統無障礙2.0規範ＡＡ等級標章申請作業採購案
-                  </option>
-                  <option value="2">2020智慧空間管理理系</option>
-                  <option value="3">2020智慧空間管理理系慧空慧空</option>
-                  <option value="4">
-                    2020智慧空間管理理慧空慧空慧空慧空系
-                  </option>
-                </optgroup>
-                <optgroup label="執行中">
-                  <option value="5">2020智慧空間管理理慧空系</option>
-                  <option value="6">2020智慧空間管理理慧空系</option>
-                  <option value="7">2020智慧空間管理理慧空系</option>
-                  <option value="8">2020智慧空間管理理慧空系</option>
-                </optgroup>
-                <optgroup label="保固中">
-                  <option value="9">2020智慧空間管理理慧空系</option>
-                  <option value="10">
-                    2020智慧空間管理理慧空慧空慧空慧空系
-                  </option>
-                  <option value="11">2020智慧空間管理理系慧空慧空</option>
-                  <option value="12">
-                    2020智慧空間管理理慧空慧空慧空慧空系
-                  </option>
-                </optgroup>
-              </select>
-            </div>
-          </div>
-          <div class="col s6">
-            <div class="input-title">備註</div>
-            <div class="o-input">
-              <input class="" type="text" />
-            </div>
-          </div>
-          <div class="col">
-            <button class="o-btn-primary waves-effect waves-blue">
-              搜尋
-            </button>
+      <div class="row c-modal-content__select">
+        <div class="col s6">
+          <div class="input-title"><span>* </span>計劃名稱</div>
+          <div class="input-field c-dropdown-planContent">
+            <select class="c-dropdown-plan-select">
+              <option value="" disabled selected>請選擇計劃名稱</option>
+              <optgroup label="籌備中">
+                <option value="1">
+                  2020年度地方版公務出國報告系統無障礙2.0規範ＡＡ等級標章申請作業採購案
+                </option>
+                <option value="2">2020智慧空間管理理系</option>
+                <option value="3">2020智慧空間管理理系慧空慧空</option>
+                <option value="4">
+                  2020智慧空間管理理慧空慧空慧空慧空系
+                </option>
+              </optgroup>
+              <optgroup label="執行中">
+                <option value="5">2020智慧空間管理理慧空系</option>
+                <option value="6">2020智慧空間管理理慧空系</option>
+                <option value="7">2020智慧空間管理理慧空系</option>
+                <option value="8">2020智慧空間管理理慧空系</option>
+              </optgroup>
+              <optgroup label="保固中">
+                <option value="9">2020智慧空間管理理慧空系</option>
+                <option value="10">
+                  2020智慧空間管理理慧空慧空慧空慧空系
+                </option>
+                <option value="11">2020智慧空間管理理系慧空慧空</option>
+                <option value="12">
+                  2020智慧空間管理理慧空慧空慧空慧空系
+                </option>
+              </optgroup>
+            </select>
           </div>
         </div>
-        <div class="c-modal-content__chooseMember">
-          <div class="c-modal-content__chooseMember__title">已選成員</div>
+        <div class="col s5">
+          <div class="input-title">備註</div>
+          <div class="o-input">
+            <input class="" type="text" />
+          </div>
+        </div>
+        <div class="col">
+          <button class="o-btn-primary waves-effect waves-blue">搜尋</button>
         </div>
       </div>
-      <div class="c-modal-addGroup__content__item modal-footer c-modal-footer">
+      <div class="c-modal-content">
+        <div class="c-modal-content__chooseMember">
+          <div class="c-modal-content__chooseMember__title">已選成員</div>
+          <div class="">
+            <div class="chooseMember-tag">
+              <div class="chooseMember-tag__name">王小明 Mike</div>
+              <button><img src="img/o-cross-white.svg" alt="" /></button>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="chooseMember-tag__name">王小明 Mike</div>
+              <button><img src="img/o-cross-white.svg" alt="" /></button>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="chooseMember-tag__name">王小明 Jessica</div>
+              <button><img src="img/o-cross-white.svg" alt="" /></button>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="chooseMember-tag__name">王小明 Michelle</div>
+              <button><img src="img/o-cross-white.svg" alt="" /></button>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="chooseMember-tag__name">王小明 Jessica</div>
+              <button><img src="img/o-cross-white.svg" alt="" /></button>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="chooseMember-tag__name">王小明 Jessica</div>
+              <button><img src="img/o-cross-white.svg" alt="" /></button>
+            </div>
+          </div>
+        </div>
+        <div class="c-modal-content__memberList">
+          <div class="memberList__title">
+            <div class="">全選</div>
+            <div class="">全部清除</div>
+          </div>
+          <div class="memberList__group">
+            <!-- "c-card-lablePerson__additem" 監聽樣式 點擊後動態新增或刪除"is-active" -->
+            <div class="c-card-lablePerson c-card-lablePerson__additem is-active">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson c-card-lablePerson__additem">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson c-card-lablePerson__additem">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson c-card-lablePerson__additem">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson c-card-lablePerson__additem">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson c-card-lablePerson__additem">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+            <div class="c-card-lablePerson c-card-lablePerson__additem">
+              <div class="c-card-lablePerson-title">U00</div>
+              <div class="c-card-lablePerson-item">
+                <div class="">
+                  <div class="">A9025</div>
+                  <div class="">王小明 Mike</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer c-modal-footer">
         <button class="o-btn-primary waves-effect waves-blue modal-close">
           加入
         </button>
       </div>
     </div>
   </div>
-  <!-- 視窗2 -->
-  <div id="usually" class="c-modal-usuallyUseMember modal">
+  <!-- usuallyModal  常用計畫成員視窗-->
+  <div id="usuallyModal" class="c-modal-usuallyUseMember modal">
     <div class="c-modal-closeBtn">
       <button type="button">
         <img class="modal-close" src="img/o-cross.svg" alt="" />
@@ -4392,7 +4492,8 @@
       </div>
     </div>
   </div>
-  <div id="sample" class="c-modal-sample modal ">
+  <!-- usuallyModal  新增計畫範本視窗-->
+  <div id="sampleModal" class="c-modal-sample modal ">
     <div class="c-modal-closeBtn">
       <button type="button">
         <img class="modal-close" src="img/o-cross.svg" alt="" />
@@ -4571,13 +4672,13 @@
       </div>
     </div>
   </div>
-  <!-- toast -->
+  <!-- toast 檔案上傳成功視窗 -->
   <div class="c-toast-uploadSuccess toast-join-position">
     <div class="c-toast-header">
       <div class="">成功上傳 1 個檔案</div>
       <button type="button">
         <img src="img/o-cross-white.svg" alt="" />
-      </button>  
+      </button>
     </div>
     <div class="c-toast-body">
       <div class="c-toast-body__item">
