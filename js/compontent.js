@@ -52,7 +52,8 @@ const datePicker_btn = document.querySelectorAll(".datePicker-confirm-btn");
 for (let a = 0; a < pop_modal.length; a++) {
   pop_btn[a].addEventListener("click", function () {
     let item = pop_content[a].classList.contains("pop-content");
-    if (item === true) {
+    let popDisable = pop_content[a].classList.contains("pop-disable");
+    if (item === true && popDisable === false) {
       pop_content[a].classList.toggle("is-pop-show");
       let popBg = document.createElement("div");
       popBg.setAttribute("class", "c-popover__bg");

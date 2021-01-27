@@ -183,27 +183,35 @@
       </div>
       <div id="memberstime">
         <div class="l-main-tabs">
-          <div class="c-popover-perspective pop-modal">
-            <button class="waves-effect waves-blue c-popover__btn pop-btn">
-              <a class="l-main-tabs__item" href="#">
-                <img src="img/o-person.svg" alt="" />
-                <div class="">M00</div>
-              </a>
-            </button>
-            <div class="c-popover__content pop-content">    
-              <div class="c-popover__text">
-                <div class="">T00</div>
-                <div class="">資訊與服務整合事業處</div>
-              </div>
-              <div class="c-popover__footer">
-                <button
-                  class="o-btn-primary waves-effect waves-blue pop-confirm-btn"
-                >
-                  切換其他部門
-                </button>
+            <!-- 選部門後(button 呈現無法點選狀態)
+               1.更改icon 為 ”o-person-gray.svg“
+               2.在.l-main-tabs__item 中增添 disabled 的名稱 
+               3.在 button class 裡移除 ”waves-effect“ 及 ”waves-blue“
+               4.在 pop-content 的 class增加 “pop-disable”
+               5.在 填寫部門的 div 中增加 is-disabled 的 class
+            -->
+            <div class="c-popover-perspective pop-modal">
+              <button class="c-popover__btn pop-btn">
+                <a class="l-main-tabs__item disabled" href="#">
+                  <img src="img/o-person-gray.svg" alt="" />
+                  <div class="is-disabled">M00</div>
+                </a>
+              </button>
+              <div class="c-popover__content pop-content pop-disable">
+                
+                <div class="c-popover__text">
+                  <div class="">T00</div>
+                  <div class="">資訊與服務整合事業處</div>
+                </div>
+                <div class="c-popover__footer">
+                  <button
+                    class="o-btn-primary waves-effect waves-blue pop-confirm-btn"
+                  >
+                    切換其他部門
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
           <button class="waves-effect waves-blue">
             <a class="l-main-tabs__item modal-trigger" href="#">
               <img src="img/o-export.svg" alt="" />
@@ -498,12 +506,35 @@
       </div>
       <div id="departmenttime">
         <div class="l-main-tabs">
-          <button class="">
-            <a class="l-main-tabs__item disabled" href="#">
-              <img src="img/o-person-gray.svg" alt="" />
-              <div class="">Ｍ00</div>
-            </a>
-          </button>
+            <!-- 選部門後(button 呈現無法點選狀態)
+               1.更改icon 為 ”o-person-gray.svg“
+               2.在.l-main-tabs__item 中增添 disabled 的名稱 
+               3.在 button class 裡移除 ”waves-effect“ 及 ”waves-blue“
+               4.在 pop-content 的 class增加 “pop-disable”
+               5.在 填寫部門的 div 中增加 is-disabled 的 class
+            -->
+            <div class="c-popover-perspective  pop-modal">
+              <button class="c-popover__btn pop-btn">
+                <a class="l-main-tabs__item disabled" href="#">
+                  <img src="img/o-person-gray.svg" alt="" />
+                  <div class="is-disabled">M00</div>
+                </a>
+              </button>
+              <div class="c-popover__content pop-content pop-disable">
+                
+                <div class="c-popover__text">
+                  <div class="">T00</div>
+                  <div class="">資訊與服務整合事業處</div>
+                </div>
+                <div class="c-popover__footer">
+                  <button
+                    class="o-btn-primary waves-effect waves-blue pop-confirm-btn"
+                  >
+                    切換其他部門
+                  </button>
+                </div>
+              </div>
+            </div>
           <button class="waves-effect waves-blue">
             <a class="l-main-tabs__item modal-trigger" href="#">
               <img src="img/o-export.svg" alt="" />
@@ -623,12 +654,35 @@
       </div>
       <div id="supporttime">
         <div class="l-main-tabs">
-          <button class="">
-            <a class="l-main-tabs__item disabled" href="#">
-              <img src="img/o-person-gray.svg" alt="" />
-              <div class="">Ｍ00</div>
-            </a>
-          </button>
+            <!-- 選部門後(button 呈現無法點選狀態)
+               1.更改icon 為 ”o-person-gray.svg“
+               2.在.l-main-tabs__item 中增添 disabled 的名稱 
+               3.在 button class 裡移除 .waves-effect 及 .waves-blue
+               4.移除 pop-modal的 class
+               5.在 填寫部門的 div 中增加 is-disabled 的 class
+            -->
+            <div class="c-popover-perspective  pop-modal">
+              <button class="c-popover__btn pop-btn">
+                <a class="l-main-tabs__item disabled" href="#">
+                  <img src="img/o-person-gray.svg" alt="" />
+                  <div class="is-disabled">M00</div>
+                </a>
+              </button>
+              <div class="c-popover__content pop-content pop-disable">
+                
+                <div class="c-popover__text">
+                  <div class="">T00</div>
+                  <div class="">資訊與服務整合事業處</div>
+                </div>
+                <div class="c-popover__footer">
+                  <button
+                    class="o-btn-primary waves-effect waves-blue pop-confirm-btn"
+                  >
+                    切換其他部門
+                  </button>
+                </div>
+              </div>
+            </div>
           <button class="waves-effect waves-blue">
             <a class="l-main-tabs__item modal-trigger" href="#">
               <img src="img/o-export.svg" alt="" />
@@ -748,12 +802,35 @@
       </div>
       <div id="notReachedtime">
         <div class="l-main-tabs">
-          <button class="">
-            <a class="l-main-tabs__item disabled" href="#">
-              <img src="img/o-person-gray.svg" alt="" />
-              <div class="">Ｍ00</div>
-            </a>
-          </button>
+                      <!-- 選部門後(button 呈現無法點選狀態)
+               1.更改icon 為 ”o-person-gray.svg“
+               2.在.l-main-tabs__item 中增添 disabled 的名稱 
+               3.在 button class 裡移除 .waves-effect 及 .waves-blue
+               4.移除 pop-modal的 class
+               5.在 填寫部門的 div 中增加 is-disabled 的 class
+            -->
+            <div class="c-popover-perspective  pop-modal">
+              <button class="c-popover__btn pop-btn">
+                <a class="l-main-tabs__item disabled" href="#">
+                  <img src="img/o-person-gray.svg" alt="" />
+                  <div class="is-disabled">M00</div>
+                </a>
+              </button>
+              <div class="c-popover__content pop-content pop-disable">
+                
+                <div class="c-popover__text">
+                  <div class="">T00</div>
+                  <div class="">資訊與服務整合事業處</div>
+                </div>
+                <div class="c-popover__footer">
+                  <button
+                    class="o-btn-primary waves-effect waves-blue pop-confirm-btn"
+                  >
+                    切換其他部門
+                  </button>
+                </div>
+              </div>
+            </div>
           <button class="waves-effect waves-blue">
             <a class="l-main-tabs__item " href="#">
               <img src="img/o-email.svg" alt="" />

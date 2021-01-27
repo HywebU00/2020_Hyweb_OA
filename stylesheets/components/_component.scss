@@ -28,6 +28,10 @@
     @extend .c-card;
     width: 10%;
     min-width: 210px;
+    a{
+        color: $gray1;
+        
+    }
     .c-card__userInformation {
         h3 {
             font-weight: 400;
@@ -63,21 +67,51 @@
         }
 
     }
+    &:hover{
+        transition: all 0.2s; 
+        transform: translateY(2px) translateX(2px);
+    }
+        &:active{
+        transition: all 0.2s;
+        transform: translateY(4px) translateX(4px);
+    }
 }
 
 .c-card-manhourSearch {
     @extend .c-card-manhourSofar;
+    a{
+       h2{
+           color: $gray1;
+       } 
+       h3{
+        color: $gray1;
+       }
+       .c-card__item__time{
+        color: $gray1;
+       }
+    }
 }
 
 .c-card-percent {
     @extend .c-card-manhourSofar;
-
+    a{
+        h2{
+            color: $gray1;
+        } 
+        h3{
+         color: $gray1;
+        }
+        .c-card__item__time{
+         color: $gray1;
+        }
+     }
     .c-card__item {
         justify-content: center;
+        align-items: end;
     }
 
     .c-card__item__time {
-        padding-left: 10%; //$pd-3/2;
+        padding-left: 1rem; //$pd-3/2;
     }
 
     .c-card__item__totaltime {
@@ -577,6 +611,14 @@
     .c-card-lableGroup__item {
         @include ellipsisText;
         font-size: $p;
+    }
+    &:hover{
+        transition: all 0.2s; 
+        transform: translateY(2px) translateX(2px);
+    }
+        &:active{
+        transition: all 0.2s;
+        transform: translateY(4px) translateX(4px);
     }
 
 }
@@ -2529,7 +2571,14 @@
 
     .c-popover__content {
         width: 200px;
-
+        left: -120px;
+        top:50px;
+        &::before{
+            margin-left: 100.75px;
+        }
+        &::after{
+            margin-left: 100.9px;
+        }
         .c-popover__text {
             margin-bottom: 1.5rem;
 

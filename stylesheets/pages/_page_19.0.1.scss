@@ -9,6 +9,19 @@
             }
         }
     }
+    .change-card-to-list{
+        .c-card-manhourSofar{
+            &:hover{
+                transition: all 0; 
+                transform: translateY(0px) translateX(0px);
+            }
+                &:active{
+                transition: all 0;
+                transform: translateY(0px) translateX(0px);
+            }
+        }
+    }
+    
 } 
 .l-main-content{
    .c-card-manhourSofar{

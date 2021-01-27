@@ -146,6 +146,7 @@
         </div>
       </div>
     </div>
+    <!-- 高階主管與財務頁面(無資料狀態) -->
     <div class="l-main">
       <ul class="c-breadcrumb">
         <li class=""><a href="#">我的工作紀錄</a></li>
@@ -182,7 +183,7 @@
       <div id="memberstime">
         <div class="l-main-tabs">
           <button class="waves-effect waves-blue">
-            <a class="l-main-tabs__item modal-trigger" href="#memberstime_execute">
+            <a class="l-main-tabs__item modal-trigger" href="#execute">
               <img src="img/o-person.svg" alt="" />
               <div class="">選擇部門</div>
             </a>
@@ -199,7 +200,7 @@
       <div id="departmenttime">
         <div class="l-main-tabs">
           <button class="waves-effect waves-blue">
-            <a class="l-main-tabs__item modal-trigger" href="#memberstime_execute">
+            <a class="l-main-tabs__item modal-trigger" href="#execute">
               <img src="img/o-person.svg" alt="" />
               <div class="">選擇部門</div>
             </a>
@@ -216,7 +217,7 @@
       <div id="supporttime">
         <div class="l-main-tabs">
           <button class="waves-effect waves-blue">
-            <a class="l-main-tabs__item modal-trigger" href="#memberstime_execute">
+            <a class="l-main-tabs__item modal-trigger" href="#execute">
               <img src="img/o-person.svg" alt="" />
               <div class="">選擇部門</div>
             </a>
@@ -233,7 +234,7 @@
       <div id="notReachedtime">
         <div class="l-main-tabs">
           <button class="waves-effect waves-blue">
-            <a class="l-main-tabs__item modal-trigger" href="#memberstime_execute">
+            <a class="l-main-tabs__item modal-trigger" href="#execute">
               <img src="img/o-person.svg" alt="" />
               <div class="">選擇部門</div>
             </a>
@@ -248,8 +249,8 @@
         </div>
       </div>
     </div>
-    <!-- 視窗一 memberstime_execute modal -->
-    <div id="memberstime_execute" class="c-modal-alert modal c-modal-select">
+    <!-- 視窗一 execute modal -->
+    <div id="execute" class="c-modal-alert modal c-modal-select">
       <div class="c-modal-btnList">
         <button type="button"><img class="modal-close" src="img/o-cross.svg" alt="" /></button>
       </div>
@@ -278,96 +279,6 @@
         </div>
       </div>
     </div>  
-    <!-- 視窗一 departmenttime_execute modal -->
-    <div id="departmenttime_execute" class="c-modal-alert modal c-modal-select">
-      <div class="c-modal-btnList">
-        <button type="button"><img class="modal-close" src="img/o-cross.svg" alt="" /></button>
-      </div>
-      <div class="c-modal-alert__content">
-        <div class="c-search">
-          <div class="c-search-list">
-            <div class="c-search-item">
-              <div class="c-search-item__title">檢視</div>
-              <div class="input-field c-dropdown-department col">
-                <select class="c-dropdown-plan-select">
-                  <option value="1">U20-使用者經驗用者用者企劃部</option>
-                  <option value="2">U20-使用者經驗企劃部</option>
-                  <option value="3">U20-使用者經驗用者用者企劃部</option>
-                  <option value="4">U20-使用者經驗企劃部</option>
-                  <option value="5">U20-使用者經驗用者用者企劃部</option>
-                  <option value="6">U20-使用者經驗企劃部</option>
-                  <option value="7">U20-使用者經驗用者用者企劃部</option>
-                </select>
-              </div>
-              <div class="c-search-item__title">的委託工時</div>
-            </div>
-            <div class="c-search-btn">
-              <button class="o-btn-primary waves-effect waves-blue">確定</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 視窗一 supporttime_execute modal -->
-    <div id="supporttime_execute" class="c-modal-alert modal c-modal-select">
-      <div class="c-modal-btnList">
-        <img class="modal-close" src="img/o-cross.svg" alt="" />
-      </div>
-      <div class="c-modal-alert__content">
-        <div class="c-search">
-          <div class="c-search-list">
-            <div class="c-search-item">
-              <div class="c-search-item__title">檢視</div>
-              <div class="input-field c-dropdown-department col">
-                <select class="c-dropdown-plan-select">
-                  <option value="1">U20-使用者經驗用者用者企劃部</option>
-                  <option value="2">U20-使用者經驗企劃部</option>
-                  <option value="3">U20-使用者經驗用者用者企劃部</option>
-                  <option value="4">U20-使用者經驗企劃部</option>
-                  <option value="5">U20-使用者經驗用者用者企劃部</option>
-                  <option value="6">U20-使用者經驗企劃部</option>
-                  <option value="7">U20-使用者經驗用者用者企劃部</option>
-                </select>
-              </div>
-              <div class="c-search-item__title">的支援工時</div>
-            </div>
-            <div class="c-search-btn">
-              <button class="o-btn-primary waves-effect waves-blue">確定</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>  
-    <!-- 視窗一 notReachedtime_execute modal -->
-    <div id="notReachedtime_execute" class="c-modal-alert modal c-modal-select">
-      <div class="c-modal-btnList">
-        <img class="modal-close" src="img/o-cross.svg" alt="" />
-      </div>
-      <div class="c-modal-alert__content">
-        <div class="c-search">
-          <div class="c-search-list">
-            <div class="c-search-item">
-              <div class="c-search-item__title">檢視</div>
-              <div class="input-field c-dropdown-department col">
-                <select class="c-dropdown-plan-select">
-                  <option value="1">U20-使用者經驗用者用者企劃部</option>
-                  <option value="2">U20-使用者經驗企劃部</option>
-                  <option value="3">U20-使用者經驗用者用者企劃部</option>
-                  <option value="4">U20-使用者經驗企劃部</option>
-                  <option value="5">U20-使用者經驗用者用者企劃部</option>
-                  <option value="6">U20-使用者經驗企劃部</option>
-                  <option value="7">U20-使用者經驗用者用者企劃部</option>
-                </select>
-              </div>
-              <div class="c-search-item__title">的未達比例工時</div>
-            </div>
-            <div class="c-search-btn">
-              <button class="o-btn-primary waves-effect waves-blue">確定</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>   
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <script src="js/materialize.js"></script>

@@ -33,9 +33,11 @@ let addUserName = function () {
     let div = document.createElement("div");
     //將陣列中尚未append姓名的卡片抓出來 塞入姓名
     div.setAttribute("class", "js-c-card__appendUserName");
+
     div.innerHTML = `<h2>${userNumber}</h2><h2>${chineseName}</h2><h3>${englishName}</h3>`;
     if (arr[a].querySelector(".js-c-card__appendUserName") === null) {
-      arr[a].insertBefore(div, beforeChild);
+      arr[a].children[0].insertBefore(div, beforeChild);
+      //arr[a].insertBefore(div, beforeChild);
     }
   }
 };
@@ -51,7 +53,8 @@ let removeAppendName = function () {
       //抓到有append姓名的並刪除
       let append = addNameCard[b].querySelector(".js-c-card__appendUserName");
       if (append != null) {
-        addNameCard[b].removeChild(append);
+        //console.log(addNameCard[b].children[0]);
+        addNameCard[b].children[0].removeChild(append);
       }
     }
   }

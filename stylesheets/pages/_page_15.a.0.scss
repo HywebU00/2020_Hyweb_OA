@@ -307,6 +307,12 @@
                 }
             }
         }
+        .l-main-content-item__listTitle{
+            div{
+                display: flex;
+            justify-content: center;
+            }
+        }
     }
     
 }

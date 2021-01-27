@@ -37,6 +37,17 @@
         .c-card__content{
             width: 10%;
         }
+        .c-card-manhourSearch{
+            &:hover{
+                transition: all 0; 
+                transform: translateY(0px) translateX(0px);
+            }
+                &:active{
+                transition: all 0;
+                transform: translateY(0px) translateX(0px);
+            }
+        }
+        
     }
 }
 
@@ -79,6 +90,17 @@
         .c-card__content{
             width: 10%;
         }
+        .c-card-manhourSearch{
+            &:hover{
+                transition: all 0; 
+                transform: translateY(0px) translateX(0px);
+            }
+                &:active{
+                transition: all 0;
+                transform: translateY(0px) translateX(0px);
+            }
+        }
+        
     }
 }
 #supporttime{
@@ -133,6 +155,17 @@
         .c-card__content{
             width: 10%;
         }
+        .c-card-manhourSearch{
+            &:hover{
+                transition: all 0; 
+                transform: translateY(0px) translateX(0px);
+            }
+                &:active{
+                transition: all 0;
+                transform: translateY(0px) translateX(0px);
+            }
+        }
+
     }
 }
 #notReachedtime{
@@ -235,7 +268,19 @@
                 }
             }
         }
-
+        .c-card-manhourSearch{
+            &:hover{
+                transition: all 0; 
+                transform: translateY(0px) translateX(0px);
+            }
+                &:active{
+                transition: all 0;
+                transform: translateY(0px) translateX(0px);
+            }
+        }
+        a{
+            align-items: center;
+        }
     }
     .is-error-status{
         .c-search-list{

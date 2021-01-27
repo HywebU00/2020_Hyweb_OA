@@ -187,12 +187,35 @@
       </div>
       <div id="memberstime">
         <div class="l-main-tabs">
-          <button class="">
-            <a class="l-main-tabs__item disabled" href="#">
-              <img src="img/o-person-gray.svg" alt="" />
-              <div class="is-disabled">Ｍ00</div>
-            </a>
-          </button>
+             <!-- 選部門後(button 呈現無法點選狀態)
+               1.更改icon 為 ”o-person-gray.svg“
+               2.在.l-main-tabs__item 中增添 disabled 的名稱 
+               3.在 button class 裡移除 .waves-effect 及 .waves-blue
+               4.移除 pop-modal的 class
+               5.在 填寫部門的 div 中增加 is-disabled 的 class
+            -->
+            <div class="c-popover-perspective">
+              <button class="c-popover__btn pop-btn">
+                <a class="l-main-tabs__item disabled" href="#">
+                  <img src="img/o-person-gray.svg" alt="" />
+                  <div class="is-disabled">M00</div>
+                </a>
+              </button>
+              <div class="c-popover__content pop-content">
+                
+                <div class="c-popover__text">
+                  <div class="">T00</div>
+                  <div class="">資訊與服務整合事業處</div>
+                </div>
+                <div class="c-popover__footer">
+                  <button
+                    class="o-btn-primary waves-effect waves-blue pop-confirm-btn"
+                  >
+                    切換其他部門
+                  </button>
+                </div>
+              </div>
+            </div>
           <button class="waves-effect waves-blue">
             <a class="l-main-tabs__item modal-trigger" href="#">
               <img src="img/o-export.svg" alt="" />
@@ -502,7 +525,8 @@
               <div class="listTitle__workTime">區間工時</div>
             </div>
             <div class="c-card-manhourSearch js-c-card-addName">
-              <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
+              <a href="#">
+                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
               <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
               <div class="c-card__userInformation">
                 <h3 class="js-c-card__userNumber">A9005</h3>
@@ -514,9 +538,11 @@
                   <div class="c-card__item__time">496</div>
                 </div>
               </div>
+              </a>
             </div>
             <div class="c-card-manhourSearch js-c-card-addName">
-              <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
+              <a href="#">
+                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
               <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
               <div class="c-card__userInformation">
                 <h3 class="js-c-card__userNumber">A9005</h3>
@@ -528,9 +554,11 @@
                   <div class="c-card__item__time">496</div>
                 </div>
               </div>
+              </a>
             </div>
             <div class="c-card-manhourSearch js-c-card-addName">
-              <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
+              <a href="#">
+                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
               <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
               <div class="c-card__userInformation">
                 <h3 class="js-c-card__userNumber">A9005</h3>
@@ -542,18 +570,42 @@
                   <div class="c-card__item__time">496</div>
                 </div>
               </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
       <div id="departmenttime">
         <div class="l-main-tabs">
-          <button class="">
-            <a class="l-main-tabs__item disabled" href="#">
-              <img src="img/o-person-gray.svg" alt="" />
-              <div class="is-disabled">Ｍ00</div>
-            </a>
-          </button>
+             <!-- 選部門後(button 呈現無法點選狀態)
+               1.更改icon 為 ”o-person-gray.svg“
+               2.在.l-main-tabs__item 中增添 disabled 的名稱 
+               3.在 button class 裡移除 .waves-effect 及 .waves-blue
+               4.移除 pop-modal的 class
+               5.在 填寫部門的 div 中增加 is-disabled 的 class
+            -->
+            <div class="c-popover-perspective">
+              <button class="c-popover__btn pop-btn">
+                <a class="l-main-tabs__item disabled" href="#">
+                  <img src="img/o-person-gray.svg" alt="" />
+                  <div class="is-disabled">M00</div>
+                </a>
+              </button>
+              <div class="c-popover__content pop-content">
+                
+                <div class="c-popover__text">
+                  <div class="">T00</div>
+                  <div class="">資訊與服務整合事業處</div>
+                </div>
+                <div class="c-popover__footer">
+                  <button
+                    class="o-btn-primary waves-effect waves-blue pop-confirm-btn"
+                  >
+                    切換其他部門
+                  </button>
+                </div>
+              </div>
+            </div>
           <button class="waves-effect waves-blue">
             <a class="l-main-tabs__item modal-trigger" href="#">
               <img src="img/o-export.svg" alt="" />
@@ -693,7 +745,8 @@
               <div class="listTitle__workTime">區間工時</div>
             </div>
             <div class="c-card-manhourSearch js-c-card-addName">
-              <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
+              <a href="#">
+                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
               <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
               <div class="c-card__userInformation">
                 <h3 class="js-c-card__userNumber">A9005</h3>
@@ -705,6 +758,7 @@
                   <div class="c-card__item__time">496</div>
                 </div>
               </div>
+              </a>
             </div>
           </div>
           <div class="l-main-content-text">
@@ -719,7 +773,8 @@
               <div class="listTitle__workTime">區間工時</div>
             </div>
             <div class="c-card-manhourSearch js-c-card-addName">
-              <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
+              <a href="#">
+                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
               <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
               <div class="c-card__userInformation">
                 <h3 class="js-c-card__userNumber">A9005</h3>
@@ -731,18 +786,42 @@
                   <div class="c-card__item__time">496</div>
                 </div>
               </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
       <div id="supporttime">
         <div class="l-main-tabs">
-          <button class="">
-            <a class="l-main-tabs__item disabled" href="#">
-              <img src="img/o-person-gray.svg" alt="" />
-              <div class="is-disabled">U20</div>
-            </a>
-          </button>
+            <!-- 選部門後(button 呈現無法點選狀態)
+               1.更改icon 為 ”o-person-gray.svg“
+               2.在.l-main-tabs__item 中增添 disabled 的名稱 
+               3.在 button class 裡移除 ”waves-effect“ 及 ”waves-blue“
+               4.在 pop-content 的 class增加 “pop-disable”
+               5.在 填寫部門的 div 中增加 is-disabled 的 class
+            -->
+            <div class="c-popover-perspective pop-modal">
+              <button class="c-popover__btn pop-btn">
+                <a class="l-main-tabs__item disabled" href="#">
+                  <img src="img/o-person-gray.svg" alt="" />
+                  <div class="is-disabled">M00</div>
+                </a>
+              </button>
+              <div class="c-popover__content pop-content pop-disable">
+                
+                <div class="c-popover__text">
+                  <div class="">T00</div>
+                  <div class="">資訊與服務整合事業處</div>
+                </div>
+                <div class="c-popover__footer">
+                  <button
+                    class="o-btn-primary waves-effect waves-blue pop-confirm-btn"
+                  >
+                    切換其他部門
+                  </button>
+                </div>
+              </div>
+            </div>
           <button class="waves-effect waves-blue">
             <a class="l-main-tabs__item modal-trigger" href="#">
               <img src="img/o-export.svg" alt="" />
@@ -914,7 +993,8 @@
               <div class="listTitle__workTime">區間工時</div>
             </div>
             <div class="c-card-manhourSearch js-c-card-addName">
-              <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
+              <a href="#">
+                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
               <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
               <div class="c-card__userInformation">
                 <h3 class="js-c-card__userNumber">A9005</h3>
@@ -926,6 +1006,7 @@
                   <div class="c-card__item__time">496</div>
                 </div>
               </div>
+              </a>
             </div>
           </div>
         </div>

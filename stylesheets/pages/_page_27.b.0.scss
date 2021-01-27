@@ -1,5 +1,19 @@
 #memberstime_execute{
 @extend #execute;
+.change-card-to-list{
+    .c-card-manhourSearch{
+        &:hover{
+            transition: all 0; 
+            transform: translateY(0px) translateX(0px);
+        }
+            &:active{
+            transition: all 0;
+            transform: translateY(0px) translateX(0px);
+        }
+    }
+}
+
+
 }
 #departmenttime_execute{
     @extend #execute;

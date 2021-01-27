@@ -211,7 +211,10 @@
                 <div class="text-danger">尚有0.5小時未填</div>
               </div>
             </div>
-            <!-- 系統自動帶入當天 並增添class "is-today-tag" -->
+            <!--1. 系統自動帶入當天 並增添class "is-today-tag" -->
+            <!--2. 點擊日期 會切換頁籤 增加 class "is-active" -->
+            <!--3. 未填寫工時錯誤狀態新增 class "text-danger" -->
+
             <div class="c-writeHours-title__item is-today-tag" data-num="5">
               <div class="c-writeHours-title__item__date">
                 9/4 <span>五</span>
@@ -224,7 +227,6 @@
                 <div class="text-danger">尚有8小時未填</div>
               </div>
             </div>
-            <!-- 點擊日期 會切換頁籤 增加 class "is-active" -->
 
             <div class="c-writeHours-title__item is-active" data-num="6">
               <div class="c-writeHours-title__item__date">
@@ -251,7 +253,6 @@
               </div>
             </div>
           </div>
-          <!-- 下半部 -->
           <div class="c-writeHours-content">
             <div class="c-writeHours-content__select row">
               <div class="col s4">
@@ -513,7 +514,7 @@
       </div>
       
       <div class="l-side-left">
-        <!-- 點擊button "c-submenu-btn"右手邊日曆menuc會收合 "l-container"會增加及刪除“submenu__open”(js/layout.js 293) -->
+        <!-- 點擊button "c-submenu-btn"右手邊日曆menu會收合 "l-container"會增加及刪除“submenu__open”(js/layout.js 293) -->
         <div class="c-submenu">
           <button type="button" class="c-submenu-btn waves-effect waves-blue">
             <img src="img/o-arrowRight-gray.svg" alt="" />

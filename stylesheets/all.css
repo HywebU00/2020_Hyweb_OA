@@ -10839,6 +10839,10 @@ body {
   min-width: 210px;
 }
 
+.c-card-manhourSofar a, .c-card-manhourSearch a, .c-card-percent a, .c-card-percentCheck a, .c-card-planPerson a, .c-card-planClosed a, .c-card-planHotkey a, .c-card-planReport a, .c-card-planReport-danger a, .c-card-alertPlan a, .c-card-department a {
+  color: #042340;
+}
+
 .c-card-manhourSofar .c-card__userInformation, .c-card-manhourSearch .c-card__userInformation, .c-card-percent .c-card__userInformation, .c-card-percentCheck .c-card__userInformation, .c-card-planPerson .c-card__userInformation, .c-card-planClosed .c-card__userInformation, .c-card-planHotkey .c-card__userInformation, .c-card-planReport .c-card__userInformation, .c-card-planReport-danger .c-card__userInformation, .c-card-alertPlan .c-card__userInformation, .c-card-department .c-card__userInformation {
   margin-top: 40px;
   line-height: 35px;
@@ -10884,14 +10888,55 @@ body {
   font-family: "Baloo 2", cursive, "Noto Sans TC";
 }
 
+.c-card-manhourSofar:hover, .c-card-manhourSearch:hover, .c-card-percent:hover, .c-card-percentCheck:hover, .c-card-planPerson:hover, .c-card-planClosed:hover, .c-card-planHotkey:hover, .c-card-planReport:hover, .c-card-planReport-danger:hover, .c-card-alertPlan:hover, .c-card-department:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: translateY(2px) translateX(2px);
+          transform: translateY(2px) translateX(2px);
+}
+
+.c-card-manhourSofar:active, .c-card-manhourSearch:active, .c-card-percent:active, .c-card-percentCheck:active, .c-card-planPerson:active, .c-card-planClosed:active, .c-card-planHotkey:active, .c-card-planReport:active, .c-card-planReport-danger:active, .c-card-alertPlan:active, .c-card-department:active {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: translateY(4px) translateX(4px);
+          transform: translateY(4px) translateX(4px);
+}
+
+.c-card-manhourSearch a h2 {
+  color: #042340;
+}
+
+.c-card-manhourSearch a h3 {
+  color: #042340;
+}
+
+.c-card-manhourSearch a .c-card__item__time {
+  color: #042340;
+}
+
+.c-card-percent a h2, .c-card-percentCheck a h2 {
+  color: #042340;
+}
+
+.c-card-percent a h3, .c-card-percentCheck a h3 {
+  color: #042340;
+}
+
+.c-card-percent a .c-card__item__time, .c-card-percentCheck a .c-card__item__time {
+  color: #042340;
+}
+
 .c-card-percent .c-card__item, .c-card-percentCheck .c-card__item {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 .c-card-percent .c-card__item__time, .c-card-percentCheck .c-card__item__time {
-  padding-left: 10%;
+  padding-left: 1rem;
 }
 
 .c-card-percent .c-card__item__totaltime, .c-card-percentCheck .c-card__item__totaltime {
@@ -11452,6 +11497,20 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
   font-size: 16px;
+}
+
+.c-card-lableGroup:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: translateY(2px) translateX(2px);
+          transform: translateY(2px) translateX(2px);
+}
+
+.c-card-lableGroup:active {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: translateY(4px) translateX(4px);
+          transform: translateY(4px) translateX(4px);
 }
 
 .c-breadcrumb {
@@ -13462,6 +13521,16 @@ body {
 
 .c-popover-perspective .c-popover__content, .c-popover-information .c-popover__content {
   width: 200px;
+  left: -120px;
+  top: 50px;
+}
+
+.c-popover-perspective .c-popover__content::before, .c-popover-information .c-popover__content::before {
+  margin-left: 100.75px;
+}
+
+.c-popover-perspective .c-popover__content::after, .c-popover-information .c-popover__content::after {
+  margin-left: 100.9px;
 }
 
 .c-popover-perspective .c-popover__content .c-popover__text, .c-popover-information .c-popover__content .c-popover__text {
@@ -14942,6 +15011,15 @@ body {
   margin: 0;
 }
 
+#todo .change-card-to-list .l-main-content-item__listTitle div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #complete .l-main-tabs {
   margin-bottom: 5px;
 }
@@ -15147,6 +15225,20 @@ body {
   border-radius: 50%;
 }
 
+#membertime .change-card-to-list .c-card-manhourSofar:hover, #membertime .change-card-to-list .c-card-manhourSearch:hover, #membertime .change-card-to-list .c-card-percent:hover, #membertime .change-card-to-list .c-card-percentCheck:hover, #membertime .change-card-to-list .c-card-planPerson:hover, #membertime .change-card-to-list .c-card-planClosed:hover, #membertime .change-card-to-list .c-card-planHotkey:hover, #membertime .change-card-to-list .c-card-planReport:hover, #membertime .change-card-to-list .c-card-planReport-danger:hover, #membertime .change-card-to-list .c-card-alertPlan:hover, #membertime .change-card-to-list .c-card-department:hover {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
+}
+
+#membertime .change-card-to-list .c-card-manhourSofar:active, #membertime .change-card-to-list .c-card-manhourSearch:active, #membertime .change-card-to-list .c-card-percent:active, #membertime .change-card-to-list .c-card-percentCheck:active, #membertime .change-card-to-list .c-card-planPerson:active, #membertime .change-card-to-list .c-card-planClosed:active, #membertime .change-card-to-list .c-card-planHotkey:active, #membertime .change-card-to-list .c-card-planReport:active, #membertime .change-card-to-list .c-card-planReport-danger:active, #membertime .change-card-to-list .c-card-alertPlan:active, #membertime .change-card-to-list .c-card-department:active {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
+}
+
 .l-main-content .c-card-manhourSofar, .l-main-content .c-card-manhourSearch, .l-main-content .c-card-percent, .l-main-content .c-card-percentCheck, .l-main-content .c-card-planPerson, .l-main-content .c-card-planClosed, .l-main-content .c-card-planHotkey, .l-main-content .c-card-planReport, .l-main-content .c-card-planReport-danger, .l-main-content .c-card-alertPlan, .l-main-content .c-card-department {
   margin: 0 0.5rem 2.5rem 0.2rem;
 }
@@ -15321,6 +15413,20 @@ body {
   width: 10%;
 }
 
+#memberstime .change-card-to-list .c-card-manhourSearch:hover, #departmenttime .change-card-to-list .c-card-manhourSearch:hover, #universalPlan .change-card-to-list .c-card-manhourSearch:hover {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
+}
+
+#memberstime .change-card-to-list .c-card-manhourSearch:active, #departmenttime .change-card-to-list .c-card-manhourSearch:active, #universalPlan .change-card-to-list .c-card-manhourSearch:active {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
+}
+
 #departmenttime .l-main-tabs {
   margin-bottom: 5px;
 }
@@ -15363,6 +15469,20 @@ body {
 
 #departmenttime .change-card-to-list .c-card__content {
   width: 10%;
+}
+
+#departmenttime .change-card-to-list .c-card-manhourSearch:hover {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
+}
+
+#departmenttime .change-card-to-list .c-card-manhourSearch:active {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
 }
 
 #supporttime .l-main-tabs {
@@ -15417,6 +15537,20 @@ body {
 
 #supporttime .change-card-to-list .c-card__content {
   width: 10%;
+}
+
+#supporttime .change-card-to-list .c-card-manhourSearch:hover {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
+}
+
+#supporttime .change-card-to-list .c-card-manhourSearch:active {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
 }
 
 #notReachedtime .l-main-tabs {
@@ -15533,6 +15667,26 @@ body {
   top: 5px;
 }
 
+#notReachedtime .change-card-to-list .c-card-manhourSearch:hover {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
+}
+
+#notReachedtime .change-card-to-list .c-card-manhourSearch:active {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
+}
+
+#notReachedtime .change-card-to-list a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #notReachedtime .is-error-status .c-search-list .c-search-item .c-search-item__percentTitle {
   color: #FB5B29;
 }
@@ -15540,6 +15694,20 @@ body {
 #notReachedtime .is-error-status .c-search-list .c-search-item .c-search-item__input input {
   background-color: #fff;
   border: 1px solid #FB5B29;
+}
+
+#memberstime_execute .change-card-to-list .c-card-manhourSearch:hover {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
+}
+
+#memberstime_execute .change-card-to-list .c-card-manhourSearch:active {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
 }
 
 #memberstime .table-body .table-body__item .row .col div, #departmenttime .table-body .table-body__item .row .col div, #universalPlan .table-body .table-body__item .row .col div {
