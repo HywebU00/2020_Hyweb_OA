@@ -124,7 +124,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //點擊 accordion-header 增加 c-accordion-addIcon 的圖示
 const accordionIcon = document.querySelectorAll(".c-accordion-addIcon");
-//console.log(accordionIcon);
 accordionIcon.forEach(function (item, index) {
   item.addEventListener("click", function () {
     if (this.classList.contains("is-accordion-active")) {

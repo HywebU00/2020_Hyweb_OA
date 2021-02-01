@@ -544,7 +544,7 @@
 
     .c-card-lablePerson-title {
         background-color: $card-lablePerson-title-background;
-        color: $card-lablePerson-title;
+        color: $gray1;//$card-lablePerson-title;
         align-items: center;
         display: flex;
         font-size: $p;
@@ -1136,6 +1136,7 @@
             height: calc(40vh - 120px) ;
             p{
                 margin-bottom: 1rem;
+                line-height: 1.5rem;
             }
            
         }
@@ -2810,21 +2811,13 @@
                 content: "僅能填寫至小數點第一位及阿拉伯數字";
             }
         }
-
-        .otherInput {
-            input {
-                background-color: #fff;
-                border: 1px solid $danger;
-                border-bottom: 1px solid $danger;
-                box-sizing: border-box;
+        .otherInput{
+            .input-title {
+                color: $gray1;
             }
-
-            input[type=text]:not(.browser-default) {
-                border-bottom: 1px solid $danger;
-                background-color: #fff;
-            }
-
+            
         }
+        
     }
 
 }
@@ -2920,11 +2913,136 @@
         color: #fff;
     }
 }
+.l-main-login{
+    height: 100vh;
+    background: $hy-background;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .c-login__title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+       
+        margin-bottom: 2.5rem;
+        img{
+            width: 50%;
+          
+        }
+        .c-card-login__title__maintitle{
+            color: $gray1;
+        }
+    }
+    
+    
+}
+.c-card-login{
+    @extend .c-card;
+    padding: 2rem;
+    width: 100%;
+    min-width: 50rem;
+    background: $hyweb-waterblue;
+    .c-card-login__title{
+        text-align: center;
+        .c-card-login__title__maintitle{
+            font-size: $login-title;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .c-card-login__title__subtitle{
+            font-family: $english-font;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+    }
+    .c-card-login__content{
+        width: 70%;
+        margin: 0 auto;
 
+    .c-card-login__list{
+        margin:2rem 0;
+        line-height: 1.5rem;
+        color: $gray2;
+        a{
+            color: $gray2;
+            text-decoration:underline;
+        }
+    }
+    .c-card-login__input{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        img{
+            margin-right: 1rem;
+        }
+        input{
+            background-color: #fff;
+            border-bottom: 0;
+            padding: 0.2rem 0.5rem;
+            border-radius: $input-radius;
+            margin:0;
+        }
+    }
+    .c-card-login__passwordInput{
+        @extend .c-card-login__input;
+        position: relative;
+
+    }
+    .login__eyeClose{
+        background-image: url(../img/o-hide.svg);     
+    }
+    }
+    .o-password-btn {
+        cursor: pointer;
+        position: absolute;
+        right:10px;
+        width: 24px;
+        height: 24px;
+    }
+    .o-login-btn{
+        margin-top: 1rem;
+        border-radius: $input-radius;
+        margin-bottom: 2rem;
+        padding:1.5rem 1rem;
+        font-size: $login-btn-font;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+}
 
 //====================
 //Object 物件
 //====================
+.o-login-btn{
+    @extend .o-btn;
+    width: 100%;
+    // color: $gray5;
+
+    // background: $hy-background;
+}
+
+.o-countTotalBtn{
+    color: #fff;
+    z-index: 999;
+    background: $hyweb-background-deepblue;
+    width: 5.3rem;
+    height: 5.3rem;
+    border-radius: 50%;
+    line-height: 1.2rem;
+    position: absolute;
+    right: 1.5rem;
+    bottom:1rem;
+    cursor: pointer;
+    &:hover{
+        background: $hyweb-background-deepblue;  
+    }
+
+}
 
 .o-btn {
     @extend .waves-effect;

@@ -5618,7 +5618,7 @@ body.keyboard-focused .dropdown-content li:focus {
  * Released under the MIT license
  * https://github.com/fians/Waves/blob/master/LICENSE
  */
-.waves-effect, .o-btn, .o-btn-primary, .o-btn-secondary {
+.waves-effect, .o-btn, .o-login-btn, .o-btn-primary, .o-btn-secondary {
   position: relative;
   cursor: pointer;
   display: inline-block;
@@ -5634,7 +5634,7 @@ body.keyboard-focused .dropdown-content li:focus {
   transition: .3s ease-out;
 }
 
-.waves-effect .waves-ripple, .o-btn .waves-ripple, .o-btn-primary .waves-ripple, .o-btn-secondary .waves-ripple {
+.waves-effect .waves-ripple, .o-btn .waves-ripple, .o-login-btn .waves-ripple, .o-btn-primary .waves-ripple, .o-btn-secondary .waves-ripple {
   position: absolute;
   border-radius: 50%;
   width: 20px;
@@ -5654,39 +5654,39 @@ body.keyboard-focused .dropdown-content li:focus {
   pointer-events: none;
 }
 
-.waves-effect.waves-light .waves-ripple, .waves-light.o-btn .waves-ripple, .waves-light.o-btn-primary .waves-ripple, .waves-light.o-btn-secondary .waves-ripple {
+.waves-effect.waves-light .waves-ripple, .waves-light.o-btn .waves-ripple, .waves-light.o-login-btn .waves-ripple, .waves-light.o-btn-primary .waves-ripple, .waves-light.o-btn-secondary .waves-ripple {
   background-color: rgba(255, 255, 255, 0.45);
 }
 
-.waves-effect.waves-red .waves-ripple, .waves-red.o-btn .waves-ripple, .waves-red.o-btn-primary .waves-ripple, .waves-red.o-btn-secondary .waves-ripple {
+.waves-effect.waves-red .waves-ripple, .waves-red.o-btn .waves-ripple, .waves-red.o-login-btn .waves-ripple, .waves-red.o-btn-primary .waves-ripple, .waves-red.o-btn-secondary .waves-ripple {
   background-color: rgba(244, 67, 54, 0.7);
 }
 
-.waves-effect.waves-yellow .waves-ripple, .waves-yellow.o-btn .waves-ripple, .waves-yellow.o-btn-primary .waves-ripple, .waves-yellow.o-btn-secondary .waves-ripple {
+.waves-effect.waves-yellow .waves-ripple, .waves-yellow.o-btn .waves-ripple, .waves-yellow.o-login-btn .waves-ripple, .waves-yellow.o-btn-primary .waves-ripple, .waves-yellow.o-btn-secondary .waves-ripple {
   background-color: rgba(255, 235, 59, 0.7);
 }
 
-.waves-effect.waves-orange .waves-ripple, .waves-orange.o-btn .waves-ripple, .waves-orange.o-btn-primary .waves-ripple, .waves-orange.o-btn-secondary .waves-ripple {
+.waves-effect.waves-orange .waves-ripple, .waves-orange.o-btn .waves-ripple, .waves-orange.o-login-btn .waves-ripple, .waves-orange.o-btn-primary .waves-ripple, .waves-orange.o-btn-secondary .waves-ripple {
   background-color: rgba(255, 152, 0, 0.7);
 }
 
-.waves-effect.waves-purple .waves-ripple, .waves-purple.o-btn .waves-ripple, .waves-purple.o-btn-primary .waves-ripple, .waves-purple.o-btn-secondary .waves-ripple {
+.waves-effect.waves-purple .waves-ripple, .waves-purple.o-btn .waves-ripple, .waves-purple.o-login-btn .waves-ripple, .waves-purple.o-btn-primary .waves-ripple, .waves-purple.o-btn-secondary .waves-ripple {
   background-color: rgba(156, 39, 176, 0.7);
 }
 
-.waves-effect.waves-green .waves-ripple, .waves-green.o-btn .waves-ripple, .waves-green.o-btn-primary .waves-ripple, .waves-green.o-btn-secondary .waves-ripple {
+.waves-effect.waves-green .waves-ripple, .waves-green.o-btn .waves-ripple, .waves-green.o-login-btn .waves-ripple, .waves-green.o-btn-primary .waves-ripple, .waves-green.o-btn-secondary .waves-ripple {
   background-color: rgba(76, 175, 80, 0.7);
 }
 
-.waves-effect.waves-teal .waves-ripple, .waves-teal.o-btn .waves-ripple, .waves-teal.o-btn-primary .waves-ripple, .waves-teal.o-btn-secondary .waves-ripple {
+.waves-effect.waves-teal .waves-ripple, .waves-teal.o-btn .waves-ripple, .waves-teal.o-login-btn .waves-ripple, .waves-teal.o-btn-primary .waves-ripple, .waves-teal.o-btn-secondary .waves-ripple {
   background-color: rgba(0, 150, 136, 0.7);
 }
 
-.waves-effect.waves-blue .waves-ripple, .waves-blue.o-btn .waves-ripple, .waves-blue.o-btn-primary .waves-ripple, .waves-blue.o-btn-secondary .waves-ripple {
+.waves-effect.waves-blue .waves-ripple, .waves-blue.o-btn .waves-ripple, .waves-blue.o-login-btn .waves-ripple, .waves-blue.o-btn-primary .waves-ripple, .waves-blue.o-btn-secondary .waves-ripple {
   background-color: rgba(153, 202, 255, 0.666);
 }
 
-.waves-effect input[type="button"], .o-btn input[type="button"], .o-btn-primary input[type="button"], .o-btn-secondary input[type="button"], .waves-effect input[type="reset"], .o-btn input[type="reset"], .o-btn-primary input[type="reset"], .o-btn-secondary input[type="reset"], .waves-effect input[type="submit"], .o-btn input[type="submit"], .o-btn-primary input[type="submit"], .o-btn-secondary input[type="submit"] {
+.waves-effect input[type="button"], .o-btn input[type="button"], .o-login-btn input[type="button"], .o-btn-primary input[type="button"], .o-btn-secondary input[type="button"], .waves-effect input[type="reset"], .o-btn input[type="reset"], .o-login-btn input[type="reset"], .o-btn-primary input[type="reset"], .o-btn-secondary input[type="reset"], .waves-effect input[type="submit"], .o-btn input[type="submit"], .o-login-btn input[type="submit"], .o-btn-primary input[type="submit"], .o-btn-secondary input[type="submit"] {
   border: 0;
   font-style: normal;
   font-size: inherit;
@@ -5694,7 +5694,7 @@ body.keyboard-focused .dropdown-content li:focus {
   background: none;
 }
 
-.waves-effect img, .o-btn img, .o-btn-primary img, .o-btn-secondary img {
+.waves-effect img, .o-btn img, .o-login-btn img, .o-btn-primary img, .o-btn-secondary img {
   position: relative;
   z-index: -1;
 }
@@ -5734,7 +5734,7 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 
 /* Firefox Bug: link not triggered */
-.waves-effect .waves-ripple, .o-btn .waves-ripple, .o-btn-primary .waves-ripple, .o-btn-secondary .waves-ripple {
+.waves-effect .waves-ripple, .o-btn .waves-ripple, .o-login-btn .waves-ripple, .o-btn-primary .waves-ripple, .o-btn-secondary .waves-ripple {
   z-index: -1;
 }
 
@@ -9681,7 +9681,7 @@ body {
   padding-left: 24px;
 }
 
-.l-main-content .l-main-content__planlist .table-body .table-body__item, .l-main-content .l-main-content__wbslist .table-body .table-body__item, .l-main-content .l-main-content__workTypelist .table-body .table-body__item, .l-main-content .l-main-content__statisticsPlan .table-body .table-body__item {
+.l-main-content .l-main-content__planlist .table-body .table-body__item, .l-main-content .l-main-content__wbslist .table-body .table-body__item, .l-main-content .l-main-content__workTypelist .table-body .table-body__item, .l-main-content .l-main-content__statisticsPlan .table-body .table-body__item, .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem {
   border-bottom: #BAD4E5 solid 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9691,11 +9691,11 @@ body {
           align-items: center;
 }
 
-.l-main-content .l-main-content__planlist .table-body .table-body__item .table-body__item__icon, .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__icon, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__icon, .l-main-content .l-main-content__statisticsPlan .table-body .table-body__item .table-body__item__icon {
+.l-main-content .l-main-content__planlist .table-body .table-body__item .table-body__item__icon, .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__icon, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__icon, .l-main-content .l-main-content__statisticsPlan .table-body .table-body__item .table-body__item__icon, .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__icon, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__icon {
   width: 24px;
 }
 
-.l-main-content .l-main-content__planlist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__statisticsPlan .table-body .table-body__item .table-body__item__project {
+.l-main-content .l-main-content__planlist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__statisticsPlan .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__project, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9709,11 +9709,11 @@ body {
           align-items: center;
 }
 
-.l-main-content .l-main-content__planlist .table-body .table-body__item .table-body__item__project img, .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project img, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project img, .l-main-content .l-main-content__statisticsPlan .table-body .table-body__item .table-body__item__project img {
+.l-main-content .l-main-content__planlist .table-body .table-body__item .table-body__item__project img, .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project img, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project img, .l-main-content .l-main-content__statisticsPlan .table-body .table-body__item .table-body__item__project img, .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__project img, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__project img {
   width: 24px;
 }
 
-.l-main-content .l-main-content__planlist .table-body .table-body__item .table-body__item__project .table-body__item__project__title, .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project .table-body__item__project__title, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project .table-body__item__project__title, .l-main-content .l-main-content__statisticsPlan .table-body .table-body__item .table-body__item__project .table-body__item__project__title {
+.l-main-content .l-main-content__planlist .table-body .table-body__item .table-body__item__project .table-body__item__project__title, .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project .table-body__item__project__title, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project .table-body__item__project__title, .l-main-content .l-main-content__statisticsPlan .table-body .table-body__item .table-body__item__project .table-body__item__project__title, .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__project .table-body__item__project__title, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__project .table-body__item__project__title {
   padding: 0 0.75rem;
 }
 
@@ -9862,6 +9862,42 @@ body {
       flex-shrink: 0;
 }
 
+.l-main-content .l-main-content__wbslist .table-body .table-body__conutItem, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem {
+  border-bottom: 0;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 20px;
+  margin: 0.5rem 0.1rem;
+}
+
+.l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__project, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__project {
+  border-radius: 40px;
+}
+
+.l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__total, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0  0 0 793.5px;
+  font-weight: 700;
+}
+
+.l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__total .total__title, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__total .total__title {
+  border-left: 1.5px solid #D2DAE0;
+  text-align: right;
+}
+
+.l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__total .total__allTime, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__total .total__allTime {
+  text-align: center;
+}
+
+.l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__total .total__time, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__total .total__time {
+  text-align: center;
+}
+
 .l-main-content .l-main-content__wbslist .table-body .row, .l-main-content .l-main-content__workTypelist .table-body .row {
   width: auto;
   display: -webkit-box;
@@ -9946,7 +9982,7 @@ body {
   padding-left: 24px;
 }
 
-.l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project {
+.l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__project, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9960,11 +9996,11 @@ body {
           align-items: center;
 }
 
-.l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project img, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project img {
+.l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project img, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project img, .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__project img, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__project img {
   width: 24px;
 }
 
-.l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project .table-body__item__project__title, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project .table-body__item__project__title {
+.l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project .table-body__item__project__title, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project .table-body__item__project__title, .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__project .table-body__item__project__title, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__project .table-body__item__project__title {
   padding: 0 0.75rem;
 }
 
@@ -10161,7 +10197,7 @@ body {
   padding-left: 24px;
 }
 
-.l-main-content .l-main-content__workTypelist .table-body .table-body__item:last-child {
+.l-main-content .l-main-content__workTypelist .table-body .table-body__item:last-child, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem:last-child {
   border-bottom: 1px solid #0156A2;
 }
 
@@ -10692,6 +10728,31 @@ body {
   z-index: -1;
 }
 
+.c-submenu-content__calendar td.is-not-full {
+  color: #FB5B29;
+}
+
+.c-submenu-content__calendar td.is-thismonth-week {
+  color: #8495A4;
+}
+
+.c-submenu-content__calendar td.is-focus {
+  font-weight: 700;
+  z-index: 100;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.c-submenu-content__calendar td.is-focus::after {
+  position: absolute;
+  content: "";
+  background: #E2F1FE;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  z-index: -1;
+}
+
 .c-submenu-content__calendar thead td {
   border: none;
   color: #28283b;
@@ -10813,7 +10874,7 @@ body {
   font-family: "Noto Sans TC", "sans-serif";
 }
 
-.c-card, .c-card-manhourSofar, .c-card-manhourSearch, .c-card-percent, .c-card-percentCheck, .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan, .c-card-department, .c-card-lableGroup, .c-accordion-general, .c-toast-uploadSuccess, .c-toast-uploadFailure, .c-toast-join, .c-toast-joinCancel {
+.c-card, .c-card-manhourSofar, .c-card-manhourSearch, .c-card-percent, .c-card-percentCheck, .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan, .c-card-department, .c-card-lableGroup, .c-accordion-general, .c-toast-uploadSuccess, .c-toast-uploadFailure, .c-toast-join, .c-toast-joinCancel, .c-card-login {
   border-radius: 20px;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -10821,13 +10882,13 @@ body {
   width: 17%;
 }
 
-.c-card h2, .c-card-manhourSofar h2, .c-card-manhourSearch h2, .c-card-percent h2, .c-card-percentCheck h2, .c-card-planPerson h2, .c-card-planClosed h2, .c-card-planHotkey h2, .c-card-planReport h2, .c-card-planReport-danger h2, .c-card-alertPlan h2, .c-card-department h2, .c-card-lableGroup h2, .c-accordion-general h2, .c-toast-uploadSuccess h2, .c-toast-uploadFailure h2, .c-toast-join h2, .c-toast-joinCancel h2 {
+.c-card h2, .c-card-manhourSofar h2, .c-card-manhourSearch h2, .c-card-percent h2, .c-card-percentCheck h2, .c-card-planPerson h2, .c-card-planClosed h2, .c-card-planHotkey h2, .c-card-planReport h2, .c-card-planReport-danger h2, .c-card-alertPlan h2, .c-card-department h2, .c-card-lableGroup h2, .c-accordion-general h2, .c-toast-uploadSuccess h2, .c-toast-uploadFailure h2, .c-toast-join h2, .c-toast-joinCancel h2, .c-card-login h2 {
   font-size: 22px;
   font-weight: 700;
   line-height: 32px;
 }
 
-.c-card h3, .c-card-manhourSofar h3, .c-card-manhourSearch h3, .c-card-percent h3, .c-card-percentCheck h3, .c-card-planPerson h3, .c-card-planClosed h3, .c-card-planHotkey h3, .c-card-planReport h3, .c-card-planReport-danger h3, .c-card-alertPlan h3, .c-card-department h3, .c-card-lableGroup h3, .c-accordion-general h3, .c-toast-uploadSuccess h3, .c-toast-uploadFailure h3, .c-toast-join h3, .c-toast-joinCancel h3 {
+.c-card h3, .c-card-manhourSofar h3, .c-card-manhourSearch h3, .c-card-percent h3, .c-card-percentCheck h3, .c-card-planPerson h3, .c-card-planClosed h3, .c-card-planHotkey h3, .c-card-planReport h3, .c-card-planReport-danger h3, .c-card-alertPlan h3, .c-card-department h3, .c-card-lableGroup h3, .c-accordion-general h3, .c-toast-uploadSuccess h3, .c-toast-uploadFailure h3, .c-toast-join h3, .c-toast-joinCancel h3, .c-card-login h3 {
   font-size: 16px;
   font-weight: 500;
   line-height: 25px;
@@ -11408,7 +11469,7 @@ body {
 
 .c-card-lablePerson .c-card-lablePerson-title {
   background-color: #E2F1FE;
-  color: #0156A2;
+  color: #042340;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -12108,6 +12169,7 @@ body {
 
 .c-modal-alert .c-modal-alert__content .c-modal-content__scroll p {
   margin-bottom: 1rem;
+  line-height: 1.5rem;
 }
 
 .c-modal-alert .modal-footer {
@@ -13788,17 +13850,8 @@ body {
   content: "僅能填寫至小數點第一位及阿拉伯數字";
 }
 
-.c-writeHours-content .is-error-status .otherInput input {
-  background-color: #fff;
-  border: 1px solid #FB5B29;
-  border-bottom: 1px solid #FB5B29;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.c-writeHours-content .is-error-status .otherInput input[type=text]:not(.browser-default) {
-  border-bottom: 1px solid #FB5B29;
-  background-color: #fff;
+.c-writeHours-content .is-error-status .otherInput .input-title {
+  color: #042340;
 }
 
 .c-writeHours-content__select {
@@ -13874,7 +13927,7 @@ body {
   white-space: nowrap;
 }
 
-.c-search-list .c-search-item .c-search-item__title {
+.c-search-list .c-search-item .c-search-item__title, .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime .c-search-list .c-search-item .c-search-item__departmentTitle, .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime .c-search-list .c-search-item .c-search-item__departmentTitle, .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan .c-search-list .c-search-item .c-search-item__departmentTitle {
   padding-right: 0.5rem;
 }
 
@@ -13891,7 +13944,163 @@ body {
   color: #fff;
 }
 
-.o-btn, .o-btn-primary, .o-btn-secondary {
+.l-main-login {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-main-login .c-login__title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.l-main-login .c-login__title img {
+  width: 50%;
+}
+
+.l-main-login .c-login__title .c-card-login__title__maintitle {
+  color: #042340;
+}
+
+.c-card-login {
+  padding: 2rem;
+  width: 100%;
+  min-width: 50rem;
+  background: #F7FBFF;
+}
+
+.c-card-login .c-card-login__title {
+  text-align: center;
+}
+
+.c-card-login .c-card-login__title .c-card-login__title__maintitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.c-card-login .c-card-login__title .c-card-login__title__subtitle {
+  font-family: "Baloo 2", cursive, "Noto Sans TC";
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.c-card-login .c-card-login__content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.c-card-login .c-card-login__content .c-card-login__list {
+  margin: 2rem 0;
+  line-height: 1.5rem;
+  color: #1E4160;
+}
+
+.c-card-login .c-card-login__content .c-card-login__list a {
+  color: #1E4160;
+  text-decoration: underline;
+}
+
+.c-card-login .c-card-login__content .c-card-login__input, .c-card-login .c-card-login__content .c-card-login__passwordInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.c-card-login .c-card-login__content .c-card-login__input img, .c-card-login .c-card-login__content .c-card-login__passwordInput img {
+  margin-right: 1rem;
+}
+
+.c-card-login .c-card-login__content .c-card-login__input input, .c-card-login .c-card-login__content .c-card-login__passwordInput input {
+  background-color: #fff;
+  border-bottom: 0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.c-card-login .c-card-login__content .c-card-login__passwordInput {
+  position: relative;
+}
+
+.c-card-login .c-card-login__content .login__eyeClose {
+  background-image: url(../img/o-hide.svg);
+}
+
+.c-card-login .o-password-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.c-card-login .o-login-btn {
+  margin-top: 1rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 1.5rem 1rem;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.o-login-btn {
+  width: 100%;
+}
+
+.o-countTotalBtn {
+  color: #fff;
+  z-index: 999;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(6.31%, rgba(226, 241, 254, 0.25)), color-stop(76.98%, rgba(255, 255, 255, 0))), #042340;
+  background: linear-gradient(180deg, rgba(226, 241, 254, 0.25) 6.31%, rgba(255, 255, 255, 0) 76.98%), #042340;
+  width: 5.3rem;
+  height: 5.3rem;
+  border-radius: 50%;
+  line-height: 1.2rem;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1rem;
+  cursor: pointer;
+}
+
+.o-countTotalBtn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(6.31%, rgba(226, 241, 254, 0.25)), color-stop(76.98%, rgba(255, 255, 255, 0))), #042340;
+  background: linear-gradient(180deg, rgba(226, 241, 254, 0.25) 6.31%, rgba(255, 255, 255, 0) 76.98%), #042340;
+}
+
+.o-btn, .o-login-btn, .o-btn-primary, .o-btn-secondary {
   height: 37px;
   padding: 0 25px;
   white-space: nowrap;
@@ -13904,14 +14113,14 @@ body {
   background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
 }
 
-.o-btn:hover, .o-btn-primary:hover, .o-btn-secondary:hover {
+.o-btn:hover, .o-login-btn:hover, .o-btn-primary:hover, .o-btn-secondary:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
   background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 
-.o-btn:focus, .o-btn-primary:focus, .o-btn-secondary:focus {
+.o-btn:focus, .o-login-btn:focus, .o-btn-primary:focus, .o-btn-secondary:focus {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
   background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
 }
@@ -14682,6 +14891,11 @@ body {
   margin: 0 0 1rem 0.5rem;
 }
 
+#WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__project, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__project {
+  margin: 1rem 0.5rem;
+  height: 2.5rem;
+}
+
 .l-main-content-title, .l-main-content .l-main-content-data, .l-main-content .l-main-content-between-title {
   margin: 1.5rem 0;
 }
@@ -15203,7 +15417,7 @@ body {
   width: auto;
 }
 
-#execute .c-search .c-search-list .c-search-item .c-search-item__title, #memberstime_execute .c-search .c-search-list .c-search-item .c-search-item__title, #departmenttime_execute .c-search .c-search-list .c-search-item .c-search-item__title, #supporttime_execute .c-search .c-search-list .c-search-item .c-search-item__title, #notReachedtime_execute .c-search .c-search-list .c-search-item .c-search-item__title {
+#execute .c-search .c-search-list .c-search-item .c-search-item__title, #memberstime_execute .c-search .c-search-list .c-search-item .c-search-item__title, #departmenttime_execute .c-search .c-search-list .c-search-item .c-search-item__title, #supporttime_execute .c-search .c-search-list .c-search-item .c-search-item__title, #notReachedtime_execute .c-search .c-search-list .c-search-item .c-search-item__title, #execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #memberstime_execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #memberstime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #departmenttime_execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #departmenttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #supporttime_execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #supporttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #notReachedtime_execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #notReachedtime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #memberstime_execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #memberstime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #departmenttime_execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #departmenttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #supporttime_execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #supporttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #notReachedtime_execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #notReachedtime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #memberstime_execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #memberstime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #departmenttime_execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #departmenttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #supporttime_execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #supporttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #notReachedtime_execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #notReachedtime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle {
   margin: 0 1rem;
   padding: 0;
   font-weight: 700;
@@ -15710,7 +15924,7 @@ body {
           transform: translateY(0px) translateX(0px);
 }
 
-#memberstime .table-body .table-body__item .row .col div, #departmenttime .table-body .table-body__item .row .col div, #universalPlan .table-body .table-body__item .row .col div {
+#memberstime .table-body .table-body__item .row .col div, #departmenttime .table-body .table-body__item .row .col div, #universalPlan .table-body .table-body__item .row .col div, #memberstime .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__wbslist #memberstime .table-body .table-body__conutItem .row .col div, #departmenttime .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__wbslist #departmenttime .table-body .table-body__conutItem .row .col div, #universalPlan .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__wbslist #universalPlan .table-body .table-body__conutItem .row .col div, #memberstime .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__workTypelist #memberstime .table-body .table-body__conutItem .row .col div, #departmenttime .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__workTypelist #departmenttime .table-body .table-body__conutItem .row .col div, #universalPlan .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__workTypelist #universalPlan .table-body .table-body__conutItem .row .col div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15728,15 +15942,19 @@ body {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.l-main-content__statisticsPlan .table-body .table-body__item .row {
+#memberstime .is-error-status .c-search-list .c-search-item__departmentTitle, #departmenttime .is-error-status .c-search-list .c-search-item__departmentTitle, #universalPlan .is-error-status .c-search-list .c-search-item__departmentTitle {
+  color: #FB5B29;
+}
+
+.l-main-content__statisticsPlan .table-body .table-body__item .row, .l-main-content__statisticsPlan .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row, .l-main-content .l-main-content__wbslist .l-main-content__statisticsPlan .table-body .table-body__conutItem .row, .l-main-content__statisticsPlan .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row, .l-main-content .l-main-content__workTypelist .l-main-content__statisticsPlan .table-body .table-body__conutItem .row {
   padding: 0 0 0 1.5rem;
 }
 
-.l-main-content__statisticsPlan .table-body .table-body__item .row img {
+.l-main-content__statisticsPlan .table-body .table-body__item .row img, .l-main-content__statisticsPlan .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row img, .l-main-content .l-main-content__wbslist .l-main-content__statisticsPlan .table-body .table-body__conutItem .row img, .l-main-content__statisticsPlan .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row img, .l-main-content .l-main-content__workTypelist .l-main-content__statisticsPlan .table-body .table-body__conutItem .row img {
   margin-right: 0.5rem;
 }
 
-.l-main-content__statisticsPlan .table-body .table-body__item .row button {
+.l-main-content__statisticsPlan .table-body .table-body__item .row button, .l-main-content__statisticsPlan .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row button, .l-main-content .l-main-content__wbslist .l-main-content__statisticsPlan .table-body .table-body__conutItem .row button, .l-main-content__statisticsPlan .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row button, .l-main-content .l-main-content__workTypelist .l-main-content__statisticsPlan .table-body .table-body__conutItem .row button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

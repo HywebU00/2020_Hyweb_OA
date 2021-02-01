@@ -21,6 +21,7 @@ $hyweb-waterblue:$sec3;
 $after-blue:#cfe3f5;
 $today-tag-blue :#0868BD;
 
+$hyweb-background-deepblue:linear-gradient(180deg, rgba(226, 241, 254, 0.25) 6.31%, rgba(255, 255, 255, 0) 76.98%), #042340;
 $hyweb-blue-light:rgba(186, 217, 245, 0.2);
 $hy-background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;// linear-gradient(180deg, rgba(44, 255, 255, 0.35) 0%, rgba(22, 151, 180, 0) 66.15%), #0156A2;
 $hy-background-danger:linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #FB5B29;
@@ -86,7 +87,8 @@ $font-size-l:18px;
 
 $h1:36px;
 $h2:22px;
-//$h3:22px;
+$login-title:1.8rem;//2.66rem;
+$login-btn-font:1.2rem;
 
 $p:16px;//$font-size*1.5;
 $a:14px;//$font-size*1.33;//14px
