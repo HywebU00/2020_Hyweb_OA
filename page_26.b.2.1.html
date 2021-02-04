@@ -161,12 +161,28 @@
         </div>
         <div id="todo">
           <div class="l-main-tabs">
-            <button class="waves-effect waves-blue">
-              <a class="l-main-tabs__item modal-trigger" href="#">
-                <img src="img/o-person.svg" alt="" />
-                <div class="">所有部門</div>
-              </a>
-            </button>
+            <div class="c-popover-perspective pop-modal">
+              <button class="c-popover__btn pop-btn waves-effect waves-blue">
+                <a class="l-main-tabs__item" href="#">
+                  <img src="img/o-person.svg" alt="" />
+                  <div class="">所有部門</div>
+                </a>
+              </button>
+              <div class="c-popover__content pop-content">
+                
+                <div class="c-popover__text">
+                  <div class="">T00</div>
+                  <div class="">資訊與服務整合事業處</div>
+                </div>
+                <div class="c-popover__footer">
+                  <a class="modal-trigger pop-confirm-btn" href="#execute">
+                    <button class="o-btn-primary waves-effect waves-blue">
+                      切換其他部門
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
             <button class="waves-effect waves-blue">
               <a class="l-main-tabs__item modal-trigger" href="#safe">
                 <img src="img/o-email.svg" alt="" />
@@ -369,8 +385,12 @@
 
                     <ul class="c-popover__content pop-content">
                       <li>起始時間近到遠</li>
-                      <li>總工時低到高</li>
-                      <li>總工時高到低</li>
+                      <li>區間工時成本％低到高</li>
+                      <li>區間工時成本％高到低</li>
+                      <li>累計工時成本％低到高</li>
+                      <li>累計工時成本％高到低</li>
+                      <li>全案工時成本％低到高</li>
+                      <li>全案工時成本％高到低</li>
                     </ul>
                   </div>
                 </div>
@@ -960,7 +980,7 @@
                   <option value="7">U20-使用者經驗用者用者企劃部</option>
                 </select>
               </div>
-              <div class="c-search-item__title">的計畫統計</div>
+              <div class="c-search-item__title">的警示計畫</div>
             </div>
             <div class="c-search-btn">
               <button class="o-btn-primary waves-effect waves-blue modal-close">
