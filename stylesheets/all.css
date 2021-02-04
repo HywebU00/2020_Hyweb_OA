@@ -15635,6 +15635,14 @@ body {
   font-weight: 400;
 }
 
+.change-card-to-list .c-card-manhourSearch .c-card-manhourSearch__userName {
+  display: none;
+}
+
+.change-card-to-list .c-card-manhourSearch .c-card-manhourSearch__englishName {
+  display: none;
+}
+
 #memberstime .l-main-tabs, #departmenttime .l-main-tabs, #universalPlan .l-main-tabs {
   margin-bottom: 5px;
 }
