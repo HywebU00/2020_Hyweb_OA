@@ -107,6 +107,15 @@
     .l-main-tabs{
         margin-bottom: 5px;
     } 
+    .l-main-content-text{
+        .l-main-content-text__title{
+           .o-btn-secondary
+            a{
+                color: $gray1;
+            }
+        }
+    }
+   
     .c-datePicker__modal {
         .c-datePicker__yearPicker{
             button{

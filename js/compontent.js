@@ -49,7 +49,7 @@ const pop_content = document.querySelectorAll(".pop-content");
 const confirm_btn = document.querySelectorAll(".pop-confirm-btn");
 const datePicker_btn = document.querySelectorAll(".datePicker-confirm-btn");
 
-for (let a = 0; a < pop_modal.length; a++) {
+for (let a = 0; a < pop_btn.length; a++) {
   pop_btn[a].addEventListener("click", function () {
     let item = pop_content[a].classList.contains("pop-content");
     let popDisable = pop_content[a].classList.contains("pop-disable");

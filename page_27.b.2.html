@@ -42,16 +42,16 @@
                   alt=""
                 />
               </div>
-              <div class="">我的工時紀錄</div>
+              <div class="">我的工作紀錄</div>
             </div>
             <div class="c-sidebar-content__list__content">
               <a href="page_1.0.html" class="c-sidebar-content__list__item"
-                >填寫每日工時
+                >填寫每日工作
               </a>
               <a
                 href="page_2.0.html"
                 class="c-sidebar-content__list__item menuItem-is-active"
-                >檢視計畫工時
+                >檢視計畫工作
               </a>
             </div>
           </div>
@@ -157,11 +157,8 @@
       </ul>
       <div class="c-general">
         <div class="c-general__title">
-          <h3 class="">2020WEV24H</h3>
-          <span>/</span>
-          <h3 class="">2020智慧空間系統發展後續</h3>
-          <span>/</span>
-          <h3 class="c-general__subtitle">目前累計238小時</h3>
+          <h3 class="">人員統計</h3>
+  
         </div>
       </div>
       <div class="c-tabs">
@@ -177,7 +174,7 @@
               <a href="#supporttime">部門支援工時</a>
             </li>
             <li class="c-tabs__item__link tab col s3">
-              <a class="active" href="#notReachedtime">人員工時未達比例</a>
+              <a class="active" href="#notReachedtime">人員工時填寫比例</a>
             </li>
           </ul>
         </div>
@@ -198,11 +195,13 @@
                 <div class="">資訊與服務整合事業處</div>
               </div>
               <div class="c-popover__footer">
+                <a class="modal-trigger pop-confirm-btn" href="#execute">
                 <button
-                  class="o-btn-primary waves-effect waves-blue pop-confirm-btn"
+                  class="o-btn-primary waves-effect waves-blue"
                 >
                   切換其他部門
                 </button>
+              </a>
               </div>
             </div>
           </div>
@@ -485,7 +484,7 @@
             <div class="c-search-item">
               <div class="c-search-item__title">關鍵字</div>
               <div class="c-search-item__input">
-                <input type="text" class="" placeholder="成員名 / 工號" />
+                <input type="text" class="" placeholder="人員姓名及工號" />
               </div>
             </div>
           </div>
@@ -593,11 +592,13 @@
                 <div class="">資訊與服務整合事業處</div>
               </div>
               <div class="c-popover__footer">
+                <a class="modal-trigger pop-confirm-btn" href="#execute">
                 <button
-                  class="o-btn-primary waves-effect waves-blue pop-confirm-btn"
+                  class="o-btn-primary waves-effect waves-blue "
                 >
                   切換其他部門
                 </button>
+              </a>
               </div>
             </div>
           </div>
@@ -813,11 +814,13 @@
                 <div class="">資訊與服務整合事業處</div>
               </div>
               <div class="c-popover__footer">
+                <a class="modal-trigger pop-confirm-btn" href="#execute">
                 <button
-                  class="o-btn-primary waves-effect waves-blue pop-confirm-btn"
+                  class="o-btn-primary waves-effect waves-blue "
                 >
                   切換其他部門
                 </button>
+              </a>
               </div>
             </div>
           </div>
@@ -960,7 +963,11 @@
             </div>
           </div>
           <div class="l-main-content-text">
-            <div class="l-main-content-text__title">支援統計</div>
+            <div class="l-main-content-text__title">支援統計
+              <a href="#">
+                <button class="o-btn-secondary waves-effect waves-blue">統計圖表</button>
+               </a>
+            </div>
           </div>
           <div class="l-main-content-item">
             <div class="l-main-content-item__listTitle">
@@ -1038,11 +1045,13 @@
                 <div class="">資訊與服務整合事業處</div>
               </div>
               <div class="c-popover__footer">
+                <a class="modal-trigger pop-confirm-btn" href="#execute">
                 <button
-                  class="o-btn-primary waves-effect waves-blue pop-confirm-btn"
+                  class="o-btn-primary waves-effect waves-blue "
                 >
                   切換其他部門
                 </button>
+              </a>
               </div>
             </div>
           </div>
@@ -1203,7 +1212,9 @@
             </div>
           </div>
           <div class="l-main-content-text">
-            <div class="l-main-content-text__title">支援統計</div>
+            <div class="l-main-content-text__title">支援統計
+              
+            </div>
           </div>
           <div class="l-main-content-item">
             <div class="l-main-content-item__listTitle card-percent__listTitle">
@@ -1325,6 +1336,40 @@
         </div>
       </div>
     </div>
+      <!-- 視窗一 execute modal -->
+      <div id="execute" class="c-modal-alert modal c-modal-select">
+        <div class="c-modal-btnList">
+          <button>
+            <img class="modal-close" src="img/o-cross.svg" alt="" />
+          </button>
+        </div>
+        <div class="c-modal-alert__content">
+          <div class="c-search">
+            <div class="c-search-list">
+              <div class="c-search-item">
+                <div class="c-search-item__title">檢視</div>
+                <div class="input-field c-dropdown-department col">
+                  <select class="c-dropdown-plan-select">
+                    <option value="1">U20-使用者經驗用者用者企劃部</option>
+                    <option value="2">U20-使用者經驗企劃部</option>
+                    <option value="3">U20-使用者經驗用者用者企劃部</option>
+                    <option value="4">U20-使用者經驗企劃部</option>
+                    <option value="5">U20-使用者經驗用者用者企劃部</option>
+                    <option value="6">U20-使用者經驗企劃部</option>
+                    <option value="7">U20-使用者經驗用者用者企劃部</option>
+                  </select>
+                </div>
+                <div class="c-search-item__title">的計畫統計</div>
+              </div>
+              <div class="c-search-btn">
+                <button class="o-btn-primary waves-effect waves-blue modal-close">
+                  確定
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="js/materialize.js"></script>

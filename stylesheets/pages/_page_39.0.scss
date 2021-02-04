@@ -32,17 +32,23 @@
         margin-bottom: 1.5rem;
         display: flex;
         justify-content: space-between;
+        div{
+            display: flex;
+            button{
+              margin: 0 ;
+            }
+        }
     }
     
     .l-main-content__planlist{
         .table-body{
             height: 355px;
             overflow-y: scroll;
-            overflow-x: hidden;
+            overflow-x: scroll;
             .o-input{
-                height: 45px;
+                height: 3rem;
                 input{
-                    height: 45px;
+                    height: 3rem;
                 }
             }
         }
@@ -67,15 +73,15 @@
         }
         .l-main-content__maintain__num{
             font-family: $english-font;
-            width: 6.33rem;
+            width: 7.5rem;
             font-size:60px ;
             font-weight: 700;
             text-align: center;
             color: $hyweb-blue;
             .o-input{
                 input{
-                    width: 80px;
-                    height: 60px;
+                    width: 100%;
+                    height: 4rem;//60px;
                     font-family: $english-font;
                     font-weight: 700;
                     padding: 0.5rem;
@@ -125,6 +131,7 @@
                 }
             }
             .l-main-content__switchSubtext{
+                text-align: center;
                 .text-danger{
                     font-weight: bold;
                 }

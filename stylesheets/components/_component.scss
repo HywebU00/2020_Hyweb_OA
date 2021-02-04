@@ -119,6 +119,15 @@
         font-weight: 700;
         letter-spacing: 2px;
     }
+    // .c-card-title {
+    //     display: flex;
+    //     justify-content: space-between;
+
+    //     form {
+    //         margin-top: 5%;
+    //         margin-right: 12%;
+    //     }
+    // }
 }
 
 .c-card-percentCheck {
@@ -396,7 +405,7 @@
         }
 
     }
-
+    
     .c-card__item__title {
         display: flex;
         flex-wrap: wrap;
@@ -418,7 +427,25 @@
                display: none; 
             }
         }
-
+        .c-card__tag{
+            .c-card__tag__num{
+                width: 295px;
+            
+            }
+            .c-card__tag__input{
+                margin-left: 55%;
+                margin-right: 1rem;
+                form{
+                    p{
+                        span{
+                            background-color: #fff;
+                        }
+                    }
+                    
+                }
+                
+            }
+        }
     }
 
     .c-card__item__content {
@@ -496,7 +523,25 @@
 
 .c-card-planReport-danger {
     @extend .c-card-planReport;
-
+    .c-card__item__title{
+      .c-card__tag{
+        .c-card__tag__num{
+            .c-card__tag__input{
+                margin-left: 55%;
+                form{
+                    p{
+                        span{
+                            background-color: #fff;
+                        }
+                    }
+                    
+                }
+                
+            }
+        }
+    }  
+    }
+    
     .c-card__item__footer {
         .c-card__item__content__list {
             .list__item {
@@ -505,6 +550,9 @@
                     color: $danger;
                 }
             }
+            
+            
+            
         }
 
     }
@@ -2594,11 +2642,16 @@
             }
 
         }
-
         .c-popover__footer {
             display: flex;
             justify-content: center;
+            .pop-confirm-btn{
+                a{
+                    color: #fff;
+                }
+              }
         }
+       
     }
 
 }
@@ -2623,7 +2676,9 @@
     }
 }
 
+
 }
+
 }
 .c-writeHours {
     width: 85%;

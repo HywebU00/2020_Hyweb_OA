@@ -44,16 +44,16 @@
                     alt=""
                   />
                 </div>
-                <div class="">我的工時紀錄</div>
+                <div class="">我的工作紀錄</div>
               </div>
               <div class="c-sidebar-content__list__content">
                 <a href="page_1.0.html" class="c-sidebar-content__list__item"
-                  >填寫每日工時
+                  >填寫每日工作
                 </a>
                 <a
                   href="page_2.0.html"
                   class="c-sidebar-content__list__item menuItem-is-active"
-                  >檢視計畫工時
+                  >檢視計畫工作
                 </a>
               </div>
             </div>
@@ -328,6 +328,68 @@
                 </div>
                 <div class="l-main-content-text__inputText">全選</div>
               </div>
+              <div class="l-main-content-list">
+                <div class="">共7筆</div>
+                <div class="">
+                  <div class="c-popover-information pop-modal">
+                    <button
+                      class="waves-effect waves-blue o-information c-popover__btn pop-btn"
+                    >
+                      <img
+                        class="l-main-content-list__img"
+                        src="img/o-information.svg"
+                        alt=""
+                      />
+                    </button>
+                    <div class="c-popover__content pop-content">
+                      
+                      <div class="c-popover__text">
+                        <div class="">區間工時：搜尋區間內的實際與預估工時</div>
+                        <div class="">
+                          累計工時：計畫起始到目前的實際與預估工時
+                        </div>
+                        <div class="">
+                          全案工時：計畫起始到結束的實際與預估工時
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="waves-effect waves-blue o-list">
+                    <img
+                      class="l-main-content-list__img"
+                      src="img/o-list.svg"
+                      alt=""
+                    />
+                  </button>
+                  <button class="waves-effect waves-blue o-card">
+                    <img
+                      class="l-main-content-list__img"
+                      src="img/o-card.svg"
+                      alt=""
+                    />
+                  </button>
+
+                  <div
+                    class="l-main-content-list__img c-popover-filterM pop-modal"
+                  >
+                    <button>
+                      <span class="c-popover__btn pop-btn"
+                        ><img src="img/o-filter.svg" alt=""
+                      /></span>
+                    </button>
+
+                    <ul class="c-popover__content pop-content">
+                      <li>起始時間近到遠</li>
+                      <li>區間工時成本％低到高</li>
+                      <li>區間工時成本％高到低</li>
+                      <li>累計工時成本％低到高</li>
+                      <li>累計工時成本％高到低</li>
+                      <li>全案工時成本％低到高</li>
+                      <li>全案工時成本％高到低</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="l-main-content-item">
               <div class="l-main-content-item__listTitle">
@@ -351,27 +413,34 @@
                 <div class="listTitle__costTime">全案工時 <br />成本％</div>
               </div>
               <div class="l-main-content-item__listGroup">
-                <div class="c-card-alertPlan">
+                <div class="c-card-planReport">
                   <a href="#">
                     <div class="c-card__item">
                       <div class="c-card__item__title">
                         <div class="c-card__tag">
-                          <div class="">
-                            <span class="">2020WEV24H</span>
-                            <span class="">籌備</span>
-                          </div>
-                          <div class="">
-                            <form action="">
-                              <p>
-                                <label>
-                                  <input
-                                    type="checkbox"
-                                    class="filled-in js-inputStyle"
-                                  />
-                                  <span></span>
-                                </label>
-                              </p>
-                            </form>
+                          <div class="c-card__tag__num">
+                            <div class="">
+                              <!-- <div class="c-card__star__btn">
+                                <div
+                                  class="o-card__iconBtn o-card__star-default"
+                                ></div>
+                              </div> -->
+                              <span class="">2020WEV24H</span>
+                              <span class="c-card__tag__status">籌備</span>
+                            </div>
+                            <div class="c-card__tag__input">
+                              <form action="">
+                                <p>
+                                  <label>
+                                    <input
+                                      type="checkbox"
+                                      class="filled-in js-inputStyle"
+                                    />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
                           </div>
                         </div>
                         <h2 class="">
@@ -405,15 +474,21 @@
                         <div class="c-card__item__content__list">
                           <div class="list__item row">
                             <div class="list__item__title col">收入</div>
-                            <div class="col list__item__num col">87714299</div>
+                            <div class="col list__item__num col">
+                              87,714,299
+                            </div>
                           </div>
                           <div class="list__item row">
                             <div class="list__item__title col">成本</div>
-                            <div class="col list__item__num col">77714299</div>
+                            <div class="col list__item__num col">
+                              77,714,299
+                            </div>
                           </div>
                           <div class="list__item row">
                             <div class="list__item__title col">毛利</div>
-                            <div class="col list__item__num col">10000000</div>
+                            <div class="col list__item__num col">
+                              10,000,000
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -421,27 +496,27 @@
                         <div class="c-card__tag">
                           <div class="c-card__tag__btn">
                             <div class="o-card__icon">
-                              <img src="img/o-clock-danger.svg" alt="" />
+                              <img src="img/o-clock-blue.svg" alt="" />
                             </div>
                           </div>
                         </div>
                         <div class="c-card__item__content__list">
                           <div class="list__item row">
                             <div class="list__item__title col">區間工時</div>
-                            <div class="col list__item__num col is-danger">
-                              1000.0/1000.0
+                            <div class="col list__item__num col">
+                              <span>1000.0/1000.0</span>
                             </div>
-                            <div class="list__item__percent is-danger">
-                              120%
+                            <div class="list__item__percent">
+                              <span>100%</span>
                             </div>
                           </div>
                           <div class="list__item row">
                             <div class="list__item__title col">累計工時</div>
-                            <div class="col list__item__num col is-danger">
-                              1000.0/1000.0
+                            <div class="col list__item__num col">
+                              <span>1000.0/1000.0</span>
                             </div>
-                            <div class="list__item__percent is-danger">
-                              130%
+                            <div class="list__item__percent">
+                              <span>100%</span>
                             </div>
                           </div>
                           <div class="list__item row">
@@ -456,27 +531,34 @@
                     </div>
                   </a>
                 </div>
-                <div class="c-card-alertPlan">
+                <div class="c-card-planReport c-card-planReport-danger">
                   <a href="#">
                     <div class="c-card__item">
                       <div class="c-card__item__title">
                         <div class="c-card__tag">
-                          <div class="">
-                            <span class="">2020WEV24H</span>
-                            <span class="">籌備</span>
-                          </div>
-                          <div class="">
-                            <form action="">
-                              <p>
-                                <label>
-                                  <input
-                                    type="checkbox"
-                                    class="filled-in js-inputStyle"
-                                  />
-                                  <span></span>
-                                </label>
-                              </p>
-                            </form>
+                          <div class="c-card__tag__num">
+                            <div class="">
+                              <!-- <div class="c-card__star__btn">
+                                <div
+                                  class="o-card__iconBtn o-card__star-default"
+                                ></div>
+                              </div> -->
+                              <span class="">2020WEV24H</span>
+                              <span class="c-card__tag__status">籌備</span>
+                            </div>
+                            <div class="c-card__tag__input">
+                              <form action="">
+                                <p>
+                                  <label>
+                                    <input
+                                      type="checkbox"
+                                      class="filled-in js-inputStyle"
+                                    />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
                           </div>
                         </div>
                         <h2 class="">
@@ -510,15 +592,21 @@
                         <div class="c-card__item__content__list">
                           <div class="list__item row">
                             <div class="list__item__title col">收入</div>
-                            <div class="col list__item__num col">87714299</div>
+                            <div class="col list__item__num col">
+                              87,714,299
+                            </div>
                           </div>
                           <div class="list__item row">
                             <div class="list__item__title col">成本</div>
-                            <div class="col list__item__num col">77714299</div>
+                            <div class="col list__item__num col">
+                              77,714,299
+                            </div>
                           </div>
                           <div class="list__item row">
                             <div class="list__item__title col">毛利</div>
-                            <div class="col list__item__num col">10000000</div>
+                            <div class="col list__item__num col">
+                              10,000,000
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -534,19 +622,19 @@
                           <div class="list__item row">
                             <div class="list__item__title col">區間工時</div>
                             <div class="col list__item__num col is-danger">
-                              1000.0/1000.0
+                              <span>1000.0/1000.0</span>
                             </div>
                             <div class="list__item__percent is-danger">
-                              120%
+                              <span>100%</span>
                             </div>
                           </div>
                           <div class="list__item row">
                             <div class="list__item__title col">累計工時</div>
                             <div class="col list__item__num col is-danger">
-                              1000.0/1000.0
+                              <span>1000.0/1000.0</span>
                             </div>
                             <div class="list__item__percent is-danger">
-                              130%
+                              <span>100%</span>
                             </div>
                           </div>
                           <div class="list__item row">

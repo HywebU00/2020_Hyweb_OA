@@ -44,14 +44,16 @@
                     alt=""
                   />
                 </div>
-                <div class="">我的工時紀錄</div>
+                <div class="">我的工作紀錄</div>
               </div>
               <div class="c-sidebar-content__list__content">
                 <a href="page_1.0.html" class="c-sidebar-content__list__item"
-                  >填寫每日工時
+                  >填寫每日工作
                 </a>
-                <a href="page_2.0.html" class="c-sidebar-content__list__item"
-                  >檢視計畫工時
+                <a
+                  href="page_2.0.html"
+                  class="c-sidebar-content__list__item menuItem-is-active"
+                  >檢視計畫工作
                 </a>
               </div>
             </div>
@@ -355,6 +357,7 @@
               </button>
             </div>
           </div>
+          <!-- 卡片樣式轉換成列表樣式 需要增加 class " l-main-changeStyle " -->
           <div
             class="l-main-content l-main-changeStyle l-main-have-nav-height l-main-list-width"
           >
@@ -411,8 +414,12 @@
                     /></span>
                     <ul class="c-popover__content pop-content">
                       <li>起始時間近到遠</li>
-                      <li>總工時低到高</li>
-                      <li>總工時高到低</li>
+                      <li>區間工時成本％低到高</li>
+                      <li>區間工時成本％高到低</li>
+                      <li>累計工時成本％低到高</li>
+                      <li>累計工時成本％高到低</li>
+                      <li>全案工時成本％低到高</li>
+                      <li>全案工時成本％高到低</li>
                     </ul>
                   </div>
                 </div>
@@ -451,14 +458,29 @@
                       <div class="c-card__item__title">
                         <div class="c-card__tag">
                           <div class="c-card__tag__num">
-                            <div class="c-card__star__btn">
-                              <div
-                                class="o-card__iconBtn o-card__star-default"
-                              ></div>
+                            <div class="">
+                              <div class="c-card__star__btn">
+                                <div
+                                  class="o-card__iconBtn o-card__star-default"
+                                ></div>
+                              </div>
+                              <span class="">2020WEV24H</span>
+                              <span class="c-card__tag__status">籌備</span>
                             </div>
-                            <span class="">2020WEV24H</span>
+                            <!-- <div class="c-card__tag__input">
+                              <form action="">
+                                <p>
+                                  <label>
+                                    <input
+                                      type="checkbox"
+                                      class="filled-in js-inputStyle"
+                                    />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div> -->
                           </div>
-                          <span class="c-card__tag__status">籌備</span>
                         </div>
                         <h2 class="">
                           109年臺灣國際專業展網站強化案國際專業展網站
@@ -548,20 +570,35 @@
                     </div>
                   </a>
                 </div>
-                <div class="c-card-planReport-danger">
+                <div class="c-card-planReport c-card-planReport-danger">
                   <a href="#">
                     <div class="c-card__item">
                       <div class="c-card__item__title">
                         <div class="c-card__tag">
                           <div class="c-card__tag__num">
-                            <div class="c-card__star__btn">
-                              <div
-                                class="o-card__iconBtn o-card__star-default"
-                              ></div>
+                            <div class="">
+                              <div class="c-card__star__btn">
+                                <div
+                                  class="o-card__iconBtn o-card__star-default"
+                                ></div>
+                              </div>
+                              <span class="">2020WEV24H</span>
+                              <span class="c-card__tag__status">籌備</span>
                             </div>
-                            <span class="">2020WEV24H</span>
+                            <!-- <div class="c-card__tag__input">
+                              <form action="">
+                                <p>
+                                  <label>
+                                    <input
+                                      type="checkbox"
+                                      class="filled-in js-inputStyle"
+                                    />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div> -->
                           </div>
-                          <span class="c-card__tag__status">籌備</span>
                         </div>
                         <h2 class="">
                           109年臺灣國際專業展網站強化案國際專業展網站
@@ -627,7 +664,7 @@
                               <span>1000.0/1000.0</span>
                             </div>
                             <div class="list__item__percent is-danger">
-                              <span>120%</span>
+                              <span>100%</span>
                             </div>
                           </div>
                           <div class="list__item row">
@@ -636,7 +673,7 @@
                               <span>1000.0/1000.0</span>
                             </div>
                             <div class="list__item__percent is-danger">
-                              <span>130%</span>
+                              <span>100%</span>
                             </div>
                           </div>
                           <div class="list__item row">
@@ -657,14 +694,29 @@
                       <div class="c-card__item__title">
                         <div class="c-card__tag">
                           <div class="c-card__tag__num">
-                            <div class="c-card__star__btn">
-                              <div
-                                class="o-card__iconBtn o-card__star-default"
-                              ></div>
+                            <div class="">
+                              <div class="c-card__star__btn">
+                                <div
+                                  class="o-card__iconBtn o-card__star-default"
+                                ></div>
+                              </div>
+                              <span class="">2020WEV24H</span>
+                              <span class="c-card__tag__status">籌備</span>
                             </div>
-                            <span class="">2020WEV24H</span>
+                            <!-- <div class="c-card__tag__input">
+                              <form action="">
+                                <p>
+                                  <label>
+                                    <input
+                                      type="checkbox"
+                                      class="filled-in js-inputStyle"
+                                    />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div> -->
                           </div>
-                          <span class="c-card__tag__status">籌備</span>
                         </div>
                         <h2 class="">
                           109年臺灣國際專業展網站強化案國際專業展網站
@@ -760,14 +812,29 @@
                       <div class="c-card__item__title">
                         <div class="c-card__tag">
                           <div class="c-card__tag__num">
-                            <div class="c-card__star__btn">
-                              <div
-                                class="o-card__iconBtn o-card__star-default"
-                              ></div>
+                            <div class="">
+                              <div class="c-card__star__btn">
+                                <div
+                                  class="o-card__iconBtn o-card__star-default"
+                                ></div>
+                              </div>
+                              <span class="">2020WEV24H</span>
+                              <span class="c-card__tag__status">籌備</span>
                             </div>
-                            <span class="">2020WEV24H</span>
+                            <!-- <div class="c-card__tag__input">
+                              <form action="">
+                                <p>
+                                  <label>
+                                    <input
+                                      type="checkbox"
+                                      class="filled-in js-inputStyle"
+                                    />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div> -->
                           </div>
-                          <span class="c-card__tag__status">籌備</span>
                         </div>
                         <h2 class="">
                           109年臺灣國際專業展網站強化案國際專業展網站
@@ -922,29 +989,45 @@
               </button>
             </div>
           </div>
+          <!-- 卡片樣式轉換成列表樣式 需要增加 class " l-main-changeStyle " -->
           <div class="l-main-content l-main-changeStyle l-main-have-nav-height">
             <div class="l-main-content-title">
-              <div class="l-main-content-text">
-                <img src="img/o-clock-blue.svg" alt="" />
-                <div class="">此工作區間共214小時</div>
-              </div>
+              <div class="l-main-content-text"></div>
               <div class="l-main-content-list">
+                <div class="">共7筆</div>
                 <div class="">
-                  <img
-                    class="l-main-content-list__img o-list"
-                    src="img/o-list.svg"
-                    alt=""
-                  />
-                  <img
-                    class="l-main-content-list__img o-card"
-                    src="img/o-card.svg"
-                    alt=""
-                  />
+                  <button class="waves-effect waves-blue o-list">
+                    <img
+                      class="l-main-content-list__img"
+                      src="img/o-list.svg"
+                      alt=""
+                    />
+                  </button>
+                  <button class="waves-effect waves-blue o-card">
+                    <img
+                      class="l-main-content-list__img"
+                      src="img/o-card.svg"
+                      alt=""
+                    />
+                  </button>
+                  <div
+                    class="l-main-content-list__img c-popover-filterM pop-modal"
+                  >
+                    <span class="c-popover__btn pop-btn"
+                      ><img src="img/o-filter.svg" alt=""
+                    /></span>
+                    <ul class="c-popover__content pop-content">
+                      <li>起始時間近到遠</li>
+                      <li>區間工時成本％低到高</li>
+                      <li>區間工時成本％高到低</li>
+                      <li>累計工時成本％低到高</li>
+                      <li>累計工時成本％高到低</li>
+                      <li>全案工時成本％低到高</li>
+                      <li>全案工時成本％高到低</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="l-main-content-text">
-              <div class="l-main-content-text__title">U00 / 50小時</div>
             </div>
             <div class="l-main-content-item">
               <div class="l-main-content-item__listTitle">
@@ -953,7 +1036,7 @@
                 <div class="listTitle__workTime">起訖時間</div>
                 <div class="listTitle__position">PM</div>
                 <div class="listTitle__position">業務</div>
-                <div class="listTitle__time">累計工時</div>
+                <div class="listTitle__time">總工時</div>
               </div>
               <div class="c-card-planClosed">
                 <a href="page_19.0.1.html">
@@ -998,7 +1081,7 @@
                     109年台灣國際專業展網站強化案際專業展網站強化案專業展網站強化案
                   </h2>
                   <div class="c-card__date">
-                    /07/02
+                    2020/07/02
                     <span class="br"></span>
                     <span class="dash">-</span> 2020/08/03
                   </div>
@@ -1032,7 +1115,7 @@
                   </div>
                   <h2>109年台灣國際專業展網站強化案際專業展網站強化案</h2>
                   <div class="c-card__date">
-                    /07/02
+                    2020/07/02
                     <span class="br"></span>
                     <span class="dash">-</span> 2020/08/03
                   </div>

@@ -42,16 +42,16 @@
                   alt=""
                 />
               </div>
-              <div class="">我的工時紀錄</div>
+              <div class="">我的工作紀錄</div>
             </div>
             <div class="c-sidebar-content__list__content">
               <a href="page_1.0.html" class="c-sidebar-content__list__item"
-                >填寫每日工時
+                >填寫每日工作
               </a>
               <a
                 href="page_2.0.html"
                 class="c-sidebar-content__list__item menuItem-is-active"
-                >檢視計畫工時
+                >檢視計畫工作
               </a>
             </div>
           </div>
@@ -160,11 +160,8 @@
       </ul>
       <div class="c-general">
         <div class="c-general__title">
-          <h3 class="">2020WEV24H</h3>
-          <span>/</span>
-          <h3 class="">2020智慧空間系統發展後續</h3>
-          <span>/</span>
-          <h3 class="c-general__subtitle">目前累計238小時</h3>
+          <h3 class="">人員統計</h3>
+
         </div>
       </div>
       <div class="c-tabs">
@@ -180,7 +177,7 @@
               <a href="#supporttime">部門支援工時</a>
             </li>
             <li class="c-tabs__item__link tab col s3">
-              <a class="active" href="#notReachedtime">人員工時未達比例</a>
+              <a class="active" href="#notReachedtime">人員工時填寫比例</a>
             </li>
           </ul>
         </div>
@@ -460,7 +457,7 @@
             <div class="c-search-item">
               <div class="c-search-item__title">關鍵字</div>
               <div class="c-search-item__input">
-                <input type="text" class="" placeholder="成員名 / 工號" />
+                <input type="text" class="" placeholder="人員姓名及工號" />
               </div>
             </div>
           </div>
@@ -707,85 +704,94 @@
           <div class="c-search-list">
             <div class="c-search-item">
               <div class="c-search-item__title">工作區間</div>
-              <div class="c-search-item__input">
-                <div class="c-datePicker-months pop-modal">
-                  <div class="c-datePicker__input pop-btn">
-                    <div class="o-input-div"></div>
+              <div class="c-datePicker-month pop-modal">
+                <div class="c-datePicker__input pop-btn">
+                  <div class="o-input-div"></div>
+                </div>
+                <div class="c-datePicker__modal pop-content">
+                  <div class="c-datePicker__yearPicker">
+                    <button class="waves-effect waves-blue"><img src="img/o-arrowLeft-blue.svg" alt=""></button>
+                    <div class="">2020</div>
+                    <button class="waves-effect waves-blue">
+                      <img src="img/o-arrowRight-blue.svg" alt="">
+                    </button> 
                   </div>
-                  <div class="c-datePicker__modal pop-content">
-                    <div class="c-datePicker__group">
-                      <div class="c-datePicker__item">
-                        <div class="c-datePicker__yearPicker">
-                          <img src="img/o-arrowLeft-blue.svg" alt="" />
-                          <div class="">2020</div>
-                          <div class=""></div>
-                        </div>
-                        <div class="c-datePicker__content">
-                          <table>
-                            <tr>
-                              <td>1月</td>
-                              <td>2月</td>
-                              <td>3月</td>
-                            </tr>
-                            <tr>
-                              <td>4月</td>
-                              <td>5月</td>
-                              <td>6月</td>
-                            </tr>
-                            <tr>
-                              <td>7月</td>
-                              <td>8月</td>
-                              <td>9月</td>
-                            </tr>
-                            <tr>
-                              <td>10月</td>
-                              <td>11月</td>
-                              <td>12月</td>
-                            </tr>
-                          </table>
-                        </div>
-                      </div>
-                      <div class="c-datePicker__item">
-                        <div class="c-datePicker__yearPicker">
-                          <div class=""></div>
-                          <div class="">2021</div>
-                          <img src="img/o-arrowRight-blue.svg" alt="" />
-                        </div>
-                        <div class="c-datePicker__content">
-                          <table>
-                            <tr>
-                              <td>1月</td>
-                              <td class="is-select-day is-select-range-first">
-                                2月
-                              </td>
-                              <td class="is-select-range-lest">3月</td>
-                            </tr>
-                            <tr>
-                              <td class="is-select-range-first">4月</td>
-                              <td class="is-select-range">5月</td>
-                              <td class="is-select-range-lest">6月</td>
-                            </tr>
-                            <tr>
-                              <td class="is-select-range-first">7月</td>
-                              <td class="is-select-range">8月</td>
-                              <td class="is-select-day is-select-range-lest">
-                                9月
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>10月</td>
-                              <td>11月</td>
-                              <td>12月</td>
-                            </tr>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="c-datePicker__footer">
-                      <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">
-                        確認
-                      </button>
-                    </div>
+                  <ul class="c-datePicker__content">
+                    <li>
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>1月</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>2月</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>3月</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>4月</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>5月</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>6月</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>7月</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>8月</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>9月</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>10月</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>11月</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>12月</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="c-datePicker__footer">
+                    <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
                   </div>
                 </div>
               </div>

@@ -42,16 +42,16 @@
                   alt=""
                 />
               </div>
-              <div class="">我的工時紀錄</div>
+              <div class="">我的工作紀錄</div>
             </div>
             <div class="c-sidebar-content__list__content">
               <a href="page_1.0.html" class="c-sidebar-content__list__item"
-                >填寫每日工時
+                >填寫每日工作
               </a>
               <a
                 href="page_2.0.html"
                 class="c-sidebar-content__list__item menuItem-is-active"
-                >檢視計畫工時
+                >檢視計畫工作
               </a>
             </div>
           </div>
@@ -163,9 +163,14 @@
             <div class="l-main-content__card s6">
               <div class="l-main-content__title">
                 休假日
-                <button class="waves-effect waves-blue">
-                  <img src="img/o-edit.svg" alt="" />
-                </button>
+                <div class="">
+                  <button class="waves-effect waves-blue">
+                    <img src="img/o-cencel.svg" alt="" />
+                  </button>
+                  <button class="waves-effect waves-blue">
+                    <img src="img/o-confirm.svg" alt="" />
+                  </button>
+                </div>
               </div>
               <div class="l-main-content-table l-main-content__planlist">
                 <div class="table-thead">
@@ -191,76 +196,163 @@
                           <input type="text" value="元旦">
                         </div>
                         <div class="col is-popmodal-show s4">
-                          <div class="c-datePicker-day pop-modal">
+                          <div class="c-datePicker-days pop-modal">
                             <div class="c-datePicker__input pop-btn">
-                              <div class="o-input-div"> 2021.01.01 <br />
-                                2021.01.03</div>
+                              <div class="o-input-div">
+                                2020/01/01 <br>
+                                2020/01/01
+                              </div>
                             </div>
                             <div class="c-datePicker__modal pop-content">
-                              <div class="c-datePicker__yearPicker">
-                                <img src="img/o-arrowLeft-blue.svg" alt="" />
-                                <div class="">2020 8月</div>
-                                <img src="img/o-arrowRight-blue.svg" alt="" />
-                              </div>
-                              <div class="c-datePicker__content">
-                                <table>
-                                  <tbody>
-                                    <tr>
-                                      <th>日</th>
-                                      <th>一</th>
-                                      <th>二</th>
-                                      <th>三</th>
-                                      <th>四</th>
-                                      <th>五</th>
-                                      <th>六</th>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-this-month">28</td>
-                                      <td class="is-no-this-month">29</td>
-                                      <td class="is-no-this-month">30</td>
-                                      <td>1</td>
-                                      <td>2</td>
-                                      <td class="is-select-day">3</td>
-                                      <td class="is-no-work">4</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">5</td>
-                                      <td>6</td>
-                                      <td>7</td>
-                                      <td>8</td>
-                                      <td>9</td>
-                                      <td>10</td>
-                                      <td class="is-no-work">11</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">12</td>
-                                      <td>13</td>
-                                      <td>14</td>
-                                      <td>15</td>
-                                      <td>16</td>
-                                      <td>17</td>
-                                      <td class="is-no-work">18</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">19</td>
-                                      <td>20</td>
-                                      <td>21</td>
-                                      <td>22</td>
-                                      <td>23</td>
-                                      <td>24</td>
-                                      <td class="is-no-work">25</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">26</td>
-                                      <td>27</td>
-                                      <td>28</td>
-                                      <td>29</td>
-                                      <td>30</td>
-                                      <td>31</td>
-                                      <td class="is-no-work">1</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+                              <div class="c-datePicker__group">
+                                <div class="c-datePicker__item">
+                                  <div class="c-datePicker__yearPicker">
+                                    <button type="button" class="waves-effect waves-blue">
+                                      <img src="img/o-arrowLeft-blue.svg" alt="" />
+                                    </button>
+                                    <div class="">2020 7月</div>
+                                    <button></button>
+                                  </div>
+    
+                                  <div class="c-datePicker__content">
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <th>日</th>
+                                          <th>一</th>
+                                          <th>二</th>
+                                          <th>三</th>
+                                          <th>四</th>
+                                          <th>五</th>
+                                          <th>六</th>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-this-month">28</td>
+                                          <td class="is-no-this-month">29</td>
+                                          <td class="is-no-this-month">30</td>
+                                          <td>1</td>
+                                          <td>2</td>
+                                          <td class="is-select-day is-select-range-first">
+                                            3
+                                          </td>
+                                          <td class="is-no-work is-select-range-lest">
+                                            4
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work is-select-range-first">
+                                            5
+                                          </td>
+                                          <td class="is-select-range">6</td>
+                                          <td class="is-select-range">7</td>
+                                          <td class="is-select-range">8</td>
+                                          <td class="is-select-range">9</td>
+                                          <td class="is-select-day is-select-range-lest">
+                                            10
+                                          </td>
+                                          <td class="is-no-work">11</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">12</td>
+                                          <td>13</td>
+                                          <td>14</td>
+                                          <td>15</td>
+                                          <td>16</td>
+                                          <td>17</td>
+                                          <td class="is-no-work">18</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">19</td>
+                                          <td>20</td>
+                                          <td>21</td>
+                                          <td>22</td>
+                                          <td>23</td>
+                                          <td>24</td>
+                                          <td class="is-no-work">25</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">26</td>
+                                          <td>27</td>
+                                          <td>28</td>
+                                          <td>29</td>
+                                          <td>30</td>
+                                          <td>31</td>
+                                          <td class="is-no-work">1</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="c-datePicker__item">
+                                  <div class="c-datePicker__yearPicker">
+                                    <button></button>
+                                    <div class="">2020 8月</div>
+                                    <button type="button" class="waves-effect waves-blue">
+                                      <img src="img/o-arrowRight-blue.svg" alt="" />
+                                    </button>
+    
+                                  </div>
+                                  <div class="c-datePicker__content">
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <th>日</th>
+                                          <th>一</th>
+                                          <th>二</th>
+                                          <th>三</th>
+                                          <th>四</th>
+                                          <th>五</th>
+                                          <th>六</th>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-this-month">28</td>
+                                          <td class="is-no-this-month">29</td>
+                                          <td class="is-no-this-month">30</td>
+                                          <td>1</td>
+                                          <td>2</td>
+                                          <td class="">3</td>
+                                          <td class="is-no-work">4</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">5</td>
+                                          <td>6</td>
+                                          <td>7</td>
+                                          <td>8</td>
+                                          <td>9</td>
+                                          <td>10</td>
+                                          <td class="is-no-work">11</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">12</td>
+                                          <td>13</td>
+                                          <td>14</td>
+                                          <td>15</td>
+                                          <td>16</td>
+                                          <td>17</td>
+                                          <td class="is-no-work">18</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">19</td>
+                                          <td>20</td>
+                                          <td>21</td>
+                                          <td>22</td>
+                                          <td>23</td>
+                                          <td>24</td>
+                                          <td class="is-no-work">25</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">26</td>
+                                          <td>27</td>
+                                          <td>28</td>
+                                          <td>29</td>
+                                          <td>30</td>
+                                          <td>31</td>
+                                          <td class="is-no-work">1</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
                               </div>
                               <div class="c-datePicker__footer">
                                 <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">
@@ -289,76 +381,163 @@
                           <input type="text" value="農曆新年">
                         </div>
                         <div class="col is-popmodal-show s4">
-                          <div class="c-datePicker-day pop-modal">
+                          <div class="c-datePicker-days pop-modal">
                             <div class="c-datePicker__input pop-btn">
-                              <div class="o-input-div"> 2021.01.01 <br />
-                                2021.01.03</div>
+                              <div class="o-input-div">
+                                2020/01/01 <br>
+                                2020/01/01
+                              </div>
                             </div>
                             <div class="c-datePicker__modal pop-content">
-                              <div class="c-datePicker__yearPicker">
-                                <img src="img/o-arrowLeft-blue.svg" alt="" />
-                                <div class="">2020 8月</div>
-                                <img src="img/o-arrowRight-blue.svg" alt="" />
-                              </div>
-                              <div class="c-datePicker__content">
-                                <table>
-                                  <tbody>
-                                    <tr>
-                                      <th>日</th>
-                                      <th>一</th>
-                                      <th>二</th>
-                                      <th>三</th>
-                                      <th>四</th>
-                                      <th>五</th>
-                                      <th>六</th>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-this-month">28</td>
-                                      <td class="is-no-this-month">29</td>
-                                      <td class="is-no-this-month">30</td>
-                                      <td>1</td>
-                                      <td>2</td>
-                                      <td class="is-select-day">3</td>
-                                      <td class="is-no-work">4</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">5</td>
-                                      <td>6</td>
-                                      <td>7</td>
-                                      <td>8</td>
-                                      <td>9</td>
-                                      <td>10</td>
-                                      <td class="is-no-work">11</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">12</td>
-                                      <td>13</td>
-                                      <td>14</td>
-                                      <td>15</td>
-                                      <td>16</td>
-                                      <td>17</td>
-                                      <td class="is-no-work">18</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">19</td>
-                                      <td>20</td>
-                                      <td>21</td>
-                                      <td>22</td>
-                                      <td>23</td>
-                                      <td>24</td>
-                                      <td class="is-no-work">25</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">26</td>
-                                      <td>27</td>
-                                      <td>28</td>
-                                      <td>29</td>
-                                      <td>30</td>
-                                      <td>31</td>
-                                      <td class="is-no-work">1</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+                              <div class="c-datePicker__group">
+                                <div class="c-datePicker__item">
+                                  <div class="c-datePicker__yearPicker">
+                                    <button type="button" class="waves-effect waves-blue">
+                                      <img src="img/o-arrowLeft-blue.svg" alt="" />
+                                    </button>
+                                    <div class="">2020 7月</div>
+                                    <button></button>
+                                  </div>
+    
+                                  <div class="c-datePicker__content">
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <th>日</th>
+                                          <th>一</th>
+                                          <th>二</th>
+                                          <th>三</th>
+                                          <th>四</th>
+                                          <th>五</th>
+                                          <th>六</th>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-this-month">28</td>
+                                          <td class="is-no-this-month">29</td>
+                                          <td class="is-no-this-month">30</td>
+                                          <td>1</td>
+                                          <td>2</td>
+                                          <td class="is-select-day is-select-range-first">
+                                            3
+                                          </td>
+                                          <td class="is-no-work is-select-range-lest">
+                                            4
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work is-select-range-first">
+                                            5
+                                          </td>
+                                          <td class="is-select-range">6</td>
+                                          <td class="is-select-range">7</td>
+                                          <td class="is-select-range">8</td>
+                                          <td class="is-select-range">9</td>
+                                          <td class="is-select-day is-select-range-lest">
+                                            10
+                                          </td>
+                                          <td class="is-no-work">11</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">12</td>
+                                          <td>13</td>
+                                          <td>14</td>
+                                          <td>15</td>
+                                          <td>16</td>
+                                          <td>17</td>
+                                          <td class="is-no-work">18</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">19</td>
+                                          <td>20</td>
+                                          <td>21</td>
+                                          <td>22</td>
+                                          <td>23</td>
+                                          <td>24</td>
+                                          <td class="is-no-work">25</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">26</td>
+                                          <td>27</td>
+                                          <td>28</td>
+                                          <td>29</td>
+                                          <td>30</td>
+                                          <td>31</td>
+                                          <td class="is-no-work">1</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="c-datePicker__item">
+                                  <div class="c-datePicker__yearPicker">
+                                    <button></button>
+                                    <div class="">2020 8月</div>
+                                    <button type="button" class="waves-effect waves-blue">
+                                      <img src="img/o-arrowRight-blue.svg" alt="" />
+                                    </button>
+    
+                                  </div>
+                                  <div class="c-datePicker__content">
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <th>日</th>
+                                          <th>一</th>
+                                          <th>二</th>
+                                          <th>三</th>
+                                          <th>四</th>
+                                          <th>五</th>
+                                          <th>六</th>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-this-month">28</td>
+                                          <td class="is-no-this-month">29</td>
+                                          <td class="is-no-this-month">30</td>
+                                          <td>1</td>
+                                          <td>2</td>
+                                          <td class="">3</td>
+                                          <td class="is-no-work">4</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">5</td>
+                                          <td>6</td>
+                                          <td>7</td>
+                                          <td>8</td>
+                                          <td>9</td>
+                                          <td>10</td>
+                                          <td class="is-no-work">11</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">12</td>
+                                          <td>13</td>
+                                          <td>14</td>
+                                          <td>15</td>
+                                          <td>16</td>
+                                          <td>17</td>
+                                          <td class="is-no-work">18</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">19</td>
+                                          <td>20</td>
+                                          <td>21</td>
+                                          <td>22</td>
+                                          <td>23</td>
+                                          <td>24</td>
+                                          <td class="is-no-work">25</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">26</td>
+                                          <td>27</td>
+                                          <td>28</td>
+                                          <td>29</td>
+                                          <td>30</td>
+                                          <td>31</td>
+                                          <td class="is-no-work">1</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
                               </div>
                               <div class="c-datePicker__footer">
                                 <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">
@@ -387,76 +566,163 @@
                           <input type="text" value="228和平紀念日">
                         </div>
                         <div class="col is-popmodal-show s4">
-                          <div class="c-datePicker-day pop-modal">
+                          <div class="c-datePicker-days pop-modal">
                             <div class="c-datePicker__input pop-btn">
-                              <div class="o-input-div"> 2021.01.01 <br />
-                                2021.01.03</div>
+                              <div class="o-input-div">
+                                2020/01/01 <br>
+                                2020/01/01
+                              </div>
                             </div>
                             <div class="c-datePicker__modal pop-content">
-                              <div class="c-datePicker__yearPicker">
-                                <img src="img/o-arrowLeft-blue.svg" alt="" />
-                                <div class="">2020 8月</div>
-                                <img src="img/o-arrowRight-blue.svg" alt="" />
-                              </div>
-                              <div class="c-datePicker__content">
-                                <table>
-                                  <tbody>
-                                    <tr>
-                                      <th>日</th>
-                                      <th>一</th>
-                                      <th>二</th>
-                                      <th>三</th>
-                                      <th>四</th>
-                                      <th>五</th>
-                                      <th>六</th>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-this-month">28</td>
-                                      <td class="is-no-this-month">29</td>
-                                      <td class="is-no-this-month">30</td>
-                                      <td>1</td>
-                                      <td>2</td>
-                                      <td class="is-select-day">3</td>
-                                      <td class="is-no-work">4</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">5</td>
-                                      <td>6</td>
-                                      <td>7</td>
-                                      <td>8</td>
-                                      <td>9</td>
-                                      <td>10</td>
-                                      <td class="is-no-work">11</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">12</td>
-                                      <td>13</td>
-                                      <td>14</td>
-                                      <td>15</td>
-                                      <td>16</td>
-                                      <td>17</td>
-                                      <td class="is-no-work">18</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">19</td>
-                                      <td>20</td>
-                                      <td>21</td>
-                                      <td>22</td>
-                                      <td>23</td>
-                                      <td>24</td>
-                                      <td class="is-no-work">25</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">26</td>
-                                      <td>27</td>
-                                      <td>28</td>
-                                      <td>29</td>
-                                      <td>30</td>
-                                      <td>31</td>
-                                      <td class="is-no-work">1</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+                              <div class="c-datePicker__group">
+                                <div class="c-datePicker__item">
+                                  <div class="c-datePicker__yearPicker">
+                                    <button type="button" class="waves-effect waves-blue">
+                                      <img src="img/o-arrowLeft-blue.svg" alt="" />
+                                    </button>
+                                    <div class="">2020 7月</div>
+                                    <button></button>
+                                  </div>
+    
+                                  <div class="c-datePicker__content">
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <th>日</th>
+                                          <th>一</th>
+                                          <th>二</th>
+                                          <th>三</th>
+                                          <th>四</th>
+                                          <th>五</th>
+                                          <th>六</th>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-this-month">28</td>
+                                          <td class="is-no-this-month">29</td>
+                                          <td class="is-no-this-month">30</td>
+                                          <td>1</td>
+                                          <td>2</td>
+                                          <td class="is-select-day is-select-range-first">
+                                            3
+                                          </td>
+                                          <td class="is-no-work is-select-range-lest">
+                                            4
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work is-select-range-first">
+                                            5
+                                          </td>
+                                          <td class="is-select-range">6</td>
+                                          <td class="is-select-range">7</td>
+                                          <td class="is-select-range">8</td>
+                                          <td class="is-select-range">9</td>
+                                          <td class="is-select-day is-select-range-lest">
+                                            10
+                                          </td>
+                                          <td class="is-no-work">11</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">12</td>
+                                          <td>13</td>
+                                          <td>14</td>
+                                          <td>15</td>
+                                          <td>16</td>
+                                          <td>17</td>
+                                          <td class="is-no-work">18</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">19</td>
+                                          <td>20</td>
+                                          <td>21</td>
+                                          <td>22</td>
+                                          <td>23</td>
+                                          <td>24</td>
+                                          <td class="is-no-work">25</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">26</td>
+                                          <td>27</td>
+                                          <td>28</td>
+                                          <td>29</td>
+                                          <td>30</td>
+                                          <td>31</td>
+                                          <td class="is-no-work">1</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="c-datePicker__item">
+                                  <div class="c-datePicker__yearPicker">
+                                    <button></button>
+                                    <div class="">2020 8月</div>
+                                    <button type="button" class="waves-effect waves-blue">
+                                      <img src="img/o-arrowRight-blue.svg" alt="" />
+                                    </button>
+    
+                                  </div>
+                                  <div class="c-datePicker__content">
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <th>日</th>
+                                          <th>一</th>
+                                          <th>二</th>
+                                          <th>三</th>
+                                          <th>四</th>
+                                          <th>五</th>
+                                          <th>六</th>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-this-month">28</td>
+                                          <td class="is-no-this-month">29</td>
+                                          <td class="is-no-this-month">30</td>
+                                          <td>1</td>
+                                          <td>2</td>
+                                          <td class="">3</td>
+                                          <td class="is-no-work">4</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">5</td>
+                                          <td>6</td>
+                                          <td>7</td>
+                                          <td>8</td>
+                                          <td>9</td>
+                                          <td>10</td>
+                                          <td class="is-no-work">11</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">12</td>
+                                          <td>13</td>
+                                          <td>14</td>
+                                          <td>15</td>
+                                          <td>16</td>
+                                          <td>17</td>
+                                          <td class="is-no-work">18</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">19</td>
+                                          <td>20</td>
+                                          <td>21</td>
+                                          <td>22</td>
+                                          <td>23</td>
+                                          <td>24</td>
+                                          <td class="is-no-work">25</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">26</td>
+                                          <td>27</td>
+                                          <td>28</td>
+                                          <td>29</td>
+                                          <td>30</td>
+                                          <td>31</td>
+                                          <td class="is-no-work">1</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
                               </div>
                               <div class="c-datePicker__footer">
                                 <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">
@@ -485,76 +751,163 @@
                           <input type="text" value="清明連假">
                         </div>
                         <div class="col is-popmodal-show s4">
-                          <div class="c-datePicker-day pop-modal">
+                          <div class="c-datePicker-days pop-modal">
                             <div class="c-datePicker__input pop-btn">
-                              <div class="o-input-div"> 2021.01.01 <br />
-                                2021.01.03</div>
+                              <div class="o-input-div">
+                                2020/01/01 <br>
+                                2020/01/01
+                              </div>
                             </div>
                             <div class="c-datePicker__modal pop-content">
-                              <div class="c-datePicker__yearPicker">
-                                <img src="img/o-arrowLeft-blue.svg" alt="" />
-                                <div class="">2020 8月</div>
-                                <img src="img/o-arrowRight-blue.svg" alt="" />
-                              </div>
-                              <div class="c-datePicker__content">
-                                <table>
-                                  <tbody>
-                                    <tr>
-                                      <th>日</th>
-                                      <th>一</th>
-                                      <th>二</th>
-                                      <th>三</th>
-                                      <th>四</th>
-                                      <th>五</th>
-                                      <th>六</th>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-this-month">28</td>
-                                      <td class="is-no-this-month">29</td>
-                                      <td class="is-no-this-month">30</td>
-                                      <td>1</td>
-                                      <td>2</td>
-                                      <td class="is-select-day">3</td>
-                                      <td class="is-no-work">4</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">5</td>
-                                      <td>6</td>
-                                      <td>7</td>
-                                      <td>8</td>
-                                      <td>9</td>
-                                      <td>10</td>
-                                      <td class="is-no-work">11</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">12</td>
-                                      <td>13</td>
-                                      <td>14</td>
-                                      <td>15</td>
-                                      <td>16</td>
-                                      <td>17</td>
-                                      <td class="is-no-work">18</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">19</td>
-                                      <td>20</td>
-                                      <td>21</td>
-                                      <td>22</td>
-                                      <td>23</td>
-                                      <td>24</td>
-                                      <td class="is-no-work">25</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">26</td>
-                                      <td>27</td>
-                                      <td>28</td>
-                                      <td>29</td>
-                                      <td>30</td>
-                                      <td>31</td>
-                                      <td class="is-no-work">1</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+                              <div class="c-datePicker__group">
+                                <div class="c-datePicker__item">
+                                  <div class="c-datePicker__yearPicker">
+                                    <button type="button" class="waves-effect waves-blue">
+                                      <img src="img/o-arrowLeft-blue.svg" alt="" />
+                                    </button>
+                                    <div class="">2020 7月</div>
+                                    <button></button>
+                                  </div>
+    
+                                  <div class="c-datePicker__content">
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <th>日</th>
+                                          <th>一</th>
+                                          <th>二</th>
+                                          <th>三</th>
+                                          <th>四</th>
+                                          <th>五</th>
+                                          <th>六</th>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-this-month">28</td>
+                                          <td class="is-no-this-month">29</td>
+                                          <td class="is-no-this-month">30</td>
+                                          <td>1</td>
+                                          <td>2</td>
+                                          <td class="is-select-day is-select-range-first">
+                                            3
+                                          </td>
+                                          <td class="is-no-work is-select-range-lest">
+                                            4
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work is-select-range-first">
+                                            5
+                                          </td>
+                                          <td class="is-select-range">6</td>
+                                          <td class="is-select-range">7</td>
+                                          <td class="is-select-range">8</td>
+                                          <td class="is-select-range">9</td>
+                                          <td class="is-select-day is-select-range-lest">
+                                            10
+                                          </td>
+                                          <td class="is-no-work">11</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">12</td>
+                                          <td>13</td>
+                                          <td>14</td>
+                                          <td>15</td>
+                                          <td>16</td>
+                                          <td>17</td>
+                                          <td class="is-no-work">18</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">19</td>
+                                          <td>20</td>
+                                          <td>21</td>
+                                          <td>22</td>
+                                          <td>23</td>
+                                          <td>24</td>
+                                          <td class="is-no-work">25</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">26</td>
+                                          <td>27</td>
+                                          <td>28</td>
+                                          <td>29</td>
+                                          <td>30</td>
+                                          <td>31</td>
+                                          <td class="is-no-work">1</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="c-datePicker__item">
+                                  <div class="c-datePicker__yearPicker">
+                                    <button></button>
+                                    <div class="">2020 8月</div>
+                                    <button type="button" class="waves-effect waves-blue">
+                                      <img src="img/o-arrowRight-blue.svg" alt="" />
+                                    </button>
+    
+                                  </div>
+                                  <div class="c-datePicker__content">
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <th>日</th>
+                                          <th>一</th>
+                                          <th>二</th>
+                                          <th>三</th>
+                                          <th>四</th>
+                                          <th>五</th>
+                                          <th>六</th>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-this-month">28</td>
+                                          <td class="is-no-this-month">29</td>
+                                          <td class="is-no-this-month">30</td>
+                                          <td>1</td>
+                                          <td>2</td>
+                                          <td class="">3</td>
+                                          <td class="is-no-work">4</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">5</td>
+                                          <td>6</td>
+                                          <td>7</td>
+                                          <td>8</td>
+                                          <td>9</td>
+                                          <td>10</td>
+                                          <td class="is-no-work">11</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">12</td>
+                                          <td>13</td>
+                                          <td>14</td>
+                                          <td>15</td>
+                                          <td>16</td>
+                                          <td>17</td>
+                                          <td class="is-no-work">18</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">19</td>
+                                          <td>20</td>
+                                          <td>21</td>
+                                          <td>22</td>
+                                          <td>23</td>
+                                          <td>24</td>
+                                          <td class="is-no-work">25</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">26</td>
+                                          <td>27</td>
+                                          <td>28</td>
+                                          <td>29</td>
+                                          <td>30</td>
+                                          <td>31</td>
+                                          <td class="is-no-work">1</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
                               </div>
                               <div class="c-datePicker__footer">
                                 <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">
@@ -583,76 +936,163 @@
                           <input type="text" value="端午連假">
                         </div>
                         <div class="col is-popmodal-show s4">
-                          <div class="c-datePicker-day pop-modal">
+                          <div class="c-datePicker-days pop-modal">
                             <div class="c-datePicker__input pop-btn">
-                              <div class="o-input-div"> 2021.01.01 <br />
-                                2021.01.03</div>
+                              <div class="o-input-div">
+                                2020/01/01 <br>
+                                2020/01/01
+                              </div>
                             </div>
                             <div class="c-datePicker__modal pop-content">
-                              <div class="c-datePicker__yearPicker">
-                                <img src="img/o-arrowLeft-blue.svg" alt="" />
-                                <div class="">2020 8月</div>
-                                <img src="img/o-arrowRight-blue.svg" alt="" />
-                              </div>
-                              <div class="c-datePicker__content">
-                                <table>
-                                  <tbody>
-                                    <tr>
-                                      <th>日</th>
-                                      <th>一</th>
-                                      <th>二</th>
-                                      <th>三</th>
-                                      <th>四</th>
-                                      <th>五</th>
-                                      <th>六</th>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-this-month">28</td>
-                                      <td class="is-no-this-month">29</td>
-                                      <td class="is-no-this-month">30</td>
-                                      <td>1</td>
-                                      <td>2</td>
-                                      <td class="is-select-day">3</td>
-                                      <td class="is-no-work">4</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">5</td>
-                                      <td>6</td>
-                                      <td>7</td>
-                                      <td>8</td>
-                                      <td>9</td>
-                                      <td>10</td>
-                                      <td class="is-no-work">11</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">12</td>
-                                      <td>13</td>
-                                      <td>14</td>
-                                      <td>15</td>
-                                      <td>16</td>
-                                      <td>17</td>
-                                      <td class="is-no-work">18</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">19</td>
-                                      <td>20</td>
-                                      <td>21</td>
-                                      <td>22</td>
-                                      <td>23</td>
-                                      <td>24</td>
-                                      <td class="is-no-work">25</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="is-no-work">26</td>
-                                      <td>27</td>
-                                      <td>28</td>
-                                      <td>29</td>
-                                      <td>30</td>
-                                      <td>31</td>
-                                      <td class="is-no-work">1</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+                              <div class="c-datePicker__group">
+                                <div class="c-datePicker__item">
+                                  <div class="c-datePicker__yearPicker">
+                                    <button type="button" class="waves-effect waves-blue">
+                                      <img src="img/o-arrowLeft-blue.svg" alt="" />
+                                    </button>
+                                    <div class="">2020 7月</div>
+                                    <button></button>
+                                  </div>
+    
+                                  <div class="c-datePicker__content">
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <th>日</th>
+                                          <th>一</th>
+                                          <th>二</th>
+                                          <th>三</th>
+                                          <th>四</th>
+                                          <th>五</th>
+                                          <th>六</th>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-this-month">28</td>
+                                          <td class="is-no-this-month">29</td>
+                                          <td class="is-no-this-month">30</td>
+                                          <td>1</td>
+                                          <td>2</td>
+                                          <td class="is-select-day is-select-range-first">
+                                            3
+                                          </td>
+                                          <td class="is-no-work is-select-range-lest">
+                                            4
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work is-select-range-first">
+                                            5
+                                          </td>
+                                          <td class="is-select-range">6</td>
+                                          <td class="is-select-range">7</td>
+                                          <td class="is-select-range">8</td>
+                                          <td class="is-select-range">9</td>
+                                          <td class="is-select-day is-select-range-lest">
+                                            10
+                                          </td>
+                                          <td class="is-no-work">11</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">12</td>
+                                          <td>13</td>
+                                          <td>14</td>
+                                          <td>15</td>
+                                          <td>16</td>
+                                          <td>17</td>
+                                          <td class="is-no-work">18</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">19</td>
+                                          <td>20</td>
+                                          <td>21</td>
+                                          <td>22</td>
+                                          <td>23</td>
+                                          <td>24</td>
+                                          <td class="is-no-work">25</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">26</td>
+                                          <td>27</td>
+                                          <td>28</td>
+                                          <td>29</td>
+                                          <td>30</td>
+                                          <td>31</td>
+                                          <td class="is-no-work">1</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="c-datePicker__item">
+                                  <div class="c-datePicker__yearPicker">
+                                    <button></button>
+                                    <div class="">2020 8月</div>
+                                    <button type="button" class="waves-effect waves-blue">
+                                      <img src="img/o-arrowRight-blue.svg" alt="" />
+                                    </button>
+    
+                                  </div>
+                                  <div class="c-datePicker__content">
+                                    <table>
+                                      <tbody>
+                                        <tr>
+                                          <th>日</th>
+                                          <th>一</th>
+                                          <th>二</th>
+                                          <th>三</th>
+                                          <th>四</th>
+                                          <th>五</th>
+                                          <th>六</th>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-this-month">28</td>
+                                          <td class="is-no-this-month">29</td>
+                                          <td class="is-no-this-month">30</td>
+                                          <td>1</td>
+                                          <td>2</td>
+                                          <td class="">3</td>
+                                          <td class="is-no-work">4</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">5</td>
+                                          <td>6</td>
+                                          <td>7</td>
+                                          <td>8</td>
+                                          <td>9</td>
+                                          <td>10</td>
+                                          <td class="is-no-work">11</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">12</td>
+                                          <td>13</td>
+                                          <td>14</td>
+                                          <td>15</td>
+                                          <td>16</td>
+                                          <td>17</td>
+                                          <td class="is-no-work">18</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">19</td>
+                                          <td>20</td>
+                                          <td>21</td>
+                                          <td>22</td>
+                                          <td>23</td>
+                                          <td>24</td>
+                                          <td class="is-no-work">25</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="is-no-work">26</td>
+                                          <td>27</td>
+                                          <td>28</td>
+                                          <td>29</td>
+                                          <td>30</td>
+                                          <td>31</td>
+                                          <td class="is-no-work">1</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
                               </div>
                               <div class="c-datePicker__footer">
                                 <button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">
@@ -682,9 +1122,14 @@
             <div class="l-main-content__card s6">
               <div class="l-main-content__title">
                 工作類型
-                <button class="waves-effect waves-blue">
-                  <img src="img/o-edit.svg" alt="" />
-                </button>
+                <div class="">
+                  <button class="waves-effect waves-blue">
+                    <img src="img/o-cencel.svg" alt="" />
+                  </button>
+                  <button class="waves-effect waves-blue">
+                    <img src="img/o-confirm.svg" alt="" />
+                  </button>
+                </div>
               </div>
               <div class="l-main-content-table l-main-content__planlist">
                 <div class="table-thead">
@@ -728,9 +1173,15 @@
                 <div class="l-main-content__card__item s6">
                   <div class="l-main-content__title">
                     工時結算
+                  <div class="">
                     <button class="waves-effect waves-blue">
-                      <img src="img/o-edit.svg" alt="" />
+                      <img src="img/o-cencel.svg" alt="" />
                     </button>
+                    <button class="waves-effect waves-blue">
+                      <img src="img/o-confirm.svg" alt="" />
+                    </button>
+                  </div>
+                    
                   </div>
                   <div class="l-main-content__maintain">
                     <div class="l-main-content__maintain__text">次月第</div>
@@ -768,14 +1219,27 @@
               <div class="l-main-content__card s12">
                 <div class="l-main-content__title">
                   計畫安全閾值
-                  <button class="waves-effect waves-blue">
-                    <img src="img/o-edit.svg" alt="" />
-                  </button>
+                  <div class="">
+                    <button class="waves-effect waves-blue">
+                      <img src="img/o-cencel.svg" alt="" />
+                    </button>
+                    <button class="waves-effect waves-blue">
+                      <img src="img/o-confirm.svg" alt="" />
+                    </button>
+                  </div>
                 </div>
                 <div class="l-main-content__maintain">
-                  <div class="l-main-content__maintain__num">90</div>
+                  <div class="l-main-content__maintain__num">
+                    <div class="o-input">
+                      <input type="text" value="90">
+                    </div>
+                  </div>
                   <div class="l-main-content__maintain__text">至</div>
-                  <div class="l-main-content__maintain__num">100</div>
+                  <div class="l-main-content__maintain__num">
+                    <div class="o-input">
+                      <input type="text" value="100">
+                    </div>
+                  </div>
                   <div class="l-main-content__maintain__text">％</div>
                 </div>
               </div>
@@ -787,13 +1251,22 @@
                 <div class="l-main-content__card__item s12">
                   <div class="l-main-content__title">
                     未達比例通知信
-                    <button class="waves-effect waves-blue">
-                      <img src="img/o-edit.svg" alt="" />
-                    </button>
+                    <div class="">
+                      <button class="waves-effect waves-blue">
+                        <img src="img/o-cencel.svg" alt="" />
+                      </button>
+                      <button class="waves-effect waves-blue">
+                        <img src="img/o-confirm.svg" alt="" />
+                      </button>
+                    </div>
                   </div>
                   <div class="l-main-content__maintain">
                     <div class="l-main-content__maintain__text">次月第</div>
-                    <div class="l-main-content__maintain__num">1</div>
+                    <div class="l-main-content__maintain__num">
+                      <div class="o-input">
+                        <input type="text" value="1">
+                      </div>
+                    </div>
                     <div class="l-main-content__maintain__text">工作日</div>
                   </div>
                   <div class="l-main-content__maintain__text">

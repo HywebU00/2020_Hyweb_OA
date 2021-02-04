@@ -302,6 +302,20 @@
     .change-card-to-list{
         .c-card-planReport{
             .c-card__item{ 
+                .c-card__item__title{
+                    .c-card__tag{
+                        width: 296px;
+                        .c-card__tag__num{
+                            flex-direction: row-reverse;
+                            width: auto;
+                        }
+                    }
+                    .c-card__tag__status{
+                        text-align: center;
+                        margin-left: 0.2rem;
+                    }
+                }
+                
                 .c-card__star__btn{
                     margin: 0;
                 }
@@ -312,6 +326,28 @@
                 display: flex;
             justify-content: center;
             }
+        }
+        .c-card-planReport-danger{
+            .c-card__item__title{
+                .c-card__tag{
+                  .c-card__tag__num{
+                      .c-card__tag__input{
+                          margin-left: 55%;
+                          margin-right: 1rem;
+                          form{
+                              p{
+                                  span{
+                                      background-color: #fff;
+                                      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%), #ffffff;
+                                  }
+                              }
+                              
+                          }
+                          
+                      }
+                  }
+              }  
+              }
         }
     }
     

@@ -53,7 +53,6 @@ let removeAppendName = function () {
       //抓到有append姓名的並刪除
       let append = addNameCard[b].querySelector(".js-c-card__appendUserName");
       if (append != null) {
-        //console.log(addNameCard[b].children[0]);
         addNameCard[b].children[0].removeChild(append);
       }
     }
