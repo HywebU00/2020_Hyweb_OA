@@ -1,72 +1,85 @@
-#membertime{
+#membertime {
     .l-main-tabs {
         margin-bottom: 5px;
     }
+
     .c-datePicker__modal {
-        .c-datePicker__yearPicker{
-            button{
-             border-radius: 50%;   
+        .c-datePicker__yearPicker {
+            button {
+                border-radius: 50%;
             }
         }
     }
-    .change-card-to-list{
-        .c-card-manhourSofar{
-            &:hover{
-                transition: all 0; 
+
+    .change-card-to-list {
+        .c-card-manhourSofar {
+            &:hover {
+                transition: all 0;
                 transform: translateY(0px) translateX(0px);
             }
-                &:active{
+
+            &:active {
                 transition: all 0;
                 transform: translateY(0px) translateX(0px);
             }
         }
     }
-    
-} 
-.l-main-content{
-   .c-card-manhourSofar{
-    margin: 0 0.5rem 2.5rem 0.2rem;
-   } 
-   .l-main-content-text {
-       .l-main-content-text__title{
-        font-size: $font-size-l;
-        font-family: $font-family;
-        font-weight: bolder;
-        margin-bottom:1rem ;
-       }
-       .l-main-content-text__ListTitle{
-        @extend .l-main-content-text__title;
-        margin-bottom:0.3rem ;
-        margin-right: 1rem;
-       }
 
-   }
+}
+
+.l-main-content {
+    .c-card-manhourSofar {
+        margin: 0 0.5rem 2.5rem 0.2rem;
+    }
+
+    .l-main-content-text {
+        .l-main-content-text__title {
+            font-size: $font-size-l;
+            font-family: $font-family;
+            font-weight: bolder;
+            margin-bottom: 1rem;
+        }
+
+        .l-main-content-text__ListTitle {
+            @extend .l-main-content-text__title;
+            margin-bottom: 0.3rem;
+            margin-right: 1rem;
+        }
+
+    }
 }
 
 .change-card-to-list {
     .l-main-content-item__listTitle {
         max-width: 2560px;
-        .listTitle__team{
+
+        .listTitle__team {
             width: 10%;
         }
-        .listTitle__userNum{
+
+        .listTitle__userNum {
             width: 10%;
         }
-        .listTitle__user{
+
+        .listTitle__user {
             width: 10%;
         }
-        .listTitle__englishName{
+
+        .listTitle__englishName {
             width: 50%;
         }
-        .listTitle__workTime{
+
+        .listTitle__workTime {
             width: 10%;
         }
-        .listTitle__addTime{
+
+        .listTitle__addTime {
             width: 10%;
         }
 
     }
-    .c-card-manhourSofar{
+
+    .c-card-manhourSofar {
         border-bottom: 1px solid $sec2;
         box-shadow: none;
         border-radius: 0;
@@ -75,65 +88,116 @@
         margin: 0;
         padding: 20px 0px 20px 3rem;
         display: flex;
-        .c-card-manhourSofar__userName{
+
+        .c-card-manhourSofar__userName {
             display: none;
         }
-        .c-card-manhourSofar__englishName{
+
+        .c-card-manhourSofar__englishName {
             display: none;
         }
-        .c-card__userInformation{
+
+        .c-card__userInformation {
             display: flex;
-           align-items: center;
+            align-items: center;
             width: 10%;
-            border:0;
-            margin:0;
-            .js-c-card__userNumber{
+            border: 0;
+            margin: 0;
+
+            .js-c-card__userNumber {
                 display: none;
             }
         }
-        .js-c-card__appendUserName{
+
+        .js-c-card__appendUserName {
             width: 70%;
             display: flex;
             align-items: center;
-            h2{
+
+            h2 {
                 font-size: 16px;
-                font-family:$font-family; 
-                font-weight: 400; 
+                font-family: $font-family;
+                font-weight: 400;
                 width: 16.66666%;
             }
-            h3{
+
+            h3 {
                 font-size: 16px;
-                font-family:$font-family; 
+                font-family: $font-family;
                 font-weight: 400;
-                width: 83.33333%; 
+                width: 83.33333%;
             }
         }
-        .c-card__content{
-            margin:0;
+
+        .c-card__content {
+            margin: 0;
             display: flex;
             width: 20%;
-            .c-card__item{
+
+            .c-card__item {
                 width: 50%;
                 margin: 0;
-                .c-card__item__title{
+
+                .c-card__item__title {
                     display: none;
                 }
-                .c-card__item__time{
+
+                .c-card__item__time {
                     margin-left: 0.3rem;
                     font-size: 16px;
-                    font-family:$font-family; 
+                    font-family: $font-family;
                     font-weight: 400;
                 }
             }
         }
-     
+
     }
-    .c-card-manhourSearch{
-        .c-card-manhourSearch__userName{
+
+    .c-card-manhourSearch {
+        .c-card-manhourSearch__userName {
             display: none;
         }
-        .c-card-manhourSearch__englishName{
+
+        .c-card-manhourSearch__englishName {
             display: none;
+        }
+    }
+}
+
+#WBS {
+    .l-main-content__wbslist {
+        .table-body__subtitle {
+            .col {
+                span {
+                    color: $gray3;
+                }
+            }
+        }
+
+        .table-body__item {
+            .col {
+                span {
+                    color: $gray3;
+                }
+                .select-wrapper{
+                    span {
+                        color: $gray1;
+                    }  
+                }
+                .c-dropdown-member{
+                    span{
+                        color: $gray1;
+                    }
+                }
+            }
+        }
+
+        .table-footer {
+            .row {
+                .s1 {
+                    width: 102px;
+                }
+            }
         }
     }
 }

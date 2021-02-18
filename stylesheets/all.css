@@ -9052,7 +9052,7 @@ body {
 .l-side .chinese__name {
   background-color: #fff;
   padding-bottom: 0;
-  display: bolck;
+  display: block;
   width: 43px;
   height: 43px;
   margin-left: 14px;
@@ -11727,7 +11727,7 @@ body {
 .c-accordion-group .accordion-body__item, .c-accordion-plan .accordion-body__item, .c-accordion-general .accordion-body__item {
   cursor: pointer;
   padding: 4% 2%;
-  background: #F7FBFF;
+  background: #E2F1FE;
   border-radius: 0.533rem;
 }
 
@@ -11759,6 +11759,11 @@ body {
 
 .c-accordion-plan .accordion-body__title, .c-accordion-general .accordion-body__title {
   padding: 1% 2% 2% 2%;
+  color: #8495A4;
+}
+
+.c-accordion-plan .accordion-body__title .col, .c-accordion-general .accordion-body__title .col {
+  font-weight: 400;
 }
 
 .c-accordion-plan .accordion-body__item, .c-accordion-general .accordion-body__item {
@@ -11770,6 +11775,10 @@ body {
   border: 0;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.c-accordion-general .accordion-body__title {
+  color: #8495A4;
 }
 
 .c-accordion-general .accordion-body__item {
@@ -15339,6 +15348,10 @@ body {
   padding: 1.33rem 0rem 20px 1.33rem;
 }
 
+#todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .is-changeBackground .c-card__item__title .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .is-changeBackground .c-card__item__title .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .is-changeBackground .c-card__item__title .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .is-changeBackground .c-card__item__content .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .is-changeBackground .c-card__item__content .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .is-changeBackground .c-card__item__content .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .is-changeBackground .c-card__item__footer .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .is-changeBackground .c-card__item__footer .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .is-changeBackground .c-card__item__footer .c-card__tag__num span {
+  background-color: #F7FBFF;
+}
+
 #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent {
   width: 93px;
 }
@@ -15769,6 +15782,26 @@ body {
 
 .change-card-to-list .c-card-manhourSearch .c-card-manhourSearch__englishName {
   display: none;
+}
+
+#WBS .l-main-content__wbslist .table-body__subtitle .col span, #WBS .l-main-content .l-main-content__workTypelist .table-body__subtitle .col span, .l-main-content #WBS .l-main-content__workTypelist .table-body__subtitle .col span {
+  color: #8495A4;
+}
+
+#WBS .l-main-content__wbslist .table-body__item .col span, #WBS .l-main-content .l-main-content__workTypelist .table-body__item .col span, .l-main-content #WBS .l-main-content__workTypelist .table-body__item .col span, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .col span, .l-main-content #WBS .l-main-content__wbslist .table-body .table-body__conutItem .col span, .l-main-content .l-main-content__wbslist .table-body #WBS .l-main-content__workTypelist .table-body__conutItem .col span, .l-main-content .l-main-content__workTypelist .table-body #WBS .l-main-content__wbslist .table-body__conutItem .col span, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .col span, .l-main-content #WBS .l-main-content__workTypelist .table-body .table-body__conutItem .col span {
+  color: #8495A4;
+}
+
+#WBS .l-main-content__wbslist .table-body__item .col .select-wrapper span, #WBS .l-main-content .l-main-content__workTypelist .table-body__item .col .select-wrapper span, .l-main-content #WBS .l-main-content__workTypelist .table-body__item .col .select-wrapper span, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .col .select-wrapper span, .l-main-content #WBS .l-main-content__wbslist .table-body .table-body__conutItem .col .select-wrapper span, .l-main-content .l-main-content__wbslist .table-body #WBS .l-main-content__workTypelist .table-body__conutItem .col .select-wrapper span, .l-main-content .l-main-content__workTypelist .table-body #WBS .l-main-content__wbslist .table-body__conutItem .col .select-wrapper span, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .col .select-wrapper span, .l-main-content #WBS .l-main-content__workTypelist .table-body .table-body__conutItem .col .select-wrapper span {
+  color: #042340;
+}
+
+#WBS .l-main-content__wbslist .table-body__item .col .c-dropdown-member span, #WBS .l-main-content .l-main-content__workTypelist .table-body__item .col .c-dropdown-member span, .l-main-content #WBS .l-main-content__workTypelist .table-body__item .col .c-dropdown-member span, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .col .c-dropdown-member span, .l-main-content #WBS .l-main-content__wbslist .table-body .table-body__conutItem .col .c-dropdown-member span, .l-main-content .l-main-content__wbslist .table-body #WBS .l-main-content__workTypelist .table-body__conutItem .col .c-dropdown-member span, .l-main-content .l-main-content__workTypelist .table-body #WBS .l-main-content__wbslist .table-body__conutItem .col .c-dropdown-member span, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .col .c-dropdown-member span, .l-main-content #WBS .l-main-content__workTypelist .table-body .table-body__conutItem .col .c-dropdown-member span {
+  color: #042340;
+}
+
+#WBS .l-main-content__wbslist .table-footer .row .s1, #WBS .l-main-content .l-main-content__workTypelist .table-footer .row .s1, .l-main-content #WBS .l-main-content__workTypelist .table-footer .row .s1 {
+  width: 102px;
 }
 
 #memberstime .l-main-tabs, #departmenttime .l-main-tabs, #universalPlan .l-main-tabs {
