@@ -42,7 +42,7 @@ if (starBtn != null) {
 //++++++++++++++++++
 //popover 效果
 //++++++++++++++++++
-//$(".dropdown-trigger").dropdown();
+
 const pop_modal = document.querySelectorAll(".pop-modal");
 const pop_btn = document.querySelectorAll(".pop-btn");
 const pop_content = document.querySelectorAll(".pop-content");
@@ -266,3 +266,24 @@ CalendarBtn_project.forEach((item) => {
     item.classList.add("is-project-active");
   }
 });
+
+//+++++++++++++++++++++++++++++++
+// loginBtn  改變眼睛樣式
+//+++++++++++++++++++++++++++++++
+
+const passwordBtn = document.querySelector(".o-password-btn ");
+if (passwordBtn != null) {
+  passwordBtn.addEventListener("click", function () {
+    let list = this.classList;
+    let passwordInput = document.querySelector(".o-input-password");
+    if (list.contains("login__eyeClose") === true) {
+      list.remove("login__eyeClose");
+      list.add("login__eyeOpen");
+      passwordInput.type = "text";
+    } else {
+      list.remove("login__eyeOpen");
+      list.add("login__eyeClose");
+      passwordInput.type = "password";
+    }
+  });
+}

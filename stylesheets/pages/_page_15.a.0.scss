@@ -39,6 +39,12 @@
            
         }
     }
+    .c-popover-filterL{
+        .c-popover__content{
+            left: -170px;
+            width: 200px;
+        }
+    }
     .c-datePicker__modal{
         .c-datePicker__yearPicker{
             button{
@@ -116,6 +122,7 @@
             
             .c-card__item{
                 padding: 0;
+
             }
            .c-card__item__title{
                display:flex;
@@ -250,6 +257,7 @@
                   } 
                }
            }
+           
         } 
             .c-card-planReport-danger{
                 
@@ -288,10 +296,6 @@
                     }
                 }
                 
-                // .is-danger{
-                //     color: #fff;
-                //     background: $hy-background-danger;
-                // } 
             }
 
         }
@@ -300,14 +304,45 @@
 
     }
     .change-card-to-list{
+        .l-main-content-item__listGroup{
+            .c-card-planReport{
+                a{
+                  .c-card__item{
+                    padding: 1.33rem 0rem 20px 1.33rem;
+                  }  
+              
+                  .c-card__item__footer{
+                      .c-card__item__content__list{
+                        .list__item{
+                            .list__item__percent{
+                                width: 93px;
+                            }
+                          }
+                      }
+                      
+                      
+                  }
+                }
+            }
+        }
         .c-card-planReport{
+            a{
+                padding:0;
+                height: 100%;
+           
+            }
+            
+                
             .c-card__item{ 
+                border-radius: 0;
+               
                 .c-card__item__title{
                     .c-card__tag{
                         width: 296px;
                         .c-card__tag__num{
                             flex-direction: row-reverse;
                             width: auto;
+
                         }
                     }
                     .c-card__tag__status{
@@ -348,6 +383,11 @@
                   }
               }  
               }
+        }
+    }
+    .c-search-item__input{
+        ::placeholder{
+            font-weight: 400;
         }
     }
     
@@ -432,6 +472,15 @@
             
         }
     }
+    .l-main-content-list{
+        .c-popover-filterL{
+            .c-popover__content{
+                left: -170px;
+                width: 200px;
+            }
+        }
+    }
+    
 }
 #safe{
     width: 42%;

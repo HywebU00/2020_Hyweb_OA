@@ -1,6 +1,5 @@
 body{
     overflow: hidden;
-    // position: relative;
 }
 .l-container {
     display: flex;
@@ -51,7 +50,7 @@ body{
     .chinese__name {
         background-color: #fff;
         padding-bottom: 0;
-        display: bolck; //inline;
+        display: block; //inline;
         width: 43px;
         height: 43px;
         margin-left: 14px;
@@ -164,7 +163,6 @@ body{
         }
 
         .menu-btn {
-            // display: none;
             transition: ease .5s;
         }
 
@@ -748,6 +746,7 @@ body{
                    }
                    .total__allTime{
                        text-align: center;
+                       width: 120px;
                    }
                    .total__time{
                     text-align: center;
@@ -887,14 +886,24 @@ body{
                              font-size: 0.8rem;
                          }
                     }
+                    
                    .o-input{
+                       position: relative;
                        input{
                         background-color: #fff;
                         border: 1px solid $danger;
-                        
+                     
                        }
+                       &::after{
+                        color: $danger;
+                         content: "請填阿拉伯數字";
+                         font-size: 0.8rem;
+                         display: block;
+                         margin-top: 0.2rem;
+                     }
                      
                    } 
+                 
                 }
                 
             }
@@ -902,7 +911,6 @@ body{
 
         .s1 {
             width: 75px;
-            // width: 3.84615%;
         }
 
         .s2 {
@@ -1026,6 +1034,13 @@ body{
                 &:last-child {
                     border-bottom: 1px solid $hyweb-blue;
                 }
+                .row{
+                    .col{
+                        span{
+                            color: $gray3;
+                        }
+                    }
+                }
             }
 
             .row {
@@ -1113,7 +1128,6 @@ body{
 
         .table-body-item {
             .table-body-item__member {
-
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -1145,6 +1159,7 @@ body{
                 img {
                     padding: 0 0.3rem;
                 }
+              
             }
         }
 

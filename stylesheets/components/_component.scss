@@ -1,5 +1,5 @@
 //====================
-// Compontents 元件
+// Components 元件
 //====================
 // default state
 // card
@@ -301,6 +301,18 @@
     padding: 0px;
     a{
         padding: 0px;
+        .is-changeBackground{
+            .c-card__tag__num{
+               div{
+                   span{
+                    background-color: $sec3;
+                   }
+               }
+                
+            }
+            border-radius: $card-radius;
+           
+        }
     }
 
     .c-card__item {
@@ -1213,8 +1225,10 @@
     .c-modal-btnList {
         display: flex;
         justify-content: flex-end;
+        
         .member-btn{
             justify-self:start ;
+            
         }
    
     }
@@ -1247,7 +1261,7 @@
         }
 
         .c-modal-content__addMember {
-            margin-top: 2rem;
+            margin-top: 1rem;
 
             .addMember-title {
                 display: flex;
@@ -1280,13 +1294,13 @@
             }
 
             .addMember-content {
-                margin-top: 1.5rem;
+                margin-top: 1rem;
                 display: flex;
                 justify-content: flex-start;
                 flex-wrap: wrap;
                 height: 10rem;
                 overflow-y: scroll;
-                height: calc(75vh - 360px);
+                height: calc(75vh - 330px);
                
 
             }
@@ -1332,7 +1346,8 @@
         margin-bottom: 0.2rem;
         button{
           border-radius: 40px;  
-          padding: 0.5rem;
+          padding: 0.5rem 0;
+           
         }
 
         a {
@@ -1347,9 +1362,9 @@
         }
         justify-content: flex-end;
         .member-btn{
-            margin-right: calc(75vw - 110px);
+            margin-right: calc(75vw - 100px);
             white-space: nowrap;
-            min-width: 60px;
+            min-width: 4rem;
 
         }
         
@@ -1358,14 +1373,18 @@
     .c-modal-addGroup__content {
         display: flex;
         flex-wrap: wrap;
-        height: calc(85vh - 200px);
+        height: calc(85vh - 230px);//calc(85vh - 200px);
         .c-modal-addGroup__content__item {
             width: 100%;
+            padding-top: 1rem;
         }
         .c-modal-content__select{
             width: 100%;
             display: flex;
             align-items: center;
+            border-bottom: 1px solid $gray-blue;
+            margin-bottom: 0;
+            padding-bottom: 0.75rem;
             .o-input{
                 input{
                     margin-bottom: 0;
@@ -1388,7 +1407,7 @@
         display: block;
         height: calc(85vh - 350px);
         overflow-y: scroll;
-
+        padding-top: 1rem;
         .c-modal-content__select {
             display: flex;
             align-items: flex-end;
@@ -1421,7 +1440,6 @@
 
             .c-modal-content__chooseMember__title {
                 width: 100px;
-                //padding: 0 0.5rem;
             }
 
             .chooseMember-tag {
@@ -1493,6 +1511,13 @@
             .select-wrapper{
                 background-color: #fff;
                 border: 1px solid $danger;
+                ul{
+                    .disabled{
+                        &:hover{
+                            background: #fff;
+                        }
+                    }
+                }
             }
             .o-input{
                 input{
@@ -1755,7 +1780,7 @@
 
     .c-modal-content {
         width: 100%;
-        height: 65vh;
+        height: 50vh;
     }
 
     .c-accordion-group {
@@ -1765,9 +1790,6 @@
     .c-modal-content__item {
         height: 100%;
         overflow-y: scroll;
-        // display: flex;
-        // justify-content: center;
-        // flex-wrap: wrap;
         margin: 1rem 0 1rem 0;
        
         .c-accordion-group{
@@ -1850,7 +1872,12 @@
 
             li {
                 height: 40px;
-
+                &:first-child{
+                    border-top: 0;
+                }
+                &:last-child{
+                    border-bottom: 0;
+                }
                 .optgroup-option {
                     padding-left: 0;
                 }
@@ -1859,9 +1886,12 @@
 
             .optgroup {
                 padding-left: 0;
-                padding-bottom: $pd-3/2;
                 padding-top: $pd;
                 border: 0;
+                &:hover{
+                    background: #fff;
+                    cursor: default;
+                }
 
                 span {
                     color: $gray1;
@@ -1877,7 +1907,7 @@
 
         li {
             min-height: 36px;
-            border-top: 1px solid $sec2;
+            border-bottom: 1px solid $sec2;
             display: flex;
             align-items: center;
 
@@ -2668,7 +2698,11 @@
         justify-content:start;
         border-bottom: 1px solid $hyweb-lighblue;
         padding-bottom: 0.5rem;
+        &:last-child{
+            border-bottom: 0;
+        }
     }
+    
 }
 
 
@@ -2678,9 +2712,9 @@
 .c-writeHours {
     width: 85%;
     min-height: 80vh;
-    // overflow: hidden;
     border-radius: $card-radius;
     box-shadow: $box-shadow;
+    background-color:$hyweb-waterblue;
 }
 
 .c-popover__bg{
@@ -2965,7 +2999,7 @@
 }
 .l-main-login{
     height: 100vh;
-    background: $hy-background;
+    background: $hy-background url(../img/loginPage_bg.png) bottom left no-repeat;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -2993,7 +3027,8 @@
     padding: 2rem;
     width: 100%;
     min-width: 50rem;
-    background: $hyweb-waterblue;
+    background: $hyweb-waterblue url(../img/loginPage_card.png) right bottom no-repeat;
+  
     .c-card-login__title{
         text-align: center;
         .c-card-login__title__maintitle{
@@ -3044,6 +3079,9 @@
     .login__eyeClose{
         background-image: url(../img/o-hide.svg);     
     }
+    .login__eyeOpen{
+        background-image: url(../img/o-perspective.svg);     
+    }
     }
     .o-password-btn {
         cursor: pointer;
@@ -3061,6 +3099,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+     
+        &:active{
+            transition: all 0.2s;
+            transform: translateY(3px) ;
+        }
     }
  
 }
@@ -3413,6 +3456,7 @@
 
 .is-changeBackground{
     background-color: $sec3;
+   
     
 }
 .is-disabled{

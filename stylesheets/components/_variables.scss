@@ -45,37 +45,37 @@ $card-lablePerson-background:$sec3;
 $card-lablePerson-title-background:$hyweb-lighblue;
 $card-lablePerson-title:$hyweb-blue;
 //margin
-$m:10px;
+$m:0.66rem;//10px;
 $m-2:$m*2;
 $m-3:$m*3;
 $m-4:$m*4;
 
 //padding
-$pd:10px;
+$pd:0.66rem;//10px;
 $pd-2:$pd*2;//20px
 $pd-3:$pd*3;//30px
 $pd-4:$pd*4;//40px
 $pd-5:$pd*5;//50px
 
 //border-radius
-$card-radius:20px;
-$card-lablePerson-radius:8px;
-$card-lableGroup:10px;
-$tag-radius:5px;
-$tag-radius-l:10px;
-$btn-radius:40px;
-$accordion-item-radius:8px;
-$sidebar-months-item-radius:8px;
-$toast-radius:10px;
-$modal-radius:10px;
-$dropdown-radius:10px;
+$card-radius:1.33rem;//20px;
+$card-lablePerson-radius:0.53rem;//8px;
+$card-lableGroup:0.66rem;//10px;
+$tag-radius:0.33rem;//5px;
+$tag-radius-l:0.66rem;//10px;
+$btn-radius:2.66rem;//40px;
+$accordion-item-radius:0.533rem;//8px;
+$sidebar-months-item-radius:0.533rem;//8px;
+$toast-radius:0.66rem;//10px;
+$modal-radius:0.66rem;//10px;
+$dropdown-radius:0.66rem;//10px;
 $select-radius:5px;
 $input-radius:5px;
 $tab-radius:10px;
-$table-radius:10px;
-$list-radius:10px;
-$textarea-radius:10px;
-$upload-radius:10px;
+$table-radius:0.66rem;//10px;
+$list-radius:0.66rem;//10px;
+$textarea-radius:0.66rem;//10px;
+$upload-radius:0.66rem;//10px;
 //fontfamily
 $english-font:'Baloo 2', cursive,'Noto Sans TC';
 $font-family:'Noto Sans TC',"sans-serif";
@@ -90,15 +90,15 @@ $h2:22px;
 $login-title:1.8rem;//2.66rem;
 $login-btn-font:1.2rem;
 
-$p:16px;//$font-size*1.5;
-$a:14px;//$font-size*1.33;//14px
+$p:1.06rem;//16px;
+$a:0.93rem;//14px;
 
 //填寫工時
-$writeHours-title-hours:60px;
-$writeHours-title-hours-s:42px;
+$writeHours-title-hours:4rem;//60px;
+$writeHours-title-hours-s:2.8rem;//42px;
 
 //menu
-$chinese-name:18px;
+$chinese-name:1.2rem;//18px;
 
 //日曆文字
 $calendar-date-font:$p;
@@ -126,6 +126,6 @@ rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height:45px;
+    max-height:3rem;//45px;
 
 }
