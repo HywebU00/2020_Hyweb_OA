@@ -193,14 +193,13 @@ body{
     .c-writeHours {
         width: 100%;
         margin: 0 auto;
-        //max-width: 1200px;
         margin-top: 1.5rem;
-        overflow: hidden;
-        max-height: 80vh;
+        //overflow: hidden;
+        //max-height: 80vh;
 
         .c-writeHours-content {
             padding: 1.2rem 1rem;
-
+            border-radius: 0 0 $card-radius $card-radius;
             .row {
                 margin-bottom: 0;
 
@@ -211,8 +210,8 @@ body{
         }
 
         .c-writeHours-content__list {
-            height: calc(80vh - 300px);
-            overflow: scroll;
+            //height: calc(80vh - 300px);
+            //overflow: scroll;
 
             .c-writeHours-content__item {
                 .c-writeHours-content__item__title {
@@ -617,6 +616,17 @@ body{
 
                 .is-popmodal-show {
                     overflow: inherit;
+                    // .pop-modal{
+                    //     &::before{
+                    //         content: "123";
+                    //         position: absolute;
+                    //         width: 100px;
+                    //         height: 100%;
+                    //         background-color: red;
+                    //         z-index: 98;
+                    //     }
+                    // }
+                    
                 }
             }
 
@@ -1196,6 +1206,13 @@ body{
     }
 }
 
+.l-main-writeHours{
+    height: 85vh;
+    overflow-y: scroll;
+    margin-top: 1.5rem;
+    padding:0 0.5rem 0.5rem 0.5rem;
+    
+}
 .sidebar__is-open {
     .l-side {
         width: 207px;

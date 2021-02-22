@@ -48,48 +48,89 @@ const pop_btn = document.querySelectorAll(".pop-btn");
 const pop_content = document.querySelectorAll(".pop-content");
 const confirm_btn = document.querySelectorAll(".pop-confirm-btn");
 const datePicker_btn = document.querySelectorAll(".datePicker-confirm-btn");
+const c_popover_filter_item = document.querySelectorAll(
+  ".c-popover-filter_item"
+);
 
 for (let a = 0; a < pop_btn.length; a++) {
   pop_btn[a].addEventListener("click", function () {
+    //移除所有打開的視窗
+    let closepop = document.querySelectorAll(".pop-content");
+    closepop.forEach((item, index) => {
+      if (item.classList.contains("is-pop-show") && index !== a) {
+        item.classList.remove("is-pop-show");
+      }
+    });
+    //將點擊的視窗打開
     let item = pop_content[a].classList.contains("pop-content");
     let popDisable = pop_content[a].classList.contains("pop-disable");
     if (item === true && popDisable === false) {
       pop_content[a].classList.toggle("is-pop-show");
-      let popBg = document.createElement("div");
-      popBg.setAttribute("class", "c-popover__bg");
-      document.body.prepend(popBg);
-      closePop();
     }
   });
-  pop_content[a].addEventListener("click", function () {
-    let content = pop_content[a].childNodes;
-    for (let c = 0; c < content.length; c++) {
-      if (content[c].tagName == "LI") {
-        pop_content[a].classList.remove("is-pop-show");
-        //移除背景遮罩
-        let popBg = document.querySelector(".c-popover__bg");
-        if (popBg != null) {
-          document.body.removeChild(popBg);
-        }
-      }
-    }
-  });
+  // pop_content[a].addEventListener("click", function () {
+  //   let content = pop_content[a].childNodes;
+  //   for (let c = 0; c < content.length; c++) {
+  //     if (content[c].tagName == "LI") {
+  //       pop_content[a].classList.remove("is-pop-show");
+  //       //移除背景遮罩
+  //       let popBg = document.querySelector(".c-popover__bg");
+  //       if (popBg != null) {
+  //         document.body.removeChild(popBg);
+  //       }
+  //     }
+  //   }
+  // });
   if (confirm_btn[a] != null) {
     confirm_btn[a].addEventListener("click", function () {
       let parentlist = confirm_btn[a].parentNode.parentNode;
       parentlist.classList.remove("is-pop-show");
     });
   }
+
   //點擊背景 關閉popmodal
-  function closePop() {
-    const popBg = document.querySelector(".c-popover__bg");
-    popBg.addEventListener("click", function () {
-      pop_content[a].classList.remove("is-pop-show");
-      document.body.removeChild(popBg);
-    });
-  }
+  // function closePop() {
+  //   const popBg = document.querySelector(".c-popover__bg");
+  //   popBg.addEventListener("click", function () {
+  //     pop_content[a].classList.remove("is-pop-show");
+  //     document.body.removeChild(popBg);
+  //   });
+  // }
 }
 
+//點擊Filter子項目關閉視窗
+let closeFilterFn = function () {
+  c_popover_filter_item.forEach(function (item) {
+    item.addEventListener("click", function () {
+      this.parentNode.classList.remove("is-pop-show");
+    });
+  });
+};
+closeFilterFn();
+
+let colsePopFn = function () {
+  document.body.addEventListener("click", (e) => {
+    let colsepop = document.querySelector(".is-pop-show");
+    if (e.target.classList.contains("pop-btn") === false && colsepop != null) {
+      let colsepop = document.querySelector(".is-pop-show");
+      colsepop.classList.toggle("is-pop-show");
+    }
+  });
+};
+colsePopFn();
+
+//pop-content 設置監聽
+let popcontent = document.querySelectorAll(".pop-content");
+function OpenPopFn() {
+  popcontent.forEach(function (item) {
+    item.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+  });
+}
+if (popcontent != null) {
+  OpenPopFn();
+}
 //++++++++++++++++++
 //accordion 效果
 //++++++++++++++++++

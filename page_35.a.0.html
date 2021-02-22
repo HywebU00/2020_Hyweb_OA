@@ -200,8 +200,8 @@
               <div class="c-search-item__title">工作區間</div>
               <div class="c-search-item__input">
                 <div class="c-datePicker-months pop-modal">
-                  <div class="c-datePicker__input pop-btn">
-                    <div class="o-input-div"></div>
+                  <div class="c-datePicker__input ">
+                    <div class="o-input-div pop-btn"></div>
                   </div>
                   <div class="c-datePicker__modal pop-content">
                     <div class="c-datePicker__group">
@@ -296,8 +296,8 @@
             <div class="c-search-item">
               <div class="c-search-item__title">人員</div>
               <div class="c-dropdown-member pop-modal">
-                <div class="dropdown-input c-dropdown__input pop-btn">
-                  <input type="text">
+                <div class="dropdown-input c-dropdown__input">
+                  <div class="o-input-div pop-btn"></div>
                 </div>
                 <div class="c-dropdown__modal pop-content">
                   <div class="c-dropdown__title">
@@ -555,12 +555,14 @@
                3.在 button class 裡移除 ”waves-effect“ 及 ”waves-blue“
                4.在 pop-content 的 class增加 “pop-disable”
                5.在 填寫部門的 div 中增加 is-disabled 的 class
+               6.移除 “pop-modal”的 class
             -->
-            <div class="c-popover-perspective pop-modal">
-              <button class="c-popover__btn pop-btn">
+            <div class="c-popover-perspective ">
+              <button class="c-popover__btn">
                 <a class="l-main-tabs__item disabled" href="#">
-                  <img src="img/o-person-gray.svg" alt="" />
-                  <div class="is-disabled">M00</div>
+                  <div class="is-disabled pop-btn">
+                    <img src="img/o-person-gray.svg" alt="" />M00
+                  </div>
                 </a>
               </button>
               <div class="c-popover__content pop-content pop-disable">
@@ -593,8 +595,8 @@
               <div class="c-search-item__title">工作區間</div>
               <div class="c-search-item__input">
                 <div class="c-datePicker-months pop-modal">
-                  <div class="c-datePicker__input pop-btn">
-                    <div class="o-input-div"></div>
+                  <div class="c-datePicker__input ">
+                    <div class="o-input-div pop-btn"></div>
                   </div>
                   <div class="c-datePicker__modal pop-content">
                     <div class="c-datePicker__group">
@@ -776,12 +778,14 @@
                3.在 button class 裡移除 ”waves-effect“ 及 ”waves-blue“
                4.在 pop-content 的 class增加 “pop-disable”
                5.在 填寫部門的 div 中增加 is-disabled 的 class
+               6.移除 “pop-modal”的 class
             -->
-            <div class="c-popover-perspective pop-modal">
-              <button class="c-popover__btn pop-btn">
+            <div class="c-popover-perspective ">
+              <button class="c-popover__btn">
                 <a class="l-main-tabs__item disabled" href="#">
-                  <img src="img/o-person-gray.svg" alt="" />
-                  <div class="is-disabled">M00</div>
+                  <div class="is-disabled pop-btn">
+                    <img src="img/o-person-gray.svg" alt="" />M00
+                  </div>
                 </a>
               </button>
               <div class="c-popover__content pop-content pop-disable">
@@ -814,8 +818,8 @@
               <div class="c-search-item__title">工作區間</div>
               <div class="c-search-item__input">
                 <div class="c-datePicker-months pop-modal">
-                  <div class="c-datePicker__input pop-btn">
-                    <div class="o-input-div"></div>
+                  <div class="c-datePicker__input">
+                    <div class="o-input-div pop-btn"></div>
                   </div>
                   <div class="c-datePicker__modal pop-content">
                     <div class="c-datePicker__group">
@@ -1007,12 +1011,14 @@
                3.在 button class 裡移除 ”waves-effect“ 及 ”waves-blue“
                4.在 pop-content 的 class增加 “pop-disable”
                5.在 填寫部門的 div 中增加 is-disabled 的 class
+               6.移除 “pop-modal”的 class
             -->
-            <div class="c-popover-perspective pop-modal">
-              <button class="c-popover__btn pop-btn">
+            <div class="c-popover-perspective ">
+              <button class="c-popover__btn ">
                 <a class="l-main-tabs__item disabled" href="#">
-                  <img src="img/o-person-gray.svg" alt="" />
-                  <div class="is-disabled">M00</div>
+                  <div class="is-disabled pop-btn">
+                    <img src="img/o-person-gray.svg" alt="" />M00
+                  </div>
                 </a>
               </button>
               <div class="c-popover__content pop-content pop-disable">
@@ -1050,8 +1056,8 @@
             <div class="c-search-item">
               <div class="c-search-item__title">工作區間</div>
               <div class="c-datePicker-month pop-modal">
-                <div class="c-datePicker__input pop-btn">
-                  <div class="o-input-div"></div>
+                <div class="c-datePicker__input">
+                  <div class="o-input-div pop-btn"></div>
                 </div>
                 <div class="c-datePicker__modal pop-content">
                   <div class="c-datePicker__yearPicker">
@@ -1161,10 +1167,10 @@
                   <img class="l-main-content-list__img" src="img/o-card.svg" alt="">
                 </button>
                 <div class="l-main-content-list__img  c-popover-filterS pop-modal">
-                  <span class="c-popover__btn pop-btn"><img src="img/o-filter.svg" alt=""></span>
+                  <span class="c-popover__btn"><img class="pop-btn" src="img/o-filter.svg" alt=""></span>
                   <ul class="c-popover__content pop-content">
-                    <li>填寫比例高到低</li>
-                    <li>填寫比例低到高</li>
+                    <li class="c-popover-filter_item">填寫比例高到低</li>
+                    <li class="c-popover-filter_item">填寫比例低到高</li>
                   </ul>
                 </div>
               </div>

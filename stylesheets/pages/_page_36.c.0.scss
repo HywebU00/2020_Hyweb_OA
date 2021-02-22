@@ -16,13 +16,22 @@
         }
     }
     .is-error-status{
-        .c-dropdown__input{
-            background-color: #fff;
-            border: 1px $danger solid;
-            &::after{
-                background-color: rgba(0,0,0,0);;
+        .c-dropdown-departmentCheck{
+            .c-dropdown__input{
+                .o-input-div{
+                    background-color: #fff;
+                    border: 1px $danger solid;
+                    &::after{
+                        background-image:none;
+                    }
+                }
+               
+                &::after{
+                    background-color: rgba(0,0,0,0);
+                }
             }
         }
+        
         .c-search-list{
             .c-search-item__departmentTitle{
                 color: $danger;

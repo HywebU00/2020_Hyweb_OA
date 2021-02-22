@@ -3632,11 +3632,24 @@ var $jscomp$this = this;
             var positionInfo = this._getDropdownPosition();
             this.dropdownEl.style.left = positionInfo.x + "px";
             this.dropdownEl.style.top = "30px"; //positionInfo.y - 20 + "px";
+            //如果是“部門”的select寬度依照預設
+            let selectTitile = this.el.parentNode.parentNode
+              .previousElementSibling;
+            if (selectTitile != null) {
+              if (selectTitile.innerHTML === "部門") {
+                this.dropdownEl.style.width = positionInfo.width + "px";
+              } else {
+                this.dropdownEl.style.width = "auto";
+              }
+            }
+
             this.dropdownEl.style.maxHeight = "40vh"; //positionInfo.height + "px";
-            this.dropdownEl.style.width = "auto"; //positionInfo.width + "px";
+            // this.dropdownEl.style.width = "auto"; //positionInfo.width + "px";
             this.dropdownEl.style.paddingLeft = "15px"; //增加
             this.dropdownEl.style.paddingTop = "15px"; //增加
             this.dropdownEl.style.paddingRight = "15px"; //增加
+            this.dropdownEl.style.marginBottom = "15px"; //增加
+
             this.dropdownEl.style.maxWidth = "600px";
             this.dropdownEl.style.backgroundColor = "#fff";
             this.dropdownEl.style.transformOrigin =

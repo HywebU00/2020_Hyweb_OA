@@ -2685,6 +2685,15 @@
         }
        
     }
+    .l-main-tabs__item{
+        .pop-btn{
+            display: flex;
+            line-height: 24px;
+        }
+        .is-disabled{
+            cursor: default;
+        }
+    }
 
 }
 
@@ -2725,18 +2734,19 @@
 }
 
 .c-popover__bg{
-    background-color: #fff;
-    opacity: 0;
+    background-color:rgb(198, 133, 133);
+    opacity: 0.3;
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 3000px;
+    overflow: scroll;
     z-index: 10;
 }
 
 .c-writeHours-title {
     display: flex;
     justify-content: space-between;
-
+  
     .is-no-this-months {
         color: $gray3;
 
@@ -2746,7 +2756,7 @@
     }
 
     .is-active {
-        background-color: $hyweb-waterblue;//$sec3;
+        background-color: $hyweb-waterblue;
         .c-writeHours-title__tag{
             background-color: $gray1;
             color: #fff;
@@ -2780,7 +2790,12 @@
     position: relative;
     width: 14.285714285714%;
     cursor: pointer;
-
+    &:first-child{
+        border-radius: $card-radius 0 0 0;
+    }
+    &:last-child{
+        border-radius: 0 $card-radius  0 0;
+    }
     .c-writeHours-title__item__date {
         display: flex;
         justify-content: center;
