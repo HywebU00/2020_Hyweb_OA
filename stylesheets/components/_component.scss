@@ -118,6 +118,7 @@
         font-size: $p;
         font-weight: 700;
         letter-spacing: 2px;
+        margin-left: -5px;
     }
     // .c-card-title {
     //     display: flex;
@@ -237,6 +238,7 @@
         @include ellipsisText;
         white-space: normal;
         height: 1.5rem;
+        margin-bottom: 0.5rem;
     }
 
     .c-card__development {
@@ -330,6 +332,7 @@
         cursor: pointer;
     }
     .c-card__star__btn{
+       
         .o-card__iconBtn{
             width:2rem;
             height: 2rem;
@@ -442,7 +445,9 @@
         .c-card__tag{
             .c-card__tag__num{
                 width: 295px;
-            
+            .c-card__star__btn{
+                margin-right: 0;
+            }
             }
             .c-card__tag__input{
                 margin-left: 55%;
@@ -457,6 +462,7 @@
                 }
                 
             }
+
         }
     }
 
@@ -598,7 +604,7 @@
     min-width: 230px;
     max-width: 337px;
     height: 4.5rem;
-    margin: 0 0.5rem 1rem 0;
+    margin: 0 0.5rem 0.5rem 0;
     background-color: $card-lablePerson-background;
     border-radius: $card-lablePerson-radius;
 
@@ -694,7 +700,7 @@
     border-bottom:1px solid $gray4;
     font-weight: 400;
     font-family: $font-family;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 // accordion
@@ -702,7 +708,7 @@
     width: 425px;
     border-radius: 10px;
     box-shadow: none;
-    border: 2px solid $hyweb-lighblue;
+    // border: 2px solid $hyweb-lighblue;
 
     .collapsible {
         border: none;
@@ -727,6 +733,7 @@
         color: $gray1;
         border-radius: 10px 10px 10px;
         background: #fff;
+        border: 2px solid $hyweb-lighblue;
         display: flex;
         justify-content: space-between;
 
@@ -780,8 +787,9 @@
 
 .c-accordion-plan {
     @extend .c-accordion-group;
-    width: 100%; //887px;
-
+    width: 100%; 
+   
+    
     .accordion-header__item__hour {
         display: flex;
         margin-right: 50px;
@@ -790,11 +798,14 @@
             padding: 0 15%;
             white-space: nowrap;
             font-weight: 400;
+            
         }
 
         .accordion-header__item__hour__num {
             font-size: $h1;
             font-family: $english-font;
+            display: flex;
+            justify-content: right;
         }
     }
 
@@ -805,7 +816,7 @@
     }
 
     .accordion-body__title {
-        padding: 1% 2% 2% 2%;
+        padding: 0.5rem 1.5rem;
         color:$gray3;
         .col{
             font-weight: 400;
@@ -815,6 +826,10 @@
     .accordion-body__item {
         padding: 1.5rem;
     }
+    .is-arrow-active{
+        border-radius: 0.666rem 0.666rem 0 0 ;
+    }
+
 }
 
 .c-accordion-general {
@@ -832,6 +847,14 @@
 
         .col {
             @include ellipsisText;
+        }
+    }
+    .row{
+        .s1{
+            width: 12.3333333333%;  
+        }
+        .s3{
+            width: 19%;
         }
     }
 }
@@ -901,7 +924,7 @@
 
     .c-toast-body__item__title {
         padding-bottom: 3%;
-        border-bottom: 1px solid;
+        border-bottom: 1px solid $gray4;
     }
 
     .c-toast-body__item__content {
@@ -1017,7 +1040,7 @@
         h3 {
             font-size: $h2;
             font-weight: 700;
-            margin: 0.8rem 0 0.8rem 0;
+            margin:1rem 0 1rem 0;
         }
 
     }
@@ -1135,8 +1158,8 @@
 
     .c-modal-title {
         display: flex;
-        border-bottom: 1px solid $gray3;
-        padding-bottom: 0.5rem;
+        border-bottom: 1px solid $gray4;
+        padding-bottom: 1rem;//0.5rem;
         align-items: center;
 
         img {
@@ -1164,6 +1187,7 @@
         justify-content: center;
         background-color: #fff;
         align-items: flex-end;
+        height: auto;
 
         button {
             margin: 0 0.5rem;
@@ -1179,13 +1203,14 @@
     @extend .c-modal;
     width: 50%;
     height: 30vh;
-    // max-height: 50vh;
-
+    .c-modal-content{
+        padding:0.8rem 0 1.333rem 0 ;
+    }
     .c-modal-alert__content {
         height: 100%;
         display: flex;
         flex-wrap: wrap;
-
+        padding:0.5rem 1.5rem;
         div {
             width: 100%;
         }
@@ -1211,22 +1236,32 @@
     .modal-footer {
         align-self: flex-end;
         justify-content: flex-end;
+        padding-bottom: 0;
     }
 }
 
 .c-modal-alert-scroll{
     height: 40vh;
+
+    .c-modal-footer{
+        height: auto;
+    }
+
 }
 
 .c-modal-chooseGroup {
     @extend .c-modal;
-    width: 80%;
+    width: 85%;
     overflow: hidden;
-    height: 75vh;
+    height: 80vh;
+    padding: 1rem 2rem;
 
     .c-modal-closeBtn {
         display: flex;
         justify-content: flex-end;
+        button{
+            padding:0;
+        }
     }
 
     .c-modal-btnList {
@@ -1245,6 +1280,7 @@
         display: block;
         height: auto;
         min-height: 40vh;
+        padding: 1rem 0 1rem 0;
 
         .c-modal-content__input {
             display: flex;
@@ -1268,7 +1304,7 @@
         }
 
         .c-modal-content__addMember {
-            margin-top: 1rem;
+            margin-top: 1.5rem;
 
             .addMember-title {
                 display: flex;
@@ -1280,7 +1316,7 @@
 
                 a {
                     font-weight: 400;
-                   
+                    
                     display: flex;
                     align-items: center;
                     color: $gray3;
@@ -1290,9 +1326,11 @@
 
                 }
                 button{
-                    border-radius: 40px;
-                    padding:0.5rem;
+                    border-radius: 40px; 
                     margin-left: 1.2rem;
+                    a{
+                        padding:0.5rem;
+                    }
                 }
             }
 
@@ -1303,11 +1341,13 @@
             .addMember-content {
                 margin-top: 1rem;
                 display: flex;
-                justify-content: flex-start;
+                align-content: flex-start;
+                //justify-content: flex-start;
                 flex-wrap: wrap;
                 height: 10rem;
                 overflow-y: scroll;
-                height: calc(75vh - 330px);
+                padding-bottom:0;
+                height:calc(75vh - 230px);//calc(75vh - 330px);
                
 
             }
@@ -1321,6 +1361,11 @@
 
     .c-modal-footer {
         justify-content: flex-end;
+        height: auto;
+        button{
+            margin:0;
+            margin-right:-0.5rem;
+        }
     }
 
     .is-error-status {
@@ -1336,9 +1381,10 @@
 
 .c-modal-addGroup {
     @extend .c-modal;
-    width: 80%;
+    width: 82%;
     height: 85vh;
     overflow: hidden;
+    padding:1rem 2rem;
 
     .c-modal-closeBtn {
         display: flex;
@@ -1353,8 +1399,11 @@
         margin-bottom: 0.2rem;
         button{
           border-radius: 40px;  
-          padding: 0.5rem 0;
-           
+          //padding: 0.5rem 0;
+          
+        }
+        .cross-btn{
+            margin-right: -0.5rem;
         }
 
         a {
@@ -1372,7 +1421,9 @@
             margin-right: calc(75vw - 100px);
             white-space: nowrap;
             min-width: 4rem;
-
+            margin-bottom:0.5rem;
+            margin-top:0.5rem;
+            padding:0.5rem;
         }
         
     }
@@ -1380,7 +1431,8 @@
     .c-modal-addGroup__content {
         display: flex;
         flex-wrap: wrap;
-        height: calc(85vh - 230px);//calc(85vh - 200px);
+        //height: calc(85vh - 230px);
+        //height: calc(85vh - 90px);//calc(85vh - 200px);
         .c-modal-addGroup__content__item {
             width: 100%;
             padding-top: 1rem;
@@ -1391,7 +1443,12 @@
             align-items: center;
             border-bottom: 1px solid $gray-blue;
             margin-bottom: 0;
-            padding-bottom: 0.75rem;
+            padding-bottom: 1.5rem;
+            margin-left: 0;
+         
+            :nth-child(3){
+                padding-right: 0.25rem;
+            }
             .o-input{
                 input{
                     margin-bottom: 0;
@@ -1405,6 +1462,16 @@
                     color: $danger;
                 }
             }
+            .s6{
+                margin: 0;
+            }
+            .s5{
+                margin: 0;
+                width:45.6666666667% ;
+            }
+            .col{
+                padding-left:0;
+            }
         }
         
       
@@ -1412,7 +1479,7 @@
 
     .c-modal-content {
         display: block;
-        height: calc(85vh - 350px);
+        height: calc(85vh - 230px);//calc(85vh - 350px);
         overflow-y: scroll;
         padding-top: 1rem;
         .c-modal-content__select {
@@ -1437,7 +1504,7 @@
 
         .c-modal-content__chooseMember {
             display: flex;
-            padding:0 0.75rem 1rem 0.75rem;
+            padding:0 0rem 1rem 0rem;
             border-bottom:1px solid $gray-blue;
 
             div {
@@ -1476,8 +1543,7 @@
         }
 
         .c-modal-content__memberList {
-            padding: 0 0.75rem;
-
+        
             .memberList__title {
                 margin: 1rem 0;
                 color: $gray3;
@@ -1494,7 +1560,7 @@
                 //height: 40vh;
                 overflow-y: scroll;
                 .c-card-lablePerson {
-                    margin: 0 0 1rem 0.5rem;
+                    margin: 0 0 0.5rem 0.5rem;
                 }
 
                 .is-active {
@@ -1506,9 +1572,12 @@
     }
 
     .c-modal-footer {
-        align-self: flex-end;
+        //align-self: flex-end;
         justify-content: flex-end;
         margin-bottom: 1rem;
+        button{
+            margin: 0;
+        }
     }
     .is-error-status{
         .c-modal-content__select{
@@ -1550,13 +1619,13 @@
 
    
     .c-modal-content__sidebar {
-        padding: 1rem;
+        padding: 1rem 1rem 1rem 2rem;
         background-color: $sec3;
 
         height: 100%;
         overflow-y: scroll;
 
-        border-radius: $modal-radius;
+        border-radius:  $modal-radius 0 0 $modal-radius ;
     }
 
     .c-modal-content__sidebar__user {
@@ -1595,7 +1664,7 @@
             .item__years {
                 font-size: $p;
                 font-weight: 700;
-                margin-bottom: 1.2rem;
+                margin-bottom: 0.5rem;
             }
 
             .item__months {
@@ -1627,9 +1696,30 @@
         margin-bottom: $m*14;
         max-height: 100%; // 926px;
         padding: 1rem;
+        #plan{
+            .c-modal-content__list__title{
+                padding-bottom: 0.5rem;
+            }
+            .collapsible-header{
+                height: 4.2rem;
+            }
+            .c-accordion-plan{
+                margin-bottom:0.5rem;
+            }
+            .header__item__title{
+                line-height: 1.6rem;
+            }
+            .accordion-body{
+                padding-bottom: 0.2rem;
+            }
+            .accordion-header__item__hour__num{
+                 width: 4.2rem;
+            }
+           
 
+        }
         .c-modal-content__calendar__content {
-            height: 75vh;
+            height: 500px;//75vh;
             overflow-y: scroll;
         }
 
@@ -1662,6 +1752,7 @@
 
     .c-modal-content__list {
         margin-bottom: 5%;
+        padding:0 0.2rem;
         .c-accordion-plan{
         .accordion-header__item{
             .header__item__title{
@@ -1714,6 +1805,9 @@
         padding-top: 0.5rem;
         height: 100%;
         overflow-y: scroll;
+        .accordion-body{
+            padding-bottom: 0.2rem;
+        }
         .accordion-header__item{
             .header__item__departmentNum{
                 margin-right: 1.5rem;
@@ -1744,6 +1838,7 @@
                     white-space: normal;
                     width: auto;
                     line-height: 1.5rem;
+                    text-align: left;
                     padding: 0.8rem 0.5rem;
                     p{
                         @include db_ellipsisText;
@@ -1756,6 +1851,15 @@
     
             }
         }
+    }
+    .accordion-header__item__hour__num{
+        width: 4.2rem;
+    }
+    .collapsible-body{
+        padding-bottom:0;
+    }
+    .c-accordion-plan{
+        margin-bottom: 0.5rem;
     }
     
 }
@@ -1779,6 +1883,7 @@
     .c-modal-content__title {
         font-size: $h2;
         margin-top: -1rem;
+        margin-left: 1.33rem;
         color: $gray1;
         font-weight: 700;
         font-family: $font-family;
@@ -1787,7 +1892,7 @@
 
     .c-modal-content {
         width: 100%;
-        height: 50vh;
+        height: 65vh;
     }
 
     .c-accordion-group {
@@ -1802,6 +1907,9 @@
         .c-accordion-group{
             width: 90%;
             margin: 1rem auto;
+        }
+        .accordion-body__title{
+            padding:0;
         }
     }
 
@@ -1839,11 +1947,20 @@
 
 .c-modal-select{
     overflow-y: visible;
-    height: 120px;
+    height: 8.666rem;//120px;
     min-width: 600px;
     .c-search{
         padding: 0;
         height: 65px;
+    }
+    .c-dropdown-department{
+        min-width: 20rem;
+    }
+    .c-search-item__title{
+        margin-left: 0;
+    }
+    .c-modal-alert__content{
+        margin-top: -1rem;
     }
 }
 //dropdown
@@ -1870,7 +1987,7 @@
 
         .select-dropdown {
             border-bottom: 0px;
-            font-size: $p;
+            font-size: $font-size-m;
             margin: 0;
             padding-left: 10px;
             padding-top: 4px;
@@ -1881,6 +1998,7 @@
                 height: 40px;
                 &:first-child{
                     border-top: 0;
+                    padding-top: 0;
                 }
                 &:last-child{
                     border-bottom: 0;
@@ -1893,8 +2011,9 @@
 
             .optgroup {
                 padding-left: 0;
-                padding-top: $pd;
+                padding-top: 1.5rem;
                 border: 0;
+                font-size: $p;
                 &:hover{
                     background: #fff;
                     cursor: default;
@@ -1902,7 +2021,7 @@
 
                 span {
                     color: $gray1;
-                    font-size: $font-size-m; //$p;
+                    font-size: $font-size-m; 
                     font-weight: 700;
                 }
 
@@ -1920,7 +2039,7 @@
 
             span {
                 @include ellipsisText;
-                font-size: $p;
+                font-size: $font-size-m;
                 color: $gray1;
                 padding: 0;
                 font-weight: 400;
@@ -2217,7 +2336,8 @@
     position: relative;
 
     .c-datePicker__input {
-        width: 25%;
+        //width: 25%;
+        width: auto;
     }
 
     .c-datePicker__modal {
@@ -2548,7 +2668,7 @@
         position: absolute;
         width: 72px;
         box-shadow: $box-shadow;
-        border-radius: $select-radius;
+        border-radius:$dropdown-radius;
         padding: 0.8rem 0.8rem 0.8rem 0.8rem;
 
         li {
@@ -2662,7 +2782,7 @@
         }
         .c-popover__text {
             margin-bottom: 1.5rem;
-
+            margin-top:-0.4rem;
             div {
                 display: flex;
                 justify-content: center;
@@ -2677,11 +2797,17 @@
         .c-popover__footer {
             display: flex;
             justify-content: center;
+            padding-bottom:0.5rem;
             .pop-confirm-btn{
+                .o-btn-primary{
+                padding:0.5rem 1.2rem;
+                }
+                
                 a{
                     color: #fff;
                 }
               }
+            
         }
        
     }
@@ -2714,6 +2840,7 @@
         justify-content:start;
         border-bottom: 1px solid $hyweb-lighblue;
         padding-bottom: 0.5rem;
+        padding-top:0.5rem;
         &:last-child{
             border-bottom: 0;
         }
@@ -2774,7 +2901,7 @@
             background: $hy-background;
             width: 100%;
             height: 10px;
-            margin-left: -10%;
+            margin-left: -1rem;
             border-radius: 5px;
         }
        
@@ -2821,12 +2948,14 @@
         height: 5rem; //40%;
         align-items: flex-end;
         border-bottom: 1px solid $gray1;
+        justify-content: center;
 
         .text {
             font-size: $font-size;
-            margin-bottom: 10%;
+            margin-bottom: 0.5rem;
             font-family: $font-family;
-            line-height: 120%;
+            line-height: 1rem;
+            white-space: nowrap;
         }
 
         .hours {
@@ -2834,8 +2963,9 @@
             font-family: $english-font;
             display: flex;
             align-items: flex-end;
+  
             font-weight: 700;
-            padding-left: 20%;
+            padding-left: 1rem;
 
             span {
                 font-size: $writeHours-title-hours-s;
@@ -3257,7 +3387,7 @@
     }
 }
 .is-arrow-active{
-    .o-accordion_arrow{
+    .o-accordion_arrow{      
         .arrow-icon{
             transform: rotate(0deg); 
         }
@@ -3265,6 +3395,8 @@
     }
     
 }
+
+
 
 .o-calendar {
     .o-calendar__week__title {
@@ -3302,7 +3434,7 @@
             // }
 
             .item__date__num {
-                padding:0.25rem;
+                padding:0.4rem;
                 margin: 0.3rem; 
                 position: absolute;
                 font-size: $calendar-date-font;
@@ -3374,7 +3506,7 @@
         content: "";
         position: absolute;
         width: 20px;
-        height: 20px;
+        height: 1.66rem;//20px;
         right: 0;
         top:0;
         margin-right: 0.5rem;
@@ -3468,8 +3600,9 @@
 }
 
 .is-today {
-    background-color: $hyweb-lighblue;
+    background-color: $hyweb-blue;//$hyweb-lighblue;
     border-radius: 50%;
+    color: #fff;
 }
 
 .text-danger {

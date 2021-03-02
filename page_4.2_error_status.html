@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>page_26.b.0</title>
+    <title>page_4.2_error_status</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -152,98 +152,134 @@
         <ul class="c-breadcrumb">
           <li class=""><a href="#">我的工作紀錄</a></li>
           <div class="">></div>
-          <li class=""><a href="#">計畫統計</a></li>
+          <li class=""><a href="#">檢視計畫工作</a></li>
         </ul>
         <div class="c-general">
           <div class="c-general__title">
-            <h3 class="">警示計畫</h3>
+            <h3 class="">常用計畫成員</h3>
           </div>
-        </div>
-        <div id="alertPlen">
-          <div class="l-main-tabs">
+          <div class="c-general__img">
             <button class="waves-effect waves-blue">
-              <a class="l-main-tabs__item modal-trigger" href="#execute">
-                <img src="img/o-person.svg" alt="" />
-                <div class="">執行部門</div>
+              <a class="modal-trigger" href="#chooseGroupModal">
+                <img src="img/o-plus.svg" alt="" /> 新增群組
               </a>
             </button>
           </div>
-          <div
-            class="l-main-content l-main-changeStyle l-main-have-nav-height l-main-list-width"
-          >
-            <div class="l-main-content__text">請選擇計畫「執行部門」</div>
-          </div>
         </div>
-      </div>
-    </div>
-    <!-- 視窗一 safe modal -->
-    <div id="safe" class="c-modal-alert modal">
-      <div class="c-modal-btnList">
-       <button type="button"><img class="modal-close" src="img/o-cross.svg" alt="" /></button>
-      </div>
-      <div class="c-modal-alert__content">
-        <div class="c-modal-title">
-          <div class="">計畫安全閾值</div>
-        </div>
-        <div class="modal-content c-modal-content">
-          <p>
-            當 <span>區間工時％</span> 及
-            <span>累計工時％</span> 超出此安全範圍，系統將會判定為「警示計畫」
-          </p>
-          <div class="c-modal-content__inputList">
-            <div class="o-input">
-              <input type="text" placeholder="90" />
-            </div>
-            <div class="inputList__text">至</div>
-            <div class="o-input">
-              <input type="text" placeholder="100" />
-            </div>
-            <div class="inputList__text">％</div>
-          </div>
-        </div>
-        <div class="modal-footer c-modal-footer">
-          <button class="o-btn-primary waves-effect waves-blue modal-close">
-            確定
-          </button>
-        </div>
-      </div>
-    </div>
-    <!-- 視窗一 safe modal -->
-    <div id="execute" class="c-modal-alert modal c-modal-select">
-      <div class="c-modal-btnList ">
-        <button type="button">
-          <img class="modal-close" src="img/o-cross.svg" alt="" />
-        </button> 
-      </div>
-      <div class="c-modal-alert__content">
         <div class="c-search">
           <div class="c-search-list">
             <div class="c-search-item">
-              <div class="c-search-item__title">檢視</div>
-              <div class="input-field c-dropdown-department col">
-                <select class="c-dropdown-plan-select">
-                  <option value="1">U20-使用者經驗用者用者企劃部</option>
-                  <option value="2">U20-使用者經驗企劃部</option>
-                  <option value="3">U20-使用者經驗用者用者企劃部</option>
-                  <option value="4">U20-使用者經驗企劃部</option>
-                  <option value="5">U20-使用者經驗用者用者企劃部</option>
-                  <option value="6">U20-使用者經驗企劃部</option>
-                  <option value="7">U20-使用者經驗用者用者企劃部</option>
-                </select>
+              <div class="c-search-item__title">關鍵字</div>
+              <div class="c-search-item__input">
+                <input type="text" class="" placeholder="群組名稱" />
               </div>
-              <div class="c-search-item__title">的警示計畫</div>
             </div>
-          <div class="c-search-btn">
-            <button class="o-btn-primary waves-effect waves-blue">確定</button>
           </div>
+          <div class="c-search-btn">
+            <button class="o-btn-primary waves-effect waves-blue">搜尋</button>
+          </div>
+        </div>
+        <div class="l-main-content">
+          <div class="l-main-content__fileInput">
+            <div class="c-fileInput-upload">
+              <a class="modal-trigger" href="#chooseGroupModal">
+                <img class="c-fileInput__img" src="img/o-uploadL.svg" alt="" />
+                <div class="c-fileInput__title">新增群組</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--chooseGroupModal 選擇人員視窗 -->
+    <!-- 錯誤提示樣式＝>  在 c-modal-content 的地方新增 “is-error-status” 的class -->
+    <div id="chooseGroupModal" class="c-modal-chooseGroup modal">
+      <div class="c-modal-closeBtn">
+        <button type="button">
+          <img class="modal-close" src="img/o-cross.svg" alt="" />
+        </button>
+      </div>
+      <div class="modal-content c-modal-content is-error-status">
+        <div class="c-modal-content__input">
+          <div class=""><span>*</span> 群組名稱</div>
+          <div class="o-input">
+            <input type="text" placeholder="中英文、數字皆可輸入" />
+          </div>
+        </div>
+        <div class="c-modal-content__addMember">
+          <div class="addMember-title">
+            <div class="">群組成員</div>
+            <button type="button" class="waves-effect waves-blue">
+              <a class="modal-trigger" href="#addGroupModal">
+                <img src="img/o-plus.svg" alt="" /> 加入成員
+              </a>
+            </button>
+          </div>
+          <div class="addMember-content"></div>
+        </div>
+      </div>
+      <div class="modal-footer c-modal-footer">
+        <button class="o-btn-primary waves-effect waves-blue">新增群組</button>
+      </div>
+    </div>
+    <!--addGroupModal 新增人員視窗 -->
+    <!-- 錯誤提示樣式＝>  在 c-modal-addGroup__content 的地方新增 “is-error-status” 的class -->
+    <div id="addGroupModal" class="c-modal-addGroup modal">
+      <div class="c-modal-btnList">
+        <button class="cross-btn" type="button">
+          <img class="modal-close" src="img/o-cross.svg" alt="" />
+        </button>
+      </div>
+      <div class="c-modal-addGroup__content is-error-status">
+        <div class="row c-modal-content__select">
+          <div class="col s6">
+            <div class="input-title">部門</div>
+            <div class="input-field c-dropdown-planContent">
+              <select class="c-dropdown-plan-select">
+                <option value="1">
+                  U20-使用者經驗用者用者企劃部
+                <option value="2">U20-使用者經驗用者用者企劃部</option>
+                <option value="3">U20-使用者經驗用者用者企劃部</option>
+                <option value="4">
+                  U20-使用者經驗用者用者企劃部
+                </option>
+              </optgroup>           
+              </select>
+            </div>
+          </div>
+          <div class="col s5">
+            <div class="input-title">關鍵字</div>
+            <div class="o-input">
+              <input class="" type="text"  placeholder="姓名、英文暱稱、工號"/>
+            </div>
+          </div>
+          <div class="col">
+            <button class="o-btn-primary waves-effect waves-blue">搜尋</button>
+          </div>
+        </div>
+        <div class="c-modal-addGroup__content__item c-modal-content">
+          <div class="c-modal-content__chooseMember">
+            <div class="c-modal-content__chooseMember__title">已選成員</div>
+            <div class="c-modal-content__memberList">
+              <div class="memberList__group"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="c-modal-addGroup__content__item modal-footer c-modal-footer"
+        >
+          <button class="o-btn-primary waves-effect waves-blue modal-close">
+            加入
+          </button>
         </div>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/compontent.js"></script>
     <script src="js/layout.js"></script>
+    <script src="js/materialize.js"></script>
+
+    <script src="js/compontent.js"></script>
     <script src="js/page_function.js"></script>
   </body>
 </html>

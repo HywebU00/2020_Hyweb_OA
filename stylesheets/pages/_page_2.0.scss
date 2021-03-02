@@ -60,11 +60,11 @@
                 transform-origin: 100px 20px;
 
                 &::before {
-                    left: 93%;
+                    left: 90%;//93%;
                 }
 
                 &::after {
-                    left: 93%;
+                    left: 90%;//93%;
                 }
 
             }
@@ -87,7 +87,7 @@
         }
 
         .c-card-planPerson {
-            margin: 0 0.5rem 2.5rem 0.5rem;
+            margin: 0 0.5rem 1rem 0.5rem;
             max-width: 300px;
         }
 
@@ -120,7 +120,7 @@
         .l-main-content-item__listTitle {
             display: block;
             background-color: $hyweb-lighblue;
-            padding: 20px 0px 20px 3rem;
+            padding: 20px 0px 20px 1.5rem;
             display: flex;
             font-family: $font-family;
             font-size: $p;
@@ -132,11 +132,11 @@
             max-width: 2560px;
 
             .listTitle__num {
-                width: 20%;
+                width: 15%;//20%;
             }
 
             .listTitle__name {
-                width: 60%;
+                width: 65%;//60%;
             }
 
             .listTitle__position {
@@ -162,7 +162,7 @@
                 transform: translateY(0px) translateX(0px);
             }
             .c-card__tag {
-                width: 20%;
+                width: 15%;//20%;
                 padding: 0;
                 display: flex;
                 align-items: center;
@@ -173,20 +173,23 @@
                     padding: 0;
                     font-size: $p;
                     font-family: $font-family;
+                    font-weight: 400;
                 }
 
             }
 
             h2 {
-                width: 60%;
+                width: 65%;//60%;
                 font-weight: 400;
                 @include db_ellipsisText;
                 max-height: 56px;
                 display: flex;
-                align-items: center;
+                line-height: 2.1333rem;
+                //align-items: center;
             }
             a{
-                padding: 1.33rem 0rem 20px 1.33rem;
+                // padding: 1.33rem 0rem 20px 1.33rem;
+                padding: 0.83rem 0rem 0.83rem 1.33rem;
             }
             width: 100%;
             margin: 0;
@@ -234,4 +237,45 @@
 
     }
 
+}
+#worklist_wbs{
+    .l-main-content-table{
+        .table-thead{
+            .row{
+                :nth-child(4){
+                    width: 12.6666666667%;
+                }
+                :nth-child(5){
+                    width: 12.6666666667%;
+                }
+                :nth-child(6){
+                    width: 33%;
+                }
+            }
+        }
+        .table-body{
+            .table-body-subtitle{
+                :nth-child(4){
+                    width: 12.6666666667%;
+                }
+                :nth-child(5){
+                    width: 12.6666666667%;
+                }
+                :nth-child(6){
+                    width: 33%;
+                }
+            }
+            .table-body-item{
+                :nth-child(4){
+                    width: 12.6666666667%;
+                }
+                :nth-child(5){
+                    width: 12.6666666667%;
+                }
+                :nth-child(6){
+                    width: 33%;
+                }
+            }
+        }
+    }
 }

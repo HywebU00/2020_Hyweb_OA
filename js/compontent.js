@@ -63,39 +63,19 @@ for (let a = 0; a < pop_btn.length; a++) {
     });
     //將點擊的視窗打開
     let item = pop_content[a].classList.contains("pop-content");
+    console.log(item);
     let popDisable = pop_content[a].classList.contains("pop-disable");
     if (item === true && popDisable === false) {
       pop_content[a].classList.toggle("is-pop-show");
     }
   });
-  // pop_content[a].addEventListener("click", function () {
-  //   let content = pop_content[a].childNodes;
-  //   for (let c = 0; c < content.length; c++) {
-  //     if (content[c].tagName == "LI") {
-  //       pop_content[a].classList.remove("is-pop-show");
-  //       //移除背景遮罩
-  //       let popBg = document.querySelector(".c-popover__bg");
-  //       if (popBg != null) {
-  //         document.body.removeChild(popBg);
-  //       }
-  //     }
-  //   }
-  // });
+
   if (confirm_btn[a] != null) {
     confirm_btn[a].addEventListener("click", function () {
       let parentlist = confirm_btn[a].parentNode.parentNode;
       parentlist.classList.remove("is-pop-show");
     });
   }
-
-  //點擊背景 關閉popmodal
-  // function closePop() {
-  //   const popBg = document.querySelector(".c-popover__bg");
-  //   popBg.addEventListener("click", function () {
-  //     pop_content[a].classList.remove("is-pop-show");
-  //     document.body.removeChild(popBg);
-  //   });
-  // }
 }
 
 //點擊Filter子項目關閉視窗
@@ -224,7 +204,7 @@ percentCheckInput.forEach((item) => {
   item.addEventListener("click", inputChangeCardColor);
 
   function inputChangeCardColor() {
-    item.parentNode.parentNode.parentNode.parentNode.parentNode.classList.toggle(
+    item.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.classList.toggle(
       "is-changeBackground"
     );
   }
@@ -266,7 +246,7 @@ const cardLablePerson = document.querySelectorAll(
 );
 for (let a = 0; a < cardLablePerson.length; a++) {
   cardLablePerson[a].addEventListener("click", function () {
-    console.log(this);
+    // console.log(this);
     this.classList.toggle("is-active");
   });
 }

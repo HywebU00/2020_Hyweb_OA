@@ -32,6 +32,7 @@
                    
                 }
                 .table-body__conutItem{
+                    height: 4rem;
                     .table-body__item__project{
                         margin: 1rem 0.5rem;
                         height: 2.5rem;
@@ -39,8 +40,97 @@
                    
                 } 
             }
+            .table-footer{
+                padding: 1rem 0 1rem 0;     
+            }
+            .is-error-status-item{
+                .o-input-div{
+                    background-color: #fff;
+                  
+                }
+            }
+            .c-dropdown-member{
+                .c-dropdown__input{
+                    
+                    .o-input-div{
+                        background-color: rgba(0,0,0,0);
+                        &::after{
+                            background-image:url(../img/o-arrowDown.svg);
+                            
+                        }
+                    }
+                    &::after{
+                        background-color: rgba(0,0,0,0);
+                        background-image: none;
+                        z-index: -1;
+                    }
+                    
+                    
+                 
+                }
+               
+            }
         }
-       
+
+    } 
+}
+#introduction{
+    .l-main-content__upload{
+        .row{
+            :nth-child(1){
+                img{
+                    width: 2.4rem;
+                }
+                width: 75.6666666667%;;
+            }
+            :nth-child(3){
+                width: 9.6666666667%;
+            }
+            :nth-child(4){
+                margin: 0;
+            }
+            button{
+                width: 2.2rem;
+                :nth-child(1){
+                    width: auto;
+                }
+            }
+        }
     }
-  
+    .l-main-content__planlist{
+        .table-thead{
+            .row{
+                .col{
+                    div{
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .table-body{
+            .row{
+                .col{
+                    div{
+                        width: auto;
+                    }
+                }
+            }
+            .c-popover-checkPoint {
+                .c-popover__content{
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+}
+#types{
+    .l-main-content__workTypelist{
+        .table-thead{
+            padding: 0.6rem 0 0.6rem 0;     
+        }
+        .table-footer{
+            padding: 1rem 0 1rem 0;     
+        }
+    }
+    
 }

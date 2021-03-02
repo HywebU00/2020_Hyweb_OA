@@ -5745,7 +5745,7 @@ body.keyboard-focused .dropdown-content li:focus {
   right: 0;
   background-color: #fafafa;
   padding: 0;
-  max-height: 70%;
+  max-height: 95%;
   width: 55%;
   margin: auto;
   overflow-y: auto;
@@ -6123,7 +6123,7 @@ textarea.materialize-textarea {
   outline: none;
   height: 2.5em;
   width: 100%;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0 0 8px 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -9197,10 +9197,6 @@ body {
   transition: all 0.5s;
 }
 
-.l-main .c-breadcrumb {
-  margin-bottom: 0.5rem;
-}
-
 .l-main .c-breadcrumb a {
   color: #042340;
 }
@@ -9231,7 +9227,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   border-bottom: 1px solid #BAD4E5;
 }
 
@@ -9308,7 +9304,7 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-top: -44px;
-  margin-bottom: 44px;
+  margin-bottom: 1.5rem;
 }
 
 .l-main-tabs button {
@@ -9354,6 +9350,7 @@ body {
 
 .l-main-content .l-main-content__downloadlink a {
   color: #042340;
+  text-decoration: underline;
 }
 
 .l-main-content .l-main-content__text {
@@ -9694,7 +9691,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
-  height: 70px;
+  height: 4rem;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -9723,8 +9720,8 @@ body {
 }
 
 .l-main-content .l-main-content__planlist .table-body .row .select-wrapper .select-dropdown, .l-main-content .l-main-content__wbslist .table-body .row .select-wrapper .select-dropdown, .l-main-content .l-main-content__workTypelist .table-body .row .select-wrapper .select-dropdown, .l-main-content .l-main-content__statisticsPlan .table-body .row .select-wrapper .select-dropdown {
-  padding-top: 15px;
-  padding-right: 30px;
+  padding-top: 1rem;
+  padding-right: 2rem;
 }
 
 .l-main-content .l-main-content__planlist .table-body .row .is-popmodal-show, .l-main-content .l-main-content__wbslist .table-body .row .is-popmodal-show, .l-main-content .l-main-content__workTypelist .table-body .row .is-popmodal-show, .l-main-content .l-main-content__statisticsPlan .table-body .row .is-popmodal-show {
@@ -10368,7 +10365,7 @@ body {
   margin-bottom: 0;
   font-size: 1.06rem;
   padding: 0 0 0 1.5rem;
-  height: 70px;
+  height: 60px;
   border-bottom: 1px solid #BAD4E5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10411,10 +10408,14 @@ body {
 }
 
 .l-main-writeHours {
-  height: 85vh;
+  height: 80vh;
   overflow-y: scroll;
   margin-top: 1.5rem;
   padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.l-main-writeHours .c-writeHours .c-writeHours-content .is-error-status {
+  padding-bottom: 1.3rem;
 }
 
 .sidebar__is-open .l-side {
@@ -10540,7 +10541,7 @@ body {
   height: 100px;
   color: #fff;
   font-weight: 700;
-  padding: 0.5rem 0 0.5rem 1.2rem;
+  padding: 0.5rem 0 0.5rem 0.3rem;
 }
 
 .sidebar__is-open .l-side .c-sidebar-btnlist .c-sidebar-btnlist__item {
@@ -10554,7 +10555,7 @@ body {
 }
 
 .sidebar__is-open .l-side .c-sidebar-btnlist .c-sidebar-btnlist__item img {
-  padding-right: 25%;
+  padding-right: 0.5rem;
 }
 
 .sidebar__is-open .l-side .c-sidebar-btnlist .c-sidebar-btnlist__item .menu-btn {
@@ -10570,6 +10571,15 @@ body {
 
 .sidebar__is-open .l-side .c-sidebar-btnlist .c-sidebar-btnlist__item .login-btn {
   display: block;
+  cursor: pointer;
+  -webkit-transition: ease 0s;
+  transition: ease 0s;
+}
+
+.sidebar__is-open .l-side .c-sidebar-btnlist .c-sidebar-btnlist__item .login-btn:hover {
+  -webkit-transition: ease 0s;
+  transition: ease 0s;
+  color: #1febba;
 }
 
 .sidebar__is-open .l-side .menu-btn__open {
@@ -10648,7 +10658,7 @@ body {
 }
 
 .c-submenu-content__calendar .calendar-wrapper {
-  padding-bottom: 10%;
+  padding-bottom: 1rem;
   border-radius: 5px;
 }
 
@@ -10665,7 +10675,7 @@ body {
   font-size: 22px;
   font-weight: 700;
   font-family: "Noto Sans TC", "sans-serif";
-  margin: 0 3% 6% 3%;
+  margin: 0 0.8rem 0.6rem 0;
 }
 
 .c-submenu-content__calendar .calendar-wrapper .calendar_btn {
@@ -10821,7 +10831,7 @@ body {
 
 .c-submenu-content__cardList .c-card-planHotkey {
   margin: 0 auto;
-  margin-bottom: 10%;
+  margin-bottom: 1.2rem;
 }
 
 .c-sidebar-content__user__item {
@@ -10833,7 +10843,7 @@ body {
 }
 
 .c-sidebar-content__list__item {
-  padding: 5% 0 5% 27%;
+  padding: 0.5rem 0 0.5rem 3.3rem;
   display: block;
   font-weight: 400;
   border-radius: 0 25px 25px 0;
@@ -11022,6 +11032,7 @@ body {
   font-size: 1.06rem;
   font-weight: 700;
   letter-spacing: 2px;
+  margin-left: -5px;
 }
 
 .c-card-percentCheck .c-card-title {
@@ -11147,6 +11158,7 @@ body {
   text-overflow: ellipsis;
   white-space: normal;
   height: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .c-card-planHotkey .c-card__development {
@@ -11374,6 +11386,10 @@ body {
   width: 295px;
 }
 
+.c-card-planReport .c-card__item__title .c-card__tag .c-card__tag__num .c-card__star__btn, .c-card-planReport-danger .c-card__item__title .c-card__tag .c-card__tag__num .c-card__star__btn, .c-card-alertPlan .c-card__item__title .c-card__tag .c-card__tag__num .c-card__star__btn, .c-card-planReport .c-card__item__content .c-card__tag .c-card__tag__num .c-card__star__btn, .c-card-planReport-danger .c-card__item__content .c-card__tag .c-card__tag__num .c-card__star__btn, .c-card-alertPlan .c-card__item__content .c-card__tag .c-card__tag__num .c-card__star__btn, .c-card-planReport .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__star__btn, .c-card-planReport-danger .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__star__btn, .c-card-alertPlan .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__star__btn {
+  margin-right: 0;
+}
+
 .c-card-planReport .c-card__item__title .c-card__tag .c-card__tag__input, .c-card-planReport-danger .c-card__item__title .c-card__tag .c-card__tag__input, .c-card-alertPlan .c-card__item__title .c-card__tag .c-card__tag__input, .c-card-planReport .c-card__item__content .c-card__tag .c-card__tag__input, .c-card-planReport-danger .c-card__item__content .c-card__tag .c-card__tag__input, .c-card-alertPlan .c-card__item__content .c-card__tag .c-card__tag__input, .c-card-planReport .c-card__item__footer .c-card__tag .c-card__tag__input, .c-card-planReport-danger .c-card__item__footer .c-card__tag .c-card__tag__input, .c-card-alertPlan .c-card__item__footer .c-card__tag .c-card__tag__input {
   margin-left: 55%;
   margin-right: 1rem;
@@ -11509,7 +11525,7 @@ body {
   min-width: 230px;
   max-width: 337px;
   height: 4.5rem;
-  margin: 0 0.5rem 1rem 0;
+  margin: 0 0.5rem 0.5rem 0;
   background-color: #F7FBFF;
   border-radius: 0.53rem;
 }
@@ -11629,7 +11645,7 @@ body {
   border-bottom: 1px solid #D2DAE0;
   font-weight: 400;
   font-family: "Noto Sans TC", "sans-serif";
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 .c-breadcrumb div {
@@ -11641,7 +11657,6 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border: 2px solid #E2F1FE;
 }
 
 .c-accordion-group .collapsible, .c-accordion-plan .collapsible, .c-accordion-general .collapsible {
@@ -11669,6 +11684,7 @@ body {
   color: #042340;
   border-radius: 10px 10px 10px;
   background: #fff;
+  border: 2px solid #E2F1FE;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11752,6 +11768,12 @@ body {
 .c-accordion-plan .accordion-header__item__hour .accordion-header__item__hour__num, .c-accordion-general .accordion-header__item__hour .accordion-header__item__hour__num {
   font-size: 36px;
   font-family: "Baloo 2", cursive, "Noto Sans TC";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .c-accordion-plan .accordion-body .row, .c-accordion-general .accordion-body .row {
@@ -11759,7 +11781,7 @@ body {
 }
 
 .c-accordion-plan .accordion-body__title, .c-accordion-general .accordion-body__title {
-  padding: 1% 2% 2% 2%;
+  padding: 0.5rem 1.5rem;
   color: #8495A4;
 }
 
@@ -11769,6 +11791,10 @@ body {
 
 .c-accordion-plan .accordion-body__item, .c-accordion-general .accordion-body__item {
   padding: 1.5rem;
+}
+
+.c-accordion-plan .is-arrow-active, .c-accordion-general .is-arrow-active {
+  border-radius: 0.666rem 0.666rem 0 0;
 }
 
 .c-accordion-general {
@@ -11791,6 +11817,14 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.c-accordion-general .row .s1 {
+  width: 12.3333333333%;
+}
+
+.c-accordion-general .row .s3 {
+  width: 19%;
 }
 
 .is-accordion-active {
@@ -11871,7 +11905,7 @@ body {
 
 .c-toast-uploadFailure .c-toast-body__item__title {
   padding-bottom: 3%;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #D2DAE0;
 }
 
 .c-toast-uploadFailure .c-toast-body__item__content {
@@ -12017,7 +12051,7 @@ body {
 .c-general .c-general__title h3 {
   font-size: 22px;
   font-weight: 700;
-  margin: 0.8rem 0 0.8rem 0;
+  margin: 1rem 0 1rem 0;
 }
 
 .c-general .c-general__img {
@@ -12136,7 +12170,7 @@ body {
   width: 41%;
   height: 40%;
   padding: 1rem;
-  border-radius: 0.66rem;
+  border-radius: 1.33rem;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   background-color: #fff;
@@ -12146,8 +12180,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #8495A4;
-  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #D2DAE0;
+  padding-bottom: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -12185,6 +12219,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  height: auto;
 }
 
 .c-modal .c-modal-footer button, .c-modal-systemDialog .c-modal-footer button, .c-modal-alert .c-modal-footer button, .c-modal-chooseGroup .c-modal-footer button, .c-modal-addGroup .c-modal-footer button, .c-modal-usuallyUseMember .c-modal-footer button, .c-modal-sample .c-modal-footer button {
@@ -12196,6 +12231,10 @@ body {
   height: 30vh;
 }
 
+.c-modal-alert .c-modal-content, .c-modal-alert .c-modal-alert__content .c-modal-content__scroll {
+  padding: 0.8rem 0 1.333rem 0;
+}
+
 .c-modal-alert .c-modal-alert__content {
   height: 100%;
   display: -webkit-box;
@@ -12203,6 +12242,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 0.5rem 1.5rem;
 }
 
 .c-modal-alert .c-modal-alert__content div {
@@ -12233,16 +12273,22 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-bottom: 0;
 }
 
 .c-modal-alert-scroll {
   height: 40vh;
 }
 
+.c-modal-alert-scroll .c-modal-footer {
+  height: auto;
+}
+
 .c-modal-chooseGroup {
-  width: 80%;
+  width: 85%;
   overflow: hidden;
-  height: 75vh;
+  height: 80vh;
+  padding: 1rem 2rem;
 }
 
 .c-modal-chooseGroup .c-modal-closeBtn {
@@ -12252,6 +12298,10 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.c-modal-chooseGroup .c-modal-closeBtn button {
+  padding: 0;
 }
 
 .c-modal-chooseGroup .c-modal-btnList {
@@ -12272,6 +12322,7 @@ body {
   display: block;
   height: auto;
   min-height: 40vh;
+  padding: 1rem 0 1rem 0;
 }
 
 .c-modal-chooseGroup .c-modal-content .c-modal-content__input, .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__input, .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__input {
@@ -12298,7 +12349,7 @@ body {
 }
 
 .c-modal-chooseGroup .c-modal-content .c-modal-content__addMember, .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__addMember, .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__addMember {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .c-modal-chooseGroup .c-modal-content .c-modal-content__addMember .addMember-title, .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__addMember .addMember-title, .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__addMember .addMember-title {
@@ -12331,8 +12382,11 @@ body {
 
 .c-modal-chooseGroup .c-modal-content .c-modal-content__addMember .addMember-title button, .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__addMember .addMember-title button, .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__addMember .addMember-title button {
   border-radius: 40px;
-  padding: 0.5rem;
   margin-left: 1.2rem;
+}
+
+.c-modal-chooseGroup .c-modal-content .c-modal-content__addMember .addMember-title button a, .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__addMember .addMember-title button a, .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__addMember .addMember-title button a {
+  padding: 0.5rem;
 }
 
 .c-modal-chooseGroup .c-modal-content .c-modal-content__addMember div, .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__addMember div, .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__addMember div {
@@ -12344,14 +12398,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 10rem;
   overflow-y: scroll;
-  height: calc(75vh - 330px);
+  padding-bottom: 0;
+  height: calc(75vh - 230px);
 }
 
 .c-modal-chooseGroup .c-modal-content .c-modal-content__addMember .c-card-lablePersonL, .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__addMember .c-card-lablePersonL, .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__addMember .c-card-lablePersonL {
@@ -12363,6 +12417,12 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  height: auto;
+}
+
+.c-modal-chooseGroup .c-modal-footer button {
+  margin: 0;
+  margin-right: -0.5rem;
 }
 
 .c-modal-chooseGroup .is-error-status .c-modal-content__input {
@@ -12374,9 +12434,10 @@ body {
 }
 
 .c-modal-addGroup, .c-modal-usuallyUseMember, .c-modal-sample {
-  width: 80%;
+  width: 82%;
   height: 85vh;
   overflow: hidden;
+  padding: 1rem 2rem;
 }
 
 .c-modal-addGroup .c-modal-closeBtn, .c-modal-usuallyUseMember .c-modal-closeBtn, .c-modal-sample .c-modal-closeBtn {
@@ -12403,7 +12464,10 @@ body {
 
 .c-modal-addGroup .c-modal-btnList button, .c-modal-usuallyUseMember .c-modal-btnList button, .c-modal-sample .c-modal-btnList button {
   border-radius: 40px;
-  padding: 0.5rem 0;
+}
+
+.c-modal-addGroup .c-modal-btnList .cross-btn, .c-modal-usuallyUseMember .c-modal-btnList .cross-btn, .c-modal-sample .c-modal-btnList .cross-btn {
+  margin-right: -0.5rem;
 }
 
 .c-modal-addGroup .c-modal-btnList a, .c-modal-usuallyUseMember .c-modal-btnList a, .c-modal-sample .c-modal-btnList a {
@@ -12425,6 +12489,9 @@ body {
   margin-right: calc(75vw - 100px);
   white-space: nowrap;
   min-width: 4rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
 }
 
 .c-modal-addGroup .c-modal-addGroup__content, .c-modal-usuallyUseMember .c-modal-addGroup__content, .c-modal-sample .c-modal-addGroup__content {
@@ -12433,7 +12500,6 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: calc(85vh - 230px);
 }
 
 .c-modal-addGroup .c-modal-addGroup__content .c-modal-addGroup__content__item, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-addGroup__content__item, .c-modal-sample .c-modal-addGroup__content .c-modal-addGroup__content__item {
@@ -12451,7 +12517,12 @@ body {
           align-items: center;
   border-bottom: 1px solid #BAD4E5;
   margin-bottom: 0;
-  padding-bottom: 0.75rem;
+  padding-bottom: 1.5rem;
+  margin-left: 0;
+}
+
+.c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select :nth-child(3), .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select :nth-child(3), .c-modal-sample .c-modal-addGroup__content .c-modal-content__select :nth-child(3) {
+  padding-right: 0.25rem;
 }
 
 .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .o-input input, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .o-input input, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .o-input input, .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .hoursInput input, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .hoursInput input, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .hoursInput input, .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .otherInput input, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .otherInput input, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .otherInput input, .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-search-item__input input, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-search-item__input input, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-search-item__input input {
@@ -12466,9 +12537,22 @@ body {
   color: #FB5B29;
 }
 
+.c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .s6, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .s6, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .s6 {
+  margin: 0;
+}
+
+.c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .s5, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .s5, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .s5 {
+  margin: 0;
+  width: 45.6666666667%;
+}
+
+.c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .col, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .col, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .col {
+  padding-left: 0;
+}
+
 .c-modal-addGroup .c-modal-content, .c-modal-usuallyUseMember .c-modal-content, .c-modal-sample .c-modal-content, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll {
   display: block;
-  height: calc(85vh - 350px);
+  height: calc(85vh - 230px);
   overflow-y: scroll;
   padding-top: 1rem;
 }
@@ -12498,7 +12582,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 0.75rem 1rem 0.75rem;
+  padding: 0 0rem 1rem 0rem;
   border-bottom: 1px solid #BAD4E5;
 }
 
@@ -12548,10 +12632,6 @@ body {
   height: 25px;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__memberList, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList, .c-modal-sample .c-modal-content .c-modal-content__memberList, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList {
-  padding: 0 0.75rem;
-}
-
 .c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__title, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__title, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__title, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__title, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__title, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__title {
   margin: 1rem 0;
   color: #8495A4;
@@ -12577,7 +12657,7 @@ body {
 }
 
 .c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__group .c-card-lablePerson {
-  margin: 0 0 1rem 0.5rem;
+  margin: 0 0 0.5rem 0.5rem;
 }
 
 .c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__group .is-active, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__group .is-active, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__group .is-active, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group .is-active, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__group .is-active, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group .is-active, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__group .is-active, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group .is-active, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__group .is-active {
@@ -12585,12 +12665,14 @@ body {
 }
 
 .c-modal-addGroup .c-modal-footer, .c-modal-usuallyUseMember .c-modal-footer, .c-modal-sample .c-modal-footer {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-bottom: 1rem;
+}
+
+.c-modal-addGroup .c-modal-footer button, .c-modal-usuallyUseMember .c-modal-footer button, .c-modal-sample .c-modal-footer button {
+  margin: 0;
 }
 
 .c-modal-addGroup .is-error-status .c-modal-content__select .input-title, .c-modal-usuallyUseMember .is-error-status .c-modal-content__select .input-title, .c-modal-sample .is-error-status .c-modal-content__select .input-title {
@@ -12617,18 +12699,18 @@ body {
   min-height: 580px;
   max-width: 880px;
   overflow: hidden;
-  border-radius: 0.66rem;
+  border-radius: 1.33rem;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   background-color: #fff;
 }
 
 .c-modal-personAll .c-modal-content__sidebar, .c-modal-personCalendar .c-modal-content__sidebar, .c-modal-department .c-modal-content__sidebar {
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 2rem;
   background-color: #F7FBFF;
   height: 100%;
   overflow-y: scroll;
-  border-radius: 0.66rem;
+  border-radius: 1.33rem 0 0 1.33rem;
 }
 
 .c-modal-personAll .c-modal-content__sidebar__user .user__name, .c-modal-personCalendar .c-modal-content__sidebar__user .user__name, .c-modal-department .c-modal-content__sidebar__user .user__name, .c-modal-department .c-modal-content__sidebar .c-modal-content__sidebar__user .user__department {
@@ -12665,7 +12747,7 @@ body {
 .c-modal-personAll .c-modal-content__sidebar__months .sidebar__months__item .item__years, .c-modal-personCalendar .c-modal-content__sidebar__months .sidebar__months__item .item__years, .c-modal-department .c-modal-content__sidebar__months .sidebar__months__item .item__years, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__years, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projectsTitle {
   font-size: 1.06rem;
   font-weight: 700;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .c-modal-personAll .c-modal-content__sidebar__months .sidebar__months__item .item__months, .c-modal-personCalendar .c-modal-content__sidebar__months .sidebar__months__item .item__months, .c-modal-department .c-modal-content__sidebar__months .sidebar__months__item .item__months, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__months, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projects {
@@ -12701,8 +12783,32 @@ body {
   padding: 1rem;
 }
 
+.c-modal-personAll .c-modal-content__calendar #plan .c-modal-content__list__title, .c-modal-personCalendar .c-modal-content__calendar #plan .c-modal-content__list__title, .c-modal-department .c-modal-content__calendar #plan .c-modal-content__list__title {
+  padding-bottom: 0.5rem;
+}
+
+.c-modal-personAll .c-modal-content__calendar #plan .collapsible-header, .c-modal-personCalendar .c-modal-content__calendar #plan .collapsible-header, .c-modal-department .c-modal-content__calendar #plan .collapsible-header {
+  height: 4.2rem;
+}
+
+.c-modal-personAll .c-modal-content__calendar #plan .c-accordion-plan, .c-modal-personCalendar .c-modal-content__calendar #plan .c-accordion-plan, .c-modal-department .c-modal-content__calendar #plan .c-accordion-plan, .c-modal-personAll .c-modal-content__calendar #plan .c-accordion-general, .c-modal-personCalendar .c-modal-content__calendar #plan .c-accordion-general, .c-modal-department .c-modal-content__calendar #plan .c-accordion-general {
+  margin-bottom: 0.5rem;
+}
+
+.c-modal-personAll .c-modal-content__calendar #plan .header__item__title, .c-modal-personCalendar .c-modal-content__calendar #plan .header__item__title, .c-modal-department .c-modal-content__calendar #plan .header__item__title {
+  line-height: 1.6rem;
+}
+
+.c-modal-personAll .c-modal-content__calendar #plan .accordion-body, .c-modal-personCalendar .c-modal-content__calendar #plan .accordion-body, .c-modal-department .c-modal-content__calendar #plan .accordion-body {
+  padding-bottom: 0.2rem;
+}
+
+.c-modal-personAll .c-modal-content__calendar #plan .accordion-header__item__hour__num, .c-modal-personCalendar .c-modal-content__calendar #plan .accordion-header__item__hour__num, .c-modal-department .c-modal-content__calendar #plan .accordion-header__item__hour__num {
+  width: 4.2rem;
+}
+
 .c-modal-personAll .c-modal-content__calendar .c-modal-content__calendar__content, .c-modal-personCalendar .c-modal-content__calendar .c-modal-content__calendar__content, .c-modal-department .c-modal-content__calendar .c-modal-content__calendar__content {
-  height: 75vh;
+  height: 500px;
   overflow-y: scroll;
 }
 
@@ -12741,6 +12847,7 @@ body {
 
 .c-modal-personAll .c-modal-content__list, .c-modal-personCalendar .c-modal-content__list, .c-modal-department .c-modal-content__list {
   margin-bottom: 5%;
+  padding: 0 0.2rem;
 }
 
 .c-modal-personAll .c-modal-content__list .c-accordion-plan .accordion-header__item .header__item__title, .c-modal-personCalendar .c-modal-content__list .c-accordion-plan .accordion-header__item .header__item__title, .c-modal-department .c-modal-content__list .c-accordion-plan .accordion-header__item .header__item__title, .c-modal-personAll .c-modal-content__list .c-accordion-general .accordion-header__item .header__item__title, .c-modal-personCalendar .c-modal-content__list .c-accordion-general .accordion-header__item .header__item__title, .c-modal-department .c-modal-content__list .c-accordion-general .accordion-header__item .header__item__title {
@@ -12794,6 +12901,10 @@ body {
   overflow-y: scroll;
 }
 
+.c-modal-department .c-modal-content__list .accordion-body {
+  padding-bottom: 0.2rem;
+}
+
 .c-modal-department .c-modal-content__list .accordion-header__item .header__item__departmentNum {
   margin-right: 1.5rem;
 }
@@ -12810,6 +12921,7 @@ body {
   white-space: normal;
   width: auto;
   line-height: 1.5rem;
+  text-align: left;
   padding: 0.8rem 0.5rem;
 }
 
@@ -12826,6 +12938,18 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
   background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
   color: #fff;
+}
+
+.c-modal-department .accordion-header__item__hour__num {
+  width: 4.2rem;
+}
+
+.c-modal-department .collapsible-body {
+  padding-bottom: 0;
+}
+
+.c-modal-department .c-accordion-plan, .c-modal-department .c-accordion-general {
+  margin-bottom: 0.5rem;
 }
 
 .c-modal-usuallyUseMember, .c-modal-sample {
@@ -12849,6 +12973,7 @@ body {
 .c-modal-usuallyUseMember .c-modal-content__title, .c-modal-sample .c-modal-content__title {
   font-size: 22px;
   margin-top: -1rem;
+  margin-left: 1.33rem;
   color: #042340;
   font-weight: 700;
   font-family: "Noto Sans TC", "sans-serif";
@@ -12857,7 +12982,7 @@ body {
 
 .c-modal-usuallyUseMember .c-modal-content, .c-modal-sample .c-modal-content, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll {
   width: 100%;
-  height: 50vh;
+  height: 65vh;
 }
 
 .c-modal-usuallyUseMember .c-accordion-group, .c-modal-sample .c-accordion-group, .c-modal-usuallyUseMember .c-accordion-plan, .c-modal-sample .c-accordion-plan, .c-modal-usuallyUseMember .c-accordion-general, .c-modal-sample .c-accordion-general {
@@ -12873,6 +12998,10 @@ body {
 .c-modal-usuallyUseMember .c-modal-content__item .c-accordion-group, .c-modal-sample .c-modal-content__item .c-accordion-group, .c-modal-usuallyUseMember .c-modal-content__item .c-accordion-plan, .c-modal-sample .c-modal-content__item .c-accordion-plan, .c-modal-usuallyUseMember .c-modal-content__item .c-accordion-general, .c-modal-sample .c-modal-content__item .c-accordion-general {
   width: 90%;
   margin: 1rem auto;
+}
+
+.c-modal-usuallyUseMember .c-modal-content__item .accordion-body__title, .c-modal-sample .c-modal-content__item .accordion-body__title {
+  padding: 0;
 }
 
 .c-modal-usuallyUseMember .c-modal-footer, .c-modal-sample .c-modal-footer {
@@ -12905,13 +13034,25 @@ body {
 
 .c-modal-select {
   overflow-y: visible;
-  height: 120px;
+  height: 8.666rem;
   min-width: 600px;
 }
 
 .c-modal-select .c-search {
   padding: 0;
   height: 65px;
+}
+
+.c-modal-select .c-dropdown-department {
+  min-width: 20rem;
+}
+
+.c-modal-select .c-search-item__title, .c-modal-select #memberstime .c-search-item__departmentTitle, #memberstime .c-modal-select .c-search-item__departmentTitle, .c-modal-select #departmenttime .c-search-item__departmentTitle, #departmenttime .c-modal-select .c-search-item__departmentTitle, .c-modal-select #universalPlan .c-search-item__departmentTitle, #universalPlan .c-modal-select .c-search-item__departmentTitle {
+  margin-left: 0;
+}
+
+.c-modal-select .c-modal-alert__content {
+  margin-top: -1rem;
 }
 
 .c-dropdown-plan .select-wrapper, .c-dropdown-planContent .select-wrapper, .c-dropdown-status .select-wrapper, .c-dropdown-general .select-wrapper, .c-dropdown-department .select-wrapper, .c-dropdown-departmentCheck .select-wrapper {
@@ -12934,7 +13075,7 @@ body {
 
 .c-dropdown-plan .select-wrapper .select-dropdown, .c-dropdown-planContent .select-wrapper .select-dropdown, .c-dropdown-status .select-wrapper .select-dropdown, .c-dropdown-general .select-wrapper .select-dropdown, .c-dropdown-department .select-wrapper .select-dropdown, .c-dropdown-departmentCheck .select-wrapper .select-dropdown {
   border-bottom: 0px;
-  font-size: 1.06rem;
+  font-size: 14px;
   margin: 0;
   padding-left: 10px;
   padding-top: 4px;
@@ -12949,6 +13090,7 @@ body {
 
 .c-dropdown-plan .select-wrapper .select-dropdown li:first-child, .c-dropdown-planContent .select-wrapper .select-dropdown li:first-child, .c-dropdown-status .select-wrapper .select-dropdown li:first-child, .c-dropdown-general .select-wrapper .select-dropdown li:first-child, .c-dropdown-department .select-wrapper .select-dropdown li:first-child, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li:first-child {
   border-top: 0;
+  padding-top: 0;
 }
 
 .c-dropdown-plan .select-wrapper .select-dropdown li:last-child, .c-dropdown-planContent .select-wrapper .select-dropdown li:last-child, .c-dropdown-status .select-wrapper .select-dropdown li:last-child, .c-dropdown-general .select-wrapper .select-dropdown li:last-child, .c-dropdown-department .select-wrapper .select-dropdown li:last-child, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li:last-child {
@@ -12961,8 +13103,9 @@ body {
 
 .c-dropdown-plan .select-wrapper .select-dropdown .optgroup, .c-dropdown-planContent .select-wrapper .select-dropdown .optgroup, .c-dropdown-status .select-wrapper .select-dropdown .optgroup, .c-dropdown-general .select-wrapper .select-dropdown .optgroup, .c-dropdown-department .select-wrapper .select-dropdown .optgroup, .c-dropdown-departmentCheck .select-wrapper .select-dropdown .optgroup {
   padding-left: 0;
-  padding-top: 0.66rem;
+  padding-top: 1.5rem;
   border: 0;
+  font-size: 1.06rem;
 }
 
 .c-dropdown-plan .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-planContent .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-status .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-general .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-department .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-departmentCheck .select-wrapper .select-dropdown .optgroup:hover {
@@ -12991,7 +13134,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 1.06rem;
+  font-size: 14px;
   color: #042340;
   padding: 0;
   font-weight: 400;
@@ -13267,7 +13410,7 @@ body {
 }
 
 .c-datePicker .c-datePicker__input, .c-datePicker-day .c-datePicker__input, .c-datePicker-days .c-datePicker__input, .c-datePicker-months .c-datePicker__input, .c-datePicker-month .c-datePicker__input {
-  width: 25%;
+  width: auto;
 }
 
 .c-datePicker .c-datePicker__modal, .c-datePicker-day .c-datePicker__modal, .c-datePicker-days .c-datePicker__modal, .c-datePicker-months .c-datePicker__modal, .c-datePicker-month .c-datePicker__modal {
@@ -13573,7 +13716,7 @@ body {
   width: 72px;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  border-radius: 5px;
+  border-radius: 0.66rem;
   padding: 0.8rem 0.8rem 0.8rem 0.8rem;
 }
 
@@ -13673,6 +13816,7 @@ body {
 
 .c-popover-perspective .c-popover__content .c-popover__text, .c-popover-information .c-popover__content .c-popover__text {
   margin-bottom: 1.5rem;
+  margin-top: -0.4rem;
 }
 
 .c-popover-perspective .c-popover__content .c-popover__text div, .c-popover-information .c-popover__content .c-popover__text div {
@@ -13696,6 +13840,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 0.5rem;
+}
+
+.c-popover-perspective .c-popover__content .c-popover__footer .pop-confirm-btn .o-btn-primary, .c-popover-information .c-popover__content .c-popover__footer .pop-confirm-btn .o-btn-primary {
+  padding: 0.5rem 1.2rem;
 }
 
 .c-popover-perspective .c-popover__content .c-popover__footer .pop-confirm-btn a, .c-popover-information .c-popover__content .c-popover__footer .pop-confirm-btn a {
@@ -13736,6 +13885,7 @@ body {
           justify-content: start;
   border-bottom: 1px solid #E2F1FE;
   padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .c-popover-information .c-popover__content .c-popover__text div:last-child {
@@ -13802,7 +13952,7 @@ body {
   background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
   width: 100%;
   height: 10px;
-  margin-left: -10%;
+  margin-left: -1rem;
   border-radius: 5px;
 }
 
@@ -13858,13 +14008,17 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   border-bottom: 1px solid #042340;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .c-writeHours-title__item .c-writeHours-title__item__hours .text {
   font-size: 12px;
-  margin-bottom: 10%;
+  margin-bottom: 0.5rem;
   font-family: "Noto Sans TC", "sans-serif";
-  line-height: 120%;
+  line-height: 1rem;
+  white-space: nowrap;
 }
 
 .c-writeHours-title__item .c-writeHours-title__item__hours .hours {
@@ -13877,7 +14031,7 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   font-weight: 700;
-  padding-left: 20%;
+  padding-left: 1rem;
 }
 
 .c-writeHours-title__item .c-writeHours-title__item__hours .hours span {
@@ -14361,7 +14515,7 @@ body {
 }
 
 .o-calendar .o-calendar__week__item .item__date .item__date__num {
-  padding: 0.25rem;
+  padding: 0.4rem;
   margin: 0.3rem;
   position: absolute;
   font-size: 1.06rem;
@@ -14435,7 +14589,7 @@ body {
   content: "";
   position: absolute;
   width: 20px;
-  height: 20px;
+  height: 1.66rem;
   right: 0;
   top: 0;
   margin-right: 0.5rem;
@@ -14527,8 +14681,9 @@ body {
 }
 
 .is-today {
-  background-color: #E2F1FE;
+  background-color: #0156A2;
   border-radius: 50%;
+  color: #fff;
 }
 
 .text-danger {
@@ -14618,8 +14773,7 @@ body {
 }
 
 .c-modal-content__sidebar__timearea {
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
+  margin-top: 4rem;
 }
 
 .c-modal-content__sidebar__timearea .o-btn-primary {
@@ -14640,6 +14794,7 @@ body {
 .c-modal-content__highchart__title .c-card-chart .c-card-chart__header {
   background-color: #042340;
   text-align: center;
+  border-radius: 0.5rem 0.5rem 0 0;
   padding: 0.5rem 0;
   color: #fff;
 }
@@ -14656,6 +14811,11 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 0.3rem;
+}
+
+.c-modal-content__highchart__title .c-card-chart .c-card-chart__body .chart__body__item:first-child {
+  padding-bottom: 0.2rem;
+  padding-top: 0.1rem;
 }
 
 .c-modal-content__highchart {
@@ -14759,11 +14919,11 @@ body {
 }
 
 .l-main-content .l-main-content-list div .c-popover__content::before {
-  left: 93%;
+  left: 90%;
 }
 
 .l-main-content .l-main-content-list div .c-popover__content::after {
-  left: 93%;
+  left: 90%;
 }
 
 .l-main-content .l-main-content-list div button {
@@ -14798,7 +14958,7 @@ body {
 }
 
 .l-main-content .l-main-content-item .c-card-planPerson, .l-main-content .l-main-content-item .c-card-planClosed, .l-main-content .l-main-content-item .c-card-planHotkey, .l-main-content .l-main-content-item .c-card-planReport, .l-main-content .l-main-content-item .c-card-planReport-danger, .l-main-content .l-main-content-item .c-card-alertPlan {
-  margin: 0 0.5rem 2.5rem 0.5rem;
+  margin: 0 0.5rem 1rem 0.5rem;
   max-width: 300px;
 }
 
@@ -14826,7 +14986,7 @@ body {
 .change-card-to-list .l-main-content-item .l-main-content-item__listTitle {
   display: block;
   background-color: #E2F1FE;
-  padding: 20px 0px 20px 3rem;
+  padding: 20px 0px 20px 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14841,11 +15001,11 @@ body {
 }
 
 .change-card-to-list .l-main-content-item .l-main-content-item__listTitle .listTitle__num {
-  width: 20%;
+  width: 15%;
 }
 
 .change-card-to-list .l-main-content-item .l-main-content-item__listTitle .listTitle__name {
-  width: 60%;
+  width: 65%;
 }
 
 .change-card-to-list .l-main-content-item .l-main-content-item__listTitle .listTitle__position {
@@ -14895,7 +15055,7 @@ body {
 }
 
 .change-card-to-list .l-main-content-item .c-card-planPerson .c-card__tag, .change-card-to-list .l-main-content-item .c-card-planClosed .c-card__tag, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__tag, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__tag, .change-card-to-list .l-main-content-item .c-card-planReport-danger .c-card__tag, .change-card-to-list .l-main-content-item .c-card-alertPlan .c-card__tag {
-  width: 20%;
+  width: 15%;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14911,10 +15071,11 @@ body {
   padding: 0;
   font-size: 1.06rem;
   font-family: "Noto Sans TC", "sans-serif";
+  font-weight: 400;
 }
 
 .change-card-to-list .l-main-content-item .c-card-planPerson h2, .change-card-to-list .l-main-content-item .c-card-planClosed h2, .change-card-to-list .l-main-content-item .c-card-planHotkey h2, .change-card-to-list .l-main-content-item .c-card-planReport h2, .change-card-to-list .l-main-content-item .c-card-planReport-danger h2, .change-card-to-list .l-main-content-item .c-card-alertPlan h2 {
-  width: 60%;
+  width: 65%;
   font-weight: 400;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -14925,13 +15086,11 @@ body {
   max-height: 56px;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  line-height: 2.1333rem;
 }
 
 .change-card-to-list .l-main-content-item .c-card-planPerson a, .change-card-to-list .l-main-content-item .c-card-planClosed a, .change-card-to-list .l-main-content-item .c-card-planHotkey a, .change-card-to-list .l-main-content-item .c-card-planReport a, .change-card-to-list .l-main-content-item .c-card-planReport-danger a, .change-card-to-list .l-main-content-item .c-card-alertPlan a {
-  padding: 1.33rem 0rem 20px 1.33rem;
+  padding: 0.83rem 0rem 0.83rem 1.33rem;
 }
 
 .change-card-to-list .l-main-content-item .c-card-planPerson .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-planClosed .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-planReport-danger .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-alertPlan .c-card__userInformation {
@@ -14968,6 +15127,42 @@ body {
   font-family: "Noto Sans TC", "sans-serif";
 }
 
+#worklist_wbs .l-main-content-table .table-thead .row :nth-child(4) {
+  width: 12.6666666667%;
+}
+
+#worklist_wbs .l-main-content-table .table-thead .row :nth-child(5) {
+  width: 12.6666666667%;
+}
+
+#worklist_wbs .l-main-content-table .table-thead .row :nth-child(6) {
+  width: 33%;
+}
+
+#worklist_wbs .l-main-content-table .table-body .table-body-subtitle :nth-child(4) {
+  width: 12.6666666667%;
+}
+
+#worklist_wbs .l-main-content-table .table-body .table-body-subtitle :nth-child(5) {
+  width: 12.6666666667%;
+}
+
+#worklist_wbs .l-main-content-table .table-body .table-body-subtitle :nth-child(6) {
+  width: 33%;
+}
+
+#worklist_wbs .l-main-content-table .table-body .table-body-item :nth-child(4) {
+  width: 12.6666666667%;
+}
+
+#worklist_wbs .l-main-content-table .table-body .table-body-item :nth-child(5) {
+  width: 12.6666666667%;
+}
+
+#worklist_wbs .l-main-content-table .table-body .table-body-item :nth-child(6) {
+  width: 33%;
+}
+
 .l-main-content-title .l-main-content-text-sm, .l-main-content .l-main-content-data .l-main-content-text-sm, .l-main-content .l-main-content-between-title .l-main-content-text-sm {
   font-size: 1.06rem;
   font-family: "Noto Sans TC", "sans-serif";
@@ -14995,6 +15190,22 @@ body {
   right: 20px;
 }
 
+#worklist .table-thead .row :nth-child(1) {
+  width: 12.6666666667%;
+}
+
+#worklist .table-thead .row :nth-child(2) {
+  width: 29%;
+}
+
+#worklist .table-body .row :nth-child(1) {
+  width: 12.6666666667%;
+}
+
+#worklist .table-body .row :nth-child(2) {
+  width: 29%;
+}
+
 .l-main-content__lableGroup {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15004,7 +15215,48 @@ body {
 }
 
 .l-main-content__lableGroup .c-card-lableGroup {
-  margin: 0.1rem 0 1rem 0.5rem;
+  margin: 0.3rem 0 0.5rem 0.5rem;
+}
+
+.l-main-content-projectOverview .table-thead .row :nth-child(1) {
+  width: 5.3333333333%;
+}
+
+.l-main-content-projectOverview .table-thead .row :nth-child(2) {
+  width: 12.6666666667%;
+}
+
+.l-main-content-projectOverview .table-thead .row :nth-child(3) {
+  width: 5.3333333333%;
+}
+
+.l-main-content-projectOverview .table-thead .row :nth-child(4) {
+  width: 43.3333333333%;
+}
+
+.l-main-content-projectOverview .table-body .row :nth-child(1) {
+  width: 5.3333333333%;
+}
+
+.l-main-content-projectOverview .table-body .row :nth-child(2) {
+  width: 12.6666666667%;
+}
+
+.l-main-content-projectOverview .table-body .row :nth-child(3) {
+  width: 5.3333333333%;
+  white-space: nowrap;
+}
+
+.l-main-content-projectOverview .table-body .row :nth-child(4) {
+  width: 43.3333333333%;
+}
+
+.l-main-content-projectOverview .table-body .row .o-tag, .l-main-content-projectOverview .table-body .row .o-tag-danger {
+  width: auto;
+}
+
+.l-main-content-projectOverview .table-body .row .table-body__tag-item div {
+  width: auto;
 }
 
 #WBS .l-main-content .l-main-content__wbslist .table-thead .row .s1, #WBS .l-main-content .l-main-content__workTypelist .table-thead .row .s1 {
@@ -15030,9 +15282,79 @@ body {
   margin-top: 1rem;
 }
 
+#WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem {
+  height: 4rem;
+}
+
 #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__project, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__project {
   margin: 1rem 0.5rem;
   height: 2.5rem;
+}
+
+#WBS .l-main-content .l-main-content__wbslist .table-footer, #WBS .l-main-content .l-main-content__workTypelist .table-footer {
+  padding: 1rem 0 1rem 0;
+}
+
+#WBS .l-main-content .l-main-content__wbslist .is-error-status-item .o-input-div, #WBS .l-main-content .l-main-content__workTypelist .is-error-status-item .o-input-div {
+  background-color: #fff;
+}
+
+#WBS .l-main-content .l-main-content__wbslist .c-dropdown-member .c-dropdown__input .o-input-div, #WBS .l-main-content .l-main-content__workTypelist .c-dropdown-member .c-dropdown__input .o-input-div {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#WBS .l-main-content .l-main-content__wbslist .c-dropdown-member .c-dropdown__input .o-input-div::after, #WBS .l-main-content .l-main-content__workTypelist .c-dropdown-member .c-dropdown__input .o-input-div::after {
+  background-image: url(../img/o-arrowDown.svg);
+}
+
+#WBS .l-main-content .l-main-content__wbslist .c-dropdown-member .c-dropdown__input::after, #WBS .l-main-content .l-main-content__workTypelist .c-dropdown-member .c-dropdown__input::after {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  z-index: -1;
+}
+
+#introduction .l-main-content__upload .row :nth-child(1) {
+  width: 75.6666666667%;
+}
+
+#introduction .l-main-content__upload .row :nth-child(1) img {
+  width: 2.4rem;
+}
+
+#introduction .l-main-content__upload .row :nth-child(3) {
+  width: 9.6666666667%;
+}
+
+#introduction .l-main-content__upload .row :nth-child(4) {
+  margin: 0;
+}
+
+#introduction .l-main-content__upload .row button {
+  width: 2.2rem;
+}
+
+#introduction .l-main-content__upload .row button :nth-child(1) {
+  width: auto;
+}
+
+#introduction .l-main-content__planlist .table-thead .row .col div, #introduction .l-main-content .l-main-content__wbslist .table-thead .row .col div, .l-main-content #introduction .l-main-content__wbslist .table-thead .row .col div, #introduction .l-main-content .l-main-content__workTypelist .table-thead .row .col div, .l-main-content #introduction .l-main-content__workTypelist .table-thead .row .col div, #introduction .l-main-content__statisticsPlan .table-thead .row .col div {
+  width: auto;
+}
+
+#introduction .l-main-content__planlist .table-body .row .col div, #introduction .l-main-content .l-main-content__wbslist .table-body .row .col div, .l-main-content #introduction .l-main-content__wbslist .table-body .row .col div, #introduction .l-main-content .l-main-content__workTypelist .table-body .row .col div, .l-main-content #introduction .l-main-content__workTypelist .table-body .row .col div, #introduction .l-main-content__statisticsPlan .table-body .row .col div {
+  width: auto;
+}
+
+#introduction .l-main-content__planlist .table-body .c-popover-checkPoint .c-popover__content, #introduction .l-main-content .l-main-content__wbslist .table-body .c-popover-checkPoint .c-popover__content, .l-main-content #introduction .l-main-content__wbslist .table-body .c-popover-checkPoint .c-popover__content, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-popover-checkPoint .c-popover__content, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-popover-checkPoint .c-popover__content, #introduction .l-main-content__statisticsPlan .table-body .c-popover-checkPoint .c-popover__content, #introduction .l-main-content__planlist .table-body .c-popover-filterS .c-popover__content, #introduction .l-main-content .l-main-content__wbslist .table-body .c-popover-filterS .c-popover__content, .l-main-content #introduction .l-main-content__wbslist .table-body .c-popover-filterS .c-popover__content, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-popover-filterS .c-popover__content, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-popover-filterS .c-popover__content, #introduction .l-main-content__statisticsPlan .table-body .c-popover-filterS .c-popover__content, #introduction .l-main-content__planlist .table-body .c-popover-filterM .c-popover__content, #introduction .l-main-content .l-main-content__wbslist .table-body .c-popover-filterM .c-popover__content, .l-main-content #introduction .l-main-content__wbslist .table-body .c-popover-filterM .c-popover__content, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-popover-filterM .c-popover__content, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-popover-filterM .c-popover__content, #introduction .l-main-content__statisticsPlan .table-body .c-popover-filterM .c-popover__content, #introduction .l-main-content__planlist .table-body .c-popover-filterL .c-popover__content, #introduction .l-main-content .l-main-content__wbslist .table-body .c-popover-filterL .c-popover__content, .l-main-content #introduction .l-main-content__wbslist .table-body .c-popover-filterL .c-popover__content, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-popover-filterL .c-popover__content, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-popover-filterL .c-popover__content, #introduction .l-main-content__statisticsPlan .table-body .c-popover-filterL .c-popover__content, #introduction .l-main-content__planlist .table-body .c-popover-wbsEdit .c-popover__content, #introduction .l-main-content .l-main-content__wbslist .table-body .c-popover-wbsEdit .c-popover__content, .l-main-content #introduction .l-main-content__wbslist .table-body .c-popover-wbsEdit .c-popover__content, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-popover-wbsEdit .c-popover__content, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-popover-wbsEdit .c-popover__content, #introduction .l-main-content__statisticsPlan .table-body .c-popover-wbsEdit .c-popover__content, #introduction .l-main-content__planlist .table-body .c-popover-perspective .c-popover__content, #introduction .l-main-content .l-main-content__wbslist .table-body .c-popover-perspective .c-popover__content, .l-main-content #introduction .l-main-content__wbslist .table-body .c-popover-perspective .c-popover__content, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-popover-perspective .c-popover__content, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-popover-perspective .c-popover__content, #introduction .l-main-content__statisticsPlan .table-body .c-popover-perspective .c-popover__content, #introduction .l-main-content__planlist .table-body .c-popover-information .c-popover__content, #introduction .l-main-content .l-main-content__wbslist .table-body .c-popover-information .c-popover__content, .l-main-content #introduction .l-main-content__wbslist .table-body .c-popover-information .c-popover__content, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-popover-information .c-popover__content, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-popover-information .c-popover__content, #introduction .l-main-content__statisticsPlan .table-body .c-popover-information .c-popover__content {
+  margin-bottom: 0.5rem;
+}
+
+#types .l-main-content__workTypelist .table-thead {
+  padding: 0.6rem 0 0.6rem 0;
+}
+
+#types .l-main-content__workTypelist .table-footer {
+  padding: 1rem 0 1rem 0;
 }
 
 .l-main-content-title, .l-main-content .l-main-content-data, .l-main-content .l-main-content-between-title {
@@ -15062,7 +15384,7 @@ body {
 
 #todo .c-popover-information .c-popover__content::before {
   left: 90px;
-  margin-top: -118px;
+  margin-top: -135px;
 }
 
 #todo .c-popover-information .c-popover__content::after {
@@ -15108,6 +15430,48 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport, #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger, #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan {
+  height: 4rem;
+}
+
+#todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__footer .list__item__title .list__item__percent, #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .list__item__title .list__item__percent, #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .list__item__title .list__item__percent {
+  width: 100px;
+}
+
+#todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__footer .list__item__title .list__item__percent span, #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .list__item__title .list__item__percent span, #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .list__item__title .list__item__percent span {
+  padding: 0;
+}
+
+#todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent, #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent, #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent {
+  width: 100px;
+}
+
+#todo .change-card-to-list .l-main-content-item__listGroup {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+#todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__title .c-card__tag__num .c-card__tag__status, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__title .c-card__tag__num .c-card__tag__status, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__content .c-card__tag__num .c-card__tag__status, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__content .c-card__tag__num .c-card__tag__status, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__tag__num .c-card__tag__status, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__tag__num .c-card__tag__status {
+  background: #fff;
+  color: #042340;
+}
+
+#todo .change-card-to-list .l-main-content-item__listTitle {
+  line-height: 1.5rem;
+  height: 4rem;
+  padding: 0.6rem 0px 0.6rem 4.4rem;
+}
+
+#todo .change-card-to-list .l-main-content-item__listTitle div {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 #todo .list-width {
@@ -15411,9 +15775,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 #todo .change-card-to-list .c-card-planReport-danger .c-card__item__title .c-card__tag .c-card__tag__num .c-card__tag__input, #todo .change-card-to-list .c-card-alertPlan .c-card__item__title .c-card__tag .c-card__tag__num .c-card__tag__input, #todo .change-card-to-list .c-card-planReport-danger .c-card__item__content .c-card__tag .c-card__tag__num .c-card__tag__input, #todo .change-card-to-list .c-card-alertPlan .c-card__item__content .c-card__tag .c-card__tag__num .c-card__tag__input, #todo .change-card-to-list .c-card-planReport-danger .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__tag__input, #todo .change-card-to-list .c-card-alertPlan .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__tag__input {
@@ -15448,7 +15812,7 @@ body {
 }
 
 #complete .l-main-content-item__listTitle {
-  padding: 20px 2rem;
+  height: 4rem;
 }
 
 #complete .l-main-content-item__listTitle .listTitle__num {
@@ -15477,7 +15841,7 @@ body {
 }
 
 #complete .change-card-to-list .c-card-planClosed {
-  padding: 20px 2rem;
+  height: 4rem;
 }
 
 #complete .change-card-to-list .c-card-planClosed .c-card__tag {
@@ -15522,6 +15886,7 @@ body {
 
 #complete .change-card-to-list .c-card-planClosed .c-card__userInformation .c-card__userInformation__sale {
   width: 50%;
+  padding-left: 0.5rem;
 }
 
 #complete .change-card-to-list .c-card-planClosed .c-card__userInformation .c-card__userInformation__sale span {
@@ -15573,6 +15938,7 @@ body {
 
 #safe .c-modal-content p span, #safe .c-modal-alert .c-modal-alert__content .c-modal-content__scroll p span, .c-modal-alert .c-modal-alert__content #safe .c-modal-content__scroll p span {
   color: #0156A2;
+  font-weight: 700;
 }
 
 #safe .c-modal-content .c-modal-content__inputList, #safe .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__inputList, .c-modal-alert .c-modal-alert__content #safe .c-modal-content__scroll .c-modal-content__inputList {
@@ -15599,6 +15965,498 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-bottom: 8px;
+}
+
+#alertPlen .l-main-tabs {
+  margin-bottom: 5px;
+}
+
+#alertPlen .c-popover-information .c-popover__content {
+  left: -280px;
+  padding: 1rem;
+}
+
+#alertPlen .c-popover-information .c-popover__content::before {
+  left: 90px;
+  margin-top: -135px;
+}
+
+#alertPlen .c-popover-information .c-popover__content::after {
+  left: 90.5px;
+}
+
+#alertPlen .c-popover-information .c-popover__text {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 0.93rem;
+  left: -280px;
+  padding: 0;
+}
+
+#alertPlen .c-popover-filterL .c-popover__content {
+  left: -170px;
+  width: 200px;
+}
+
+#alertPlen .c-datePicker__modal .c-datePicker__yearPicker button {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+#alertPlen .c-card-planReport, #alertPlen .c-card-planReport-danger, #alertPlen .c-card-alertPlan {
+  min-width: 879px;
+  max-width: 1000px;
+  width: auto;
+}
+
+#alertPlen .c-card-planReport-danger, #alertPlen .c-card-alertPlan {
+  min-width: 879px;
+  max-width: 1000px;
+  width: auto;
+}
+
+#alertPlen .l-main-content-item__listGroup {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan {
+  height: 4rem;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__item__content__list .list__item, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__item__content__list .list__item, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__item__content__list .list__item, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item {
+  padding: 0;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__item__content__list .list__item .list__item__num, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__item__content__list .list__item .list__item__num, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__item__content__list .list__item .list__item__num, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item .list__item__num, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item .list__item__num, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item .list__item__num {
+  padding: 0;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__item__content__list .list__item .list__item__num span, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__item__content__list .list__item .list__item__num span, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__item__content__list .list__item .list__item__num span, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item .list__item__num span, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item .list__item__num span, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item .list__item__num span {
+  padding: 0;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__item__content__list .list__item .list__item__percent, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__item__content__list .list__item .list__item__percent, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__item__content__list .list__item .list__item__percent, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent {
+  padding: 0;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__item__content__list .list__item .list__item__percent span, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__item__content__list .list__item .list__item__percent span, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__item__content__list .list__item .list__item__percent span, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent span, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent span, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent span {
+  padding: 0;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__item__content__list .list__item .is-danger span, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__item__content__list .list__item .is-danger span, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__item__content__list .list__item .is-danger span, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item .is-danger span, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item .is-danger span, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item .is-danger span {
+  padding: 0.5rem;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__item__content__list:last-child .list__item__percent, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__item__content__list:last-child .list__item__percent, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__item__content__list:last-child .list__item__percent, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__item__content__list:last-child .list__item__percent, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list:last-child .list__item__percent, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__item__content__list:last-child .list__item__percent {
+  width: 100px;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__title .c-card__tag, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__title .c-card__tag, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__title .c-card__tag, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__content .c-card__tag, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__content .c-card__tag, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__content .c-card__tag, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__footer .c-card__tag, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__tag, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__tag {
+  padding-left: 2rem;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__footer .list__item__title .list__item__percent, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .list__item__title .list__item__percent, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .list__item__title .list__item__percent {
+  width: 100px;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__text div, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__text div, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__text div {
+  padding: 0;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card__item__title .c-card__tag, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card-planReport .c-card__item__content .c-card__tag, .c-card-planReport #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card__item__content .c-card__tag, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card-planReport-danger .c-card__item__content .c-card__tag, .c-card-planReport-danger #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card__item__content .c-card__tag, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card-alertPlan .c-card__item__content .c-card__tag, .c-card-alertPlan #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card__item__content .c-card__tag, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card-planReport .c-card__item__footer .c-card__tag, .c-card-planReport #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card__item__footer .c-card__tag, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card-planReport-danger .c-card__item__footer .c-card__tag, .c-card-planReport-danger #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card__item__footer .c-card__tag, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card-alertPlan .c-card__item__footer .c-card__tag, .c-card-alertPlan #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card__item__footer .c-card__tag {
+  padding-left: 0;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listTitle div {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 0;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item__listGroup {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__title .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__title .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__content .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__content .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__tag__num .c-card__tag__status {
+  background: #fff;
+  color: #042340;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__title h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__title h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__content h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__content h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer h2 {
+  padding: 0;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__title .c-card__text .c-card__text__startTime, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__title .c-card__text .c-card__text__startTime, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__content .c-card__text .c-card__text__startTime, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__content .c-card__text .c-card__text__startTime, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__text .c-card__text__startTime, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__text .c-card__text__startTime {
+  padding: 0;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .is-changeBackground .c-card__item__title .c-card__tag .c-card__tag__input form span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .is-changeBackground .c-card__item__title .c-card__tag .c-card__tag__input form span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .is-changeBackground .c-card__item__content .c-card__tag .c-card__tag__input form span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .is-changeBackground .c-card__item__content .c-card__tag .c-card__tag__input form span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .is-changeBackground .c-card__item__footer .c-card__tag .c-card__tag__input form span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .is-changeBackground .c-card__item__footer .c-card__tag .c-card__tag__input form span {
+  background: #F7FBFF;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .is-changeBackground .c-card__item__title .c-card__tag .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .is-changeBackground .c-card__item__title .c-card__tag .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .is-changeBackground .c-card__item__content .c-card__tag .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .is-changeBackground .c-card__item__content .c-card__tag .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .is-changeBackground .c-card__item__footer .c-card__tag .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .is-changeBackground .c-card__item__footer .c-card__tag .c-card__tag__num span {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #FB5B29;
+  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #FB5B29;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .is-changeBackground .c-card__item__title .c-card__tag .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .is-changeBackground .c-card__item__title .c-card__tag .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .is-changeBackground .c-card__item__content .c-card__tag .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .is-changeBackground .c-card__item__content .c-card__tag .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .is-changeBackground .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .is-changeBackground .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__tag__status {
+  background: #F7FBFF;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__title h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__title h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__title h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__content h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__content h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__content h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__footer h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer h2 {
+  padding: 0;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item__listTitle {
+  line-height: 1.5rem;
+  height: 4rem;
+  padding: 0.6rem 0px 0.6rem 4.333rem;
+}
+
+#alertPlen .list-width {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow: scroll;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+#alertPlen .list-width .l-main-content-item__listTitle {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+}
+
+#alertPlen .list-width .l-main-content-item__listTitle div {
+  padding: 0 0.5rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+#alertPlen .list-width .l-main-content-item__listTitle .listTitle__num {
+  width: 150px;
+}
+
+#alertPlen .list-width .l-main-content-item__listTitle .listTitle__status {
+  width: 100px;
+}
+
+#alertPlen .list-width .l-main-content-item__listTitle .listTitle__name {
+  width: 400px;
+}
+
+#alertPlen .list-width .l-main-content-item__listTitle .listTitle__startTime {
+  width: 150px;
+}
+
+#alertPlen .list-width .l-main-content-item__listTitle .listTitle__position {
+  width: 100px;
+}
+
+#alertPlen .list-width .l-main-content-item__listTitle .listTitle__time {
+  width: 150px;
+}
+
+#alertPlen .list-width .l-main-content-item__listTitle .listTitle__cost {
+  width: 100px;
+}
+
+#alertPlen .list-width .l-main-content-item__listTitle .listTitle__costTime {
+  width: 100px;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan {
+  padding: 0;
+  max-width: none;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 90px;
+  min-height: auto;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item {
+  padding: 0;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__title, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__title, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__title, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 0;
+  padding: 0;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__title .c-card__tag, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__title .c-card__tag, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__title .c-card__tag, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__tag, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__tag, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__tag, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__tag, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__tag, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__tag {
+  width: auto;
+  font-weight: 400;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__title .c-card__tag .c-card__tag__num, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__title .c-card__tag .c-card__tag__num, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__title .c-card__tag .c-card__tag__num, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__tag .c-card__tag__num, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__tag .c-card__tag__num, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__tag .c-card__tag__num, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__tag .c-card__tag__num, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__tag .c-card__tag__num, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__tag .c-card__tag__num {
+  width: 195px;
+  padding: 0 0.5rem;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__title .c-card__tag .c-card__tag__num span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__title .c-card__tag .c-card__tag__num span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__title .c-card__tag .c-card__tag__num span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__tag .c-card__tag__num span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__tag .c-card__tag__num span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__tag .c-card__tag__num span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__tag .c-card__tag__num span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__tag .c-card__tag__num span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__tag .c-card__tag__num span {
+  font-weight: 400;
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__title .c-card__tag .c-card__tag__btn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__title .c-card__tag .c-card__tag__btn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__title .c-card__tag .c-card__tag__btn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__tag .c-card__tag__btn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__tag .c-card__tag__btn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__tag .c-card__tag__btn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__tag .c-card__tag__btn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__tag .c-card__tag__btn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__tag .c-card__tag__btn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__title .c-card__tag .c-card__star__btn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__tag .c-card__star__btn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__tag .c-card__star__btn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__title .c-card__tag .c-card__star__btn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__tag .c-card__star__btn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__tag .c-card__star__btn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__title .c-card__tag .c-card__star__btn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__tag .c-card__star__btn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__tag .c-card__star__btn {
+  padding: 0;
+  background-color: #fff;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__title .c-card__tag .c-card__tag__status, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__title .c-card__tag .c-card__tag__status, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__title .c-card__tag .c-card__tag__status, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__tag .c-card__tag__status, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__tag .c-card__tag__status, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__tag .c-card__tag__status, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__tag .c-card__tag__status, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__tag .c-card__tag__status, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__tag .c-card__tag__status {
+  display: block;
+  font-weight: 400;
+  width: 100px;
+  padding: 0 0.5rem;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__title h2, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__title h2, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__title h2, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content h2, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content h2, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content h2, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer h2, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer h2, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer h2 {
+  width: 400px;
+  margin-bottom: 0;
+  padding: 0 0.5rem;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__title .c-card__text, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__title .c-card__text, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__title .c-card__text, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__text, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__text, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__text, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__text, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__text, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__text {
+  width: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__title .c-card__text .c-card__text__block, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__title .c-card__text .c-card__text__block, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__title .c-card__text .c-card__text__block, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__text .c-card__text__block, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__text .c-card__text__block, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__text .c-card__text__block, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__text .c-card__text__block, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__text .c-card__text__block, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__text .c-card__text__block {
+  display: none;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__title .c-card__text .c-card__text__startTime, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__title .c-card__text .c-card__text__startTime, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__title .c-card__text .c-card__text__startTime, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__text .c-card__text__startTime, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__text .c-card__text__startTime, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__text .c-card__text__startTime, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__text .c-card__text__startTime, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__text .c-card__text__startTime, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__text .c-card__text__startTime {
+  width: 150px;
+  padding: 0 0.5rem;
+  line-height: 24px;
+  font-size: 1.06rem;
+  color: #042340;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__title .c-card__text .c-card__text__startTime span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__title .c-card__text .c-card__text__startTime span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__title .c-card__text .c-card__text__startTime span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__text .c-card__text__startTime span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__text .c-card__text__startTime span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__text .c-card__text__startTime span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__text .c-card__text__startTime span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__text .c-card__text__startTime span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__text .c-card__text__startTime span {
+  display: block;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__title .c-card__text .c-card__text__startTime div, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__title .c-card__text .c-card__text__startTime div, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__title .c-card__text .c-card__text__startTime div, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__text .c-card__text__startTime div, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__text .c-card__text__startTime div, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__text .c-card__text__startTime div, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__text .c-card__text__startTime div, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__text .c-card__text__startTime div, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__text .c-card__text__startTime div {
+  display: none;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__title .c-card__text .c-card__position, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__title .c-card__text .c-card__position, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__title .c-card__text .c-card__position, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__text .c-card__position, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__text .c-card__position, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__text .c-card__position, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__text .c-card__position, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__text .c-card__position, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__text .c-card__position {
+  width: 100px;
+  padding: 0 0.5rem;
+  font-size: 1.06rem;
+  color: #042340;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__title .c-card__text .c-card__position span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__title .c-card__text .c-card__position span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__title .c-card__text .c-card__position span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__text .c-card__position span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__text .c-card__position span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__text .c-card__position span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__text .c-card__position span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__text .c-card__position span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__text .c-card__position span {
+  display: none;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__tag, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__tag, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__tag, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__tag, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__tag, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__tag {
+  display: none;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__item__content__list, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__item__content__list, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__item__content__list, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__item__content__list, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__item__content__list {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__item__content__list .list__item, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__item__content__list .list__item, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__item__content__list .list__item, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item {
+  font-size: 1.06rem;
+  width: 100px;
+  margin: 0;
+  padding: 0 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__item__content__list .list__item .list__item__num, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__item__content__list .list__item .list__item__num, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__item__content__list .list__item .list__item__num, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item .list__item__num, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item .list__item__num, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item .list__item__num {
+  width: 100px;
+  padding: 0 0.5rem;
+  font-weight: 400;
+  font-size: 1.06rem;
+  font-family: "Noto Sans TC", "sans-serif";
+  padding-left: 0;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .o-card__iconBtn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .o-card__iconBtn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .o-card__iconBtn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .o-card__iconBtn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .o-card__iconBtn, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .o-card__iconBtn {
+  display: none;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .list__item__title, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .list__item__title, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .list__item__title, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .list__item__title, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .list__item__title, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .list__item__title {
+  display: none;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item {
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item .list__item__num, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item .list__item__num, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item .list__item__num {
+  width: 150px;
+  padding: 0 0.5rem;
+  font-size: 1.06rem;
+  font-family: "Noto Sans TC", "sans-serif";
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item .list__item__num span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item .list__item__num span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item .list__item__num span {
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent {
+  width: 100px;
+  padding: 0 0.5rem;
+  font-weight: 400;
+  font-size: 1.06rem;
+  font-family: "Noto Sans TC", "sans-serif";
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent span {
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__title .c-card__tag__num span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__title .c-card__tag__num span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__content .c-card__tag__num span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__content .c-card__tag__num span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__tag__num span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__tag__num span {
+  display: inline-block;
+  padding: 0.5rem;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #FB5B29;
+  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #FB5B29;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__num span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__num span {
+  display: inline-block;
+  color: #fff;
+  padding: 0.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #FB5B29;
+  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #FB5B29;
+  border-radius: 0.33rem;
+}
+
+#alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__percent span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__percent span {
+  display: inline-block;
+  color: #fff;
+  padding: 0.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #FB5B29;
+  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #FB5B29;
+  border-radius: 0.33rem;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .c-card__item, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .c-card__item, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .c-card__item {
+  padding: 1.33rem 0rem 20px 1.33rem;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .is-changeBackground .c-card__item__title .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .is-changeBackground .c-card__item__title .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .is-changeBackground .c-card__item__title .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .is-changeBackground .c-card__item__content .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .is-changeBackground .c-card__item__content .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .is-changeBackground .c-card__item__content .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .is-changeBackground .c-card__item__footer .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .is-changeBackground .c-card__item__footer .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .is-changeBackground .c-card__item__footer .c-card__tag__num span {
+  background-color: #F7FBFF;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent {
+  width: 93px;
+}
+
+#alertPlen .change-card-to-list .c-card-planReport a, #alertPlen .change-card-to-list .c-card-planReport-danger a, #alertPlen .change-card-to-list .c-card-alertPlan a {
+  padding: 0;
+  height: 100%;
+}
+
+#alertPlen .change-card-to-list .c-card-planReport .c-card__item, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item {
+  border-radius: 0;
+}
+
+#alertPlen .change-card-to-list .c-card-planReport .c-card__item .c-card__item__title .c-card__tag, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item .c-card__item__title .c-card__tag, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item .c-card__item__title .c-card__tag, #alertPlen .change-card-to-list .c-card-planReport .c-card__item .c-card__item__content .c-card__tag, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item .c-card__item__content .c-card__tag, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item .c-card__item__content .c-card__tag, #alertPlen .change-card-to-list .c-card-planReport .c-card__item .c-card__item__footer .c-card__tag, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__tag, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__tag {
+  width: 296px;
+}
+
+#alertPlen .change-card-to-list .c-card-planReport .c-card__item .c-card__item__title .c-card__tag .c-card__tag__num, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item .c-card__item__title .c-card__tag .c-card__tag__num, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item .c-card__item__title .c-card__tag .c-card__tag__num, #alertPlen .change-card-to-list .c-card-planReport .c-card__item .c-card__item__content .c-card__tag .c-card__tag__num, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item .c-card__item__content .c-card__tag .c-card__tag__num, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item .c-card__item__content .c-card__tag .c-card__tag__num, #alertPlen .change-card-to-list .c-card-planReport .c-card__item .c-card__item__footer .c-card__tag .c-card__tag__num, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__tag .c-card__tag__num, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__tag .c-card__tag__num {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: auto;
+}
+
+#alertPlen .change-card-to-list .c-card-planReport .c-card__item .c-card__item__title .c-card__tag__status, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item .c-card__item__title .c-card__tag__status, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item .c-card__item__title .c-card__tag__status, #alertPlen .change-card-to-list .c-card-planReport .c-card__item .c-card__item__content .c-card__tag__status, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item .c-card__item__content .c-card__tag__status, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item .c-card__item__content .c-card__tag__status, #alertPlen .change-card-to-list .c-card-planReport .c-card__item .c-card__item__footer .c-card__tag__status, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__tag__status, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__tag__status {
+  text-align: center;
+  margin-left: 0.2rem;
+}
+
+#alertPlen .change-card-to-list .c-card-planReport .c-card__item .c-card__star__btn, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item .c-card__star__btn, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item .c-card__star__btn {
+  margin: 0;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item__listTitle div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item__title .c-card__tag .c-card__tag__num .c-card__tag__input, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item__title .c-card__tag .c-card__tag__num .c-card__tag__input, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item__content .c-card__tag .c-card__tag__num .c-card__tag__input, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item__content .c-card__tag .c-card__tag__num .c-card__tag__input, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__tag__input, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__tag__input {
+  margin-left: 55%;
+  margin-right: 1rem;
+}
+
+#alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item__title .c-card__tag .c-card__tag__num .c-card__tag__input form p span, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item__title .c-card__tag .c-card__tag__num .c-card__tag__input form p span, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item__content .c-card__tag .c-card__tag__num .c-card__tag__input form p span, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item__content .c-card__tag .c-card__tag__num .c-card__tag__input form p span, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__tag__input form p span, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__tag__input form p span {
+  background-color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(0%, rgba(255, 255, 255, 0))), #ffffff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%), #ffffff;
+}
+
+#alertPlen .c-search-item__input ::-webkit-input-placeholder {
+  font-weight: 400;
+}
+
+#alertPlen .c-search-item__input :-ms-input-placeholder {
+  font-weight: 400;
+}
+
+#alertPlen .c-search-item__input ::-ms-input-placeholder {
+  font-weight: 400;
+}
+
+#alertPlen .c-search-item__input ::placeholder {
+  font-weight: 400;
 }
 
 #execute .c-modal-btnList, #memberstime_execute .c-modal-btnList, #departmenttime_execute .c-modal-btnList, #supporttime_execute .c-modal-btnList, #notReachedtime_execute .c-modal-btnList, #member_execute .c-modal-btnList, #commission__execute .c-modal-btnList, #support__execute .c-modal-btnList, #worktime__execute .c-modal-btnList {
@@ -15653,6 +16511,15 @@ body {
   border-radius: 50%;
 }
 
+#membertime .l-main-content-item .c-card-manhourSofar, #membertime .l-main-content-item .c-card-manhourSearch, #membertime .l-main-content-item .c-card-percent, #membertime .l-main-content-item .c-card-percentCheck, #membertime .l-main-content-item .c-card-planPerson, #membertime .l-main-content-item .c-card-planClosed, #membertime .l-main-content-item .c-card-planHotkey, #membertime .l-main-content-item .c-card-planReport, #membertime .l-main-content-item .c-card-planReport-danger, #membertime .l-main-content-item .c-card-alertPlan, #membertime .l-main-content-item .c-card-department {
+  margin-bottom: 0;
+}
+
+#membertime .change-card-to-list .l-main-content-item__listTitle {
+  height: 4rem;
+  padding-left: 3rem;
+}
+
 #membertime .change-card-to-list .c-card-manhourSofar:hover, #membertime .change-card-to-list .c-card-manhourSearch:hover, #membertime .change-card-to-list .c-card-percent:hover, #membertime .change-card-to-list .c-card-percentCheck:hover, #membertime .change-card-to-list .c-card-planPerson:hover, #membertime .change-card-to-list .c-card-planClosed:hover, #membertime .change-card-to-list .c-card-planHotkey:hover, #membertime .change-card-to-list .c-card-planReport:hover, #membertime .change-card-to-list .c-card-planReport-danger:hover, #membertime .change-card-to-list .c-card-alertPlan:hover, #membertime .change-card-to-list .c-card-department:hover {
   -webkit-transition: all 0;
   transition: all 0;
@@ -15667,6 +16534,12 @@ body {
           transform: translateY(0px) translateX(0px);
 }
 
+#membertime .change-card-to-list .l-main-content-item .c-card-manhourSearch {
+  height: 4rem;
+  margin-bottom: 0;
+  cursor: default;
+}
+
 .l-main-content .c-card-manhourSofar, .l-main-content .c-card-manhourSearch, .l-main-content .c-card-percent, .l-main-content .c-card-percentCheck, .l-main-content .c-card-planPerson, .l-main-content .c-card-planClosed, .l-main-content .c-card-planHotkey, .l-main-content .c-card-planReport, .l-main-content .c-card-planReport-danger, .l-main-content .c-card-alertPlan, .l-main-content .c-card-department {
   margin: 0 0.5rem 2.5rem 0.2rem;
 }
@@ -15679,7 +16552,7 @@ body {
 }
 
 .l-main-content .l-main-content-text .l-main-content-text__ListTitle {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0rem;
   margin-right: 1rem;
 }
 
@@ -15821,6 +16694,18 @@ body {
   color: #042340;
 }
 
+#WBS .l-main-content__wbslist .table-body__item .c-popover-wbsEdit .c-popover__content, #WBS .l-main-content .l-main-content__workTypelist .table-body__item .c-popover-wbsEdit .c-popover__content, .l-main-content #WBS .l-main-content__workTypelist .table-body__item .c-popover-wbsEdit .c-popover__content, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .c-popover-wbsEdit .c-popover__content, .l-main-content #WBS .l-main-content__wbslist .table-body .table-body__conutItem .c-popover-wbsEdit .c-popover__content, .l-main-content .l-main-content__wbslist .table-body #WBS .l-main-content__workTypelist .table-body__conutItem .c-popover-wbsEdit .c-popover__content, .l-main-content .l-main-content__workTypelist .table-body #WBS .l-main-content__wbslist .table-body__conutItem .c-popover-wbsEdit .c-popover__content, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .c-popover-wbsEdit .c-popover__content, .l-main-content #WBS .l-main-content__workTypelist .table-body .table-body__conutItem .c-popover-wbsEdit .c-popover__content {
+  margin-bottom: 0.5rem;
+}
+
+#WBS .l-main-content__wbslist .table-body__item .c-popover-wbsEdit .c-popover__content::before, #WBS .l-main-content .l-main-content__workTypelist .table-body__item .c-popover-wbsEdit .c-popover__content::before, .l-main-content #WBS .l-main-content__workTypelist .table-body__item .c-popover-wbsEdit .c-popover__content::before, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .c-popover-wbsEdit .c-popover__content::before, .l-main-content #WBS .l-main-content__wbslist .table-body .table-body__conutItem .c-popover-wbsEdit .c-popover__content::before, .l-main-content .l-main-content__wbslist .table-body #WBS .l-main-content__workTypelist .table-body__conutItem .c-popover-wbsEdit .c-popover__content::before, .l-main-content .l-main-content__workTypelist .table-body #WBS .l-main-content__wbslist .table-body__conutItem .c-popover-wbsEdit .c-popover__content::before, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .c-popover-wbsEdit .c-popover__content::before, .l-main-content #WBS .l-main-content__workTypelist .table-body .table-body__conutItem .c-popover-wbsEdit .c-popover__content::before {
+  margin-left: -30.75px;
+}
+
+#WBS .l-main-content__wbslist .table-body__item .c-popover-wbsEdit .c-popover__content::after, #WBS .l-main-content .l-main-content__workTypelist .table-body__item .c-popover-wbsEdit .c-popover__content::after, .l-main-content #WBS .l-main-content__workTypelist .table-body__item .c-popover-wbsEdit .c-popover__content::after, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .c-popover-wbsEdit .c-popover__content::after, .l-main-content #WBS .l-main-content__wbslist .table-body .table-body__conutItem .c-popover-wbsEdit .c-popover__content::after, .l-main-content .l-main-content__wbslist .table-body #WBS .l-main-content__workTypelist .table-body__conutItem .c-popover-wbsEdit .c-popover__content::after, .l-main-content .l-main-content__workTypelist .table-body #WBS .l-main-content__wbslist .table-body__conutItem .c-popover-wbsEdit .c-popover__content::after, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .c-popover-wbsEdit .c-popover__content::after, .l-main-content #WBS .l-main-content__workTypelist .table-body .table-body__conutItem .c-popover-wbsEdit .c-popover__content::after {
+  margin-left: -30.9px;
+}
+
 #WBS .l-main-content__wbslist .table-footer .row .s1, #WBS .l-main-content .l-main-content__workTypelist .table-footer .row .s1, .l-main-content #WBS .l-main-content__workTypelist .table-footer .row .s1 {
   width: 102px;
 }
@@ -15829,8 +16714,44 @@ body {
   margin-bottom: 5px;
 }
 
+#memberstime .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div, #departmenttime .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div, #universalPlan .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#memberstime .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div::after, #departmenttime .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div::after, #universalPlan .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div::after {
+  background-image: url(../img/o-arrowDown.svg);
+}
+
+#memberstime .c-search-list .c-dropdown-member .c-dropdown__input::after, #departmenttime .c-search-list .c-dropdown-member .c-dropdown__input::after, #universalPlan .c-search-list .c-dropdown-member .c-dropdown__input::after {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  z-index: -1;
+}
+
+#memberstime .c-card-manhourSearch, #departmenttime .c-card-manhourSearch, #universalPlan .c-card-manhourSearch {
+  margin-bottom: 1rem;
+}
+
 #memberstime .c-datePicker__modal .c-datePicker__yearPicker button, #departmenttime .c-datePicker__modal .c-datePicker__yearPicker button, #universalPlan .c-datePicker__modal .c-datePicker__yearPicker button {
   border-radius: 50%;
+}
+
+#memberstime .l-main-content-item__listTitle, #departmenttime .l-main-content-item__listTitle, #universalPlan .l-main-content-item__listTitle {
+  height: 4rem;
+}
+
+#memberstime .change-card-to-list .l-main-content-item__listTitle, #departmenttime .change-card-to-list .l-main-content-item__listTitle, #universalPlan .change-card-to-list .l-main-content-item__listTitle {
+  padding-left: 3rem;
+}
+
+#memberstime .change-card-to-list .l-main-content-item .c-card-manhourSearch, #departmenttime .change-card-to-list .l-main-content-item .c-card-manhourSearch, #universalPlan .change-card-to-list .l-main-content-item .c-card-manhourSearch {
+  height: 4rem;
+  margin-bottom: 0;
+  cursor: default;
+}
+
+#memberstime .change-card-to-list .l-main-content-item .c-card-manhourSearch div, #departmenttime .change-card-to-list .l-main-content-item .c-card-manhourSearch div, #universalPlan .change-card-to-list .l-main-content-item .c-card-manhourSearch div {
+  cursor: default;
 }
 
 #memberstime .change-card-to-list .c-card-manhourSearch__userName, #departmenttime .change-card-to-list .c-card-manhourSearch__userName, #universalPlan .change-card-to-list .c-card-manhourSearch__userName {
@@ -15891,6 +16812,14 @@ body {
   border-radius: 50%;
 }
 
+#departmenttime .change-card-to-list .c-card-manhourSearch {
+  margin-bottom: 0rem;
+}
+
+#departmenttime .change-card-to-list .c-card-manhourSearch div {
+  cursor: default;
+}
+
 #departmenttime .change-card-to-list .c-card-manhourSearch__userName {
   display: none;
 }
@@ -15941,6 +16870,18 @@ body {
           transform: translateY(0px) translateX(0px);
 }
 
+#supporttime .c-card-department {
+  margin-bottom: 1rem;
+}
+
+#supporttime .c-card-manhourSearch {
+  margin-bottom: 1rem;
+}
+
+#supporttime .c-card-manhourSearch div {
+  cursor: default;
+}
+
 #supporttime .l-main-tabs {
   margin-bottom: 5px;
 }
@@ -15951,6 +16892,34 @@ body {
 
 #supporttime .c-datePicker__modal .c-datePicker__yearPicker button {
   border-radius: 50%;
+}
+
+#supporttime .change-card-to-list .c-card-manhourSearch {
+  margin-bottom: 0rem;
+}
+
+#supporttime .change-card-to-list .l-main-content-item__listTitle {
+  height: 4rem;
+  padding-left: 3rem;
+}
+
+#supporttime .change-card-to-list .l-main-content-item .c-card-department {
+  height: 4rem;
+  margin-bottom: 0;
+}
+
+#supporttime .change-card-to-list .l-main-content-item .c-card-department:hover {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
+}
+
+#supporttime .change-card-to-list .l-main-content-item .c-card-department:active {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
 }
 
 #supporttime .change-card-to-list .l-main-content-item .c-card-department h2 {
@@ -15980,7 +16949,7 @@ body {
 }
 
 #supporttime .change-card-to-list .listTitle__workTime {
-  width: 10%;
+  width: auto;
 }
 
 #supporttime .change-card-to-list .js-c-card__appendUserName {
@@ -15997,6 +16966,10 @@ body {
 
 #supporttime .change-card-to-list .c-card__content {
   width: 10%;
+}
+
+#supporttime .change-card-to-list .c-card-manhourSearch {
+  height: 4rem;
 }
 
 #supporttime .change-card-to-list .c-card-manhourSearch:hover {
@@ -16017,8 +16990,62 @@ body {
   margin-bottom: 5px;
 }
 
+#notReachedtime .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#notReachedtime .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div::after {
+  background-image: url(../img/o-arrowDown.svg);
+}
+
+#notReachedtime .c-search-list .c-dropdown-member .c-dropdown__input::after {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  z-index: -1;
+}
+
+#notReachedtime .c-card-percent, #notReachedtime .c-card-percentCheck {
+  margin-bottom: 1rem;
+  cursor: default;
+}
+
+#notReachedtime .c-card-percent div, #notReachedtime .c-card-percentCheck div {
+  cursor: default;
+}
+
+#notReachedtime .c-card-percent:hover, #notReachedtime .c-card-percentCheck:hover {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
+}
+
+#notReachedtime .c-card-percent:active, #notReachedtime .c-card-percentCheck:active {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
+}
+
+#notReachedtime .c-card-percent .c-card__userInformation h3, #notReachedtime .c-card-percentCheck .c-card__userInformation h3 {
+  font-family: "Noto Sans TC", "sans-serif";
+}
+
 #notReachedtime .c-datePicker__modal .c-datePicker__yearPicker button {
   border-radius: 50%;
+}
+
+#notReachedtime .change-card-to-list .l-main-content-item__listTitle {
+  height: 4rem;
+  padding-left: 3rem;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent, #notReachedtime .change-card-to-list .c-card-percentCheck {
+  margin-bottom: 0rem;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent, #notReachedtime .change-card-to-list .c-card-percentCheck {
+  height: 4rem;
 }
 
 #notReachedtime .change-card-to-list .c-card-percent__userName {
@@ -16122,6 +17149,28 @@ body {
   width: 18.181818%;
 }
 
+#notReachedtime .change-card-to-list .c-card-percentCheck {
+  cursor: default;
+}
+
+#notReachedtime .change-card-to-list .c-card-percentCheck:hover {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
+}
+
+#notReachedtime .change-card-to-list .c-card-percentCheck:active {
+  -webkit-transition: all 0;
+  transition: all 0;
+  -webkit-transform: translateY(0px) translateX(0px);
+          transform: translateY(0px) translateX(0px);
+}
+
+#notReachedtime .change-card-to-list .c-card-percentCheck div {
+  cursor: default;
+}
+
 #notReachedtime .change-card-to-list .c-card-percentCheck .c-card-title span {
   right: 30px;
   top: 5px;
@@ -16179,6 +17228,10 @@ body {
           align-items: center;
 }
 
+#memberstime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input, #departmenttime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input, #universalPlan .is-error-status .c-dropdown-departmentCheck .c-dropdown__input {
+  background-color: #fff;
+}
+
 #memberstime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div, #departmenttime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div, #universalPlan .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div {
   background-color: #fff;
   border: 1px #FB5B29 solid;
@@ -16194,6 +17247,20 @@ body {
 
 #memberstime .is-error-status .c-search-list .c-search-item__departmentTitle, #departmenttime .is-error-status .c-search-list .c-search-item__departmentTitle, #universalPlan .is-error-status .c-search-list .c-search-item__departmentTitle {
   color: #FB5B29;
+}
+
+#memberstime .c-dropdown-departmentCheck .c-dropdown__input .o-input-div, #departmenttime .c-dropdown-departmentCheck .c-dropdown__input .o-input-div, #universalPlan .c-dropdown-departmentCheck .c-dropdown__input .o-input-div {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#memberstime .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after, #departmenttime .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after, #universalPlan .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after {
+  background-image: url(../img/o-arrowDown.svg);
+}
+
+#memberstime .c-dropdown-departmentCheck .c-dropdown__input::after, #departmenttime .c-dropdown-departmentCheck .c-dropdown__input::after, #universalPlan .c-dropdown-departmentCheck .c-dropdown__input::after {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  z-index: -1;
 }
 
 .l-main-content__statisticsPlan .table-body .table-body__item .row, .l-main-content__statisticsPlan .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row, .l-main-content .l-main-content__wbslist .l-main-content__statisticsPlan .table-body .table-body__conutItem .row, .l-main-content__statisticsPlan .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row, .l-main-content .l-main-content__workTypelist .l-main-content__statisticsPlan .table-body .table-body__conutItem .row {
@@ -16216,10 +17283,28 @@ body {
           align-items: center;
 }
 
+.l-main-content__statisticsPlan .table-body .table-body__item .s11, .l-main-content__statisticsPlan .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .s11, .l-main-content .l-main-content__wbslist .l-main-content__statisticsPlan .table-body .table-body__conutItem .s11, .l-main-content__statisticsPlan .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .s11, .l-main-content .l-main-content__workTypelist .l-main-content__statisticsPlan .table-body .table-body__conutItem .s11 {
+  width: 87.6666666667%;
+}
+
+.l-main-content__statisticsPlan .table-body .table-body__item .s1, .l-main-content__statisticsPlan .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .s1, .l-main-content .l-main-content__wbslist .l-main-content__statisticsPlan .table-body .table-body__conutItem .s1, .l-main-content__statisticsPlan .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .s1, .l-main-content .l-main-content__workTypelist .l-main-content__statisticsPlan .table-body .table-body__conutItem .s1 {
+  width: 12.3333333333%;
+}
+
+.l-main-maintain {
+  height: 80vh;
+}
+
 .l-main-content__cardGroup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 1rem;
+}
+
+.l-main-content__cardGroup .l-main-content__card, .l-main-content__cardGroup .l-main-content__dbcard {
+  margin-bottom: 0;
+  border-radius: 1.33rem;
 }
 
 .l-main-content__cardGroup .l-main-content__cardGroup__item {
@@ -16229,6 +17314,10 @@ body {
   margin-right: 1rem;
   height: 180px;
   width: 50%;
+}
+
+.l-main-content__cardGroup .l-main-content__cardGroup__item .l-main-content__card, .l-main-content__cardGroup .l-main-content__cardGroup__item .l-main-content__dbcard {
+  height: 12rem;
 }
 
 .l-main-content__cardGroup .l-main-content__cardGroup__item:last-child {
@@ -16248,7 +17337,7 @@ body {
 }
 
 .l-main-content__card, .l-main-content__dbcard {
-  padding: 1rem;
+  padding: 1.2rem;
   margin: 0.1rem 1rem 1rem 0;
   border-radius: 0.66rem;
 }
@@ -16258,7 +17347,6 @@ body {
 }
 
 .l-main-content__card .l-main-content__title, .l-main-content__dbcard .l-main-content__title {
-  margin-bottom: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16274,6 +17362,10 @@ body {
 }
 
 .l-main-content__card .l-main-content__title div button, .l-main-content__dbcard .l-main-content__title div button {
+  margin: 0;
+}
+
+.l-main-content__card .l-main-content__title div button img, .l-main-content__dbcard .l-main-content__title div button img {
   margin: 0;
 }
 
@@ -16306,6 +17398,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  padding-top: 1rem;
 }
 
 .l-main-content__card .l-main-content__maintain .l-main-content__maintain__text, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__text {
@@ -16353,6 +17446,11 @@ body {
 .l-main-content__dbcard .l-main-content__card__item {
   border-right: 1px solid #BAD4E5;
   padding-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.l-main-content__dbcard .l-main-content__card__item .l-main-content__card, .l-main-content__dbcard .l-main-content__card__item .l-main-content__dbcard {
+  min-height: 12rem;
 }
 
 .l-main-content__dbcard .l-main-content__card__item .l-main-content__title {
@@ -16385,7 +17483,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60px;
+  height: 4rem;
+  margin-bottom: 1rem;
   width: 100%;
 }
 
@@ -16399,5 +17498,6 @@ body {
 
 .l-main-content__dbcard .l-main-content__card__item .l-main-content__switch .l-main-content__switchSubtext .text-danger {
   font-weight: bold;
+  margin-right: -3px;
 }
 /*# sourceMappingURL=all.css.map */

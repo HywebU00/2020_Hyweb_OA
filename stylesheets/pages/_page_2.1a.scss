@@ -19,3 +19,25 @@
     bottom:30px;
     right: 20px;
 }
+#worklist{
+    .table-thead{
+        .row{
+            :nth-child(1){
+                width: 12.6666666667%;
+            }
+            :nth-child(2){
+                width: 29%;
+            }
+        }
+    }
+    .table-body{
+        .row{
+            :nth-child(1){
+                width: 12.6666666667%;
+            }
+            :nth-child(2){
+                width: 29%;
+            }
+        }
+    }
+}

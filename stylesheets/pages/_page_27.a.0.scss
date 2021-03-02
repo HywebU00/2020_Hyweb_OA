@@ -2,7 +2,32 @@
     .l-main-tabs {
         margin-bottom: 5px;
     }
-
+    .c-search-list{
+        .c-dropdown-member{
+          .c-dropdown__input{
+              
+              .o-input-div{
+                  background-color: rgba(0,0,0,0);
+                  &::after{
+                      background-image:url(../img/o-arrowDown.svg);
+                      
+                  }
+              }
+              &::after{
+                  background-color: rgba(0,0,0,0);
+                  background-image: none;
+                  z-index: -1;
+              }
+              
+              
+           
+          }
+         
+      }  
+      }
+    .c-card-manhourSearch{
+        margin-bottom:1rem;
+    }
     .c-datePicker__modal {
         .c-datePicker__yearPicker {
             button {
@@ -10,8 +35,26 @@
             }
         }
     }
-
+    .l-main-content-item__listTitle{
+        height: 4rem;
+       
+    }
     .change-card-to-list {
+        .l-main-content-item__listTitle{
+            padding-left: 3rem;           
+        }
+        .l-main-content-item{
+            .c-card-manhourSearch{
+                height: 4rem;
+                margin-bottom:0;
+                cursor: default;
+                div{
+                    cursor: default;
+                }
+            }
+        }
+        
+        
         .c-card-manhourSearch__userName {
             display: none;
         }
@@ -77,6 +120,12 @@
     }
 
     .change-card-to-list {
+        .c-card-manhourSearch{
+            margin-bottom: 0rem;
+            div{
+                cursor: default;
+            }
+           }
         .c-card-manhourSearch__userName {
             display: none;
         }
@@ -129,6 +178,15 @@
 }
 
 #supporttime {
+   .c-card-department{
+       margin-bottom: 1rem;
+   }
+   .c-card-manhourSearch{
+    margin-bottom: 1rem;
+    div{
+        cursor: default;
+    }
+   }
     .l-main-tabs {
         margin-bottom: 5px;
     }
@@ -150,8 +208,27 @@
     }
 
     .change-card-to-list {
+        .c-card-manhourSearch{
+            margin-bottom: 0rem;
+           }
+        .l-main-content-item__listTitle{
+            height: 4rem;
+            padding-left: 3rem;
+        }
         .l-main-content-item {
+             
             .c-card-department {
+                height: 4rem;
+                margin-bottom: 0;
+                &:hover {
+                    transition: all 0;
+                    transform: translateY(0px) translateX(0px);
+                }
+    
+                &:active {
+                    transition: all 0;
+                    transform: translateY(0px) translateX(0px);
+                }
                 h2 {
                     font-weight: 400;
                     font-size: $p;
@@ -179,10 +256,12 @@
         .listTitle__englishName {
             width: 60%;
         }
-
+ 
         .listTitle__workTime {
-            width: 10%;
+      
+            width: auto;
         }
+    
 
         .js-c-card__appendUserName {
             width: 80%;
@@ -201,6 +280,7 @@
         }
 
         .c-card-manhourSearch {
+            height: 4rem;
             &:hover {
                 transition: all 0;
                 transform: translateY(0px) translateX(0px);
@@ -219,7 +299,51 @@
     .l-main-tabs {
         margin-bottom: 5px;
     }
+    .c-search-list{
+      .c-dropdown-member{
+        .c-dropdown__input{
+            
+            .o-input-div{
+                background-color: rgba(0,0,0,0);
+                &::after{
+                    background-image:url(../img/o-arrowDown.svg);
+                    
+                }
+            }
+            &::after{
+                background-color: rgba(0,0,0,0);
+                background-image: none;
+                z-index: -1;
+            }
+            
+            
+         
+        }
+       
+    }  
+    }
+    
+    .c-card-percent{
+        margin-bottom: 1rem;
+        cursor: default;
+        div{
+            cursor: default;
+        }
+        &:hover {
+            transition: all 0;
+            transform: translateY(0px) translateX(0px);
+        }
 
+        &:active {
+            transition: all 0;
+            transform: translateY(0px) translateX(0px);
+        }
+        .c-card__userInformation{
+            h3{
+                font-family: $font-family;
+            }
+        }
+    }
     .c-datePicker__modal {
         .c-datePicker__yearPicker {
             button {
@@ -229,6 +353,16 @@
     }
 
     .change-card-to-list {
+        .l-main-content-item__listTitle{
+            height: 4rem;
+            padding-left: 3rem;
+        }
+        .c-card-percent{
+            margin-bottom: 0rem;
+        }
+        .c-card-percent{
+            height: 4rem;
+        }
         .c-card-percent__userName {
             display: none;
         }
@@ -334,6 +468,19 @@
         }
 
         .c-card-percentCheck {
+            &:hover {
+                transition: all 0;
+                transform: translateY(0px) translateX(0px);
+            }
+
+            &:active {
+                transition: all 0;
+                transform: translateY(0px) translateX(0px);
+            }
+            cursor: default;
+            div{
+                cursor: default;
+            }
             .c-card-title {
                 span {
                     right: 30px;

@@ -3641,6 +3641,8 @@ var $jscomp$this = this;
               } else {
                 this.dropdownEl.style.width = "auto";
               }
+            } else {
+              this.dropdownEl.style.width = "auto";
             }
 
             this.dropdownEl.style.maxHeight = "40vh"; //positionInfo.height + "px";
