@@ -192,10 +192,9 @@ alertPlanInput.forEach((item) => {
   }
 });
 
-//++++++++++++++++++
+//+++++++++++++++++++++++++++++++
 //card alertPlan 改變卡片顏色 效果
-//++++++++++++++++++
-
+//+++++++++++++++++++++++++++++++
 const percentCheckInput = document.querySelectorAll(
   ".js-percentCheck-inputStyle"
 );
