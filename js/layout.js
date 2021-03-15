@@ -1,5 +1,5 @@
 //++++++++++++++++++
-//  側邊收闔效果
+//  側邊收闔效果++
 //++++++++++++++++++
 const sidebar = document.querySelector(".l-container");
 const nametag = document.querySelector(".chinese__name");
