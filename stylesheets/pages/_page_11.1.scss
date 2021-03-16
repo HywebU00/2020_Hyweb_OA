@@ -29,7 +29,11 @@
                             }
                         }
                     }
-                   
+                    .c-datePicker-days{
+                     .c-datePicker__modal{
+                         margin-bottom: 0.5rem;
+                     }
+                    }
                 }
                 .table-body__conutItem{
                     height: 4rem;
@@ -83,18 +87,24 @@
                 }
                 width: 75.6666666667%;;
             }
+            .s1{
+                min-width: 82px;
+                button{
+                    width: 33px;
+                    :nth-child(1){
+                       width: 24px;
+                    }
+                }
+            }
             :nth-child(3){
                 width: 9.6666666667%;
+                min-width: 100px;
             }
             :nth-child(4){
                 margin: 0;
+               min-width: 82px;
             }
-            button{
-                width: 2.2rem;
-                :nth-child(1){
-                    width: auto;
-                }
-            }
+            
         }
     }
     .l-main-content__planlist{
@@ -120,6 +130,12 @@
                     margin-bottom: 0.5rem;
                 }
             }
+            .c-datePicker-day{
+               .c-datePicker__modal{
+                margin-bottom: 0.5rem;
+               }
+            }
+            
         }
     }
 }
