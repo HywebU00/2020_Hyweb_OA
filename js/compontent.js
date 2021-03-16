@@ -224,13 +224,13 @@ for (let s = 0; s < switchBtn.length; s++) {
       switchSubtext[s].classList.add("is-switch-active");
       switchSubtext[
         s
-      ].innerHTML = `(目前：成員<span class="text-danger" >可</span> 填前月工時)`;
+      ].innerHTML = `(目前成員<span class="text-danger" >可</span> 填前月工時)`;
       switchText[s].innerHTML = `開啟`;
     } else {
       switchSubtext[s].classList.remove("is-switch-active");
       switchSubtext[
         s
-      ].innerHTML = `(目前：成員<span class="text-danger" >不可</span> 填前月工時)`;
+      ].innerHTML = `(目前成員<span class="text-danger" >不可</span> 填前月工時)`;
       switchText[s].innerHTML = `關閉`;
     }
   });
@@ -245,7 +245,6 @@ const cardLablePerson = document.querySelectorAll(
 );
 for (let a = 0; a < cardLablePerson.length; a++) {
   cardLablePerson[a].addEventListener("click", function () {
-    // console.log(this);
     this.classList.toggle("is-active");
   });
 }
