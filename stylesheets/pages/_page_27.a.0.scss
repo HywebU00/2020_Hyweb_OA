@@ -101,6 +101,11 @@
                 transition: all 0;
                 transform: translateY(0px) translateX(0px);
             }
+            .c-card__userInformation{
+                h3{
+                    font-family: $font-family;
+                }
+            }
         }
 
     }
@@ -343,6 +348,11 @@
                 font-family: $font-family;
             }
         }
+        .c-card__item{
+            .c-card__item__title{
+             margin-top:0.2rem;
+            } 
+         }
     }
     .c-datePicker__modal {
         .c-datePicker__yearPicker {
@@ -405,6 +415,7 @@
 
         .c-card__content {
             width: 10%;
+       
         }
 
         .card-percent__listTitle {

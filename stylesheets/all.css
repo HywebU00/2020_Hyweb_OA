@@ -11676,6 +11676,10 @@ body {
   background-image: url(../img/o-activeIcon.svg);
 }
 
+.c-accordion-group .active .is-arrow-active, .c-accordion-plan .active .is-arrow-active, .c-accordion-general .active .is-arrow-active {
+  border-radius: 0.66rem 0.66rem 0rem 0rem;
+}
+
 .c-accordion-group .accordion-header, .c-accordion-plan .accordion-header, .c-accordion-general .accordion-header {
   font-size: 1.06rem;
   line-height: 26px;
@@ -11734,7 +11738,7 @@ body {
 }
 
 .c-accordion-group .accordion-body .row, .c-accordion-plan .accordion-body .row, .c-accordion-general .accordion-body .row {
-  margin-bottom: 3%;
+  margin-bottom: 0.66rem;
 }
 
 .c-accordion-group .accordion-body__title, .c-accordion-plan .accordion-body__title, .c-accordion-general .accordion-body__title {
@@ -11783,6 +11787,7 @@ body {
 .c-accordion-plan .accordion-body__title, .c-accordion-general .accordion-body__title {
   padding: 0.5rem 1.5rem;
   color: #8495A4;
+  font-size: 1.06rem;
 }
 
 .c-accordion-plan .accordion-body__title .col, .c-accordion-general .accordion-body__title .col {
@@ -11790,7 +11795,7 @@ body {
 }
 
 .c-accordion-plan .accordion-body__item, .c-accordion-general .accordion-body__item {
-  padding: 1.5rem;
+  padding: 1rem 0.5rem;
 }
 
 .c-accordion-plan .is-arrow-active, .c-accordion-general .is-arrow-active {
@@ -12437,7 +12442,7 @@ body {
   width: 82%;
   height: 85vh;
   overflow: hidden;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
 }
 
 .c-modal-addGroup .c-modal-closeBtn, .c-modal-usuallyUseMember .c-modal-closeBtn, .c-modal-sample .c-modal-closeBtn {
@@ -12456,7 +12461,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 0.2rem;
+  margin-bottom: 1rem;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -12489,9 +12494,9 @@ body {
   margin-right: calc(75vw - 100px);
   white-space: nowrap;
   min-width: 4rem;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
   padding: 0.5rem;
+  position: absolute;
+  left: 1.5rem;
 }
 
 .c-modal-addGroup .c-modal-addGroup__content, .c-modal-usuallyUseMember .c-modal-addGroup__content, .c-modal-sample .c-modal-addGroup__content {
@@ -12691,6 +12696,18 @@ body {
 .c-modal-addGroup .is-error-status .c-modal-content__select .o-input input, .c-modal-usuallyUseMember .is-error-status .c-modal-content__select .o-input input, .c-modal-sample .is-error-status .c-modal-content__select .o-input input, .c-modal-addGroup .is-error-status .c-modal-content__select .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-addGroup .is-error-status .c-modal-content__select .hoursInput input, .c-modal-usuallyUseMember .is-error-status .c-modal-content__select .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-usuallyUseMember .is-error-status .c-modal-content__select .hoursInput input, .c-modal-sample .is-error-status .c-modal-content__select .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-sample .is-error-status .c-modal-content__select .hoursInput input, .c-modal-addGroup .is-error-status .c-modal-content__select .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-addGroup .is-error-status .c-modal-content__select .otherInput input, .c-modal-usuallyUseMember .is-error-status .c-modal-content__select .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-usuallyUseMember .is-error-status .c-modal-content__select .otherInput input, .c-modal-sample .is-error-status .c-modal-content__select .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-sample .is-error-status .c-modal-content__select .otherInput input, .c-modal-addGroup .is-error-status .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-addGroup .is-error-status .c-modal-content__select .c-search-item__input input, .c-modal-usuallyUseMember .is-error-status .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-usuallyUseMember .is-error-status .c-modal-content__select .c-search-item__input input, .c-modal-sample .is-error-status .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-sample .is-error-status .c-modal-content__select .c-search-item__input input {
   background-color: #fff;
   border: 1px solid #FB5B29;
+}
+
+.c-modal-addGroup .is-error-status .s5 .input-title, .c-modal-usuallyUseMember .is-error-status .s5 .input-title, .c-modal-sample .is-error-status .s5 .input-title {
+  position: relative;
+}
+
+.c-modal-addGroup .is-error-status .s5 .input-title::after, .c-modal-usuallyUseMember .is-error-status .s5 .input-title::after, .c-modal-sample .is-error-status .s5 .input-title::after {
+  font-size: 0.8rem;
+  content: '請選擇部門或輸入關鍵字';
+  font-weight: 400;
+  right: 0;
+  position: absolute;
 }
 
 .c-modal-personAll, .c-modal-personCalendar, .c-modal-department {
@@ -13009,6 +13026,11 @@ body {
       align-self: flex-end;
 }
 
+.c-modal-usuallyUseMember .c-modal-footer button, .c-modal-sample .c-modal-footer button {
+  position: absolute;
+  bottom: 2rem;
+}
+
 .c-modal-sample {
   width: 65vw;
   height: 85vh;
@@ -13029,7 +13051,7 @@ body {
 }
 
 .c-modal-sample .c-modal-content .accordion-body__item .col, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .accordion-body__item .col, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .accordion-body__item .col {
-  font-size: 18px;
+  font-size: 1.06rem;
 }
 
 .c-modal-select {
@@ -13957,7 +13979,7 @@ body {
 }
 
 .c-writeHours-title__item {
-  padding: 0 1.5%;
+  padding: 0 1rem;
   padding-bottom: 0.8rem;
   color: #042340;
   background-color: #cfe3f5;
@@ -13991,8 +14013,8 @@ body {
 }
 
 .c-writeHours-title__item .c-writeHours-title__item__date span {
-  padding-bottom: 3%;
-  margin-left: 3%;
+  padding-bottom: 0.266rem;
+  margin-left: 0.266rem;
   font-family: "Noto Sans TC", "sans-serif";
   font-size: 1.06rem;
   font-weight: 700;
@@ -14002,7 +14024,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 5%;
+  margin-bottom: 0.33rem;
   height: 5rem;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -14015,7 +14037,7 @@ body {
 
 .c-writeHours-title__item .c-writeHours-title__item__hours .text {
   font-size: 12px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   font-family: "Noto Sans TC", "sans-serif";
   line-height: 1rem;
   white-space: nowrap;
@@ -15282,6 +15304,10 @@ body {
   margin-top: 1rem;
 }
 
+#WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .c-datePicker-months .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .c-datePicker-months .c-datePicker__modal, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .c-datePicker-months .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .c-datePicker-months .c-datePicker__modal {
+  margin-bottom: 0.5rem;
+}
+
 #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem {
   height: 4rem;
 }
@@ -15321,20 +15347,26 @@ body {
   width: 2.4rem;
 }
 
+#introduction .l-main-content__upload .row .s1 {
+  min-width: 82px;
+}
+
+#introduction .l-main-content__upload .row .s1 button {
+  width: 33px;
+}
+
+#introduction .l-main-content__upload .row .s1 button :nth-child(1) {
+  width: 24px;
+}
+
 #introduction .l-main-content__upload .row :nth-child(3) {
   width: 9.6666666667%;
+  min-width: 100px;
 }
 
 #introduction .l-main-content__upload .row :nth-child(4) {
   margin: 0;
-}
-
-#introduction .l-main-content__upload .row button {
-  width: 2.2rem;
-}
-
-#introduction .l-main-content__upload .row button :nth-child(1) {
-  width: auto;
+  min-width: 82px;
 }
 
 #introduction .l-main-content__planlist .table-thead .row .col div, #introduction .l-main-content .l-main-content__wbslist .table-thead .row .col div, .l-main-content #introduction .l-main-content__wbslist .table-thead .row .col div, #introduction .l-main-content .l-main-content__workTypelist .table-thead .row .col div, .l-main-content #introduction .l-main-content__workTypelist .table-thead .row .col div, #introduction .l-main-content__statisticsPlan .table-thead .row .col div {
@@ -15346,6 +15378,10 @@ body {
 }
 
 #introduction .l-main-content__planlist .table-body .c-popover-checkPoint .c-popover__content, #introduction .l-main-content .l-main-content__wbslist .table-body .c-popover-checkPoint .c-popover__content, .l-main-content #introduction .l-main-content__wbslist .table-body .c-popover-checkPoint .c-popover__content, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-popover-checkPoint .c-popover__content, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-popover-checkPoint .c-popover__content, #introduction .l-main-content__statisticsPlan .table-body .c-popover-checkPoint .c-popover__content, #introduction .l-main-content__planlist .table-body .c-popover-filterS .c-popover__content, #introduction .l-main-content .l-main-content__wbslist .table-body .c-popover-filterS .c-popover__content, .l-main-content #introduction .l-main-content__wbslist .table-body .c-popover-filterS .c-popover__content, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-popover-filterS .c-popover__content, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-popover-filterS .c-popover__content, #introduction .l-main-content__statisticsPlan .table-body .c-popover-filterS .c-popover__content, #introduction .l-main-content__planlist .table-body .c-popover-filterM .c-popover__content, #introduction .l-main-content .l-main-content__wbslist .table-body .c-popover-filterM .c-popover__content, .l-main-content #introduction .l-main-content__wbslist .table-body .c-popover-filterM .c-popover__content, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-popover-filterM .c-popover__content, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-popover-filterM .c-popover__content, #introduction .l-main-content__statisticsPlan .table-body .c-popover-filterM .c-popover__content, #introduction .l-main-content__planlist .table-body .c-popover-filterL .c-popover__content, #introduction .l-main-content .l-main-content__wbslist .table-body .c-popover-filterL .c-popover__content, .l-main-content #introduction .l-main-content__wbslist .table-body .c-popover-filterL .c-popover__content, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-popover-filterL .c-popover__content, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-popover-filterL .c-popover__content, #introduction .l-main-content__statisticsPlan .table-body .c-popover-filterL .c-popover__content, #introduction .l-main-content__planlist .table-body .c-popover-wbsEdit .c-popover__content, #introduction .l-main-content .l-main-content__wbslist .table-body .c-popover-wbsEdit .c-popover__content, .l-main-content #introduction .l-main-content__wbslist .table-body .c-popover-wbsEdit .c-popover__content, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-popover-wbsEdit .c-popover__content, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-popover-wbsEdit .c-popover__content, #introduction .l-main-content__statisticsPlan .table-body .c-popover-wbsEdit .c-popover__content, #introduction .l-main-content__planlist .table-body .c-popover-perspective .c-popover__content, #introduction .l-main-content .l-main-content__wbslist .table-body .c-popover-perspective .c-popover__content, .l-main-content #introduction .l-main-content__wbslist .table-body .c-popover-perspective .c-popover__content, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-popover-perspective .c-popover__content, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-popover-perspective .c-popover__content, #introduction .l-main-content__statisticsPlan .table-body .c-popover-perspective .c-popover__content, #introduction .l-main-content__planlist .table-body .c-popover-information .c-popover__content, #introduction .l-main-content .l-main-content__wbslist .table-body .c-popover-information .c-popover__content, .l-main-content #introduction .l-main-content__wbslist .table-body .c-popover-information .c-popover__content, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-popover-information .c-popover__content, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-popover-information .c-popover__content, #introduction .l-main-content__statisticsPlan .table-body .c-popover-information .c-popover__content {
+  margin-bottom: 0.5rem;
+}
+
+#introduction .l-main-content__planlist .table-body .c-datePicker-day .c-datePicker__modal, #introduction .l-main-content .l-main-content__wbslist .table-body .c-datePicker-day .c-datePicker__modal, .l-main-content #introduction .l-main-content__wbslist .table-body .c-datePicker-day .c-datePicker__modal, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-datePicker-day .c-datePicker__modal, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-datePicker-day .c-datePicker__modal, #introduction .l-main-content__statisticsPlan .table-body .c-datePicker-day .c-datePicker__modal, #introduction .l-main-content__planlist .table-body .c-datePicker-days .c-datePicker__modal, #introduction .l-main-content .l-main-content__wbslist .table-body .c-datePicker-days .c-datePicker__modal, .l-main-content #introduction .l-main-content__wbslist .table-body .c-datePicker-days .c-datePicker__modal, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-datePicker-days .c-datePicker__modal, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-datePicker-days .c-datePicker__modal, #introduction .l-main-content__statisticsPlan .table-body .c-datePicker-days .c-datePicker__modal, #introduction .l-main-content__planlist .table-body .c-datePicker-months .c-datePicker__modal, #introduction .l-main-content .l-main-content__wbslist .table-body .c-datePicker-months .c-datePicker__modal, .l-main-content #introduction .l-main-content__wbslist .table-body .c-datePicker-months .c-datePicker__modal, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-datePicker-months .c-datePicker__modal, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-datePicker-months .c-datePicker__modal, #introduction .l-main-content__statisticsPlan .table-body .c-datePicker-months .c-datePicker__modal {
   margin-bottom: 0.5rem;
 }
 
@@ -16520,6 +16556,10 @@ body {
   padding-left: 3rem;
 }
 
+#membertime .change-card-to-list .c-card-manhourSofar, #membertime .change-card-to-list .c-card-manhourSearch, #membertime .change-card-to-list .c-card-percent, #membertime .change-card-to-list .c-card-percentCheck, #membertime .change-card-to-list .c-card-planPerson, #membertime .change-card-to-list .c-card-planClosed, #membertime .change-card-to-list .c-card-planHotkey, #membertime .change-card-to-list .c-card-planReport, #membertime .change-card-to-list .c-card-planReport-danger, #membertime .change-card-to-list .c-card-alertPlan, #membertime .change-card-to-list .c-card-department {
+  height: 4rem;
+}
+
 #membertime .change-card-to-list .c-card-manhourSofar:hover, #membertime .change-card-to-list .c-card-manhourSearch:hover, #membertime .change-card-to-list .c-card-percent:hover, #membertime .change-card-to-list .c-card-percentCheck:hover, #membertime .change-card-to-list .c-card-planPerson:hover, #membertime .change-card-to-list .c-card-planClosed:hover, #membertime .change-card-to-list .c-card-planHotkey:hover, #membertime .change-card-to-list .c-card-planReport:hover, #membertime .change-card-to-list .c-card-planReport-danger:hover, #membertime .change-card-to-list .c-card-alertPlan:hover, #membertime .change-card-to-list .c-card-department:hover {
   -webkit-transition: all 0;
   transition: all 0;
@@ -16804,6 +16844,10 @@ body {
           transform: translateY(0px) translateX(0px);
 }
 
+#memberstime .change-card-to-list .c-card-manhourSearch .c-card__userInformation h3, #departmenttime .change-card-to-list .c-card-manhourSearch .c-card__userInformation h3, #universalPlan .change-card-to-list .c-card-manhourSearch .c-card__userInformation h3 {
+  font-family: "Noto Sans TC", "sans-serif";
+}
+
 #departmenttime .l-main-tabs {
   margin-bottom: 5px;
 }
@@ -17029,6 +17073,10 @@ body {
 
 #notReachedtime .c-card-percent .c-card__userInformation h3, #notReachedtime .c-card-percentCheck .c-card__userInformation h3 {
   font-family: "Noto Sans TC", "sans-serif";
+}
+
+#notReachedtime .c-card-percent .c-card__item .c-card__item__title, #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__title, #notReachedtime .c-card-percent .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport #notReachedtime .c-card-percent .c-card__item .c-card__item__content, #notReachedtime .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__content, #notReachedtime .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger #notReachedtime .c-card-percent .c-card__item .c-card__item__content, #notReachedtime .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__content, #notReachedtime .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-alertPlan #notReachedtime .c-card-percent .c-card__item .c-card__item__content, #notReachedtime .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-alertPlan #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__content, #notReachedtime .c-card-percent .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planReport #notReachedtime .c-card-percent .c-card__item .c-card__item__footer, #notReachedtime .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planReport #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__footer, #notReachedtime .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger #notReachedtime .c-card-percent .c-card__item .c-card__item__footer, #notReachedtime .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__footer, #notReachedtime .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan #notReachedtime .c-card-percent .c-card__item .c-card__item__footer, #notReachedtime .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__footer {
+  margin-top: 0.2rem;
 }
 
 #notReachedtime .c-datePicker__modal .c-datePicker__yearPicker button {

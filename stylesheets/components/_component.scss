@@ -194,7 +194,6 @@
     .c-card__userInformation {
         font-size: 14px;
         margin-top: $m;
-       // color: $gray3;
         justify-content: flex-start;
     }
 }
@@ -708,7 +707,6 @@
     width: 425px;
     border-radius: 10px;
     box-shadow: none;
-    // border: 2px solid $hyweb-lighblue;
 
     .collapsible {
         border: none;
@@ -725,6 +723,12 @@
         height: 1.8rem;
         background-image: url(../img/o-activeIcon.svg);
     }
+    .active{
+       .is-arrow-active{
+        border-radius: 0.66rem 0.66rem 0rem 0rem;
+    } 
+    }
+    
     .accordion-header {
         font-size: $p;
         line-height: 26px;
@@ -769,7 +773,7 @@
         font-size: $p;
 
         .row {
-            margin-bottom: 3%;
+            margin-bottom: 0.66rem;//3%;
         }
     }
 
@@ -818,13 +822,15 @@
     .accordion-body__title {
         padding: 0.5rem 1.5rem;
         color:$gray3;
+        font-size: $p;
         .col{
             font-weight: 400;
         }
     }
 
     .accordion-body__item {
-        padding: 1.5rem;
+        padding: 1rem 0.5rem;
+      
     }
     .is-arrow-active{
         border-radius: 0.666rem 0.666rem 0 0 ;
@@ -1384,7 +1390,7 @@
     width: 82%;
     height: 85vh;
     overflow: hidden;
-    padding:1rem 2rem;
+    padding:2rem 2rem;
 
     .c-modal-closeBtn {
         display: flex;
@@ -1394,12 +1400,10 @@
 
     .c-modal-btnList {
         display: flex;
-        //justify-content: space-between;
         align-items: center;
-        margin-bottom: 0.2rem;
+        margin-bottom: 1rem;
         button{
-          border-radius: 40px;  
-          //padding: 0.5rem 0;
+          border-radius: 40px; 
           
         }
         .cross-btn{
@@ -1421,9 +1425,11 @@
             margin-right: calc(75vw - 100px);
             white-space: nowrap;
             min-width: 4rem;
-            margin-bottom:0.5rem;
-            margin-top:0.5rem;
+            //margin-bottom:0.5rem;
+            //margin-top:0.5rem;
             padding:0.5rem;
+            position: absolute;
+            left: 1.5rem;
         }
         
     }
@@ -1431,8 +1437,6 @@
     .c-modal-addGroup__content {
         display: flex;
         flex-wrap: wrap;
-        //height: calc(85vh - 230px);
-        //height: calc(85vh - 90px);//calc(85vh - 200px);
         .c-modal-addGroup__content__item {
             width: 100%;
             padding-top: 1rem;
@@ -1479,7 +1483,7 @@
 
     .c-modal-content {
         display: block;
-        height: calc(85vh - 230px);//calc(85vh - 350px);
+        height: calc(85vh - 230px);
         overflow-y: scroll;
         padding-top: 1rem;
         .c-modal-content__select {
@@ -1572,7 +1576,6 @@
     }
 
     .c-modal-footer {
-        //align-self: flex-end;
         justify-content: flex-end;
         margin-bottom: 1rem;
         button{
@@ -1602,7 +1605,18 @@
                 }
             }
         }
-        
+        .s5{
+           .input-title{
+               position: relative;
+               &::after{
+                   font-size: 0.8rem;
+                   content: '請選擇部門或輸入關鍵字';
+                   font-weight: 400;
+                   right: 0;
+                   position: absolute;
+               }
+           } 
+        }
     }
 
 }
@@ -1915,6 +1929,10 @@
 
     .c-modal-footer {
         align-self: flex-end;
+        button{
+            position: absolute;
+            bottom: 2rem;
+        }
     }
 }
 
@@ -1938,7 +1956,7 @@
 
         .accordion-body__item {
             .col {
-                font-size: $font-size-l;
+                font-size: $p;//$font-size-l;
             }
         }
     }
@@ -2910,7 +2928,7 @@
 }
 
 .c-writeHours-title__item {
-    padding: 0 1.5%;
+    padding: 0 1rem;//0 1.5%;
     padding-bottom: 0.8rem;
     color: $gray1;
     background-color: $after-blue;
@@ -2933,8 +2951,8 @@
         font-family: $english-font;
 
         span {
-            padding-bottom: 3%;
-            margin-left: 3%;
+            padding-bottom: 0.266rem;//3%;
+            margin-left: 0.266rem;//3%;
             font-family: $font-family;
             font-size: $p;
             font-weight: 700;
@@ -2944,7 +2962,7 @@
 
     .c-writeHours-title__item__hours {
         display: flex;
-        margin-bottom: 5%;
+        margin-bottom:0.33rem;// 5%;
         height: 5rem; //40%;
         align-items: flex-end;
         border-bottom: 1px solid $gray1;
@@ -2952,7 +2970,7 @@
 
         .text {
             font-size: $font-size;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
             font-family: $font-family;
             line-height: 1rem;
             white-space: nowrap;
