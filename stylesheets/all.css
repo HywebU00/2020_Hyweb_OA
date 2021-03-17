@@ -10127,6 +10127,53 @@ body {
           justify-content: center;
 }
 
+.l-main-content .l-main-content-pagiation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageSelect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageSelect .c-dropdown-page {
+  margin: 0 0.5rem;
+}
+
+.l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput button {
+  cursor: pointer;
+}
+
+.l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .o-input, .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .hoursInput, .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .otherInput, .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .c-search-item__input {
+  width: 3.66rem;
+  margin: 0 0.5rem;
+}
+
+.l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .o-input input, .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .hoursInput input, .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .otherInput input, .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .c-search-item__input input {
+  margin: 0rem;
+}
+
 .l-main-content .table-body__dragBtn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10256,6 +10303,10 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+}
+
+.l-main-content-table {
+  margin-bottom: 2.5rem;
 }
 
 .l-main-content-table .l-main-content-table__text {
@@ -13081,7 +13132,7 @@ body {
   margin-top: -1rem;
 }
 
-.c-dropdown-plan .select-wrapper, .c-dropdown-planContent .select-wrapper, .c-dropdown-status .select-wrapper, .c-dropdown-general .select-wrapper, .c-dropdown-department .select-wrapper, .c-dropdown-departmentCheck .select-wrapper {
+.c-dropdown-plan .select-wrapper, .c-dropdown-page .select-wrapper, .c-dropdown-planContent .select-wrapper, .c-dropdown-status .select-wrapper, .c-dropdown-general .select-wrapper, .c-dropdown-department .select-wrapper, .c-dropdown-departmentCheck .select-wrapper {
   height: 38px;
   width: 100%;
   padding: 1%;
@@ -13089,17 +13140,17 @@ body {
   border-radius: 5px;
 }
 
-.c-dropdown-plan .select-wrapper .caret, .c-dropdown-planContent .select-wrapper .caret, .c-dropdown-status .select-wrapper .caret, .c-dropdown-general .select-wrapper .caret, .c-dropdown-department .select-wrapper .caret, .c-dropdown-departmentCheck .select-wrapper .caret {
+.c-dropdown-plan .select-wrapper .caret, .c-dropdown-page .select-wrapper .caret, .c-dropdown-planContent .select-wrapper .caret, .c-dropdown-status .select-wrapper .caret, .c-dropdown-general .select-wrapper .caret, .c-dropdown-department .select-wrapper .caret, .c-dropdown-departmentCheck .select-wrapper .caret {
   z-index: 0;
 }
 
-.c-dropdown-plan .select-wrapper ul, .c-dropdown-planContent .select-wrapper ul, .c-dropdown-status .select-wrapper ul, .c-dropdown-general .select-wrapper ul, .c-dropdown-department .select-wrapper ul, .c-dropdown-departmentCheck .select-wrapper ul {
+.c-dropdown-plan .select-wrapper ul, .c-dropdown-page .select-wrapper ul, .c-dropdown-planContent .select-wrapper ul, .c-dropdown-status .select-wrapper ul, .c-dropdown-general .select-wrapper ul, .c-dropdown-department .select-wrapper ul, .c-dropdown-departmentCheck .select-wrapper ul {
   border-radius: 0.66rem;
   padding: 0.99rem;
   max-height: 635px;
 }
 
-.c-dropdown-plan .select-wrapper .select-dropdown, .c-dropdown-planContent .select-wrapper .select-dropdown, .c-dropdown-status .select-wrapper .select-dropdown, .c-dropdown-general .select-wrapper .select-dropdown, .c-dropdown-department .select-wrapper .select-dropdown, .c-dropdown-departmentCheck .select-wrapper .select-dropdown {
+.c-dropdown-plan .select-wrapper .select-dropdown, .c-dropdown-page .select-wrapper .select-dropdown, .c-dropdown-planContent .select-wrapper .select-dropdown, .c-dropdown-status .select-wrapper .select-dropdown, .c-dropdown-general .select-wrapper .select-dropdown, .c-dropdown-department .select-wrapper .select-dropdown, .c-dropdown-departmentCheck .select-wrapper .select-dropdown {
   border-bottom: 0px;
   font-size: 14px;
   margin: 0;
@@ -13110,42 +13161,42 @@ body {
           box-sizing: border-box;
 }
 
-.c-dropdown-plan .select-wrapper .select-dropdown li, .c-dropdown-planContent .select-wrapper .select-dropdown li, .c-dropdown-status .select-wrapper .select-dropdown li, .c-dropdown-general .select-wrapper .select-dropdown li, .c-dropdown-department .select-wrapper .select-dropdown li, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li {
+.c-dropdown-plan .select-wrapper .select-dropdown li, .c-dropdown-page .select-wrapper .select-dropdown li, .c-dropdown-planContent .select-wrapper .select-dropdown li, .c-dropdown-status .select-wrapper .select-dropdown li, .c-dropdown-general .select-wrapper .select-dropdown li, .c-dropdown-department .select-wrapper .select-dropdown li, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li {
   height: 40px;
 }
 
-.c-dropdown-plan .select-wrapper .select-dropdown li:first-child, .c-dropdown-planContent .select-wrapper .select-dropdown li:first-child, .c-dropdown-status .select-wrapper .select-dropdown li:first-child, .c-dropdown-general .select-wrapper .select-dropdown li:first-child, .c-dropdown-department .select-wrapper .select-dropdown li:first-child, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li:first-child {
+.c-dropdown-plan .select-wrapper .select-dropdown li:first-child, .c-dropdown-page .select-wrapper .select-dropdown li:first-child, .c-dropdown-planContent .select-wrapper .select-dropdown li:first-child, .c-dropdown-status .select-wrapper .select-dropdown li:first-child, .c-dropdown-general .select-wrapper .select-dropdown li:first-child, .c-dropdown-department .select-wrapper .select-dropdown li:first-child, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li:first-child {
   border-top: 0;
   padding-top: 0;
 }
 
-.c-dropdown-plan .select-wrapper .select-dropdown li:last-child, .c-dropdown-planContent .select-wrapper .select-dropdown li:last-child, .c-dropdown-status .select-wrapper .select-dropdown li:last-child, .c-dropdown-general .select-wrapper .select-dropdown li:last-child, .c-dropdown-department .select-wrapper .select-dropdown li:last-child, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li:last-child {
+.c-dropdown-plan .select-wrapper .select-dropdown li:last-child, .c-dropdown-page .select-wrapper .select-dropdown li:last-child, .c-dropdown-planContent .select-wrapper .select-dropdown li:last-child, .c-dropdown-status .select-wrapper .select-dropdown li:last-child, .c-dropdown-general .select-wrapper .select-dropdown li:last-child, .c-dropdown-department .select-wrapper .select-dropdown li:last-child, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li:last-child {
   border-bottom: 0;
 }
 
-.c-dropdown-plan .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-planContent .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-status .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-general .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-department .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li .optgroup-option {
+.c-dropdown-plan .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-page .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-planContent .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-status .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-general .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-department .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li .optgroup-option {
   padding-left: 0;
 }
 
-.c-dropdown-plan .select-wrapper .select-dropdown .optgroup, .c-dropdown-planContent .select-wrapper .select-dropdown .optgroup, .c-dropdown-status .select-wrapper .select-dropdown .optgroup, .c-dropdown-general .select-wrapper .select-dropdown .optgroup, .c-dropdown-department .select-wrapper .select-dropdown .optgroup, .c-dropdown-departmentCheck .select-wrapper .select-dropdown .optgroup {
+.c-dropdown-plan .select-wrapper .select-dropdown .optgroup, .c-dropdown-page .select-wrapper .select-dropdown .optgroup, .c-dropdown-planContent .select-wrapper .select-dropdown .optgroup, .c-dropdown-status .select-wrapper .select-dropdown .optgroup, .c-dropdown-general .select-wrapper .select-dropdown .optgroup, .c-dropdown-department .select-wrapper .select-dropdown .optgroup, .c-dropdown-departmentCheck .select-wrapper .select-dropdown .optgroup {
   padding-left: 0;
   padding-top: 1.5rem;
   border: 0;
   font-size: 1.06rem;
 }
 
-.c-dropdown-plan .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-planContent .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-status .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-general .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-department .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-departmentCheck .select-wrapper .select-dropdown .optgroup:hover {
+.c-dropdown-plan .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-page .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-planContent .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-status .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-general .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-department .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-departmentCheck .select-wrapper .select-dropdown .optgroup:hover {
   background: #fff;
   cursor: default;
 }
 
-.c-dropdown-plan .select-wrapper .select-dropdown .optgroup span, .c-dropdown-planContent .select-wrapper .select-dropdown .optgroup span, .c-dropdown-status .select-wrapper .select-dropdown .optgroup span, .c-dropdown-general .select-wrapper .select-dropdown .optgroup span, .c-dropdown-department .select-wrapper .select-dropdown .optgroup span, .c-dropdown-departmentCheck .select-wrapper .select-dropdown .optgroup span {
+.c-dropdown-plan .select-wrapper .select-dropdown .optgroup span, .c-dropdown-page .select-wrapper .select-dropdown .optgroup span, .c-dropdown-planContent .select-wrapper .select-dropdown .optgroup span, .c-dropdown-status .select-wrapper .select-dropdown .optgroup span, .c-dropdown-general .select-wrapper .select-dropdown .optgroup span, .c-dropdown-department .select-wrapper .select-dropdown .optgroup span, .c-dropdown-departmentCheck .select-wrapper .select-dropdown .optgroup span {
   color: #042340;
   font-size: 14px;
   font-weight: 700;
 }
 
-.c-dropdown-plan .dropdown-content li, .c-dropdown-planContent .dropdown-content li, .c-dropdown-status .dropdown-content li, .c-dropdown-general .dropdown-content li, .c-dropdown-department .dropdown-content li, .c-dropdown-departmentCheck .dropdown-content li {
+.c-dropdown-plan .dropdown-content li, .c-dropdown-page .dropdown-content li, .c-dropdown-planContent .dropdown-content li, .c-dropdown-status .dropdown-content li, .c-dropdown-general .dropdown-content li, .c-dropdown-department .dropdown-content li, .c-dropdown-departmentCheck .dropdown-content li {
   min-height: 36px;
   border-bottom: 1px solid #BAD4E5;
   display: -webkit-box;
@@ -13156,7 +13207,7 @@ body {
           align-items: center;
 }
 
-.c-dropdown-plan .dropdown-content li span, .c-dropdown-planContent .dropdown-content li span, .c-dropdown-status .dropdown-content li span, .c-dropdown-general .dropdown-content li span, .c-dropdown-department .dropdown-content li span, .c-dropdown-departmentCheck .dropdown-content li span {
+.c-dropdown-plan .dropdown-content li span, .c-dropdown-page .dropdown-content li span, .c-dropdown-planContent .dropdown-content li span, .c-dropdown-status .dropdown-content li span, .c-dropdown-general .dropdown-content li span, .c-dropdown-department .dropdown-content li span, .c-dropdown-departmentCheck .dropdown-content li span {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -13166,15 +13217,28 @@ body {
   font-weight: 400;
 }
 
-.c-dropdown-plan .dropdown-content li a, .c-dropdown-planContent .dropdown-content li a, .c-dropdown-status .dropdown-content li a, .c-dropdown-general .dropdown-content li a, .c-dropdown-department .dropdown-content li a, .c-dropdown-departmentCheck .dropdown-content li a {
+.c-dropdown-plan .dropdown-content li a, .c-dropdown-page .dropdown-content li a, .c-dropdown-planContent .dropdown-content li a, .c-dropdown-status .dropdown-content li a, .c-dropdown-general .dropdown-content li a, .c-dropdown-department .dropdown-content li a, .c-dropdown-departmentCheck .dropdown-content li a {
   padding: 0;
 }
 
-.c-dropdown-plan label, .c-dropdown-planContent label, .c-dropdown-status label, .c-dropdown-general label, .c-dropdown-department label, .c-dropdown-departmentCheck label {
+.c-dropdown-plan label, .c-dropdown-page label, .c-dropdown-planContent label, .c-dropdown-status label, .c-dropdown-general label, .c-dropdown-department label, .c-dropdown-departmentCheck label {
   font-size: 1.06rem;
   color: #042340;
   font-weight: 700;
   font-family: "Noto Sans TC", "sans-serif";
+}
+
+.c-dropdown-page .select-wrapper {
+  width: 3.66rem;
+}
+
+.c-dropdown-page .select-wrapper .select-dropdown {
+  padding-right: 0rem;
+  padding-left: 1rem;
+}
+
+.c-dropdown-page .select-wrapper .caret {
+  display: none;
 }
 
 .c-dropdown-planContent .select-wrapper {

@@ -2081,6 +2081,21 @@
 
 }
 
+.c-dropdown-page{
+    @extend.c-dropdown-plan;
+    .select-wrapper{
+        width: 3.66rem;
+        .select-dropdown{
+            padding-right: 0rem;
+            padding-left: 1rem;
+        }
+        .caret{
+            display: none;
+        }
+    }
+    
+}
+
 .c-dropdown-planContent {
     @extend .c-dropdown-plan;
 
