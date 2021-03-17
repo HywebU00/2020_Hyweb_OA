@@ -12206,7 +12206,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 24px 0;
+  padding: 1.6rem 0;
 }
 
 .c-modal .c-modal-content p, .c-modal-systemDialog .c-modal-content p, .c-modal-alert .c-modal-content p, .c-modal-chooseGroup .c-modal-content p, .c-modal-addGroup .c-modal-content p, .c-modal-usuallyUseMember .c-modal-content p, .c-modal-sample .c-modal-content p, .c-modal-alert .c-modal-alert__content .c-modal-content__scroll p {
@@ -12260,6 +12260,10 @@ body {
 
 .c-modal-alert .c-modal-alert__content .o-btn-primary {
   padding: 0 1.66rem;
+}
+
+.c-modal-alert .c-modal-alert__content p {
+  line-height: 1.5rem;
 }
 
 .c-modal-alert .c-modal-alert__content .c-modal-content__scroll {
