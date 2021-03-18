@@ -2626,7 +2626,13 @@
 .c-datePicker-months {
     @extend .c-datePicker-days;
     .c-datePicker__input{
-        width: 160px;
+        width: 12rem;//160px;
+        .o-input-div{
+            line-height: 2.2rem;
+            span{
+               color: $hyweb-blue; 
+            }
+        }
     }
     .c-datePicker__modal{
         width: 337px;
@@ -3624,6 +3630,10 @@
             display: inline-block;
             margin-left: 0.5rem;
         }
+        // .switch-Letter-text{
+        //     display: inline-block;
+        //     margin-left: 1rem;
+        // }
     
 }
 
