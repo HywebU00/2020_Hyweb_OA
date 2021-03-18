@@ -16133,6 +16133,10 @@ body {
           justify-content: center;
 }
 
+#alertPlen .l-main-content-item__listGroup .l-main-content__text {
+  margin: 0;
+}
+
 #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan {
   height: 4rem;
 }
@@ -16192,6 +16196,10 @@ body {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item__listGroup .l-main-content__text {
+  width: 100%;
 }
 
 #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__title .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__title .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__content .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__content .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__tag__num .c-card__tag__status {

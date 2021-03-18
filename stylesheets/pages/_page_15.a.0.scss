@@ -731,12 +731,15 @@
         max-width: 1000px;
         width: auto;
     }
-
+   
     .l-main-content-item__listGroup {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        .l-main-content__text{
+            margin: 0;
+        }
 
     }
     
@@ -816,7 +819,9 @@
       
         .l-main-content-item__listGroup {
             justify-content: left;
-                       
+            .l-main-content__text{
+                width: 100%;
+            }           
             .c-card-planReport-danger{
                 .c-card__item{
                     .c-card__item__title{
