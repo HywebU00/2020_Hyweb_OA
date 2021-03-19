@@ -1,9 +1,10 @@
-body{
+body {
     overflow: hidden;
 }
+
 .l-container {
     display: flex;
-    
+
 }
 
 .l-side {
@@ -176,7 +177,7 @@ body{
 
 .l-main {
     width: 100%;
-   
+
     //max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -184,8 +185,9 @@ body{
     transition: all 0.5s;
 
     .c-breadcrumb {
-       // margin-bottom: 0.5rem;
-        a{
+
+        // margin-bottom: 0.5rem;
+        a {
             color: $gray1;
         }
     }
@@ -200,8 +202,10 @@ body{
         .c-writeHours-content {
             padding: 1.2rem 1rem;
             border-radius: 0 0 $card-radius $card-radius;
+
             .row {
                 margin-bottom: 0;
+
                 .col {
                     padding: 0 0.2rem;
                 }
@@ -219,8 +223,8 @@ body{
                 align-items: center;
 
                 .col {
-                  margin-left: 1rem;
-                  //padding-left:1.5rem ;
+                    margin-left: 1rem;
+                    //padding-left:1.5rem ;
 
                 }
 
@@ -254,11 +258,12 @@ body{
 
                 .col {
                     margin-left: 0;
+
                     //padding-left: 0;
                     input[type=text] {
                         margin: 0;
                     }
-                   
+
                 }
             }
 
@@ -282,25 +287,29 @@ body{
     justify-content: flex-end;
     margin-top: -44px;
     margin-bottom: 1.5rem;
-    button{
+
+    button {
         border-radius: 40px;
         display: flex;
         align-items: center;
-        padding:0.5rem;
+        padding: 0.5rem;
+
         img {
             margin-right: 0.3rem;
         }
     }
-    .disabled{
-        cursor: default; 
+
+    .disabled {
+        cursor: default;
     }
+
     .l-main-tabs__item {
         display: flex;
         color: $gray1;
         align-items: center;
         // margin-left: 1rem;
 
-        
+
     }
 
 }
@@ -311,13 +320,16 @@ body{
     overflow-y: scroll;
     height: calc(100vh - 210px);
     width: calc(100vw - 267px);
-    .l-main-content__downloadlink{
+
+    .l-main-content__downloadlink {
         margin-bottom: 1.5rem;
-        a{
-            color: $gray1; 
+
+        a {
+            color: $gray1;
             text-decoration: underline;
         }
     }
+
     .l-main-content__text {
         color: $gray3;
         font-size: $p;
@@ -329,10 +341,12 @@ body{
             margin-right: 0.5rem;
         }
     }
-    .l-main-content__tip{
+
+    .l-main-content__tip {
         margin-bottom: 1.5rem;
-        color: $gray1;  
+        color: $gray1;
     }
+
     .l-main-content__fileInput {
         display: flex;
         height: calc(100vh - 210px);
@@ -368,23 +382,26 @@ body{
             img {
                 margin-right: 0.5rem;
             }
-            .l-main-content-text__inputText{
+
+            .l-main-content-text__inputText {
                 margin-left: 1.8rem;
                 font-weight: 400;
             }
 
         }
-        .is-display-none{
+
+        .is-display-none {
             display: none;
         }
     }
 
-    
+
     .l-main-content-data {
         @extend .l-main-content-title;
         display: flex;
         justify-content: flex-end;
     }
+
     .l-main-content-between-title {
         @extend .l-main-content-title;
         display: flex;
@@ -438,11 +455,12 @@ body{
     }
 
     .l-main-content__textarea {
-        .l-main-content__textarea__text{
+        .l-main-content__textarea__text {
             color: $gray3;
             padding-top: 0.5rem;
             padding-bottom: 1rem;
         }
+
         textarea {
             padding: 1rem;
             border: 2px solid $hyweb-blue;
@@ -470,12 +488,13 @@ body{
     }
 
     .l-main-content__upload {
-        .l-main-content__upload__text{
+        .l-main-content__upload__text {
             color: $gray3;
             padding-top: 0.5rem;
             padding-bottom: 1rem;
-          
+
         }
+
         margin-bottom: 2rem;
 
         .c-fileInput-upload {
@@ -513,16 +532,19 @@ body{
                     cursor: pointer;
                 }
             }
-            .s1{
+
+            .s1 {
                 justify-content: flex-end;
-                button{
+
+                button {
                     width: 33px;
                     height: 33px;
                     border-radius: 50%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    img{
+
+                    img {
                         padding: 0;
                     }
                 }
@@ -535,11 +557,13 @@ body{
         margin-bottom: 2rem;
         display: flex;
         flex-wrap: wrap;
-        .l-main-content__addMember__text{
+
+        .l-main-content__addMember__text {
             color: $gray3;
             padding-top: 0.5rem;
             padding-bottom: 1rem;
         }
+
         .c-fileInput-add {
             height: 180px;
             width: 100%;
@@ -570,14 +594,16 @@ body{
             padding-left: 24px;
         }
 
-        .table-body {         
+        .table-body {
             .table-body__item {
                 border-bottom: $gray-blue solid 1px;
                 display: flex;
                 align-items: center;
-                .table-body__item__icon{
+
+                .table-body__item__icon {
                     width: 24px;
                 }
+
                 .table-body__item__project {
                     display: flex;
                     cursor: pointer;
@@ -588,13 +614,13 @@ body{
                     img {
                         width: 24px;
                     }
-                   
+
                     .table-body__item__project__title {
                         padding: 0 0.75rem;
                     }
                 }
             }
- 
+
             .row {
                 width: 100%;
                 padding: 0;
@@ -612,7 +638,7 @@ body{
 
                 .is-popmodal-show {
                     overflow: inherit;
-                    
+
                 }
             }
 
@@ -643,24 +669,25 @@ body{
                 table {
                     width: 210px;
                 }
-                .c-datePicker__yearPicker{
-                     button{
-                    height: 20px;
-                    width: 20px; 
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+
+                .c-datePicker__yearPicker {
+                    button {
+                        height: 20px;
+                        width: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
+
+                .c-datePicker__footer {
+                    .o-btn-primary {
+                        height: 32px;
+                        padding: 0 20px;
+
+                    }
                 }
-               
-                .c-datePicker__footer{
-                    .o-btn-primary{                     
-                         height: 32px;
-                         padding: 0 20px;
-                     
-                     }
-                }
-                
+
             }
         }
 
@@ -669,7 +696,7 @@ body{
 
     .l-main-content__wbslist {
         @extend .l-main-content__planlist;
-        overflow: scroll;
+        overflow-x: scroll;
         display: flex;
         flex-wrap: wrap;
 
@@ -695,21 +722,25 @@ body{
                         margin-right: 0.5rem;
                     }
                 }
-                .num-position{
+
+                .num-position {
                     justify-content: center;
-                    button{
+
+                    button {
                         justify-content: center;
                         display: flex;
                         align-items: center;
                         font-weight: 700;
                         cursor: pointer;
-                        img{
+
+                        img {
                             width: 22px;
-                        height: 22px;
+                            height: 22px;
                         }
                     }
-                    .is-wbslist-btn-active{
-                        img{
+
+                    .is-wbslist-btn-active {
+                        img {
                             transform: rotate(-90deg);
                             transition: ease 0.5s;
                         }
@@ -720,35 +751,42 @@ body{
 
         .table-body {
             height: calc(100vh - 277px);
-            overflow: scroll;
+            overflow-y: scroll;
             flex-shrink: 0;
-            .table-body__conutItem{
+
+            .table-body__conutItem {
                 @extend .table-body__item;
                 border-bottom: 0;
                 box-shadow: $box-shadow;
                 border-radius: $card-radius;
-                margin:0.5rem 0.1rem;
-                .table-body__item__project{
+                margin: 0.5rem 0.1rem;
+
+                .table-body__item__project {
                     border-radius: $btn-radius;
                 }
-               .table-body__item__total{
-                   display: flex;
-                   align-items: center;
-                   margin:0  0 0 793.5px;
-                   font-weight: 700;
-                   .total__title{
-                       border-left: 1.5px solid $gray4;
-                       text-align: right;
-                   }
-                   .total__allTime{
-                       text-align: center;
-                       width: 120px;
-                   }
-                   .total__time{
-                    text-align: center;
-                   }
-               }
-            } 
+
+                .table-body__item__total {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 0 0 793.5px;
+                    font-weight: 700;
+
+                    .total__title {
+                        border-left: 1.5px solid $gray4;
+                        text-align: right;
+                    }
+
+                    .total__allTime {
+                        text-align: center;
+                        width: 120px;
+                    }
+
+                    .total__time {
+                        text-align: center;
+                    }
+                }
+            }
+
             .row {
                 width: auto;
                 display: flex;
@@ -767,16 +805,19 @@ body{
                 .c-dropdown__input {
                     width: 100%;
                 }
-                span{
+
+                span {
                     color: $gray1;
                 }
+
                 .c-datePicker-days {
-                    .c-datePicker__modal{
-                        button{
+                    .c-datePicker__modal {
+                        button {
                             padding: 0 20px;
-                        } 
-                        .c-datePicker__yearPicker{
-                            button{
+                        }
+
+                        .c-datePicker__yearPicker {
+                            button {
                                 width: 20px;
                                 height: 20px;
                                 padding: 0;
@@ -787,16 +828,19 @@ body{
                         }
                     }
                 }
-                .c-dropdown-member{
-                    button{
+
+                .c-dropdown-member {
+                    button {
                         padding: 0 20px;
                     }
                 }
-               
+
             }
-            .num-position{
+
+            .num-position {
                 text-align: center;
             }
+
             .c-datePicker-days {
                 width: 100%;
                 height: 3rem;
@@ -817,12 +861,13 @@ body{
             }
 
             .table-body__subtitle {
-                background-color: $after-blue;//$sec3;
+                background-color: $after-blue; //$sec3;
             }
 
-            .pl{
+            .pl {
                 padding-left: 24px;
             }
+
             .table-body__item {
                 .table-body__item__project {
                     display: flex;
@@ -842,66 +887,74 @@ body{
             }
 
             //---錯誤狀態樣式---
-            .is-error-status{
+            .is-error-status {
                 padding-bottom: 1rem;
-                .is-error-status-item{
+
+                .is-error-status-item {
                     .c-datePicker-days {
-                        .o-input-div{
+                        .o-input-div {
                             background-color: #fff;
                             border: 1px solid $danger;
                         }
-                        &::after{
-                           color: $danger;
+
+                        &::after {
+                            color: $danger;
                             content: "格式：yyyy/mm/dd";
                             font-size: 0.8rem;
                         }
                     }
+
                     .c-dropdown-general {
-                        .select-wrapper{
+                        .select-wrapper {
                             background-color: #fff;
                             border: 1px solid $danger;
                         }
-                        &::after{
+
+                        &::after {
                             color: $danger;
-                             content: "請確認項目有在選單內";
-                             font-size: 0.8rem;
-                         }
+                            content: "請確認項目有在選單內";
+                            font-size: 0.8rem;
+                        }
                     }
-                    .c-dropdown-member{
-                        .c-dropdown__input{
+
+                    .c-dropdown-member {
+                        .c-dropdown__input {
                             background-color: #fff;
                             border: 1px solid $danger;
-                            &::after{
+
+                            &::after {
                                 background-color: #fff;
                             }
                         }
-    
-                        &::after{
+
+                        &::after {
                             color: $danger;
-                             content: "請確認成員皆有在選單內且成員間以頓號區隔";
-                             font-size: 0.8rem;
-                         }
+                            content: "請確認成員皆有在選單內且成員間以頓號區隔";
+                            font-size: 0.8rem;
+                        }
                     }
-                    
-                   .o-input{
-                       position: relative;
-                       input{
-                        background-color: #fff;
-                        border: 1px solid $danger;
-                     
-                       }
-                       &::after{
-                        color: $danger;
-                         content: "請填阿拉伯數字";
-                         font-size: 0.8rem;
-                         display: block;
-                         margin-top: 0.2rem;
-                     }
-                     
-                   } 
-                 
+
+                    .o-input {
+                        position: relative;
+
+                        input {
+                            background-color: #fff;
+                            border: 1px solid $danger;
+
+                        }
+
+                        &::after {
+                            color: $danger;
+                            content: "請填阿拉伯數字";
+                            font-size: 0.8rem;
+                            display: block;
+                            margin-top: 0.2rem;
+                        }
+
+                    }
+
                 }
-                
+
             }
         }
 
@@ -928,6 +981,7 @@ body{
             width: 375px;
 
         }
+
         .table-footer {
 
             background-color: $hyweb-lighblue;
@@ -951,47 +1005,57 @@ body{
                     align-items: center;
                     box-sizing: border-box;
                     margin: 0;
-                    span{
+
+                    span {
                         color: $gray3;
                     }
                 }
-                .total-num-position{
+
+                .total-num-position {
                     justify-content: flex-end;
                 }
-                .num-position{
+
+                .num-position {
                     justify-content: center;
                 }
             }
         }
-        
+
     }
-    .l-main-content-pagiation{
+
+    .l-main-content-pagiation {
         display: flex;
-        justify-content:space-between;
-        .l-main-content-pagiation_pageSelect{
+        justify-content: space-between;
+
+        .l-main-content-pagiation_pageSelect {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            .c-dropdown-page{
+
+            .c-dropdown-page {
                 margin: 0 0.5rem;
             }
         }
-        .l-main-content-pagiation_pageInput{
+
+        .l-main-content-pagiation_pageInput {
             display: flex;
             align-items: center;
-            button{
+
+            button {
                 cursor: pointer;
             }
-            .o-input{
+
+            .o-input {
                 width: 3.66rem;
                 margin: 0 0.5rem;
-                input{
+
+                input {
                     margin: 0rem;
                 }
             }
         }
     }
-    
+
 
     .table-body__dragBtn {
         display: flex;
@@ -1022,25 +1086,29 @@ body{
             text-align: center;
             line-height: 1.5rem;
             padding: 1rem 0 1rem 0;
+
             .row {
                 .col {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    button{
+
+                    button {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         font-weight: 700;
                         cursor: pointer;
-                    
+
                     }
-                    img{
+
+                    img {
                         width: 22px;
                         height: 22px;
                     }
-                    .is-wbslist-btn-active{
-                        img{
+
+                    .is-wbslist-btn-active {
+                        img {
                             transform: rotate(-90deg);
                             transition: ease 0.5s;
                         }
@@ -1050,16 +1118,18 @@ body{
         }
 
         .table-body {
-            .lp{
+            .lp {
                 padding-left: 24px;
             }
+
             .table-body__item {
                 &:last-child {
                     border-bottom: 1px solid $hyweb-blue;
                 }
-                .row{
-                    .col{
-                        span{
+
+                .row {
+                    .col {
+                        span {
                             color: $gray3;
                         }
                     }
@@ -1071,7 +1141,7 @@ body{
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    
+
                 }
             }
         }
@@ -1110,11 +1180,13 @@ body{
 
 .l-main-content-table {
     margin-bottom: 2.5rem;
-    .l-main-content-table__text{
+
+    .l-main-content-table__text {
         color: $gray3;
         padding-top: 0.5rem;
         padding-bottom: 2rem;
     }
+
     .table-thead {
         background-color: $hyweb-lighblue;
         border-bottom: 1px solid $hyweb-blue;
@@ -1131,9 +1203,10 @@ body{
     }
 
     .table-body {
-        a{
-            color:$gray1;
+        a {
+            color: $gray1;
         }
+
         .col {
             line-height: 1.5rem;
             @include db_ellipsisText;
@@ -1161,7 +1234,8 @@ body{
                     align-items: center;
 
                 }
-                button{
+
+                button {
                     display: flex;
                     align-items: center;
 
@@ -1183,7 +1257,7 @@ body{
                 img {
                     padding: 0 0.3rem;
                 }
-              
+
             }
         }
 
@@ -1191,13 +1265,14 @@ body{
             margin-bottom: 0;
             font-size: $p;
             padding: 0 0 0 1.5rem;
-            height: 60px;//70px;
+            height: 60px; //70px;
             border-bottom: 1px solid $gray-blue;
             display: flex;
             align-items: center;
-            button{
-              padding:0.5rem 0.5rem;
-              border-radius: 40px;  
+
+            button {
+                padding: 0.5rem 0.5rem;
+                border-radius: 40px;
             }
         }
 
@@ -1220,20 +1295,22 @@ body{
     }
 }
 
-.l-main-writeHours{
+.l-main-writeHours {
     height: 80vh;
     overflow-y: scroll;
     margin-top: 1.5rem;
-    padding:0 0.5rem 0.5rem 0.5rem;
-    .c-writeHours{
-        .c-writeHours-content{
-            .is-error-status{
+    padding: 0 0.5rem 0.5rem 0.5rem;
+
+    .c-writeHours {
+        .c-writeHours-content {
+            .is-error-status {
                 padding-bottom: 1.3rem;
             }
         }
     }
-    
+
 }
+
 .sidebar__is-open {
     .l-side {
         width: 207px;
@@ -1331,7 +1408,7 @@ body{
 
 
             .menuItem-is-active {
-                color: $hyweb-blue;   
+                color: $hyweb-blue;
                 background: $sidebar-active-background;
 
 
@@ -1356,7 +1433,7 @@ body{
                 align-items: center;
 
                 img {
-                    padding-right: 0.5rem;//25%;
+                    padding-right: 0.5rem; //25%;
 
                 }
 
@@ -1373,10 +1450,12 @@ body{
                 .login-btn {
                     display: block;
                     cursor: pointer;
-                    &:hover{
+
+                    &:hover {
                         transition: ease 0s;
                         color: $hyweb-green;
                     }
+
                     transition: ease 0s;
                 }
             }
@@ -1447,7 +1526,8 @@ body{
     text-align: center;
     box-shadow: rgba(60, 64, 67, 0.3) -2px 0px 2px 0px;
     z-index: 98;
-    &:hover{
+
+    &:hover {
         background-color: #fff;
         box-shadow: rgba(60, 64, 67, 0.3) -2px 0px 2px 0px;
     }
@@ -1469,7 +1549,7 @@ body{
     min-width: 251px;
 
     .calendar-wrapper {
-        padding-bottom:1rem;
+        padding-bottom: 1rem;
         border-radius: 5px;
 
         .calendar-wrapper__title {
@@ -1490,8 +1570,9 @@ body{
                 align-items: center;
                 display: flex;
                 border-radius: 50%;
-                margin-right:1.8rem;
-                &:last-child{
+                margin-right: 1.8rem;
+
+                &:last-child {
                     margin: 0;
                 }
             }
@@ -1525,12 +1606,13 @@ body{
     }
 
     td.today {
-        font-weight: 700;      
+        font-weight: 700;
         color: #fff;
         z-index: 100;
         height: 30px;
         border-radius: 50%;
-        &::after{
+
+        &::after {
             position: absolute;
             content: "";
             background: $hy-background;
@@ -1541,18 +1623,22 @@ body{
         }
 
     }
+
     td.is-not-full {
-        color:$danger;
+        color: $danger;
     }
+
     td.is-thismonth-week {
-        color:$gray3;
+        color: $gray3;
     }
-    td.is-focus{
-        font-weight: 700;      
+
+    td.is-focus {
+        font-weight: 700;
         z-index: 100;
         height: 30px;
         border-radius: 50%;
-        &::after{
+
+        &::after {
             position: absolute;
             content: "";
             background: $hyweb-lighblue;
@@ -1611,7 +1697,7 @@ body{
         height: calc(100vh - 330px);
         width: 100%;
         padding-top: 3%;
-        overflow: scroll;
+        overflow-y: scroll;
     }
 
     .c-card-planHotkey {
@@ -1629,7 +1715,7 @@ body{
 }
 
 .c-sidebar-content__list__item {
-    padding:0.5rem 0 0.5rem 3.3rem;
+    padding: 0.5rem 0 0.5rem 3.3rem;
     display: block;
     font-weight: 400;
     border-radius: 0 25px 25px 0;
@@ -1637,6 +1723,7 @@ body{
     font-size: $a;
     cursor: pointer;
     color: #fff;
+
     &:hover {
         color: $hyweb-green;
     }
@@ -1646,16 +1733,16 @@ body{
 }
 
 .submenu__open {
-    .c-submenu-btn{
-        img{
+    .c-submenu-btn {
+        img {
             transform: rotate(-180deg);
             transition: 0.5s ease;
         }
-        
+
     }
+
     .c-submenu-content {
         transition: ease .5s;
         width: 0;
     }
 }
-
