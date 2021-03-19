@@ -965,6 +965,33 @@ body{
         }
         
     }
+    .l-main-content-pagiation{
+        display: flex;
+        justify-content:space-between;
+        .l-main-content-pagiation_pageSelect{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .c-dropdown-page{
+                margin: 0 0.5rem;
+            }
+        }
+        .l-main-content-pagiation_pageInput{
+            display: flex;
+            align-items: center;
+            button{
+                cursor: pointer;
+            }
+            .o-input{
+                width: 3.66rem;
+                margin: 0 0.5rem;
+                input{
+                    margin: 0rem;
+                }
+            }
+        }
+    }
+    
 
     .table-body__dragBtn {
         display: flex;
@@ -1082,6 +1109,7 @@ body{
 
 
 .l-main-content-table {
+    margin-bottom: 2.5rem;
     .l-main-content-table__text{
         color: $gray3;
         padding-top: 0.5rem;

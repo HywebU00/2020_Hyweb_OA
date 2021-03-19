@@ -108,11 +108,18 @@
     .c-card__item {
         justify-content: center;
         align-items: end;
+        .c-card__item__title{
+            width: 50%;
+            text-align: end;
+            line-height: 1.46rem;
+            padding-right: 0.25rem;
+        }
+        .c-card__item__time {
+            width: 50%;
+            padding-left:  0.25rem;
+        }
     }
-
-    .c-card__item__time {
-        padding-left: 1rem; //$pd-3/2;
-    }
+    
 
     .c-card__item__totaltime {
         font-size: $p;
@@ -120,15 +127,7 @@
         letter-spacing: 2px;
         margin-left: -5px;
     }
-    // .c-card-title {
-    //     display: flex;
-    //     justify-content: space-between;
 
-    //     form {
-    //         margin-top: 5%;
-    //         margin-right: 12%;
-    //     }
-    // }
 }
 
 .c-card-percentCheck {
@@ -1181,11 +1180,12 @@
 
     .c-modal-content {
         display: flex;
-        padding: 24px 0;
+        padding: 1.6rem 0;
 
         p {
             font-size: $p;
         }
+    
     }
 
     .c-modal-footer {
@@ -1226,7 +1226,9 @@
         .o-btn-primary{
             padding:0 1.66rem;
         }
-
+        p{
+            line-height: 1.5rem;
+        }
         .c-modal-content__scroll{
             @extend .c-modal-content;
             overflow-y:scroll; 
@@ -1946,18 +1948,24 @@
         height: 90%;
 
         .header__item__title {
-            font-size: $font-size-l;
+            font-size: $p;
+            margin-left: 1.33rem;
         }
 
         .c-modal-content__item {
             height: 100%;
             overflow-y: scroll;
+            .c-accordion-plan{
+                margin: 1rem 1.5rem; 
+            }
         }
 
         .accordion-body__item {
+            margin-bottom: 0.66rem;
             .col {
-                font-size: $p;//$font-size-l;
+                font-size: $p;
             }
+           
         }
     }
 
@@ -2076,6 +2084,21 @@
         font-family: $font-family;
     }
 
+}
+
+.c-dropdown-page{
+    @extend.c-dropdown-plan;
+    .select-wrapper{
+        width: 3.66rem;
+        .select-dropdown{
+            padding-right: 0rem;
+            padding-left: 1rem;
+        }
+        .caret{
+            display: none;
+        }
+    }
+    
 }
 
 .c-dropdown-planContent {
@@ -2608,7 +2631,13 @@
 .c-datePicker-months {
     @extend .c-datePicker-days;
     .c-datePicker__input{
-        width: 160px;
+        width: 12rem;//160px;
+        .o-input-div{
+            line-height: 2.2rem;
+            span{
+               color: $hyweb-blue; 
+            }
+        }
     }
     .c-datePicker__modal{
         width: 337px;

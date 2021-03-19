@@ -237,6 +237,27 @@ for (let s = 0; s < switchBtn.length; s++) {
 }
 
 //+++++++++++++++++++++++++++++++
+//switch-letter 改變卡片顏色 效果
+//+++++++++++++++++++++++++++++++
+const switchLetterBtn = document.querySelectorAll(".js-switch-workLetter");
+
+const switchLetterText = document.querySelectorAll(".switch-Letter-text");
+for (let e = 0; e < switchLetterBtn.length; e++) {
+  switchLetterBtn[e].addEventListener("click", function () {
+    let switchActive = switchLetterBtn[e].classList.contains(
+      "is-switch-active"
+    );
+    if (switchActive === false) {
+      switchLetterBtn[e].classList.add("is-switch-active");
+      switchLetterText[e].innerHTML = `開啟`;
+    } else {
+      switchLetterBtn[e].classList.remove("is-switch-active");
+      switchLetterText[e].innerHTML = `關閉`;
+    }
+  });
+}
+
+//+++++++++++++++++++++++++++++++
 // c-card-lablePerson 改變樣式
 //+++++++++++++++++++++++++++++++
 

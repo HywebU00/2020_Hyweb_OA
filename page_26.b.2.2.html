@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>page_26.b.2</title>
+    <title>page_26.b.2.2</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -31,8 +31,8 @@
           </div>
           <div class="c-sidebar-content__listGroup">
             <div class="c-sidebar-content__list">
-              <div class="c-sidebar-content__list__title">
-                <div class="list__title__icon">
+              <div class="c-sidebar-content__list__title menuParent-is-active">
+                <div class="list__title__icon icon-is-active">
                   <img
                     class="list__title__icon__default"
                     src="img/o-clock.svg"
@@ -83,8 +83,8 @@
               </div>
             </div>
             <div class="c-sidebar-content__list">
-              <div class="c-sidebar-content__list__title menuParent-is-active">
-                <div class="list__title__icon icon-is-active">
+              <div class="c-sidebar-content__list__title">
+                <div class="list__title__icon">
                   <img
                     class="list__title__icon__default"
                     src="img/o-report.svg"
@@ -102,9 +102,7 @@
                 <a href="page_15.a.0.html" class="c-sidebar-content__list__item"
                   >計畫統計
                 </a>
-                <a
-                  href="page_26.a.0.html"
-                  class="c-sidebar-content__list__item menuItem-is-active"
+                <a href="page_26.a.0.html" class="c-sidebar-content__list__item"
                   >警示計畫
                 </a>
                 <a href="page_27.a.0.html" class="c-sidebar-content__list__item"
@@ -154,7 +152,7 @@
         <ul class="c-breadcrumb">
           <li class=""><a href="#">我的工作紀錄</a></li>
           <div class="">></div>
-          <li class=""><a href="#">計畫統計</a></li>
+          <li class=""><a href="">計畫統計</a></li>
         </ul>
         <div class="c-general">
           <div class="c-general__title">
@@ -167,7 +165,7 @@
               <button class="c-popover__btn waves-effect waves-blue">
                 <a class="l-main-tabs__item" href="#">
                   <div class="pop-btn">
-                    <img src="img/o-person.svg" alt="" />M00
+                    <img src="img/o-person.svg" alt="" />所有部門
                   </div>
                 </a>
               </button>
@@ -187,8 +185,10 @@
               </div>
             </div>
             <button class="waves-effect waves-blue">
-              <img src="img/o-email.svg" alt="" />
-              <div class="">發送通知</div>
+              <a class="l-main-tabs__item modal-trigger" href="#safe">
+                <img src="img/o-email.svg" alt="" />
+                <div class="">發送通知</div>
+              </a>
             </button>
           </div>
           <div class="c-search">
@@ -335,10 +335,10 @@
           >
             <div class="l-main-content-title">
               <div class="l-main-content-text">
-                <div class=""></div>
+                <div class="l-main-content-text__title">A10</div>
               </div>
               <div class="l-main-content-list">
-                <div class="">共7筆</div>
+                <div class="">共9筆</div>
                 <div class="">
                   <div class="c-popover-information pop-modal">
                     <button
@@ -377,13 +377,12 @@
                       alt=""
                     />
                   </button>
-
                   <div
                     class="l-main-content-list__img c-popover-filterL pop-modal"
                   >
                     <button>
                       <span class="c-popover__btn"
-                        ><img src="img/o-filter.svg" alt="" class="pop-btn"
+                        ><img src="img/o-filter.svg" class="pop-btn" alt=""
                       /></span>
                     </button>
 
@@ -413,6 +412,22 @@
               </div>
             </div>
             <div class="l-main-content-item">
+              <div class="l-main-content-item__listGroup">
+                <div class="l-main-content__text">未有符合此搜尋條件的資料</div>
+              </div>
+              <div class="l-main-content-title">
+                <div class="l-main-content-text">
+                  <div class="l-main-content-text__title">B00</div>
+                </div>
+              </div>
+              <div class="l-main-content-item__listGroup">
+                <div class="l-main-content__text">未有符合此搜尋條件的資料</div>
+              </div>
+              <div class="l-main-content-title">
+                <div class="l-main-content-text">
+                  <div class="l-main-content-text__title">C00</div>
+                </div>
+              </div>
               <div class="l-main-content-item__listTitle">
                 <div class="listTitle__num">計畫代號</div>
                 <div class="listTitle__status">狀態</div>
@@ -670,242 +685,6 @@
                     </div>
                   </a>
                 </div>
-                <div class="c-card-planReport">
-                  <a href="#">
-                    <div class="c-card__item">
-                      <div class="c-card__item__title">
-                        <div class="c-card__tag">
-                          <div class="c-card__tag__num">
-                            <div class="">
-                              <!-- <div class="c-card__star__btn">
-                                <div
-                                  class="o-card__iconBtn o-card__star-default"
-                                ></div>
-                              </div> -->
-                              <span class="">2020WEV24H</span>
-                              <span class="c-card__tag__status">籌備</span>
-                            </div>
-                            <!-- <div class="c-card__tag__input">
-                              <form action="">
-                                <p>
-                                  <label>
-                                    <input
-                                      type="checkbox"
-                                      class="filled-in js-inputStyle"
-                                    />
-                                    <span></span>
-                                  </label>
-                                </p>
-                              </form>
-                            </div> -->
-                          </div>
-                        </div>
-                        <h2 class="">
-                          109年臺灣國際專業展網站強化案國際專業展網站
-                        </h2>
-                        <div class="c-card__text">
-                          <div class="c-card__text__startTime">
-                            2020/07/02
-                            <div>-</div>
-                            <span></span>
-                            2020/08/03
-                          </div>
-                          <div class="c-card__text__block">|</div>
-                          <div class="c-card__position">
-                            <span>PM-</span> 王小明
-                          </div>
-                          <div class="c-card__text__block">|</div>
-                          <div class="c-card__position">
-                            <span>業務-</span> 張嘉祥
-                          </div>
-                        </div>
-                      </div>
-                      <div class="c-card__item__content">
-                        <div class="c-card__tag">
-                          <div class="c-card__tag__btn">
-                            <div class="o-card__icon">
-                              <img src="img/o-money.svg" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="c-card__item__content__list">
-                          <div class="list__item row">
-                            <div class="list__item__title col">收入</div>
-                            <div class="col list__item__num col">
-                              87,714,299
-                            </div>
-                          </div>
-                          <div class="list__item row">
-                            <div class="list__item__title col">成本</div>
-                            <div class="col list__item__num col">
-                              77,714,299
-                            </div>
-                          </div>
-                          <div class="list__item row">
-                            <div class="list__item__title col">毛利</div>
-                            <div class="col list__item__num col">
-                              10,000,000
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="c-card__item__footer">
-                        <div class="c-card__tag">
-                          <div class="c-card__tag__btn">
-                            <div class="o-card__icon">
-                              <img src="img/o-clock-blue.svg" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="c-card__item__content__list">
-                          <div class="list__item row">
-                            <div class="list__item__title col">區間工時</div>
-                            <div class="col list__item__num col">
-                              <span>1000.0/1000.0</span>
-                            </div>
-                            <div class="list__item__percent">
-                              <span>100%</span>
-                            </div>
-                          </div>
-                          <div class="list__item row">
-                            <div class="list__item__title col">累計工時</div>
-                            <div class="col list__item__num col">
-                              <span>1000.0/1000.0</span>
-                            </div>
-                            <div class="list__item__percent">
-                              <span>100%</span>
-                            </div>
-                          </div>
-                          <div class="list__item row">
-                            <div class="list__item__title col">全案工時</div>
-                            <div class="col list__item__num col">
-                              1000.0/1000.0
-                            </div>
-                            <div class="list__item__percent">100%</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="c-card-planReport">
-                  <a href="#">
-                    <div class="c-card__item">
-                      <div class="c-card__item__title">
-                        <div class="c-card__tag">
-                          <div class="c-card__tag__num">
-                            <div class="">
-                              <!-- <div class="c-card__star__btn">
-                                <div
-                                  class="o-card__iconBtn o-card__star-default"
-                                ></div>
-                              </div> -->
-                              <span class="">2020WEV24H</span>
-                              <span class="c-card__tag__status">籌備</span>
-                            </div>
-                            <!-- <div class="c-card__tag__input">
-                              <form action="">
-                                <p>
-                                  <label>
-                                    <input
-                                      type="checkbox"
-                                      class="filled-in js-inputStyle"
-                                    />
-                                    <span></span>
-                                  </label>
-                                </p>
-                              </form>
-                            </div> -->
-                          </div>
-                        </div>
-                        <h2 class="">
-                          109年臺灣國際專業展網站強化案國際專業展網站
-                        </h2>
-                        <div class="c-card__text">
-                          <div class="c-card__text__startTime">
-                            2020/07/02
-                            <div>-</div>
-                            <span></span>
-                            2020/08/03
-                          </div>
-                          <div class="c-card__text__block">|</div>
-                          <div class="c-card__position">
-                            <span>PM-</span> 王小明
-                          </div>
-                          <div class="c-card__text__block">|</div>
-                          <div class="c-card__position">
-                            <span>業務-</span> 張嘉祥
-                          </div>
-                        </div>
-                      </div>
-                      <div class="c-card__item__content">
-                        <div class="c-card__tag">
-                          <div class="c-card__tag__btn">
-                            <div class="o-card__icon">
-                              <img src="img/o-money.svg" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="c-card__item__content__list">
-                          <div class="list__item row">
-                            <div class="list__item__title col">收入</div>
-                            <div class="col list__item__num col">
-                              87,714,299
-                            </div>
-                          </div>
-                          <div class="list__item row">
-                            <div class="list__item__title col">成本</div>
-                            <div class="col list__item__num col">
-                              77,714,299
-                            </div>
-                          </div>
-                          <div class="list__item row">
-                            <div class="list__item__title col">毛利</div>
-                            <div class="col list__item__num col">
-                              10,000,000
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="c-card__item__footer">
-                        <div class="c-card__tag">
-                          <div class="c-card__tag__btn">
-                            <div class="o-card__icon">
-                              <img src="img/o-clock-blue.svg" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="c-card__item__content__list">
-                          <div class="list__item row">
-                            <div class="list__item__title col">區間工時</div>
-                            <div class="col list__item__num col">
-                              <span>1000.0/1000.0</span>
-                            </div>
-                            <div class="list__item__percent">
-                              <span>100%</span>
-                            </div>
-                          </div>
-                          <div class="list__item row">
-                            <div class="list__item__title col">累計工時</div>
-                            <div class="col list__item__num col">
-                              <span>1000.0/1000.0</span>
-                            </div>
-                            <div class="list__item__percent">
-                              <span>100%</span>
-                            </div>
-                          </div>
-                          <div class="list__item row">
-                            <div class="list__item__title col">全案工時</div>
-                            <div class="col list__item__num col">
-                              1000.0/1000.0
-                            </div>
-                            <div class="list__item__percent">100%</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
               </div>
             </div>
             <div class="l-main-content-pagiation">
@@ -939,7 +718,7 @@
     <!-- 視窗一 safe modal -->
     <div id="safe" class="c-modal-alert modal">
       <div class="c-modal-btnList">
-        <button>
+        <button type="button">
           <img class="modal-close" src="img/o-cross.svg" alt="" />
         </button>
       </div>

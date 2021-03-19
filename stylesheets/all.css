@@ -10127,6 +10127,53 @@ body {
           justify-content: center;
 }
 
+.l-main-content .l-main-content-pagiation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageSelect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageSelect .c-dropdown-page {
+  margin: 0 0.5rem;
+}
+
+.l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput button {
+  cursor: pointer;
+}
+
+.l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .o-input, .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .hoursInput, .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .otherInput, .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .c-search-item__input {
+  width: 3.66rem;
+  margin: 0 0.5rem;
+}
+
+.l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .o-input input, .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .hoursInput input, .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .otherInput input, .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput .c-search-item__input input {
+  margin: 0rem;
+}
+
 .l-main-content .table-body__dragBtn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10256,6 +10303,10 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+}
+
+.l-main-content-table {
+  margin-bottom: 2.5rem;
 }
 
 .l-main-content-table .l-main-content-table__text {
@@ -11024,8 +11075,16 @@ body {
           align-items: end;
 }
 
-.c-card-percent .c-card__item__time, .c-card-percentCheck .c-card__item__time {
-  padding-left: 1rem;
+.c-card-percent .c-card__item .c-card__item__title, .c-card-percentCheck .c-card__item .c-card__item__title, .c-card-percent .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport .c-card-percent .c-card__item .c-card__item__content, .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport .c-card-percentCheck .c-card__item .c-card__item__content, .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger .c-card-percent .c-card__item .c-card__item__content, .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger .c-card-percentCheck .c-card__item .c-card__item__content, .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-alertPlan .c-card-percent .c-card__item .c-card__item__content, .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-alertPlan .c-card-percentCheck .c-card__item .c-card__item__content, .c-card-percent .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planReport .c-card-percent .c-card__item .c-card__item__footer, .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planReport .c-card-percentCheck .c-card__item .c-card__item__footer, .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger .c-card-percent .c-card__item .c-card__item__footer, .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger .c-card-percentCheck .c-card__item .c-card__item__footer, .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan .c-card-percent .c-card__item .c-card__item__footer, .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan .c-card-percentCheck .c-card__item .c-card__item__footer {
+  width: 50%;
+  text-align: end;
+  line-height: 1.46rem;
+  padding-right: 0.25rem;
+}
+
+.c-card-percent .c-card__item .c-card__item__time, .c-card-percentCheck .c-card__item .c-card__item__time {
+  width: 50%;
+  padding-left: 0.25rem;
 }
 
 .c-card-percent .c-card__item__totaltime, .c-card-percentCheck .c-card__item__totaltime {
@@ -12206,7 +12265,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 24px 0;
+  padding: 1.6rem 0;
 }
 
 .c-modal .c-modal-content p, .c-modal-systemDialog .c-modal-content p, .c-modal-alert .c-modal-content p, .c-modal-chooseGroup .c-modal-content p, .c-modal-addGroup .c-modal-content p, .c-modal-usuallyUseMember .c-modal-content p, .c-modal-sample .c-modal-content p, .c-modal-alert .c-modal-alert__content .c-modal-content__scroll p {
@@ -12260,6 +12319,10 @@ body {
 
 .c-modal-alert .c-modal-alert__content .o-btn-primary {
   padding: 0 1.66rem;
+}
+
+.c-modal-alert .c-modal-alert__content p {
+  line-height: 1.5rem;
 }
 
 .c-modal-alert .c-modal-alert__content .c-modal-content__scroll {
@@ -13042,12 +13105,21 @@ body {
 }
 
 .c-modal-sample .c-modal-content .header__item__title, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .header__item__title, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .header__item__title {
-  font-size: 18px;
+  font-size: 1.06rem;
+  margin-left: 1.33rem;
 }
 
 .c-modal-sample .c-modal-content .c-modal-content__item, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__item, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__item {
   height: 100%;
   overflow-y: scroll;
+}
+
+.c-modal-sample .c-modal-content .c-modal-content__item .c-accordion-plan, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__item .c-accordion-plan, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__item .c-accordion-plan, .c-modal-sample .c-modal-content .c-modal-content__item .c-accordion-general, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__item .c-accordion-general, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__item .c-accordion-general {
+  margin: 1rem 1.5rem;
+}
+
+.c-modal-sample .c-modal-content .accordion-body__item, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .accordion-body__item, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .accordion-body__item {
+  margin-bottom: 0.66rem;
 }
 
 .c-modal-sample .c-modal-content .accordion-body__item .col, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .accordion-body__item .col, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .accordion-body__item .col {
@@ -13077,7 +13149,7 @@ body {
   margin-top: -1rem;
 }
 
-.c-dropdown-plan .select-wrapper, .c-dropdown-planContent .select-wrapper, .c-dropdown-status .select-wrapper, .c-dropdown-general .select-wrapper, .c-dropdown-department .select-wrapper, .c-dropdown-departmentCheck .select-wrapper {
+.c-dropdown-plan .select-wrapper, .c-dropdown-page .select-wrapper, .c-dropdown-planContent .select-wrapper, .c-dropdown-status .select-wrapper, .c-dropdown-general .select-wrapper, .c-dropdown-department .select-wrapper, .c-dropdown-departmentCheck .select-wrapper {
   height: 38px;
   width: 100%;
   padding: 1%;
@@ -13085,17 +13157,17 @@ body {
   border-radius: 5px;
 }
 
-.c-dropdown-plan .select-wrapper .caret, .c-dropdown-planContent .select-wrapper .caret, .c-dropdown-status .select-wrapper .caret, .c-dropdown-general .select-wrapper .caret, .c-dropdown-department .select-wrapper .caret, .c-dropdown-departmentCheck .select-wrapper .caret {
+.c-dropdown-plan .select-wrapper .caret, .c-dropdown-page .select-wrapper .caret, .c-dropdown-planContent .select-wrapper .caret, .c-dropdown-status .select-wrapper .caret, .c-dropdown-general .select-wrapper .caret, .c-dropdown-department .select-wrapper .caret, .c-dropdown-departmentCheck .select-wrapper .caret {
   z-index: 0;
 }
 
-.c-dropdown-plan .select-wrapper ul, .c-dropdown-planContent .select-wrapper ul, .c-dropdown-status .select-wrapper ul, .c-dropdown-general .select-wrapper ul, .c-dropdown-department .select-wrapper ul, .c-dropdown-departmentCheck .select-wrapper ul {
+.c-dropdown-plan .select-wrapper ul, .c-dropdown-page .select-wrapper ul, .c-dropdown-planContent .select-wrapper ul, .c-dropdown-status .select-wrapper ul, .c-dropdown-general .select-wrapper ul, .c-dropdown-department .select-wrapper ul, .c-dropdown-departmentCheck .select-wrapper ul {
   border-radius: 0.66rem;
   padding: 0.99rem;
   max-height: 635px;
 }
 
-.c-dropdown-plan .select-wrapper .select-dropdown, .c-dropdown-planContent .select-wrapper .select-dropdown, .c-dropdown-status .select-wrapper .select-dropdown, .c-dropdown-general .select-wrapper .select-dropdown, .c-dropdown-department .select-wrapper .select-dropdown, .c-dropdown-departmentCheck .select-wrapper .select-dropdown {
+.c-dropdown-plan .select-wrapper .select-dropdown, .c-dropdown-page .select-wrapper .select-dropdown, .c-dropdown-planContent .select-wrapper .select-dropdown, .c-dropdown-status .select-wrapper .select-dropdown, .c-dropdown-general .select-wrapper .select-dropdown, .c-dropdown-department .select-wrapper .select-dropdown, .c-dropdown-departmentCheck .select-wrapper .select-dropdown {
   border-bottom: 0px;
   font-size: 14px;
   margin: 0;
@@ -13106,42 +13178,42 @@ body {
           box-sizing: border-box;
 }
 
-.c-dropdown-plan .select-wrapper .select-dropdown li, .c-dropdown-planContent .select-wrapper .select-dropdown li, .c-dropdown-status .select-wrapper .select-dropdown li, .c-dropdown-general .select-wrapper .select-dropdown li, .c-dropdown-department .select-wrapper .select-dropdown li, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li {
+.c-dropdown-plan .select-wrapper .select-dropdown li, .c-dropdown-page .select-wrapper .select-dropdown li, .c-dropdown-planContent .select-wrapper .select-dropdown li, .c-dropdown-status .select-wrapper .select-dropdown li, .c-dropdown-general .select-wrapper .select-dropdown li, .c-dropdown-department .select-wrapper .select-dropdown li, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li {
   height: 40px;
 }
 
-.c-dropdown-plan .select-wrapper .select-dropdown li:first-child, .c-dropdown-planContent .select-wrapper .select-dropdown li:first-child, .c-dropdown-status .select-wrapper .select-dropdown li:first-child, .c-dropdown-general .select-wrapper .select-dropdown li:first-child, .c-dropdown-department .select-wrapper .select-dropdown li:first-child, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li:first-child {
+.c-dropdown-plan .select-wrapper .select-dropdown li:first-child, .c-dropdown-page .select-wrapper .select-dropdown li:first-child, .c-dropdown-planContent .select-wrapper .select-dropdown li:first-child, .c-dropdown-status .select-wrapper .select-dropdown li:first-child, .c-dropdown-general .select-wrapper .select-dropdown li:first-child, .c-dropdown-department .select-wrapper .select-dropdown li:first-child, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li:first-child {
   border-top: 0;
   padding-top: 0;
 }
 
-.c-dropdown-plan .select-wrapper .select-dropdown li:last-child, .c-dropdown-planContent .select-wrapper .select-dropdown li:last-child, .c-dropdown-status .select-wrapper .select-dropdown li:last-child, .c-dropdown-general .select-wrapper .select-dropdown li:last-child, .c-dropdown-department .select-wrapper .select-dropdown li:last-child, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li:last-child {
+.c-dropdown-plan .select-wrapper .select-dropdown li:last-child, .c-dropdown-page .select-wrapper .select-dropdown li:last-child, .c-dropdown-planContent .select-wrapper .select-dropdown li:last-child, .c-dropdown-status .select-wrapper .select-dropdown li:last-child, .c-dropdown-general .select-wrapper .select-dropdown li:last-child, .c-dropdown-department .select-wrapper .select-dropdown li:last-child, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li:last-child {
   border-bottom: 0;
 }
 
-.c-dropdown-plan .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-planContent .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-status .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-general .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-department .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li .optgroup-option {
+.c-dropdown-plan .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-page .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-planContent .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-status .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-general .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-department .select-wrapper .select-dropdown li .optgroup-option, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li .optgroup-option {
   padding-left: 0;
 }
 
-.c-dropdown-plan .select-wrapper .select-dropdown .optgroup, .c-dropdown-planContent .select-wrapper .select-dropdown .optgroup, .c-dropdown-status .select-wrapper .select-dropdown .optgroup, .c-dropdown-general .select-wrapper .select-dropdown .optgroup, .c-dropdown-department .select-wrapper .select-dropdown .optgroup, .c-dropdown-departmentCheck .select-wrapper .select-dropdown .optgroup {
+.c-dropdown-plan .select-wrapper .select-dropdown .optgroup, .c-dropdown-page .select-wrapper .select-dropdown .optgroup, .c-dropdown-planContent .select-wrapper .select-dropdown .optgroup, .c-dropdown-status .select-wrapper .select-dropdown .optgroup, .c-dropdown-general .select-wrapper .select-dropdown .optgroup, .c-dropdown-department .select-wrapper .select-dropdown .optgroup, .c-dropdown-departmentCheck .select-wrapper .select-dropdown .optgroup {
   padding-left: 0;
   padding-top: 1.5rem;
   border: 0;
   font-size: 1.06rem;
 }
 
-.c-dropdown-plan .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-planContent .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-status .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-general .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-department .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-departmentCheck .select-wrapper .select-dropdown .optgroup:hover {
+.c-dropdown-plan .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-page .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-planContent .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-status .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-general .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-department .select-wrapper .select-dropdown .optgroup:hover, .c-dropdown-departmentCheck .select-wrapper .select-dropdown .optgroup:hover {
   background: #fff;
   cursor: default;
 }
 
-.c-dropdown-plan .select-wrapper .select-dropdown .optgroup span, .c-dropdown-planContent .select-wrapper .select-dropdown .optgroup span, .c-dropdown-status .select-wrapper .select-dropdown .optgroup span, .c-dropdown-general .select-wrapper .select-dropdown .optgroup span, .c-dropdown-department .select-wrapper .select-dropdown .optgroup span, .c-dropdown-departmentCheck .select-wrapper .select-dropdown .optgroup span {
+.c-dropdown-plan .select-wrapper .select-dropdown .optgroup span, .c-dropdown-page .select-wrapper .select-dropdown .optgroup span, .c-dropdown-planContent .select-wrapper .select-dropdown .optgroup span, .c-dropdown-status .select-wrapper .select-dropdown .optgroup span, .c-dropdown-general .select-wrapper .select-dropdown .optgroup span, .c-dropdown-department .select-wrapper .select-dropdown .optgroup span, .c-dropdown-departmentCheck .select-wrapper .select-dropdown .optgroup span {
   color: #042340;
   font-size: 14px;
   font-weight: 700;
 }
 
-.c-dropdown-plan .dropdown-content li, .c-dropdown-planContent .dropdown-content li, .c-dropdown-status .dropdown-content li, .c-dropdown-general .dropdown-content li, .c-dropdown-department .dropdown-content li, .c-dropdown-departmentCheck .dropdown-content li {
+.c-dropdown-plan .dropdown-content li, .c-dropdown-page .dropdown-content li, .c-dropdown-planContent .dropdown-content li, .c-dropdown-status .dropdown-content li, .c-dropdown-general .dropdown-content li, .c-dropdown-department .dropdown-content li, .c-dropdown-departmentCheck .dropdown-content li {
   min-height: 36px;
   border-bottom: 1px solid #BAD4E5;
   display: -webkit-box;
@@ -13152,7 +13224,7 @@ body {
           align-items: center;
 }
 
-.c-dropdown-plan .dropdown-content li span, .c-dropdown-planContent .dropdown-content li span, .c-dropdown-status .dropdown-content li span, .c-dropdown-general .dropdown-content li span, .c-dropdown-department .dropdown-content li span, .c-dropdown-departmentCheck .dropdown-content li span {
+.c-dropdown-plan .dropdown-content li span, .c-dropdown-page .dropdown-content li span, .c-dropdown-planContent .dropdown-content li span, .c-dropdown-status .dropdown-content li span, .c-dropdown-general .dropdown-content li span, .c-dropdown-department .dropdown-content li span, .c-dropdown-departmentCheck .dropdown-content li span {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -13162,15 +13234,28 @@ body {
   font-weight: 400;
 }
 
-.c-dropdown-plan .dropdown-content li a, .c-dropdown-planContent .dropdown-content li a, .c-dropdown-status .dropdown-content li a, .c-dropdown-general .dropdown-content li a, .c-dropdown-department .dropdown-content li a, .c-dropdown-departmentCheck .dropdown-content li a {
+.c-dropdown-plan .dropdown-content li a, .c-dropdown-page .dropdown-content li a, .c-dropdown-planContent .dropdown-content li a, .c-dropdown-status .dropdown-content li a, .c-dropdown-general .dropdown-content li a, .c-dropdown-department .dropdown-content li a, .c-dropdown-departmentCheck .dropdown-content li a {
   padding: 0;
 }
 
-.c-dropdown-plan label, .c-dropdown-planContent label, .c-dropdown-status label, .c-dropdown-general label, .c-dropdown-department label, .c-dropdown-departmentCheck label {
+.c-dropdown-plan label, .c-dropdown-page label, .c-dropdown-planContent label, .c-dropdown-status label, .c-dropdown-general label, .c-dropdown-department label, .c-dropdown-departmentCheck label {
   font-size: 1.06rem;
   color: #042340;
   font-weight: 700;
   font-family: "Noto Sans TC", "sans-serif";
+}
+
+.c-dropdown-page .select-wrapper {
+  width: 3.66rem;
+}
+
+.c-dropdown-page .select-wrapper .select-dropdown {
+  padding-right: 0rem;
+  padding-left: 1rem;
+}
+
+.c-dropdown-page .select-wrapper .caret {
+  display: none;
 }
 
 .c-dropdown-planContent .select-wrapper {
@@ -13675,7 +13760,15 @@ body {
 }
 
 .c-datePicker-months .c-datePicker__input {
-  width: 160px;
+  width: 12rem;
+}
+
+.c-datePicker-months .c-datePicker__input .o-input-div {
+  line-height: 2.2rem;
+}
+
+.c-datePicker-months .c-datePicker__input .o-input-div span {
+  color: #0156A2;
 }
 
 .c-datePicker-months .c-datePicker__modal {
@@ -15305,7 +15398,7 @@ body {
 }
 
 #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .c-datePicker-months .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .c-datePicker-months .c-datePicker__modal, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .c-datePicker-months .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .c-datePicker-months .c-datePicker__modal {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem {
@@ -15347,6 +15440,10 @@ body {
   width: 2.4rem;
 }
 
+#introduction .l-main-content__upload .row .s8 img {
+  cursor: default;
+}
+
 #introduction .l-main-content__upload .row .s1 {
   min-width: 82px;
 }
@@ -15382,7 +15479,7 @@ body {
 }
 
 #introduction .l-main-content__planlist .table-body .c-datePicker-day .c-datePicker__modal, #introduction .l-main-content .l-main-content__wbslist .table-body .c-datePicker-day .c-datePicker__modal, .l-main-content #introduction .l-main-content__wbslist .table-body .c-datePicker-day .c-datePicker__modal, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-datePicker-day .c-datePicker__modal, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-datePicker-day .c-datePicker__modal, #introduction .l-main-content__statisticsPlan .table-body .c-datePicker-day .c-datePicker__modal, #introduction .l-main-content__planlist .table-body .c-datePicker-days .c-datePicker__modal, #introduction .l-main-content .l-main-content__wbslist .table-body .c-datePicker-days .c-datePicker__modal, .l-main-content #introduction .l-main-content__wbslist .table-body .c-datePicker-days .c-datePicker__modal, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-datePicker-days .c-datePicker__modal, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-datePicker-days .c-datePicker__modal, #introduction .l-main-content__statisticsPlan .table-body .c-datePicker-days .c-datePicker__modal, #introduction .l-main-content__planlist .table-body .c-datePicker-months .c-datePicker__modal, #introduction .l-main-content .l-main-content__wbslist .table-body .c-datePicker-months .c-datePicker__modal, .l-main-content #introduction .l-main-content__wbslist .table-body .c-datePicker-months .c-datePicker__modal, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-datePicker-months .c-datePicker__modal, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-datePicker-months .c-datePicker__modal, #introduction .l-main-content__statisticsPlan .table-body .c-datePicker-months .c-datePicker__modal {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 #types .l-main-content__workTypelist .table-thead {
@@ -16065,6 +16162,10 @@ body {
           justify-content: center;
 }
 
+#alertPlen .l-main-content-item__listGroup .l-main-content__text {
+  margin: 0;
+}
+
 #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan {
   height: 4rem;
 }
@@ -16124,6 +16225,10 @@ body {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item__listGroup .l-main-content__text {
+  width: 100%;
 }
 
 #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__title .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__title .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__content .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__content .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__tag__num .c-card__tag__status {
@@ -17048,39 +17153,35 @@ body {
   z-index: -1;
 }
 
-#notReachedtime .c-card-percent, #notReachedtime .c-card-percentCheck {
+#notReachedtime .c-datePicker__modal .c-datePicker__yearPicker button {
+  border-radius: 50%;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent, #notReachedtime .change-card-to-list .c-card-percentCheck {
   margin-bottom: 1rem;
   cursor: default;
 }
 
-#notReachedtime .c-card-percent div, #notReachedtime .c-card-percentCheck div {
+#notReachedtime .change-card-to-list .c-card-percent div, #notReachedtime .change-card-to-list .c-card-percentCheck div {
   cursor: default;
 }
 
-#notReachedtime .c-card-percent:hover, #notReachedtime .c-card-percentCheck:hover {
+#notReachedtime .change-card-to-list .c-card-percent:hover, #notReachedtime .change-card-to-list .c-card-percentCheck:hover {
   -webkit-transition: all 0;
   transition: all 0;
   -webkit-transform: translateY(0px) translateX(0px);
           transform: translateY(0px) translateX(0px);
 }
 
-#notReachedtime .c-card-percent:active, #notReachedtime .c-card-percentCheck:active {
+#notReachedtime .change-card-to-list .c-card-percent:active, #notReachedtime .change-card-to-list .c-card-percentCheck:active {
   -webkit-transition: all 0;
   transition: all 0;
   -webkit-transform: translateY(0px) translateX(0px);
           transform: translateY(0px) translateX(0px);
 }
 
-#notReachedtime .c-card-percent .c-card__userInformation h3, #notReachedtime .c-card-percentCheck .c-card__userInformation h3 {
-  font-family: "Noto Sans TC", "sans-serif";
-}
-
-#notReachedtime .c-card-percent .c-card__item .c-card__item__title, #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__title, #notReachedtime .c-card-percent .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport #notReachedtime .c-card-percent .c-card__item .c-card__item__content, #notReachedtime .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__content, #notReachedtime .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger #notReachedtime .c-card-percent .c-card__item .c-card__item__content, #notReachedtime .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__content, #notReachedtime .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-alertPlan #notReachedtime .c-card-percent .c-card__item .c-card__item__content, #notReachedtime .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-alertPlan #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__content, #notReachedtime .c-card-percent .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planReport #notReachedtime .c-card-percent .c-card__item .c-card__item__footer, #notReachedtime .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planReport #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__footer, #notReachedtime .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger #notReachedtime .c-card-percent .c-card__item .c-card__item__footer, #notReachedtime .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__footer, #notReachedtime .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan #notReachedtime .c-card-percent .c-card__item .c-card__item__footer, #notReachedtime .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__footer {
+#notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__title, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__title, #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__content, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__content, #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__content, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__content, #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-alertPlan #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__content, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-alertPlan #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__content, #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planReport #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planReport #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__footer {
   margin-top: 0.2rem;
-}
-
-#notReachedtime .c-datePicker__modal .c-datePicker__yearPicker button {
-  border-radius: 50%;
 }
 
 #notReachedtime .change-card-to-list .l-main-content-item__listTitle {
@@ -17094,6 +17195,14 @@ body {
 
 #notReachedtime .change-card-to-list .c-card-percent, #notReachedtime .change-card-to-list .c-card-percentCheck {
   height: 4rem;
+}
+
+#notReachedtime .change-card-to-list .c-card__userInformation h3 {
+  font-family: "Noto Sans TC", "sans-serif";
+}
+
+#notReachedtime .change-card-to-list .c-card__item__title, #notReachedtime .change-card-to-list .c-card-planReport .c-card__item__content, .c-card-planReport #notReachedtime .change-card-to-list .c-card__item__content, #notReachedtime .change-card-to-list .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger #notReachedtime .change-card-to-list .c-card__item__content, #notReachedtime .change-card-to-list .c-card-alertPlan .c-card__item__content, .c-card-alertPlan #notReachedtime .change-card-to-list .c-card__item__content, #notReachedtime .change-card-to-list .c-card-planReport .c-card__item__footer, .c-card-planReport #notReachedtime .change-card-to-list .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger #notReachedtime .change-card-to-list .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan #notReachedtime .change-card-to-list .c-card__item__footer {
+  cursor: default;
 }
 
 #notReachedtime .change-card-to-list .c-card-percent__userName {
@@ -17436,7 +17545,7 @@ body {
   overflow-y: scroll;
 }
 
-.l-main-content__card .l-main-content__maintain, .l-main-content__dbcard .l-main-content__maintain {
+.l-main-content__card .l-main-content__maintain, .l-main-content__dbcard .l-main-content__maintain, .l-main-content__card .l-main-content__notreached, .l-main-content__dbcard .l-main-content__notreached {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17449,7 +17558,7 @@ body {
   padding-top: 1rem;
 }
 
-.l-main-content__card .l-main-content__maintain .l-main-content__maintain__text, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__text {
+.l-main-content__card .l-main-content__maintain .l-main-content__maintain__text, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__text, .l-main-content__card .l-main-content__notreached .l-main-content__maintain__text, .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__text {
   font-family: "Noto Sans TC", "sans-serif";
   font-size: 1.06rem;
   color: #042340;
@@ -17458,7 +17567,7 @@ body {
   white-space: nowrap;
 }
 
-.l-main-content__card .l-main-content__maintain .l-main-content__maintain__num, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num {
+.l-main-content__card .l-main-content__maintain .l-main-content__maintain__num, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num, .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num, .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num {
   font-family: "Baloo 2", cursive, "Noto Sans TC";
   width: 7.5rem;
   font-size: 60px;
@@ -17467,7 +17576,7 @@ body {
   color: #0156A2;
 }
 
-.l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .o-input input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .o-input input, .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .hoursInput input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .hoursInput input, .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .otherInput input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .otherInput input, .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-search-item__input input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-search-item__input input {
+.l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .o-input input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .o-input input, .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .o-input input, .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .o-input input, .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .hoursInput input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .hoursInput input, .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .hoursInput input, .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .hoursInput input, .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .otherInput input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .otherInput input, .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .otherInput input, .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .otherInput input, .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-search-item__input input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-search-item__input input, .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .c-search-item__input input, .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .c-search-item__input input {
   width: 100%;
   height: 4rem;
   font-family: "Baloo 2", cursive, "Noto Sans TC";
@@ -17477,12 +17586,58 @@ body {
   color: #0156A2;
 }
 
-.l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .o-input-lg input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .o-input-lg input {
+.l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .o-input-lg input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .o-input-lg input, .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .o-input-lg input, .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .o-input-lg input {
   width: 120px;
+}
+
+.l-main-content__card .l-main-content__notreached, .l-main-content__dbcard .l-main-content__notreached {
+  padding-top: 0rem;
 }
 
 .l-main-content__card .l-main-content__maintain__text, .l-main-content__dbcard .l-main-content__maintain__text {
   text-align: center;
+}
+
+.l-main-content__card .l-main-content__switch .o-switch, .l-main-content__dbcard .l-main-content__switch .o-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.l-main-content__card .l-main-content__switch .o-switch .lever, .l-main-content__dbcard .l-main-content__switch .o-switch .lever {
+  margin: 0;
+}
+
+.l-main-content__card .l-main-content__switch .o-switch .switch-Letter-text, .l-main-content__dbcard .l-main-content__switch .o-switch .switch-Letter-text {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.l-main-content__card .l-main-content__switch .l-main-content__switchLettertext, .l-main-content__dbcard .l-main-content__switch .l-main-content__switchLettertext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.l-main-content__card .l-main-content__switch__notreached, .l-main-content__dbcard .l-main-content__switch__notreached {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0.5rem;
 }
 
 .l-main-content__dbcard {
@@ -17547,5 +17702,13 @@ body {
 .l-main-content__dbcard .l-main-content__card__item .l-main-content__switch .l-main-content__switchSubtext .text-danger {
   font-weight: bold;
   margin-right: -3px;
+}
+
+.l-main-content__dbcard .l-main-content__maintain__text {
+  line-height: 1.3rem;
+}
+
+.l-main-content__dbcard .l-main-content__switch__text {
+  line-height: 1.3rem;
 }
 /*# sourceMappingURL=all.css.map */
