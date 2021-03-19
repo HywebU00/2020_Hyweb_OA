@@ -11075,8 +11075,16 @@ body {
           align-items: end;
 }
 
-.c-card-percent .c-card__item__time, .c-card-percentCheck .c-card__item__time {
-  padding-left: 1rem;
+.c-card-percent .c-card__item .c-card__item__title, .c-card-percentCheck .c-card__item .c-card__item__title, .c-card-percent .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport .c-card-percent .c-card__item .c-card__item__content, .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport .c-card-percentCheck .c-card__item .c-card__item__content, .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger .c-card-percent .c-card__item .c-card__item__content, .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger .c-card-percentCheck .c-card__item .c-card__item__content, .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-alertPlan .c-card-percent .c-card__item .c-card__item__content, .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-alertPlan .c-card-percentCheck .c-card__item .c-card__item__content, .c-card-percent .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planReport .c-card-percent .c-card__item .c-card__item__footer, .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planReport .c-card-percentCheck .c-card__item .c-card__item__footer, .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger .c-card-percent .c-card__item .c-card__item__footer, .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger .c-card-percentCheck .c-card__item .c-card__item__footer, .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan .c-card-percent .c-card__item .c-card__item__footer, .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan .c-card-percentCheck .c-card__item .c-card__item__footer {
+  width: 50%;
+  text-align: end;
+  line-height: 1.46rem;
+  padding-right: 0.25rem;
+}
+
+.c-card-percent .c-card__item .c-card__item__time, .c-card-percentCheck .c-card__item .c-card__item__time {
+  width: 50%;
+  padding-left: 0.25rem;
 }
 
 .c-card-percent .c-card__item__totaltime, .c-card-percentCheck .c-card__item__totaltime {
@@ -13097,12 +13105,21 @@ body {
 }
 
 .c-modal-sample .c-modal-content .header__item__title, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .header__item__title, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .header__item__title {
-  font-size: 18px;
+  font-size: 1.06rem;
+  margin-left: 1.33rem;
 }
 
 .c-modal-sample .c-modal-content .c-modal-content__item, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__item, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__item {
   height: 100%;
   overflow-y: scroll;
+}
+
+.c-modal-sample .c-modal-content .c-modal-content__item .c-accordion-plan, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__item .c-accordion-plan, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__item .c-accordion-plan, .c-modal-sample .c-modal-content .c-modal-content__item .c-accordion-general, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__item .c-accordion-general, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__item .c-accordion-general {
+  margin: 1rem 1.5rem;
+}
+
+.c-modal-sample .c-modal-content .accordion-body__item, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .accordion-body__item, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .accordion-body__item {
+  margin-bottom: 0.66rem;
 }
 
 .c-modal-sample .c-modal-content .accordion-body__item .col, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .accordion-body__item .col, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .accordion-body__item .col {
@@ -15381,7 +15398,7 @@ body {
 }
 
 #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .c-datePicker-months .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .c-datePicker-months .c-datePicker__modal, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .c-datePicker-months .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .c-datePicker-months .c-datePicker__modal {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem {
@@ -15423,6 +15440,10 @@ body {
   width: 2.4rem;
 }
 
+#introduction .l-main-content__upload .row .s8 img {
+  cursor: default;
+}
+
 #introduction .l-main-content__upload .row .s1 {
   min-width: 82px;
 }
@@ -15458,7 +15479,7 @@ body {
 }
 
 #introduction .l-main-content__planlist .table-body .c-datePicker-day .c-datePicker__modal, #introduction .l-main-content .l-main-content__wbslist .table-body .c-datePicker-day .c-datePicker__modal, .l-main-content #introduction .l-main-content__wbslist .table-body .c-datePicker-day .c-datePicker__modal, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-datePicker-day .c-datePicker__modal, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-datePicker-day .c-datePicker__modal, #introduction .l-main-content__statisticsPlan .table-body .c-datePicker-day .c-datePicker__modal, #introduction .l-main-content__planlist .table-body .c-datePicker-days .c-datePicker__modal, #introduction .l-main-content .l-main-content__wbslist .table-body .c-datePicker-days .c-datePicker__modal, .l-main-content #introduction .l-main-content__wbslist .table-body .c-datePicker-days .c-datePicker__modal, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-datePicker-days .c-datePicker__modal, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-datePicker-days .c-datePicker__modal, #introduction .l-main-content__statisticsPlan .table-body .c-datePicker-days .c-datePicker__modal, #introduction .l-main-content__planlist .table-body .c-datePicker-months .c-datePicker__modal, #introduction .l-main-content .l-main-content__wbslist .table-body .c-datePicker-months .c-datePicker__modal, .l-main-content #introduction .l-main-content__wbslist .table-body .c-datePicker-months .c-datePicker__modal, #introduction .l-main-content .l-main-content__workTypelist .table-body .c-datePicker-months .c-datePicker__modal, .l-main-content #introduction .l-main-content__workTypelist .table-body .c-datePicker-months .c-datePicker__modal, #introduction .l-main-content__statisticsPlan .table-body .c-datePicker-months .c-datePicker__modal {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 #types .l-main-content__workTypelist .table-thead {
@@ -17132,39 +17153,35 @@ body {
   z-index: -1;
 }
 
-#notReachedtime .c-card-percent, #notReachedtime .c-card-percentCheck {
+#notReachedtime .c-datePicker__modal .c-datePicker__yearPicker button {
+  border-radius: 50%;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent, #notReachedtime .change-card-to-list .c-card-percentCheck {
   margin-bottom: 1rem;
   cursor: default;
 }
 
-#notReachedtime .c-card-percent div, #notReachedtime .c-card-percentCheck div {
+#notReachedtime .change-card-to-list .c-card-percent div, #notReachedtime .change-card-to-list .c-card-percentCheck div {
   cursor: default;
 }
 
-#notReachedtime .c-card-percent:hover, #notReachedtime .c-card-percentCheck:hover {
+#notReachedtime .change-card-to-list .c-card-percent:hover, #notReachedtime .change-card-to-list .c-card-percentCheck:hover {
   -webkit-transition: all 0;
   transition: all 0;
   -webkit-transform: translateY(0px) translateX(0px);
           transform: translateY(0px) translateX(0px);
 }
 
-#notReachedtime .c-card-percent:active, #notReachedtime .c-card-percentCheck:active {
+#notReachedtime .change-card-to-list .c-card-percent:active, #notReachedtime .change-card-to-list .c-card-percentCheck:active {
   -webkit-transition: all 0;
   transition: all 0;
   -webkit-transform: translateY(0px) translateX(0px);
           transform: translateY(0px) translateX(0px);
 }
 
-#notReachedtime .c-card-percent .c-card__userInformation h3, #notReachedtime .c-card-percentCheck .c-card__userInformation h3 {
-  font-family: "Noto Sans TC", "sans-serif";
-}
-
-#notReachedtime .c-card-percent .c-card__item .c-card__item__title, #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__title, #notReachedtime .c-card-percent .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport #notReachedtime .c-card-percent .c-card__item .c-card__item__content, #notReachedtime .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__content, #notReachedtime .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger #notReachedtime .c-card-percent .c-card__item .c-card__item__content, #notReachedtime .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__content, #notReachedtime .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-alertPlan #notReachedtime .c-card-percent .c-card__item .c-card__item__content, #notReachedtime .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-alertPlan #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__content, #notReachedtime .c-card-percent .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planReport #notReachedtime .c-card-percent .c-card__item .c-card__item__footer, #notReachedtime .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planReport #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__footer, #notReachedtime .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger #notReachedtime .c-card-percent .c-card__item .c-card__item__footer, #notReachedtime .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__footer, #notReachedtime .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan #notReachedtime .c-card-percent .c-card__item .c-card__item__footer, #notReachedtime .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan #notReachedtime .c-card-percentCheck .c-card__item .c-card__item__footer {
+#notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__title, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__title, #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__content, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__content, #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__content, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__content, #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-alertPlan #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__content, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-alertPlan #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__content, #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planReport #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planReport #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__footer {
   margin-top: 0.2rem;
-}
-
-#notReachedtime .c-datePicker__modal .c-datePicker__yearPicker button {
-  border-radius: 50%;
 }
 
 #notReachedtime .change-card-to-list .l-main-content-item__listTitle {
@@ -17178,6 +17195,14 @@ body {
 
 #notReachedtime .change-card-to-list .c-card-percent, #notReachedtime .change-card-to-list .c-card-percentCheck {
   height: 4rem;
+}
+
+#notReachedtime .change-card-to-list .c-card__userInformation h3 {
+  font-family: "Noto Sans TC", "sans-serif";
+}
+
+#notReachedtime .change-card-to-list .c-card__item__title, #notReachedtime .change-card-to-list .c-card-planReport .c-card__item__content, .c-card-planReport #notReachedtime .change-card-to-list .c-card__item__content, #notReachedtime .change-card-to-list .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger #notReachedtime .change-card-to-list .c-card__item__content, #notReachedtime .change-card-to-list .c-card-alertPlan .c-card__item__content, .c-card-alertPlan #notReachedtime .change-card-to-list .c-card__item__content, #notReachedtime .change-card-to-list .c-card-planReport .c-card__item__footer, .c-card-planReport #notReachedtime .change-card-to-list .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger #notReachedtime .change-card-to-list .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan #notReachedtime .change-card-to-list .c-card__item__footer {
+  cursor: default;
 }
 
 #notReachedtime .change-card-to-list .c-card-percent__userName {

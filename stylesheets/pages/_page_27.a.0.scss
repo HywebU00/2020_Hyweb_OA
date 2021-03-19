@@ -327,8 +327,18 @@
        
     }  
     }
-    
-    .c-card-percent{
+
+  
+    .c-datePicker__modal {
+        .c-datePicker__yearPicker {
+            button {
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .change-card-to-list {
+          .c-card-percent{
         margin-bottom: 1rem;
         cursor: default;
         div{
@@ -343,26 +353,13 @@
             transition: all 0;
             transform: translateY(0px) translateX(0px);
         }
-        .c-card__userInformation{
-            h3{
-                font-family: $font-family;
-            }
-        }
+      
         .c-card__item{
             .c-card__item__title{
              margin-top:0.2rem;
             } 
          }
     }
-    .c-datePicker__modal {
-        .c-datePicker__yearPicker {
-            button {
-                border-radius: 50%;
-            }
-        }
-    }
-
-    .change-card-to-list {
         .l-main-content-item__listTitle{
             height: 4rem;
             padding-left: 3rem;
@@ -372,6 +369,14 @@
         }
         .c-card-percent{
             height: 4rem;
+        }
+        .c-card__userInformation{
+            h3{
+                font-family: $font-family;
+            }
+        }
+        .c-card__item__title{
+            cursor: default;
         }
         .c-card-percent__userName {
             display: none;

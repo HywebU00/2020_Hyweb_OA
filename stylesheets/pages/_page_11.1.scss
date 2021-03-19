@@ -31,7 +31,7 @@
                     }
                     .c-datePicker-days{
                      .c-datePicker__modal{
-                         margin-bottom: 0.5rem;
+                         margin-bottom: 1rem;
                      }
                     }
                 }
@@ -87,6 +87,12 @@
                 }
                 width: 75.6666666667%;;
             }
+            .s8{
+                img{
+                    cursor: default;
+                }
+                
+            }
             .s1{
                 min-width: 82px;
                 button{
@@ -132,7 +138,7 @@
             }
             .c-datePicker-day{
                .c-datePicker__modal{
-                margin-bottom: 0.5rem;
+                margin-bottom: 1rem;
                }
             }
             

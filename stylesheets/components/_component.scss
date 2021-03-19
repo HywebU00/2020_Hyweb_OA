@@ -108,11 +108,18 @@
     .c-card__item {
         justify-content: center;
         align-items: end;
+        .c-card__item__title{
+            width: 50%;
+            text-align: end;
+            line-height: 1.46rem;
+            padding-right: 0.25rem;
+        }
+        .c-card__item__time {
+            width: 50%;
+            padding-left:  0.25rem;
+        }
     }
-
-    .c-card__item__time {
-        padding-left: 1rem; //$pd-3/2;
-    }
+    
 
     .c-card__item__totaltime {
         font-size: $p;
@@ -120,15 +127,7 @@
         letter-spacing: 2px;
         margin-left: -5px;
     }
-    // .c-card-title {
-    //     display: flex;
-    //     justify-content: space-between;
 
-    //     form {
-    //         margin-top: 5%;
-    //         margin-right: 12%;
-    //     }
-    // }
 }
 
 .c-card-percentCheck {
@@ -1949,18 +1948,24 @@
         height: 90%;
 
         .header__item__title {
-            font-size: $font-size-l;
+            font-size: $p;
+            margin-left: 1.33rem;
         }
 
         .c-modal-content__item {
             height: 100%;
             overflow-y: scroll;
+            .c-accordion-plan{
+                margin: 1rem 1.5rem; 
+            }
         }
 
         .accordion-body__item {
+            margin-bottom: 0.66rem;
             .col {
-                font-size: $p;//$font-size-l;
+                font-size: $p;
             }
+           
         }
     }
 
@@ -3630,10 +3635,6 @@
             display: inline-block;
             margin-left: 0.5rem;
         }
-        // .switch-Letter-text{
-        //     display: inline-block;
-        //     margin-left: 1rem;
-        // }
     
 }
 
