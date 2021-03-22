@@ -1,7 +1,6 @@
 //++++++++++++++++++++++
 //  更換卡片及列表樣式
 //++++++++++++++++++++++
-
 const o_list = document.querySelectorAll(".o-list");
 const o_card = document.querySelectorAll(".o-card");
 const l_main = document.querySelectorAll(".l-main ");
@@ -16,11 +15,11 @@ let addUserName = function () {
   let arr = [];
   for (let p = 0; p < addNameCard.length; p++) {
     //抓出有改變樣式的列表
-    if (
-      addNameCard[p].parentNode.parentNode.classList.contains(
-        "change-card-to-list"
-      ) === true
-    ) {
+    let name =
+      addNameCard[p].parentNode.parentNode.parentNode.parentNode.parentNode
+        .classList;
+
+    if (name.contains("change-card-to-list") === true) {
       //將變成列表的卡片抓出來放入陣列arr中
       arr.push(addNameCard[p]);
     }
@@ -37,7 +36,6 @@ let addUserName = function () {
     div.innerHTML = `<h2>${userNumber}</h2><h2>${chineseName}</h2><h3>${englishName}</h3>`;
     if (arr[a].querySelector(".js-c-card__appendUserName") === null) {
       arr[a].children[0].insertBefore(div, beforeChild);
-      //arr[a].insertBefore(div, beforeChild);
     }
   }
 };
