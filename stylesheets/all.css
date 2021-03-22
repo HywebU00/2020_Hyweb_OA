@@ -9955,9 +9955,10 @@ body {
 }
 
 .l-main .c-writeHours {
-  width: 100%;
+  width: 98%;
   margin: 0 auto;
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .l-main .c-writeHours .c-writeHours-content {
@@ -11622,7 +11623,7 @@ body {
   font-size: 22px;
   font-weight: 700;
   font-family: "Noto Sans TC", "sans-serif";
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   padding: 0 24px;
 }
 
@@ -11635,6 +11636,7 @@ body {
 
 .c-submenu-content__cardList .c-card-planHotkey {
   margin: 0 auto;
+  margin-top: 0.5rem;
   margin-bottom: 1.2rem;
 }
 
@@ -14517,7 +14519,8 @@ body {
 }
 
 .c-datePicker-months .c-datePicker__input .o-input-div {
-  line-height: 2.2rem;
+  line-height: 2rem;
+  font-size: 14px;
 }
 
 .c-datePicker-months .c-datePicker__input .o-input-div span {
@@ -17439,7 +17442,7 @@ body {
 }
 
 .l-main-content .c-card-manhourSofar, .l-main-content .c-card-manhourSearch, .l-main-content .c-card-percent, .l-main-content .c-card-percentCheck, .l-main-content .c-card-planPerson, .l-main-content .c-card-planClosed, .l-main-content .c-card-planHotkey, .l-main-content .c-card-planReport, .l-main-content .c-card-planReport-danger, .l-main-content .c-card-alertPlan, .l-main-content .c-card-department {
-  margin: 0 0.5rem 2.5rem 0.2rem;
+  margin: 0 0.5rem 0.5rem 0.2rem;
 }
 
 .l-main-content .l-main-content-text .l-main-content-text__title, .l-main-content .l-main-content-text .l-main-content-text__ListTitle {
@@ -17800,6 +17803,10 @@ body {
   margin-bottom: 0rem;
 }
 
+#supporttime .change-card-to-list .c-card-manhourSearch .c-card__userInformation h3 {
+  font-family: "Noto Sans TC", "sans-serif";
+}
+
 #supporttime .change-card-to-list .l-main-content-item__listTitle {
   height: 4rem;
   padding-left: 3rem;
@@ -17828,6 +17835,8 @@ body {
   font-weight: 400;
   font-size: 1.06rem;
   width: 10%;
+  font-family: "Noto Sans TC", "sans-serif";
+  line-height: 1.2rem;
 }
 
 #supporttime .change-card-to-list .l-main-content-item .c-card-department .c-card__userInformation {
@@ -18264,6 +18273,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  line-height: 2rem;
 }
 
 .l-main-content__card .l-main-content__title div, .l-main-content__dbcard .l-main-content__title div {
@@ -18464,5 +18474,137 @@ body {
 
 .l-main-content__dbcard .l-main-content__switch__text {
   line-height: 1.3rem;
+}
+
+.l-mobile-main-login {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD url(../img/loginPage_bg.png) top left no-repeat;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD url(../img/loginPage_bg.png) top left no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1.42rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding-top: 3.33rem;
+}
+
+.l-mobile-main-login .c-card-login__content {
+  width: auto;
+}
+
+.l-mobile-main-login .c-card-login__content .c-card-login__input, .l-mobile-main-login .c-card-login .c-card-login__content .c-card-login__passwordInput, .c-card-login .l-mobile-main-login .c-card-login__content .c-card-login__passwordInput {
+  margin-bottom: 1rem;
+}
+
+.l-mobile-main-login .c-card-login {
+  min-width: 20.9rem;
+  min-height: 27.3rem;
+  padding: 2.2rem 0.875rem 0 0.875rem;
+  background-position: right center;
+}
+
+.l-mobile-main-login .c-card-login .c-card-login__title__maintitle {
+  font-size: 1.5rem;
+  color: #042340;
+  line-height: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.l-mobile-main-login .c-card-login .c-card-login__title__subtitle {
+  font-size: 1.2rem;
+  color: #042340;
+  margin-bottom: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.l-mobile-main-login .c-card-login .c-card-login__content .c-card-login__passwordInput {
+  margin-bottom: 1.33rem;
+}
+
+.l-mobile-main-login .c-card-login .c-card-login__content .o-login-btn {
+  margin-bottom: 3.188rem;
+  border-radius: 0.66rem;
+}
+
+.l-mobile-main-login .c-card-login .c-card-login__content .c-card-login__list li {
+  font-size: 0.75rem;
+}
+
+.l-mobile-main-login .c-login__title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.l-mobile-main-login .c-login__title img {
+  width: 18.6rem;
+}
+
+.l-mobile-main-login .c-login__title .c-card-login__title__maintitle {
+  color: #042340;
+}
+
+.l-mobile-main {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1.42rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding-top: 3.33rem;
+  background-color: aquamarine;
+}
+
+.l-mobile-navbar {
+  height: 3.14rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-mobile-navbar_name {
+  font-family: "Noto Sans TC", "sans-serif";
+  color: #fff;
+  font-size: 1.28rem;
+  font-weight: 900;
+}
+
+.l-mobile-navbar-leftbtn {
+  position: absolute;
+  left: 1.42rem;
+}
+
+.l-mobile-navbar-rightbtn {
+  position: absolute;
+  right: 1.42rem;
 }
 /*# sourceMappingURL=all.css.map */

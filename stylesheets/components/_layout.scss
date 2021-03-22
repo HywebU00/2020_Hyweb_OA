@@ -193,11 +193,10 @@ body {
     }
 
     .c-writeHours {
-        width: 100%;
+        width: 98%; //100%;
         margin: 0 auto;
         margin-top: 1.5rem;
-        //overflow: hidden;
-        //max-height: 80vh;
+        margin-bottom: 1.5rem;
 
         .c-writeHours-content {
             padding: 1.2rem 1rem;
@@ -1689,7 +1688,7 @@ body {
         font-size: $h2;
         font-weight: 700;
         font-family: $font-family;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         padding: 0 24px;
     }
 
@@ -1702,6 +1701,7 @@ body {
 
     .c-card-planHotkey {
         margin: 0 auto;
+        margin-top: 0.5rem;
         margin-bottom: 1.2rem;
     }
 }

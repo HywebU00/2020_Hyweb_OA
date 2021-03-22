@@ -2,32 +2,37 @@
     .l-main-tabs {
         margin-bottom: 5px;
     }
-    .c-search-list{
-        .c-dropdown-member{
-          .c-dropdown__input{
-              
-              .o-input-div{
-                  background-color: rgba(0,0,0,0);
-                  &::after{
-                      background-image:url(../img/o-arrowDown.svg);
-                      
-                  }
-              }
-              &::after{
-                  background-color: rgba(0,0,0,0);
-                  background-image: none;
-                  z-index: -1;
-              }
-              
-              
-           
-          }
-         
-      }  
-      }
-    .c-card-manhourSearch{
-        margin-bottom:1rem;
+
+    .c-search-list {
+        .c-dropdown-member {
+            .c-dropdown__input {
+
+                .o-input-div {
+                    background-color: rgba(0, 0, 0, 0);
+
+                    &::after {
+                        background-image: url(../img/o-arrowDown.svg);
+
+                    }
+                }
+
+                &::after {
+                    background-color: rgba(0, 0, 0, 0);
+                    background-image: none;
+                    z-index: -1;
+                }
+
+
+
+            }
+
+        }
     }
+
+    .c-card-manhourSearch {
+        margin-bottom: 1rem;
+    }
+
     .c-datePicker__modal {
         .c-datePicker__yearPicker {
             button {
@@ -35,26 +40,30 @@
             }
         }
     }
-    .l-main-content-item__listTitle{
+
+    .l-main-content-item__listTitle {
         height: 4rem;
-       
+
     }
+
     .change-card-to-list {
-        .l-main-content-item__listTitle{
-            padding-left: 3rem;           
+        .l-main-content-item__listTitle {
+            padding-left: 3rem;
         }
-        .l-main-content-item{
-            .c-card-manhourSearch{
+
+        .l-main-content-item {
+            .c-card-manhourSearch {
                 height: 4rem;
-                margin-bottom:0;
+                margin-bottom: 0;
                 cursor: default;
-                div{
+
+                div {
                     cursor: default;
                 }
             }
         }
-        
-        
+
+
         .c-card-manhourSearch__userName {
             display: none;
         }
@@ -101,8 +110,9 @@
                 transition: all 0;
                 transform: translateY(0px) translateX(0px);
             }
-            .c-card__userInformation{
-                h3{
+
+            .c-card__userInformation {
+                h3 {
                     font-family: $font-family;
                 }
             }
@@ -125,12 +135,14 @@
     }
 
     .change-card-to-list {
-        .c-card-manhourSearch{
+        .c-card-manhourSearch {
             margin-bottom: 0rem;
-            div{
+
+            div {
                 cursor: default;
             }
-           }
+        }
+
         .c-card-manhourSearch__userName {
             display: none;
         }
@@ -183,15 +195,19 @@
 }
 
 #supporttime {
-   .c-card-department{
-       margin-bottom: 1rem;
-   }
-   .c-card-manhourSearch{
-    margin-bottom: 1rem;
-    div{
-        cursor: default;
+    .c-card-department {
+        margin-bottom: 1rem;
     }
-   }
+
+    .c-card-manhourSearch {
+        margin-bottom: 1rem;
+
+        div {
+            cursor: default;
+        }
+
+    }
+
     .l-main-tabs {
         margin-bottom: 5px;
     }
@@ -213,37 +229,53 @@
     }
 
     .change-card-to-list {
-        .c-card-manhourSearch{
+        .c-card-manhourSearch {
             margin-bottom: 0rem;
-           }
-        .l-main-content-item__listTitle{
+
+            .c-card__userInformation {
+                h3 {
+                    font-family: $font-family;
+                }
+            }
+
+        }
+
+        .l-main-content-item__listTitle {
             height: 4rem;
             padding-left: 3rem;
         }
+
         .l-main-content-item {
-             
+
             .c-card-department {
                 height: 4rem;
                 margin-bottom: 0;
+
                 &:hover {
                     transition: all 0;
                     transform: translateY(0px) translateX(0px);
                 }
-    
+
                 &:active {
                     transition: all 0;
                     transform: translateY(0px) translateX(0px);
                 }
+
                 h2 {
                     font-weight: 400;
                     font-size: $p;
                     width: 10%;
+                    font-family: $font-family;
+                    line-height: 1.2rem;
                 }
+
 
                 .c-card__userInformation {
                     display: none;
+
                 }
             }
+
         }
 
         .c-card-manhourSearch__userName {
@@ -261,12 +293,12 @@
         .listTitle__englishName {
             width: 60%;
         }
- 
+
         .listTitle__workTime {
-      
+
             width: auto;
         }
-    
+
 
         .js-c-card__appendUserName {
             width: 80%;
@@ -286,6 +318,7 @@
 
         .c-card-manhourSearch {
             height: 4rem;
+
             &:hover {
                 transition: all 0;
                 transform: translateY(0px) translateX(0px);
@@ -304,31 +337,34 @@
     .l-main-tabs {
         margin-bottom: 5px;
     }
-    .c-search-list{
-      .c-dropdown-member{
-        .c-dropdown__input{
-            
-            .o-input-div{
-                background-color: rgba(0,0,0,0);
-                &::after{
-                    background-image:url(../img/o-arrowDown.svg);
-                    
+
+    .c-search-list {
+        .c-dropdown-member {
+            .c-dropdown__input {
+
+                .o-input-div {
+                    background-color: rgba(0, 0, 0, 0);
+
+                    &::after {
+                        background-image: url(../img/o-arrowDown.svg);
+
+                    }
                 }
+
+                &::after {
+                    background-color: rgba(0, 0, 0, 0);
+                    background-image: none;
+                    z-index: -1;
+                }
+
+
+
             }
-            &::after{
-                background-color: rgba(0,0,0,0);
-                background-image: none;
-                z-index: -1;
-            }
-            
-            
-         
+
         }
-       
-    }  
     }
 
-  
+
     .c-datePicker__modal {
         .c-datePicker__yearPicker {
             button {
@@ -338,46 +374,54 @@
     }
 
     .change-card-to-list {
-          .c-card-percent{
-        margin-bottom: 1rem;
-        cursor: default;
-        div{
+        .c-card-percent {
+            margin-bottom: 1rem;
             cursor: default;
-        }
-        &:hover {
-            transition: all 0;
-            transform: translateY(0px) translateX(0px);
+
+            div {
+                cursor: default;
+            }
+
+            &:hover {
+                transition: all 0;
+                transform: translateY(0px) translateX(0px);
+            }
+
+            &:active {
+                transition: all 0;
+                transform: translateY(0px) translateX(0px);
+            }
+
+            .c-card__item {
+                .c-card__item__title {
+                    margin-top: 0.2rem;
+                }
+            }
         }
 
-        &:active {
-            transition: all 0;
-            transform: translateY(0px) translateX(0px);
-        }
-      
-        .c-card__item{
-            .c-card__item__title{
-             margin-top:0.2rem;
-            } 
-         }
-    }
-        .l-main-content-item__listTitle{
+        .l-main-content-item__listTitle {
             height: 4rem;
             padding-left: 3rem;
         }
-        .c-card-percent{
+
+        .c-card-percent {
             margin-bottom: 0rem;
         }
-        .c-card-percent{
+
+        .c-card-percent {
             height: 4rem;
         }
-        .c-card__userInformation{
-            h3{
+
+        .c-card__userInformation {
+            h3 {
                 font-family: $font-family;
             }
         }
-        .c-card__item__title{
+
+        .c-card__item__title {
             cursor: default;
         }
+
         .c-card-percent__userName {
             display: none;
         }
@@ -420,7 +464,7 @@
 
         .c-card__content {
             width: 10%;
-       
+
         }
 
         .card-percent__listTitle {
@@ -493,10 +537,13 @@
                 transition: all 0;
                 transform: translateY(0px) translateX(0px);
             }
+
             cursor: default;
-            div{
+
+            div {
                 cursor: default;
             }
+
             .c-card-title {
                 span {
                     right: 30px;

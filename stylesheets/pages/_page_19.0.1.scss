@@ -25,6 +25,7 @@
 
         .c-card-manhourSofar {
             height: 4rem;
+
             &:hover {
                 transition: all 0;
                 transform: translateY(0px) translateX(0px);
@@ -51,7 +52,7 @@
 
 .l-main-content {
     .c-card-manhourSofar {
-        margin: 0 0.5rem 2.5rem 0.2rem;
+        margin: 0 0.5rem 0.5rem 0.2rem;
     }
 
     .l-main-content-text {
@@ -196,7 +197,7 @@
             }
         }
 
-       
+
         .table-body__item {
             .col {
                 span {
@@ -215,18 +216,21 @@
                     }
                 }
             }
+
             .c-popover-wbsEdit {
                 .c-popover__content {
                     margin-bottom: 0.5rem;
-                    &::before{
-                        margin-left:-30.75px;
+
+                    &::before {
+                        margin-left: -30.75px;
                     }
-                    &::after{
-                        margin-left:-30.9px;
+
+                    &::after {
+                        margin-left: -30.9px;
                     }
                 }
             }
-            
+
         }
 
         .table-footer {
