@@ -5,6 +5,8 @@ const loginCloseBtn = document.querySelector(
 );
 const worksheetBtn = document.querySelector(".js-worksheetBtn");
 const worksheetContent = document.querySelector(".l-mobile-footer-worksheet");
+const mobileMain = document.querySelector(".l-mobile-main");
+
 //點擊漢堡選單 展開登入頁
 if (hamBtn != null) {
   hamBtn.addEventListener("click", function () {
@@ -40,5 +42,23 @@ if (loginCloseBtn != null) {
 if (worksheetBtn != null) {
   worksheetBtn.addEventListener("click", function () {
     worksheetContent.classList.toggle("js-worksheet-show");
+  });
+}
+
+//scrollbar 控制視窗收合
+const dateNavbar = document.querySelector(".l-mobile-date-navbar");
+const homepage = document.querySelector(".l-mobile-homepage");
+const navbarName = document.querySelector(".l-mobile-navbar_name");
+// let scrollBarPosition = 11.43;
+if (mobileMain != null) {
+  mobileMain.addEventListener("scroll", function () {
+    if (mobileMain.scrollTop > 45) {
+      dateNavbar.classList.add("js-dateNavbar-close");
+      navbarName.classList.add("js-navbar-name-show");
+    }
+    if (mobileMain.scrollTop < 45) {
+      dateNavbar.classList.remove("js-dateNavbar-close");
+      navbarName.classList.remove("js-navbar-name-show");
+    }
   });
 }

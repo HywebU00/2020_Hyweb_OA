@@ -116,6 +116,16 @@
     width: 100%;
     border-radius: 0 0 1.07rem 1.07rem;
     box-shadow: 0 0 15px 0 rgba(1, 39, 73, 0.15);
+    overflow: hidden;
+    transition: ease 0.5s;
+
+    .l-mobile-navbar_name {
+        display: none;
+    }
+
+    .js-navbar-name-show {
+        display: block;
+    }
 
     .c-date-btnlist {
         display: flex;
@@ -179,6 +189,12 @@
 
 }
 
+
+
+.js-dateNavbar-close {
+    height: 3.14rem;
+    border-radius: 0rem;
+}
 
 .l-mobile-login-content {
     display: none;
@@ -418,6 +434,8 @@
     background-color: #fff;
     padding-top: 11.43rem;
 
+    transition: ease 1s;
+
     .l-mobile-content {
         display: flex;
         justify-content: center;
@@ -525,6 +543,7 @@
 
     }
 }
+
 
 .is-error-time_input {
     ul {

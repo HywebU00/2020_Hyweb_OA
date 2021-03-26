@@ -18609,6 +18609,17 @@ body {
   border-radius: 0 0 1.07rem 1.07rem;
   -webkit-box-shadow: 0 0 15px 0 rgba(1, 39, 73, 0.15);
           box-shadow: 0 0 15px 0 rgba(1, 39, 73, 0.15);
+  overflow: hidden;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.l-mobile-date-navbar .l-mobile-navbar_name {
+  display: none;
+}
+
+.l-mobile-date-navbar .js-navbar-name-show {
+  display: block;
 }
 
 .l-mobile-date-navbar .c-date-btnlist {
@@ -18684,6 +18695,11 @@ body {
   position: absolute;
   right: 2rem;
   top: 5.35rem;
+}
+
+.js-dateNavbar-close {
+  height: 3.14rem;
+  border-radius: 0rem;
 }
 
 .l-mobile-login-content {
@@ -18955,6 +18971,8 @@ body {
 .l-mobile-homepage {
   background-color: #fff;
   padding-top: 11.43rem;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
 }
 
 .l-mobile-homepage .l-mobile-content {
