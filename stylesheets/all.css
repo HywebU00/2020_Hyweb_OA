@@ -19394,4 +19394,16 @@ body {
 .js-worksheet-show {
   bottom: 0;
 }
+
+.l-mobile-mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  background-color: black;
+  opacity: 0.3;
+  display: none;
+}
 /*# sourceMappingURL=all.css.map */
