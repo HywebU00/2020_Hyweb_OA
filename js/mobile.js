@@ -10,7 +10,10 @@ const mobileMain = document.querySelector(".l-mobile-main");
 
 //放入遮罩
 let mask = document.createElement("div");
-mask.setAttribute("class", "l-mobile-mask js-worksheet-closeBtn");
+mask.setAttribute(
+  "class",
+  "l-mobile-mask js-worksheet-closeBtn l-mobile-mask-none"
+);
 document.body.prepend(mask);
 //點擊漢堡選單 展開登入頁
 if (hamBtn != null) {
@@ -50,7 +53,8 @@ if (worksheetBtn != null) {
 }
 function sheetOpen() {
   worksheetContent.classList.add("js-worksheet-show");
-  mask.style.display = "block";
+
+  mask.classList.remove("l-mobile-mask-none");
 }
 //收起下方選取區塊
 if (worksheetBtnClose != null) {
@@ -58,7 +62,7 @@ if (worksheetBtnClose != null) {
   BtnClose.forEach((item) => {
     item.addEventListener("click", () => {
       worksheetContent.classList.remove("js-worksheet-show");
-      mask.style.display = "none";
+      mask.classList.add("l-mobile-mask-none");
     });
   });
 }
