@@ -177,12 +177,20 @@
             position: absolute;
             left: 2rem;
             top: 5.35rem;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            align-items: center;
         }
 
         .c-date-select_Rightbtn {
             position: absolute;
             right: 2rem;
             top: 5.35rem;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            align-items: center;
         }
     }
 
@@ -212,6 +220,12 @@
         position: absolute;
         top: 0.7rem;
         left: 1.4rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
     }
 
     .l-mobile-login-content_logout_btn {
@@ -296,6 +310,12 @@
 .l-mobile-navbar-leftbtn {
     position: absolute;
     left: 1.42rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .l-mobile-navbar-rightbtn {
@@ -303,12 +323,14 @@
     right: 1.42rem;
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
 }
 
 .l-mobile-content {
     width: 100%;
-    //height: calc(100vh - 3.14rem); //100vh;
-    //padding: 0 1.42rem;
 
     .l-mobile-content_list {
         background: #fff;
@@ -375,10 +397,6 @@
         flex-wrap: wrap;
         padding: 0 1.42rem;
 
-        // &:active {
-        //     background-color: $hyweb-lighblue;
-
-        // }
 
         span {
             font-size: $p;
@@ -386,7 +404,7 @@
 
         a {
             color: $gray1;
-
+            height: 100%;
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -461,6 +479,11 @@
     }
 
     .c-card-workcard {
+        &:active {
+            transform: translateY(4px) translateX(4px);
+            transition: ease 0.2s;
+        }
+
         background-color: #fff;
         border-radius: 1.07rem;
         box-shadow: 0 0 15px 0 rgba(1, 39, 73, 0.15);
@@ -468,6 +491,7 @@
         height: 7.6rem;
         margin: 0.53rem 0 0.53rem 0;
         padding: 1.07rem;
+
 
 
         a {
@@ -745,6 +769,8 @@
                     width: 2.57rem;
                     height: 2.57rem;
                     border-radius: 50%;
+                    display: flex;
+                    align-items: center;
                 }
             }
         }

@@ -18688,12 +18688,24 @@ body {
   position: absolute;
   left: 2rem;
   top: 5.35rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .l-mobile-date-navbar .c-date-select .c-date-select_Rightbtn {
   position: absolute;
   right: 2rem;
   top: 5.35rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .js-dateNavbar-close {
@@ -18726,6 +18738,16 @@ body {
   position: absolute;
   top: 0.7rem;
   left: 1.4rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .l-mobile-login-content .l-mobile-login-content_logout_btn {
@@ -18816,6 +18838,18 @@ body {
 .l-mobile-navbar-leftbtn {
   position: absolute;
   left: 1.42rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .l-mobile-navbar-rightbtn {
@@ -18827,6 +18861,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
 }
 
 .l-mobile-content {
@@ -18914,6 +18954,7 @@ body {
 
 .l-mobile-content li a {
   color: #042340;
+  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19023,6 +19064,13 @@ body {
   height: 7.6rem;
   margin: 0.53rem 0 0.53rem 0;
   padding: 1.07rem;
+}
+
+.l-mobile-homepage .c-card-workcard:active {
+  -webkit-transform: translateY(4px) translateX(4px);
+          transform: translateY(4px) translateX(4px);
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
 }
 
 .l-mobile-homepage .c-card-workcard a {
@@ -19330,6 +19378,12 @@ body {
   width: 2.57rem;
   height: 2.57rem;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .l-mobile-footer-worksheet .c-mobile__calendar .calendar_month {
