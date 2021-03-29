@@ -289,7 +289,7 @@
     font-family: $font-family;
     color: #fff;
     font-size: 1.14rem;
-    font-weight: 900;
+    font-weight: 700;
 
 }
 
@@ -301,6 +301,8 @@
 .l-mobile-navbar-rightbtn {
     position: absolute;
     right: 1.42rem;
+    display: flex;
+    align-items: center;
 }
 
 .l-mobile-content {
@@ -310,6 +312,10 @@
 
     .l-mobile-content_list {
         background: #fff;
+
+        .is-li-active {
+            background-color: $hyweb-lighblue;
+        }
 
         li {
             height: 5rem;
@@ -394,6 +400,9 @@
         }
 
         button {
+            display: flex;
+            align-items: center;
+
             img {
                 height: 1.7rem;
                 padding: 0.3rem;
@@ -577,6 +586,11 @@
     textarea {
         height: 100%;
         border: 0;
+
+    }
+
+    :focus {
+        outline: none;
     }
 }
 
@@ -708,6 +722,7 @@
         .c-card-workHotkey__btn {
             @extend .c-card-planHotkey__btn;
             height: 2.57rem;
+            font-weight: bold;
         }
     }
 

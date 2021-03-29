@@ -18810,7 +18810,7 @@ body {
   font-family: "Noto Sans TC", "sans-serif";
   color: #fff;
   font-size: 1.14rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .l-mobile-navbar-leftbtn {
@@ -18821,6 +18821,12 @@ body {
 .l-mobile-navbar-rightbtn {
   position: absolute;
   right: 1.42rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .l-mobile-content {
@@ -18829,6 +18835,10 @@ body {
 
 .l-mobile-content .l-mobile-content_list {
   background: #fff;
+}
+
+.l-mobile-content .l-mobile-content_list .is-li-active {
+  background-color: #E2F1FE;
 }
 
 .l-mobile-content .l-mobile-content_list li {
@@ -18918,6 +18928,15 @@ body {
 
 .l-mobile-content li .planlist-danger-text {
   color: #FB5B29;
+}
+
+.l-mobile-content li button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .l-mobile-content li button img {
@@ -19129,6 +19148,10 @@ body {
   border: 0;
 }
 
+.l-mobile-content_textarea :focus {
+  outline: none;
+}
+
 .l-mobile-footer-btn, .l-mobile-footer-time {
   width: 100%;
   height: 3.9rem;
@@ -19283,6 +19306,7 @@ body {
 
 .l-mobile-footer-worksheet .c-card-workHotkey .c-card-workHotkey__btn {
   height: 2.57rem;
+  font-weight: bold;
 }
 
 .l-mobile-footer-worksheet .c-mobile__calendar {
