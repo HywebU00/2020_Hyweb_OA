@@ -31,7 +31,7 @@
             &::before {
                 left: 90px;
                 //margin-top: -118px;
-                margin-top: -135px;//-140px;
+                margin-top: -135px; //-140px;
             }
 
             &::after {
@@ -53,7 +53,7 @@
             left: -170px;
             width: 200px;
         }
-       
+
     }
 
     .c-datePicker__modal {
@@ -86,65 +86,71 @@
         justify-content: center;
 
     }
-    
-    .change-card-to-list{
-        .l-main-content-item{
-            .l-main-content-item__listGroup{
-                .c-card-planReport{
+
+    .change-card-to-list {
+        .l-main-content-item {
+            .l-main-content-item__listGroup {
+                .c-card-planReport {
                     height: 4rem;
-                    .c-card__item{
-                        .c-card__item__footer{
+
+                    .c-card__item {
+                        .c-card__item__footer {
                             .list__item__title {
-                                .list__item__percent{
+                                .list__item__percent {
                                     width: 100px;
-                                    span{
-                                        padding:0;
+
+                                    span {
+                                        padding: 0;
                                     }
                                 }
                             }
-                            .c-card__item__content__list{
-                                .list__item{
-                                    .list__item__percent{
+
+                            .c-card__item__content__list {
+                                .list__item {
+                                    .list__item__percent {
                                         width: 100px;
                                     }
                                 }
                             }
                         }
-                        
+
                     }
-                    
-                    
+
+
                     // a{ 
                     //   padding:auto;
                     // }
                 }
-            } 
+            }
         }
+
         .l-main-content-item__listGroup {
             justify-content: left;
-            
-            .c-card-planReport-danger{
-                .c-card__item{
-                    .c-card__item__title{
-                        .c-card__tag__num{
-                            .c-card__tag__status{
+
+            .c-card-planReport-danger {
+                .c-card__item {
+                    .c-card__item__title {
+                        .c-card__tag__num {
+                            .c-card__tag__status {
                                 background: #fff;
                                 color: $gray1;
                             }
                         }
-                        
+
                     }
                 }
-              
-                
+
+
             }
-          
+
         }
-        .l-main-content-item__listTitle{
+
+        .l-main-content-item__listTitle {
             line-height: 1.5rem;
             height: 4rem;
-            padding:0.6rem 0px 0.6rem 4.4rem;
-            div{
+            padding: 0.6rem 0px 0.6rem 4.4rem;
+
+            div {
                 justify-content: left;
             }
         }
@@ -152,7 +158,7 @@
 
     .list-width {
         justify-content: flex-start;
-        overflow: scroll;
+        overflow-x: scroll;
         flex-shrink: 0;
 
         .l-main-content-item__listTitle {
@@ -423,15 +429,17 @@
                     .c-card__item {
                         padding: 1.33rem 0rem 20px 1.33rem;
                     }
-                    .is-changeBackground{
-                        .c-card__item__title{
-                            .c-card__tag__num{
-                                span{
-                                    background-color:$sec3;
+
+                    .is-changeBackground {
+                        .c-card__item__title {
+                            .c-card__tag__num {
+                                span {
+                                    background-color: $sec3;
                                 }
                             }
                         }
                     }
+
                     .c-card__item__footer {
                         .c-card__item__content__list {
                             .list__item {
@@ -446,26 +454,32 @@
                 }
             }
         }
+
         .c-card-planReport {
             a {
                 padding: 0;
                 height: 100%;
             }
+
             .c-card__item {
                 border-radius: 0;
+
                 .c-card__item__title {
                     .c-card__tag {
                         width: 296px;
+
                         .c-card__tag__num {
                             flex-direction: row-reverse;
                             width: auto;
                         }
                     }
+
                     .c-card__tag__status {
                         text-align: center;
                         margin-left: 0.2rem;
                     }
                 }
+
                 .c-card__star__btn {
                     margin: 0;
                 }
@@ -519,7 +533,7 @@
 
     .l-main-content-item__listTitle {
         height: 4rem;
-       // padding: 20px 2rem;
+        // padding: 20px 2rem;
 
         .listTitle__num {
             padding: 0 0.2rem;
@@ -551,6 +565,7 @@
         .c-card-planClosed {
             //padding: 20px 2rem;
             height: 4rem;
+
             .c-card__tag {
                 padding: 0 0.5rem;
                 width: 15%;
@@ -671,7 +686,8 @@
         }
     }
 }
-#alertPlen{
+
+#alertPlen {
 
     .l-main-tabs {
         margin-bottom: 5px;
@@ -706,7 +722,7 @@
             left: -170px;
             width: 200px;
         }
-       
+
     }
 
     .c-datePicker__modal {
@@ -731,162 +747,184 @@
         max-width: 1000px;
         width: auto;
     }
-   
+
     .l-main-content-item__listGroup {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        .l-main-content__text{
+
+        .l-main-content__text {
             margin: 0;
         }
 
     }
-    
-    .change-card-to-list{
-        .l-main-content-item{
-            .l-main-content-item__listGroup{
-                .c-card-planReport{
+
+    .change-card-to-list {
+        .l-main-content-item {
+            .l-main-content-item__listGroup {
+                .c-card-planReport {
                     height: 4rem;
-                    .c-card__item__content{
-                        .c-card__item__content__list{
-                            .list__item{
-                                padding:0;
-                                .list__item__num{
-                                    padding:0;
-                                    span{
-                                        padding:0;
+
+                    .c-card__item__content {
+                        .c-card__item__content__list {
+                            .list__item {
+                                padding: 0;
+
+                                .list__item__num {
+                                    padding: 0;
+
+                                    span {
+                                        padding: 0;
                                     }
                                 }
-                                .list__item__percent{
-                                    padding:0;
-                                    span{
-                                        padding:0;
+
+                                .list__item__percent {
+                                    padding: 0;
+
+                                    span {
+                                        padding: 0;
                                     }
                                 }
-                                .is-danger{
-                                       span{
-                                        padding:0.5rem;
+
+                                .is-danger {
+                                    span {
+                                        padding: 0.5rem;
                                     }
                                 }
                             }
-                            &:last-child{
-                               .list__item__percent{
-                                   width: 100px;
-                               } 
-                            }
-                        }
-                    }
-                    .c-card__item{
-                        .c-card__item__title{
-                            .c-card__tag{
-                                padding-left: 2rem;
-                            }
-                        }
-                        .c-card__item__footer{
-                            .list__item__title {
-                                .list__item__percent{
+
+                            &:last-child {
+                                .list__item__percent {
                                     width: 100px;
                                 }
                             }
                         }
-                        .c-card__text{
-                          div{
-                              padding:0;
-                          }
+                    }
+
+                    .c-card__item {
+                        .c-card__item__title {
+                            .c-card__tag {
+                                padding-left: 2rem;
+                            }
+                        }
+
+                        .c-card__item__footer {
+                            .list__item__title {
+                                .list__item__percent {
+                                    width: 100px;
+                                }
+                            }
+                        }
+
+                        .c-card__text {
+                            div {
+                                padding: 0;
+                            }
                         }
                     }
                 }
-                .c-card-planReport-checkbox{
-                    .c-card__item{
-                      .c-card__item__title{
-                        .c-card__tag{
-                            padding-left: 0;
+
+                .c-card-planReport-checkbox {
+                    .c-card__item {
+                        .c-card__item__title {
+                            .c-card__tag {
+                                padding-left: 0;
+                            }
                         }
-                    }  
                     }
-                    
-                    
-                } 
-            } 
-            .l-main-content-item__listTitle{
-                div{
+
+
+                }
+            }
+
+            .l-main-content-item__listTitle {
+                div {
                     justify-content: left;
                     padding: 0;
                 }
             }
         }
-      
+
         .l-main-content-item__listGroup {
             justify-content: left;
-            .l-main-content__text{
+
+            .l-main-content__text {
                 width: 100%;
-            }           
-            .c-card-planReport-danger{
-                .c-card__item{
-                    .c-card__item__title{
-                        .c-card__tag__num{
-                            .c-card__tag__status{
+            }
+
+            .c-card-planReport-danger {
+                .c-card__item {
+                    .c-card__item__title {
+                        .c-card__tag__num {
+                            .c-card__tag__status {
                                 background: #fff;
                                 color: $gray1;
                             }
                         }
-                        h2{
+
+                        h2 {
                             padding: 0;
                         }
-                        .c-card__text{
-                          .c-card__text__startTime{
-                            padding: 0;
-                        }  
-                        }
-                        
-                        
-                    }
-                    
-                }
-                .is-changeBackground{
-                    .c-card__item__title{
-                        .c-card__tag{
-                            .c-card__tag__input{
-                                form{
-                                 span{
-                                    background: $sec3;  
-                                }   
-                                }
-                                
+
+                        .c-card__text {
+                            .c-card__text__startTime {
+                                padding: 0;
                             }
-                            .c-card__tag__num{
-                               span{
-                                background: $hy-background-danger;
-                            
+                        }
+
+
+                    }
+
+                }
+
+                .is-changeBackground {
+                    .c-card__item__title {
+                        .c-card__tag {
+                            .c-card__tag__input {
+                                form {
+                                    span {
+                                        background: $sec3;
+                                    }
                                 }
-                                .c-card__tag__status{
+
+                            }
+
+                            .c-card__tag__num {
+                                span {
+                                    background: $hy-background-danger;
+
+                                }
+
+                                .c-card__tag__status {
                                     background: $sec3;
-                                } 
+                                }
                             }
-                        
+
+                        }
                     }
-                    }
-                    
+
                 }
-                
+
             }
-            .c-card-planReport{
-                .c-card__item{
-                    .c-card__item__title{
-                        h2{
+
+            .c-card-planReport {
+                .c-card__item {
+                    .c-card__item__title {
+                        h2 {
                             padding: 0;
                         }
-                        
+
                     }
                 }
             }
         }
-        .l-main-content-item__listTitle{
+
+        .l-main-content-item__listTitle {
             line-height: 1.5rem;
             height: 4rem;
-            padding:0.6rem 0px 0.6rem 4.333rem;
-           
+            padding: 0.6rem 0px 0.6rem 4.333rem;
+
         }
     }
 
@@ -1163,15 +1201,17 @@
                     .c-card__item {
                         padding: 1.33rem 0rem 20px 1.33rem;
                     }
-                    .is-changeBackground{
-                        .c-card__item__title{
-                            .c-card__tag__num{
-                                span{
-                                    background-color:$sec3;
+
+                    .is-changeBackground {
+                        .c-card__item__title {
+                            .c-card__tag__num {
+                                span {
+                                    background-color: $sec3;
                                 }
                             }
                         }
                     }
+
                     .c-card__item__footer {
                         .c-card__item__content__list {
                             .list__item {
@@ -1186,26 +1226,32 @@
                 }
             }
         }
+
         .c-card-planReport {
             a {
                 padding: 0;
                 height: 100%;
             }
+
             .c-card__item {
                 border-radius: 0;
+
                 .c-card__item__title {
                     .c-card__tag {
                         width: 296px;
+
                         .c-card__tag__num {
                             flex-direction: row-reverse;
                             width: auto;
                         }
                     }
+
                     .c-card__tag__status {
                         text-align: center;
                         margin-left: 0.2rem;
                     }
                 }
+
                 .c-card__star__btn {
                     margin: 0;
                 }
