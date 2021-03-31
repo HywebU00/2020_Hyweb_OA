@@ -1582,6 +1582,7 @@
 
     .c-modal-content {
         display: block;
+        width: 100%;
         height: calc(85vh - 230px);
         overflow-y: scroll;
         padding-top: 1rem;
@@ -1666,7 +1667,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 //height: 40vh;
-                overflow-y: scroll;
+                //overflow-y: scroll;
 
                 .c-card-lablePerson {
                     margin: 0 0 0.5rem 0.5rem;
@@ -2035,7 +2036,7 @@
 
     .c-modal-content__title {
         font-size: $h2;
-        margin-top: -1rem;
+        //margin-top: -1rem;
         margin-left: 1.33rem;
         color: $gray1;
         font-weight: 700;
@@ -2093,7 +2094,7 @@
 
         .c-modal-content__item {
             height: 100%;
-            overflow-y: scroll;
+            // overflow-y: scroll;
 
             .c-accordion-plan {
                 margin: 1rem 1.5rem;

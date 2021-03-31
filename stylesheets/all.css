@@ -13389,6 +13389,7 @@ body {
 
 .c-modal-addGroup .c-modal-content, .c-modal-usuallyUseMember .c-modal-content, .c-modal-sample .c-modal-content, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll {
   display: block;
+  width: 100%;
   height: calc(85vh - 230px);
   overflow-y: scroll;
   padding-top: 1rem;
@@ -13490,7 +13491,6 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  overflow-y: scroll;
 }
 
 .c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__group .c-card-lablePerson {
@@ -13821,7 +13821,6 @@ body {
 
 .c-modal-usuallyUseMember .c-modal-content__title, .c-modal-sample .c-modal-content__title {
   font-size: 22px;
-  margin-top: -1rem;
   margin-left: 1.33rem;
   color: #042340;
   font-weight: 700;
@@ -13880,7 +13879,6 @@ body {
 
 .c-modal-sample .c-modal-content .c-modal-content__item, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__item, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__item {
   height: 100%;
-  overflow-y: scroll;
 }
 
 .c-modal-sample .c-modal-content .c-modal-content__item .c-accordion-plan, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__item .c-accordion-plan, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__item .c-accordion-plan, .c-modal-sample .c-modal-content .c-modal-content__item .c-accordion-general, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__item .c-accordion-general, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__item .c-accordion-general {
@@ -16383,7 +16381,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  overflow: scroll;
+  overflow-x: scroll;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -17449,6 +17447,10 @@ body {
   transition: all 0;
   -webkit-transform: translateY(0px) translateX(0px);
           transform: translateY(0px) translateX(0px);
+}
+
+#membertime .change-card-to-list .c-card-manhourSofar .c-card__userInformation h3, #membertime .change-card-to-list .c-card-manhourSearch .c-card__userInformation h3, #membertime .change-card-to-list .c-card-percent .c-card__userInformation h3, #membertime .change-card-to-list .c-card-percentCheck .c-card__userInformation h3, #membertime .change-card-to-list .c-card-planPerson .c-card__userInformation h3, #membertime .change-card-to-list .c-card-planClosed .c-card__userInformation h3, #membertime .change-card-to-list .c-card-planHotkey .c-card__userInformation h3, #membertime .change-card-to-list .l-mobile-footer-worksheet .c-card-workHotkey .c-card__userInformation h3, .l-mobile-footer-worksheet #membertime .change-card-to-list .c-card-workHotkey .c-card__userInformation h3, #membertime .change-card-to-list .c-card-planReport .c-card__userInformation h3, #membertime .change-card-to-list .c-card-planReport-danger .c-card__userInformation h3, #membertime .change-card-to-list .c-card-alertPlan .c-card__userInformation h3, #membertime .change-card-to-list .c-card-department .c-card__userInformation h3 {
+  font-family: "Noto Sans TC", "sans-serif";
 }
 
 #membertime .change-card-to-list .l-main-content-item .c-card-manhourSearch {
