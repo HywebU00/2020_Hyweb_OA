@@ -12015,6 +12015,7 @@ body {
 .c-card-department {
   width: 20%;
   max-width: 260px;
+  cursor: pointer;
 }
 
 .c-card-department h2 {
@@ -17812,6 +17813,10 @@ body {
 
 #supporttime .c-datePicker__modal .c-datePicker__yearPicker button {
   border-radius: 50%;
+}
+
+#supporttime .change-card-to-list .c-card-department {
+  cursor: default;
 }
 
 #supporttime .change-card-to-list .c-card-manhourSearch {

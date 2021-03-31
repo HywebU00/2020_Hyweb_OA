@@ -300,6 +300,7 @@
     @extend .c-card-manhourSofar;
     width: 20%;
     max-width: 260px;
+    cursor: pointer;
 
     h2 {
         font-family: $english-font;
