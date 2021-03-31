@@ -12015,6 +12015,7 @@ body {
 .c-card-department {
   width: 20%;
   max-width: 260px;
+  cursor: pointer;
 }
 
 .c-card-department h2 {
@@ -12700,7 +12701,6 @@ body {
   background-color: #fff;
   border-radius: 0 0 0.66rem 0.66rem;
   max-height: 15rem;
-  overflow-y: scroll;
 }
 
 .c-toast-uploadSuccess .c-toast-body .c-toast-body__item__title, .c-toast-uploadFailure .c-toast-body .c-toast-body__item__title {
@@ -13070,6 +13070,10 @@ body {
   width: 100%;
 }
 
+.c-modal-alert .c-modal-alert__content .os-scrollbar {
+  width: 0.71rem;
+}
+
 .c-modal-alert .c-modal-alert__content .o-btn-secondary {
   padding: 0 1.66rem;
 }
@@ -13231,6 +13235,14 @@ body {
   overflow-y: scroll;
   padding-bottom: 0;
   height: calc(75vh - 230px);
+}
+
+.c-modal-chooseGroup .c-modal-content .c-modal-content__addMember .addMember-content .os-content, .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__addMember .addMember-content .os-content, .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__addMember .addMember-content .os-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .c-modal-chooseGroup .c-modal-content .c-modal-content__addMember .c-card-lablePersonL, .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__addMember .c-card-lablePersonL, .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__addMember .c-card-lablePersonL {
@@ -13820,6 +13832,7 @@ body {
 .c-modal-usuallyUseMember .c-modal-content, .c-modal-sample .c-modal-content, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll {
   width: 100%;
   height: 65vh;
+  overflow-x: hidden;
 }
 
 .c-modal-usuallyUseMember .c-accordion-group, .c-modal-sample .c-accordion-group, .c-modal-usuallyUseMember .c-accordion-plan, .c-modal-sample .c-accordion-plan, .c-modal-usuallyUseMember .c-accordion-general, .c-modal-sample .c-accordion-general {
@@ -13828,7 +13841,6 @@ body {
 
 .c-modal-usuallyUseMember .c-modal-content__item, .c-modal-sample .c-modal-content__item {
   height: 100%;
-  overflow-y: scroll;
   margin: 1rem 0 1rem 0;
 }
 
@@ -14286,7 +14298,6 @@ body {
   border-radius: 5px;
   width: 280px;
   max-height: 337px;
-  overflow-y: scroll;
   padding: 1.32rem;
 }
 
@@ -14489,6 +14500,10 @@ body {
 .c-datePicker-day .c-datePicker__footer .o-btn-primary, .c-datePicker-days .c-datePicker__footer .o-btn-primary, .c-datePicker-months .c-datePicker__footer .o-btn-primary {
   height: 32px;
   padding: 0 20px;
+}
+
+.c-datePicker-month .c-datePicker__modal {
+  overflow: hidden;
 }
 
 .c-datePicker-month .c-datePicker__modal .c-datePicker__yearPicker div {
@@ -17798,6 +17813,10 @@ body {
 
 #supporttime .c-datePicker__modal .c-datePicker__yearPicker button {
   border-radius: 50%;
+}
+
+#supporttime .change-card-to-list .c-card-department {
+  cursor: default;
 }
 
 #supporttime .change-card-to-list .c-card-manhourSearch {

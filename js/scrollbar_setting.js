@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
       y: "scroll",
     },
   });
-
   //dropdown scroll
   OverlayScrollbars(c_dropdown_content_height, {
     className: "os-theme-dark",

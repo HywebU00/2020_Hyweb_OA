@@ -1,158 +1,187 @@
-#WBS{
-    .l-main-content{
-        .l-main-content__wbslist{
-            .table-thead{
-                .row{
-                    .s1{
-                        width:6.8rem;
-                    }  
+#WBS {
+    .l-main-content {
+        .l-main-content__wbslist {
+            .table-thead {
+                .row {
+                    .s1 {
+                        width: 6.8rem;
+                    }
                 }
             }
-            .table-body{
+
+            .table-body {
                 .table-body__item {
-                    .s1{
-                        width:6.8rem;
-                        padding: 0; 
+                    .s1 {
+                        width: 6.8rem;
+                        padding: 0;
                         max-height: 5.3rem;
-                        .o-input{
-                            margin:0 0.5rem;
-                            input{
+
+                        .o-input {
+                            margin: 0 0.5rem;
+
+                            input {
                                 margin-left: 0.8rem;
                                 width: 4rem;
                             }
                         }
                     }
-                    .row{
-                        .is-error-status-item{
-                            .o-input{
-                                margin-top:1rem;
+
+                    .row {
+                        .is-error-status-item {
+                            .o-input {
+                                margin-top: 1rem;
                             }
                         }
                     }
-                    .c-datePicker-days{
-                     .c-datePicker__modal{
-                         margin-bottom: 1rem;
-                     }
+
+                    .c-datePicker-days {
+                        .c-datePicker__modal {
+                            margin-bottom: 1rem;
+                        }
                     }
                 }
-                .table-body__conutItem{
+
+                .table-body__conutItem {
                     height: 4rem;
-                    .table-body__item__project{
+
+                    .table-body__item__project {
                         margin: 1rem 0.5rem;
                         height: 2.5rem;
                     }
-                   
-                } 
+
+                }
+
             }
-            .table-footer{
-                padding: 1rem 0 1rem 0;     
+
+            .table-footer {
+                padding: 1rem 0 1rem 0;
             }
-            .is-error-status-item{
-                .o-input-div{
+
+            .is-error-status-item {
+                .o-input-div {
                     background-color: #fff;
-                  
+
                 }
             }
-            .c-dropdown-member{
-                .c-dropdown__input{
-                    
-                    .o-input-div{
-                        background-color: rgba(0,0,0,0);
-                        &::after{
-                            background-image:url(../img/o-arrowDown.svg);
-                            
+
+            .c-dropdown-member {
+                .c-dropdown__input {
+
+                    .o-input-div {
+                        background-color: rgba(0, 0, 0, 0);
+
+                        &::after {
+                            background-image: url(../img/o-arrowDown.svg);
+
                         }
                     }
-                    &::after{
-                        background-color: rgba(0,0,0,0);
+
+                    &::after {
+                        background-color: rgba(0, 0, 0, 0);
                         background-image: none;
                         z-index: -1;
                     }
-                    
-                    
-                 
+
+
+
                 }
-               
+
             }
+
         }
 
-    } 
+    }
 }
-#introduction{
-    .l-main-content__upload{
-        .row{
-            :nth-child(1){
-                img{
+
+#introduction {
+    .l-main-content__upload {
+        .row {
+            :nth-child(1) {
+                img {
                     width: 2.4rem;
                 }
-                width: 75.6666666667%;;
+
+                width: 75.6666666667%;
+                ;
             }
-            .s8{
-                img{
+
+            .s8 {
+                img {
                     cursor: default;
                 }
-                
+
             }
-            .s1{
+
+            .s1 {
                 min-width: 82px;
-                button{
+
+                button {
                     width: 33px;
-                    :nth-child(1){
-                       width: 24px;
+
+                    :nth-child(1) {
+                        width: 24px;
                     }
                 }
             }
-            :nth-child(3){
+
+            :nth-child(3) {
                 width: 9.6666666667%;
                 min-width: 100px;
             }
-            :nth-child(4){
+
+            :nth-child(4) {
                 margin: 0;
-               min-width: 82px;
+                min-width: 82px;
             }
-            
+
         }
     }
-    .l-main-content__planlist{
-        .table-thead{
-            .row{
-                .col{
-                    div{
+
+    .l-main-content__planlist {
+        .table-thead {
+            .row {
+                .col {
+                    div {
                         width: auto;
                     }
                 }
             }
         }
-        .table-body{
-            .row{
-                .col{
-                    div{
+
+        .table-body {
+            .row {
+                .col {
+                    div {
                         width: auto;
                     }
                 }
             }
+
             .c-popover-checkPoint {
-                .c-popover__content{
+                .c-popover__content {
                     margin-bottom: 0.5rem;
                 }
             }
-            .c-datePicker-day{
-               .c-datePicker__modal{
-                margin-bottom: 1rem;
-               }
+
+            .c-datePicker-day {
+                .c-datePicker__modal {
+                    margin-bottom: 1rem;
+                }
             }
-            
+
         }
     }
 }
-#types{
-    .l-main-content__workTypelist{
-        .table-thead{
-            padding: 0.6rem 0 0.6rem 0;     
+
+#types {
+    .l-main-content__workTypelist {
+        .table-thead {
+            padding: 0.6rem 0 0.6rem 0;
         }
-        .table-footer{
-            padding: 1rem 0 1rem 0;     
+
+        .table-footer {
+            padding: 1rem 0 1rem 0;
         }
     }
-    
+
 }
