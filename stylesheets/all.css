@@ -14253,8 +14253,8 @@ body {
 }
 
 .c-dropdown-select_content, .c-dropdown__modal {
-  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  -webkit-box-shadow: inset 0px 0px 0px 1.5px rgba(0, 0, 0, 0.13);
+          box-shadow: inset 0px 0px 0px 1.5px rgba(0, 0, 0, 0.13);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #fff;
@@ -14470,8 +14470,8 @@ body {
   position: absolute;
   background-color: #fff;
   z-index: 99;
-  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  -webkit-box-shadow: inset 0px 0px 0px 1.5px rgba(0, 0, 0, 0.13);
+          box-shadow: inset 0px 0px 0px 1.5px rgba(0, 0, 0, 0.13);
   border-radius: 5px;
   width: 280px;
   max-height: 337px;
@@ -16480,7 +16480,7 @@ body {
 }
 
 #todo .c-popover-filterL .c-popover__content {
-  left: -170px;
+  left: -175px;
   width: 200px;
 }
 
@@ -16983,7 +16983,7 @@ body {
 }
 
 #complete .l-main-content-list .c-popover-filterL .c-popover__content {
-  left: -170px;
+  left: -175px;
   width: 200px;
 }
 
@@ -17074,7 +17074,7 @@ body {
 }
 
 #alertPlen .c-popover-filterL .c-popover__content {
-  left: -170px;
+  left: -175px;
   width: 200px;
 }
 

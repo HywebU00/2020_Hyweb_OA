@@ -2333,7 +2333,7 @@
 }
 
 .c-dropdown-select_content {
-    box-shadow: $box-shadow;
+    box-shadow: $box-shadow-select;
     box-sizing: border-box;
     background-color: #fff;
     border-radius: $dropdown-radius;
@@ -2531,11 +2531,9 @@
 }
 
 .c-datePicker {
-
     position: relative;
 
     .c-datePicker__input {
-        //width: 25%;
         width: auto;
     }
 
@@ -2543,7 +2541,7 @@
         position: absolute;
         background-color: #fff;
         z-index: 99;
-        box-shadow: $box-shadow;
+        box-shadow: $box-shadow-select;
         border-radius: $select-radius;
         width: 280px;
         max-height: 337px;
@@ -3895,9 +3893,7 @@
 //動態效果
 //====================
 .pop-content {
-    //display: none;
     transition: ease 0.15s;
-    //transform: scale(0.0);
     transform: scaleX(0) scaleY(0);
     transform-origin: 0px 20px;
     opacity: 0;
@@ -3947,13 +3943,11 @@
     .calendar-table {
         .month {
             font-size: $p;
-            //font-family: $english-font;
             font-weight: 700;
         }
 
         td {
             font-size: $a;
-            // font-family: $english-font;
             font-weight: 600;
             padding: $pd/5;
             border-bottom: 8px solid #fff;
@@ -3965,7 +3959,6 @@
 
         tr {
             font-size: $p;
-            // font-family: $english-font;
             font-weight: 600;
         }
     }
