@@ -12830,8 +12830,8 @@ body {
 }
 
 .is-accordion-active {
-  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  -webkit-box-shadow: inset 0px 0px 0px 1.5px rgba(0, 0, 0, 0.13);
+          box-shadow: inset 0px 0px 0px 1.5px rgba(0, 0, 0, 0.13);
 }
 
 .is-accordion-active .accordion-header {
@@ -13807,7 +13807,6 @@ body {
 }
 
 .c-modal-personAll .c-modal-content__calendar, .c-modal-personCalendar .c-modal-content__calendar, .c-modal-department .c-modal-content__calendar {
-  margin-bottom: 9.24rem;
   max-height: 100%;
   padding: 1rem;
 }
@@ -13837,7 +13836,7 @@ body {
 }
 
 .c-modal-personAll .c-modal-content__calendar .c-modal-content__calendar__content, .c-modal-personCalendar .c-modal-content__calendar .c-modal-content__calendar__content, .c-modal-department .c-modal-content__calendar .c-modal-content__calendar__content {
-  height: 500px;
+  height: calc(100% - 95px);
   overflow-y: scroll;
 }
 
