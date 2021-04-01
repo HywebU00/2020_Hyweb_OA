@@ -2653,7 +2653,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
@@ -2700,12 +2702,29 @@ a {
 }
 
 /* 2dp elevation modified*/
-.z-depth-1, nav, .card-panel, .card, .l-main-content__card, .l-main-content__dbcard, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
+.z-depth-1,
+nav,
+.card-panel,
+.card,
+.l-main-content__card,
+.l-main-content__dbcard,
+.toast,
+.btn,
+.btn-large,
+.btn-small,
+.btn-floating,
+.dropdown-content,
+.collapsible,
+.sidenav {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-.z-depth-1-half, .btn:hover, .btn-large:hover, .btn-small:hover, .btn-floating:hover {
+.z-depth-1-half,
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover,
+.btn-floating:hover {
   -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
 }
@@ -2729,7 +2748,8 @@ a {
 }
 
 /* 24dp elevation */
-.z-depth-5, .modal {
+.z-depth-5,
+.modal {
   -webkit-box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
 }
@@ -2853,7 +2873,8 @@ video.responsive-video {
 }
 
 .breadcrumb i,
-.breadcrumb [class^="mdi-"], .breadcrumb [class*="mdi-"],
+.breadcrumb [class^="mdi-"],
+.breadcrumb [class*="mdi-"],
 .breadcrumb i.material-icons {
   display: inline-block;
   font-size: 24px;
@@ -2908,7 +2929,8 @@ video.responsive-video {
   transform: translateX(-50%);
 }
 
-.pin-top, .pin-bottom {
+.pin-top,
+.pin-bottom {
   position: relative;
 }
 
@@ -2933,7 +2955,8 @@ ul.staggered-list li {
   Media Query Classes
 **********************/
 @media only screen and (max-width: 600px) {
-  .hide-on-small-only, .hide-on-small-and-down {
+  .hide-on-small-only,
+  .hide-on-small-and-down {
     display: none !important;
   }
 }
@@ -3033,7 +3056,9 @@ ul.staggered-list li {
   background-color: rgba(51, 51, 51, 0.08);
 }
 
-table, th, td {
+table,
+th,
+td {
   border: none;
 }
 
@@ -3240,7 +3265,9 @@ tr {
   overflow: hidden;
 }
 
-.video-container iframe, .video-container object, .video-container embed {
+.video-container iframe,
+.video-container object,
+.video-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -3374,7 +3401,8 @@ tr {
   text-align: right;
 }
 
-.center, .center-align {
+.center,
+.center-align {
   text-align: center;
 }
 
@@ -3386,7 +3414,8 @@ tr {
   float: right !important;
 }
 
-.no-select, input[type=range],
+.no-select,
+input[type=range],
 input[type=range] + .thumb {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3539,7 +3568,8 @@ table span.badge {
   min-height: 1px;
 }
 
-.row .col[class*="push-"], .row .col[class*="pull-"] {
+.row .col[class*="push-"],
+.row .col[class*="pull-"] {
   position: relative;
 }
 
@@ -4347,7 +4377,8 @@ nav a {
 }
 
 nav i,
-nav [class^="mdi-"], nav [class*="mdi-"],
+nav [class^="mdi-"],
+nav [class*="mdi-"],
 nav i.material-icons {
   display: block;
   font-size: 24px;
@@ -4399,7 +4430,8 @@ nav .brand-logo.center {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  nav .brand-logo.left, nav .brand-logo.right {
+  nav .brand-logo.left,
+  nav .brand-logo.right {
     padding: 0;
     -webkit-transform: none;
     transform: none;
@@ -4419,7 +4451,8 @@ nav .brand-logo.right {
 }
 
 nav .brand-logo i,
-nav .brand-logo [class^="mdi-"], nav .brand-logo [class*="mdi-"],
+nav .brand-logo [class^="mdi-"],
+nav .brand-logo [class*="mdi-"],
 nav .brand-logo i.material-icons {
   float: left;
   margin-right: 15px;
@@ -4456,13 +4489,23 @@ nav ul a {
   cursor: pointer;
 }
 
-nav ul a.btn, nav ul a.btn-large, nav ul a.btn-small, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
+nav ul a.btn,
+nav ul a.btn-large,
+nav ul a.btn-small,
+nav ul a.btn-large,
+nav ul a.btn-flat,
+nav ul a.btn-floating {
   margin-top: -2px;
   margin-left: 15px;
   margin-right: 15px;
 }
 
-nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.btn-small > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.btn-flat > .material-icons, nav ul a.btn-floating > .material-icons {
+nav ul a.btn > .material-icons,
+nav ul a.btn-large > .material-icons,
+nav ul a.btn-small > .material-icons,
+nav ul a.btn-large > .material-icons,
+nav ul a.btn-flat > .material-icons,
+nav ul a.btn-floating > .material-icons {
   height: inherit;
   line-height: inherit;
 }
@@ -4491,7 +4534,12 @@ nav .input-field input {
   padding-left: 2rem;
 }
 
-nav .input-field input:focus, nav .input-field input[type=text]:valid, nav .input-field input[type=password]:valid, nav .input-field input[type=email]:valid, nav .input-field input[type=url]:valid, nav .input-field input[type=date]:valid {
+nav .input-field input:focus,
+nav .input-field input[type=text]:valid,
+nav .input-field input[type=password]:valid,
+nav .input-field input[type=email]:valid,
+nav .input-field input[type=url]:valid,
+nav .input-field input[type=date]:valid {
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -4526,7 +4574,10 @@ nav .input-field label.active i {
   nav.nav-extended .nav-wrapper {
     min-height: 64px;
   }
-  nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+  nav,
+  nav .nav-wrapper i,
+  nav a.sidenav-trigger,
+  nav a.sidenav-trigger i {
     height: 64px;
     line-height: 64px;
   }
@@ -4748,7 +4799,10 @@ small {
   background-color: #fff;
 }
 
-.card, .l-main-content__card, .l-main-content__dbcard {
+
+.card,
+.l-main-content__card,
+.l-main-content__dbcard {
   position: relative;
   margin: 0.5rem 0 1rem 0;
   background-color: #fff;
@@ -4768,25 +4822,55 @@ small {
   cursor: pointer;
 }
 
-.card.small, .small.l-main-content__card, .small.l-main-content__dbcard, .card.medium, .medium.l-main-content__card, .medium.l-main-content__dbcard, .card.large, .large.l-main-content__card, .large.l-main-content__dbcard {
+.card.small, .small.l-main-content__card, .small.l-main-content__dbcard,
+.card.medium,
+.medium.l-main-content__card,
+.medium.l-main-content__dbcard,
+.card.large,
+.large.l-main-content__card,
+.large.l-main-content__dbcard {
   position: relative;
 }
 
-.card.small .card-image, .small.l-main-content__card .card-image, .small.l-main-content__dbcard .card-image, .card.medium .card-image, .medium.l-main-content__card .card-image, .medium.l-main-content__dbcard .card-image, .card.large .card-image, .large.l-main-content__card .card-image, .large.l-main-content__dbcard .card-image {
+.card.small .card-image, .small.l-main-content__card .card-image, .small.l-main-content__dbcard .card-image,
+.card.medium .card-image,
+.medium.l-main-content__card .card-image,
+.medium.l-main-content__dbcard .card-image,
+.card.large .card-image,
+.large.l-main-content__card .card-image,
+.large.l-main-content__dbcard .card-image {
   max-height: 60%;
   overflow: hidden;
 }
 
-.card.small .card-image + .card-content, .small.l-main-content__card .card-image + .card-content, .small.l-main-content__dbcard .card-image + .card-content, .card.medium .card-image + .card-content, .medium.l-main-content__card .card-image + .card-content, .medium.l-main-content__dbcard .card-image + .card-content, .card.large .card-image + .card-content, .large.l-main-content__card .card-image + .card-content, .large.l-main-content__dbcard .card-image + .card-content {
+.card.small .card-image + .card-content, .small.l-main-content__card .card-image + .card-content, .small.l-main-content__dbcard .card-image + .card-content,
+.card.medium .card-image + .card-content,
+.medium.l-main-content__card .card-image + .card-content,
+.medium.l-main-content__dbcard .card-image + .card-content,
+.card.large .card-image + .card-content,
+.large.l-main-content__card .card-image + .card-content,
+.large.l-main-content__dbcard .card-image + .card-content {
   max-height: 40%;
 }
 
-.card.small .card-content, .small.l-main-content__card .card-content, .small.l-main-content__dbcard .card-content, .card.medium .card-content, .medium.l-main-content__card .card-content, .medium.l-main-content__dbcard .card-content, .card.large .card-content, .large.l-main-content__card .card-content, .large.l-main-content__dbcard .card-content {
+.card.small .card-content, .small.l-main-content__card .card-content, .small.l-main-content__dbcard .card-content,
+.card.medium .card-content,
+.medium.l-main-content__card .card-content,
+.medium.l-main-content__dbcard .card-content,
+.card.large .card-content,
+.large.l-main-content__card .card-content,
+.large.l-main-content__dbcard .card-content {
   max-height: 100%;
   overflow: hidden;
 }
 
-.card.small .card-action, .small.l-main-content__card .card-action, .small.l-main-content__dbcard .card-action, .card.medium .card-action, .medium.l-main-content__card .card-action, .medium.l-main-content__dbcard .card-action, .card.large .card-action, .large.l-main-content__card .card-action, .large.l-main-content__dbcard .card-action {
+.card.small .card-action, .small.l-main-content__card .card-action, .small.l-main-content__dbcard .card-action,
+.card.medium .card-action,
+.medium.l-main-content__card .card-action,
+.medium.l-main-content__dbcard .card-action,
+.card.large .card-action,
+.large.l-main-content__card .card-action,
+.large.l-main-content__dbcard .card-action {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -4797,11 +4881,17 @@ small {
   height: 300px;
 }
 
-.card.medium, .medium.l-main-content__card, .medium.l-main-content__dbcard {
+
+.card.medium,
+.medium.l-main-content__card,
+.medium.l-main-content__dbcard {
   height: 400px;
 }
 
-.card.large, .large.l-main-content__card, .large.l-main-content__dbcard {
+
+.card.large,
+.large.l-main-content__card,
+.large.l-main-content__dbcard {
   height: 500px;
 }
 
@@ -4811,13 +4901,25 @@ small {
   display: flex;
 }
 
-.card.horizontal.small .card-image, .horizontal.small.l-main-content__card .card-image, .horizontal.small.l-main-content__dbcard .card-image, .card.horizontal.medium .card-image, .horizontal.medium.l-main-content__card .card-image, .horizontal.medium.l-main-content__dbcard .card-image, .card.horizontal.large .card-image, .horizontal.large.l-main-content__card .card-image, .horizontal.large.l-main-content__dbcard .card-image {
+.card.horizontal.small .card-image, .horizontal.small.l-main-content__card .card-image, .horizontal.small.l-main-content__dbcard .card-image,
+.card.horizontal.medium .card-image,
+.horizontal.medium.l-main-content__card .card-image,
+.horizontal.medium.l-main-content__dbcard .card-image,
+.card.horizontal.large .card-image,
+.horizontal.large.l-main-content__card .card-image,
+.horizontal.large.l-main-content__dbcard .card-image {
   height: 100%;
   max-height: none;
   overflow: visible;
 }
 
-.card.horizontal.small .card-image img, .horizontal.small.l-main-content__card .card-image img, .horizontal.small.l-main-content__dbcard .card-image img, .card.horizontal.medium .card-image img, .horizontal.medium.l-main-content__card .card-image img, .horizontal.medium.l-main-content__dbcard .card-image img, .card.horizontal.large .card-image img, .horizontal.large.l-main-content__card .card-image img, .horizontal.large.l-main-content__dbcard .card-image img {
+.card.horizontal.small .card-image img, .horizontal.small.l-main-content__card .card-image img, .horizontal.small.l-main-content__dbcard .card-image img,
+.card.horizontal.medium .card-image img,
+.horizontal.medium.l-main-content__card .card-image img,
+.horizontal.medium.l-main-content__dbcard .card-image img,
+.card.horizontal.large .card-image img,
+.horizontal.large.l-main-content__card .card-image img,
+.horizontal.large.l-main-content__dbcard .card-image img {
   height: 100%;
 }
 
@@ -5081,12 +5183,14 @@ small {
   transition: color .28s ease, background-color .28s ease;
 }
 
-.tabs .tab a:focus, .tabs .tab a:focus.active {
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
   background-color: #F7FBFF;
   outline: none;
 }
 
-.tabs .tab a:hover, .tabs .tab a.active {
+.tabs .tab a:hover,
+.tabs .tab a.active {
   background-color: transparent;
   color: #042340;
 }
@@ -5156,7 +5260,9 @@ small {
   visibility: hidden;
 }
 
-.btn, .btn-large, .btn-small,
+.btn,
+.btn-large,
+.btn-small,
 .btn-flat {
   border: none;
   border-radius: 2px;
@@ -5169,7 +5275,9 @@ small {
   -webkit-tap-highlight-color: transparent;
 }
 
-.btn.disabled, .disabled.btn-large, .disabled.btn-small,
+.btn.disabled,
+.disabled.btn-large,
+.disabled.btn-small,
 .btn-floating.disabled,
 .btn-large.disabled,
 .btn-small.disabled,
@@ -5196,7 +5304,9 @@ small {
   cursor: default;
 }
 
-.btn.disabled:hover, .disabled.btn-large:hover, .disabled.btn-small:hover,
+.btn.disabled:hover,
+.disabled.btn-large:hover,
+.disabled.btn-small:hover,
 .btn-floating.disabled:hover,
 .btn-large.disabled:hover,
 .btn-small.disabled:hover,
@@ -5219,7 +5329,9 @@ small {
   color: #9F9F9F !important;
 }
 
-.btn, .btn-large, .btn-small,
+.btn,
+.btn-large,
+.btn-small,
 .btn-floating,
 .btn-large,
 .btn-small,
@@ -5228,7 +5340,9 @@ small {
   outline: 0;
 }
 
-.btn i, .btn-large i, .btn-small i,
+.btn i,
+.btn-large i,
+.btn-small i,
 .btn-floating i,
 .btn-large i,
 .btn-small i,
@@ -5237,12 +5351,16 @@ small {
   line-height: inherit;
 }
 
-.btn:focus, .btn-large:focus, .btn-small:focus,
+.btn:focus,
+.btn-large:focus,
+.btn-small:focus,
 .btn-floating:focus {
   background-color: #1d7d74;
 }
 
-.btn, .btn-large, .btn-small {
+.btn,
+.btn-large,
+.btn-small {
   text-decoration: none;
   color: #fff;
   background-color: #26a69a;
@@ -5253,7 +5371,9 @@ small {
   cursor: pointer;
 }
 
-.btn:hover, .btn-large:hover, .btn-small:hover {
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover {
   background-color: #2bbbad;
 }
 
@@ -5347,11 +5467,13 @@ button.btn-floating {
   visibility: visible;
 }
 
-.fixed-action-btn.direction-left, .fixed-action-btn.direction-right {
+.fixed-action-btn.direction-left,
+.fixed-action-btn.direction-right {
   padding: 0 0 0 15px;
 }
 
-.fixed-action-btn.direction-left ul, .fixed-action-btn.direction-right ul {
+.fixed-action-btn.direction-left ul,
+.fixed-action-btn.direction-right ul {
   text-align: right;
   right: 64px;
   top: 50%;
@@ -5363,7 +5485,8 @@ button.btn-floating {
   width: 500px;
 }
 
-.fixed-action-btn.direction-left ul li, .fixed-action-btn.direction-right ul li {
+.fixed-action-btn.direction-left ul li,
+.fixed-action-btn.direction-right ul li {
   display: inline-block;
   margin: 7.5px 15px 0 0;
 }
@@ -5491,7 +5614,8 @@ button.btn-floating {
   transition: background-color .2s;
 }
 
-.btn-flat:focus, .btn-flat:hover {
+.btn-flat:focus,
+.btn-flat:hover {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -5500,7 +5624,8 @@ button.btn-floating {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.btn-flat.disabled, .btn-flat.btn-flat[disabled] {
+.btn-flat.disabled,
+.btn-flat.btn-flat[disabled] {
   background-color: transparent !important;
   color: #b3b2b2 !important;
   cursor: default;
@@ -5533,6 +5658,8 @@ button.btn-floating {
 
 .dropdown-content {
   background-color: #fff;
+  -webkit-box-shadow: inset 0px 0px 0px 1.5px rgba(0, 0, 0, 0.13);
+          box-shadow: inset 0px 0px 0px 1.5px rgba(0, 0, 0, 0.13);
   margin: 0;
   display: none;
   min-width: 80px;
@@ -5560,7 +5687,8 @@ button.btn-floating {
   text-align: left;
 }
 
-.dropdown-content li:hover, .dropdown-content li.active {
+.dropdown-content li:hover,
+.dropdown-content li.active {
   background-color: #E2F1FE;
 }
 
@@ -5573,7 +5701,8 @@ button.btn-floating {
   height: 1px;
 }
 
-.dropdown-content li > a, .dropdown-content li > span {
+.dropdown-content li > a,
+.dropdown-content li > span {
   font-size: 16px;
   color: #042340;
   display: block;
@@ -5686,7 +5815,17 @@ body.keyboard-focused .dropdown-content li:focus {
   background-color: rgba(153, 202, 255, 0.666);
 }
 
-.waves-effect input[type="button"], .o-btn input[type="button"], .o-login-btn input[type="button"], .o-btn-primary input[type="button"], .o-btn-secondary input[type="button"], .waves-effect input[type="reset"], .o-btn input[type="reset"], .o-login-btn input[type="reset"], .o-btn-primary input[type="reset"], .o-btn-secondary input[type="reset"], .waves-effect input[type="submit"], .o-btn input[type="submit"], .o-login-btn input[type="submit"], .o-btn-primary input[type="submit"], .o-btn-secondary input[type="submit"] {
+.waves-effect input[type="button"], .o-btn input[type="button"], .o-login-btn input[type="button"], .o-btn-primary input[type="button"], .o-btn-secondary input[type="button"],
+.waves-effect input[type="reset"],
+.o-btn input[type="reset"],
+.o-login-btn input[type="reset"],
+.o-btn-primary input[type="reset"],
+.o-btn-secondary input[type="reset"],
+.waves-effect input[type="submit"],
+.o-btn input[type="submit"],
+.o-login-btn input[type="submit"],
+.o-btn-primary input[type="submit"],
+.o-btn-secondary input[type="submit"] {
   border: 0;
   font-style: normal;
   font-size: inherit;
@@ -5763,7 +5902,10 @@ body.keyboard-focused .dropdown-content li:focus {
   }
 }
 
-.modal h1, .modal h2, .modal h3, .modal h4 {
+.modal h1,
+.modal h2,
+.modal h3,
+.modal h4 {
   margin-top: 0;
 }
 
@@ -5784,7 +5926,10 @@ body.keyboard-focused .dropdown-content li:focus {
   text-align: right;
 }
 
-.modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-small, .modal .modal-footer .btn-flat {
+.modal .modal-footer .btn,
+.modal .modal-footer .btn-large,
+.modal .modal-footer .btn-small,
+.modal .modal-footer .btn-flat {
   margin: 6px 0;
 }
 
@@ -6135,7 +6280,8 @@ textarea.materialize-textarea {
   transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
 }
 
-input:not([type]):disabled, input:not([type])[readonly="readonly"],
+input:not([type]):disabled,
+input:not([type])[readonly="readonly"],
 input[type=text]:not(.browser-default):disabled,
 input[type=text]:not(.browser-default)[readonly="readonly"],
 input[type=password]:not(.browser-default):disabled,
@@ -6258,7 +6404,8 @@ textarea.materialize-textarea.validate + label {
 }
 
 /* Validation Sass Placeholders */
-input.valid:not([type]), input.valid:not([type]):focus,
+input.valid:not([type]),
+input.valid:not([type]):focus,
 input.valid[type=text]:not(.browser-default),
 input.valid[type=text]:not(.browser-default):focus,
 input.valid[type=password]:not(.browser-default),
@@ -6282,13 +6429,15 @@ input.valid[type=number]:not(.browser-default):focus,
 input.valid[type=search]:not(.browser-default),
 input.valid[type=search]:not(.browser-default):focus,
 textarea.materialize-textarea.valid,
-textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
+textarea.materialize-textarea.valid:focus,
+.select-wrapper.valid > input.select-dropdown {
   border-bottom: 1px solid #4CAF50;
   -webkit-box-shadow: 0 1px 0 0 #4CAF50;
   box-shadow: 0 1px 0 0 #4CAF50;
 }
 
-input.invalid:not([type]), input.invalid:not([type]):focus,
+input.invalid:not([type]),
+input.invalid:not([type]):focus,
 input.invalid[type=text]:not(.browser-default),
 input.invalid[type=text]:not(.browser-default):focus,
 input.invalid[type=password]:not(.browser-default),
@@ -6312,7 +6461,8 @@ input.invalid[type=number]:not(.browser-default):focus,
 input.invalid[type=search]:not(.browser-default),
 input.invalid[type=search]:not(.browser-default):focus,
 textarea.materialize-textarea.invalid,
-textarea.materialize-textarea.invalid:focus, .select-wrapper.invalid > input.select-dropdown,
+textarea.materialize-textarea.invalid:focus,
+.select-wrapper.invalid > input.select-dropdown,
 .select-wrapper.invalid > input.select-dropdown:focus {
   border-bottom: 1px solid #F44336;
   -webkit-box-shadow: 0 1px 0 0 #F44336;
@@ -6370,7 +6520,8 @@ input[type=search]:not(.browser-default):focus.invalid ~ .helper-text[data-error
 textarea.materialize-textarea.valid ~ .helper-text[data-success],
 textarea.materialize-textarea:focus.valid ~ .helper-text[data-success],
 textarea.materialize-textarea.invalid ~ .helper-text[data-error],
-textarea.materialize-textarea:focus.invalid ~ .helper-text[data-error], .select-wrapper.valid .helper-text[data-success],
+textarea.materialize-textarea:focus.invalid ~ .helper-text[data-error],
+.select-wrapper.valid .helper-text[data-success],
 .select-wrapper.invalid ~ .helper-text[data-error] {
   color: transparent;
   -webkit-user-select: none;
@@ -6405,7 +6556,8 @@ input[type=number]:not(.browser-default):focus.valid ~ .helper-text:after,
 input[type=search]:not(.browser-default).valid ~ .helper-text:after,
 input[type=search]:not(.browser-default):focus.valid ~ .helper-text:after,
 textarea.materialize-textarea.valid ~ .helper-text:after,
-textarea.materialize-textarea:focus.valid ~ .helper-text:after, .select-wrapper.valid ~ .helper-text:after {
+textarea.materialize-textarea:focus.valid ~ .helper-text:after,
+.select-wrapper.valid ~ .helper-text:after {
   content: attr(data-success);
   color: #4CAF50;
 }
@@ -6435,7 +6587,8 @@ input[type=number]:not(.browser-default):focus.invalid ~ .helper-text:after,
 input[type=search]:not(.browser-default).invalid ~ .helper-text:after,
 input[type=search]:not(.browser-default):focus.invalid ~ .helper-text:after,
 textarea.materialize-textarea.invalid ~ .helper-text:after,
-textarea.materialize-textarea:focus.invalid ~ .helper-text:after, .select-wrapper.invalid ~ .helper-text:after {
+textarea.materialize-textarea:focus.invalid ~ .helper-text:after,
+.select-wrapper.invalid ~ .helper-text:after {
   content: attr(data-error);
   color: #F44336;
 }
@@ -6452,7 +6605,8 @@ input[type=datetime-local]:not(.browser-default) + label:after,
 input[type=tel]:not(.browser-default) + label:after,
 input[type=number]:not(.browser-default) + label:after,
 input[type=search]:not(.browser-default) + label:after,
-textarea.materialize-textarea + label:after, .select-wrapper + label:after {
+textarea.materialize-textarea + label:after,
+.select-wrapper + label:after {
   display: block;
   content: "";
   position: absolute;
@@ -7015,7 +7169,8 @@ textarea.materialize-textarea {
   background-color: #84c7c1;
 }
 
-.switch label input[type=checkbox]:checked + .lever:before, .switch label input[type=checkbox]:checked + .lever:after {
+.switch label input[type=checkbox]:checked + .lever:before,
+.switch label input[type=checkbox]:checked + .lever:after {
   left: 18px;
 }
 
@@ -7038,7 +7193,8 @@ textarea.materialize-textarea {
   margin: 0 16px;
 }
 
-.switch label .lever:before, .switch label .lever:after {
+.switch label .lever:before,
+.switch label .lever:after {
   content: "";
   position: absolute;
   display: inline-block;
@@ -7248,7 +7404,9 @@ body.keyboard-focused .select-dropdown.dropdown-content li:focus {
   width: 100%;
 }
 
-.file-field .btn, .file-field .btn-large, .file-field .btn-small {
+.file-field .btn,
+.file-field .btn-large,
+.file-field .btn-small {
   float: left;
   height: 3rem;
   line-height: 3rem;
@@ -7534,11 +7692,20 @@ input[type=range]::-ms-thumb {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.sidenav li > a.btn, .sidenav li > a.btn-large, .sidenav li > a.btn-small, .sidenav li > a.btn-large, .sidenav li > a.btn-flat, .sidenav li > a.btn-floating {
+.sidenav li > a.btn,
+.sidenav li > a.btn-large,
+.sidenav li > a.btn-small,
+.sidenav li > a.btn-large,
+.sidenav li > a.btn-flat,
+.sidenav li > a.btn-floating {
   margin: 10px 15px;
 }
 
-.sidenav li > a.btn, .sidenav li > a.btn-large, .sidenav li > a.btn-small, .sidenav li > a.btn-large, .sidenav li > a.btn-floating {
+.sidenav li > a.btn,
+.sidenav li > a.btn-large,
+.sidenav li > a.btn-small,
+.sidenav li > a.btn-large,
+.sidenav li > a.btn-floating {
   color: #fff;
 }
 
@@ -7546,7 +7713,10 @@ input[type=range]::-ms-thumb {
   color: #343434;
 }
 
-.sidenav li > a.btn:hover, .sidenav li > a.btn-large:hover, .sidenav li > a.btn-small:hover, .sidenav li > a.btn-large:hover {
+.sidenav li > a.btn:hover,
+.sidenav li > a.btn-large:hover,
+.sidenav li > a.btn-small:hover,
+.sidenav li > a.btn-large:hover {
   background-color: #2bbbad;
 }
 
@@ -7555,7 +7725,8 @@ input[type=range]::-ms-thumb {
 }
 
 .sidenav li > a > i,
-.sidenav li > a > [class^="mdi-"], .sidenav li > a li > a > [class*="mdi-"],
+.sidenav li > a > [class^="mdi-"],
+.sidenav li > a li > a > [class*="mdi-"],
 .sidenav li > a > i.material-icons {
   float: left;
   height: 48px;
@@ -7607,7 +7778,9 @@ input[type=range]::-ms-thumb {
   z-index: -1;
 }
 
-.sidenav .user-view .circle, .sidenav .user-view .name, .sidenav .user-view .email {
+.sidenav .user-view .circle,
+.sidenav .user-view .name,
+.sidenav .user-view .email {
   display: block;
 }
 
@@ -8468,7 +8641,8 @@ input[type=range]::-ms-thumb {
   z-index: 10001;
 }
 
-.tap-target-wave::before, .tap-target-wave::after {
+.tap-target-wave::before,
+.tap-target-wave::after {
   content: '';
   display: block;
   position: absolute;
@@ -8505,12 +8679,14 @@ input[type=range]::-ms-thumb {
   position: absolute !important;
 }
 
-.tap-target-origin:not(.btn):not(.btn-large):not(.btn-small), .tap-target-origin:not(.btn):not(.btn-large):not(.btn-small):hover {
+.tap-target-origin:not(.btn):not(.btn-large):not(.btn-small),
+.tap-target-origin:not(.btn):not(.btn-large):not(.btn-small):hover {
   background: none;
 }
 
 @media only screen and (max-width: 600px) {
-  .tap-target, .tap-target-wrapper {
+  .tap-target,
+  .tap-target-wrapper {
     width: 600px;
     height: 600px;
   }
@@ -8633,7 +8809,8 @@ input[type=range]::-ms-thumb {
   width: 70px;
 }
 
-.month-prev, .month-next {
+.month-prev,
+.month-next {
   margin-top: 4px;
   cursor: pointer;
   background-color: transparent;
@@ -8710,7 +8887,8 @@ input[type=range]::-ms-thumb {
   color: #fff;
 }
 
-.datepicker-table td.is-outside-current-month, .datepicker-table td.is-disabled {
+.datepicker-table td.is-outside-current-month,
+.datepicker-table td.is-disabled {
   color: rgba(0, 0, 0, 0.3);
   pointer-events: none;
 }
@@ -9963,7 +10141,6 @@ body {
 
 .l-main .c-writeHours .c-writeHours-content {
   padding: 1.2rem 1rem;
-  border-radius: 0 0 1.33rem 1.33rem;
 }
 
 .l-main .c-writeHours .c-writeHours-content .row {
@@ -11213,10 +11390,13 @@ body {
 }
 
 .l-main-writeHours {
-  height: 80vh;
   overflow-y: scroll;
-  margin-top: 1.5rem;
+  height: calc(100vh - 100px);
   padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.l-main-writeHours .c-writeHours {
+  min-height: calc(100% - 50px);
 }
 
 .l-main-writeHours .c-writeHours .c-writeHours-content .is-error-status {
@@ -14946,9 +15126,7 @@ body {
 }
 
 .c-writeHours-content {
-  background-color: #F7FBFF;
-  min-height: 500px;
-  padding: 3% 1.5%;
+  padding: 1rem;
 }
 
 .c-writeHours-content .c-writeHours-content__list {
@@ -18313,9 +18491,7 @@ body {
 }
 
 .l-main-content__card .l-main-content__planlist .table-body, .l-main-content__dbcard .l-main-content__planlist .table-body, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body, .l-main-content__card .l-main-content__statisticsPlan .table-body, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body {
-  height: 355px;
-  overflow-y: scroll;
-  overflow-x: scroll;
+  min-height: 355px;
 }
 
 .l-main-content__card .l-main-content__planlist .table-body .o-input, .l-main-content__dbcard .l-main-content__planlist .table-body .o-input, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .o-input, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .o-input, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .o-input, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .o-input, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .o-input, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .o-input, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .o-input, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .o-input, .l-main-content__card .l-main-content__statisticsPlan .table-body .o-input, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .o-input, .l-main-content__card .l-main-content__planlist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__card .l-main-content__planlist .table-body .hoursInput, .l-main-content__dbcard .l-main-content__planlist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__planlist .table-body .hoursInput, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .hoursInput, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .hoursInput, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .hoursInput, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .hoursInput, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .hoursInput, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .hoursInput, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .hoursInput, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .hoursInput, .l-main-content__card .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__card .l-main-content__statisticsPlan .table-body .hoursInput, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .hoursInput, .l-main-content__card .l-main-content__planlist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__card .l-main-content__planlist .table-body .otherInput, .l-main-content__dbcard .l-main-content__planlist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__planlist .table-body .otherInput, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .otherInput, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .otherInput, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .otherInput, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .otherInput, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .otherInput, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .otherInput, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .otherInput, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .otherInput, .l-main-content__card .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__card .l-main-content__statisticsPlan .table-body .otherInput, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .otherInput, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .otherInput, .l-main-content__card .l-main-content__planlist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__card .l-main-content__planlist .table-body .c-search-item__input, .l-main-content__dbcard .l-main-content__planlist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content__planlist .table-body .c-search-item__input, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-search-item__input, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-search-item__input, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .c-search-item__input, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .c-search-item__input, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-search-item__input, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-search-item__input, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .c-search-item__input, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .c-search-item__input, .l-main-content__card .l-main-content__statisticsPlan .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__card .l-main-content__statisticsPlan .table-body .c-search-item__input, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .c-search-item__input {
@@ -18341,7 +18517,6 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-top: 1rem;
 }
 
 .l-main-content__card .l-main-content__maintain .l-main-content__maintain__text, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__text, .l-main-content__card .l-main-content__notreached .l-main-content__maintain__text, .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__text {
@@ -18365,6 +18540,7 @@ body {
 .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .o-input input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .o-input input, .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .o-input input, .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .o-input input, .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .hoursInput input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .hoursInput input, .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .hoursInput input, .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .hoursInput input, .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .otherInput input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .otherInput input, .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .otherInput input, .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .otherInput input, .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-search-item__input input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-search-item__input input, .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .c-search-item__input input, .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .c-search-item__input input {
   width: 100%;
   height: 4rem;
+  text-align: center;
   font-family: "Baloo 2", cursive, "Noto Sans TC";
   font-weight: 700;
   padding: 0.5rem;
@@ -18472,8 +18648,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 4rem;
-  margin-bottom: 1rem;
+  height: 3.6rem;
   width: 100%;
 }
 
