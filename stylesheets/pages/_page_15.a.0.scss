@@ -930,7 +930,7 @@
 
     .list-width {
         justify-content: flex-start;
-        overflow: scroll;
+        overflow-x: scroll;
         flex-shrink: 0;
 
         .l-main-content-item__listTitle {

@@ -4,8 +4,8 @@
 
 .l-main-content__cardGroup {
     display: flex;
-    margin-bottom: 1rem;
-    padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
 
     .l-main-content__card {
         margin-bottom: 0;
@@ -95,6 +95,7 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        height: 4.785rem; //67px
         // padding-top: 1rem;
 
         .l-main-content__maintain__text {
