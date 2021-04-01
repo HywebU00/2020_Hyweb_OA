@@ -922,7 +922,7 @@
 }
 
 .is-accordion-active {
-    box-shadow: $box-shadow;
+    box-shadow: $box-shadow-select;
 
     .accordion-header {
         background: $hyweb-lighblue;
@@ -1821,7 +1821,7 @@
 
     .c-modal-content__calendar {
 
-        margin-bottom: $m*14;
+        // margin-bottom: $m*14;
         max-height: 100%; // 926px;
         padding: 1rem;
 
@@ -1854,7 +1854,7 @@
         }
 
         .c-modal-content__calendar__content {
-            height: 500px; //75vh;
+            height: calc(100% - 95px); //75vh;
             overflow-y: scroll;
         }
 
