@@ -3743,6 +3743,7 @@
 
     textarea {
         border: 0;
+        resize: none;
         border-radius: $input-radius;
         background-color: $hyweb-lighblue;
         border-bottom: 0;

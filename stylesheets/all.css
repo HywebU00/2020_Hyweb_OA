@@ -15628,6 +15628,7 @@ body {
 
 .o-input-textarea textarea {
   border: 0;
+  resize: none;
   border-radius: 5px;
   background-color: #E2F1FE;
   border-bottom: 0;
