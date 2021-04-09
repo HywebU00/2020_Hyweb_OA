@@ -131,17 +131,28 @@ collapsible.forEach(function (item) {
 });
 
 //點擊 accordion-header 打開選單
-document.addEventListener("DOMContentLoaded", function () {
-  let elems = document.querySelectorAll(".collapsible");
-  let instances = M.Collapsible.init(elems, open());
-  let header = document.querySelectorAll(".collapsible-header");
-  //點擊 o-accordion_arrow 旋轉點擊icon
-  header.forEach((item, index) => {
-    item.addEventListener("click", function () {
-      this.classList.toggle("is-arrow-active");
-    });
+$(document).ready(function () {
+  $(".collapsible").collapsible();
+});
+let header = document.querySelectorAll(".collapsible-header");
+//點擊 o-accordion_arrow 旋轉點擊icon
+header.forEach((item, index) => {
+  item.addEventListener("click", function () {
+    this.classList.toggle("is-arrow-active");
   });
 });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   let elems = document.querySelectorAll(".collapsible");
+//   let instances = M.Collapsible.init(elems, open());
+//   let header = document.querySelectorAll(".collapsible-header");
+//   //點擊 o-accordion_arrow 旋轉點擊icon
+//   header.forEach((item, index) => {
+//     item.addEventListener("click", function () {
+//       this.classList.toggle("is-arrow-active");
+//     });
+//   });
+// });
 
 //點擊 accordion-header 增加 c-accordion-addIcon 的圖示
 const accordionIcon = document.querySelectorAll(".c-accordion-addIcon");
