@@ -30,8 +30,7 @@
 
             &::before {
                 left: 90px;
-                //margin-top: -118px;
-                margin-top: -135px; //-140px;
+                margin-top: -135px;
             }
 
             &::after {
@@ -116,10 +115,6 @@
 
                     }
 
-
-                    // a{ 
-                    //   padding:auto;
-                    // }
                 }
             }
         }
@@ -533,8 +528,6 @@
 
     .l-main-content-item__listTitle {
         height: 4rem;
-        // padding: 20px 2rem;
-
         .listTitle__num {
             padding: 0 0.2rem;
             width: 15%;
@@ -563,7 +556,6 @@
 
     .change-card-to-list {
         .c-card-planClosed {
-            //padding: 20px 2rem;
             height: 4rem;
 
             .c-card__tag {

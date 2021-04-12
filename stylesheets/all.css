@@ -12041,8 +12041,8 @@ body {
 }
 
 .c-card-percentCheck .c-card-title form {
-  margin-top: 5%;
-  margin-right: 12%;
+  margin-top: 0.5rem;
+  margin-right: 1.5rem;
 }
 
 .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan {
@@ -16351,6 +16351,8 @@ body {
 
 #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem {
   height: 4rem;
+  -webkit-box-shadow: inset 0px 0px 0px 1.5px rgba(0, 0, 0, 0.13);
+          box-shadow: inset 0px 0px 0px 1.5px rgba(0, 0, 0, 0.13);
 }
 
 #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__project, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__project {
