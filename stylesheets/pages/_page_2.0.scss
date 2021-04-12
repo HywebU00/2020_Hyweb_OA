@@ -60,11 +60,11 @@
                 transform-origin: 100px 20px;
 
                 &::before {
-                    left: 90%;//93%;
+                    left: 90%;
                 }
 
                 &::after {
-                    left: 90%;//93%;
+                    left: 90%;
                 }
 
             }
@@ -132,11 +132,11 @@
             max-width: 2560px;
 
             .listTitle__num {
-                width: 15%;//20%;
+                width: 15%;
             }
 
             .listTitle__name {
-                width: 65%;//60%;
+                width: 65%;
             }
 
             .listTitle__position {
@@ -162,7 +162,7 @@
                 transform: translateY(0px) translateX(0px);
             }
             .c-card__tag {
-                width: 15%;//20%;
+                width: 15%;
                 padding: 0;
                 display: flex;
                 align-items: center;
@@ -179,7 +179,7 @@
             }
 
             h2 {
-                width: 65%;//60%;
+                width: 65%;
                 font-weight: 400;
                 @include db_ellipsisText;
                 max-height: 56px;

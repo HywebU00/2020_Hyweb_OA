@@ -15,7 +15,7 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 82px; //207px; 
+    width: 82px;  
     border-radius: 0 40px 40px 0;
     height: 100vh;
     transition: all 0.5s;
@@ -35,7 +35,7 @@ body {
 
     .c-sidebar-content__logo {
         padding-left: 6%;
-        margin-bottom: 30px; //35%;
+        margin-bottom: 30px; 
 
         .hylogo {
             display: none;
@@ -51,7 +51,7 @@ body {
     .chinese__name {
         background-color: #fff;
         padding-bottom: 0;
-        display: block; //inline;
+        display: block;
         width: 43px;
         height: 43px;
         margin-left: 14px;
@@ -183,15 +183,13 @@ body {
     transition: all 0.5s;
 
     .c-breadcrumb {
-
-        // margin-bottom: 0.5rem;
         a {
             color: $gray1;
         }
     }
 
     .c-writeHours {
-        width: 98%; //100%;
+        width: 98%; 
         margin: 0 auto;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
@@ -220,8 +218,6 @@ body {
 
                 .col {
                     margin-left: 1rem;
-                    //padding-left:1.5rem ;
-
                 }
 
                 padding:1rem 0;
@@ -254,8 +250,6 @@ body {
 
                 .col {
                     margin-left: 0;
-
-                    //padding-left: 0;
                     input[type=text] {
                         margin: 0;
                     }
@@ -303,9 +297,6 @@ body {
         display: flex;
         color: $gray1;
         align-items: center;
-        // margin-left: 1rem;
-
-
     }
 
 }
@@ -857,7 +848,7 @@ body {
             }
 
             .table-body__subtitle {
-                background-color: $after-blue; //$sec3;
+                background-color: $after-blue;
             }
 
             .pl {
@@ -1145,7 +1136,6 @@ body {
         .table-footer {
 
             background-color: $hyweb-lighblue;
-            // border-top: 1px solid $hyweb-blue;
             padding: 1.5rem 0 1.5rem 0;
             border-radius: 0 0 $table-radius $table-radius;
             font-weight: 700;
@@ -1261,7 +1251,7 @@ body {
             margin-bottom: 0;
             font-size: $p;
             padding: 0 0 0 1.5rem;
-            height: 60px; //70px;
+            height: 60px; 
             border-bottom: 1px solid $gray-blue;
             display: flex;
             align-items: center;
@@ -1292,10 +1282,8 @@ body {
 }
 
 .l-main-writeHours {
-    //height: 80vh;
     overflow-y: scroll;
     height: calc(100vh - 100px);
-    //margin-top: 1.5rem;
     padding: 0 0.5rem 0.5rem 0.5rem;
 
     .c-writeHours {
@@ -1432,7 +1420,7 @@ body {
                 align-items: center;
 
                 img {
-                    padding-right: 0.5rem; //25%;
+                    padding-right: 0.5rem; 
 
                 }
 
@@ -1462,10 +1450,6 @@ body {
             color: #fff;
             font-weight: 700;
             padding: 0.5rem 0 0.5rem 0.3rem;
-
-            // .menu-btn {
-            //     cursor: pointer;
-            // }
         }
 
         .menu-btn__open {
@@ -1509,9 +1493,6 @@ body {
     position: absolute;
     right: 0;
     transition: ease .5s;
-    //overflow: hidden;
-    //width: 296px;
-
 }
 
 .c-submenu-btn {
@@ -1535,7 +1516,6 @@ body {
 .c-submenu-content {
     width: 25.33rem;
     height: 100vh;
-    //transition: ease .5s;
     background-color: #fff;
     right: 0;
     box-shadow: $box-shadow;
