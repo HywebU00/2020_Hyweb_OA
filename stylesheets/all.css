@@ -5171,7 +5171,7 @@ small {
 }
 
 .tabs .tab a {
-  color: #8495A4;
+  color: #8495a4;
   display: block;
   width: 100%;
   height: 100%;
@@ -5185,7 +5185,7 @@ small {
 
 .tabs .tab a:focus,
 .tabs .tab a:focus.active {
-  background-color: #F7FBFF;
+  background-color: #f7fbff;
   outline: none;
 }
 
@@ -5205,7 +5205,7 @@ small {
   position: absolute;
   bottom: 0;
   height: 5px;
-  background-color: #0156A2;
+  background-color: #0156a2;
   border-radius: 10px;
   will-change: left, right;
 }
@@ -5689,7 +5689,7 @@ button.btn-floating {
 
 .dropdown-content li:hover,
 .dropdown-content li.active {
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
 }
 
 .dropdown-content li:focus {
@@ -6898,7 +6898,7 @@ textarea.materialize-textarea {
 
 [type="radio"]:checked + span:after,
 [type="radio"].with-gap:checked + span:after {
-  background-color: #0156A2;
+  background-color: #0156a2;
 }
 
 [type="radio"]:checked + span:after {
@@ -7108,8 +7108,8 @@ textarea.materialize-textarea {
   top: 0;
   width: 20px;
   height: 20px;
-  border: 2px solid #0156A2;
-  background-color: #0156A2;
+  border: 2px solid #0156a2;
+  background-color: #0156a2;
   z-index: 0;
 }
 
@@ -7347,17 +7347,17 @@ select:disabled {
 
 body.keyboard-focused .select-dropdown.dropdown-content li:focus {
   padding: 0 5px;
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
 }
 
 .select-dropdown.dropdown-content li:hover {
   padding: 0 5px;
-  background-color: #F7FBFF;
+  background-color: #f7fbff;
 }
 
 .select-dropdown.dropdown-content li.selected {
   padding: 0 5px;
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
 }
 
 .prefix ~ .select-wrapper {
@@ -9865,7 +9865,7 @@ THEMES:
 }
 
 .os-theme-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
-  background: #BAD4E5;
+  background: #bad4e5;
 }
 
 .os-theme-light > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
@@ -9937,7 +9937,8 @@ body {
 }
 
 .l-side {
-  position: relative;
+  position: fixed;
+  z-index: 999;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
@@ -9951,23 +9952,27 @@ body {
   height: 100vh;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  padding: 2% .8% 2% 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+  padding: 1.5rem 1rem 2rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
   background-image: url(../img/menu_bg.svg) no-repeat right bottom opacity(0);
 }
 
 .l-side .c-sidebar-content__user {
-  padding: 8% 5% 8% 10%;
-  background: #F7FBFF;
+  padding: 0.4rem 0.35rem 0.2rem 0.35rem;
+  background: #f7fbff;
   border-radius: 0 25px 25px 0;
   margin-bottom: 100px;
-  color: #0156A2;
+  color: #0156a2;
   background: none;
 }
 
+.l-side .c-sidebar-content__user__logout {
+  display: none;
+}
+
 .l-side .c-sidebar-content__logo {
-  padding-left: 6%;
+  padding-left: 0.3rem;
   margin-bottom: 30px;
 }
 
@@ -9992,46 +9997,39 @@ body {
   border-radius: 50%;
   font-size: 22px;
   font-weight: 700;
-  color: #0156A2;
-  -webkit-transition: ease .5s;
-  transition: ease .5s;
+  color: #0156a2;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
 .l-side .english__name {
   display: none;
-  -webkit-transition: ease .5s;
-  transition: ease .5s;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
 .l-side .user__number {
-  color: #0156A2;
+  color: #0156a2;
   opacity: 0;
   font-weight: 700;
   font-size: 0.93rem;
   font-family: "Baloo 2", cursive, "Noto Sans TC";
-  padding-bottom: 0.33rem;
   overflow: hidden;
   display: none;
-  -webkit-transition: ease .5s;
-  transition: ease .5s;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
 .l-side .user__department {
-  color: #0156A2;
+  color: #0156a2;
   font-weight: 400;
   line-height: 20px;
   font-size: 0.93rem;
   opacity: 0;
   overflow: hidden;
   display: none;
-  -webkit-transition: ease .5s;
-  transition: ease .5s;
-}
-
-.l-side .c-sidebar-content__listGroup {
-  height: calc(100vh - 380px);
-  overflow-y: scroll;
-  padding-right: 0rem;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
 .l-side .menuParent-is-active {
@@ -10056,10 +10054,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #fff;
-  font-size: 0.93rem;
+  color: white;
+  font-size: 1rem;
   font-weight: 700;
-  padding: 0.5rem 0 0.5rem 1.2rem;
+  padding: 0.3rem 0 0.3rem 1.2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -10075,13 +10073,19 @@ body {
 
 .l-side .c-sidebar-content__list__title div {
   display: none;
-  -webkit-transition: ease .5s;
-  transition: ease .5s;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
 .l-side .c-sidebar-content__list__content {
   opacity: 0;
   display: none;
+}
+
+.l-side .c-sidebar-btnlist {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
 }
 
 .l-side .c-sidebar-btnlist__item {
@@ -10101,8 +10105,8 @@ body {
 
 .l-side .c-sidebar-btnlist__item .login-btn {
   display: none;
-  -webkit-transition: ease .5s;
-  transition: ease .5s;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
 .l-side .c-sidebar-btnlist__item img {
@@ -10110,8 +10114,8 @@ body {
 }
 
 .l-side .c-sidebar-btnlist__item .menu-btn {
-  -webkit-transition: ease .5s;
-  transition: ease .5s;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
 .l-side .c-sidebar-btnlist__item .menu-btn__open {
@@ -10120,27 +10124,24 @@ body {
 
 .l-main {
   width: 100%;
+  height: 100vh;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem 1rem 8rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-}
-
-.l-main .c-breadcrumb a {
-  color: #042340;
+  overflow-y: scroll;
 }
 
 .l-main .c-writeHours {
-  width: 98%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .l-main .c-writeHours .c-writeHours-content {
-  padding: 1.2rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .l-main .c-writeHours .c-writeHours-content .row {
@@ -10158,8 +10159,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem 0;
-  border-bottom: 1px solid #BAD4E5;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #bad4e5;
 }
 
 .l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__item .c-writeHours-content__item__title, .l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__select .c-writeHours-content__item__title {
@@ -10169,7 +10170,7 @@ body {
 }
 
 .l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__item .col, .l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__select .col {
-  margin-left: 1rem;
+  padding-left: 1rem;
 }
 
 .l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__item .c-writeHours-content__btnGroup, .l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__select .c-writeHours-content__btnGroup {
@@ -10201,19 +10202,28 @@ body {
 .l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__item .c-writeHours-content__btnGroup button:hover, .l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__select .c-writeHours-content__btnGroup button:hover {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
 }
 
 .l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__select .col {
-  margin-left: 0;
+  padding-left: 0;
 }
 
-.l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__select .col input[type=text] {
+.l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__select .col input[type="text"] {
   margin: 0;
 }
 
+.l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__select .s1:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__text {
-  color: #8495A4;
+  color: #8495a4;
   margin-top: 3rem;
   font-size: 1.06rem;
   display: -webkit-box;
@@ -10268,11 +10278,8 @@ body {
 }
 
 .l-main-content {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   padding: 0 0.2rem;
-  overflow-y: scroll;
-  height: calc(100vh - 210px);
-  width: calc(100vw - 267px);
 }
 
 .l-main-content .l-main-content__downloadlink {
@@ -10285,7 +10292,7 @@ body {
 }
 
 .l-main-content .l-main-content__text {
-  color: #8495A4;
+  color: #8495a4;
   font-size: 1.06rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10319,7 +10326,7 @@ body {
 }
 
 .l-main-content .l-main-content__fileInput .l-main-content__fileInput__link {
-  color: #8495A4;
+  color: #8495a4;
   margin-left: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10351,7 +10358,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.06rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .l-main-content .l-main-content-title .l-main-content-text, .l-main-content .l-main-content-data .l-main-content-text, .l-main-content .l-main-content-between-title .l-main-content-text {
@@ -10428,7 +10435,7 @@ body {
 }
 
 .l-main-content .l-main-content__information {
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
   padding: 3rem;
   border-radius: 0.66rem;
   font-size: 1.06rem;
@@ -10455,14 +10462,14 @@ body {
 }
 
 .l-main-content .l-main-content__textarea .l-main-content__textarea__text {
-  color: #8495A4;
+  color: #8495a4;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
 }
 
 .l-main-content .l-main-content__textarea textarea {
   padding: 1rem;
-  border: 2px solid #0156A2;
+  border: 2px solid #0156a2;
   border-radius: 0.66rem;
   height: 180px;
   font-size: 1.06rem;
@@ -10470,7 +10477,7 @@ body {
 
 .l-main-content .l-main-content__textarea .o-textarea-div {
   padding: 1rem;
-  border: 1px solid #BAD4E5;
+  border: 1px solid #bad4e5;
   border-radius: 0.66rem;
   height: 180px;
   font-size: 1.06rem;
@@ -10480,7 +10487,7 @@ body {
 }
 
 .l-main-content .l-main-content__textarea .o-textarea-div .is-placeholder-text {
-  color: #8495A4;
+  color: #8495a4;
 }
 
 .l-main-content .l-main-content__upload {
@@ -10488,7 +10495,7 @@ body {
 }
 
 .l-main-content .l-main-content__upload .l-main-content__upload__text {
-  color: #8495A4;
+  color: #8495a4;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
 }
@@ -10510,7 +10517,7 @@ body {
 }
 
 .l-main-content .l-main-content__upload .row {
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
   border-radius: 0.66rem;
   margin-bottom: 1rem;
   display: -webkit-box;
@@ -10574,7 +10581,7 @@ body {
 }
 
 .l-main-content .l-main-content__addMember .l-main-content__addMember__text {
-  color: #8495A4;
+  color: #8495a4;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
 }
@@ -10604,7 +10611,7 @@ body {
 }
 
 .l-main-content .l-main-content__planlist .table-body .table-body__item, .l-main-content .l-main-content__wbslist .table-body .table-body__item, .l-main-content .l-main-content__workTypelist .table-body .table-body__item, .l-main-content .l-main-content__statisticsPlan .table-body .table-body__item, .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem {
-  border-bottom: #BAD4E5 solid 1px;
+  border-bottom: #bad4e5 solid 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10700,7 +10707,6 @@ body {
 }
 
 .l-main-content .l-main-content__wbslist, .l-main-content .l-main-content__workTypelist {
-  overflow-x: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10711,6 +10717,8 @@ body {
 .l-main-content .l-main-content__wbslist .table-thead, .l-main-content .l-main-content__workTypelist .table-thead {
   position: -webkit-sticky;
   position: sticky;
+  z-index: 99;
+  top: 0;
   padding: 1rem 0 1rem 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -10778,8 +10786,6 @@ body {
 }
 
 .l-main-content .l-main-content__wbslist .table-body, .l-main-content .l-main-content__workTypelist .table-body {
-  height: calc(100vh - 277px);
-  overflow-y: scroll;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -10788,7 +10794,7 @@ body {
   border-bottom: 0;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  border-radius: 1.33rem;
+  border-radius: 0.66rem;
   margin: 0.5rem 0.1rem;
 }
 
@@ -10808,7 +10814,7 @@ body {
 }
 
 .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__total .total__title, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__total .total__title {
-  border-left: 1.5px solid #D2DAE0;
+  border-left: 1.5px solid #d2dae0;
   text-align: right;
 }
 
@@ -10933,29 +10939,29 @@ body {
 
 .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-datePicker-days .o-input-div, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-datePicker-days .o-input-div, .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-datePicker-months .o-input-div, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-datePicker-months .o-input-div {
   background-color: #fff;
-  border: 1px solid #FB5B29;
+  border: 1px solid #fb5b29;
 }
 
 .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-datePicker-days::after, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-datePicker-days::after, .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-datePicker-months::after, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-datePicker-months::after {
-  color: #FB5B29;
+  color: #fb5b29;
   content: "格式：yyyy/mm/dd";
   font-size: 0.8rem;
 }
 
 .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-dropdown-general .select-wrapper, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-dropdown-general .select-wrapper {
   background-color: #fff;
-  border: 1px solid #FB5B29;
+  border: 1px solid #fb5b29;
 }
 
 .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-dropdown-general::after, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-dropdown-general::after {
-  color: #FB5B29;
+  color: #fb5b29;
   content: "請確認項目有在選單內";
   font-size: 0.8rem;
 }
 
 .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-dropdown-member .c-dropdown__input, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-dropdown-member .c-dropdown__input {
   background-color: #fff;
-  border: 1px solid #FB5B29;
+  border: 1px solid #fb5b29;
 }
 
 .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-dropdown-member .c-dropdown__input::after, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-dropdown-member .c-dropdown__input::after {
@@ -10963,7 +10969,7 @@ body {
 }
 
 .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-dropdown-member::after, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-dropdown-member::after {
-  color: #FB5B29;
+  color: #fb5b29;
   content: "請確認成員皆有在選單內且成員間以頓號區隔";
   font-size: 0.8rem;
 }
@@ -10974,11 +10980,11 @@ body {
 
 .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .o-input input, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .o-input input, .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .hoursInput input, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .hoursInput input, .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .otherInput input, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .otherInput input, .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-search-item__input input, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-search-item__input input {
   background-color: #fff;
-  border: 1px solid #FB5B29;
+  border: 1px solid #fb5b29;
 }
 
 .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .o-input::after, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .o-input::after, .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-writeHours-content__select .hoursInput::after, .c-writeHours-content__select .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .hoursInput::after, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-writeHours-content__select .hoursInput::after, .c-writeHours-content__select .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .hoursInput::after, .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-writeHours-content__select .otherInput::after, .c-writeHours-content__select .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .otherInput::after, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-writeHours-content__select .otherInput::after, .c-writeHours-content__select .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .otherInput::after, .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-search-list .c-search-item .c-search-item__input::after, .c-search-list .c-search-item .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-search-item__input::after, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-search-list .c-search-item .c-search-item__input::after, .c-search-list .c-search-item .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-search-item__input::after {
-  color: #FB5B29;
+  color: #fb5b29;
   content: "請填阿拉伯數字";
   font-size: 0.8rem;
   display: block;
@@ -11006,7 +11012,7 @@ body {
 }
 
 .l-main-content .l-main-content__wbslist .table-footer, .l-main-content .l-main-content__workTypelist .table-footer {
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
   padding: 1.5rem 0 1.5rem 0;
   border-radius: 0 0 0.66rem 0.66rem;
   font-weight: 700;
@@ -11043,7 +11049,7 @@ body {
 }
 
 .l-main-content .l-main-content__wbslist .table-footer .row .col span, .l-main-content .l-main-content__workTypelist .table-footer .row .col span {
-  color: #8495A4;
+  color: #8495a4;
 }
 
 .l-main-content .l-main-content__wbslist .table-footer .row .total-num-position, .l-main-content .l-main-content__workTypelist .table-footer .row .total-num-position {
@@ -11180,11 +11186,11 @@ body {
 }
 
 .l-main-content .l-main-content__workTypelist .table-body .table-body__item:last-child, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem:last-child {
-  border-bottom: 1px solid #0156A2;
+  border-bottom: 1px solid #0156a2;
 }
 
 .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .col span, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .col span {
-  color: #8495A4;
+  color: #8495a4;
 }
 
 .l-main-content .l-main-content__workTypelist .table-body .row .col {
@@ -11200,7 +11206,7 @@ body {
 }
 
 .l-main-content .l-main-content__workTypelist .table-footer {
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
   padding: 1.5rem 0 1.5rem 0;
   border-radius: 0 0 0.66rem 0.66rem;
   font-weight: 700;
@@ -11241,20 +11247,20 @@ body {
 }
 
 .l-main-content-table .l-main-content-table__text {
-  color: #8495A4;
+  color: #8495a4;
   padding-top: 0.5rem;
   padding-bottom: 2rem;
 }
 
 .l-main-content-table .table-thead {
-  background-color: #E2F1FE;
-  border-bottom: 1px solid #0156A2;
+  background-color: #e2f1fe;
+  border-bottom: 1px solid #0156a2;
   border-radius: 0.66rem 0.66rem 0 0;
   color: #042340;
   white-space: nowrap;
   font-weight: 700;
   font-size: 1.06rem;
-  padding: 1.5rem 0 1.5rem 1.5rem;
+  padding: 1.33rem 0 1.33rem 1.5rem;
 }
 
 .l-main-content-table .table-thead .row {
@@ -11287,7 +11293,7 @@ body {
 }
 
 .l-main-content-table .table-body .table-body-subtitle {
-  background-color: #F7FBFF;
+  background-color: #f7fbff;
   line-height: 24px;
 }
 
@@ -11347,8 +11353,8 @@ body {
   margin-bottom: 0;
   font-size: 1.06rem;
   padding: 0 0 0 1.5rem;
-  height: 60px;
-  border-bottom: 1px solid #BAD4E5;
+  height: 3.733rem;
+  border-bottom: 1px solid #bad4e5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11390,13 +11396,11 @@ body {
 }
 
 .l-main-writeHours {
-  overflow-y: scroll;
-  height: calc(100vh - 100px);
-  padding: 0 0.5rem 0.5rem 0.5rem;
+  height: calc(100vh - 120px);
 }
 
 .l-main-writeHours .c-writeHours {
-  min-height: calc(100% - 50px);
+  min-height: 100%;
 }
 
 .l-main-writeHours .c-writeHours .c-writeHours-content .is-error-status {
@@ -11405,22 +11409,32 @@ body {
 
 .sidebar__is-open .l-side {
   width: 207px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD url(../img/menu_bg.svg) no-repeat;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD url(../img/menu_bg.svg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd url(../img/menu_bg.svg) no-repeat;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd url(../img/menu_bg.svg) no-repeat;
   background-position-x: right;
   background-position-y: bottom;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  padding-top: 1rem;
 }
 
 .sidebar__is-open .l-side .c-sidebar-content__logo {
   margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 1.2rem;
+  margin-top: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sidebar__is-open .l-side .c-sidebar-content__logo .hylogo {
   display: block;
-  width: 90%;
-  margin-top: 8%;
+  width: 10rem;
+  margin-top: 0.5rem;
 }
 
 .sidebar__is-open .l-side .c-sidebar-content__logo .hylogo-sm {
@@ -11428,8 +11442,20 @@ body {
 }
 
 .sidebar__is-open .l-side .c-sidebar-content__user {
-  margin-bottom: 15px;
-  background: #F7FBFF;
+  margin-bottom: 1rem;
+  background: #f7fbff;
+  padding: 0.7rem 0.7rem 0.7rem 1.3rem;
+  position: relative;
+}
+
+.sidebar__is-open .l-side .c-sidebar-content__user__logout {
+  position: absolute;
+  display: block;
+  top: 0.7rem;
+  right: 0.8rem;
+  cursor: pointer;
+  color: #0156a2;
+  font-size: 0.93rem;
 }
 
 .sidebar__is-open .l-side .chinese__name {
@@ -11440,21 +11466,22 @@ body {
   display: block;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
-  color: #0156A2;
+  color: #0156a2;
   margin-left: 0;
   border-radius: 0;
   background: none;
   width: auto;
   height: auto;
-  line-height: 16px;
   padding-left: 0;
+  width: 70%;
+  line-height: 1.2rem;
 }
 
 .sidebar__is-open .l-side .english__name {
   display: block;
-  -webkit-transition: ease .3s;
-  transition: ease .3s;
-  color: #0156A2;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  color: #0156a2;
   font-weight: 700;
   padding-bottom: 12%;
   font-family: "Baloo 2", cursive, "Noto Sans TC";
@@ -11463,15 +11490,15 @@ body {
 .sidebar__is-open .l-side .user__number {
   display: block;
   opacity: 1;
-  -webkit-transition: ease .3s;
-  transition: ease .3s;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
 }
 
 .sidebar__is-open .l-side .user__department {
   display: block;
   opacity: 1;
-  -webkit-transition: ease .3s;
-  transition: ease .3s;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
   font-family: "Noto Sans TC", "sans-serif";
 }
 
@@ -11488,42 +11515,28 @@ body {
 
 .sidebar__is-open .l-side .c-sidebar-content__list__title div {
   display: block;
-  -webkit-transition: ease .5s;
-  transition: ease .5s;
-}
-
-.sidebar__is-open .l-side .c-sidebar-content__listGroup {
-  padding-right: 2rem;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
 .sidebar__is-open .l-side .c-sidebar-content__list__content {
   display: block;
   opacity: 1;
-  -webkit-transition: ease .5s;
-  transition: ease .5s;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
 .sidebar__is-open .l-side .c-sidebar-content__list__content .menuItem-is-active {
-  color: #0156A2;
-  background: -webkit-gradient(linear, left top, left bottom, from(#64FFEC), to(rgba(255, 255, 255, 0))), #1FEBBA;
-  background: linear-gradient(180deg, #64FFEC 0%, rgba(255, 255, 255, 0) 100%), #1FEBBA;
+  color: #0156a2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#64ffec), to(rgba(255, 255, 255, 0))), #1febba;
+  background: linear-gradient(180deg, #64ffec 0%, rgba(255, 255, 255, 0) 100%), #1febba;
 }
 
 .sidebar__is-open .l-side .c-sidebar-content__list {
-  margin-bottom: 10%;
+  margin-bottom: 0.8rem;
 }
 
 .sidebar__is-open .l-side .c-sidebar-btnlist {
-  position: absolute;
-  bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 80%;
-  height: 100px;
   color: #fff;
   font-weight: 700;
   padding: 0.5rem 0 0.5rem 0.3rem;
@@ -11546,8 +11559,8 @@ body {
 .sidebar__is-open .l-side .c-sidebar-btnlist .c-sidebar-btnlist__item .menu-btn {
   display: block;
   cursor: pointer;
-  -webkit-transition: ease .3s;
-  transition: ease .3s;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
 }
 
 .sidebar__is-open .l-side .c-sidebar-btnlist .c-sidebar-btnlist__item .menu-btn__open {
@@ -11572,13 +11585,10 @@ body {
   cursor: pointer;
 }
 
-.sidebar__is-open .l-side .c-sidebar-btnlist__logout {
-  margin-bottom: 8rem;
-}
-
 .sidebar__is-open .l-main {
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding-left: 15.8rem;
 }
 
 .list__title__icon__default {
@@ -11601,8 +11611,8 @@ body {
   z-index: 97;
   position: absolute;
   right: 0;
-  -webkit-transition: ease .5s;
-  transition: ease .5s;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
 .c-submenu-btn {
@@ -11633,17 +11643,17 @@ body {
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   overflow: hidden;
-  -webkit-transition: ease .5s;
-  transition: ease .5s;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
 .c-submenu-content__calendar, .l-mobile-footer-worksheet .c-mobile__calendar {
-  padding: 24px 24px 0 24px;
+  padding: 1.2rem 1.6rem 0 1.6rem;
   min-width: 251px;
 }
 
 .c-submenu-content__calendar .calendar-wrapper, .l-mobile-footer-worksheet .c-mobile__calendar .calendar-wrapper {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   border-radius: 5px;
 }
 
@@ -11657,10 +11667,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 22px;
+  font-size: 1.33rem;
   font-weight: 700;
   font-family: "Noto Sans TC", "sans-serif";
-  margin: 0 0.8rem 0.6rem 0;
+  margin: 0 0.8rem 0.5rem 0;
 }
 
 .c-submenu-content__calendar .calendar-wrapper .calendar_btn, .l-mobile-footer-worksheet .c-mobile__calendar .calendar-wrapper .calendar_btn {
@@ -11733,8 +11743,8 @@ body {
 .c-submenu-content__calendar td.today::after, .l-mobile-footer-worksheet .c-mobile__calendar td.today::after {
   position: absolute;
   content: "";
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
   border-radius: 50%;
   height: 2rem;
   width: 2rem;
@@ -11742,11 +11752,11 @@ body {
 }
 
 .c-submenu-content__calendar td.is-not-full, .l-mobile-footer-worksheet .c-mobile__calendar td.is-not-full {
-  color: #FB5B29;
+  color: #fb5b29;
 }
 
 .c-submenu-content__calendar td.is-thismonth-week, .l-mobile-footer-worksheet .c-mobile__calendar td.is-thismonth-week {
-  color: #8495A4;
+  color: #8495a4;
 }
 
 .c-submenu-content__calendar td.is-focus, .l-mobile-footer-worksheet .c-mobile__calendar td.is-focus {
@@ -11759,7 +11769,7 @@ body {
 .c-submenu-content__calendar td.is-focus::after, .l-mobile-footer-worksheet .c-mobile__calendar td.is-focus::after {
   position: absolute;
   content: "";
-  background: #E2F1FE;
+  background: #e2f1fe;
   border-radius: 50%;
   height: 2rem;
   width: 2rem;
@@ -11802,7 +11812,7 @@ body {
 }
 
 .c-submenu-content__cardList .cardList__title {
-  font-size: 22px;
+  font-size: 1.33rem;
   font-weight: 700;
   font-family: "Noto Sans TC", "sans-serif";
   margin-bottom: 0.5rem;
@@ -11812,18 +11822,13 @@ body {
 .c-submenu-content__cardList .cardList__content {
   height: calc(100vh - 330px);
   width: 100%;
-  padding-top: 3%;
   overflow-y: scroll;
 }
 
 .c-submenu-content__cardList .c-card-planHotkey, .c-submenu-content__cardList .l-mobile-footer-worksheet .c-card-workHotkey, .l-mobile-footer-worksheet .c-submenu-content__cardList .c-card-workHotkey {
   margin: 0 auto;
   margin-top: 0.5rem;
-  margin-bottom: 1.2rem;
-}
-
-.c-sidebar-content__user__item {
-  color: #fff;
+  margin-bottom: 0.5rem;
 }
 
 .c-sidebar-content__list {
@@ -11831,14 +11836,14 @@ body {
 }
 
 .c-sidebar-content__list__item {
-  padding: 0.5rem 0 0.5rem 3.3rem;
+  padding: 0.4rem 0 0.4rem 3.3rem;
   display: block;
   font-weight: 400;
   border-radius: 0 25px 25px 0;
   margin-bottom: 1.5%;
-  font-size: 0.93rem;
+  font-size: 1rem;
   cursor: pointer;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .c-sidebar-content__list__item:hover {
@@ -11853,8 +11858,8 @@ body {
 }
 
 .submenu__open .c-submenu-content {
-  -webkit-transition: ease .5s;
-  transition: ease .5s;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
   width: 0;
 }
 
@@ -11866,32 +11871,32 @@ body {
 
 ::-webkit-input-placeholder {
   /* Edge */
-  color: #8495A4;
+  color: #8495a4;
   font-weight: 400;
   font-family: "Noto Sans TC", "sans-serif";
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer */
-  color: #8495A4;
+  color: #8495a4;
   font-weight: 400;
   font-family: "Noto Sans TC", "sans-serif";
 }
 
 ::-ms-input-placeholder {
-  color: #8495A4;
+  color: #8495a4;
   font-weight: 400;
   font-family: "Noto Sans TC", "sans-serif";
 }
 
 ::placeholder {
-  color: #8495A4;
+  color: #8495a4;
   font-weight: 400;
   font-family: "Noto Sans TC", "sans-serif";
 }
 
 .c-card, .c-card-manhourSofar, .c-card-manhourSearch, .c-card-percent, .c-card-percentCheck, .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan, .c-card-department, .c-card-lableGroup, .c-accordion-general, .c-toast-uploadSuccess, .c-toast-uploadFailure, .c-toast-join, .c-toast-joinCancel, .c-card-login {
-  border-radius: 1.33rem;
+  border-radius: 0.66rem;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   padding: 1.32rem;
@@ -11923,7 +11928,7 @@ body {
 .c-card-manhourSofar .c-card__userInformation, .c-card-manhourSearch .c-card__userInformation, .c-card-percent .c-card__userInformation, .c-card-percentCheck .c-card__userInformation, .c-card-planPerson .c-card__userInformation, .c-card-planClosed .c-card__userInformation, .c-card-planHotkey .c-card__userInformation, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__userInformation, .c-card-planReport .c-card__userInformation, .c-card-planReport-danger .c-card__userInformation, .c-card-alertPlan .c-card__userInformation, .c-card-department .c-card__userInformation {
   margin-top: 2.64rem;
   line-height: 35px;
-  border-bottom: 1px solid #BDBDBD;
+  border-bottom: 1px solid #bdbdbd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11954,7 +11959,7 @@ body {
 }
 
 .c-card-manhourSofar .c-card__item .c-card__item__title, .c-card-manhourSearch .c-card__item .c-card__item__title, .c-card-percent .c-card__item .c-card__item__title, .c-card-percentCheck .c-card__item .c-card__item__title, .c-card-planPerson .c-card__item .c-card__item__title, .c-card-planClosed .c-card__item .c-card__item__title, .c-card-planHotkey .c-card__item .c-card__item__title, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__item .c-card__item__title, .c-card-planReport .c-card__item .c-card__item__title, .c-card-planReport-danger .c-card__item .c-card__item__title, .c-card-alertPlan .c-card__item .c-card__item__title, .c-card-department .c-card__item .c-card__item__title, .c-card-manhourSofar .c-card__item .c-card-planReport .c-card__item__content, .c-card-manhourSearch .c-card__item .c-card-planReport .c-card__item__content, .c-card-percent .c-card__item .c-card-planReport .c-card__item__content, .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__content, .c-card-planPerson .c-card__item .c-card-planReport .c-card__item__content, .c-card-planClosed .c-card__item .c-card-planReport .c-card__item__content, .c-card-planHotkey .c-card__item .c-card-planReport .c-card__item__content, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport .c-card__item .c-card__item__content, .c-card-department .c-card__item .c-card-planReport .c-card__item__content, .c-card-manhourSofar .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-manhourSearch .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planPerson .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planClosed .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planHotkey .c-card__item .c-card-planReport-danger .c-card__item__content, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger .c-card__item .c-card__item__content, .c-card-department .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-manhourSofar .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-manhourSearch .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-planPerson .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-planClosed .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-planHotkey .c-card__item .c-card-alertPlan .c-card__item__content, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-alertPlan .c-card__item .c-card__item__content, .c-card-department .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-manhourSofar .c-card__item .c-card-planReport .c-card__item__footer, .c-card-manhourSearch .c-card__item .c-card-planReport .c-card__item__footer, .c-card-percent .c-card__item .c-card-planReport .c-card__item__footer, .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planPerson .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planClosed .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planHotkey .c-card__item .c-card-planReport .c-card__item__footer, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planReport .c-card__item .c-card__item__footer, .c-card-department .c-card__item .c-card-planReport .c-card__item__footer, .c-card-manhourSofar .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-manhourSearch .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planPerson .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planClosed .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planHotkey .c-card__item .c-card-planReport-danger .c-card__item__footer, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger .c-card__item .c-card__item__footer, .c-card-department .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-manhourSofar .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-manhourSearch .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-planPerson .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-planClosed .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-planHotkey .c-card__item .c-card-alertPlan .c-card__item__footer, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan .c-card__item .c-card__item__footer, .c-card-department .c-card__item .c-card-alertPlan .c-card__item__footer {
-  color: #1E4160;
+  color: #1e4160;
   font-size: 1.06rem;
   font-weight: 400;
 }
@@ -12047,10 +12052,29 @@ body {
 
 .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan {
   padding: 0;
-  width: 21.5%;
-  min-width: 240px;
+  width: calc(20% - 1rem);
+  min-width: auto;
+  max-width: auto;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+@media (max-width: 1200px) {
+  .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan {
+    width: calc(25% - 1rem);
+  }
+}
+
+@media (max-width: 992px) {
+  .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan {
+    width: calc(33.33% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan {
+    width: calc(50% - 1rem);
+  }
 }
 
 .c-card-planPerson:hover, .c-card-planClosed:hover, .c-card-planHotkey:hover, .l-mobile-footer-worksheet .c-card-workHotkey:hover, .c-card-planReport:hover, .c-card-planReport-danger:hover, .c-card-alertPlan:hover {
@@ -12070,19 +12094,19 @@ body {
 .c-card-planPerson a, .c-card-planClosed a, .c-card-planHotkey a, .l-mobile-footer-worksheet .c-card-workHotkey a, .c-card-planReport a, .c-card-planReport-danger a, .c-card-alertPlan a {
   color: #042340;
   display: block;
-  padding: 20px;
+  padding: 1.333rem;
 }
 
 .c-card-planPerson .c-card__tag, .c-card-planClosed .c-card__tag, .c-card-planHotkey .c-card__tag, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__tag, .c-card-planReport .c-card__tag, .c-card-planReport-danger .c-card__tag, .c-card-alertPlan .c-card__tag {
   padding-top: 0.66rem;
   display: inline-block;
-  padding-bottom: 1.32rem;
+  padding-bottom: 0.8rem;
 }
 
 .c-card-planPerson .c-card__tag span, .c-card-planClosed .c-card__tag span, .c-card-planHotkey .c-card__tag span, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__tag span, .c-card-planReport .c-card__tag span, .c-card-planReport-danger .c-card__tag span, .c-card-alertPlan .c-card__tag span {
   background: #cfe3f5;
   color: #042340;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 0.5rem;
   font-weight: 400;
   border-radius: 0.33rem;
   font-size: 1.06rem;
@@ -12098,16 +12122,17 @@ body {
   text-overflow: ellipsis;
   max-height: 3rem;
   font-size: 1.06rem;
-  line-height: 28px;
+  line-height: 1.66rem;
   max-height: 56px;
 }
 
 .c-card-planPerson .c-card__userInformation, .c-card-planClosed .c-card__userInformation, .c-card-planHotkey .c-card__userInformation, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__userInformation, .c-card-planReport .c-card__userInformation, .c-card-planReport-danger .c-card__userInformation, .c-card-alertPlan .c-card__userInformation {
-  font-size: 14px;
-  margin-top: 0.66rem;
+  font-size: 0.93rem;
+  margin-top: 0.5rem;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  line-height: 1.66rem;
 }
 
 .c-card-planClosed .c-card__userInformation {
@@ -12133,7 +12158,7 @@ body {
 
 .c-card-planClosed .c-card__date {
   margin-top: 10px;
-  color: #8495A4;
+  color: #8495a4;
 }
 
 .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey {
@@ -12145,7 +12170,11 @@ body {
 
 .c-card-planHotkey .c-card__content, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__content {
   margin-top: 0px;
-  padding: 1.32rem 1.32rem 0.66rem 1.32rem;
+  padding: 0.7rem;
+}
+
+.c-card-planHotkey .c-card__tag, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__tag {
+  padding-top: 0.5rem;
 }
 
 .c-card-planHotkey h2, .l-mobile-footer-worksheet .c-card-workHotkey h2 {
@@ -12154,7 +12183,7 @@ body {
   text-overflow: ellipsis;
   white-space: normal;
   height: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .c-card-planHotkey .c-card__development, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__development {
@@ -12171,6 +12200,10 @@ body {
           align-items: center;
 }
 
+.c-card-planHotkey .c-card__development .c-card__development__item img, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__development .c-card__development__item img, .c-card-planHotkey .c-card__development .c-card__development__item__subproject img, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__development .c-card__development__item__subproject img {
+  width: 1.33rem;
+}
+
 .c-card-planHotkey .c-card__development span, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__development span {
   overflow: hidden;
   white-space: nowrap;
@@ -12184,12 +12217,12 @@ body {
 .c-card-planHotkey .c-card-planHotkey__btn, .l-mobile-footer-worksheet .c-card-workHotkey .c-card-planHotkey__btn, .l-mobile-footer-worksheet .c-card-workHotkey .c-card-workHotkey__btn {
   text-align: center;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
   padding: 0.66rem 1.32rem;
   color: #fff;
   cursor: pointer;
-  border-radius: 0 0 1.33rem 1.33rem;
+  border-radius: 0 0 0.66rem 0.66rem;
 }
 
 .c-card-department {
@@ -12228,11 +12261,11 @@ body {
 }
 
 .c-card-planReport a .is-changeBackground, .c-card-planReport-danger a .is-changeBackground, .c-card-alertPlan a .is-changeBackground {
-  border-radius: 1.33rem;
+  border-radius: 0.66rem;
 }
 
 .c-card-planReport a .is-changeBackground .c-card__tag__num div span, .c-card-planReport-danger a .is-changeBackground .c-card__tag__num div span, .c-card-alertPlan a .is-changeBackground .c-card__tag__num div span {
-  background-color: #F7FBFF;
+  background-color: #f7fbff;
 }
 
 .c-card-planReport .c-card__item, .c-card-planReport-danger .c-card__item, .c-card-alertPlan .c-card__item {
@@ -12298,7 +12331,7 @@ body {
 
 .c-card-planReport .c-card__tag .c-card__tag__btn, .c-card-planReport-danger .c-card__tag .c-card__tag__btn, .c-card-alertPlan .c-card__tag .c-card__tag__btn, .c-card-planReport .c-card__tag .c-card__star__btn, .c-card-planReport-danger .c-card__tag .c-card__star__btn, .c-card-alertPlan .c-card__tag .c-card__star__btn {
   padding: 0.6rem;
-  background-color: #EDF2F5;
+  background-color: #edf2f5;
   border-radius: 0.66rem;
   margin-right: 1rem;
 }
@@ -12312,7 +12345,7 @@ body {
 
 .c-card-planReport .c-card__tag span, .c-card-planReport-danger .c-card__tag span, .c-card-alertPlan .c-card__tag span {
   background: none;
-  color: #8495A4;
+  color: #8495a4;
   font-size: 1.06rem;
   font-weight: 600;
   padding: 0.5rem;
@@ -12328,7 +12361,7 @@ body {
 .c-card-planReport .c-card__text, .c-card-planReport-danger .c-card__text, .c-card-alertPlan .c-card__text {
   font-size: 12px;
   width: 100%;
-  color: #8495A4;
+  color: #8495a4;
   -ms-flex-item-align: end;
       align-self: flex-end;
   display: -webkit-box;
@@ -12359,7 +12392,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 45%;
-  border-right: 1px solid #D2DAE0;
+  border-right: 1px solid #d2dae0;
   -ms-flex-line-pack: justify;
       align-content: space-between;
   padding-right: 1.32rem;
@@ -12444,7 +12477,7 @@ body {
 
 .c-card-planReport .c-card__item__content .c-card__item__content__list .list__item .list__item__title, .c-card-planReport-danger .c-card__item__content .c-card__item__content__list .list__item .list__item__title, .c-card-alertPlan .c-card__item__content .c-card__item__content__list .list__item .list__item__title, .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item .list__item__title, .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item .list__item__title, .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item .list__item__title {
   font-size: 12px;
-  color: #8495A4;
+  color: #8495a4;
   margin-right: 1.32rem;
 }
 
@@ -12489,7 +12522,7 @@ body {
 }
 
 .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item .is-danger, .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item .is-danger {
-  color: #FB5B29;
+  color: #fb5b29;
 }
 
 .c-card-alertPlan .c-card__tag {
@@ -12523,12 +12556,12 @@ body {
   max-width: 337px;
   height: 4.5rem;
   margin: 0 0.5rem 0.5rem 0;
-  background-color: #F7FBFF;
+  background-color: #f7fbff;
   border-radius: 0.53rem;
 }
 
 .c-card-lablePerson .c-card-lablePerson-title {
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
   color: #042340;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -12638,15 +12671,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #1E4160;
-  border-bottom: 1px solid #D2DAE0;
+  color: #1e4160;
   font-weight: 400;
   font-family: "Noto Sans TC", "sans-serif";
-  padding-bottom: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .c-breadcrumb div {
-  padding: 0 0.2%;
+  padding: 0 0.3rem;
+  margin-bottom: 0.1rem;
+  color: #8495a4;
+}
+
+.c-breadcrumb a {
+  color: #8495a4;
 }
 
 .c-accordion-group, .c-accordion-plan, .c-accordion-general {
@@ -12685,7 +12725,7 @@ body {
   color: #042340;
   border-radius: 10px 10px 10px;
   background: #fff;
-  border: 2px solid #E2F1FE;
+  border: 2px solid #e2f1fe;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12695,7 +12735,7 @@ body {
 }
 
 .c-accordion-group .accordion-header:hover, .c-accordion-plan .accordion-header:hover, .c-accordion-general .accordion-header:hover {
-  background: #E2F1FE;
+  background: #e2f1fe;
 }
 
 .c-accordion-group .accordion-header .accordion-header__item, .c-accordion-plan .accordion-header .accordion-header__item, .c-accordion-general .accordion-header .accordion-header__item {
@@ -12730,7 +12770,7 @@ body {
 }
 
 .c-accordion-group .accordion-body, .c-accordion-plan .accordion-body, .c-accordion-general .accordion-body {
-  color: #1E4160;
+  color: #1e4160;
   font-size: 1.06rem;
 }
 
@@ -12745,7 +12785,7 @@ body {
 .c-accordion-group .accordion-body__item, .c-accordion-plan .accordion-body__item, .c-accordion-general .accordion-body__item {
   cursor: pointer;
   padding: 4% 2%;
-  background: #E2F1FE;
+  background: #e2f1fe;
   border-radius: 0.533rem;
 }
 
@@ -12783,7 +12823,7 @@ body {
 
 .c-accordion-plan .accordion-body__title, .c-accordion-general .accordion-body__title {
   padding: 0.5rem 1.5rem;
-  color: #8495A4;
+  color: #8495a4;
   font-size: 1.06rem;
 }
 
@@ -12807,11 +12847,11 @@ body {
 }
 
 .c-accordion-general .accordion-body__title {
-  color: #8495A4;
+  color: #8495a4;
 }
 
 .c-accordion-general .accordion-body__item {
-  background: #E2F1FE;
+  background: #e2f1fe;
   padding: 1rem 1.5rem;
 }
 
@@ -12835,7 +12875,7 @@ body {
 }
 
 .is-accordion-active .accordion-header {
-  background: #E2F1FE;
+  background: #e2f1fe;
 }
 
 .c-toast-uploadSuccess, .c-toast-uploadFailure {
@@ -12848,8 +12888,8 @@ body {
 .c-toast-uploadSuccess .c-toast-header, .c-toast-uploadFailure .c-toast-header {
   padding: 1rem;
   border-radius: 0.66rem 0.66rem 0 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12906,7 +12946,7 @@ body {
 
 .c-toast-uploadFailure .c-toast-body__item__title {
   padding-bottom: 3%;
-  border-bottom: 1px solid #D2DAE0;
+  border-bottom: 1px solid #d2dae0;
 }
 
 .c-toast-uploadFailure .c-toast-body__item__content {
@@ -12931,8 +12971,8 @@ body {
 
 .c-toast-join, .c-toast-joinCancel {
   border-radius: 0.66rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
   z-index: 999;
   height: 54px;
   width: 211px;
@@ -12971,7 +13011,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  border-bottom: 1px solid #D2DAE0;
+  border-bottom: 1px solid #d2dae0;
 }
 
 .c-tabs .c-tabs__title {
@@ -12990,12 +13030,12 @@ body {
 
 .c-tabs .c-tabs__item .is-active {
   color: #042340;
-  border-bottom: 5px solid #0156A2;
+  border-bottom: 5px solid #0156a2;
 }
 
 .c-tabs .c-tabs__item .active-style {
   color: #042340;
-  border-bottom: 5px solid #0156A2;
+  border-bottom: 5px solid #0156a2;
 }
 
 .c-tabs .c-tabs__item__btnGroup {
@@ -13021,7 +13061,7 @@ body {
   font-family: "Noto Sans TC", "sans-serif";
   white-space: nowrap;
   font-size: 1.06rem;
-  color: #8495A4;
+  color: #8495a4;
 }
 
 .c-general {
@@ -13034,7 +13074,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #D2DAE0;
+  border-bottom: 1px solid #d2dae0;
 }
 
 .c-general .c-general__title {
@@ -13052,7 +13092,7 @@ body {
 .c-general .c-general__title h3 {
   font-size: 22px;
   font-weight: 700;
-  margin: 1rem 0 1rem 0;
+  margin: 0.8rem 0 0.8rem 0;
 }
 
 .c-general .c-general__img {
@@ -13104,13 +13144,13 @@ body {
 
 .c-general span {
   padding: 0 0.5rem;
-  color: #8495A4;
+  color: #8495a4;
 }
 
 .c-general .c-general__subtitle {
   font-size: 22px;
   font-weight: 400;
-  color: #8495A4;
+  color: #8495a4;
 }
 
 .c-content .content {
@@ -13123,8 +13163,8 @@ body {
 
 .c-fileInput, .c-fileInput-upload, .c-fileInput-add {
   text-align: center;
-  border-radius: 1.33rem;
-  border: 1px dashed #BAD4E5;
+  border-radius: 0.66rem;
+  border: 1px dashed #bad4e5;
   padding: 1.32rem;
   width: 24.65%;
   height: 334px;
@@ -13148,14 +13188,14 @@ body {
 .c-fileInput-upload .c-fileInput__img, .c-fileInput-add .c-fileInput__img {
   display: inline;
   padding: 1.5rem;
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
   border-radius: 50%;
 }
 
 .c-fileInput-upload .c-fileInput__title, .c-fileInput-add .c-fileInput__title {
   font-size: 1.06rem;
   padding-top: 1.98rem;
-  color: #1E4160;
+  color: #1e4160;
 }
 
 .c-fileInput-add {
@@ -13181,7 +13221,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #D2DAE0;
+  border-bottom: 1px solid #d2dae0;
   padding-bottom: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -13345,11 +13385,11 @@ body {
   font-size: 1.06rem;
   font-weight: 700;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid #BAD4E5;
+  border-bottom: 1px solid #bad4e5;
 }
 
 .c-modal-chooseGroup .c-modal-content .c-modal-content__input span, .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__input span, .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__input span {
-  color: #FB5B29;
+  color: #fb5b29;
 }
 
 .c-modal-chooseGroup .c-modal-content .c-modal-content__input .o-input input, .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__input .o-input input, .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__input .o-input input, .c-modal-chooseGroup .c-modal-content .c-modal-content__input .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-chooseGroup .c-modal-content .c-modal-content__input .hoursInput input, .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__input .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__input .hoursInput input, .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__input .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__input .hoursInput input, .c-modal-chooseGroup .c-modal-content .c-modal-content__input .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-chooseGroup .c-modal-content .c-modal-content__input .otherInput input, .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__input .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__input .otherInput input, .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__input .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__input .otherInput input, .c-modal-chooseGroup .c-modal-content .c-modal-content__input .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-chooseGroup .c-modal-content .c-modal-content__input .c-search-item__input input, .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__input .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__input .c-search-item__input input, .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__input .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__input .c-search-item__input input {
@@ -13382,7 +13422,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #8495A4;
+  color: #8495a4;
 }
 
 .c-modal-chooseGroup .c-modal-content .c-modal-content__addMember .addMember-title a img, .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__addMember .addMember-title a img, .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__addMember .addMember-title a img {
@@ -13443,11 +13483,11 @@ body {
 }
 
 .c-modal-chooseGroup .is-error-status .c-modal-content__input {
-  border-bottom: 1px solid #FB5B29;
+  border-bottom: 1px solid #fb5b29;
 }
 
 .c-modal-chooseGroup .is-error-status .c-modal-content__input div {
-  color: #FB5B29;
+  color: #fb5b29;
 }
 
 .c-modal-addGroup, .c-modal-usuallyUseMember, .c-modal-sample {
@@ -13532,7 +13572,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #BAD4E5;
+  border-bottom: 1px solid #bad4e5;
   margin-bottom: 0;
   padding-bottom: 1.5rem;
   margin-left: 0;
@@ -13551,7 +13591,7 @@ body {
 }
 
 .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .input-title span, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .input-title span, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .input-title span {
-  color: #FB5B29;
+  color: #fb5b29;
 }
 
 .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .s6, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .s6, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .s6 {
@@ -13584,11 +13624,11 @@ body {
           align-items: flex-end;
   width: 100%;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #BAD4E5;
+  border-bottom: 1px solid #bad4e5;
 }
 
 .c-modal-addGroup .c-modal-content .c-modal-content__select .input-title span, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__select .input-title span, .c-modal-sample .c-modal-content .c-modal-content__select .input-title span, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__select .input-title span, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__select .input-title span, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__select .input-title span, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__select .input-title span, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__select .input-title span, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__select .input-title span {
-  color: #FB5B29;
+  color: #fb5b29;
 }
 
 .c-modal-addGroup .c-modal-content .c-modal-content__select input, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__select input, .c-modal-sample .c-modal-content .c-modal-content__select input, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__select input, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__select input, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__select input, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__select input, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__select input, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__select input {
@@ -13601,7 +13641,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 0 0rem 1rem 0rem;
-  border-bottom: 1px solid #BAD4E5;
+  border-bottom: 1px solid #bad4e5;
 }
 
 .c-modal-addGroup .c-modal-content .c-modal-content__chooseMember div, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember div, .c-modal-sample .c-modal-content .c-modal-content__chooseMember div, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember div, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember div, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember div, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember div, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember div, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember div {
@@ -13631,8 +13671,8 @@ body {
   color: #fff;
   margin: 0 0.25rem 0.5rem 0.25rem;
   font-weight: 400;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
   font-family: "Noto Sans TC", "sans-serif";
 }
 
@@ -13652,7 +13692,7 @@ body {
 
 .c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__title, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__title, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__title, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__title, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__title, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__title {
   margin: 1rem 0;
-  color: #8495A4;
+  color: #8495a4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13678,7 +13718,7 @@ body {
 }
 
 .c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__group .is-active, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__group .is-active, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__group .is-active, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group .is-active, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__group .is-active, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group .is-active, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__group .is-active, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group .is-active, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__group .is-active {
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
 }
 
 .c-modal-addGroup .c-modal-footer, .c-modal-usuallyUseMember .c-modal-footer, .c-modal-sample .c-modal-footer {
@@ -13693,12 +13733,12 @@ body {
 }
 
 .c-modal-addGroup .is-error-status .c-modal-content__select .input-title, .c-modal-usuallyUseMember .is-error-status .c-modal-content__select .input-title, .c-modal-sample .is-error-status .c-modal-content__select .input-title {
-  color: #FB5B29;
+  color: #fb5b29;
 }
 
 .c-modal-addGroup .is-error-status .c-modal-content__select .select-wrapper, .c-modal-usuallyUseMember .is-error-status .c-modal-content__select .select-wrapper, .c-modal-sample .is-error-status .c-modal-content__select .select-wrapper {
   background-color: #fff;
-  border: 1px solid #FB5B29;
+  border: 1px solid #fb5b29;
 }
 
 .c-modal-addGroup .is-error-status .c-modal-content__select .select-wrapper ul .disabled:hover, .c-modal-usuallyUseMember .is-error-status .c-modal-content__select .select-wrapper ul .disabled:hover, .c-modal-sample .is-error-status .c-modal-content__select .select-wrapper ul .disabled:hover {
@@ -13707,7 +13747,7 @@ body {
 
 .c-modal-addGroup .is-error-status .c-modal-content__select .o-input input, .c-modal-usuallyUseMember .is-error-status .c-modal-content__select .o-input input, .c-modal-sample .is-error-status .c-modal-content__select .o-input input, .c-modal-addGroup .is-error-status .c-modal-content__select .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-addGroup .is-error-status .c-modal-content__select .hoursInput input, .c-modal-usuallyUseMember .is-error-status .c-modal-content__select .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-usuallyUseMember .is-error-status .c-modal-content__select .hoursInput input, .c-modal-sample .is-error-status .c-modal-content__select .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-sample .is-error-status .c-modal-content__select .hoursInput input, .c-modal-addGroup .is-error-status .c-modal-content__select .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-addGroup .is-error-status .c-modal-content__select .otherInput input, .c-modal-usuallyUseMember .is-error-status .c-modal-content__select .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-usuallyUseMember .is-error-status .c-modal-content__select .otherInput input, .c-modal-sample .is-error-status .c-modal-content__select .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-sample .is-error-status .c-modal-content__select .otherInput input, .c-modal-addGroup .is-error-status .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-addGroup .is-error-status .c-modal-content__select .c-search-item__input input, .c-modal-usuallyUseMember .is-error-status .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-usuallyUseMember .is-error-status .c-modal-content__select .c-search-item__input input, .c-modal-sample .is-error-status .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-sample .is-error-status .c-modal-content__select .c-search-item__input input {
   background-color: #fff;
-  border: 1px solid #FB5B29;
+  border: 1px solid #fb5b29;
 }
 
 .c-modal-addGroup .is-error-status .s5 .input-title, .c-modal-usuallyUseMember .is-error-status .s5 .input-title, .c-modal-sample .is-error-status .s5 .input-title {
@@ -13716,7 +13756,7 @@ body {
 
 .c-modal-addGroup .is-error-status .s5 .input-title::after, .c-modal-usuallyUseMember .is-error-status .s5 .input-title::after, .c-modal-sample .is-error-status .s5 .input-title::after {
   font-size: 0.8rem;
-  content: '請選擇部門或輸入關鍵字';
+  content: "請選擇部門或輸入關鍵字";
   font-weight: 400;
   right: 0;
   position: absolute;
@@ -13736,7 +13776,7 @@ body {
 
 .c-modal-personAll .c-modal-content__sidebar, .c-modal-personCalendar .c-modal-content__sidebar, .c-modal-department .c-modal-content__sidebar {
   padding: 1rem 1rem 1rem 2rem;
-  background-color: #F7FBFF;
+  background-color: #f7fbff;
   height: 100%;
   overflow-y: scroll;
   border-radius: 1.33rem 0 0 1.33rem;
@@ -13751,7 +13791,7 @@ body {
 
 .c-modal-personAll .c-modal-content__sidebar__user .user__number, .c-modal-personCalendar .c-modal-content__sidebar__user .user__number, .c-modal-department .c-modal-content__sidebar__user .user__number {
   font-size: 1.06rem;
-  color: #8495A4;
+  color: #8495a4;
   font-weight: 200;
   margin-bottom: 1.5rem;
 }
@@ -13794,7 +13834,7 @@ body {
   padding: 0.5rem;
   margin: 0.2rem 0.5rem 0.5rem 0;
   white-space: nowrap;
-  background: #E2F1FE;
+  background: #e2f1fe;
   border-radius: 0.533rem;
   cursor: pointer;
   width: 3rem;
@@ -13802,8 +13842,8 @@ body {
 
 .c-modal-personAll .c-modal-content__sidebar__months .sidebar__months__item .item__months .is-month-active, .c-modal-personCalendar .c-modal-content__sidebar__months .sidebar__months__item .item__months .is-month-active, .c-modal-department .c-modal-content__sidebar__months .sidebar__months__item .item__months .is-month-active, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__months .is-month-active, .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projects .is-month-active {
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
 }
 
 .c-modal-personAll .c-modal-content__calendar, .c-modal-personCalendar .c-modal-content__calendar, .c-modal-department .c-modal-content__calendar {
@@ -13963,8 +14003,8 @@ body {
 }
 
 .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projects .is-project-active {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
   color: #fff;
 }
 
@@ -14099,7 +14139,7 @@ body {
   height: 38px;
   width: 100%;
   padding: 1%;
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
   border-radius: 5px;
 }
 
@@ -14161,7 +14201,7 @@ body {
 
 .c-dropdown-plan .dropdown-content li, .c-dropdown-page .dropdown-content li, .c-dropdown-planContent .dropdown-content li, .c-dropdown-status .dropdown-content li, .c-dropdown-general .dropdown-content li, .c-dropdown-department .dropdown-content li, .c-dropdown-departmentCheck .dropdown-content li {
   min-height: 36px;
-  border-bottom: 1px solid #BAD4E5;
+  border-bottom: 1px solid #bad4e5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14279,7 +14319,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #8495A4;
+  color: #8495a4;
   font-size: 1.06rem;
   margin-bottom: 1rem;
   cursor: pointer;
@@ -14296,15 +14336,15 @@ body {
 }
 
 .c-dropdown__modal .c-dropdown__title .c-dropdown__title__all:hover {
-  color: #0156A2;
+  color: #0156a2;
 }
 
 .c-dropdown__modal .c-dropdown__title .c-dropdown__title__clear:hover {
-  color: #0156A2;
+  color: #0156a2;
 }
 
 .c-dropdown__modal .c-dropdown__title .c-dropdown__title__confirm:hover {
-  color: #0156A2;
+  color: #0156a2;
 }
 
 .c-dropdown__modal .c-dropdown__content [type="checkbox"] + span:not(.lever) {
@@ -14339,7 +14379,7 @@ body {
 }
 
 .c-dropdown__modal .c-dropdown__content li:hover {
-  background-color: #F7FBFF;
+  background-color: #f7fbff;
 }
 
 .c-dropdown__modal .c-dropdown__footer {
@@ -14360,16 +14400,16 @@ body {
   width: 30%;
   height: 38px;
   padding-left: 1%;
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
   border-radius: 5px;
   position: relative;
 }
 
-.c-dropdown__input input[type=text]:not(.browser-default) {
+.c-dropdown__input input[type="text"]:not(.browser-default) {
   border-bottom: 0;
 }
 
-.c-dropdown__input input[type=text]:not(.browser-default):focus:not([readonly]) {
+.c-dropdown__input input[type="text"]:not(.browser-default):focus:not([readonly]) {
   border-bottom: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -14385,7 +14425,7 @@ body {
   position: absolute;
   display: block;
   right: 0px;
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
   top: 8px;
   width: 30px;
   height: 30px;
@@ -14485,13 +14525,13 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  color: #8495A4;
+  color: #8495a4;
   font-size: 0.93rem;
   cursor: pointer;
 }
 
 .c-datePicker .c-datePicker__modal .c-datePicker__title .c-datePicker__title__all:hover, .c-datePicker-day .c-datePicker__modal .c-datePicker__title .c-datePicker__title__all:hover, .c-datePicker-days .c-datePicker__modal .c-datePicker__title .c-datePicker__title__all:hover, .c-datePicker-months .c-datePicker__modal .c-datePicker__title .c-datePicker__title__all:hover, .c-datePicker-month .c-datePicker__modal .c-datePicker__title .c-datePicker__title__all:hover {
-  color: #0156A2;
+  color: #0156a2;
 }
 
 .c-datePicker .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm, .c-datePicker-day .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm, .c-datePicker-days .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm, .c-datePicker-months .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm, .c-datePicker-month .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm {
@@ -14499,7 +14539,7 @@ body {
 }
 
 .c-datePicker .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm:hover, .c-datePicker-day .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm:hover, .c-datePicker-days .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm:hover, .c-datePicker-months .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm:hover, .c-datePicker-month .c-datePicker__modal .c-datePicker__title .c-datePicker__title__confirm:hover {
-  color: #0156A2;
+  color: #0156a2;
 }
 
 .c-datePicker .c-datePicker__modal .c-datePicker__yearPicker, .c-datePicker-day .c-datePicker__modal .c-datePicker__yearPicker, .c-datePicker-days .c-datePicker__modal .c-datePicker__yearPicker, .c-datePicker-months .c-datePicker__modal .c-datePicker__yearPicker, .c-datePicker-month .c-datePicker__modal .c-datePicker__yearPicker {
@@ -14564,7 +14604,7 @@ body {
 }
 
 .c-datePicker .c-datePicker__modal .c-datePicker__content li:hover, .c-datePicker-day .c-datePicker__modal .c-datePicker__content li:hover, .c-datePicker-days .c-datePicker__modal .c-datePicker__content li:hover, .c-datePicker-months .c-datePicker__modal .c-datePicker__content li:hover, .c-datePicker-month .c-datePicker__modal .c-datePicker__content li:hover {
-  background-color: #F7FBFF;
+  background-color: #f7fbff;
 }
 
 .c-datePicker .c-datePicker__modal .c-datePicker__footer, .c-datePicker-day .c-datePicker__modal .c-datePicker__footer, .c-datePicker-days .c-datePicker__modal .c-datePicker__footer, .c-datePicker-months .c-datePicker__modal .c-datePicker__footer, .c-datePicker-month .c-datePicker__modal .c-datePicker__footer {
@@ -14639,15 +14679,15 @@ body {
 }
 
 .c-datePicker-day .c-datePicker__content .is-no-this-month, .c-datePicker-days .c-datePicker__content .is-no-this-month, .c-datePicker-months .c-datePicker__content .is-no-this-month {
-  color: #D2DAE0;
+  color: #d2dae0;
 }
 
 .c-datePicker-day .c-datePicker__content .is-no-work, .c-datePicker-days .c-datePicker__content .is-no-work, .c-datePicker-months .c-datePicker__content .is-no-work {
-  color: #8495A4;
+  color: #8495a4;
 }
 
 .c-datePicker-day .c-datePicker__content .is-select-day, .c-datePicker-days .c-datePicker__content .is-select-day, .c-datePicker-months .c-datePicker__content .is-select-day {
-  background-color: #0156A2;
+  background-color: #0156a2;
   border-radius: 50%;
   color: #fff;
 }
@@ -14657,11 +14697,11 @@ body {
 }
 
 .c-datePicker-day .c-datePicker__content .is-select-range::before, .c-datePicker-days .c-datePicker__content .is-select-range::before, .c-datePicker-months .c-datePicker__content .is-select-range::before, .c-datePicker-day .c-datePicker__content .is-select-range-first::before, .c-datePicker-days .c-datePicker__content .is-select-range-first::before, .c-datePicker-months .c-datePicker__content .is-select-range-first::before, .c-datePicker-day .c-datePicker__content .is-select-range-lest::before, .c-datePicker-days .c-datePicker__content .is-select-range-lest::before, .c-datePicker-months .c-datePicker__content .is-select-range-lest::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 28px;
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
   height: 28px;
   z-index: -1;
 }
@@ -14718,7 +14758,7 @@ body {
 }
 
 .c-datePicker-months .c-datePicker__input .o-input-div span {
-  color: #0156A2;
+  color: #0156a2;
 }
 
 .c-datePicker-months .c-datePicker__modal {
@@ -14790,7 +14830,7 @@ body {
   color: #042340;
   font-size: 1.06rem;
   font-family: "Noto Sans TC", "sans-serif";
-  border-top: 1px solid #BAD4E5;
+  border-top: 1px solid #bad4e5;
 }
 
 .c-popover-checkPoint .c-popover__content li:first-child, .c-popover-filterS .c-popover__content li:first-child, .c-popover-filterM .c-popover__content li:first-child, .c-popover-filterL .c-popover__content li:first-child, .c-popover-wbsEdit .c-popover__content li:first-child, .c-popover-perspective .c-popover__content li:first-child, .c-popover-information .c-popover__content li:first-child {
@@ -14798,11 +14838,11 @@ body {
 }
 
 .c-popover-checkPoint .c-popover__content li:hover, .c-popover-filterS .c-popover__content li:hover, .c-popover-filterM .c-popover__content li:hover, .c-popover-filterL .c-popover__content li:hover, .c-popover-wbsEdit .c-popover__content li:hover, .c-popover-perspective .c-popover__content li:hover, .c-popover-information .c-popover__content li:hover {
-  background-color: #F7FBFF;
+  background-color: #f7fbff;
 }
 
 .c-popover-checkPoint .c-popover__content li:active, .c-popover-filterS .c-popover__content li:active, .c-popover-filterM .c-popover__content li:active, .c-popover-filterL .c-popover__content li:active, .c-popover-wbsEdit .c-popover__content li:active, .c-popover-perspective .c-popover__content li:active, .c-popover-information .c-popover__content li:active {
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
 }
 
 .c-popover-checkPoint .c-popover__content::before, .c-popover-filterS .c-popover__content::before, .c-popover-filterM .c-popover__content::before, .c-popover-filterL .c-popover__content::before, .c-popover-wbsEdit .c-popover__content::before, .c-popover-perspective .c-popover__content::before, .c-popover-information .c-popover__content::before {
@@ -14948,7 +14988,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  border-bottom: 1px solid #E2F1FE;
+  border-bottom: 1px solid #e2f1fe;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
 }
@@ -14959,10 +14999,10 @@ body {
 
 .c-writeHours {
   width: 85%;
-  border-radius: 1.33rem;
+  border-radius: 0.66rem;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  background-color: #F7FBFF;
+  background-color: #fff;
 }
 
 .c-popover__bg {
@@ -14985,20 +15025,15 @@ body {
 }
 
 .c-writeHours-title .is-no-this-months {
-  color: #8495A4;
+  color: #8495a4;
 }
 
 .c-writeHours-title .is-no-this-months .c-writeHours-title__item__hours {
-  border-bottom: 1px solid #8495A4;
+  border-bottom: 1px solid #8495a4;
 }
 
 .c-writeHours-title .is-active {
-  background-color: #F7FBFF;
-}
-
-.c-writeHours-title .is-active .c-writeHours-title__tag {
-  background-color: #042340;
-  color: #fff;
+  background-color: #fff;
 }
 
 .c-writeHours-title .is-today-tag {
@@ -15006,36 +15041,40 @@ body {
 }
 
 .c-writeHours-title .is-today-tag .hours {
-  color: #0868BD;
+  color: #0868bd;
 }
 
 .c-writeHours-title .is-today-tag::before {
-  content: "";
+  content: "Today";
   position: absolute;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
   width: 100%;
-  height: 10px;
+  height: 15px;
+  font-size: 0.93rem;
+  line-height: 15px;
+  color: #fff;
   margin-left: -1rem;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
 }
 
 .c-writeHours-title__item {
   padding: 0 1rem;
-  padding-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
   color: #042340;
-  background-color: #cfe3f5;
+  background-color: #e1e8ef;
   position: relative;
   width: 14.285714285714%;
   cursor: pointer;
 }
 
 .c-writeHours-title__item:first-child {
-  border-radius: 1.33rem 0 0 0;
+  border-radius: 0.66rem 0 0 0;
 }
 
 .c-writeHours-title__item:last-child {
-  border-radius: 0 1.33rem 0 0;
+  border-radius: 0 0.66rem 0 0;
 }
 
 .c-writeHours-title__item .c-writeHours-title__item__date {
@@ -15049,7 +15088,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 18px;
-  padding-top: 2rem;
+  padding-top: 1.8rem;
   font-weight: 400;
   font-family: "Baloo 2", cursive, "Noto Sans TC";
 }
@@ -15067,7 +15106,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 0.33rem;
-  height: 5rem;
+  height: 4.5rem;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -15095,7 +15134,6 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   font-weight: 700;
-  padding-left: 1rem;
 }
 
 .c-writeHours-title__item .c-writeHours-title__item__hours .hours span {
@@ -15110,8 +15148,9 @@ body {
 .c-writeHours-title__item .c-writeHours-title__tag {
   text-align: center;
   border-radius: 0.33rem;
-  padding: 3% 5%;
-  border: 1px solid #042340;
+  padding: 0.3rem;
+  background-color: #fb5b29;
+  color: #fff;
 }
 
 .c-writeHours-title__item .c-writeHours-title__tag:focus {
@@ -15121,7 +15160,7 @@ body {
 
 .c-writeHours-title__item .c-writeHours-title__content {
   font-size: 0.93rem;
-  line-height: 22px;
+  line-height: 1.33rem;
 }
 
 .c-writeHours-content {
@@ -15137,12 +15176,12 @@ body {
 }
 
 .c-writeHours-content .is-error-status .col .input-title {
-  color: #FB5B29;
+  color: #fb5b29;
 }
 
 .c-writeHours-content .is-error-status .col .select-wrapper {
   background-color: #fff;
-  border: 1px solid #FB5B29;
+  border: 1px solid #fb5b29;
 }
 
 .c-writeHours-content .is-error-status .hoursInput {
@@ -15150,23 +15189,23 @@ body {
 }
 
 .c-writeHours-content .is-error-status .hoursInput input {
-  border: 1px solid #FB5B29;
-  border-bottom: 1px solid #FB5B29;
+  border: 1px solid #fb5b29;
+  border-bottom: 1px solid #fb5b29;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.c-writeHours-content .is-error-status .hoursInput input[type=text]:not(.browser-default) {
-  border-bottom: 1px solid #FB5B29;
+.c-writeHours-content .is-error-status .hoursInput input[type="text"]:not(.browser-default) {
+  border-bottom: 1px solid #fb5b29;
   background-color: #fff;
 }
 
 .c-writeHours-content .is-error-status .hoursInput:after {
   position: absolute;
   white-space: nowrap;
-  color: #FB5B29;
+  color: #fb5b29;
   font-size: 12px;
-  padding-top: .01rem;
+  padding-top: 0.01rem;
   margin-top: 0.2rem;
   content: "僅能填寫至小數點第一位及阿拉伯數字";
 }
@@ -15180,11 +15219,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 1.2rem;
-  border-bottom: 1px solid #8495A4;
+  border-bottom: 1px solid #8495a4;
 }
 
 .c-writeHours-content__select div {
-  padding: 0 .3%;
+  padding: 0 0.3%;
 }
 
 .c-writeHours-content__select .input-title {
@@ -15192,7 +15231,7 @@ body {
 }
 
 .c-writeHours-content__select .input-title span {
-  color: #FB5B29;
+  color: #fb5b29;
 }
 
 .c-writeHours-content__select .hoursInput input {
@@ -15210,11 +15249,11 @@ body {
 }
 
 .c-writeHours-content__select button {
-  margin-left: .8%;
+  margin-left: 0.8%;
   margin-top: 1.6rem;
 }
 
-.c-writeHours-content__select input[type=text]:not(.browser-default) {
+.c-writeHours-content__select input[type="text"]:not(.browser-default) {
   margin: 1px;
 }
 
@@ -15226,7 +15265,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0.8rem 0;
-  border-bottom: 1px solid #D2DAE0;
+  border-bottom: 1px solid #d2dae0;
   color: #042340;
   font-size: 1.06rem;
 }
@@ -15267,8 +15306,8 @@ body {
 
 .l-main-login {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD url(../img/loginPage_bg.png) bottom left no-repeat;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD url(../img/loginPage_bg.png) bottom left no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd url(../img/loginPage_bg.png) bottom left no-repeat;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd url(../img/loginPage_bg.png) bottom left no-repeat;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15306,7 +15345,7 @@ body {
   padding: 2rem;
   width: 100%;
   min-width: 50rem;
-  background: #F7FBFF url(../img/loginPage_card.png) right bottom no-repeat;
+  background: #f7fbff url(../img/loginPage_card.png) right bottom no-repeat;
 }
 
 .c-card-login .c-card-login__title {
@@ -15334,11 +15373,11 @@ body {
 .c-card-login .c-card-login__content .c-card-login__list {
   margin: 2rem 0;
   line-height: 1.5rem;
-  color: #1E4160;
+  color: #1e4160;
 }
 
 .c-card-login .c-card-login__content .c-card-login__list a {
-  color: #1E4160;
+  color: #1e4160;
   text-decoration: underline;
 }
 
@@ -15441,33 +15480,33 @@ body {
   border-radius: 2.66rem;
   font-size: 0.93rem;
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
 }
 
 .o-btn:hover, .o-login-btn:hover, .o-btn-primary:hover, .o-btn-secondary:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .o-btn:focus, .o-login-btn:focus, .o-btn-primary:focus, .o-btn-secondary:focus {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
 }
 
 .o-btn-secondary {
-  background: #E2F1FE;
-  color: #1E4160;
+  background: #e2f1fe;
+  color: #1e4160;
 }
 
 .o-btn-secondary:hover {
-  background: #E2F1FE;
+  background: #e2f1fe;
 }
 
 .o-btn-secondary:focus {
-  background: #E2F1FE;
+  background: #e2f1fe;
 }
 
 .o-accordion_plus {
@@ -15488,13 +15527,13 @@ body {
   width: 100%;
   border-radius: 5px;
   height: 2px;
-  background: #0156A2;
+  background: #0156a2;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .o-accordion_plus .plus-icon .horizontal.open {
@@ -15506,13 +15545,13 @@ body {
   width: 100%;
   border-radius: 5px;
   height: 2px;
-  background: #0156A2;
+  background: #0156a2;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%) rotate(90deg);
           transform: translateY(-50%) rotate(90deg);
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .o-accordion_plus .plus-icon .vertical.open {
@@ -15546,13 +15585,13 @@ body {
 .o-calendar .o-calendar__week__title div {
   width: 100%;
   padding-bottom: 1%;
-  color: #8495A4;
+  color: #8495a4;
   font-size: 1.06rem;
 }
 
 .o-calendar .o-calendar__week__itemgroup {
-  border-top: solid 1px #BAD4E5;
-  border-right: solid 1px #BAD4E5;
+  border-top: solid 1px #bad4e5;
+  border-right: solid 1px #bad4e5;
 }
 
 .o-calendar .o-calendar__week__item {
@@ -15565,8 +15604,8 @@ body {
 }
 
 .o-calendar .o-calendar__week__item .item__date {
-  border-bottom: solid 1px #BAD4E5;
-  border-left: solid 1px #BAD4E5;
+  border-bottom: solid 1px #bad4e5;
+  border-left: solid 1px #bad4e5;
   width: 100%;
   height: 75px;
   position: relative;
@@ -15604,13 +15643,13 @@ body {
 }
 
 .o-calendar .o-calendar__week__item .is-date-active {
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
 }
 
-.o-input input[type=text]:not(.browser-default), .c-writeHours-content__select .hoursInput input[type=text]:not(.browser-default), .c-writeHours-content__select .otherInput input[type=text]:not(.browser-default), .c-search-list .c-search-item .c-search-item__input input[type=text]:not(.browser-default) {
+.o-input input[type="text"]:not(.browser-default), .c-writeHours-content__select .hoursInput input[type="text"]:not(.browser-default), .c-writeHours-content__select .otherInput input[type="text"]:not(.browser-default), .c-search-list .c-search-item .c-search-item__input input[type="text"]:not(.browser-default) {
   height: 38px;
   border-radius: 5px;
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
   border-bottom: 0;
   padding: 0 0.5rem;
   -webkit-box-sizing: border-box;
@@ -15630,7 +15669,7 @@ body {
   border: 0;
   resize: none;
   border-radius: 5px;
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
   border-bottom: 0;
   padding: 0.2rem 0.5rem;
   -webkit-box-sizing: border-box;
@@ -15642,7 +15681,7 @@ body {
   width: 100%;
   min-width: 160px;
   border-radius: 5px;
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
   position: relative;
   padding: 0.3rem 0 0.3rem 0.5rem;
   line-height: 1.2rem;
@@ -15673,12 +15712,12 @@ body {
   border-radius: 0.33rem;
   padding: 0.5rem;
   display: inline-block;
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
 }
 
 .o-tag-danger {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #FB5B29;
-  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #FB5B29;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #fb5b29;
+  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #fb5b29;
   padding: 0.08rem 0.5rem;
   margin-left: 0.8rem;
   font-family: "Baloo 2", cursive, "Noto Sans TC";
@@ -15694,11 +15733,11 @@ body {
 .o-switch label .lever {
   width: 60px;
   height: 28px;
-  background-color: #D2DAE0;
+  background-color: #d2dae0;
 }
 
 .o-switch label .lever::before {
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
   opacity: 0.5;
   width: 28px;
   height: 28px;
@@ -15712,26 +15751,26 @@ body {
   top: 0;
 }
 
-.o-switch label input[type=checkbox]:checked + .lever:after {
+.o-switch label input[type="checkbox"]:checked + .lever:after {
   background-color: #fff;
-  border: #0156A2 1px solid;
+  border: #0156a2 1px solid;
   left: 32px;
   top: 0;
 }
 
-.o-switch label input[type=checkbox]:checked + .lever:before {
+.o-switch label input[type="checkbox"]:checked + .lever:before {
   left: 32px;
   top: 0;
 }
 
-.o-switch label input[type=checkbox]:checked + .lever {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+.o-switch label input[type="checkbox"]:checked + .lever {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
   margin: 0;
 }
 
-.o-switch label input[type=checkbox]:checked:not(:disabled) ~ .lever:active::before {
-  background-color: #E2F1FE;
+.o-switch label input[type="checkbox"]:checked:not(:disabled) ~ .lever:active::before {
+  background-color: #e2f1fe;
 }
 
 .o-switch .switch-text {
@@ -15740,25 +15779,25 @@ body {
 }
 
 .is-no-this-months {
-  color: #D2DAE0;
+  color: #d2dae0;
 }
 
 .is-today {
-  background-color: #0156A2;
+  background-color: #0156a2;
   border-radius: 50%;
   color: #fff;
 }
 
 .text-danger {
-  color: #FB5B29;
+  color: #fb5b29;
 }
 
 .is-changeBackground {
-  background-color: #F7FBFF;
+  background-color: #f7fbff;
 }
 
 .is-disabled {
-  color: #8495A4;
+  color: #8495a4;
   cursor: default;
 }
 
@@ -15799,7 +15838,7 @@ body {
 }
 
 .daterangepicker .btn {
-  color: #8495A4;
+  color: #8495a4;
   background-color: #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -15823,7 +15862,7 @@ body {
 }
 
 .daterangepicker .calendar-table td .off {
-  color: #D2DAE0;
+  color: #d2dae0;
 }
 
 .daterangepicker .calendar-table tr {
@@ -15967,7 +16006,7 @@ body {
 }
 
 .l-main-content .l-main-content-list div .l-main-content-list__img:hover {
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
 }
 
 .l-main-content .l-main-content-list div .o-card {
@@ -16022,7 +16061,6 @@ body {
 
 .l-main-content .l-main-content-item .c-card-planPerson, .l-main-content .l-main-content-item .c-card-planClosed, .l-main-content .l-main-content-item .c-card-planHotkey, .l-main-content .l-main-content-item .l-mobile-footer-worksheet .c-card-workHotkey, .l-mobile-footer-worksheet .l-main-content .l-main-content-item .c-card-workHotkey, .l-main-content .l-main-content-item .c-card-planReport, .l-main-content .l-main-content-item .c-card-planReport-danger, .l-main-content .l-main-content-item .c-card-alertPlan {
   margin: 0 0.5rem 1rem 0.5rem;
-  max-width: 300px;
 }
 
 .l-main-content .l-main-content__upload .c-fileInput-upload, .l-main-content .l-main-content__upload .c-fileInput-add {
@@ -16048,18 +16086,17 @@ body {
 
 .change-card-to-list .l-main-content-item .l-main-content-item__listTitle {
   display: block;
-  background-color: #E2F1FE;
-  padding: 20px 0px 20px 1.5rem;
+  background-color: #e2f1fe;
+  padding: 1.33rem 0px 1.33rem 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: "Noto Sans TC", "sans-serif";
   font-size: 1.06rem;
   border-radius: 0.66rem 0.66rem 0 0;
-  border-bottom: 1px solid #0156A2;
+  border-bottom: 1px solid #0156a2;
   font-weight: 700;
   width: 100%;
-  line-height: 28px;
   max-width: 2560px;
 }
 
@@ -16100,7 +16137,7 @@ body {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 0px;
-  border-bottom: 1px solid #BAD4E5;
+  border-bottom: 1px solid #bad4e5;
 }
 
 .change-card-to-list .l-main-content-item .c-card-planPerson:hover, .change-card-to-list .l-main-content-item .c-card-planClosed:hover, .change-card-to-list .l-main-content-item .c-card-planHotkey:hover, .change-card-to-list .l-main-content-item .l-mobile-footer-worksheet .c-card-workHotkey:hover, .l-mobile-footer-worksheet .change-card-to-list .l-main-content-item .c-card-workHotkey:hover, .change-card-to-list .l-main-content-item .c-card-planReport:hover, .change-card-to-list .l-main-content-item .c-card-planReport-danger:hover, .change-card-to-list .l-main-content-item .c-card-alertPlan:hover {
@@ -16126,6 +16163,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 2rem;
 }
 
 .change-card-to-list .l-main-content-item .c-card-planPerson .c-card__tag span, .change-card-to-list .l-main-content-item .c-card-planClosed .c-card__tag span, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__tag span, .change-card-to-list .l-main-content-item .l-mobile-footer-worksheet .c-card-workHotkey .c-card__tag span, .l-mobile-footer-worksheet .change-card-to-list .l-main-content-item .c-card-workHotkey .c-card__tag span, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__tag span, .change-card-to-list .l-main-content-item .c-card-planReport-danger .c-card__tag span, .change-card-to-list .l-main-content-item .c-card-alertPlan .c-card__tag span {
@@ -16146,10 +16184,9 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   max-height: 3rem;
-  max-height: 56px;
-  display: -ms-flexbox;
-  display: flex;
-  line-height: 2.1333rem;
+  padding: 0 0.75rem 0 0;
+  max-height: 60px;
+  line-height: 30px;
 }
 
 .change-card-to-list .l-main-content-item .c-card-planPerson a, .change-card-to-list .l-main-content-item .c-card-planClosed a, .change-card-to-list .l-main-content-item .c-card-planHotkey a, .change-card-to-list .l-main-content-item .l-mobile-footer-worksheet .c-card-workHotkey a, .l-mobile-footer-worksheet .change-card-to-list .l-main-content-item .c-card-workHotkey a, .change-card-to-list .l-main-content-item .c-card-planReport a, .change-card-to-list .l-main-content-item .c-card-planReport-danger a, .change-card-to-list .l-main-content-item .c-card-alertPlan a {
@@ -16165,6 +16202,7 @@ body {
       -ms-flex-pack: start;
           justify-content: start;
   font-size: 1.06rem;
+  height: 2rem;
 }
 
 .change-card-to-list .l-main-content-item .c-card-planPerson .c-card__userInformation .c-card__userInformation__position, .change-card-to-list .l-main-content-item .c-card-planClosed .c-card__userInformation .c-card__userInformation__position, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__userInformation .c-card__userInformation__position, .change-card-to-list .l-main-content-item .l-mobile-footer-worksheet .c-card-workHotkey .c-card__userInformation .c-card__userInformation__position, .l-mobile-footer-worksheet .change-card-to-list .l-main-content-item .c-card-workHotkey .c-card__userInformation .c-card__userInformation__position, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__userInformation .c-card__userInformation__position, .change-card-to-list .l-main-content-item .c-card-planReport-danger .c-card__userInformation .c-card__userInformation__position, .change-card-to-list .l-main-content-item .c-card-alertPlan .c-card__userInformation .c-card__userInformation__position {
@@ -16240,11 +16278,6 @@ body {
 
 .l-main-content-title .l-main-content-text-sm img, .l-main-content .l-main-content-data .l-main-content-text-sm img, .l-main-content .l-main-content-between-title .l-main-content-text-sm img {
   margin-right: 0.5rem;
-}
-
-.l-main-have-nav-height {
-  height: calc(100vh - 260px);
-  overflow-y: scroll;
 }
 
 .toast-join-position {
@@ -16790,16 +16823,16 @@ body {
   display: inline-block;
   padding: 0.5rem;
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #FB5B29;
-  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #FB5B29;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #fb5b29;
+  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #fb5b29;
 }
 
 #todo .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__num span, #todo .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__num span {
   display: inline-block;
   color: #fff;
   padding: 0.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #FB5B29;
-  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #FB5B29;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #fb5b29;
+  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #fb5b29;
   border-radius: 0.33rem;
 }
 
@@ -16807,8 +16840,8 @@ body {
   display: inline-block;
   color: #fff;
   padding: 0.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #FB5B29;
-  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #FB5B29;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #fb5b29;
+  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #fb5b29;
   border-radius: 0.33rem;
 }
 
@@ -16817,7 +16850,7 @@ body {
 }
 
 #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .is-changeBackground .c-card__item__title .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .is-changeBackground .c-card__item__title .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .is-changeBackground .c-card__item__title .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .is-changeBackground .c-card__item__content .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .is-changeBackground .c-card__item__content .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .is-changeBackground .c-card__item__content .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .is-changeBackground .c-card__item__footer .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .is-changeBackground .c-card__item__footer .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .is-changeBackground .c-card__item__footer .c-card__tag__num span {
-  background-color: #F7FBFF;
+  background-color: #f7fbff;
 }
 
 #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent {
@@ -17020,7 +17053,7 @@ body {
 }
 
 #safe .c-modal-content p span, #safe .c-modal-alert .c-modal-alert__content .c-modal-content__scroll p span, .c-modal-alert .c-modal-alert__content #safe .c-modal-content__scroll p span {
-  color: #0156A2;
+  color: #0156a2;
   font-weight: 700;
 }
 
@@ -17195,16 +17228,16 @@ body {
 }
 
 #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .is-changeBackground .c-card__item__title .c-card__tag .c-card__tag__input form span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .is-changeBackground .c-card__item__title .c-card__tag .c-card__tag__input form span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .is-changeBackground .c-card__item__content .c-card__tag .c-card__tag__input form span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .is-changeBackground .c-card__item__content .c-card__tag .c-card__tag__input form span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .is-changeBackground .c-card__item__footer .c-card__tag .c-card__tag__input form span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .is-changeBackground .c-card__item__footer .c-card__tag .c-card__tag__input form span {
-  background: #F7FBFF;
+  background: #f7fbff;
 }
 
 #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .is-changeBackground .c-card__item__title .c-card__tag .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .is-changeBackground .c-card__item__title .c-card__tag .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .is-changeBackground .c-card__item__content .c-card__tag .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .is-changeBackground .c-card__item__content .c-card__tag .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .is-changeBackground .c-card__item__footer .c-card__tag .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .is-changeBackground .c-card__item__footer .c-card__tag .c-card__tag__num span {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #FB5B29;
-  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #FB5B29;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #fb5b29;
+  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #fb5b29;
 }
 
 #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .is-changeBackground .c-card__item__title .c-card__tag .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .is-changeBackground .c-card__item__title .c-card__tag .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .is-changeBackground .c-card__item__content .c-card__tag .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .is-changeBackground .c-card__item__content .c-card__tag .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .is-changeBackground .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__tag__status, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .is-changeBackground .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__tag__status {
-  background: #F7FBFF;
+  background: #f7fbff;
 }
 
 #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__title h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__title h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__title h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__content h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__content h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__content h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__footer h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer h2 {
@@ -17450,16 +17483,16 @@ body {
   display: inline-block;
   padding: 0.5rem;
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #FB5B29;
-  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #FB5B29;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #fb5b29;
+  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #fb5b29;
 }
 
 #alertPlen .list-width .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__num span, #alertPlen .list-width .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__num span {
   display: inline-block;
   color: #fff;
   padding: 0.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #FB5B29;
-  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #FB5B29;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #fb5b29;
+  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #fb5b29;
   border-radius: 0.33rem;
 }
 
@@ -17467,8 +17500,8 @@ body {
   display: inline-block;
   color: #fff;
   padding: 0.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #FB5B29;
-  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #FB5B29;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #fb5b29;
+  background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #fb5b29;
   border-radius: 0.33rem;
 }
 
@@ -17477,7 +17510,7 @@ body {
 }
 
 #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .is-changeBackground .c-card__item__title .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .is-changeBackground .c-card__item__title .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .is-changeBackground .c-card__item__title .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .is-changeBackground .c-card__item__content .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .is-changeBackground .c-card__item__content .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .is-changeBackground .c-card__item__content .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .is-changeBackground .c-card__item__footer .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .is-changeBackground .c-card__item__footer .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .is-changeBackground .c-card__item__footer .c-card__tag__num span {
-  background-color: #F7FBFF;
+  background-color: #f7fbff;
 }
 
 #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent {
@@ -17684,7 +17717,7 @@ body {
 }
 
 .change-card-to-list .c-card-manhourSofar, .change-card-to-list .c-card-manhourSearch, .change-card-to-list .c-card-percent, .change-card-to-list .c-card-percentCheck, .change-card-to-list .c-card-planPerson, .change-card-to-list .c-card-planClosed, .change-card-to-list .c-card-planHotkey, .change-card-to-list .l-mobile-footer-worksheet .c-card-workHotkey, .l-mobile-footer-worksheet .change-card-to-list .c-card-workHotkey, .change-card-to-list .c-card-planReport, .change-card-to-list .c-card-planReport-danger, .change-card-to-list .c-card-alertPlan, .change-card-to-list .c-card-department {
-  border-bottom: 1px solid #BAD4E5;
+  border-bottom: 1px solid #bad4e5;
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 0;
@@ -17778,11 +17811,11 @@ body {
 }
 
 #WBS .l-main-content__wbslist .table-body__subtitle .col span, #WBS .l-main-content .l-main-content__workTypelist .table-body__subtitle .col span, .l-main-content #WBS .l-main-content__workTypelist .table-body__subtitle .col span {
-  color: #8495A4;
+  color: #8495a4;
 }
 
 #WBS .l-main-content__wbslist .table-body__item .col span, #WBS .l-main-content .l-main-content__workTypelist .table-body__item .col span, .l-main-content #WBS .l-main-content__workTypelist .table-body__item .col span, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .col span, .l-main-content #WBS .l-main-content__wbslist .table-body .table-body__conutItem .col span, .l-main-content .l-main-content__wbslist .table-body #WBS .l-main-content__workTypelist .table-body__conutItem .col span, .l-main-content .l-main-content__workTypelist .table-body #WBS .l-main-content__wbslist .table-body__conutItem .col span, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .col span, .l-main-content #WBS .l-main-content__workTypelist .table-body .table-body__conutItem .col span {
-  color: #8495A4;
+  color: #8495a4;
 }
 
 #WBS .l-main-content__wbslist .table-body__item .col .select-wrapper span, #WBS .l-main-content .l-main-content__workTypelist .table-body__item .col .select-wrapper span, .l-main-content #WBS .l-main-content__workTypelist .table-body__item .col .select-wrapper span, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .col .select-wrapper span, .l-main-content #WBS .l-main-content__wbslist .table-body .table-body__conutItem .col .select-wrapper span, .l-main-content .l-main-content__wbslist .table-body #WBS .l-main-content__workTypelist .table-body__conutItem .col .select-wrapper span, .l-main-content .l-main-content__workTypelist .table-body #WBS .l-main-content__wbslist .table-body__conutItem .col .select-wrapper span, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .col .select-wrapper span, .l-main-content #WBS .l-main-content__workTypelist .table-body .table-body__conutItem .col .select-wrapper span {
@@ -18318,12 +18351,12 @@ body {
 }
 
 #notReachedtime .is-error-status .c-search-list .c-search-item .c-search-item__percentTitle {
-  color: #FB5B29;
+  color: #fb5b29;
 }
 
 #notReachedtime .is-error-status .c-search-list .c-search-item .c-search-item__input input {
   background-color: #fff;
-  border: 1px solid #FB5B29;
+  border: 1px solid #fb5b29;
 }
 
 #memberstime_execute .change-card-to-list .c-card-manhourSearch:hover {
@@ -18355,7 +18388,7 @@ body {
 
 #memberstime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div, #departmenttime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div, #universalPlan .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div {
   background-color: #fff;
-  border: 1px #FB5B29 solid;
+  border: 1px #fb5b29 solid;
 }
 
 #memberstime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after, #departmenttime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after, #universalPlan .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after {
@@ -18367,7 +18400,7 @@ body {
 }
 
 #memberstime .is-error-status .c-search-list .c-search-item__departmentTitle, #departmenttime .is-error-status .c-search-list .c-search-item__departmentTitle, #universalPlan .is-error-status .c-search-list .c-search-item__departmentTitle {
-  color: #FB5B29;
+  color: #fb5b29;
 }
 
 #memberstime .c-dropdown-departmentCheck .c-dropdown__input .o-input-div, #departmenttime .c-dropdown-departmentCheck .c-dropdown__input .o-input-div, #universalPlan .c-dropdown-departmentCheck .c-dropdown__input .o-input-div {
@@ -18425,7 +18458,7 @@ body {
 
 .l-main-content__cardGroup .l-main-content__card, .l-main-content__cardGroup .l-main-content__dbcard {
   margin-bottom: 0;
-  border-radius: 1.33rem;
+  border-radius: 0.66rem;
 }
 
 .l-main-content__cardGroup .l-main-content__cardGroup__item {
@@ -18536,7 +18569,7 @@ body {
   font-size: 60px;
   font-weight: 700;
   text-align: center;
-  color: #0156A2;
+  color: #0156a2;
 }
 
 .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .o-input input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .o-input input, .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .o-input input, .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .o-input input, .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .hoursInput input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .hoursInput input, .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .hoursInput input, .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .hoursInput input, .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .otherInput input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .otherInput input, .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .otherInput input, .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .otherInput input, .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .c-search-item__input input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .c-search-item__input input, .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .c-search-item__input input, .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .c-search-item__input input {
@@ -18547,7 +18580,7 @@ body {
   font-weight: 700;
   padding: 0.5rem;
   font-size: 60px;
-  color: #0156A2;
+  color: #0156a2;
 }
 
 .l-main-content__card .l-main-content__maintain .l-main-content__maintain__num .o-input-lg input, .l-main-content__dbcard .l-main-content__maintain .l-main-content__maintain__num .o-input-lg input, .l-main-content__card .l-main-content__notreached .l-main-content__maintain__num .o-input-lg input, .l-main-content__dbcard .l-main-content__notreached .l-main-content__maintain__num .o-input-lg input {
@@ -18611,7 +18644,7 @@ body {
 }
 
 .l-main-content__dbcard .l-main-content__card__item {
-  border-right: 1px solid #BAD4E5;
+  border-right: 1px solid #bad4e5;
   padding-right: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -18677,8 +18710,8 @@ body {
 
 .l-mobile-main-login {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD url(../img/loginPage_bg.png) top left no-repeat;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD url(../img/loginPage_bg.png) top left no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd url(../img/loginPage_bg.png) top left no-repeat;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd url(../img/loginPage_bg.png) top left no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18769,7 +18802,7 @@ body {
   padding-top: 3.14rem;
   padding-bottom: 4.28rem;
   overflow: scroll;
-  background: #EDF2F5;
+  background: #edf2f5;
 }
 
 .l-mobile-list-main {
@@ -18781,8 +18814,8 @@ body {
   width: 100%;
   position: absolute;
   top: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18796,8 +18829,8 @@ body {
 }
 
 .l-mobile-date-navbar {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
   position: absolute;
   top: 0;
   z-index: 99;
@@ -18919,8 +18952,8 @@ body {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD url(../img/loginPage_bg.png) top left no-repeat;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD url(../img/loginPage_bg.png) top left no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd url(../img/loginPage_bg.png) top left no-repeat;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd url(../img/loginPage_bg.png) top left no-repeat;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -18951,8 +18984,8 @@ body {
 .l-mobile-login-content .l-mobile-login-content_logout_btn {
   width: 21.9rem;
   height: 3.19rem;
-  background: #EDF2F5;
-  color: #0156A2;
+  background: #edf2f5;
+  color: #0156a2;
   font-size: 1.14rem;
   border-radius: 0.7rem;
   font-weight: bold;
@@ -18985,12 +19018,12 @@ body {
   font-weight: 700;
   font-family: "Noto Sans TC", "sans-serif";
   font-size: 2.85rem;
-  color: #0156A2;
+  color: #0156a2;
   border-radius: 50%;
   width: 6.5rem;
   height: 6.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#64FFEC), to(rgba(255, 255, 255, 0))), #1FEBBA;
-  background: linear-gradient(180deg, #64FFEC 0%, rgba(255, 255, 255, 0) 100%), #1FEBBA;
+  background: -webkit-gradient(linear, left top, left bottom, from(#64ffec), to(rgba(255, 255, 255, 0))), #1febba;
+  background: linear-gradient(180deg, #64ffec 0%, rgba(255, 255, 255, 0) 100%), #1febba;
 }
 
 .l-mobile-login-content .l-mobile-login-content_main .chinese_name {
@@ -19076,7 +19109,7 @@ body {
 }
 
 .l-mobile-content .l-mobile-content_list .is-li-active {
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
 }
 
 .l-mobile-content .l-mobile-content_list li {
@@ -19094,7 +19127,7 @@ body {
 }
 
 .l-mobile-content .l-mobile-content_list li:active {
-  background-color: #E2F1FE;
+  background-color: #e2f1fe;
 }
 
 .l-mobile-content .l-mobile-content_list li a {
@@ -19129,7 +19162,7 @@ body {
 }
 
 .l-mobile-content .l-mobile-content_planlist .is-error span {
-  color: #FB5B29;
+  color: #fb5b29;
 }
 
 .l-mobile-content li {
@@ -19166,7 +19199,7 @@ body {
 }
 
 .l-mobile-content li .planlist-danger-text {
-  color: #FB5B29;
+  color: #fb5b29;
 }
 
 .l-mobile-content li button {
@@ -19248,7 +19281,7 @@ body {
 
 .l-mobile-homepage .l-mobile-content_text {
   text-align: center;
-  color: #8495A4;
+  color: #8495a4;
   font-size: 1rem;
   margin-top: 1.07rem;
 }
@@ -19339,7 +19372,7 @@ body {
 }
 
 .l-mobile-homepage .c-card-workcard a .workcard_time .workcard_time_title {
-  color: #8495A4;
+  color: #8495a4;
   font-size: 1rem;
   font-family: "Noto Sans TC", "sans-serif";
   margin-bottom: 2rem;
@@ -19367,7 +19400,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  color: #FB5B29;
+  color: #fb5b29;
   background: #fff;
   width: 100%;
   line-height: 1.6rem;
@@ -19401,8 +19434,8 @@ body {
 .l-mobile-footer-btn, .l-mobile-footer-time {
   width: 100%;
   height: 3.9rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19421,15 +19454,15 @@ body {
 }
 
 .l-mobile-footer-btn:hover, .l-mobile-footer-time:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868BD;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868BD;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
 }
 
 .l-mobile-footer-time {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  color: #EDF2F5;
+  color: #edf2f5;
 }
 
 .l-mobile-footer-time .l-mobile-footer-time_title {
@@ -19498,7 +19531,7 @@ body {
 }
 
 .l-mobile-footer-worksheet .l-mobile-footer-worksheet_title button {
-  color: #8495A4;
+  color: #8495a4;
 }
 
 .l-mobile-footer-worksheet .l-mobile-footer-worksheet_content {

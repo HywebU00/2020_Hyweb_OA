@@ -26,6 +26,11 @@
               <div class="user__number">A9005</div>
               <div class="user__department">U20使用者經驗企劃部</div>
             </div>
+            <button class="c-sidebar-content__user__logout" >
+              <!-- <div class="">登出</div> -->
+              <!-- <img src="img/o-logout.svg" alt=""/> -->
+              <div class="login-btn">登出</div>
+            </button>
           </div>
           <div class="c-sidebar-content__listGroup">
             <div class="c-sidebar-content__list">
@@ -136,13 +141,15 @@
           </div>
         </div>
         <div class="c-sidebar-btnlist">
-          <div class="c-sidebar-btnlist__item c-sidebar-btnlist__logout">
+          <!-- <div class="c-sidebar-btnlist__item c-sidebar-btnlist__logout">
             <img src="img/o-logout.svg" alt="" />
             <div class="login-btn">登出</div>
-          </div>
+          </div> -->
           <div class="c-sidebar-btnlist__item">
-            <img class="menu-btn" src="img/o-arrowLeft.svg" alt="" />
-            <img class="menu-btn__open" src="img/o-arrowRight.svg" alt="" />
+            <button class="menu-btn"><img src="img/o-arrowLeft.svg" alt="" /></button>
+            <button class="menu-btn__open"><img src="img/o-arrowRight.svg" alt="" /></button>
+            <!-- <img class="menu-btn" src="img/o-arrowLeft.svg" alt="" />
+            <img class="menu-btn__open" src="img/o-arrowRight.svg" alt="" /> -->
           </div>
         </div>
       </div>
@@ -167,7 +174,6 @@
                   <span>日</span>
                 </div>
                 <div class="c-writeHours-title__item__hours">
-                  <div class="text">已填<br />時數</div>
                   <div class="hours">8</div>
                 </div>
                 <div class="c-writeHours-title__content"></div>
@@ -178,7 +184,6 @@
                   <span>一</span>
                 </div>
                 <div class="c-writeHours-title__item__hours">
-                  <div class="text">已填<br />時數</div>
                   <div class="hours"><img src="img/o-dayoff.svg" alt="" /></div>
                 </div>
                 <div class="c-writeHours-title__content">
@@ -190,7 +195,6 @@
                   9/2 <span>二</span>
                 </div>
                 <div class="c-writeHours-title__item__hours">
-                  <div class="text">已填<br />時數</div>
                   <div class="hours">0</div>
                 </div>
                 <div class="c-writeHours-title__content">
@@ -202,7 +206,6 @@
                   9/3 <span>三</span>
                 </div>
                 <div class="c-writeHours-title__item__hours">
-                  <div class="text">已填<br />時數</div>
                   <div class="hours">3 <span>.5</span></div>
                 </div>
                 <div class="c-writeHours-title__content">
@@ -219,20 +222,17 @@
                   9/4 <span>四</span>
                 </div>
                 <div class="c-writeHours-title__item__hours">
-                  <div class="text">已填<br />時數</div>
                   <div class="hours">0</div>
                 </div>
                 <div class="c-writeHours-title__content">
                   <div class="text-danger">尚有8小時未填</div>
                 </div>
               </div>
-
               <div class="c-writeHours-title__item is-active" data-num="6">
                 <div class="c-writeHours-title__item__date">
                   9/5 <span>五</span>
                 </div>
                 <div class="c-writeHours-title__item__hours">
-                  <div class="text">已填<br />時數</div>
                   <div class="hours">0</div>
                 </div>
                 <div class="c-writeHours-title__content"></div>
@@ -242,7 +242,6 @@
                   9/6 <span>六</span>
                 </div>
                 <div class="c-writeHours-title__item__hours">
-                  <div class="text">已填<br />時數</div>
                   <div class="hours">0</div>
                 </div>
                 <div class="c-writeHours-title__content"></div>
@@ -862,6 +861,85 @@
                   </div>
                 </div>
                 <div class="row c-writeHours-content__item">
+                  <div class="c-writeHours-content__item__title col s4">
+                    2020年度地方版公務出國報告系統無障礙2.0規範ＡＡ等級標章申請作業採購案
+                  </div>
+                  <div class="col s2">系統開發與設計</div>
+                  <div class="col s2">網站介面規劃與設計</div>
+                  <div class="col s1">2</div>
+                  <div class="col s2"></div>
+                  <div class="col s1 c-writeHours-content__btnGroup">
+                    <button class="">
+                      <img src="img/o-edit.svg" alt="" />
+                    </button>
+                    <button class="">
+                      <img src="img/o-delete.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="row c-writeHours-content__item">
+                  <div class="col s4">2020智慧空間管理系..</div>
+                  <div class="col s2">系統開發與設計</div>
+                  <div class="col s2">網站介面規劃與設計</div>
+                  <div class="col s1">2</div>
+                  <div class="col s2"></div>
+                  <div class="col s1 c-writeHours-content__btnGroup">
+                    <button class="">
+                      <img src="img/o-edit.svg" alt="" />
+                    </button>
+                    <button class="">
+                      <img src="img/o-delete.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="row c-writeHours-content__item">
+                  <div class="col s4">2020智慧空間管理系..</div>
+                  <div class="col s2">系統開發與設計</div>
+                  <div class="col s2">網站介面規劃與設計</div>
+                  <div class="col s1">2</div>
+                  <div class="col s2"></div>
+                  <div class="col s1 c-writeHours-content__btnGroup">
+                    <button class="">
+                      <img src="img/o-edit.svg" alt="" />
+                    </button>
+                    <button class="">
+                      <img src="img/o-delete.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="row c-writeHours-content__item">
+                  <div class="c-writeHours-content__item__title col s4">
+                    2020年度地方版公務出國報告系統無障礙2.0規範ＡＡ等級標章申請作業採購案
+                  </div>
+                  <div class="col s2">系統開發與設計</div>
+                  <div class="col s2">網站介面規劃與設計</div>
+                  <div class="col s1">2</div>
+                  <div class="col s2"></div>
+                  <div class="col s1 c-writeHours-content__btnGroup">
+                    <button class="">
+                      <img src="img/o-edit.svg" alt="" />
+                    </button>
+                    <button class="">
+                      <img src="img/o-delete.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="row c-writeHours-content__item">
+                  <div class="col s4">2020智慧空間管理系..</div>
+                  <div class="col s2">系統開發與設計</div>
+                  <div class="col s2">網站介面規劃與設計</div>
+                  <div class="col s1">2</div>
+                  <div class="col s2"></div>
+                  <div class="col s1 c-writeHours-content__btnGroup">
+                    <button class="">
+                      <img src="img/o-edit.svg" alt="" />
+                    </button>
+                    <button class="">
+                      <img src="img/o-delete.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="row c-writeHours-content__item">
                   <div class="col s4">2020智慧空間管理系..</div>
                   <div class="col s2">系統開發與設計</div>
                   <div class="col s2">網站介面規劃與設計</div>
@@ -1143,7 +1221,30 @@
                       </div>
                     </div>
                   </div>
-                  <button class="c-card-planHotkey__btn">加入此工作</button>
+                  <!-- <button class="c-card-planHotkey__btn">加入此工作</button> -->
+                </div>
+                <div class="c-card-planHotkey">
+                  <div class="c-card__content">
+                    <div class="c-card__tag">
+                      <span class="">2020WEV24H</span>
+                    </div>
+                    <h2>
+                      2020智慧空間管理系109年台灣國際專業展網站強化案際專業展網站強化案
+                    </h2>
+                    <div class="c-card__development">
+                      <div class="c-card__development__item">
+                        <img src="img/o-branch.svg" alt="" />
+                        <span
+                          >系統開發與設計統系統開發與設計統系統開發與設計統</span
+                        >
+                      </div>
+                      <div class="c-card__development__item__subproject">
+                        <img src="img/o-branch.svg" alt="" />
+                        <span>網站頁面規劃與</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <button class="c-card-planHotkey__btn">加入此工作</button> -->
                 </div>
                 <div class="c-card-planHotkey">
                   <div class="c-card__content">
@@ -1166,7 +1267,7 @@
                       </div>
                     </div>
                   </div>
-                  <button class="c-card-planHotkey__btn">加入此工作</button>
+                  <!-- <button class="c-card-planHotkey__btn">加入此工作</button> -->
                 </div>
                 <div class="c-card-planHotkey">
                   <div class="c-card__content">
@@ -1189,7 +1290,7 @@
                       </div>
                     </div>
                   </div>
-                  <button class="c-card-planHotkey__btn">加入此工作</button>
+                  <!-- <button class="c-card-planHotkey__btn">加入此工作</button> -->
                 </div>
               </div>
             </div>
@@ -1204,6 +1305,6 @@
     <!-- 自定義 js -->
     <script src="js/layout.js"></script>
     <script src="js/compontent.js"></script>
-    <script src="js/scrollbar_setting.js"></script> 
+    <!-- <script src="js/scrollbar_setting.js"></script>  -->
   </body>
 </html>
