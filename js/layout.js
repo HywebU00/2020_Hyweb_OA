@@ -14,16 +14,16 @@ if (menu_btn_open != null) {
     sidebar.classList.add("sidebar__is-open");
     menu_btn.style.display = "block";
     menu_btn_open.style.display = "none";
-    l_Main_Content.forEach((item) => {
-      item.style.width = "calc(100vw - 267px)";
-    });
+    // l_Main_Content.forEach((item) => {
+    //   item.style.width = "calc(100vw - 267px)";
+    // });
     // search bar 寬度更動
-    let searchWidth = document.querySelectorAll(".c-search");
-    if (searchWidth != null) {
-      searchWidth.forEach((item) => {
-        item.style.width = "calc(100vw - 267px)";
-      });
-    }
+    // let searchWidth = document.querySelectorAll(".c-search");
+    // if (searchWidth != null) {
+    //   searchWidth.forEach((item) => {
+    //     item.style.width = "calc(100vw - 267px)";
+    //   });
+    // }
 
     fullname();
   }
@@ -34,16 +34,16 @@ if (menu_btn != null) {
     sidebar.classList.remove("sidebar__is-open");
     menu_btn.style.display = "none";
     menu_btn_open.style.display = "block";
-    l_Main_Content.forEach((item) => {
-      item.style.width = "calc(100vw - 142px)";
-    });
+    // l_Main_Content.forEach((item) => {
+    //   item.style.width = "calc(100vw - 142px)";
+    // });
     // search bar 寬度更動
-    let searchWidth = document.querySelectorAll(".c-search");
-    if (searchWidth != null) {
-      searchWidth.forEach((item) => {
-        item.style.width = "calc(100vw - 142px)";
-      });
-    }
+    // let searchWidth = document.querySelectorAll(".c-search");
+    // if (searchWidth != null) {
+    //   searchWidth.forEach((item) => {
+    //     item.style.width = "calc(100vw - 142px)";
+    //   });
+    // }
     firstname();
   }
   menu_btn.addEventListener("click", closemenu);

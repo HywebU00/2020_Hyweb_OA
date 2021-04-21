@@ -3,7 +3,8 @@
 //+++++++++++++++++++++++++++++++
 document.addEventListener("DOMContentLoaded", function () {
   let l_main_content = document.querySelectorAll(".l-main-content");
-  let l_main_writeHours = document.querySelectorAll(".l-main-writeHours");
+  let l_main = document.querySelectorAll(".l-main");
+  //let l_main_writeHours = document.querySelectorAll(".l-main-writeHours");
   let scrollbar_style = document.querySelectorAll(".js-scrollbar-style");
   let c_modal_content_sidebar = document.querySelectorAll(
     ".c-modal-content__sidebar"
@@ -17,9 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   //menu scroll
-  let c_sidebar_content_listGroup = document.querySelectorAll(
-    ".c-sidebar-content__listGroup"
-  );
+  // let c_sidebar_content_listGroup = document.querySelectorAll(
+  //   ".c-sidebar-content__listGroup"
+  // );
   let addMember_content = document.querySelectorAll(".addMember-content");
 
   //modal scroll
@@ -60,15 +61,15 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  OverlayScrollbars(c_sidebar_content_listGroup, {
-    className: "os-theme-dark",
-    sizeAutoCapable: true,
-    paddingAbsolute: true,
-    scrollbars: {
-      clickScrolling: true,
-      autoHide: "leave",
-    },
-  });
+  // OverlayScrollbars(c_sidebar_content_listGroup, {
+  //   className: "os-theme-dark",
+  //   sizeAutoCapable: true,
+  //   paddingAbsolute: true,
+  //   scrollbars: {
+  //     clickScrolling: true,
+  //     autoHide: "leave",
+  //   },
+  // });
   OverlayScrollbars(l_main_content, {
     className: "os-theme-dark",
     sizeAutoCapable: true,
@@ -83,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  OverlayScrollbars(l_main_writeHours, {
+  OverlayScrollbars(l_main, {
     className: "os-theme-dark",
     sizeAutoCapable: true,
     paddingAbsolute: true,
