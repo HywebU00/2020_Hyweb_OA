@@ -716,6 +716,7 @@
 
 //breadcrumb
 .c-breadcrumb {
+	margin-top: 0.5rem;
 	div {
 		padding: 0 0.3rem;
 		margin-bottom: 0.1rem;
@@ -3805,5 +3806,29 @@
 
 	.drp-selected {
 		display: none;
+	}
+}
+
+// scrollbar setting
+// firfox無效
+// 設定scrollbar背景色
+// body::-webkit-scrollbar,body::-webkit-scrollbar-track {
+//     background-color: #FFF
+// }
+.l-main {
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 5px;
+		background-color: $hyweb-lighblue;
+	}
+}
+// 設定scrollbar寬度
+// 設定scrollbar實體顏色，可設定圓角
+.l-main {
+	&::-webkit-scrollbar-thumb {
+		border-radius: 5px;
+		background-color: $sec2;
 	}
 }
