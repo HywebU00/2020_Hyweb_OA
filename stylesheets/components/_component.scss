@@ -726,12 +726,11 @@
 	color: $gray2;
 	font-weight: 400;
 	font-family: $font-family;
+	font-size: $font-size-m;
 	align-items: center;
 	a {
 		color: $gray3;
 	}
-	//border-bottom:1px solid $gray4;
-	//padding-bottom:0.3rem;
 }
 
 // accordion
@@ -3101,8 +3100,8 @@
 		border-radius: $tag-radius;
 		//padding: 3% 5%;
 		padding: 0.3rem;
-		background-color: $red;
-		color: #fff;
+		background-color: $hyweb-green;
+		color: $gray1;
 		//border: 1px solid $gray1;
 
 		&:focus {

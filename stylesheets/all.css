@@ -12681,6 +12681,7 @@ body {
   color: #1e4160;
   font-weight: 400;
   font-family: "Noto Sans TC", "sans-serif";
+  font-size: 14px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -15156,8 +15157,8 @@ body {
   text-align: center;
   border-radius: 0.33rem;
   padding: 0.3rem;
-  background-color: #fb5b29;
-  color: #fff;
+  background-color: #1febba;
+  color: #042340;
 }
 
 .c-writeHours-title__item .c-writeHours-title__tag:focus {
