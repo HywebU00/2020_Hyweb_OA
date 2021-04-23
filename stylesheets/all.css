@@ -11011,7 +11011,7 @@ body {
 }
 
 .l-main-content .l-main-content__wbslist .table-footer, .l-main-content .l-main-content__workTypelist .table-footer {
-  background-color: #e2f1fe;
+  background-color: #e1e8ef;
   padding: 1.5rem 0 1.5rem 0;
   border-radius: 0 0 0.66rem 0.66rem;
   font-weight: 700;
@@ -11205,7 +11205,6 @@ body {
 }
 
 .l-main-content .l-main-content__workTypelist .table-footer {
-  background-color: #e2f1fe;
   padding: 1.5rem 0 1.5rem 0;
   border-radius: 0 0 0.66rem 0.66rem;
   font-weight: 700;
@@ -11252,7 +11251,7 @@ body {
 }
 
 .l-main-content-table .table-thead {
-  background-color: #e2f1fe;
+  background-color: #e1e8ef;
   border-bottom: 1px solid #0156a2;
   border-radius: 0.66rem 0.66rem 0 0;
   color: #042340;
@@ -11396,6 +11395,14 @@ body {
 
 .l-main-writeHours {
   height: calc(100vh - 120px);
+  position: relative;
+}
+
+.l-main-writeHours:after {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 100%;
 }
 
 .l-main-writeHours .c-writeHours {
