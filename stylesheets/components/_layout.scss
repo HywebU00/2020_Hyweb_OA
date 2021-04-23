@@ -956,7 +956,7 @@ body {
 		}
 
 		.table-footer {
-			background-color: $hyweb-lighblue;
+			background-color: $gray6; //$hyweb-lighblue;
 			padding: 1.5rem 0 1.5rem 0;
 			border-radius: 0 0 $table-radius $table-radius;
 			font-weight: 700;
@@ -1115,7 +1115,7 @@ body {
 		}
 
 		.table-footer {
-			background-color: $hyweb-lighblue;
+			// background-color: $gray6; //$hyweb-lighblue;
 			padding: 1.5rem 0 1.5rem 0;
 			border-radius: 0 0 $table-radius $table-radius;
 			font-weight: 700;
@@ -1152,7 +1152,7 @@ body {
 	}
 
 	.table-thead {
-		background-color: $hyweb-lighblue;
+		background-color: $gray6; //$hyweb-lighblue;
 		border-bottom: 1px solid $hyweb-blue;
 		border-radius: $table-radius $table-radius 0 0;
 		color: $gray1;
@@ -1259,8 +1259,14 @@ body {
 .l-main-writeHours {
 	//overflow-y: scroll;
 	height: calc(100vh - 120px);
+	position: relative;
 	//padding: 0 0.5rem 0.5rem 0.5rem;
-
+	&:after {
+		position: absolute;
+		content: "";
+		height: 1rem;
+		width: 100%;
+	}
 	.c-writeHours {
 		min-height: 100%;
 		//min-height: calc(100% - 50px);
