@@ -89,7 +89,6 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: right;
-		margin-bottom: 2.5rem;
 	}
 	.l-main-content__upload {
 		.c-fileInput-upload {
@@ -109,10 +108,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-
+		margin-bottom: 1rem;
 		.l-main-content-item__listTitle {
 			display: block;
-			background-color: $hyweb-lighblue;
+			background-color: $gray6; //$hyweb-lighblue;
 			padding: 1.33rem 0px 1.33rem 1.5rem;
 			display: flex;
 			font-family: $font-family;
@@ -173,15 +172,17 @@
 			h2 {
 				width: 65%;
 				font-weight: 400;
-				@include db_ellipsisText;
+				//@include db_ellipsisText;
 				padding: 0 0.75rem 0 0;
-				max-height: 60px;
-				line-height: 30px;
-				//max-height: 56px;
-				// line-height: 2.15rem;//2.1333rem;
+				//max-height: 60px;
+				line-height: 1.33rem; //30px;
+				max-height: none;
+				display: block;
 			}
 			a {
 				padding: 0.83rem 0rem 0.83rem 1.33rem;
+				display: flex;
+				align-items: center;
 			}
 			width: 100%;
 			margin: 0;

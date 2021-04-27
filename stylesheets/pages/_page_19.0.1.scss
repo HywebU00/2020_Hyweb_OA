@@ -1,248 +1,248 @@
 #membertime {
-    .l-main-tabs {
-        margin-bottom: 5px;
-    }
+	.l-main-tabs {
+		margin-bottom: 5px;
+	}
 
-    .c-datePicker__modal {
-        .c-datePicker__yearPicker {
-            button {
-                border-radius: 50%;
-            }
-        }
-    }
+	.c-datePicker__modal {
+		.c-datePicker__yearPicker {
+			button {
+				border-radius: 50%;
+			}
+		}
+	}
 
-    .l-main-content-item {
-        .c-card-manhourSofar {
-            margin-bottom: 0;
-        }
-    }
+	.l-main-content-item {
+		margin-bottom: 1.5rem;
+		.c-card-manhourSofar {
+			margin-bottom: 1rem;
+		}
+	}
 
-    .change-card-to-list {
-        .l-main-content-item__listTitle {
-            height: 4rem;
-            padding-left: 3rem;
-        }
+	.change-card-to-list {
+		.l-main-content-item__listTitle {
+			//height: 4rem;
+			padding-left: 3rem;
+		}
 
-        .c-card-manhourSofar {
-            height: 4rem;
+		.c-card-manhourSofar {
+			//height: 4rem;
+			&:hover {
+				transition: all 0;
+				transform: translateY(0px) translateX(0px);
+			}
 
-            &:hover {
-                transition: all 0;
-                transform: translateY(0px) translateX(0px);
-            }
+			&:active {
+				transition: all 0;
+				transform: translateY(0px) translateX(0px);
+			}
 
-            &:active {
-                transition: all 0;
-                transform: translateY(0px) translateX(0px);
-            }
+			.c-card__userInformation {
+				h3 {
+					font-family: $font-family;
+					line-height: 1rem;
+				}
+			}
+		}
 
-            .c-card__userInformation {
-                h3 {
-                    font-family: $font-family;
-                }
-            }
-        }
-
-        .l-main-content-item {
-            .c-card-manhourSearch {
-                height: 4rem;
-                margin-bottom: 0;
-                cursor: default;
-            }
-        }
-    }
-
+		.l-main-content-item {
+			margin-bottom: 1rem;
+			.c-card-manhourSearch {
+				margin-bottom: 0rem;
+				height: 4rem;
+				margin-bottom: 0;
+				cursor: default;
+			}
+		}
+	}
 }
 
 .l-main-content {
-    .c-card-manhourSofar {
-        margin: 0 0.5rem 0.5rem 0.2rem;
-    }
+	.c-card-manhourSofar {
+		margin: 0 0.5rem 0.5rem 0.2rem;
+	}
 
-    .l-main-content-text {
-        .l-main-content-text__title {
-            font-size: $font-size-l;
-            font-family: $font-family;
-            font-weight: bolder;
-            margin-bottom: 1rem;
-        }
+	.l-main-content-text {
+		.l-main-content-text__title {
+			font-size: $font-size-l;
+			font-family: $font-family;
+			font-weight: bolder;
+			margin-bottom: 1rem;
+		}
 
-        .l-main-content-text__ListTitle {
-            @extend .l-main-content-text__title;
-            margin-bottom: 0rem;
-            margin-right: 1rem;
-        }
-
-    }
+		.l-main-content-text__ListTitle {
+			@extend .l-main-content-text__title;
+			margin-bottom: 0rem;
+			margin-right: 1rem;
+		}
+	}
 }
 
 .change-card-to-list {
-    .l-main-content-item__listTitle {
-        max-width: 2560px;
+	.l-main-content-item__listTitle {
+		max-width: 2560px;
 
-        .listTitle__team {
-            width: 10%;
-        }
+		.listTitle__team {
+			width: 10%;
+		}
 
-        .listTitle__userNum {
-            width: 10%;
-        }
+		.listTitle__userNum {
+			width: 10%;
+		}
 
-        .listTitle__user {
-            width: 10%;
-        }
+		.listTitle__user {
+			width: 10%;
+		}
 
-        .listTitle__englishName {
-            width: 50%;
-        }
+		.listTitle__englishName {
+			width: 50%;
+		}
 
-        .listTitle__workTime {
-            width: 10%;
-        }
+		.listTitle__workTime {
+			width: 10%;
+		}
 
-        .listTitle__addTime {
-            width: 10%;
-        }
+		.listTitle__addTime {
+			width: 10%;
+		}
+	}
 
-    }
+	.c-card-manhourSofar {
+		border-bottom: 1px solid $sec2;
+		box-shadow: none;
+		border-radius: 0;
+		width: 100%;
+		max-width: 2560px;
+		margin: 0;
+		line-height: 1rem;
+		padding: 1.33rem 0 1.33rem 3rem; //20px 0px 20px 3rem;
+		display: flex;
 
-    .c-card-manhourSofar {
-        border-bottom: 1px solid $sec2;
-        box-shadow: none;
-        border-radius: 0;
-        width: 100%;
-        max-width: 2560px;
-        margin: 0;
-        padding: 20px 0px 20px 3rem;
-        display: flex;
+		.c-card-manhourSofar__userName {
+			display: none;
+		}
 
-        .c-card-manhourSofar__userName {
-            display: none;
-        }
+		.c-card-manhourSofar__englishName {
+			display: none;
+		}
 
-        .c-card-manhourSofar__englishName {
-            display: none;
-        }
+		.c-card__userInformation {
+			display: flex;
+			align-items: center;
+			width: 10%;
+			border: 0;
+			margin: 0;
 
-        .c-card__userInformation {
-            display: flex;
-            align-items: center;
-            width: 10%;
-            border: 0;
-            margin: 0;
+			.js-c-card__userNumber {
+				display: none;
+			}
+		}
 
-            .js-c-card__userNumber {
-                display: none;
-            }
-        }
+		.js-c-card__appendUserName {
+			width: 70%;
+			display: flex;
+			align-items: center;
 
-        .js-c-card__appendUserName {
-            width: 70%;
-            display: flex;
-            align-items: center;
+			h2 {
+				font-size: 16px;
+				font-family: $font-family;
+				font-weight: 400;
+				width: 16.66666%;
+				line-height: 1rem;
+			}
 
-            h2 {
-                font-size: 16px;
-                font-family: $font-family;
-                font-weight: 400;
-                width: 16.66666%;
-            }
+			h3 {
+				font-size: 16px;
+				font-family: $font-family;
+				font-weight: 400;
+				width: 83.33333%;
+				line-height: 1rem;
+			}
+		}
 
-            h3 {
-                font-size: 16px;
-                font-family: $font-family;
-                font-weight: 400;
-                width: 83.33333%;
-            }
-        }
+		.c-card__content {
+			margin: 0;
+			display: flex;
+			width: 20%;
 
-        .c-card__content {
-            margin: 0;
-            display: flex;
-            width: 20%;
+			.c-card__item {
+				width: 50%;
+				margin: 0;
 
-            .c-card__item {
-                width: 50%;
-                margin: 0;
+				.c-card__item__title {
+					display: none;
+				}
 
-                .c-card__item__title {
-                    display: none;
-                }
+				.c-card__item__time {
+					margin-left: 0.3rem;
+					font-size: 16px;
+					font-family: $font-family;
+					font-weight: 400;
+				}
+			}
+		}
+	}
 
-                .c-card__item__time {
-                    margin-left: 0.3rem;
-                    font-size: 16px;
-                    font-family: $font-family;
-                    font-weight: 400;
-                }
-            }
-        }
+	.c-card-manhourSearch {
+		.c-card-manhourSearch__userName {
+			display: none;
+		}
 
-    }
-
-    .c-card-manhourSearch {
-        .c-card-manhourSearch__userName {
-            display: none;
-        }
-
-        .c-card-manhourSearch__englishName {
-            display: none;
-        }
-    }
+		.c-card-manhourSearch__englishName {
+			display: none;
+		}
+	}
 }
 
 #WBS {
-    .l-main-content__wbslist {
-        .table-body__subtitle {
-            .col {
-                span {
-                    color: $gray3;
-                }
-            }
-        }
+	.l-main-content__wbslist {
+		.table-body__subtitle {
+			.col {
+				span {
+					color: $gray3;
+				}
+			}
+		}
 
+		.table-body__item {
+			.col {
+				span {
+					color: $gray3;
+				}
 
-        .table-body__item {
-            .col {
-                span {
-                    color: $gray3;
-                }
+				.select-wrapper {
+					span {
+						color: $gray1;
+					}
+				}
 
-                .select-wrapper {
-                    span {
-                        color: $gray1;
-                    }
-                }
+				.c-dropdown-member {
+					span {
+						color: $gray1;
+					}
+				}
+			}
 
-                .c-dropdown-member {
-                    span {
-                        color: $gray1;
-                    }
-                }
-            }
+			.c-popover-wbsEdit {
+				.c-popover__content {
+					margin-bottom: 0.5rem;
 
-            .c-popover-wbsEdit {
-                .c-popover__content {
-                    margin-bottom: 0.5rem;
+					&::before {
+						margin-left: -30.75px;
+					}
 
-                    &::before {
-                        margin-left: -30.75px;
-                    }
+					&::after {
+						margin-left: -30.9px;
+					}
+				}
+			}
+		}
 
-                    &::after {
-                        margin-left: -30.9px;
-                    }
-                }
-            }
-
-        }
-
-        .table-footer {
-            .row {
-                .s1 {
-                    width: 102px;
-                }
-            }
-        }
-    }
+		.table-footer {
+			.row {
+				.s1 {
+					width: 102px;
+				}
+			}
+		}
+	}
 }

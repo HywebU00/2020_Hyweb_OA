@@ -192,6 +192,7 @@ body {
 	padding: 0rem 2rem 1rem 8rem;
 	transition: all 0.5s;
 	overflow-y: scroll;
+	overflow-x: hidden;
 
 	.c-writeHours {
 		width: 100%;
@@ -402,7 +403,7 @@ body {
 		font-size: $h2;
 		font-family: $font-family;
 		font-weight: 700;
-		margin-bottom: 1rem;
+		margin-bottom: 0.5rem;
 		display: flex;
 		align-items: center;
 
@@ -421,10 +422,13 @@ body {
 			}
 		}
 	}
+	&:first-child {
+		padding-top: 0.5rem;
+	}
 
 	.l-main-content__information {
-		background-color: $hyweb-lighblue;
-		padding: 3rem;
+		background-color: $gray6; //$hyweb-lighblue;
+		padding: 1.5rem;
 		border-radius: $list-radius;
 		font-size: $p;
 		color: $gray1;
@@ -436,14 +440,23 @@ body {
 
 		.row {
 			margin-bottom: 2rem;
-
 			.col {
 				@include ellipsisText;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+			.s2 {
+				width: 14%;
+			}
+			.s4 {
+				width: 36%;
 			}
 		}
 	}
 
 	.l-main-content__textarea {
+		margin-bottom: 2rem;
 		.l-main-content__textarea__text {
 			color: $gray3;
 			padding-top: 0.5rem;
@@ -472,8 +485,6 @@ body {
 				color: $gray3;
 			}
 		}
-
-		margin-bottom: 2rem;
 	}
 
 	.l-main-content__upload {
@@ -504,10 +515,10 @@ body {
 		.row {
 			background-color: $hyweb-lighblue;
 			border-radius: $card-lableGroup;
-			margin-bottom: 1rem;
+			margin-bottom: 0.5rem;
 			display: flex;
 			align-items: center;
-			padding: 0.8rem;
+			padding: 0.5rem;
 
 			.col {
 				@include ellipsisText;
@@ -540,6 +551,7 @@ body {
 	}
 
 	.l-main-content__addMember {
+		margin-top: 0.5rem;
 		margin-bottom: 2rem;
 		display: flex;
 		flex-wrap: wrap;
@@ -608,6 +620,7 @@ body {
 			.row {
 				width: 100%;
 				padding: 0;
+
 				border-bottom: 0;
 
 				.select-wrapper {
@@ -675,25 +688,18 @@ body {
 		@extend .l-main-content__planlist;
 		overflow-x: scroll;
 		display: flex;
-
 		flex-wrap: wrap;
-
 		.table-thead {
-			// position: -webkit-sticky;
-			// position: sticky;
 			z-index: 99;
 			top: 0;
-			padding: 1rem 0 1rem 0;
+			padding: 1.06rem 0 1.06rem 1.5rem;
 			flex-shrink: 0;
-
-			box-sizing: border-box;
-
 			.row {
 				display: flex;
 				align-items: center;
 				width: auto;
-				margin-left: 24px;
-
+				//margin-left: 24px;
+				//margin-right: 1.3625rem;
 				.col {
 					display: flex;
 					align-items: center;
@@ -824,7 +830,7 @@ body {
 
 			.c-datePicker-days {
 				width: 100%;
-				height: 3rem;
+				//height: 3rem;
 			}
 
 			.c-dropdown-member {
@@ -842,7 +848,17 @@ body {
 			}
 
 			.table-body__subtitle {
-				background-color: $after-blue;
+				//background-color: $after-blue;
+				.o-input-textarea {
+					textarea {
+						background-color: $sec2;
+					}
+				}
+				.c-datePicker__input {
+					.o-input-div {
+						background-color: $sec2;
+					}
+				}
 			}
 
 			.pl {
@@ -850,6 +866,10 @@ body {
 			}
 
 			.table-body__item {
+				.row {
+					padding-top: 0.5rem;
+					padding-bottom: 0.5rem;
+				}
 				.table-body__item__project {
 					display: flex;
 					cursor: pointer;
@@ -928,7 +948,7 @@ body {
 							content: "請填阿拉伯數字";
 							font-size: 0.8rem;
 							display: block;
-							margin-top: 0.2rem;
+							margin-bottom: 0.2rem;
 						}
 					}
 				}
@@ -957,7 +977,7 @@ body {
 
 		.table-footer {
 			background-color: $gray6; //$hyweb-lighblue;
-			padding: 1.5rem 0 1.5rem 0;
+			//padding: 1.5rem 0 1.5rem 0;
 			border-radius: 0 0 $table-radius $table-radius;
 			font-weight: 700;
 			font-size: $p;
@@ -1058,6 +1078,7 @@ body {
 			padding: 1rem 0 1rem 0;
 
 			.row {
+				margin-left: 24px;
 				.col {
 					display: flex;
 					align-items: center;
@@ -1116,7 +1137,8 @@ body {
 
 		.table-footer {
 			// background-color: $gray6; //$hyweb-lighblue;
-			padding: 1.5rem 0 1.5rem 0;
+			//padding: 1.5rem 0 1.5rem 0;
+			padding: 0;
 			border-radius: 0 0 $table-radius $table-radius;
 			font-weight: 700;
 			font-size: $p;
@@ -1143,7 +1165,7 @@ body {
 }
 
 .l-main-content-table {
-	margin-bottom: 2.5rem;
+	margin-bottom: 1rem;
 
 	.l-main-content-table__text {
 		color: $gray3;
@@ -1172,8 +1194,8 @@ body {
 		}
 
 		.col {
-			line-height: 1.5rem;
-			@include db_ellipsisText;
+			line-height: 1.33rem; // 1.5rem;
+			//@include db_ellipsisText;
 		}
 
 		.table-body__tag-item {
@@ -1225,15 +1247,17 @@ body {
 		.row {
 			margin-bottom: 0;
 			font-size: $p;
-			padding: 0 0 0 1.5rem;
-			height: 3.733rem; //60px;
+			//padding: 0 0 0 1.5rem;
+			min-height: 3.733rem;
+			padding: 0.83rem 0 0.83rem 1.5rem;
+			height: auto;
+			//height: 3.733rem; //60px;
 			border-bottom: 1px solid $gray-blue;
 			display: flex;
 			align-items: center;
 
 			button {
-				padding: 0.5rem 0.5rem;
-				border-radius: 40px;
+				border-radius: 2.666rem; //40px;
 			}
 		}
 
@@ -1655,7 +1679,7 @@ body {
 	}
 
 	.cardList__content {
-		height: calc(100vh - 330px);
+		height: calc(100vh - 300px);
 		width: 100%;
 		// padding-top: 3%;
 		overflow-y: scroll;
