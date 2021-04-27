@@ -10132,6 +10132,7 @@ body {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .l-main .c-writeHours {
@@ -10406,7 +10407,7 @@ body {
   font-size: 22px;
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10434,9 +10435,13 @@ body {
   margin-right: 0.2rem;
 }
 
+.l-main-content:first-child {
+  padding-top: 0.5rem;
+}
+
 .l-main-content .l-main-content__information {
-  background-color: #e2f1fe;
-  padding: 3rem;
+  background-color: #e1e8ef;
+  padding: 1.5rem;
   border-radius: 0.66rem;
   font-size: 1.06rem;
   color: #042340;
@@ -10455,6 +10460,18 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.l-main-content .l-main-content__information .row:last-child {
+  margin-bottom: 0;
+}
+
+.l-main-content .l-main-content__information .row .s2 {
+  width: 14%;
+}
+
+.l-main-content .l-main-content__information .row .s4 {
+  width: 36%;
 }
 
 .l-main-content .l-main-content__textarea {
@@ -10519,14 +10536,14 @@ body {
 .l-main-content .l-main-content__upload .row {
   background-color: #e2f1fe;
   border-radius: 0.66rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.8rem;
+  padding: 0.5rem;
 }
 
 .l-main-content .l-main-content__upload .row .col {
@@ -10572,6 +10589,7 @@ body {
 }
 
 .l-main-content .l-main-content__addMember {
+  margin-top: 0.5rem;
   margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10718,11 +10736,9 @@ body {
 .l-main-content .l-main-content__wbslist .table-thead, .l-main-content .l-main-content__workTypelist .table-thead {
   z-index: 99;
   top: 0;
-  padding: 1rem 0 1rem 0;
+  padding: 1.06rem 0 1.06rem 1.5rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .l-main-content .l-main-content__wbslist .table-thead .row, .l-main-content .l-main-content__workTypelist .table-thead .row {
@@ -10733,7 +10749,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: auto;
-  margin-left: 24px;
 }
 
 .l-main-content .l-main-content__wbslist .table-thead .row .col, .l-main-content .l-main-content__workTypelist .table-thead .row .col {
@@ -10887,7 +10902,6 @@ body {
 
 .l-main-content .l-main-content__wbslist .table-body .c-datePicker-days, .l-main-content .l-main-content__workTypelist .table-body .c-datePicker-days, .l-main-content .l-main-content__wbslist .table-body .c-datePicker-months, .l-main-content .l-main-content__workTypelist .table-body .c-datePicker-months {
   width: 100%;
-  height: 3rem;
 }
 
 .l-main-content .l-main-content__wbslist .table-body .c-dropdown-member, .l-main-content .l-main-content__workTypelist .table-body .c-dropdown-member {
@@ -10902,12 +10916,21 @@ body {
   height: 3rem;
 }
 
-.l-main-content .l-main-content__wbslist .table-body .table-body__subtitle, .l-main-content .l-main-content__workTypelist .table-body .table-body__subtitle {
-  background-color: #cfe3f5;
+.l-main-content .l-main-content__wbslist .table-body .table-body__subtitle .o-input-textarea textarea, .l-main-content .l-main-content__workTypelist .table-body .table-body__subtitle .o-input-textarea textarea {
+  background-color: #bad4e5;
+}
+
+.l-main-content .l-main-content__wbslist .table-body .table-body__subtitle .c-datePicker__input .o-input-div, .l-main-content .l-main-content__workTypelist .table-body .table-body__subtitle .c-datePicker__input .o-input-div {
+  background-color: #bad4e5;
 }
 
 .l-main-content .l-main-content__wbslist .table-body .pl, .l-main-content .l-main-content__workTypelist .table-body .pl {
   padding-left: 24px;
+}
+
+.l-main-content .l-main-content__wbslist .table-body .table-body__item .row, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row, .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__project, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__project {
@@ -10987,7 +11010,7 @@ body {
   content: "請填阿拉伯數字";
   font-size: 0.8rem;
   display: block;
-  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
 }
 
 .l-main-content .l-main-content__wbslist .s1, .l-main-content .l-main-content__workTypelist .s1 {
@@ -11012,7 +11035,6 @@ body {
 
 .l-main-content .l-main-content__wbslist .table-footer, .l-main-content .l-main-content__workTypelist .table-footer {
   background-color: #e1e8ef;
-  padding: 1.5rem 0 1.5rem 0;
   border-radius: 0 0 0.66rem 0.66rem;
   font-weight: 700;
   font-size: 1.06rem;
@@ -11142,6 +11164,10 @@ body {
   padding: 1rem 0 1rem 0;
 }
 
+.l-main-content .l-main-content__workTypelist .table-thead .row {
+  margin-left: 24px;
+}
+
 .l-main-content .l-main-content__workTypelist .table-thead .row .col {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11205,7 +11231,7 @@ body {
 }
 
 .l-main-content .l-main-content__workTypelist .table-footer {
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 0;
   border-radius: 0 0 0.66rem 0.66rem;
   font-weight: 700;
   font-size: 1.06rem;
@@ -11241,7 +11267,7 @@ body {
 }
 
 .l-main-content-table {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .l-main-content-table .l-main-content-table__text {
@@ -11270,13 +11296,7 @@ body {
 }
 
 .l-main-content-table .table-body .col {
-  line-height: 1.5rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-height: 3rem;
+  line-height: 1.33rem;
 }
 
 .l-main-content-table .table-body .table-body__tag-item {
@@ -11350,8 +11370,9 @@ body {
 .l-main-content-table .table-body .row {
   margin-bottom: 0;
   font-size: 1.06rem;
-  padding: 0 0 0 1.5rem;
-  height: 3.733rem;
+  min-height: 3.733rem;
+  padding: 0.83rem 0 0.83rem 1.5rem;
+  height: auto;
   border-bottom: 1px solid #bad4e5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11362,8 +11383,7 @@ body {
 }
 
 .l-main-content-table .table-body .row button {
-  padding: 0.5rem 0.5rem;
-  border-radius: 40px;
+  border-radius: 2.666rem;
 }
 
 .l-main-content-table .table-body .deleteBtn-position {
@@ -11826,7 +11846,7 @@ body {
 }
 
 .c-submenu-content__cardList .cardList__content {
-  height: calc(100vh - 330px);
+  height: calc(100vh - 300px);
   width: 100%;
   overflow-y: scroll;
 }
@@ -11923,8 +11943,19 @@ body {
 }
 
 .c-card-manhourSofar, .c-card-manhourSearch, .c-card-percent, .c-card-percentCheck, .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan, .c-card-department {
-  width: 10%;
-  min-width: 210px;
+  width: calc(20% - 0.7rem);
+}
+
+@media (max-width: 1200px) {
+  .c-card-manhourSofar, .c-card-manhourSearch, .c-card-percent, .c-card-percentCheck, .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan, .c-card-department {
+    width: calc(25% - 0.7rem);
+  }
+}
+
+@media (max-width: 992px) {
+  .c-card-manhourSofar, .c-card-manhourSearch, .c-card-percent, .c-card-percentCheck, .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan, .c-card-department {
+    width: calc(33.3% - 0.7rem);
+  }
 }
 
 .c-card-manhourSofar a, .c-card-manhourSearch a, .c-card-percent a, .c-card-percentCheck a, .c-card-planPerson a, .c-card-planClosed a, .c-card-planHotkey a, .l-mobile-footer-worksheet .c-card-workHotkey a, .c-card-planReport a, .c-card-planReport-danger a, .c-card-alertPlan a, .c-card-department a {
@@ -11932,7 +11963,7 @@ body {
 }
 
 .c-card-manhourSofar .c-card__userInformation, .c-card-manhourSearch .c-card__userInformation, .c-card-percent .c-card__userInformation, .c-card-percentCheck .c-card__userInformation, .c-card-planPerson .c-card__userInformation, .c-card-planClosed .c-card__userInformation, .c-card-planHotkey .c-card__userInformation, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__userInformation, .c-card-planReport .c-card__userInformation, .c-card-planReport-danger .c-card__userInformation, .c-card-alertPlan .c-card__userInformation, .c-card-department .c-card__userInformation {
-  margin-top: 2.64rem;
+  margin-top: 2rem;
   line-height: 35px;
   border-bottom: 1px solid #bdbdbd;
   display: -webkit-box;
@@ -11961,7 +11992,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 0.99rem;
+  margin-top: 1rem;
 }
 
 .c-card-manhourSofar .c-card__item .c-card__item__title, .c-card-manhourSearch .c-card__item .c-card__item__title, .c-card-percent .c-card__item .c-card__item__title, .c-card-percentCheck .c-card__item .c-card__item__title, .c-card-planPerson .c-card__item .c-card__item__title, .c-card-planClosed .c-card__item .c-card__item__title, .c-card-planHotkey .c-card__item .c-card__item__title, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__item .c-card__item__title, .c-card-planReport .c-card__item .c-card__item__title, .c-card-planReport-danger .c-card__item .c-card__item__title, .c-card-alertPlan .c-card__item .c-card__item__title, .c-card-department .c-card__item .c-card__item__title, .c-card-manhourSofar .c-card__item .c-card-planReport .c-card__item__content, .c-card-manhourSearch .c-card__item .c-card-planReport .c-card__item__content, .c-card-percent .c-card__item .c-card-planReport .c-card__item__content, .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__content, .c-card-planPerson .c-card__item .c-card-planReport .c-card__item__content, .c-card-planClosed .c-card__item .c-card-planReport .c-card__item__content, .c-card-planHotkey .c-card__item .c-card-planReport .c-card__item__content, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport .c-card__item .c-card__item__content, .c-card-department .c-card__item .c-card-planReport .c-card__item__content, .c-card-manhourSofar .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-manhourSearch .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planPerson .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planClosed .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planHotkey .c-card__item .c-card-planReport-danger .c-card__item__content, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger .c-card__item .c-card__item__content, .c-card-department .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-manhourSofar .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-manhourSearch .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-planPerson .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-planClosed .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-planHotkey .c-card__item .c-card-alertPlan .c-card__item__content, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-alertPlan .c-card__item .c-card__item__content, .c-card-department .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-manhourSofar .c-card__item .c-card-planReport .c-card__item__footer, .c-card-manhourSearch .c-card__item .c-card-planReport .c-card__item__footer, .c-card-percent .c-card__item .c-card-planReport .c-card__item__footer, .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planPerson .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planClosed .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planHotkey .c-card__item .c-card-planReport .c-card__item__footer, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planReport .c-card__item .c-card__item__footer, .c-card-department .c-card__item .c-card-planReport .c-card__item__footer, .c-card-manhourSofar .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-manhourSearch .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planPerson .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planClosed .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planHotkey .c-card__item .c-card-planReport-danger .c-card__item__footer, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger .c-card__item .c-card__item__footer, .c-card-department .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-manhourSofar .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-manhourSearch .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-planPerson .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-planClosed .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-planHotkey .c-card__item .c-card-alertPlan .c-card__item__footer, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan .c-card__item .c-card__item__footer, .c-card-department .c-card__item .c-card-alertPlan .c-card__item__footer {
@@ -12065,9 +12096,15 @@ body {
   transition: all 0.2s;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan {
     width: calc(25% - 1rem);
+  }
+}
+
+@media (max-width: 1200px) {
+  .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan {
+    width: calc(33.33% - 1rem);
   }
 }
 
@@ -12177,6 +12214,19 @@ body {
 .c-card-planHotkey .c-card__content, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__content {
   margin-top: 0px;
   padding: 0.7rem;
+  position: relative;
+}
+
+.c-card-planHotkey .c-card__content button, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__content button {
+  position: absolute;
+  right: 0.7rem;
+  top: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .c-card-planHotkey .c-card__tag, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__tag {
@@ -12254,8 +12304,8 @@ body {
 }
 
 .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan {
-  min-width: 879px;
-  min-height: 166px;
+  width: 100%;
+  max-width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12435,9 +12485,19 @@ body {
   background-color: #fff;
 }
 
+.c-card-planReport .c-card__item__title .c-card__text, .c-card-planReport-danger .c-card__item__title .c-card__text, .c-card-alertPlan .c-card__item__title .c-card__text, .c-card-planReport .c-card__item__content .c-card__text, .c-card-planReport-danger .c-card__item__content .c-card__text, .c-card-alertPlan .c-card__item__content .c-card__text, .c-card-planReport .c-card__item__footer .c-card__text, .c-card-planReport-danger .c-card__item__footer .c-card__text, .c-card-alertPlan .c-card__item__footer .c-card__text {
+  line-height: 22px;
+}
+
 .c-card-planReport .c-card__item__content, .c-card-planReport-danger .c-card__item__content, .c-card-alertPlan .c-card__item__content, .c-card-planReport .c-card__item__footer, .c-card-planReport-danger .c-card__item__footer, .c-card-alertPlan .c-card__item__footer {
   width: 20%;
   padding: 0 1.32rem;
+}
+
+@media (max-width: 1200px) {
+  .c-card-planReport .c-card__item__content, .c-card-planReport-danger .c-card__item__content, .c-card-alertPlan .c-card__item__content, .c-card-planReport .c-card__item__footer, .c-card-planReport-danger .c-card__item__footer, .c-card-alertPlan .c-card__item__footer {
+    width: 25%;
+  }
 }
 
 .c-card-planReport .c-card__item__content .c-card__item__content__list, .c-card-planReport-danger .c-card__item__content .c-card__item__content__list, .c-card-alertPlan .c-card__item__content .c-card__item__content__list, .c-card-planReport .c-card__item__footer .c-card__item__content__list, .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list, .c-card-alertPlan .c-card__item__footer .c-card__item__content__list {
@@ -12455,9 +12515,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 0;
 }
 
@@ -12479,12 +12539,17 @@ body {
 .c-card-planReport .c-card__item__content .c-card__item__content__list .list__item .list__item__num, .c-card-planReport-danger .c-card__item__content .c-card__item__content__list .list__item .list__item__num, .c-card-alertPlan .c-card__item__content .c-card__item__content__list .list__item .list__item__num, .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item .list__item__num, .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item .list__item__num, .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item .list__item__num {
   color: #042340;
   font-family: "Baloo 2", cursive, "Noto Sans TC";
+  width: 70%;
+  text-align: end;
+  font-size: 22px;
 }
 
 .c-card-planReport .c-card__item__content .c-card__item__content__list .list__item .list__item__title, .c-card-planReport-danger .c-card__item__content .c-card__item__content__list .list__item .list__item__title, .c-card-alertPlan .c-card__item__content .c-card__item__content__list .list__item .list__item__title, .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item .list__item__title, .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item .list__item__title, .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item .list__item__title {
   font-size: 12px;
   color: #8495a4;
   margin-right: 1.32rem;
+  white-space: nowrap;
+  width: 30%;
 }
 
 .c-card-planReport .c-card__item__content .c-card__item__content__list .list__item:last-child, .c-card-planReport-danger .c-card__item__content .c-card__item__content__list .list__item:last-child, .c-card-alertPlan .c-card__item__content .c-card__item__content__list .list__item:last-child, .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item:last-child, .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item:last-child, .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item:last-child {
@@ -12495,6 +12560,12 @@ body {
   width: 35%;
   padding: 0 0 0 1.32rem;
   border-right: 0;
+}
+
+@media (max-width: 1200px) {
+  .c-card-planReport .c-card__item__footer, .c-card-planReport-danger .c-card__item__footer, .c-card-alertPlan .c-card__item__footer {
+    width: 30%;
+  }
 }
 
 .c-card-planReport .c-card__item__footer .row, .c-card-planReport-danger .c-card__item__footer .row, .c-card-alertPlan .c-card__item__footer .row {
@@ -12511,12 +12582,18 @@ body {
   font-family: "Baloo 2", cursive, "Noto Sans TC";
   font-size: 22px;
   font-weight: 700;
+  letter-spacing: 0.02rem;
 }
 
 .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item, .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item, .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item .list__item__num, .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item .list__item__num, .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item .list__item__num {
+  text-align: center;
+  font-size: 1.06rem;
 }
 
 .c-card-planReport-danger .c-card__item__title .c-card__tag .c-card__tag__num .c-card__tag__input, .c-card-alertPlan .c-card__item__title .c-card__tag .c-card__tag__num .c-card__tag__input, .c-card-planReport-danger .c-card__item__content .c-card__tag .c-card__tag__num .c-card__tag__input, .c-card-alertPlan .c-card__item__content .c-card__tag .c-card__tag__num .c-card__tag__input, .c-card-planReport-danger .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__tag__input, .c-card-alertPlan .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__tag__input {
@@ -12611,7 +12688,7 @@ body {
 
 .c-card-lableGroup {
   cursor: pointer;
-  width: 32%;
+  width: calc(25% - 0.5rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12621,6 +12698,18 @@ body {
   border-radius: 0.66rem;
   margin: 0.2rem 0 0 0.2rem;
   padding: 0;
+}
+
+@media (max-width: 1200px) {
+  .c-card-lableGroup {
+    width: calc(33% - 0.5rem);
+  }
+}
+
+@media (max-width: 992px) {
+  .c-card-lableGroup {
+    width: calc(50% - 0.5rem);
+  }
 }
 
 .c-card-lableGroup a {
@@ -15718,7 +15807,7 @@ body {
 
 .o-tag, .o-tag-danger {
   border-radius: 0.33rem;
-  padding: 0.5rem;
+  padding: 0.2rem 0.5rem;
   display: inline-block;
   background-color: #e2f1fe;
 }
@@ -15726,7 +15815,6 @@ body {
 .o-tag-danger {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 170, 101, 0.3)), color-stop(66.15%, rgba(239, 68, 14, 0.3))), #fb5b29;
   background: linear-gradient(180deg, rgba(245, 170, 101, 0.3) 0%, rgba(239, 68, 14, 0.3) 66.15%), #fb5b29;
-  padding: 0.08rem 0.5rem;
   margin-left: 0.8rem;
   font-family: "Baloo 2", cursive, "Noto Sans TC";
   color: #fff;
@@ -16074,7 +16162,6 @@ body {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  margin-bottom: 2.5rem;
 }
 
 .l-main-content .l-main-content-item .l-main-content-item__listTitle {
@@ -16104,11 +16191,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .change-card-to-list .l-main-content-item .l-main-content-item__listTitle {
   display: block;
-  background-color: #e2f1fe;
+  background-color: #e1e8ef;
   padding: 1.33rem 0px 1.33rem 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16200,19 +16288,20 @@ body {
 .change-card-to-list .l-main-content-item .c-card-planPerson h2, .change-card-to-list .l-main-content-item .c-card-planClosed h2, .change-card-to-list .l-main-content-item .c-card-planHotkey h2, .change-card-to-list .l-main-content-item .l-mobile-footer-worksheet .c-card-workHotkey h2, .l-mobile-footer-worksheet .change-card-to-list .l-main-content-item .c-card-workHotkey h2, .change-card-to-list .l-main-content-item .c-card-planReport h2, .change-card-to-list .l-main-content-item .c-card-planReport-danger h2, .change-card-to-list .l-main-content-item .c-card-alertPlan h2 {
   width: 65%;
   font-weight: 400;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-height: 3rem;
   padding: 0 0.75rem 0 0;
-  max-height: 60px;
-  line-height: 30px;
+  line-height: 1.33rem;
+  max-height: none;
+  display: block;
 }
 
 .change-card-to-list .l-main-content-item .c-card-planPerson a, .change-card-to-list .l-main-content-item .c-card-planClosed a, .change-card-to-list .l-main-content-item .c-card-planHotkey a, .change-card-to-list .l-main-content-item .l-mobile-footer-worksheet .c-card-workHotkey a, .l-mobile-footer-worksheet .change-card-to-list .l-main-content-item .c-card-workHotkey a, .change-card-to-list .l-main-content-item .c-card-planReport a, .change-card-to-list .l-main-content-item .c-card-planReport-danger a, .change-card-to-list .l-main-content-item .c-card-alertPlan a {
   padding: 0.83rem 0rem 0.83rem 1.33rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .change-card-to-list .l-main-content-item .c-card-planPerson .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-planClosed .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-planHotkey .c-card__userInformation, .change-card-to-list .l-main-content-item .l-mobile-footer-worksheet .c-card-workHotkey .c-card__userInformation, .l-mobile-footer-worksheet .change-card-to-list .l-main-content-item .c-card-workHotkey .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-planReport .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-planReport-danger .c-card__userInformation, .change-card-to-list .l-main-content-item .c-card-alertPlan .c-card__userInformation {
@@ -16396,27 +16485,59 @@ body {
   width: 4rem;
 }
 
-#WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .o-input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .o-input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .o-input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .o-input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .c-writeHours-content__select .hoursInput, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .hoursInput, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .c-writeHours-content__select .hoursInput, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .hoursInput, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .c-writeHours-content__select .hoursInput, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .hoursInput, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .c-writeHours-content__select .hoursInput, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .hoursInput, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .c-writeHours-content__select .otherInput, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .otherInput, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .c-writeHours-content__select .otherInput, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .otherInput, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .c-writeHours-content__select .otherInput, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .otherInput, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .c-writeHours-content__select .otherInput, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .otherInput, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .c-search-item__input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .c-search-item__input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .c-search-item__input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .c-search-item__input {
-  margin-top: 1rem;
+#WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .o-input input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .o-input input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .o-input input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .o-input input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .hoursInput input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .hoursInput input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .hoursInput input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .hoursInput input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .c-writeHours-content__select .otherInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .otherInput input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .c-writeHours-content__select .otherInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .otherInput input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .c-writeHours-content__select .otherInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .otherInput input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .c-writeHours-content__select .otherInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .otherInput input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .c-search-item__input input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .c-search-item__input input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .c-search-item__input input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .c-search-item__input input {
+  margin-top: 0.5rem;
+}
+
+#WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .c-dropdown__input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .c-dropdown__input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .c-dropdown__input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .c-dropdown__input {
+  margin-top: 0.3rem;
+}
+
+#WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .c-dropdown-general, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .c-dropdown-general, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .c-dropdown-general, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .c-dropdown-general {
+  margin-top: 0.3rem;
+}
+
+#WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .c-datePicker-days, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .c-datePicker-days, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .c-datePicker-days, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .c-datePicker-days, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .c-datePicker-months, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .c-datePicker-months, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .c-datePicker-months, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .c-datePicker-months {
+  margin-top: 0.3rem;
 }
 
 #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .c-datePicker-months .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .c-datePicker-months .c-datePicker__modal, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .c-datePicker-months .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .c-datePicker-months .c-datePicker__modal {
   margin-bottom: 1rem;
 }
 
+#WBS .l-main-content .l-main-content__wbslist .table-body .is-error-status, #WBS .l-main-content .l-main-content__workTypelist .table-body .is-error-status {
+  padding-bottom: 0;
+}
+
+#WBS .l-main-content .l-main-content__wbslist .table-body .is-error-status .o-input-textarea textarea, #WBS .l-main-content .l-main-content__workTypelist .table-body .is-error-status .o-input-textarea textarea {
+  margin-top: -1rem;
+}
+
+#WBS .l-main-content .l-main-content__wbslist .table-body .is-error-status .o-input input, #WBS .l-main-content .l-main-content__workTypelist .table-body .is-error-status .o-input input, #WBS .l-main-content .l-main-content__wbslist .table-body .is-error-status .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .is-error-status .hoursInput input, #WBS .l-main-content .l-main-content__workTypelist .table-body .is-error-status .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .is-error-status .hoursInput input, #WBS .l-main-content .l-main-content__wbslist .table-body .is-error-status .c-writeHours-content__select .otherInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .is-error-status .otherInput input, #WBS .l-main-content .l-main-content__workTypelist .table-body .is-error-status .c-writeHours-content__select .otherInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .is-error-status .otherInput input, #WBS .l-main-content .l-main-content__wbslist .table-body .is-error-status .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__wbslist .table-body .is-error-status .c-search-item__input input, #WBS .l-main-content .l-main-content__workTypelist .table-body .is-error-status .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__workTypelist .table-body .is-error-status .c-search-item__input input {
+  margin-top: -1rem;
+}
+
+#WBS .l-main-content .l-main-content__wbslist .table-body .is-error-status .c-dropdown__input, #WBS .l-main-content .l-main-content__workTypelist .table-body .is-error-status .c-dropdown__input {
+  margin-top: -1rem;
+}
+
+#WBS .l-main-content .l-main-content__wbslist .table-body .is-error-status .c-dropdown-general, #WBS .l-main-content .l-main-content__workTypelist .table-body .is-error-status .c-dropdown-general {
+  margin-top: -1rem;
+}
+
+#WBS .l-main-content .l-main-content__wbslist .table-body .is-error-status .c-datePicker-days, #WBS .l-main-content .l-main-content__workTypelist .table-body .is-error-status .c-datePicker-days, #WBS .l-main-content .l-main-content__wbslist .table-body .is-error-status .c-datePicker-months, #WBS .l-main-content .l-main-content__workTypelist .table-body .is-error-status .c-datePicker-months {
+  margin-top: -1rem;
+}
+
 #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem {
   height: 4rem;
-  -webkit-box-shadow: inset 0px 0px 0px 1.5px rgba(0, 0, 0, 0.13);
-          box-shadow: inset 0px 0px 0px 1.5px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__project, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__project {
   margin: 1rem 0.5rem;
   height: 2.5rem;
-}
-
-#WBS .l-main-content .l-main-content__wbslist .table-footer, #WBS .l-main-content .l-main-content__workTypelist .table-footer {
-  padding: 1rem 0 1rem 0;
 }
 
 #WBS .l-main-content .l-main-content__wbslist .is-error-status-item .o-input-div, #WBS .l-main-content .l-main-content__workTypelist .is-error-status-item .o-input-div {
@@ -16475,6 +16596,11 @@ body {
   width: auto;
 }
 
+#introduction .l-main-content__planlist .table-body .row .col, #introduction .l-main-content .l-main-content__wbslist .table-body .row .col, .l-main-content #introduction .l-main-content__wbslist .table-body .row .col, #introduction .l-main-content .l-main-content__workTypelist .table-body .row .col, .l-main-content #introduction .l-main-content__workTypelist .table-body .row .col, #introduction .l-main-content__statisticsPlan .table-body .row .col {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 #introduction .l-main-content__planlist .table-body .row .col div, #introduction .l-main-content .l-main-content__wbslist .table-body .row .col div, .l-main-content #introduction .l-main-content__wbslist .table-body .row .col div, #introduction .l-main-content .l-main-content__workTypelist .table-body .row .col div, .l-main-content #introduction .l-main-content__workTypelist .table-body .row .col div, #introduction .l-main-content__statisticsPlan .table-body .row .col div {
   width: auto;
 }
@@ -16492,7 +16618,7 @@ body {
 }
 
 #types .l-main-content__workTypelist .table-footer {
-  padding: 1rem 0 1rem 0;
+  padding: 0;
 }
 
 .l-main-content-title, .l-main-content .l-main-content-data, .l-main-content .l-main-content-between-title {
@@ -16550,14 +16676,10 @@ body {
 }
 
 #todo .c-card-planReport, #todo .c-card-planReport-danger, #todo .c-card-alertPlan {
-  min-width: 879px;
-  max-width: 1000px;
   width: auto;
 }
 
 #todo .c-card-planReport-danger, #todo .c-card-alertPlan {
-  min-width: 879px;
-  max-width: 1000px;
   width: auto;
 }
 
@@ -17657,17 +17779,16 @@ body {
   border-radius: 50%;
 }
 
+#membertime .l-main-content-item {
+  margin-bottom: 1.5rem;
+}
+
 #membertime .l-main-content-item .c-card-manhourSofar, #membertime .l-main-content-item .c-card-manhourSearch, #membertime .l-main-content-item .c-card-percent, #membertime .l-main-content-item .c-card-percentCheck, #membertime .l-main-content-item .c-card-planPerson, #membertime .l-main-content-item .c-card-planClosed, #membertime .l-main-content-item .c-card-planHotkey, #membertime .l-main-content-item .l-mobile-footer-worksheet .c-card-workHotkey, .l-mobile-footer-worksheet #membertime .l-main-content-item .c-card-workHotkey, #membertime .l-main-content-item .c-card-planReport, #membertime .l-main-content-item .c-card-planReport-danger, #membertime .l-main-content-item .c-card-alertPlan, #membertime .l-main-content-item .c-card-department {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 #membertime .change-card-to-list .l-main-content-item__listTitle {
-  height: 4rem;
   padding-left: 3rem;
-}
-
-#membertime .change-card-to-list .c-card-manhourSofar, #membertime .change-card-to-list .c-card-manhourSearch, #membertime .change-card-to-list .c-card-percent, #membertime .change-card-to-list .c-card-percentCheck, #membertime .change-card-to-list .c-card-planPerson, #membertime .change-card-to-list .c-card-planClosed, #membertime .change-card-to-list .c-card-planHotkey, #membertime .change-card-to-list .l-mobile-footer-worksheet .c-card-workHotkey, .l-mobile-footer-worksheet #membertime .change-card-to-list .c-card-workHotkey, #membertime .change-card-to-list .c-card-planReport, #membertime .change-card-to-list .c-card-planReport-danger, #membertime .change-card-to-list .c-card-alertPlan, #membertime .change-card-to-list .c-card-department {
-  height: 4rem;
 }
 
 #membertime .change-card-to-list .c-card-manhourSofar:hover, #membertime .change-card-to-list .c-card-manhourSearch:hover, #membertime .change-card-to-list .c-card-percent:hover, #membertime .change-card-to-list .c-card-percentCheck:hover, #membertime .change-card-to-list .c-card-planPerson:hover, #membertime .change-card-to-list .c-card-planClosed:hover, #membertime .change-card-to-list .c-card-planHotkey:hover, #membertime .change-card-to-list .l-mobile-footer-worksheet .c-card-workHotkey:hover, .l-mobile-footer-worksheet #membertime .change-card-to-list .c-card-workHotkey:hover, #membertime .change-card-to-list .c-card-planReport:hover, #membertime .change-card-to-list .c-card-planReport-danger:hover, #membertime .change-card-to-list .c-card-alertPlan:hover, #membertime .change-card-to-list .c-card-department:hover {
@@ -17686,9 +17807,15 @@ body {
 
 #membertime .change-card-to-list .c-card-manhourSofar .c-card__userInformation h3, #membertime .change-card-to-list .c-card-manhourSearch .c-card__userInformation h3, #membertime .change-card-to-list .c-card-percent .c-card__userInformation h3, #membertime .change-card-to-list .c-card-percentCheck .c-card__userInformation h3, #membertime .change-card-to-list .c-card-planPerson .c-card__userInformation h3, #membertime .change-card-to-list .c-card-planClosed .c-card__userInformation h3, #membertime .change-card-to-list .c-card-planHotkey .c-card__userInformation h3, #membertime .change-card-to-list .l-mobile-footer-worksheet .c-card-workHotkey .c-card__userInformation h3, .l-mobile-footer-worksheet #membertime .change-card-to-list .c-card-workHotkey .c-card__userInformation h3, #membertime .change-card-to-list .c-card-planReport .c-card__userInformation h3, #membertime .change-card-to-list .c-card-planReport-danger .c-card__userInformation h3, #membertime .change-card-to-list .c-card-alertPlan .c-card__userInformation h3, #membertime .change-card-to-list .c-card-department .c-card__userInformation h3 {
   font-family: "Noto Sans TC", "sans-serif";
+  line-height: 1rem;
+}
+
+#membertime .change-card-to-list .l-main-content-item {
+  margin-bottom: 1rem;
 }
 
 #membertime .change-card-to-list .l-main-content-item .c-card-manhourSearch {
+  margin-bottom: 0rem;
   height: 4rem;
   margin-bottom: 0;
   cursor: default;
@@ -17746,7 +17873,8 @@ body {
   width: 100%;
   max-width: 2560px;
   margin: 0;
-  padding: 20px 0px 20px 3rem;
+  line-height: 1rem;
+  padding: 1.33rem 0 1.33rem 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17791,6 +17919,7 @@ body {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   width: 16.66666%;
+  line-height: 1rem;
 }
 
 .change-card-to-list .c-card-manhourSofar .js-c-card__appendUserName h3, .change-card-to-list .c-card-manhourSearch .js-c-card__appendUserName h3, .change-card-to-list .c-card-percent .js-c-card__appendUserName h3, .change-card-to-list .c-card-percentCheck .js-c-card__appendUserName h3, .change-card-to-list .c-card-planPerson .js-c-card__appendUserName h3, .change-card-to-list .c-card-planClosed .js-c-card__appendUserName h3, .change-card-to-list .c-card-planHotkey .js-c-card__appendUserName h3, .change-card-to-list .l-mobile-footer-worksheet .c-card-workHotkey .js-c-card__appendUserName h3, .l-mobile-footer-worksheet .change-card-to-list .c-card-workHotkey .js-c-card__appendUserName h3, .change-card-to-list .c-card-planReport .js-c-card__appendUserName h3, .change-card-to-list .c-card-planReport-danger .js-c-card__appendUserName h3, .change-card-to-list .c-card-alertPlan .js-c-card__appendUserName h3, .change-card-to-list .c-card-department .js-c-card__appendUserName h3 {
@@ -17798,6 +17927,7 @@ body {
   font-family: "Noto Sans TC", "sans-serif";
   font-weight: 400;
   width: 83.33333%;
+  line-height: 1rem;
 }
 
 .change-card-to-list .c-card-manhourSofar .c-card__content, .change-card-to-list .c-card-manhourSearch .c-card__content, .change-card-to-list .c-card-percent .c-card__content, .change-card-to-list .c-card-percentCheck .c-card__content, .change-card-to-list .c-card-planPerson .c-card__content, .change-card-to-list .c-card-planClosed .c-card__content, .change-card-to-list .c-card-planHotkey .c-card__content, .change-card-to-list .l-mobile-footer-worksheet .c-card-workHotkey .c-card__content, .l-mobile-footer-worksheet .change-card-to-list .c-card-workHotkey .c-card__content, .change-card-to-list .c-card-planReport .c-card__content, .change-card-to-list .c-card-planReport-danger .c-card__content, .change-card-to-list .c-card-alertPlan .c-card__content, .change-card-to-list .c-card-department .c-card__content {

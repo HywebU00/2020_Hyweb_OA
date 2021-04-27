@@ -25,8 +25,13 @@
 
 .c-card-manhourSofar {
 	@extend .c-card;
-	width: 10%;
-	min-width: 210px;
+	width: calc(20% - 0.7rem);
+	@include Max_Large {
+		width: calc(25% - 0.7rem);
+	}
+	@include Large {
+		width: calc(33.3% - 0.7rem);
+	}
 
 	a {
 		color: $gray1;
@@ -37,7 +42,7 @@
 			font-weight: 400;
 		}
 
-		margin-top: $m-4;
+		margin-top: 2rem;
 		line-height: 35px;
 		border-bottom: 1px solid #bdbdbd;
 		display: flex;
@@ -52,7 +57,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-top: $m-3/2;
+		margin-top: 1rem;
 
 		.c-card__item__title {
 			color: $gray2;
@@ -158,8 +163,11 @@
 	width: calc(20% - 1rem);
 	min-width: auto;
 	max-width: auto;
-	@include Max_Large {
+	@include ExtraLarge {
 		width: calc(25% - 1rem);
+	}
+	@include Max_Large {
+		width: calc(33.33% - 1rem);
 	}
 	@include Large {
 		width: calc(33.33% - 1rem);
@@ -257,7 +265,15 @@
 	.c-card__content {
 		margin-top: 0px;
 		padding: 0.7rem;
+		position: relative;
 		//padding: $pd-2 $pd-2 $pd $pd-2;
+		button {
+			position: absolute;
+			right: 0.7rem;
+			top: 0.9rem;
+			display: flex;
+			align-items: center;
+		}
 	}
 	.c-card__tag {
 		padding-top: 0.5rem;
@@ -327,14 +343,15 @@
 
 .c-card-planReport {
 	@extend .c-card-planPerson;
-	min-width: 879px;
-	min-height: 166px;
+	width: 100%;
+	max-width: 1000px;
+	// min-width: 879px;
+	// min-height: 166px;
 	display: flex;
 	padding: 0px;
 
 	a {
 		padding: 0px;
-
 		.is-changeBackground {
 			.c-card__tag__num {
 				div {
@@ -495,13 +512,18 @@
 				}
 			}
 		}
+		.c-card__text {
+			line-height: $h2;
+		}
 	}
 
 	.c-card__item__content {
 		@extend .c-card__item__title;
 		width: 20%;
 		padding: 0 $pd-2;
-
+		@include Max_Large {
+			width: 25%;
+		}
 		.c-card__item__content__list {
 			display: flex;
 			flex-wrap: wrap;
@@ -510,7 +532,7 @@
 			.row {
 				width: 100%;
 				justify-content: space-between;
-				align-items: flex-end;
+				align-items: center;
 				margin-bottom: 0;
 			}
 
@@ -528,12 +550,17 @@
 				.list__item__num {
 					color: $gray1;
 					font-family: $english-font;
+					width: 70%;
+					text-align: end;
+					font-size: $h2;
 				}
 
 				.list__item__title {
 					font-size: $font-size;
 					color: $gray3;
 					margin-right: $pd-2;
+					white-space: nowrap;
+					width: 30%;
 				}
 
 				&:last-child {
@@ -548,7 +575,9 @@
 		width: 35%;
 		padding: 0 0 0 $pd-2;
 		border-right: 0;
-
+		@include Max_Large {
+			width: 30%;
+		}
 		.row {
 			width: 100%;
 			justify-content: space-between;
@@ -559,11 +588,16 @@
 			font-family: $english-font;
 			font-size: $h2;
 			font-weight: 700;
+			letter-spacing: 0.02rem;
 		}
 
 		.c-card__item__content__list {
 			.list__item {
 				align-items: center;
+				.list__item__num {
+					text-align: center;
+					font-size: $p;
+				}
 			}
 		}
 	}
@@ -670,13 +704,18 @@
 .c-card-lableGroup {
 	cursor: pointer;
 	@extend .c-card;
-	width: 32%;
+	width: calc(25% - 0.5rem);
 	display: flex;
 	align-items: center;
 	border-radius: $card-lableGroup;
 	margin: 0.2rem 0 0 0.2rem;
 	padding: 0;
-
+	@include Max_Large {
+		width: calc(33% - 0.5rem);
+	}
+	@include Large {
+		width: calc(50% - 0.5rem);
+	}
 	a {
 		display: flex;
 		align-items: center;
@@ -3634,7 +3673,7 @@
 
 .o-tag {
 	border-radius: $tag-radius;
-	padding: 0.5rem;
+	padding: 0.2rem 0.5rem;
 	display: inline-block;
 	background-color: $hyweb-lighblue;
 }
@@ -3642,7 +3681,7 @@
 .o-tag-danger {
 	@extend .o-tag;
 	background: $hy-background-danger;
-	padding: 0.08rem 0.5rem;
+	// padding: 0.2rem 0.5rem;
 	margin-left: 0.8rem;
 
 	font-family: $english-font;
