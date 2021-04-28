@@ -1,593 +1,571 @@
 #memberstime {
-    .l-main-tabs {
-        margin-bottom: 5px;
-    }
+	.l-main-tabs {
+		margin-bottom: 5px;
+	}
 
-    .c-search-list {
-        .c-dropdown-member {
-            .c-dropdown__input {
+	.c-search-list {
+		.c-dropdown-member {
+			.c-dropdown__input {
+				.o-input-div {
+					background-color: rgba(0, 0, 0, 0);
 
-                .o-input-div {
-                    background-color: rgba(0, 0, 0, 0);
+					&::after {
+						background-image: url(../img/o-arrowDown.svg);
+					}
+				}
 
-                    &::after {
-                        background-image: url(../img/o-arrowDown.svg);
+				&::after {
+					background-color: rgba(0, 0, 0, 0);
+					background-image: none;
+					z-index: -1;
+				}
+			}
+		}
+	}
 
-                    }
-                }
+	.c-card-manhourSearch {
+		margin-bottom: 1rem;
+	}
 
-                &::after {
-                    background-color: rgba(0, 0, 0, 0);
-                    background-image: none;
-                    z-index: -1;
-                }
+	.c-datePicker__modal {
+		.c-datePicker__yearPicker {
+			button {
+				border-radius: 50%;
+			}
+		}
+	}
 
+	.l-main-content-item__listTitle {
+		height: 4rem;
+	}
 
+	.change-card-to-list {
+		.l-main-content-item__listTitle {
+			padding-left: 3rem;
+		}
 
-            }
+		.l-main-content-item {
+			.c-card-manhourSearch {
+				height: 3.733rem; //4rem;
+				margin-bottom: 0;
+				cursor: default;
 
-        }
-    }
+				div {
+					cursor: default;
+				}
+			}
+		}
 
-    .c-card-manhourSearch {
-        margin-bottom: 1rem;
-    }
+		.c-card-manhourSearch__userName {
+			display: none;
+		}
 
-    .c-datePicker__modal {
-        .c-datePicker__yearPicker {
-            button {
-                border-radius: 50%;
-            }
-        }
-    }
+		.c-card-manhourSearch__englishName {
+			display: none;
+		}
 
-    .l-main-content-item__listTitle {
-        height: 4rem;
+		.listTitle__user {
+			width: 10%;
+		}
 
-    }
+		.listTitle__englishName {
+			width: 60%;
+		}
 
-    .change-card-to-list {
-        .l-main-content-item__listTitle {
-            padding-left: 3rem;
-        }
+		.listTitle__workTime {
+			width: 10%;
+		}
 
-        .l-main-content-item {
-            .c-card-manhourSearch {
-                height: 4rem;
-                margin-bottom: 0;
-                cursor: default;
+		.js-c-card__appendUserName {
+			width: 80%;
 
-                div {
-                    cursor: default;
-                }
-            }
-        }
+			h2 {
+				width: 12.5%;
+			}
 
+			h3 {
+				width: 75%;
+			}
+		}
 
-        .c-card-manhourSearch__userName {
-            display: none;
-        }
+		.c-card__content {
+			width: 10%;
+		}
 
-        .c-card-manhourSearch__englishName {
-            display: none;
-        }
+		.c-card-manhourSearch {
+			&:hover {
+				transition: all 0;
+				transform: translateY(0px) translateX(0px);
+			}
 
-        .listTitle__user {
-            width: 10%;
-        }
+			&:active {
+				transition: all 0;
+				transform: translateY(0px) translateX(0px);
+			}
 
-        .listTitle__englishName {
-            width: 60%;
-        }
-
-        .listTitle__workTime {
-            width: 10%;
-        }
-
-        .js-c-card__appendUserName {
-            width: 80%;
-
-            h2 {
-                width: 12.5%;
-            }
-
-            h3 {
-                width: 75%;
-            }
-        }
-
-        .c-card__content {
-            width: 10%;
-        }
-
-        .c-card-manhourSearch {
-            &:hover {
-                transition: all 0;
-                transform: translateY(0px) translateX(0px);
-            }
-
-            &:active {
-                transition: all 0;
-                transform: translateY(0px) translateX(0px);
-            }
-
-            .c-card__userInformation {
-                h3 {
-                    font-family: $font-family;
-                }
-            }
-        }
-
-    }
+			.c-card__userInformation {
+				h3 {
+					font-family: $font-family;
+				}
+			}
+		}
+	}
 }
 
 #departmenttime {
-    .l-main-tabs {
-        margin-bottom: 5px;
-    }
+	.l-main-tabs {
+		margin-bottom: 5px;
+	}
 
-    .c-datePicker__modal {
-        .c-datePicker__yearPicker {
-            button {
-                border-radius: 50%;
-            }
-        }
-    }
+	.c-datePicker__modal {
+		.c-datePicker__yearPicker {
+			button {
+				border-radius: 50%;
+			}
+		}
+	}
 
-    .change-card-to-list {
-        .c-card-manhourSearch {
-            margin-bottom: 0rem;
+	.change-card-to-list {
+		.c-card-manhourSearch {
+			margin-bottom: 0rem;
 
-            div {
-                cursor: default;
-            }
-        }
+			div {
+				cursor: default;
+			}
+		}
 
-        .c-card-manhourSearch__userName {
-            display: none;
-        }
+		.c-card-manhourSearch__userName {
+			display: none;
+		}
 
-        .c-card-manhourSearch__englishName {
-            display: none;
-        }
+		.c-card-manhourSearch__englishName {
+			display: none;
+		}
 
-        .listTitle__user {
-            width: 10%;
-        }
+		.listTitle__user {
+			width: 10%;
+		}
 
-        .listTitle__englishName {
-            width: 60%;
-        }
+		.listTitle__englishName {
+			width: 60%;
+		}
 
-        .listTitle__workTime {
-            width: 10%;
-        }
+		.listTitle__workTime {
+			width: 10%;
+		}
 
-        .js-c-card__appendUserName {
-            width: 80%;
+		.js-c-card__appendUserName {
+			width: 80%;
 
-            h2 {
-                width: 12.5%;
-            }
+			h2 {
+				width: 12.5%;
+			}
 
-            h3 {
-                width: 75%;
-            }
-        }
+			h3 {
+				width: 75%;
+			}
+		}
 
-        .c-card__content {
-            width: 10%;
-        }
+		.c-card__content {
+			width: 10%;
+		}
 
-        .c-card-manhourSearch {
-            &:hover {
-                transition: all 0;
-                transform: translateY(0px) translateX(0px);
-            }
+		.c-card-manhourSearch {
+			&:hover {
+				transition: all 0;
+				transform: translateY(0px) translateX(0px);
+			}
 
-            &:active {
-                transition: all 0;
-                transform: translateY(0px) translateX(0px);
-            }
-        }
-
-    }
+			&:active {
+				transition: all 0;
+				transform: translateY(0px) translateX(0px);
+			}
+		}
+	}
 }
 
 #supporttime {
-    .c-card-department {
-        margin-bottom: 1rem;
-    }
+	.c-card-department {
+		margin-bottom: 1rem;
+	}
 
-    .c-card-manhourSearch {
-        margin-bottom: 1rem;
+	.c-card-manhourSearch {
+		margin-bottom: 1rem;
 
-        div {
-            cursor: default;
-        }
+		div {
+			cursor: default;
+		}
+	}
 
-    }
+	.l-main-tabs {
+		margin-bottom: 5px;
+	}
 
-    .l-main-tabs {
-        margin-bottom: 5px;
-    }
+	.l-main-content-text {
+		.l-main-content-text__title {
+			.o-btn-secondary a {
+				color: $gray1;
+			}
+		}
+	}
 
-    .l-main-content-text {
-        .l-main-content-text__title {
-            .o-btn-secondary a {
-                color: $gray1;
-            }
-        }
-    }
+	.c-datePicker__modal {
+		.c-datePicker__yearPicker {
+			button {
+				border-radius: 50%;
+			}
+		}
+	}
 
-    .c-datePicker__modal {
-        .c-datePicker__yearPicker {
-            button {
-                border-radius: 50%;
-            }
-        }
-    }
+	.change-card-to-list {
+		.c-card-department {
+			cursor: default;
+		}
 
-    .change-card-to-list {
-        .c-card-department {
-            cursor: default;
-        }
+		.c-card-manhourSearch {
+			margin-bottom: 0rem;
 
-        .c-card-manhourSearch {
-            margin-bottom: 0rem;
+			.c-card__userInformation {
+				h3 {
+					font-family: $font-family;
+				}
+			}
+		}
 
-            .c-card__userInformation {
-                h3 {
-                    font-family: $font-family;
-                }
-            }
+		.l-main-content-item__listTitle {
+			height: 3.733rem; //4rem;
+			padding-left: 3rem;
+		}
 
-        }
+		.l-main-content-item {
+			.c-card-department {
+				height: 3.733rem; //4rem;
+				margin-bottom: 0;
 
-        .l-main-content-item__listTitle {
-            height: 4rem;
-            padding-left: 3rem;
-        }
+				&:hover {
+					transition: all 0;
+					transform: translateY(0px) translateX(0px);
+				}
 
-        .l-main-content-item {
+				&:active {
+					transition: all 0;
+					transform: translateY(0px) translateX(0px);
+				}
 
-            .c-card-department {
-                height: 4rem;
-                margin-bottom: 0;
+				h2 {
+					font-weight: 400;
+					font-size: $p;
+					width: 10%;
+					font-family: $font-family;
+					line-height: 1.2rem;
+				}
 
-                &:hover {
-                    transition: all 0;
-                    transform: translateY(0px) translateX(0px);
-                }
+				.c-card__userInformation {
+					display: none;
+				}
+			}
+		}
 
-                &:active {
-                    transition: all 0;
-                    transform: translateY(0px) translateX(0px);
-                }
+		.c-card-manhourSearch__userName {
+			display: none;
+		}
 
-                h2 {
-                    font-weight: 400;
-                    font-size: $p;
-                    width: 10%;
-                    font-family: $font-family;
-                    line-height: 1.2rem;
-                }
+		.c-card-manhourSearch__englishName {
+			display: none;
+		}
 
+		.listTitle__user {
+			width: 10%;
+		}
 
-                .c-card__userInformation {
-                    display: none;
+		.listTitle__englishName {
+			width: 60%;
+		}
 
-                }
-            }
+		.listTitle__workTime {
+			width: auto;
+		}
 
-        }
+		.js-c-card__appendUserName {
+			width: 80%;
 
-        .c-card-manhourSearch__userName {
-            display: none;
-        }
+			h2 {
+				width: 12.5%;
+			}
 
-        .c-card-manhourSearch__englishName {
-            display: none;
-        }
+			h3 {
+				width: 75%;
+			}
+		}
 
-        .listTitle__user {
-            width: 10%;
-        }
+		.c-card__content {
+			width: 10%;
+		}
 
-        .listTitle__englishName {
-            width: 60%;
-        }
+		.c-card-manhourSearch {
+			height: 3.733rem; //4rem;
 
-        .listTitle__workTime {
+			&:hover {
+				transition: all 0;
+				transform: translateY(0px) translateX(0px);
+			}
 
-            width: auto;
-        }
-
-
-        .js-c-card__appendUserName {
-            width: 80%;
-
-            h2 {
-                width: 12.5%;
-            }
-
-            h3 {
-                width: 75%;
-            }
-        }
-
-        .c-card__content {
-            width: 10%;
-        }
-
-        .c-card-manhourSearch {
-            height: 4rem;
-
-            &:hover {
-                transition: all 0;
-                transform: translateY(0px) translateX(0px);
-            }
-
-            &:active {
-                transition: all 0;
-                transform: translateY(0px) translateX(0px);
-            }
-        }
-
-    }
+			&:active {
+				transition: all 0;
+				transform: translateY(0px) translateX(0px);
+			}
+		}
+	}
 }
 
 #notReachedtime {
-    .l-main-tabs {
-        margin-bottom: 5px;
-    }
+	.l-main-tabs {
+		margin-bottom: 5px;
+	}
 
-    .c-search-list {
-        .c-dropdown-member {
-            .c-dropdown__input {
+	.c-search-list {
+		.c-dropdown-member {
+			.c-dropdown__input {
+				.o-input-div {
+					background-color: rgba(0, 0, 0, 0);
 
-                .o-input-div {
-                    background-color: rgba(0, 0, 0, 0);
+					&::after {
+						background-image: url(../img/o-arrowDown.svg);
+					}
+				}
 
-                    &::after {
-                        background-image: url(../img/o-arrowDown.svg);
+				&::after {
+					background-color: rgba(0, 0, 0, 0);
+					background-image: none;
+					z-index: -1;
+				}
+			}
+		}
+	}
 
-                    }
-                }
+	.c-datePicker__modal {
+		.c-datePicker__yearPicker {
+			button {
+				border-radius: 50%;
+			}
+		}
+	}
 
-                &::after {
-                    background-color: rgba(0, 0, 0, 0);
-                    background-image: none;
-                    z-index: -1;
-                }
+	.change-card-to-list {
+		.c-card-percent {
+			margin-bottom: 1rem;
+			cursor: default;
 
+			div {
+				cursor: default;
+			}
 
+			&:hover {
+				transition: all 0;
+				transform: translateY(0px) translateX(0px);
+			}
 
-            }
+			&:active {
+				transition: all 0;
+				transform: translateY(0px) translateX(0px);
+			}
 
-        }
-    }
+			.c-card__item {
+				.c-card__item__title {
+					margin-top: 0.2rem;
+				}
+			}
+		}
 
+		.l-main-content-item__listTitle {
+			height: 3.733rem; //4rem;
+			padding-left: 3rem;
+		}
 
-    .c-datePicker__modal {
-        .c-datePicker__yearPicker {
-            button {
-                border-radius: 50%;
-            }
-        }
-    }
+		.c-card-percent {
+			margin-bottom: 0rem;
+		}
 
-    .change-card-to-list {
-        .c-card-percent {
-            margin-bottom: 1rem;
-            cursor: default;
+		.c-card-percent {
+			height: 3.733rem; //4rem;
+		}
 
-            div {
-                cursor: default;
-            }
+		.c-card__userInformation {
+			h3 {
+				font-family: $font-family;
+			}
+		}
 
-            &:hover {
-                transition: all 0;
-                transform: translateY(0px) translateX(0px);
-            }
+		.c-card__item__title {
+			cursor: default;
+		}
 
-            &:active {
-                transition: all 0;
-                transform: translateY(0px) translateX(0px);
-            }
+		.c-card-percent__userName {
+			display: none;
+		}
 
-            .c-card__item {
-                .c-card__item__title {
-                    margin-top: 0.2rem;
-                }
-            }
-        }
+		.c-card-percent__englishName {
+			display: none;
+		}
 
-        .l-main-content-item__listTitle {
-            height: 4rem;
-            padding-left: 3rem;
-        }
+		.c-card-manhourSearch__userName {
+			display: none;
+		}
 
-        .c-card-percent {
-            margin-bottom: 0rem;
-        }
+		.c-card-manhourSearch__englishName {
+			display: none;
+		}
 
-        .c-card-percent {
-            height: 4rem;
-        }
+		.listTitle__user {
+			width: 10%;
+		}
 
-        .c-card__userInformation {
-            h3 {
-                font-family: $font-family;
-            }
-        }
+		.listTitle__englishName {
+			width: 60%;
+		}
 
-        .c-card__item__title {
-            cursor: default;
-        }
+		.listTitle__workTime {
+			width: 10%;
+		}
 
-        .c-card-percent__userName {
-            display: none;
-        }
+		.js-c-card__appendUserName {
+			width: 80%;
 
-        .c-card-percent__englishName {
-            display: none;
-        }
+			h2 {
+				width: 12.5%;
+			}
 
-        .c-card-manhourSearch__userName {
-            display: none;
-        }
+			h3 {
+				width: 75%;
+			}
+		}
 
-        .c-card-manhourSearch__englishName {
-            display: none;
-        }
+		.c-card__content {
+			width: 10%;
+		}
 
-        .listTitle__user {
-            width: 10%;
-        }
+		.card-percent__listTitle {
+			.listTitle__englishName {
+				width: 15%;
+			}
 
-        .listTitle__englishName {
-            width: 60%;
-        }
+			.listTitle__workTime {
+				width: 15%;
+			}
 
-        .listTitle__workTime {
-            width: 10%;
-        }
+			.listTitle__leaveTime {
+				width: 30%;
+			}
+		}
 
-        .js-c-card__appendUserName {
-            width: 80%;
+		.c-card-percent {
+			.js-c-card__appendUserName {
+				width: 35%;
 
-            h2 {
-                width: 12.5%;
-            }
+				h2 {
+					width: 28.5714%;
+				}
 
-            h3 {
-                width: 75%;
-            }
-        }
+				h3 {
+					width: 42.857142%;
+				}
+			}
 
-        .c-card__content {
-            width: 10%;
+			.c-card__content {
+				width: 55%;
 
-        }
+				.c-card__item {
+					width: auto;
+					justify-content: flex-start;
 
-        .card-percent__listTitle {
-            .listTitle__englishName {
-                width: 15%;
-            }
+					div {
+						padding: 0;
+						margin: 0;
+					}
+				}
 
-            .listTitle__workTime {
-                width: 15%;
-            }
+				.c-card-percent__workTime {
+					width: 27.272727%;
 
-            .listTitle__leaveTime {
-                width: 30%;
-            }
-        }
+					.c-card__item__totaltime {
+						font-weight: 400;
+						letter-spacing: 0;
+					}
+				}
 
-        .c-card-percent {
-            .js-c-card__appendUserName {
-                width: 35%;
+				.c-card-percent__leaveTime {
+					width: 54.5454545%;
+				}
 
-                h2 {
-                    width: 28.5714%;
-                }
+				.c-card-percent__percent {
+					width: 18.181818%;
+				}
+			}
+		}
 
-                h3 {
-                    width: 42.857142%;
-                }
-            }
+		.c-card-percentCheck {
+			&:hover {
+				transition: all 0;
+				transform: translateY(0px) translateX(0px);
+			}
 
-            .c-card__content {
-                width: 55%;
+			&:active {
+				transition: all 0;
+				transform: translateY(0px) translateX(0px);
+			}
 
-                .c-card__item {
-                    width: auto;
-                    justify-content: flex-start;
+			cursor: default;
 
-                    div {
-                        padding: 0;
-                        margin: 0;
-                    }
-                }
+			div {
+				cursor: default;
+			}
 
-                .c-card-percent__workTime {
-                    width: 27.272727%;
+			.c-card-title {
+				span {
+					right: 30px;
+					top: 5px;
+				}
+				form {
+					margin-top: 0rem;
+					margin-right: 0rem;
+				}
+				div {
+					margin-left: 0rem;
+				}
+			}
+		}
 
-                    .c-card__item__totaltime {
-                        font-weight: 400;
-                        letter-spacing: 0;
-                    }
-                }
+		.c-card-manhourSearch {
+			&:hover {
+				transition: all 0;
+				transform: translateY(0px) translateX(0px);
+			}
 
-                .c-card-percent__leaveTime {
-                    width: 54.5454545%;
+			&:active {
+				transition: all 0;
+				transform: translateY(0px) translateX(0px);
+			}
+		}
 
-                }
+		a {
+			align-items: center;
+		}
+	}
 
-                .c-card-percent__percent {
-                    width: 18.181818%;
-                }
-            }
-        }
+	.is-error-status {
+		.c-search-list {
+			.c-search-item {
+				.c-search-item__percentTitle {
+					color: $danger;
+				}
 
-        .c-card-percentCheck {
-            &:hover {
-                transition: all 0;
-                transform: translateY(0px) translateX(0px);
-            }
-
-            &:active {
-                transition: all 0;
-                transform: translateY(0px) translateX(0px);
-            }
-
-            cursor: default;
-
-            div {
-                cursor: default;
-            }
-
-            .c-card-title {
-                span {
-                    right: 30px;
-                    top: 5px;
-                }
-            }
-        }
-
-        .c-card-manhourSearch {
-            &:hover {
-                transition: all 0;
-                transform: translateY(0px) translateX(0px);
-            }
-
-            &:active {
-                transition: all 0;
-                transform: translateY(0px) translateX(0px);
-            }
-        }
-
-        a {
-            align-items: center;
-        }
-    }
-
-    .is-error-status {
-        .c-search-list {
-            .c-search-item {
-                .c-search-item__percentTitle {
-                    color: $danger;
-                }
-
-                .c-search-item__input {
-                    input {
-                        background-color: #fff;
-                        border: 1px solid $danger;
-                    }
-                }
-            }
-        }
-    }
-
+				.c-search-item__input {
+					input {
+						background-color: #fff;
+						border: 1px solid $danger;
+					}
+				}
+			}
+		}
+	}
 }

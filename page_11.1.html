@@ -4649,168 +4649,185 @@
 
 
   <!--addGroupModal 新增人員視窗 -->
-  <!-- c-modal-btnList 新增 常用成員的button -->
-  <div id="addGroupModal" class="c-modal-addGroup modal">
+  <!--新增 常用成員的button -->
+	<div id="addGroupModal" class="c-modal-addGroup modal">
     <div class="c-modal-btnList">
-      <button class="member-btn waves-effect waves-blue">
-        <a class="modal-trigger" href="#usuallyModal">
-          <img class="" src="img/o-group.svg" alt="" />
-          <div class="">常用成員</div>
-        </a>
-      </button>
       <button class="cross-btn" type="button">
         <img class="modal-close" src="img/o-cross.svg" alt="" />
       </button>
     </div>
     <div class="c-modal-addGroup__content">
       <div class="row c-modal-content__select">
+        <div class="col">
+          <button class="member-btn waves-effect waves-blue">
+            <a class="modal-trigger" href="#usuallyModal">
+              <div class="">選擇常用成員</div>
+            </a>
+          </button>
+          <span>或</span>
+        </div>
         <div class="col s6">
-          <div class="input-title"><span>* </span>計劃名稱</div>
+          <div class="input-title">部門</div>
           <div class="input-field c-dropdown-planContent">
             <select class="c-dropdown-plan-select">
-              <optgroup label="籌備中">
-                <option value="1">
-                  2020年度地方版公務出國報告系統無障礙2.0規範ＡＡ等級標章申請作業採購案
-                </option>
-                <option value="2">2020智慧空間管理理系</option>
-                <option value="3">2020智慧空間管理理系慧空慧空</option>
-                <option value="4">
-                  2020智慧空間管理理慧空慧空慧空慧空系
-                </option>
-              </optgroup>
-              <optgroup label="執行中">
-                <option value="5">2020智慧空間管理理慧空系</option>
-                <option value="6">2020智慧空間管理理慧空系</option>
-                <option value="7">2020智慧空間管理理慧空系</option>
-                <option value="8">2020智慧空間管理理慧空系</option>
-              </optgroup>
-              <optgroup label="保固中">
-                <option value="9">2020智慧空間管理理慧空系</option>
-                <option value="10">
-                  2020智慧空間管理理慧空慧空慧空慧空系
-                </option>
-                <option value="11">2020智慧空間管理理系慧空慧空</option>
-                <option value="12">
-                  2020智慧空間管理理慧空慧空慧空慧空系
-                </option>
-              </optgroup>
+              <option value="1">U20-使用者經驗用者用者企劃部</option>
+
+              <option value="2">U20-使用者經驗用者用者企劃部</option>
+              <option value="3">U20-使用者經驗用者用者企劃部</option>
+              <option value="4">U20-使用者經驗用者用者企劃部</option>
             </select>
           </div>
         </div>
         <div class="col s5">
-          <div class="input-title">備註</div>
+          <div class="input-title">關鍵字</div>
           <div class="o-input">
-            <input class="" type="text" />
+            <input class="" type="text" placeholder="姓名、英文暱稱、工號" />
           </div>
         </div>
         <div class="col">
           <button class="o-btn-primary waves-effect waves-blue">搜尋</button>
         </div>
       </div>
-      <div class="c-modal-content js-scrollbar-style">
+      <div class="c-modal-content">
         <div class="c-modal-content__chooseMember">
-          <div class="c-modal-content__chooseMember__title">已選成員</div>
-          <div class="">
+          <div class="chooseMember__title">
+            <div class="">待選成員</div>
+            <button class="">全選</button>
+          </div>
+          <div class="js-scrollbar-style">
             <div class="chooseMember-tag">
-              <div class="chooseMember-tag__name">王小明 Mike</div>
-              <button><img src="img/o-cross-white.svg" alt="" /></button>
+              <div class="">U00</div>
+              <div class="">A9025</div>
+              <div class="chooseMember-tag__name">王小明</div>
+              <div class="">Mike</div>
+              <button><img src="img/o-plus.svg" alt="" /></button>
             </div>
             <div class="chooseMember-tag">
-              <div class="chooseMember-tag__name">王小明 Mike</div>
-              <button><img src="img/o-cross-white.svg" alt="" /></button>
+              <div class="">U00</div>
+              <div class="">A9025</div>
+              <div class="chooseMember-tag__name">王小明</div>
+              <div class="">Mike</div>
+              <button><img src="img/o-plus.svg" alt="" /></button>
             </div>
             <div class="chooseMember-tag">
-              <div class="chooseMember-tag__name">王小明 Jessica</div>
-              <button><img src="img/o-cross-white.svg" alt="" /></button>
+              <div class="">U00</div>
+              <div class="">A9025</div>
+              <div class="chooseMember-tag__name">王小明</div>
+              <div class="">Mike</div>
+              <button><img src="img/o-plus.svg" alt="" /></button>
             </div>
             <div class="chooseMember-tag">
-              <div class="chooseMember-tag__name">王小明 Michelle</div>
-              <button><img src="img/o-cross-white.svg" alt="" /></button>
+              <div class="">U00</div>
+              <div class="">A9025</div>
+              <div class="chooseMember-tag__name">王小明</div>
+              <div class="">Mike</div>
+              <button><img src="img/o-plus.svg" alt="" /></button>
             </div>
             <div class="chooseMember-tag">
-              <div class="chooseMember-tag__name">王小明 Jessica</div>
-              <button><img src="img/o-cross-white.svg" alt="" /></button>
+              <div class="">U00</div>
+              <div class="">A9025</div>
+              <div class="chooseMember-tag__name">王小明</div>
+              <div class="">Mike</div>
+              <button><img src="img/o-plus.svg" alt="" /></button>
             </div>
             <div class="chooseMember-tag">
-              <div class="chooseMember-tag__name">王小明 Jessica</div>
-              <button><img src="img/o-cross-white.svg" alt="" /></button>
+              <div class="">U00</div>
+              <div class="">A9025</div>
+              <div class="chooseMember-tag__name">王小明</div>
+              <div class="">Mike</div>
+              <button><img src="img/o-plus.svg" alt="" /></button>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="">U00</div>
+              <div class="">A9025</div>
+              <div class="chooseMember-tag__name">王小明</div>
+              <div class="">Mike</div>
+              <button><img src="img/o-plus.svg" alt="" /></button>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="">U00</div>
+              <div class="">A9025</div>
+              <div class="chooseMember-tag__name">王小明</div>
+              <div class="">Mike</div>
+              <button><img src="img/o-plus.svg" alt="" /></button>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="">U00</div>
+              <div class="">A9025</div>
+              <div class="chooseMember-tag__name">王小明</div>
+              <div class="">Mike</div>
+              <button><img src="img/o-plus.svg" alt="" /></button>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="">U00</div>
+              <div class="">A9025</div>
+              <div class="chooseMember-tag__name">王小明</div>
+              <div class="">Mike</div>
+              <button><img src="img/o-plus.svg" alt="" /></button>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="">U00</div>
+              <div class="">A9025</div>
+              <div class="chooseMember-tag__name">王小明</div>
+              <div class="">Mike</div>
+              <button><img src="img/o-plus.svg" alt="" /></button>
+            </div>
+            <div class="chooseMember-tag">
+              <div class="">U00</div>
+              <div class="">A9025</div>
+              <div class="chooseMember-tag__name">王小明</div>
+              <div class="">Mike</div>
+              <button><img src="img/o-plus.svg" alt="" /></button>
             </div>
           </div>
         </div>
         <div class="c-modal-content__memberList">
           <div class="memberList__title">
-            <div class="">全選</div>
-            <div class="">全部清除</div>
+            <div class="">已選成員</div>
+            <button class="">重設</button>
           </div>
-          <div class="memberList__group">
-            <!-- "c-card-lablePerson__additem" 監聽樣式 點擊後動態新增或刪除"is-active" -->
-            <div class="c-card-lablePerson c-card-lablePerson__additem is-active">
-              <div class="c-card-lablePerson-title">U00</div>
-              <div class="c-card-lablePerson-item">
-                <div class="">
-                  <div class="">A9025</div>
-                  <div class="">王小明 Mike</div>
-                </div>
-              </div>
+          <div class="js-scrollbar-style">
+            <div class="chooseMember-tag">
+              <div class="">U00</div>
+              <div class="">A9025</div>
+              <div class="chooseMember-tag__name">王小明</div>
+              <div class="">Mike</div>
+              <button><img src="img/o-minus.svg" alt="" /></button>
             </div>
-            <div class="c-card-lablePerson c-card-lablePerson__additem">
-              <div class="c-card-lablePerson-title">U00</div>
-              <div class="c-card-lablePerson-item">
-                <div class="">
-                  <div class="">A9025</div>
-                  <div class="">王小明 Mike</div>
-                </div>
-              </div>
+            <div class="chooseMember-tag">
+              <div class="">U00</div>
+              <div class="">A9025</div>
+              <div class="chooseMember-tag__name">王小明</div>
+              <div class="">Mike</div>
+              <button><img src="img/o-minus.svg" alt="" /></button>
             </div>
-            <div class="c-card-lablePerson c-card-lablePerson__additem">
-              <div class="c-card-lablePerson-title">U00</div>
-              <div class="c-card-lablePerson-item">
-                <div class="">
-                  <div class="">A9025</div>
-                  <div class="">王小明 Mike</div>
-                </div>
-              </div>
+            <div class="chooseMember-tag">
+              <div class="">U00</div>
+              <div class="">A9025</div>
+              <div class="chooseMember-tag__name">王小明</div>
+              <div class="">Mike</div>
+              <button><img src="img/o-minus.svg" alt="" /></button>
             </div>
-            <div class="c-card-lablePerson c-card-lablePerson__additem">
-              <div class="c-card-lablePerson-title">U00</div>
-              <div class="c-card-lablePerson-item">
-                <div class="">
-                  <div class="">A9025</div>
-                  <div class="">王小明 Mike</div>
-                </div>
-              </div>
+            <div class="chooseMember-tag">
+              <div class="">U00</div>
+              <div class="">A9025</div>
+              <div class="chooseMember-tag__name">王小明</div>
+              <div class="">Mike</div>
+              <button><img src="img/o-minus.svg" alt="" /></button>
             </div>
-            <div class="c-card-lablePerson c-card-lablePerson__additem">
-              <div class="c-card-lablePerson-title">U00</div>
-              <div class="c-card-lablePerson-item">
-                <div class="">
-                  <div class="">A9025</div>
-                  <div class="">王小明 Mike</div>
-                </div>
-              </div>
-            </div>
-            <div class="c-card-lablePerson c-card-lablePerson__additem">
-              <div class="c-card-lablePerson-title">U00</div>
-              <div class="c-card-lablePerson-item">
-                <div class="">
-                  <div class="">A9025</div>
-                  <div class="">王小明 Mike</div>
-                </div>
-              </div>
-            </div>
-            <div class="c-card-lablePerson c-card-lablePerson__additem">
-              <div class="c-card-lablePerson-title">U00</div>
-              <div class="c-card-lablePerson-item">
-                <div class="">
-                  <div class="">A9025</div>
-                  <div class="">王小明 Mike</div>
-                </div>
-              </div>
+            <div class="chooseMember-tag">
+              <div class="">U00</div>
+              <div class="">A9025</div>
+              <div class="chooseMember-tag__name">王小明</div>
+              <div class="">Mike</div>
+              <button><img src="img/o-minus.svg" alt="" /></button>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal-footer c-modal-footer">
+      <div
+        class="c-modal-addGroup__content__item modal-footer c-modal-footer"
+      >
         <button class="o-btn-primary waves-effect waves-blue modal-close">
           加入
         </button>
