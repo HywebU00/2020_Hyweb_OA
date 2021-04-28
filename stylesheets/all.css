@@ -10281,6 +10281,7 @@ body {
 .l-main-content {
   margin-top: 0.5rem;
   padding: 0 0.2rem;
+  min-height: calc(100vh - 210px);
 }
 
 .l-main-content .l-main-content__downloadlink {
@@ -10800,6 +10801,7 @@ body {
 }
 
 .l-main-content .l-main-content__wbslist .table-body, .l-main-content .l-main-content__workTypelist .table-body {
+  min-height: 100vh;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -10929,8 +10931,8 @@ body {
 }
 
 .l-main-content .l-main-content__wbslist .table-body .table-body__item .row, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row, .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
 }
 
 .l-main-content .l-main-content__wbslist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .table-body__item__project, .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__project, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__project {
@@ -11011,6 +11013,11 @@ body {
   font-size: 0.8rem;
   display: block;
   margin-bottom: 0.2rem;
+}
+
+.l-main-content .l-main-content__wbslist .table-body .is-error-status .row, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .row {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
 }
 
 .l-main-content .l-main-content__wbslist .s1, .l-main-content .l-main-content__workTypelist .s1 {
@@ -11371,7 +11378,7 @@ body {
   margin-bottom: 0;
   font-size: 1.06rem;
   min-height: 3.733rem;
-  padding: 0.83rem 0 0.83rem 1.5rem;
+  padding: 0.3rem 0 0.3rem 1.5rem;
   height: auto;
   border-bottom: 1px solid #bad4e5;
   display: -webkit-box;
@@ -12077,14 +12084,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .c-card-percentCheck .c-card-title form {
   margin-top: 0.5rem;
   margin-right: 1.5rem;
+}
+
+.c-card-percentCheck .c-card-title div {
+  margin-left: 0.5rem;
 }
 
 .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan {
@@ -12282,9 +12290,26 @@ body {
 }
 
 .c-card-department {
-  width: 20%;
-  max-width: 260px;
+  width: calc(20% - 0.7rem);
   cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+  .c-card-department {
+    width: calc(25% - 0.7rem);
+  }
+}
+
+@media (max-width: 1200px) {
+  .c-card-department {
+    width: calc(33.33% - 0.7rem);
+  }
+}
+
+@media (max-width: 992px) {
+  .c-card-department {
+    width: calc(50% - 0.7rem);
+  }
 }
 
 .c-card-department h2 {
@@ -12477,8 +12502,8 @@ body {
 }
 
 .c-card-planReport .c-card__item__title .c-card__tag .c-card__tag__input, .c-card-planReport-danger .c-card__item__title .c-card__tag .c-card__tag__input, .c-card-alertPlan .c-card__item__title .c-card__tag .c-card__tag__input, .c-card-planReport .c-card__item__content .c-card__tag .c-card__tag__input, .c-card-planReport-danger .c-card__item__content .c-card__tag .c-card__tag__input, .c-card-alertPlan .c-card__item__content .c-card__tag .c-card__tag__input, .c-card-planReport .c-card__item__footer .c-card__tag .c-card__tag__input, .c-card-planReport-danger .c-card__item__footer .c-card__tag .c-card__tag__input, .c-card-alertPlan .c-card__item__footer .c-card__tag .c-card__tag__input {
-  margin-left: 55%;
   margin-right: 1rem;
+  margin-top: 0.2rem;
 }
 
 .c-card-planReport .c-card__item__title .c-card__tag .c-card__tag__input form p span, .c-card-planReport-danger .c-card__item__title .c-card__tag .c-card__tag__input form p span, .c-card-alertPlan .c-card__item__title .c-card__tag .c-card__tag__input form p span, .c-card-planReport .c-card__item__content .c-card__tag .c-card__tag__input form p span, .c-card-planReport-danger .c-card__item__content .c-card__tag .c-card__tag__input form p span, .c-card-alertPlan .c-card__item__content .c-card__tag .c-card__tag__input form p span, .c-card-planReport .c-card__item__footer .c-card__tag .c-card__tag__input form p span, .c-card-planReport-danger .c-card__item__footer .c-card__tag .c-card__tag__input form p span, .c-card-alertPlan .c-card__item__footer .c-card__tag .c-card__tag__input form p span {
@@ -12594,10 +12619,6 @@ body {
 .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item .list__item__num, .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item .list__item__num, .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item .list__item__num {
   text-align: center;
   font-size: 1.06rem;
-}
-
-.c-card-planReport-danger .c-card__item__title .c-card__tag .c-card__tag__num .c-card__tag__input, .c-card-alertPlan .c-card__item__title .c-card__tag .c-card__tag__num .c-card__tag__input, .c-card-planReport-danger .c-card__item__content .c-card__tag .c-card__tag__num .c-card__tag__input, .c-card-alertPlan .c-card__item__content .c-card__tag .c-card__tag__num .c-card__tag__input, .c-card-planReport-danger .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__tag__input, .c-card-alertPlan .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__tag__input {
-  margin-left: 55%;
 }
 
 .c-card-planReport-danger .c-card__item__title .c-card__tag .c-card__tag__num .c-card__tag__input form p span, .c-card-alertPlan .c-card__item__title .c-card__tag .c-card__tag__num .c-card__tag__input form p span, .c-card-planReport-danger .c-card__item__content .c-card__tag .c-card__tag__num .c-card__tag__input form p span, .c-card-alertPlan .c-card__item__content .c-card__tag .c-card__tag__num .c-card__tag__input form p span, .c-card-planReport-danger .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__tag__input form p span, .c-card-alertPlan .c-card__item__footer .c-card__tag .c-card__tag__num .c-card__tag__input form p span {
@@ -13591,7 +13612,7 @@ body {
   width: 82%;
   height: 85vh;
   overflow: hidden;
-  padding: 2rem 2rem;
+  padding: 1.33rem;
 }
 
 .c-modal-addGroup .c-modal-closeBtn, .c-modal-usuallyUseMember .c-modal-closeBtn, .c-modal-sample .c-modal-closeBtn {
@@ -13610,42 +13631,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-.c-modal-addGroup .c-modal-btnList button, .c-modal-usuallyUseMember .c-modal-btnList button, .c-modal-sample .c-modal-btnList button {
-  border-radius: 40px;
-}
-
 .c-modal-addGroup .c-modal-btnList .cross-btn, .c-modal-usuallyUseMember .c-modal-btnList .cross-btn, .c-modal-sample .c-modal-btnList .cross-btn {
   margin-right: -0.5rem;
-}
-
-.c-modal-addGroup .c-modal-btnList a, .c-modal-usuallyUseMember .c-modal-btnList a, .c-modal-sample .c-modal-btnList a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #042340;
-  cursor: pointer;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.c-modal-addGroup .c-modal-btnList a img, .c-modal-usuallyUseMember .c-modal-btnList a img, .c-modal-sample .c-modal-btnList a img {
-  margin-right: 0.5rem;
-}
-
-.c-modal-addGroup .c-modal-btnList .member-btn, .c-modal-usuallyUseMember .c-modal-btnList .member-btn, .c-modal-sample .c-modal-btnList .member-btn {
-  margin-right: calc(75vw - 100px);
-  white-space: nowrap;
-  min-width: 4rem;
-  padding: 0.5rem;
-  position: absolute;
-  left: 1.5rem;
 }
 
 .c-modal-addGroup .c-modal-addGroup__content, .c-modal-usuallyUseMember .c-modal-addGroup__content, .c-modal-sample .c-modal-addGroup__content {
@@ -13675,16 +13668,40 @@ body {
   margin-left: 0;
 }
 
-.c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select :nth-child(3), .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select :nth-child(3), .c-modal-sample .c-modal-addGroup__content .c-modal-content__select :nth-child(3) {
-  padding-right: 0.25rem;
+.c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .col, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .col, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .col .input-title, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .col .input-title, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .col .input-title {
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+  font-weight: 400;
+  padding-left: 0;
+}
+
+.c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .col .input-title span, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .col .input-title span, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .col .input-title span {
+  color: #fb5b29;
+}
+
+.c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .col .c-dropdown-planContent, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .col .c-dropdown-planContent, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .col .c-dropdown-planContent {
+  width: 90%;
+}
+
+.c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .col:last-child, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .col:last-child, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .col:last-child {
+  padding-right: 0rem;
+}
+
+.c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .o-input, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .o-input, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .o-input, .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .hoursInput, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .hoursInput, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .hoursInput, .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .otherInput, .c-writeHours-content__select .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .otherInput, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .otherInput, .c-writeHours-content__select .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .otherInput, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .otherInput, .c-writeHours-content__select .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .otherInput, .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-search-item__input, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-search-item__input, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-search-item__input {
+  width: 90%;
 }
 
 .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .o-input input, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .o-input input, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .o-input input, .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .hoursInput input, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .hoursInput input, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .hoursInput input, .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .otherInput input, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .otherInput input, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .otherInput input, .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-search-item__input input, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-search-item__input input, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-search-item__input input {
   margin-bottom: 0;
-}
-
-.c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .o-btn-primary, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .o-btn-primary, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .o-btn-primary {
-  margin-top: 1.5rem;
 }
 
 .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .input-title span, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .input-title span, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .input-title span {
@@ -13700,122 +13717,160 @@ body {
   width: 45.6666666667%;
 }
 
-.c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .col, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .col, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .col {
-  padding-left: 0;
+.c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .member-btn, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .member-btn, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .member-btn {
+  white-space: nowrap;
+  height: 37px;
+  padding: 0.5rem 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
+  border-radius: 2.66rem;
+  margin-left: -0.75rem;
+  margin-right: 0.5rem;
+}
+
+.c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .member-btn a, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .member-btn a, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .member-btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .member-btn + span, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .member-btn + span, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .member-btn + span {
+  color: #8495a4;
 }
 
 .c-modal-addGroup .c-modal-content, .c-modal-usuallyUseMember .c-modal-content, .c-modal-sample .c-modal-content, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  height: calc(85vh - 230px);
-  overflow-y: scroll;
+  height: calc(85vh - 200px);
   padding-top: 1rem;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__select, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__select, .c-modal-sample .c-modal-content .c-modal-content__select, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__select, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__select, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__select, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__select, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__select, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__select {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  width: 100%;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #bad4e5;
-}
-
-.c-modal-addGroup .c-modal-content .c-modal-content__select .input-title span, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__select .input-title span, .c-modal-sample .c-modal-content .c-modal-content__select .input-title span, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__select .input-title span, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__select .input-title span, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__select .input-title span, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__select .input-title span, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__select .input-title span, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__select .input-title span {
-  color: #fb5b29;
-}
-
-.c-modal-addGroup .c-modal-content .c-modal-content__select input, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__select input, .c-modal-sample .c-modal-content .c-modal-content__select input, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__select input, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__select input, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__select input, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__select input, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__select input, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__select input {
-  margin-bottom: 0;
-  padding: 0 0.5rem;
-}
-
 .c-modal-addGroup .c-modal-content .c-modal-content__chooseMember, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember, .c-modal-sample .c-modal-content .c-modal-content__chooseMember, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember {
+  width: 50%;
+  padding-right: 1rem;
+}
+
+.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember__title, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember__title, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember__title, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 0rem 1rem 0rem;
-  border-bottom: 1px solid #bad4e5;
-}
-
-.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember div, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember div, .c-modal-sample .c-modal-content .c-modal-content__chooseMember div, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember div, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember div, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember div, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember div, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember div, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .c-modal-content__chooseMember__title, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .c-modal-content__chooseMember__title, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .c-modal-content__chooseMember__title, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .c-modal-content__chooseMember__title, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember .c-modal-content__chooseMember__title, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .c-modal-content__chooseMember__title, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember .c-modal-content__chooseMember__title, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .c-modal-content__chooseMember__title, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember .c-modal-content__chooseMember__title {
-  width: 100px;
-}
-
-.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember-tag, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember-tag, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember-tag, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  font-weight: bold;
+  font-size: 18px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.2rem 1rem;
-  border-radius: 0.33rem;
-  color: #fff;
-  margin: 0 0.25rem 0.5rem 0.25rem;
-  font-weight: 400;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
-  font-family: "Noto Sans TC", "sans-serif";
+  margin-bottom: 1rem;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember-tag .chooseMember-tag__name, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember-tag .chooseMember-tag__name, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember-tag .chooseMember-tag__name, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag .chooseMember-tag__name, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag .chooseMember-tag__name, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag .chooseMember-tag__name, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag .chooseMember-tag__name, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag .chooseMember-tag__name, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag .chooseMember-tag__name {
-  margin-right: 1rem;
-}
-
-.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember-tag button, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember-tag button, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember-tag button, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag button, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag button, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag button, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag button, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag button, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag button {
-  padding: 0;
+.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember__title :last-child, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember__title :last-child, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember__title :last-child, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title :last-child, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title :last-child, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title :last-child, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title :last-child, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title :last-child, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title :last-child {
+  color: #8495a4;
+  font-weight: normal;
   cursor: pointer;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember-tag button img, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember-tag button img, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember-tag button img, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag button img, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag button img, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag button img, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag button img, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag button img, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember-tag button img {
-  width: 25px;
-  height: 25px;
+.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag {
+  background-color: #f7fbff;
+  margin-bottom: 0.5rem;
+  border-radius: 0.53rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3.5rem;
+}
+
+.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag div, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag div, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag div, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag div, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag div, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag div, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag div, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag div, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag div {
+  width: 20%;
+  text-align: center;
+}
+
+.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button {
+  cursor: pointer;
+  width: 20%;
+}
+
+.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button img, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button img, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button img, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button img, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button img, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button img, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button img, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button img, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button img {
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+.c-modal-addGroup .c-modal-content .c-modal-content__memberList, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList, .c-modal-sample .c-modal-content .c-modal-content__memberList, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList {
+  width: 50%;
+  padding-left: 1rem;
 }
 
 .c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__title, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__title, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__title, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__title, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__title, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__title {
-  margin: 1rem 0;
-  color: #8495a4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: bold;
+  font-size: 18px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__title div, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__title div, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__title div, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title div, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__title div, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title div, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__title div, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title div, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__title div {
+.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__title :last-child, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__title :last-child, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__title :last-child, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title :last-child, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__title :last-child, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title :last-child, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__title :last-child, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title :last-child, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__title :last-child {
+  color: #8495a4;
+  font-weight: normal;
   cursor: pointer;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__group, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__group, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__group, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__group, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__group, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__group {
+.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__title + div, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__title + div, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__title + div, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag {
+  background-color: #f7fbff;
+  margin-bottom: 0.5rem;
+  border-radius: 0.53rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3.5rem;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group .c-card-lablePerson, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__group .c-card-lablePerson {
-  margin: 0 0 0.5rem 0.5rem;
+.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag div, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag div, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag div, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag div, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag div, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag div, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag div, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag div, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag div {
+  width: 20%;
+  text-align: center;
 }
 
-.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__group .is-active, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__group .is-active, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__group .is-active, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group .is-active, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__group .is-active, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group .is-active, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__group .is-active, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__group .is-active, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__group .is-active {
-  background-color: #e2f1fe;
+.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag button, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag button, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag button, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button {
+  cursor: pointer;
+  width: 20%;
+}
+
+.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag button img, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag button img, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag button img, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button img, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button img, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button img, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button img, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button img, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button img {
+  -ms-grid-column-align: right;
+      justify-self: right;
 }
 
 .c-modal-addGroup .c-modal-footer, .c-modal-usuallyUseMember .c-modal-footer, .c-modal-sample .c-modal-footer {
@@ -13847,16 +13902,18 @@ body {
   border: 1px solid #fb5b29;
 }
 
-.c-modal-addGroup .is-error-status .s5 .input-title, .c-modal-usuallyUseMember .is-error-status .s5 .input-title, .c-modal-sample .is-error-status .s5 .input-title {
+.c-modal-addGroup .is-error-status .s5 .o-input, .c-modal-usuallyUseMember .is-error-status .s5 .o-input, .c-modal-sample .is-error-status .s5 .o-input, .c-modal-addGroup .is-error-status .s5 .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .c-modal-addGroup .is-error-status .s5 .hoursInput, .c-modal-usuallyUseMember .is-error-status .s5 .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .c-modal-usuallyUseMember .is-error-status .s5 .hoursInput, .c-modal-sample .is-error-status .s5 .c-writeHours-content__select .hoursInput, .c-writeHours-content__select .c-modal-sample .is-error-status .s5 .hoursInput, .c-modal-addGroup .is-error-status .s5 .c-writeHours-content__select .otherInput, .c-writeHours-content__select .c-modal-addGroup .is-error-status .s5 .otherInput, .c-modal-usuallyUseMember .is-error-status .s5 .c-writeHours-content__select .otherInput, .c-writeHours-content__select .c-modal-usuallyUseMember .is-error-status .s5 .otherInput, .c-modal-sample .is-error-status .s5 .c-writeHours-content__select .otherInput, .c-writeHours-content__select .c-modal-sample .is-error-status .s5 .otherInput, .c-modal-addGroup .is-error-status .s5 .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .c-modal-addGroup .is-error-status .s5 .c-search-item__input, .c-modal-usuallyUseMember .is-error-status .s5 .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .c-modal-usuallyUseMember .is-error-status .s5 .c-search-item__input, .c-modal-sample .is-error-status .s5 .c-search-list .c-search-item .c-search-item__input, .c-search-list .c-search-item .c-modal-sample .is-error-status .s5 .c-search-item__input {
   position: relative;
 }
 
-.c-modal-addGroup .is-error-status .s5 .input-title::after, .c-modal-usuallyUseMember .is-error-status .s5 .input-title::after, .c-modal-sample .is-error-status .s5 .input-title::after {
+.c-modal-addGroup .is-error-status .s5 .o-input::after, .c-modal-usuallyUseMember .is-error-status .s5 .o-input::after, .c-modal-sample .is-error-status .s5 .o-input::after, .c-modal-addGroup .is-error-status .s5 .c-writeHours-content__select .hoursInput::after, .c-writeHours-content__select .c-modal-addGroup .is-error-status .s5 .hoursInput::after, .c-modal-usuallyUseMember .is-error-status .s5 .c-writeHours-content__select .hoursInput::after, .c-writeHours-content__select .c-modal-usuallyUseMember .is-error-status .s5 .hoursInput::after, .c-modal-sample .is-error-status .s5 .c-writeHours-content__select .hoursInput::after, .c-writeHours-content__select .c-modal-sample .is-error-status .s5 .hoursInput::after, .c-modal-addGroup .is-error-status .s5 .c-writeHours-content__select .otherInput::after, .c-writeHours-content__select .c-modal-addGroup .is-error-status .s5 .otherInput::after, .c-modal-usuallyUseMember .is-error-status .s5 .c-writeHours-content__select .otherInput::after, .c-writeHours-content__select .c-modal-usuallyUseMember .is-error-status .s5 .otherInput::after, .c-modal-sample .is-error-status .s5 .c-writeHours-content__select .otherInput::after, .c-writeHours-content__select .c-modal-sample .is-error-status .s5 .otherInput::after, .c-modal-addGroup .is-error-status .s5 .c-search-list .c-search-item .c-search-item__input::after, .c-search-list .c-search-item .c-modal-addGroup .is-error-status .s5 .c-search-item__input::after, .c-modal-usuallyUseMember .is-error-status .s5 .c-search-list .c-search-item .c-search-item__input::after, .c-search-list .c-search-item .c-modal-usuallyUseMember .is-error-status .s5 .c-search-item__input::after, .c-modal-sample .is-error-status .s5 .c-search-list .c-search-item .c-search-item__input::after, .c-search-list .c-search-item .c-modal-sample .is-error-status .s5 .c-search-item__input::after {
   font-size: 0.8rem;
   content: "請選擇部門或輸入關鍵字";
   font-weight: 400;
-  right: 0;
   position: absolute;
+  right: 0;
+  top: 3rem;
+  color: #fb5b29;
 }
 
 .c-modal-personAll, .c-modal-personCalendar, .c-modal-department {
@@ -15890,6 +15947,7 @@ body {
 
 .is-changeBackground {
   background-color: #f7fbff;
+  height: 100%;
 }
 
 .is-disabled {
@@ -16530,7 +16588,7 @@ body {
 }
 
 #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem {
-  height: 4rem;
+  height: 3.733rem;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
@@ -16696,7 +16754,7 @@ body {
 }
 
 #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport, #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger, #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan {
-  height: 4rem;
+  padding: 0.3rem 0 0.3rem 1.33rem;
 }
 
 #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__footer .list__item__title .list__item__percent, #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .list__item__title .list__item__percent, #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .list__item__title .list__item__percent {
@@ -16711,10 +16769,35 @@ body {
   width: 100px;
 }
 
+#todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__num, #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__num, #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__num,
+#todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__percent,
+#todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__percent,
+#todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__percent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__num span, #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__num span, #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__num span,
+#todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__percent span,
+#todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__percent span,
+#todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__percent span {
+  padding-left: 0;
+}
+
 #todo .change-card-to-list .l-main-content-item__listGroup {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+}
+
+#todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__item__content__list .list__item .list__item__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__item__content__list .list__item .list__item__num span,
+#todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent span,
+#todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__item__content__list .list__item .list__item__percent span {
+  padding-left: 0.5rem;
 }
 
 #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__title .c-card__tag__num .c-card__tag__status, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__title .c-card__tag__num .c-card__tag__status, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__content .c-card__tag__num .c-card__tag__status, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__content .c-card__tag__num .c-card__tag__status, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__tag__num .c-card__tag__status, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__tag__num .c-card__tag__status {
@@ -16724,7 +16807,6 @@ body {
 
 #todo .change-card-to-list .l-main-content-item__listTitle {
   line-height: 1.5rem;
-  height: 4rem;
   padding: 0.6rem 0px 0.6rem 4.4rem;
 }
 
@@ -16793,7 +16875,6 @@ body {
   max-width: none;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  height: 90px;
   min-height: auto;
 }
 
@@ -16989,10 +17070,6 @@ body {
   border-radius: 0.33rem;
 }
 
-#todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .c-card__item, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .c-card__item, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .c-card__item {
-  padding: 1.33rem 0rem 20px 1.33rem;
-}
-
 #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .is-changeBackground .c-card__item__title .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .is-changeBackground .c-card__item__title .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .is-changeBackground .c-card__item__title .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .is-changeBackground .c-card__item__content .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .is-changeBackground .c-card__item__content .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .is-changeBackground .c-card__item__content .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .is-changeBackground .c-card__item__footer .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .is-changeBackground .c-card__item__footer .c-card__tag__num span, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .is-changeBackground .c-card__item__footer .c-card__tag__num span {
   background-color: #f7fbff;
 }
@@ -17071,10 +17148,6 @@ body {
   margin-bottom: 5px;
 }
 
-#complete .l-main-content-item__listTitle {
-  height: 4rem;
-}
-
 #complete .l-main-content-item__listTitle .listTitle__num {
   padding: 0 0.2rem;
   width: 15%;
@@ -17098,10 +17171,6 @@ body {
 #complete .l-main-content-item__listTitle .listTitle__time {
   padding: 0 0.5rem;
   width: 10%;
-}
-
-#complete .change-card-to-list .c-card-planClosed {
-  height: 4rem;
 }
 
 #complete .change-card-to-list .c-card-planClosed .c-card__tag {
@@ -17160,6 +17229,14 @@ body {
 #complete .change-card-to-list .c-card-planClosed .c-card__content {
   padding: 0 0.5rem;
   width: 10%;
+}
+
+#complete .change-card-to-list .c-card-planClosed .c-card__content .c-card__item__time {
+  margin-left: 0;
+}
+
+#complete .change-card-to-list .l-main-content-item .c-card-planClosed a {
+  padding: 0.3rem 0rem 0.3rem 1.33rem;
 }
 
 #complete .l-main-content-list .c-popover-filterL .c-popover__content {
@@ -17293,10 +17370,6 @@ body {
   margin: 0;
 }
 
-#alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan {
-  height: 4rem;
-}
-
 #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item__content .c-card__item__content__list .list__item, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__content .c-card__item__content__list .list__item, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__content .c-card__item__content__list .list__item, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__item__footer .c-card__item__content__list .list__item, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item__footer .c-card__item__content__list .list__item, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item__footer .c-card__item__content__list .list__item {
   padding: 0;
 }
@@ -17341,6 +17414,10 @@ body {
   padding-left: 0;
 }
 
+#alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card__item__title .c-card__tag__input, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card-planReport .c-card__item__content .c-card__tag__input, .c-card-planReport #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card__item__content .c-card__tag__input, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card-planReport-danger .c-card__item__content .c-card__tag__input, .c-card-planReport-danger #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card__item__content .c-card__tag__input, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card-alertPlan .c-card__item__content .c-card__tag__input, .c-card-alertPlan #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card__item__content .c-card__tag__input, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card-planReport .c-card__item__footer .c-card__tag__input, .c-card-planReport #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card__item__footer .c-card__tag__input, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card-planReport-danger .c-card__item__footer .c-card__tag__input, .c-card-planReport-danger #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card__item__footer .c-card__tag__input, #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card-alertPlan .c-card__item__footer .c-card__tag__input, .c-card-alertPlan #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-checkbox .c-card__item .c-card__item__footer .c-card__tag__input {
+  margin-left: 0;
+}
+
 #alertPlen .change-card-to-list .l-main-content-item .l-main-content-item__listTitle div {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -17364,7 +17441,8 @@ body {
 }
 
 #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__title h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__title h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__content h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__content h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer h2 {
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0.75rem;
 }
 
 #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__title .c-card__text .c-card__text__startTime, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__title .c-card__text .c-card__text__startTime, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__content .c-card__text .c-card__text__startTime, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__content .c-card__text .c-card__text__startTime, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__text .c-card__text__startTime, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__text .c-card__text__startTime {
@@ -17385,12 +17463,16 @@ body {
 }
 
 #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__title h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__title h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__title h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__content h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__content h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__content h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport .c-card__item .c-card__item__footer h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer h2, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer h2 {
-  padding: 0;
+  padding-left: 0rem;
+  padding-right: 0.75rem;
+}
+
+#alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport .c-card__item .list__item__num, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .list__item__num, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .list__item__num {
+  text-align: start;
 }
 
 #alertPlen .change-card-to-list .l-main-content-item__listTitle {
   line-height: 1.5rem;
-  height: 4rem;
   padding: 0.6rem 0px 0.6rem 4.333rem;
 }
 
@@ -17453,7 +17535,6 @@ body {
   max-width: none;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  height: 90px;
   min-height: auto;
 }
 
@@ -17650,7 +17731,7 @@ body {
 }
 
 #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .c-card__item, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .c-card__item, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .c-card__item {
-  padding: 1.33rem 0rem 20px 1.33rem;
+  padding: 0.3rem 0rem 0.3rem 1.33rem;
 }
 
 #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .is-changeBackground .c-card__item__title .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .is-changeBackground .c-card__item__title .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .is-changeBackground .c-card__item__title .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .is-changeBackground .c-card__item__content .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .is-changeBackground .c-card__item__content .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .is-changeBackground .c-card__item__content .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport a .is-changeBackground .c-card__item__footer .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger a .is-changeBackground .c-card__item__footer .c-card__tag__num span, #alertPlen .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan a .is-changeBackground .c-card__item__footer .c-card__tag__num span {
@@ -17675,10 +17756,6 @@ body {
 }
 
 #alertPlen .change-card-to-list .c-card-planReport .c-card__item .c-card__item__title .c-card__tag .c-card__tag__num, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item .c-card__item__title .c-card__tag .c-card__tag__num, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item .c-card__item__title .c-card__tag .c-card__tag__num, #alertPlen .change-card-to-list .c-card-planReport .c-card__item .c-card__item__content .c-card__tag .c-card__tag__num, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item .c-card__item__content .c-card__tag .c-card__tag__num, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item .c-card__item__content .c-card__tag .c-card__tag__num, #alertPlen .change-card-to-list .c-card-planReport .c-card__item .c-card__item__footer .c-card__tag .c-card__tag__num, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__tag .c-card__tag__num, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__tag .c-card__tag__num {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
   width: auto;
 }
 
@@ -17816,7 +17893,7 @@ body {
 
 #membertime .change-card-to-list .l-main-content-item .c-card-manhourSearch {
   margin-bottom: 0rem;
-  height: 4rem;
+  height: 3.733rem;
   margin-bottom: 0;
   cursor: default;
 }
@@ -18029,7 +18106,7 @@ body {
 }
 
 #memberstime .change-card-to-list .l-main-content-item .c-card-manhourSearch, #departmenttime .change-card-to-list .l-main-content-item .c-card-manhourSearch, #universalPlan .change-card-to-list .l-main-content-item .c-card-manhourSearch {
-  height: 4rem;
+  height: 3.733rem;
   margin-bottom: 0;
   cursor: default;
 }
@@ -18195,12 +18272,12 @@ body {
 }
 
 #supporttime .change-card-to-list .l-main-content-item__listTitle {
-  height: 4rem;
+  height: 3.733rem;
   padding-left: 3rem;
 }
 
 #supporttime .change-card-to-list .l-main-content-item .c-card-department {
-  height: 4rem;
+  height: 3.733rem;
   margin-bottom: 0;
 }
 
@@ -18267,7 +18344,7 @@ body {
 }
 
 #supporttime .change-card-to-list .c-card-manhourSearch {
-  height: 4rem;
+  height: 3.733rem;
 }
 
 #supporttime .change-card-to-list .c-card-manhourSearch:hover {
@@ -18334,7 +18411,7 @@ body {
 }
 
 #notReachedtime .change-card-to-list .l-main-content-item__listTitle {
-  height: 4rem;
+  height: 3.733rem;
   padding-left: 3rem;
 }
 
@@ -18343,7 +18420,7 @@ body {
 }
 
 #notReachedtime .change-card-to-list .c-card-percent, #notReachedtime .change-card-to-list .c-card-percentCheck {
-  height: 4rem;
+  height: 3.733rem;
 }
 
 #notReachedtime .change-card-to-list .c-card__userInformation h3 {
@@ -18480,6 +18557,15 @@ body {
 #notReachedtime .change-card-to-list .c-card-percentCheck .c-card-title span {
   right: 30px;
   top: 5px;
+}
+
+#notReachedtime .change-card-to-list .c-card-percentCheck .c-card-title form {
+  margin-top: 0rem;
+  margin-right: 0rem;
+}
+
+#notReachedtime .change-card-to-list .c-card-percentCheck .c-card-title div {
+  margin-left: 0rem;
 }
 
 #notReachedtime .change-card-to-list .c-card-manhourSearch:hover {

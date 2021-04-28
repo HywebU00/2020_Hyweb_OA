@@ -81,8 +81,8 @@
 		.l-main-content-item {
 			.l-main-content-item__listGroup {
 				.c-card-planReport {
-					height: 4rem;
-
+					//height: 4rem;
+					padding: 0.3rem 0 0.3rem 1.33rem;
 					.c-card__item {
 						.c-card__item__footer {
 							.list__item__title {
@@ -101,6 +101,14 @@
 										width: 100px;
 									}
 								}
+								.list__item__num,
+								.list__item__percent {
+									display: flex;
+									justify-content: flex-start;
+									span {
+										padding-left: 0;
+									}
+								}
 							}
 						}
 					}
@@ -113,6 +121,18 @@
 
 			.c-card-planReport-danger {
 				.c-card__item {
+					.c-card__item__footer {
+						.c-card__item__content__list {
+							.list__item {
+								.list__item__num,
+								.list__item__percent {
+									span {
+										padding-left: 0.5rem;
+									}
+								}
+							}
+						}
+					}
 					.c-card__item__title {
 						.c-card__tag__num {
 							.c-card__tag__status {
@@ -127,7 +147,7 @@
 
 		.l-main-content-item__listTitle {
 			line-height: 1.5rem;
-			height: 4rem;
+			//height: 4rem;
 			padding: 0.6rem 0px 0.6rem 4.4rem;
 
 			div {
@@ -188,7 +208,7 @@
 				padding: 0;
 				max-width: none;
 				flex-shrink: 0;
-				height: 90px;
+				//height: 90px;
 				min-height: auto;
 
 				.c-card__item {
@@ -394,9 +414,9 @@
 		.l-main-content-item__listGroup {
 			.c-card-planReport {
 				a {
-					.c-card__item {
-						padding: 1.33rem 0rem 20px 1.33rem;
-					}
+					// .c-card__item {
+					// 	padding: 1.33rem 0rem 20px 1.33rem;
+					// }
 
 					.is-changeBackground {
 						.c-card__item__title {
@@ -500,7 +520,7 @@
 	}
 
 	.l-main-content-item__listTitle {
-		height: 4rem;
+		//height: 4rem;
 		.listTitle__num {
 			padding: 0 0.2rem;
 			width: 15%;
@@ -529,7 +549,7 @@
 
 	.change-card-to-list {
 		.c-card-planClosed {
-			height: 4rem;
+			//height: 4rem;
 
 			.c-card__tag {
 				padding: 0 0.5rem;
@@ -587,6 +607,16 @@
 			.c-card__content {
 				padding: 0 0.5rem;
 				width: 10%;
+				.c-card__item__time {
+					margin-left: 0;
+				}
+			}
+		}
+		.l-main-content-item {
+			.c-card-planClosed {
+				a {
+					padding: 0.3rem 0rem 0.3rem 1.33rem;
+				}
 			}
 		}
 	}
@@ -721,7 +751,7 @@
 		.l-main-content-item {
 			.l-main-content-item__listGroup {
 				.c-card-planReport {
-					height: 4rem;
+					//height: 4rem;
 
 					.c-card__item__content {
 						.c-card__item__content__list {
@@ -788,6 +818,9 @@
 							.c-card__tag {
 								padding-left: 0;
 							}
+							.c-card__tag__input {
+								margin-left: 0;
+							}
 						}
 					}
 				}
@@ -819,7 +852,8 @@
 						}
 
 						h2 {
-							padding: 0;
+							padding-left: 0;
+							padding-right: 0.75rem;
 						}
 
 						.c-card__text {
@@ -859,8 +893,12 @@
 				.c-card__item {
 					.c-card__item__title {
 						h2 {
-							padding: 0;
+							padding-left: 0rem;
+							padding-right: 0.75rem;
 						}
+					}
+					.list__item__num {
+						text-align: start;
 					}
 				}
 			}
@@ -868,7 +906,7 @@
 
 		.l-main-content-item__listTitle {
 			line-height: 1.5rem;
-			height: 4rem;
+			//height: 4rem;
 			padding: 0.6rem 0px 0.6rem 4.333rem;
 		}
 	}
@@ -925,7 +963,7 @@
 				padding: 0;
 				max-width: none;
 				flex-shrink: 0;
-				height: 90px;
+				//height: 90px;
 				min-height: auto;
 
 				.c-card__item {
@@ -1132,9 +1170,9 @@
 			.c-card-planReport {
 				a {
 					.c-card__item {
-						padding: 1.33rem 0rem 20px 1.33rem;
+						padding: 0.3rem 0rem 0.3rem 1.33rem;
+						// padding: 1.33rem 0rem 20px 1.33rem;
 					}
-
 					.is-changeBackground {
 						.c-card__item__title {
 							.c-card__tag__num {
@@ -1172,7 +1210,7 @@
 						width: 296px;
 
 						.c-card__tag__num {
-							flex-direction: row-reverse;
+							// flex-direction: row-reverse;
 							width: auto;
 						}
 					}

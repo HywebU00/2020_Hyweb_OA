@@ -310,7 +310,7 @@ body {
 	margin-top: 0.5rem;
 	padding: 0 0.2rem;
 	//overflow-y: scroll;
-	//height: calc(100vh - 210px);
+	min-height: calc(100vh - 210px);
 	//width: calc(100vw - 267px);
 
 	.l-main-content__downloadlink {
@@ -738,8 +738,7 @@ body {
 		}
 
 		.table-body {
-			// height: calc(100vh - 277px);
-			// overflow-y: scroll;
+			min-height: 100vh;
 			flex-shrink: 0;
 
 			.table-body__conutItem {
@@ -867,8 +866,8 @@ body {
 
 			.table-body__item {
 				.row {
-					padding-top: 0.5rem;
-					padding-bottom: 0.5rem;
+					padding-top: 0.3rem;
+					padding-bottom: 0.3rem;
 				}
 				.table-body__item__project {
 					display: flex;
@@ -951,6 +950,10 @@ body {
 							margin-bottom: 0.2rem;
 						}
 					}
+				}
+				.row {
+					padding-top: 0rem;
+					padding-bottom: 0rem;
 				}
 			}
 		}
@@ -1247,9 +1250,8 @@ body {
 		.row {
 			margin-bottom: 0;
 			font-size: $p;
-			//padding: 0 0 0 1.5rem;
 			min-height: 3.733rem;
-			padding: 0.83rem 0 0.83rem 1.5rem;
+			padding: 0.3rem 0 0.3rem 1.5rem; // 0.83rem 0 0.83rem 1.5rem;
 			height: auto;
 			//height: 3.733rem; //60px;
 			border-bottom: 1px solid $gray-blue;
