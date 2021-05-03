@@ -9957,16 +9957,6 @@ body {
   background-image: url(../img/menu_bg.svg) no-repeat right bottom opacity(0);
 }
 
-.l-side::after {
-  content: "";
-  position: absolute;
-  width: 244px;
-  background: red;
-  height: 100vh;
-  opacity: 0.2;
-  top: 0;
-}
-
 .l-side .c-sidebar-content__user {
   padding: 0.4rem 0.35rem 0.2rem 0.35rem;
   background: #f7fbff;
@@ -10144,6 +10134,16 @@ body {
   overflow-x: hidden;
 }
 
+.l-main::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 118px;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 998;
+}
+
 .l-main .c-writeHours {
   width: 100%;
   margin: 0 auto;
@@ -10290,6 +10290,7 @@ body {
 .l-main-content {
   margin-top: 0.5rem;
   padding: 0 0.2rem;
+  overflow-y: scroll;
   min-height: calc(100vh - 210px);
 }
 
@@ -11625,6 +11626,10 @@ body {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   padding-left: 16.2rem;
+}
+
+.sidebar__is-open .l-main::before {
+  width: 240px;
 }
 
 .list__title__icon__default {

@@ -329,22 +329,26 @@ if (tag_item != null && tag_content != null) {
 //++++++++++++++++++++++++
 
 $(document).ready(function () {
-	console.log($(".os-resize-observer").scrollTop());
+	//console.log($(".os-resize-observer").scrollTop());
 	$(".l-main").scroll(function () {
 		let sticky_body = $(".active").find(".sticky_body");
 		if (sticky_body.length > 0) {
 			let sticky_body_h = Math.floor(sticky_body.offset().top);
-			let sticky_body_left = Math.floor(sticky_body.offset().left);
+			let scrollThead = $(this)
+				.children(".active")
+				.children(".l-main-content")
+				.children(".sticky_body");
 			if (sticky_body_h < 0) {
+				let scrollTheadLest =
+					scrollThead.scrollLeft() - Math.floor(sticky_body.offset().left);
 				$(".sticky_head").css({
 					position: "absolute",
-					left: `${sticky_body_left}px`,
-					top: `0px`,
+					left: `${0 - scrollTheadLest}px`,
+					top: "0px",
 				});
 				$(".table-body").css({
 					marginTop: "68px",
 				});
-				MenuOpenScrollThead();
 			}
 			if (sticky_body_h > 0) {
 				$(".sticky_head").css({
@@ -355,7 +359,6 @@ $(document).ready(function () {
 					marginTop: "0px",
 				});
 			}
-			//console.log(sticky_body_h);
 		}
 	});
 });
@@ -365,8 +368,9 @@ function MenuOpenScrollThead() {
 		let sticky_body = $(".active").find(".sticky_body");
 		let sticky_body_h = Math.floor(sticky_body.offset().top);
 		let sticky_body_left = Math.floor(sticky_body.offset().left);
+		let scrollThead;
 		if (sticky_body_h < 0) {
-			var scrollThead = $(this).scrollLeft() - sticky_body_left;
+			scrollThead = $(this).scrollLeft() - sticky_body_left;
 			$(".sticky_head").css({
 				// 要移動的class或div
 				left: 0 - scrollThead,
@@ -374,7 +378,7 @@ function MenuOpenScrollThead() {
 		}
 	});
 }
-
+MenuOpenScrollThead();
 //++++++++++++++++++++++++
 //  menu收闔 更改 thead左邊距離 效果
 //++++++++++++++++++++++++
@@ -383,7 +387,6 @@ function getStickyTheadLeftPadding() {
 	let sticky_body_left = Math.floor(sticky_body.offset().left);
 	let sticky_body_h = Math.floor(sticky_body.offset().top);
 	if (sticky_body_h < 0) {
-		console.log(sticky_body_left);
 		$(".sticky_head").css({
 			left: sticky_body_left + "px",
 		});
