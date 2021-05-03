@@ -87,7 +87,7 @@ $btn-radius: 2.66rem; //40px;
 $accordion-item-radius: 0.533rem; //8px;
 $sidebar-months-item-radius: 0.533rem; //8px;
 $toast-radius: 0.66rem; //10px;
-$modal-radius: 1.33rem; //0.66rem;//10px;
+$modal-radius: 0.66rem; //1.33rem; //0.66rem;//10px;
 $dropdown-radius: 0.66rem; //10px;
 $select-radius: 5px;
 $input-radius: 5px;
@@ -130,6 +130,8 @@ $calendar-title-font: $font-size-l;
 $box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
 	rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 $box-shadow-select: inset 0px 0px 0px 1.5px rgba(0, 0, 0, 0.13);
+$box-shadow-shallow: rgba(199, 199, 199, 0.3) 0px 1px 2px 0px,
+	rgba(60, 64, 67, 0.15) -6px -1px 14px 0px;
 
 //刪減字符
 @mixin ellipsisText {

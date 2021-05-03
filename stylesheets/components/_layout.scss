@@ -7,11 +7,19 @@ body {
 }
 
 .l-side {
-	//position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		width: 244px;
+		background: red;
+		height: 100vh;
+		opacity: 0.2;
+		top: 0;
+	}
 	position: fixed;
 	z-index: 999;
 	box-sizing: border-box;
-	overflow: hidden;
+	//overflow: hidden;
 	flex-shrink: 0;
 	top: 0;
 	left: 0;
@@ -97,15 +105,6 @@ body {
 		transition: ease 0.5s;
 	}
 
-	// .c-sidebar-content__listGroup {
-	//    height: calc(100vh - 380px);
-	//     overflow-y: scroll;
-	//     padding-right: 0rem;
-	// }
-
-	// .c-sidebar-content__listGroup {
-	//     padding-right: 2rem;
-	// }
 	.menuParent-is-active {
 		position: relative;
 
@@ -1229,7 +1228,7 @@ body {
 				}
 
 				.table-body-item__member__name {
-					@include db_ellipsisText;
+					//	@include db_ellipsisText;
 					width: 70%;
 					-webkit-box-orient: horizontal;
 				}
@@ -1683,7 +1682,6 @@ body {
 	.cardList__content {
 		height: calc(100vh - 300px);
 		width: 100%;
-		// padding-top: 3%;
 		overflow-y: scroll;
 	}
 
@@ -1693,10 +1691,6 @@ body {
 		margin-bottom: 0.5rem;
 	}
 }
-
-// .c-sidebar-content__user__item {
-//   color: #fff;
-// }
 
 .c-sidebar-content__list {
 	margin-bottom: 20%;

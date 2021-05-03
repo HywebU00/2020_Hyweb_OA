@@ -9941,7 +9941,6 @@ body {
   z-index: 999;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow: hidden;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   top: 0;
@@ -9956,6 +9955,16 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
   background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
   background-image: url(../img/menu_bg.svg) no-repeat right bottom opacity(0);
+}
+
+.l-side::after {
+  content: "";
+  position: absolute;
+  width: 244px;
+  background: red;
+  height: 100vh;
+  opacity: 0.2;
+  top: 0;
 }
 
 .l-side .c-sidebar-content__user {
@@ -11353,12 +11362,6 @@ body {
 }
 
 .l-main-content-table .table-body .table-body-item .table-body-item__member .table-body-item__member__name {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-height: 3rem;
   width: 70%;
   -webkit-box-orient: horizontal;
 }
@@ -12040,6 +12043,34 @@ body {
   color: #042340;
 }
 
+.c-card-percent, .c-card-percentCheck {
+  width: calc(14.285% - 0.7rem);
+}
+
+@media (max-width: 1750px) {
+  .c-card-percent, .c-card-percentCheck {
+    width: calc(20% - 0.7rem);
+  }
+}
+
+@media (max-width: 1520px) {
+  .c-card-percent, .c-card-percentCheck {
+    width: calc(20% - 0.7rem);
+  }
+}
+
+@media (max-width: 1300px) {
+  .c-card-percent, .c-card-percentCheck {
+    width: calc(25% - 0.7rem);
+  }
+}
+
+@media (max-width: 992px) {
+  .c-card-percent, .c-card-percentCheck {
+    width: calc(33.3% - 0.7rem);
+  }
+}
+
 .c-card-percent a h2, .c-card-percentCheck a h2 {
   color: #042340;
 }
@@ -12223,9 +12254,11 @@ body {
   margin-top: 0px;
   padding: 0.7rem;
   position: relative;
+  width: 100%;
+  cursor: pointer;
 }
 
-.c-card-planHotkey .c-card__content button, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__content button {
+.c-card-planHotkey .c-card__content .c-card__addIcon, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__content .c-card__addIcon {
   position: absolute;
   right: 0.7rem;
   top: 0.9rem;
@@ -12237,8 +12270,15 @@ body {
           align-items: center;
 }
 
+.c-card-planHotkey .c-card__content .c-card__addIcon img, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__content .c-card__addIcon img {
+  padding-right: 0.2rem;
+}
+
 .c-card-planHotkey .c-card__tag, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__tag {
-  padding-top: 0.5rem;
+  padding-top: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c-card-planHotkey h2, .l-mobile-footer-worksheet .c-card-workHotkey h2 {
@@ -12503,7 +12543,7 @@ body {
 
 .c-card-planReport .c-card__item__title .c-card__tag .c-card__tag__input, .c-card-planReport-danger .c-card__item__title .c-card__tag .c-card__tag__input, .c-card-alertPlan .c-card__item__title .c-card__tag .c-card__tag__input, .c-card-planReport .c-card__item__content .c-card__tag .c-card__tag__input, .c-card-planReport-danger .c-card__item__content .c-card__tag .c-card__tag__input, .c-card-alertPlan .c-card__item__content .c-card__tag .c-card__tag__input, .c-card-planReport .c-card__item__footer .c-card__tag .c-card__tag__input, .c-card-planReport-danger .c-card__item__footer .c-card__tag .c-card__tag__input, .c-card-alertPlan .c-card__item__footer .c-card__tag .c-card__tag__input {
   margin-right: 1rem;
-  margin-top: 0.2rem;
+  margin-top: 0.5rem;
 }
 
 .c-card-planReport .c-card__item__title .c-card__tag .c-card__tag__input form p span, .c-card-planReport-danger .c-card__item__title .c-card__tag .c-card__tag__input form p span, .c-card-alertPlan .c-card__item__title .c-card__tag .c-card__tag__input form p span, .c-card-planReport .c-card__item__content .c-card__tag .c-card__tag__input form p span, .c-card-planReport-danger .c-card__item__content .c-card__tag .c-card__tag__input form p span, .c-card-alertPlan .c-card__item__content .c-card__tag .c-card__tag__input form p span, .c-card-planReport .c-card__item__footer .c-card__tag .c-card__tag__input form p span, .c-card-planReport-danger .c-card__item__footer .c-card__tag .c-card__tag__input form p span, .c-card-alertPlan .c-card__item__footer .c-card__tag .c-card__tag__input form p span {
@@ -12655,13 +12695,35 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 32.5%;
-  min-width: 230px;
-  max-width: 337px;
+  width: calc(25% - 0.5rem);
   height: 4.5rem;
   margin: 0 0.5rem 0.5rem 0;
   background-color: #f7fbff;
   border-radius: 0.53rem;
+}
+
+@media (max-width: 1440px) {
+  .c-card-lablePerson {
+    width: calc(33.3333% - 0.5rem);
+  }
+}
+
+@media (max-width: 1100px) {
+  .c-card-lablePerson {
+    width: calc(50% - 0.5rem);
+  }
+}
+
+@media (max-width: 992px) {
+  .c-card-lablePerson {
+    width: calc(50% - 0.5rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .c-card-lablePerson {
+    width: calc(100% - 0.5rem);
+  }
 }
 
 .c-card-lablePerson .c-card-lablePerson-title {
@@ -12680,7 +12742,7 @@ body {
 }
 
 .c-card-lablePerson .c-card-lablePerson-item {
-  margin: 0 6%;
+  margin: 0 0 0 1.33rem;
   width: 100%;
   font-size: 1.06rem;
   display: -webkit-box;
@@ -12695,7 +12757,7 @@ body {
 }
 
 .c-card-lablePerson .c-card-lablePerson-item div {
-  line-height: 1.6rem;
+  line-height: 1.5rem;
 }
 
 .c-card-lablePerson .c-card-lablePerson-item .c-card-lablePerson-item__btn button {
@@ -12958,7 +13020,8 @@ body {
 }
 
 .c-accordion-general {
-  max-width: 800px;
+  width: 70%;
+  min-width: 780px;
   border: 0;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -13329,7 +13392,7 @@ body {
   width: 41%;
   height: 40%;
   padding: 1rem;
-  border-radius: 1.33rem;
+  border-radius: 0.66rem;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   background-color: #fff;
@@ -13516,7 +13579,7 @@ body {
 }
 
 .c-modal-chooseGroup .c-modal-content .c-modal-content__addMember, .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__addMember, .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__addMember {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .c-modal-chooseGroup .c-modal-content .c-modal-content__addMember .addMember-title, .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__addMember .addMember-title, .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__addMember .addMember-title {
@@ -13765,7 +13828,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.06rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -13824,7 +13887,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.06rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -13917,15 +13980,167 @@ body {
 }
 
 .c-modal-personAll, .c-modal-personCalendar, .c-modal-department {
-  width: 80%;
-  height: 70vh;
-  min-height: 580px;
-  max-width: 880px;
+  width: 75%;
+  height: 80vh;
+  max-width: 1200px;
+  max-height: 800px;
+  min-width: 800px;
   overflow: hidden;
-  border-radius: 1.33rem;
+  border-radius: 0.66rem;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   background-color: #fff;
+}
+
+.c-modal-personAll .c-modal-features, .c-modal-personCalendar .c-modal-features, .c-modal-department .c-modal-features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border-radius: 1rem;
+  -webkit-box-shadow: rgba(199, 199, 199, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) -6px -1px 14px 0px;
+          box-shadow: rgba(199, 199, 199, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) -6px -1px 14px 0px;
+}
+
+.c-modal-personAll .c-modal-features .row, .c-modal-personCalendar .c-modal-features .row, .c-modal-department .c-modal-features .row {
+  margin-bottom: 0;
+}
+
+.c-modal-personAll .c-modal-features .col, .c-modal-personCalendar .c-modal-features .col, .c-modal-department .c-modal-features .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-modal-personAll .c-modal-features .col .input-title, .c-modal-personCalendar .c-modal-features .col .input-title, .c-modal-department .c-modal-features .col .input-title {
+  margin-bottom: 0;
+  margin-right: 0.5rem;
+}
+
+.c-modal-personAll .c-modal-features .col .c-dropdown-planContent, .c-modal-personCalendar .c-modal-features .col .c-dropdown-planContent, .c-modal-department .c-modal-features .col .c-dropdown-planContent {
+  width: 12rem;
+}
+
+.c-modal-personAll .c-modal-features .col .c-dropdown-planContent .select-dropdown, .c-modal-personCalendar .c-modal-features .col .c-dropdown-planContent .select-dropdown, .c-modal-department .c-modal-features .col .c-dropdown-planContent .select-dropdown {
+  width: 100%;
+}
+
+.c-modal-personAll .c-modal-features .c-modal-features__information, .c-modal-personCalendar .c-modal-features .c-modal-features__information, .c-modal-department .c-modal-features .c-modal-features__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 1.88rem;
+  background-color: #f7fbff;
+  border-radius: 1rem;
+  margin: 0;
+  min-height: 54px;
+}
+
+.c-modal-personAll .c-modal-features .c-modal-features__user, .c-modal-personCalendar .c-modal-features .c-modal-features__user, .c-modal-department .c-modal-features .c-modal-features__user {
+  border-right: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.c-modal-personAll .c-modal-features .c-modal-features__user .user__name, .c-modal-personCalendar .c-modal-features .c-modal-features__user .user__name, .c-modal-department .c-modal-features .c-modal-features__user .user__name, .c-modal-personAll .c-modal-features .c-modal-features__user .c-modal-department .c-modal-content__sidebar .c-modal-content__sidebar__user .user__department, .c-modal-personCalendar .c-modal-features .c-modal-features__user .c-modal-department .c-modal-content__sidebar .c-modal-content__sidebar__user .user__department, .c-modal-department .c-modal-features .c-modal-features__user .c-modal-content__sidebar .c-modal-content__sidebar__user .user__department, .c-modal-department .c-modal-content__sidebar .c-modal-content__sidebar__user .c-modal-features .c-modal-features__user .user__department {
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.c-modal-personAll .c-modal-features .c-modal-features__user .user__number, .c-modal-personCalendar .c-modal-features .c-modal-features__user .user__number, .c-modal-department .c-modal-features .c-modal-features__user .user__number {
+  margin-top: 0.2rem;
+  font-size: 14px;
+  font-family: "Baloo 2", cursive, "Noto Sans TC";
+  line-height: 18px;
+  width: 100%;
+}
+
+.c-modal-personAll .c-modal-features .c-modal-features__statistics, .c-modal-personCalendar .c-modal-features .c-modal-features__statistics, .c-modal-department .c-modal-features .c-modal-features__statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.c-modal-personAll .c-modal-features .c-modal-features__statistics .statistics__name, .c-modal-personCalendar .c-modal-features .c-modal-features__statistics .statistics__name, .c-modal-department .c-modal-features .c-modal-features__statistics .statistics__name {
+  font-size: 18px;
+  white-space: nowrap;
+  font-weight: bold;
+  width: 100%;
+}
+
+.c-modal-personAll .c-modal-features .c-modal-features__time, .c-modal-personCalendar .c-modal-features .c-modal-features__time, .c-modal-department .c-modal-features .c-modal-features__time {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1rem;
+  line-height: 18px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.c-modal-personAll .c-modal-features .c-modal-features__time div, .c-modal-personCalendar .c-modal-features .c-modal-features__time div, .c-modal-department .c-modal-features .c-modal-features__time div {
+  width: 100%;
+}
+
+.c-modal-personAll .c-modal-features .c-modal-features__time div:first-child, .c-modal-personCalendar .c-modal-features .c-modal-features__time div:first-child, .c-modal-department .c-modal-features .c-modal-features__time div:first-child {
+  font-weight: bold;
+  font-family: "Baloo 2", cursive, "Noto Sans TC";
+}
+
+.c-modal-personAll .c-modal-features .c-modal-features__time div:last-child, .c-modal-personCalendar .c-modal-features .c-modal-features__time div:last-child, .c-modal-department .c-modal-features .c-modal-features__time div:last-child {
+  margin-top: 0.2rem;
+}
+
+.c-modal-personAll .c-modal-features .c-modal-features__select, .c-modal-personCalendar .c-modal-features .c-modal-features__select, .c-modal-department .c-modal-features .c-modal-features__select {
+  margin-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+}
+
+.c-modal-personAll .c-modal-features .c-modal-features__select .select-wrapper input, .c-modal-personCalendar .c-modal-features .c-modal-features__select .select-wrapper input, .c-modal-department .c-modal-features .c-modal-features__select .select-wrapper input {
+  width: 90px;
+}
+
+.c-modal-personAll .c-modal-features .c-modal-features__select .o-input-div, .c-modal-personCalendar .c-modal-features .c-modal-features__select .o-input-div, .c-modal-department .c-modal-features .c-modal-features__select .o-input-div {
+  min-width: 120px;
+}
+
+.c-modal-personAll .c-modal-features .c-modal-features__select .col, .c-modal-personCalendar .c-modal-features .c-modal-features__select .col, .c-modal-department .c-modal-features .c-modal-features__select .col {
+  padding-right: 0;
+}
+
+.c-modal-personAll .c-modal-features .c-modal-features__select .col button + span, .c-modal-personCalendar .c-modal-features .c-modal-features__select .col button + span, .c-modal-department .c-modal-features .c-modal-features__select .col button + span {
+  margin-left: 0.5rem;
+  color: #8495a4;
+}
+
+.c-modal-personAll .c-modal-features .c-modal-features__btn, .c-modal-personCalendar .c-modal-features .c-modal-features__btn, .c-modal-department .c-modal-features .c-modal-features__btn {
+  padding: 0 1.33rem;
 }
 
 .c-modal-personAll .c-modal-content__sidebar, .c-modal-personCalendar .c-modal-content__sidebar, .c-modal-department .c-modal-content__sidebar {
@@ -13933,7 +14148,7 @@ body {
   background-color: #f7fbff;
   height: 100%;
   overflow-y: scroll;
-  border-radius: 1.33rem 0 0 1.33rem;
+  border-radius: 0.66rem 0 0 0.66rem;
 }
 
 .c-modal-personAll .c-modal-content__sidebar__user .user__name, .c-modal-personCalendar .c-modal-content__sidebar__user .user__name, .c-modal-department .c-modal-content__sidebar__user .user__name, .c-modal-department .c-modal-content__sidebar .c-modal-content__sidebar__user .user__department {
@@ -14002,7 +14217,6 @@ body {
 
 .c-modal-personAll .c-modal-content__calendar, .c-modal-personCalendar .c-modal-content__calendar, .c-modal-department .c-modal-content__calendar {
   max-height: 100%;
-  padding: 1rem;
 }
 
 .c-modal-personAll .c-modal-content__calendar #plan .c-modal-content__list__title, .c-modal-personCalendar .c-modal-content__calendar #plan .c-modal-content__list__title, .c-modal-department .c-modal-content__calendar #plan .c-modal-content__list__title {
@@ -14029,13 +14243,7 @@ body {
   width: 4.2rem;
 }
 
-.c-modal-personAll .c-modal-content__calendar .c-modal-content__calendar__content, .c-modal-personCalendar .c-modal-content__calendar .c-modal-content__calendar__content, .c-modal-department .c-modal-content__calendar .c-modal-content__calendar__content {
-  height: calc(100% - 95px);
-  overflow-y: scroll;
-}
-
 .c-modal-personAll .c-modal-content__calendar .c-modal-content__calendar__tebs, .c-modal-personCalendar .c-modal-content__calendar .c-modal-content__calendar__tebs, .c-modal-department .c-modal-content__calendar .c-modal-content__calendar__tebs {
-  margin-top: -0.8rem;
   margin-bottom: 1.5rem;
 }
 
@@ -14110,7 +14318,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: calc(100% - 54px);
+  padding: 2rem 1.33rem 1.33rem 1.33rem;
+  margin: 0;
 }
 
 .c-modal-department .c-modal-content__calendar {
@@ -15838,7 +16048,7 @@ body {
   background-color: #e2f1fe;
   position: relative;
   padding: 0.3rem 0 0.3rem 0.5rem;
-  line-height: 1.2rem;
+  line-height: 29px;
 }
 
 .o-input-div::after {
@@ -16054,14 +16264,15 @@ body {
   text-align: center;
 }
 
-.c-modal-content__highchart__title .c-card-chart {
+.c-card-chart {
+  position: absolute;
   border: 2px solid #042340;
   border-radius: 0.66rem;
   width: 10rem;
   margin-left: 2rem;
 }
 
-.c-modal-content__highchart__title .c-card-chart .c-card-chart__header {
+.c-card-chart .c-card-chart__header {
   background-color: #042340;
   text-align: center;
   border-radius: 0.5rem 0.5rem 0 0;
@@ -16069,11 +16280,11 @@ body {
   color: #fff;
 }
 
-.c-modal-content__highchart__title .c-card-chart .c-card-chart__body {
+.c-card-chart .c-card-chart__body {
   padding: 0.5rem;
 }
 
-.c-modal-content__highchart__title .c-card-chart .c-card-chart__body .chart__body__item {
+.c-card-chart .c-card-chart__body .chart__body__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16083,7 +16294,7 @@ body {
   margin-bottom: 0.3rem;
 }
 
-.c-modal-content__highchart__title .c-card-chart .c-card-chart__body .chart__body__item:first-child {
+.c-card-chart .c-card-chart__body .chart__body__item:first-child {
   padding-bottom: 0.2rem;
   padding-top: 0.1rem;
 }
@@ -16091,7 +16302,12 @@ body {
 .c-modal-content__highchart {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  margin-top: -1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .c-modal-content__highchart figure {
@@ -16109,6 +16325,14 @@ body {
 
 .c-modal-content__highchart .highcharts-menu {
   display: none;
+}
+
+.c-modal-department .c-modal-content, .c-modal-department .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-department .c-modal-content__scroll {
+  position: relative;
+}
+
+.c-modal-department .c-modal-content__highchart {
+  padding-top: 0;
 }
 
 .l-main-content .l-main-content-text div {
@@ -16209,6 +16433,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.l-main-content .l-main-content-list .c-popover-information {
+  padding: 0;
 }
 
 .l-main-content .l-main-content-item {
@@ -16699,18 +16927,22 @@ body {
   margin-bottom: 5px;
 }
 
+#todo .l-main-content-list .c-popover-information {
+  padding: 0;
+}
+
 #todo .c-popover-information .c-popover__content {
   left: -280px;
   padding: 1rem;
 }
 
 #todo .c-popover-information .c-popover__content::before {
-  left: 90px;
-  margin-top: -135px;
+  left: 80px;
+  margin-top: -158px;
 }
 
 #todo .c-popover-information .c-popover__content::after {
-  left: 90.5px;
+  left: 80.5px;
 }
 
 #todo .c-popover-information .c-popover__text {
@@ -17314,12 +17546,12 @@ body {
 }
 
 #alertPlen .c-popover-information .c-popover__content::before {
-  left: 90px;
-  margin-top: -135px;
+  left: 80px;
+  margin-top: -158px;
 }
 
 #alertPlen .c-popover-information .c-popover__content::after {
-  left: 90.5px;
+  left: 80.5px;
 }
 
 #alertPlen .c-popover-information .c-popover__text {
@@ -18772,6 +19004,10 @@ body {
 
 .l-main-content__card .l-main-content__planlist .table-body .o-input input, .l-main-content__dbcard .l-main-content__planlist .table-body .o-input input, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .o-input input, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .o-input input, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .o-input input, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .o-input input, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .o-input input, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .o-input input, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .o-input input, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .o-input input, .l-main-content__card .l-main-content__statisticsPlan .table-body .o-input input, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .o-input input, .l-main-content__card .l-main-content__planlist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__planlist .table-body .hoursInput input, .l-main-content__dbcard .l-main-content__planlist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__planlist .table-body .hoursInput input, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .hoursInput input, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .hoursInput input, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .hoursInput input, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .hoursInput input, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .hoursInput input, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .hoursInput input, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .hoursInput input, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .hoursInput input, .l-main-content__card .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__statisticsPlan .table-body .hoursInput input, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .hoursInput input, .l-main-content__card .l-main-content__planlist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__planlist .table-body .otherInput input, .l-main-content__dbcard .l-main-content__planlist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__planlist .table-body .otherInput input, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .otherInput input, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .otherInput input, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .otherInput input, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .otherInput input, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .otherInput input, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .otherInput input, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .otherInput input, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .otherInput input, .l-main-content__card .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__card .l-main-content__statisticsPlan .table-body .otherInput input, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .otherInput input, .l-main-content__card .l-main-content__planlist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content__planlist .table-body .c-search-item__input input, .l-main-content__dbcard .l-main-content__planlist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content__planlist .table-body .c-search-item__input input, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .c-search-item__input input, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .c-search-item__input input, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .c-search-item__input input, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .c-search-item__input input, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .c-search-item__input input, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .c-search-item__input input, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .c-search-item__input input, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .c-search-item__input input, .l-main-content__card .l-main-content__statisticsPlan .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__card .l-main-content__statisticsPlan .table-body .c-search-item__input input, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .c-search-item__input input {
   height: 3rem;
+}
+
+.l-main-content__card .l-main-content__planlist .table-body .o-input-div, .l-main-content__dbcard .l-main-content__planlist .table-body .o-input-div, .l-main-content__card .l-main-content .l-main-content__wbslist .table-body .o-input-div, .l-main-content .l-main-content__card .l-main-content__wbslist .table-body .o-input-div, .l-main-content__dbcard .l-main-content .l-main-content__wbslist .table-body .o-input-div, .l-main-content .l-main-content__dbcard .l-main-content__wbslist .table-body .o-input-div, .l-main-content__card .l-main-content .l-main-content__workTypelist .table-body .o-input-div, .l-main-content .l-main-content__card .l-main-content__workTypelist .table-body .o-input-div, .l-main-content__dbcard .l-main-content .l-main-content__workTypelist .table-body .o-input-div, .l-main-content .l-main-content__dbcard .l-main-content__workTypelist .table-body .o-input-div, .l-main-content__card .l-main-content__statisticsPlan .table-body .o-input-div, .l-main-content__dbcard .l-main-content__statisticsPlan .table-body .o-input-div {
+  line-height: normal;
 }
 
 .l-main-content__card .l-main-content__addMember, .l-main-content__dbcard .l-main-content__addMember {

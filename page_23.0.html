@@ -1,294 +1,367 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
 
-    <link rel="stylesheet" href="stylesheets/all.css" />
-    <title>page_23.0 月曆總覽視窗</title>
-  </head>
+		<link rel="stylesheet" href="stylesheets/all.css" />
+		<title>page_23.0 月曆總覽視窗</title>
+	</head>
 
-  <body style="width: 1200px; margin: 0 auto; overflow-y: scroll">
-    <!-- modal-personCalendar -->
-    <!-- +++++++++++ -->
-    <!--  注意事項    -->
-    <!--
+	<body style="margin-left: 10rem; overflow-y: scroll">
+		<!-- modal-personCalendar -->
+		<!-- +++++++++++ -->
+		<!--  注意事項    -->
+		<!--
     1. 點擊月份按鈕(item__months__btn) 會增添 class“is-month-active” 改變樣式 (component.js--224)
     2. 月曆中系統顯示 當下日期 會增添 class "is-today"
     3. 點擊月份按鈕 會更改右邊視窗的資訊內容
     4. 點擊日曆中的日期(item__date) 會增添 class "is-date-active" 改變樣式(component.js--232)
     5. 點擊日曆中的日期 會出現 元件 accordion general(視窗出現位置會因點選的位置不同 而有不同位置）
     -->
-    <!-- +++++++++++ -->
-    <h3
-      style="
-        font-size: 18px;
-        margin: 2% 0;
-        padding: 1% 1%;
-        background: #1d5299;
-        color: #fff;
-      "
-    >
-      page_23.0 月曆總覽視窗
-    </h3>
-    <div
-      class=""
-      style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0"
-    >
-      personCalendar
-    </div>
-    <div class="c-modal-personCalendar">
-      <div class="c-modal-content row">
-        <div class="c-modal-content__sidebar col s3">
-          <div class="c-modal-content__sidebar__user">
-            <div class="user__name">蘇紫瑜</div>
-            <div class="user__number">A9005 / M10</div>
-          </div>
-          <div class="c-modal-content__sidebar__time">
-            <div class="">區間工時 <span>17</span></div>
-            <div class="">累計工時 <span>123</span></div>
-            <button class="o-btn-primary">匯出</button>
-          </div>
-          <div class="c-modal-content__sidebar__months">
-            <div class="sidebar__months__item">
-              <div class="item__years">2020</div>
-              <div class="item__months">
-                <button class="item__months__btn is-month-active">9月</button>
-                <button class="item__months__btn">10月</button>
-                <button class="item__months__btn">11月</button>
-                <button class="item__months__btn">12月</button>
-              </div>
-            </div>
-            <div class="sidebar__months__item">
-              <div class="item__years">2021</div>
-              <div class="item__months">
-                <button class="item__months__btn">9月</button>
-                <button class="item__months__btn">10月</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="c-modal-content__calendar col s9">
-          <div class="c-modal-content__calendar__btn">
-            <button><img src="img/o-cross.svg" alt="" /></button>
-          </div>
-          <div class="c-modal-content__calendar__tebs">
-            <div class="c-tabs">
-              <div class="c-tabs__content">
-                <ul class="c-tabs__item tabs">
-                  <li class="c-tabs__item__link tab">
-                    <a class="active">月曆總覽</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="c-modal-content__calendar__content">
-            <div class="c-modal-content__calendar__title">2020 9月</div>
-            <!-- 單人月曆 -->
-            <div class="o-calendar">
-              <div class="o-calendar__week__title">
-                <div class="">週ㄧ</div>
-                <div class="">週二</div>
-                <div class="">週三</div>
-                <div class="">週四</div>
-                <div class="">週五</div>
-                <div class="">週六</div>
-                <div class="">週日</div>
-              </div>
-              <div class="o-calendar__week__itemgroup">
-                <div class="o-calendar__week__item">
-                  <div class="item__date">
-                    <div class="item__date__num is-no-this-months">31</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date is-date-active">
-                    <div class="item__date__num">1</div>
-                    <div class="item__date__time">8</div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">2</div>
-                    <div class="item__date__time">8</div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num is-today">3</div>
-                    <div class="item__date__time">1</div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">4</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">5</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">6</div>
-                    <div class=""></div>
-                  </div>
-                </div>
-                <div class="o-calendar__week__item">
-                  <div class="item__date">
-                    <div class="item__date__num">7</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">8</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">9</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">10</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">11</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">12</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">13</div>
-                    <div class=""></div>
-                  </div>
-                </div>
-                <div class="o-calendar__week__item">
-                  <div class="item__date">
-                    <div class="item__date__num">14</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">15</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">16</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">17</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">18</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">19</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">20</div>
-                    <div class=""></div>
-                  </div>
-                </div>
-                <div class="o-calendar__week__item">
-                  <div class="item__date">
-                    <div class="item__date__num">21</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">22</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">23</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">24</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">25</div>
-                    <div class=""></div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">26</div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">27</div>
-                  </div>
-                </div>
-                <div class="o-calendar__week__item">
-                  <div class="item__date">
-                    <div class="item__date__num">28</div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">29</div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num">30</div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num is-no-this-months">1</div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num is-no-this-months">2</div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num is-no-this-months">3</div>
-                  </div>
-                  <div class="item__date">
-                    <div class="item__date__num is-no-this-months">4</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- accordion general -->
-    <div
-      class=""
-      style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%"
-    >
-      accordion general
-    </div>
-    <div class="c-accordion-general">
-      <div class="accordion-body">
-        <div class="row accordion-body__title">
-          <div class="col s1">計畫部門</div>
-          <div class="col s2">計畫名稱</div>
-          <div class="col s2">工作階段</div>
-          <div class="col s3">工作內容</div>
-          <div class="col s1">時數</div>
-          <div class="col s3">備註</div>
-        </div>
-        <div class="row accordion-body__item">
-          <div class="col s1">M10</div>
-          <div class="col s2">109年臺灣國際專業展..</div>
-          <div class="col s2">網站介面規劃與設計</div>
-          <div class="col s3">網站介面規劃與設計</div>
-          <div class="col s1">1000</div>
-          <div class="col s3">5個樣板</div>
-        </div>
-        <div class="row accordion-body__item">
-          <div class="col s1">M10</div>
-          <div class="col s2">109年臺灣國際專業展..</div>
-          <div class="col s2">系統開發與設計與設計</div>
-          <div class="col s3">網站介面規劃與設計</div>
-          <div class="col s1">4</div>
-          <div class="col s3"></div>
-        </div>
-      </div>
-    </div>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- js套件 -->
-    <script src="js/materialize.js"></script>
-    <script src="js/OverlayScrollbars.min.js"></script>
-    <!-- 自定義 js -->
-    <script src="js/compontent.js"></script>
-    <script src="js/scrollbar_setting.js"></script>
-  </body>
+		<!-- +++++++++++ -->
+		<h3
+			style="
+				font-size: 18px;
+				margin: 2% 0;
+				padding: 1% 1%;
+				background: #1d5299;
+				color: #fff;
+			"
+		>
+			page_23.0 月曆總覽視窗
+		</h3>
+		<div
+			class=""
+			style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0"
+		>
+			personCalendar
+		</div>
+		<div class="c-modal-personCalendar">
+			<div class="c-modal-features">
+				<div class="c-modal-features__information row">
+					<div class="c-modal-features__user">
+						<div class="user__name">蘇紫瑜</div>
+						<div class="user__number">A9005 / M10</div>
+					</div>
+					<div class="c-modal-features__time">
+						<div class="">2020/7-2021/8</div>
+						<div class="">
+							<span class="">區間工時 <span>17</span></span>
+							<span class="">累計工時 <span>123</span></span>
+						</div>
+					</div>
+				</div>
+				<div class="c-modal-features__select row">
+					<div class="col">
+						<div class="input-title">時間</div>
+						<div class="c-datePicker-month pop-modal">
+							<div class="c-datePicker__input ">
+							  <div class="o-input-div pop-btn"></div>
+							</div>
+							<div class="c-datePicker__modal pop-content">
+							  <div class="c-datePicker__yearPicker">
+								<button class="waves-effect waves-blue"><img src="img/o-arrowLeft-blue.svg" alt=""></button>
+								<div class="">2020</div>
+								<button class="waves-effect waves-blue">
+								  <img src="img/o-arrowRight-blue.svg" alt="">
+								</button> 
+							  </div>
+							  <ul class="c-datePicker__content">
+								<li>
+								  <label>
+									<input class="with-gap" name="group1" type="radio" />
+									<span>1月</span>
+								  </label>
+								</li>
+								<li>
+								  <label>
+									<input class="with-gap" name="group1" type="radio" />
+									<span>2月</span>
+								  </label>
+								</li>
+								<li>
+								  <label>
+									<input class="with-gap" name="group1" type="radio" />
+									<span>3月</span>
+								  </label>
+								</li>
+								<li>
+								  <label>
+									<input class="with-gap" name="group1" type="radio" />
+									<span>4月</span>
+								  </label>
+								</li>
+								<li>
+								  <label>
+									<input class="with-gap" name="group1" type="radio" />
+									<span>5月</span>
+								  </label>
+								</li>
+								<li>
+								  <label>
+									<input class="with-gap" name="group1" type="radio" />
+									<span>6月</span>
+								  </label>
+								</li>
+								<li>
+								  <label>
+									<input class="with-gap" name="group1" type="radio" />
+									<span>7月</span>
+								  </label>
+								</li>
+								<li>
+								  <label>
+									<input class="with-gap" name="group1" type="radio" />
+									<span>8月</span>
+								  </label>
+								</li>
+								<li>
+								  <label>
+									<input class="with-gap" name="group1" type="radio" />
+									<span>9月</span>
+								  </label>
+								</li>
+								<li>
+								  <label>
+									<input class="with-gap" name="group1" type="radio" />
+									<span>10月</span>
+								  </label>
+								</li>
+								<li>
+								  <label>
+									<input class="with-gap" name="group1" type="radio" />
+									<span>11月</span>
+								  </label>
+								</li>
+								<li>
+								  <label>
+									<input class="with-gap" name="group1" type="radio" />
+									<span>12月</span>
+								  </label>
+								</li>
+							  </ul>
+							  <div class="c-datePicker__footer">
+								<button class="o-btn-primary waves-effect waves-blue pop-confirm-btn">確認</button>
+							  </div>
+							</div>
+						  </div>
+					</div>
+					<div class="col">
+						<button class="o-btn-primary">匯出</button>
+					</div>
+				</div>
+				<div class="c-modal-features__btn">
+					<button type="button"><img src="img/o-cross.svg" alt="" /></button>
+				</div>
+			</div>
+			<div class="c-modal-content row js-scrollbar-style"">
+				<div class="c-modal-content__calendar col s12">
+					<div class="c-modal-content__calendar__content">
+						<!-- 單人月曆 -->
+						<div class="o-calendar">
+							<div class="o-calendar__week__title">
+								<div class="">週ㄧ</div>
+								<div class="">週二</div>
+								<div class="">週三</div>
+								<div class="">週四</div>
+								<div class="">週五</div>
+								<div class="">週六</div>
+								<div class="">週日</div>
+							</div>
+							<div class="o-calendar__week__itemgroup">
+								<div class="o-calendar__week__item">
+									<div class="item__date">
+										<div class="item__date__num is-no-this-months">31</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date is-date-active">
+										<div class="item__date__num">1</div>
+										<div class="item__date__time">8</div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">2</div>
+										<div class="item__date__time">8</div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num is-today">3</div>
+										<div class="item__date__time">1</div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">4</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">5</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">6</div>
+										<div class=""></div>
+									</div>
+								</div>
+								<div class="o-calendar__week__item">
+									<div class="item__date">
+										<div class="item__date__num">7</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">8</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">9</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">10</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">11</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">12</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">13</div>
+										<div class=""></div>
+									</div>
+								</div>
+								<div class="o-calendar__week__item">
+									<div class="item__date">
+										<div class="item__date__num">14</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">15</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">16</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">17</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">18</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">19</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">20</div>
+										<div class=""></div>
+									</div>
+								</div>
+								<div class="o-calendar__week__item">
+									<div class="item__date">
+										<div class="item__date__num">21</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">22</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">23</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">24</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">25</div>
+										<div class=""></div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">26</div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">27</div>
+									</div>
+								</div>
+								<div class="o-calendar__week__item">
+									<div class="item__date">
+										<div class="item__date__num">28</div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">29</div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num">30</div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num is-no-this-months">1</div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num is-no-this-months">2</div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num is-no-this-months">3</div>
+									</div>
+									<div class="item__date">
+										<div class="item__date__num is-no-this-months">4</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- accordion general -->
+		<div
+			class=""
+			style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%"
+		>
+			accordion general
+		</div>
+		<div class="c-accordion-general">
+			<div class="accordion-body">
+				<div class="row accordion-body__title">
+					<div class="col s1">計畫部門</div>
+					<div class="col s2">計畫名稱</div>
+					<div class="col s2">工作階段</div>
+					<div class="col s3">工作內容</div>
+					<div class="col s1">時數</div>
+					<div class="col s3">備註</div>
+				</div>
+				<div class="row accordion-body__item">
+					<div class="col s1">M10</div>
+					<div class="col s2">109年臺灣國際專業展..</div>
+					<div class="col s2">網站介面規畫與設計</div>
+					<div class="col s3">網站介面規畫與設計</div>
+					<div class="col s1">1000</div>
+					<div class="col s3">5個樣板</div>
+				</div>
+				<div class="row accordion-body__item">
+					<div class="col s1">M10</div>
+					<div class="col s2">109年臺灣國際專業展..</div>
+					<div class="col s2">系統開發與設計與設計</div>
+					<div class="col s3">網站介面規畫與設計</div>
+					<div class="col s1">4</div>
+					<div class="col s3"></div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<!-- js套件 -->
+		<script src="js/materialize.js"></script>
+		<script src="js/OverlayScrollbars.min.js"></script>
+		<!-- 自定義 js -->
+		<script src="js/compontent.js"></script>
+		<script src="js/scrollbar_setting.js"></script>
+	</body>
 </html>

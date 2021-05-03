@@ -20,19 +20,23 @@
 	.l-main-tabs {
 		margin-bottom: 5px;
 	}
-
+	.l-main-content-list {
+		.c-popover-information {
+			padding: 0;
+		}
+	}
 	.c-popover-information {
 		.c-popover__content {
 			left: -280px;
 			padding: 1rem;
 
 			&::before {
-				left: 90px;
-				margin-top: -135px;
+				left: 80px; //90px;
+				margin-top: -158px; //-135px;
 			}
 
 			&::after {
-				left: 90.5px;
+				left: 80.5px; //90.5px;
 			}
 		}
 
@@ -689,12 +693,12 @@
 			padding: 1rem;
 
 			&::before {
-				left: 90px;
-				margin-top: -135px;
+				left: 80px; //90px;
+				margin-top: -158px; //-135px;
 			}
 
 			&::after {
-				left: 90.5px;
+				left: 80.5px; //90.5px;
 			}
 		}
 

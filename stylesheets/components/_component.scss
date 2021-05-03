@@ -103,6 +103,19 @@
 
 .c-card-percent {
 	@extend .c-card-manhourSofar;
+	width: calc(14.285% - 0.7rem);
+	@media (max-width: 1750px) {
+		width: calc(20% - 0.7rem);
+	}
+	@media (max-width: 1520px) {
+		width: calc(20% - 0.7rem);
+	}
+	@media (max-width: 1300px) {
+		width: calc(25% - 0.7rem);
+	}
+	@include Large {
+		width: calc(33.3% - 0.7rem);
+	}
 
 	a {
 		h2 {
@@ -269,17 +282,22 @@
 		margin-top: 0px;
 		padding: 0.7rem;
 		position: relative;
-		//padding: $pd-2 $pd-2 $pd $pd-2;
-		button {
+		width: 100%;
+		cursor: pointer;
+		.c-card__addIcon {
 			position: absolute;
 			right: 0.7rem;
 			top: 0.9rem;
 			display: flex;
 			align-items: center;
+			img {
+				padding-right: 0.2rem;
+			}
 		}
 	}
 	.c-card__tag {
-		padding-top: 0.5rem;
+		padding-top: 0rem;
+		display: flex;
 	}
 	h2 {
 		@include ellipsisText;
@@ -513,7 +531,7 @@
 			.c-card__tag__input {
 				//margin-left: 55%;
 				margin-right: 1rem;
-				margin-top: 0.2rem;
+				margin-top: 0.5rem; //0.2rem;
 				form {
 					p {
 						span {
@@ -667,13 +685,23 @@
 .c-card-lablePerson {
 	cursor: pointer;
 	display: flex;
-	width: 32.5%;
-	min-width: 230px;
-	max-width: 337px;
+	width: calc(25% - 0.5rem);
 	height: 4.5rem;
 	margin: 0 0.5rem 0.5rem 0;
 	background-color: $card-lablePerson-background;
 	border-radius: $card-lablePerson-radius;
+	@include ExtraLarge {
+		width: calc(33.3333% - 0.5rem);
+	}
+	@media (max-width: 1100px) {
+		width: calc(50% - 0.5rem);
+	}
+	@include Large {
+		width: calc(50% - 0.5rem);
+	}
+	@include Medium {
+		width: calc(100% - 0.5rem);
+	}
 
 	.c-card-lablePerson-title {
 		background-color: $card-lablePerson-title-background;
@@ -687,7 +715,7 @@
 	}
 
 	.c-card-lablePerson-item {
-		margin: 0 6%;
+		margin: 0 0 0 1.33rem;
 		width: 100%;
 		font-size: $p;
 		display: flex;
@@ -695,7 +723,9 @@
 		justify-content: space-between;
 
 		div {
-			line-height: 1.6rem;
+			//line-height: 1.6rem;
+			line-height: 1.5rem;
+			//@include ellipsisText;
 		}
 
 		.c-card-lablePerson-item__btn {
@@ -920,7 +950,8 @@
 .c-accordion-general {
 	@extend.c-card;
 	@extend .c-accordion-plan;
-	max-width: 800px;
+	width: 70%;
+	min-width: 780px;
 	border: 0;
 	box-shadow: $box-shadow;
 
@@ -1398,7 +1429,7 @@
 		}
 
 		.c-modal-content__addMember {
-			margin-top: 1.5rem;
+			margin-top: 1rem;
 
 			.addMember-title {
 				display: flex;
@@ -1595,7 +1626,7 @@
 			.chooseMember__title {
 				display: flex;
 				font-weight: bold;
-				font-size: $font-size-l;
+				font-size: $p;
 				justify-content: space-between;
 				align-items: center;
 				margin-bottom: 1rem;
@@ -1636,7 +1667,7 @@
 			.memberList__title {
 				display: flex;
 				font-weight: bold;
-				font-size: $font-size-l;
+				font-size: $p;
 				justify-content: space-between;
 				align-items: center;
 				margin-bottom: 1rem;
@@ -1730,14 +1761,124 @@
 }
 
 .c-modal-personAll {
-	width: 80%;
-	height: 70vh;
-	min-height: 580px;
-	max-width: 880px;
+	width: 75%;
+	height: 80vh;
+	max-width: 1200px;
+	max-height: 800px;
+	min-width: 800px;
 	overflow: hidden;
 	border-radius: $modal-radius;
 	box-shadow: $box-shadow;
 	background-color: #fff;
+
+	.c-modal-features {
+		display: flex;
+		align-items: center;
+		background-color: #fff;
+		border-radius: 1rem;
+		box-shadow: $box-shadow-shallow;
+
+		.row {
+			margin-bottom: 0;
+		}
+		.col {
+			display: flex;
+			align-items: center;
+			.input-title {
+				margin-bottom: 0;
+				margin-right: 0.5rem;
+			}
+			.c-dropdown-planContent {
+				width: 12rem;
+				.select-dropdown {
+					width: 100%;
+				}
+			}
+		}
+		.c-modal-features__information {
+			display: flex;
+			align-items: center;
+			//width: 35%;
+			padding: 0.5rem 1.88rem;
+			background-color: $sec3;
+			border-radius: 1rem;
+			margin: 0;
+			min-height: 54px;
+		}
+		.c-modal-features__user {
+			// width: 50%;
+			border-right: 1px solid;
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			.user__name {
+				font-size: $font-size-l;
+				font-weight: bold;
+				width: 100%;
+			}
+			.user__number {
+				margin-top: 0.2rem;
+				font-size: $font-size-m;
+				font-family: $english-font;
+				line-height: $font-size-l;
+				width: 100%;
+			}
+		}
+		.c-modal-features__statistics {
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			.statistics__name {
+				font-size: $font-size-l;
+				white-space: nowrap;
+				font-weight: bold;
+				width: 100%;
+			}
+		}
+		.c-modal-features__time {
+			width: 80%;
+			display: flex;
+			margin-left: 1rem;
+			line-height: $font-size-l;
+			flex-wrap: wrap;
+			font-size: $font-size;
+			div {
+				width: 100%;
+				&:first-child {
+					font-weight: bold;
+					font-family: $english-font;
+				}
+				&:last-child {
+					margin-top: 0.2rem;
+				}
+			}
+		}
+		.c-modal-features__select {
+			margin-left: 0;
+			display: flex;
+			width: 90%;
+			.select-wrapper {
+				input {
+					width: 90px;
+				}
+			}
+			.o-input-div {
+				min-width: 120px;
+			}
+			.col {
+				padding-right: 0;
+				button {
+					+ span {
+						margin-left: 0.5rem;
+						color: $gray3;
+					}
+				}
+			}
+		}
+		.c-modal-features__btn {
+			padding: 0 1.33rem;
+		}
+	}
 
 	.c-modal-content__sidebar {
 		padding: 1rem 1rem 1rem 2rem;
@@ -1813,7 +1954,7 @@
 
 	.c-modal-content__calendar {
 		max-height: 100%; // 926px;
-		padding: 1rem;
+		//padding: 1rem;
 
 		#plan {
 			.c-modal-content__list__title {
@@ -1840,14 +1981,8 @@
 				width: 4.2rem;
 			}
 		}
-
-		.c-modal-content__calendar__content {
-			height: calc(100% - 95px);
-			overflow-y: scroll;
-		}
-
 		.c-modal-content__calendar__tebs {
-			margin-top: -0.8rem;
+			// margin-top: -1rem;
 			margin-bottom: 1.5rem;
 
 			.c-tabs {
@@ -1914,7 +2049,9 @@
 
 	.c-modal-content {
 		display: flex;
-		height: 100%;
+		height: calc(100% - 54px);
+		padding: 2rem 1.33rem 1.33rem 1.33rem;
+		margin: 0;
 	}
 }
 
@@ -3659,7 +3796,7 @@
 	background-color: $hyweb-lighblue;
 	position: relative;
 	padding: 0.3rem 0 0.3rem 0.5rem;
-	line-height: 1.2rem;
+	line-height: 29px;
 
 	&::after {
 		content: "";
