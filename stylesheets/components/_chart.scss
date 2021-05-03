@@ -1,68 +1,71 @@
-
-
-.c-modal-content__sidebar__time{
-  @extend .c-modal-content__sidebar__time
+.c-modal-content__sidebar__time {
+	@extend .c-modal-content__sidebar__time;
 }
 
-.c-modal-content__sidebar__timearea{
-  @extend .c-modal-content__sidebar__time;
-  margin-top:4rem;
-  .o-btn-primary{
-    border-radius: 10px;
-    margin:0;
-    height: 2rem;
-    width: 11rem;
-    text-align: center
-  }
-  
+.c-modal-content__sidebar__timearea {
+	@extend .c-modal-content__sidebar__time;
+	margin-top: 4rem;
+	.o-btn-primary {
+		border-radius: 10px;
+		margin: 0;
+		height: 2rem;
+		width: 11rem;
+		text-align: center;
+	}
 }
-.c-modal-content__highchart__title{
-  .c-card-chart{
-    border: 2px solid $gray1;
-    border-radius: $list-radius;
-    width: 10rem;
-    margin-left:2rem ;
-    .c-card-chart__header{
-      background-color: $gray1;
-      text-align: center;
-      border-radius: 0.5rem 0.5rem 0 0;
-      padding:0.5rem 0;
-      color:#fff;
-     
-    }
-    .c-card-chart__body{
-      padding:0.5rem;
-      .chart__body__item{
-        &:first-child{
-          padding-bottom: 0.2rem;
-          padding-top: 0.1rem;
-        }
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 0.3rem;
-      }
-    }
-  }
-}
- 
-.c-modal-content__highchart{
-  flex-wrap: nowrap;
-  margin-top: -1.8rem;
-  //套件修改
-  figure{
-    margin:0;
-  }
-  .highcharts-tip__title{
-    font-family: $english-font;
-    font-weight: 500;
-  }
-  .highcharts-button{
-    display: none;
-  }
-  .highcharts-menu{
-    display: none;
-  }
-  
 
-  
+.c-card-chart {
+	position: absolute;
+	border: 2px solid $gray1;
+	border-radius: $list-radius;
+	width: 10rem;
+	margin-left: 2rem;
+	.c-card-chart__header {
+		background-color: $gray1;
+		text-align: center;
+		border-radius: 0.5rem 0.5rem 0 0;
+		padding: 0.5rem 0;
+		color: #fff;
+	}
+	.c-card-chart__body {
+		padding: 0.5rem;
+		.chart__body__item {
+			&:first-child {
+				padding-bottom: 0.2rem;
+				padding-top: 0.1rem;
+			}
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 0.3rem;
+		}
+	}
+}
+.c-modal-content__highchart {
+	flex-wrap: nowrap;
+	//margin-top: -1.8rem;
+	display: flex;
+
+	justify-content: center;
+	//套件修改
+	figure {
+		margin: 0;
+	}
+	.highcharts-tip__title {
+		font-family: $english-font;
+		font-weight: 500;
+	}
+	.highcharts-button {
+		display: none;
+	}
+	.highcharts-menu {
+		display: none;
+	}
+}
+.c-modal-department {
+	.c-modal-content {
+		position: relative;
+	}
+	.c-modal-content__highchart {
+		padding-top: 0;
+	}
 }

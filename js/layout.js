@@ -14,26 +14,12 @@ if (menu_btn_open != null) {
 		sidebar.classList.add("sidebar__is-open");
 		menu_btn.style.display = "block";
 		menu_btn_open.style.display = "none";
-
-		// l_Main_Content.forEach((item) => {
-		//   item.style.width = "calc(100vw - 267px)";
-		// });
-		// search bar 寬度更動
-		// let searchWidth = document.querySelectorAll(".c-search");
-		// if (searchWidth != null) {
-		//   searchWidth.forEach((item) => {
-		//     item.style.width = "calc(100vw - 267px)";
-		//   });
-		// }
-
 		fullname();
 
 		//重新抓取sticky thead 的左方位置
-		//getStickyTheadLeftPadding();
 		setTimeout(function () {
 			getStickyTheadLeftPadding();
 		}, 500);
-		//getStickyTheadLeftPadding();
 	}
 }
 //close menu
@@ -352,8 +338,11 @@ $(document).ready(function () {
 			if (sticky_body_h < 0) {
 				$(".sticky_head").css({
 					position: "absolute",
-					left: `${sticky_body_left}px`, //"237px",
+					left: `${sticky_body_left}px`,
 					top: `0px`,
+				});
+				$(".table-body").css({
+					marginTop: "68px",
 				});
 				MenuOpenScrollThead();
 			}
@@ -361,6 +350,9 @@ $(document).ready(function () {
 				$(".sticky_head").css({
 					position: "relative",
 					left: "0px",
+				});
+				$(".table-body").css({
+					marginTop: "0px",
 				});
 			}
 			//console.log(sticky_body_h);
