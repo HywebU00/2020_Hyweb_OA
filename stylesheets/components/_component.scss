@@ -1856,7 +1856,7 @@
 		.c-modal-features__select {
 			margin-left: 0;
 			display: flex;
-			width: 90%;
+			width: 85%;
 			.select-wrapper {
 				input {
 					width: 90px;
@@ -1954,7 +1954,6 @@
 
 	.c-modal-content__calendar {
 		max-height: 100%; // 926px;
-		//padding: 1rem;
 
 		#plan {
 			.c-modal-content__list__title {
@@ -2013,6 +2012,12 @@
 			padding-bottom: 1.5rem;
 			font-weight: 700;
 		}
+		.o-calendar{
+			.item__date{
+				height: 5.33rem;
+			}
+		}
+		
 	}
 
 	.c-modal-content__list {
@@ -2054,18 +2059,29 @@
 	.c-modal-content {
 		display: flex;
 		height: calc(100% - 54px);
-		padding: 2rem 1.33rem 1.33rem 1.33rem;
+		padding: 1.33rem ;
 		margin: 0;
 	}
 }
 
 .c-modal-personCalendar {
 	@extend .c-modal-personAll;
+	.c-modal-content{
+		padding-top: 2rem;
+		.o-calendar{
+			.item__date{
+				height: 6.66rem;
+			}
+		}
+	}
+
 }
 
 .c-modal-department {
 	@extend .c-modal-personAll;
-
+	.c-modal-content{
+		padding-top: 2rem;
+	}
 	.c-modal-content__calendar {
 		margin-bottom: 4%;
 		.c-accordion-plan {
@@ -3748,7 +3764,7 @@
 			border-bottom: solid 1px $sec2;
 			border-left: solid 1px $sec2;
 			width: 100%;
-			height: 75px;
+			height:6.66rem;
 			position: relative;
 			display: flex;
 			cursor: pointer;
@@ -3774,7 +3790,7 @@
 				font-family: $english-font;
 			}
 		}
-
+		// @include 
 		.is-date-active {
 			background-color: $hyweb-lighblue;
 		}

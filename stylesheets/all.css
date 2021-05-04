@@ -14143,7 +14143,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  width: 85%;
 }
 
 .c-modal-personAll .c-modal-features .c-modal-features__select .select-wrapper input, .c-modal-personCalendar .c-modal-features .c-modal-features__select .select-wrapper input, .c-modal-department .c-modal-features .c-modal-features__select .select-wrapper input {
@@ -14304,6 +14304,10 @@ body {
   font-weight: 700;
 }
 
+.c-modal-personAll .c-modal-content__calendar .o-calendar .item__date, .c-modal-personCalendar .c-modal-content__calendar .o-calendar .item__date, .c-modal-department .c-modal-content__calendar .o-calendar .item__date {
+  height: 5.33rem;
+}
+
 .c-modal-personAll .c-modal-content__list, .c-modal-personCalendar .c-modal-content__list, .c-modal-department .c-modal-content__list {
   margin-bottom: 5%;
   padding: 0 0.2rem;
@@ -14348,8 +14352,20 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: calc(100% - 54px);
-  padding: 2rem 1.33rem 1.33rem 1.33rem;
+  padding: 1.33rem;
   margin: 0;
+}
+
+.c-modal-personCalendar .c-modal-content, .c-modal-personCalendar .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-personCalendar .c-modal-content__scroll {
+  padding-top: 2rem;
+}
+
+.c-modal-personCalendar .c-modal-content .o-calendar .item__date, .c-modal-personCalendar .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .o-calendar .item__date, .c-modal-alert .c-modal-alert__content .c-modal-personCalendar .c-modal-content__scroll .o-calendar .item__date {
+  height: 6.66rem;
+}
+
+.c-modal-department .c-modal-content, .c-modal-department .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-department .c-modal-content__scroll {
+  padding-top: 2rem;
 }
 
 .c-modal-department .c-modal-content__calendar {
@@ -16010,7 +16026,7 @@ body {
   border-bottom: solid 1px #bad4e5;
   border-left: solid 1px #bad4e5;
   width: 100%;
-  height: 75px;
+  height: 6.66rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
