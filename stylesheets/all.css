@@ -10144,8 +10144,19 @@ body {
   z-index: 998;
 }
 
+.l-main::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 99;
+}
+
 .l-main .c-writeHours {
-  width: 100%;
+  width: 99%;
   margin: 0 auto;
   margin-top: 1.5rem;
 }
@@ -11629,7 +11640,9 @@ body {
 }
 
 .sidebar__is-open .l-main::before {
-  width: 240px;
+  width: 245px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .list__title__icon__default {
@@ -11649,7 +11662,7 @@ body {
 }
 
 .c-submenu {
-  z-index: 97;
+  z-index: 101;
   position: absolute;
   right: 0;
   -webkit-transition: ease 0.5s;
@@ -12852,6 +12865,7 @@ body {
 
 .c-breadcrumb {
   margin-top: 0.5rem;
+  margin-left: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12905,7 +12919,7 @@ body {
 .c-accordion-group .accordion-header, .c-accordion-plan .accordion-header, .c-accordion-general .accordion-header {
   font-size: 1.06rem;
   line-height: 26px;
-  padding-right: 0;
+  padding: 0.7rem 0 0.7rem 0.7rem;
   font-weight: 700;
   color: #042340;
   border-radius: 10px 10px 10px;
@@ -13251,6 +13265,7 @@ body {
 }
 
 .c-general {
+  margin-left: 0.5rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -13680,7 +13695,7 @@ body {
   width: 82%;
   height: 85vh;
   overflow: hidden;
-  padding: 1.33rem;
+  padding: 1rem;
 }
 
 .c-modal-addGroup .c-modal-closeBtn, .c-modal-usuallyUseMember .c-modal-closeBtn, .c-modal-sample .c-modal-closeBtn {
@@ -13812,6 +13827,10 @@ body {
 
 .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .member-btn + span, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .member-btn + span, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .member-btn + span {
   color: #8495a4;
+}
+
+.c-modal-addGroup .c-modal-addGroup__content .c-modal-footer, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-footer, .c-modal-sample .c-modal-addGroup__content .c-modal-footer {
+  padding-top: 2rem;
 }
 
 .c-modal-addGroup .c-modal-content, .c-modal-usuallyUseMember .c-modal-content, .c-modal-sample .c-modal-content, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll {
@@ -13980,7 +13999,7 @@ body {
   font-weight: 400;
   position: absolute;
   right: 0;
-  top: 3rem;
+  top: 2.9rem;
   color: #fb5b29;
 }
 
@@ -14244,6 +14263,11 @@ body {
   padding-bottom: 0.2rem;
 }
 
+.c-modal-personAll .c-modal-content__calendar #plan .accordion-body .row, .c-modal-personCalendar .c-modal-content__calendar #plan .accordion-body .row, .c-modal-department .c-modal-content__calendar #plan .accordion-body .row {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .c-modal-personAll .c-modal-content__calendar #plan .accordion-header__item__hour__num, .c-modal-personCalendar .c-modal-content__calendar #plan .accordion-header__item__hour__num, .c-modal-department .c-modal-content__calendar #plan .accordion-header__item__hour__num {
   width: 4.2rem;
 }
@@ -14332,6 +14356,11 @@ body {
   margin-bottom: 4%;
 }
 
+.c-modal-department .c-modal-content__calendar .c-accordion-plan .collapsible-body .row, .c-modal-department .c-modal-content__calendar .c-accordion-general .collapsible-body .row {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .c-modal-department .c-modal-content__list {
   padding-top: 0.5rem;
   height: 100%;
@@ -14418,8 +14447,11 @@ body {
 
 .c-modal-usuallyUseMember .c-modal-content, .c-modal-sample .c-modal-content, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll {
   width: 100%;
-  height: 65vh;
+  height: 100%;
   overflow-x: hidden;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 0;
 }
 
 .c-modal-usuallyUseMember .c-accordion-group, .c-modal-sample .c-accordion-group, .c-modal-usuallyUseMember .c-accordion-plan, .c-modal-sample .c-accordion-plan, .c-modal-usuallyUseMember .c-accordion-general, .c-modal-sample .c-accordion-general {
@@ -14428,6 +14460,7 @@ body {
 
 .c-modal-usuallyUseMember .c-modal-content__item, .c-modal-sample .c-modal-content__item {
   height: 100%;
+  width: 100%;
   margin: 1rem 0 1rem 0;
 }
 
@@ -14440,6 +14473,10 @@ body {
   padding: 0;
 }
 
+.c-modal-usuallyUseMember .c-modal-content__item .accordion-body .accordion-body__item, .c-modal-sample .c-modal-content__item .accordion-body .accordion-body__item {
+  padding: 0.8rem;
+}
+
 .c-modal-usuallyUseMember .c-modal-footer, .c-modal-sample .c-modal-footer {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -14447,17 +14484,13 @@ body {
 
 .c-modal-usuallyUseMember .c-modal-footer button, .c-modal-sample .c-modal-footer button {
   position: absolute;
-  bottom: 2rem;
+  bottom: 1rem;
 }
 
 .c-modal-sample {
   width: 65vw;
   height: 85vh;
   min-height: auto;
-}
-
-.c-modal-sample .c-modal-content, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll {
-  height: 90%;
 }
 
 .c-modal-sample .c-modal-content .header__item__title, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .header__item__title, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .header__item__title {
@@ -15195,9 +15228,9 @@ body {
 }
 
 .c-popover-checkPoint .c-popover__content li, .c-popover-filterS .c-popover__content li, .c-popover-filterM .c-popover__content li, .c-popover-filterL .c-popover__content li, .c-popover-wbsEdit .c-popover__content li, .c-popover-perspective .c-popover__content li, .c-popover-information .c-popover__content li {
-  padding: 1rem 0.5rem;
+  padding: 0.75rem 0.5rem 0.75rem 0.5rem;
   color: #042340;
-  font-size: 1.06rem;
+  font-size: 14px;
   font-family: "Noto Sans TC", "sans-serif";
   border-top: 1px solid #bad4e5;
 }
@@ -15358,8 +15391,9 @@ body {
       -ms-flex-pack: start;
           justify-content: start;
   border-bottom: 1px solid #e2f1fe;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
+  padding-bottom: 0.75rem;
+  padding-top: 0.75rem;
+  margin-bottom: 0;
 }
 
 .c-popover-information .c-popover__content .c-popover__text div:last-child {
@@ -15633,7 +15667,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0.8rem 0;
+  padding: 0.8rem 0.2rem 0.8rem 0.5rem;
   border-bottom: 1px solid #d2dae0;
   color: #042340;
   font-size: 1.06rem;
@@ -16937,13 +16971,14 @@ body {
 }
 
 #todo .c-popover-information .c-popover__content {
+  width: 350px;
   left: -280px;
   padding: 1rem;
 }
 
 #todo .c-popover-information .c-popover__content::before {
   left: 80px;
-  margin-top: -158px;
+  top: 12px;
 }
 
 #todo .c-popover-information .c-popover__content::after {
@@ -16956,6 +16991,10 @@ body {
   font-size: 0.93rem;
   left: -280px;
   padding: 0;
+}
+
+#todo .c-popover-information .c-popover__text div {
+  width: 100%;
 }
 
 #todo .c-popover-filterL .c-popover__content {
@@ -17546,13 +17585,14 @@ body {
 }
 
 #alertPlen .c-popover-information .c-popover__content {
+  width: 350px;
   left: -280px;
   padding: 1rem;
 }
 
 #alertPlen .c-popover-information .c-popover__content::before {
   left: 80px;
-  margin-top: -158px;
+  top: 12px;
 }
 
 #alertPlen .c-popover-information .c-popover__content::after {
