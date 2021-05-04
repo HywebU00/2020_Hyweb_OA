@@ -27,12 +27,13 @@
 	}
 	.c-popover-information {
 		.c-popover__content {
+			width: 350px;
 			left: -280px;
 			padding: 1rem;
 
 			&::before {
 				left: 80px; //90px;
-				margin-top: -158px; //-135px;
+				top: 12px;
 			}
 
 			&::after {
@@ -45,6 +46,9 @@
 			font-size: $a;
 			left: -280px;
 			padding: 0;
+			div {
+				width: 100%;
+			}
 		}
 	}
 
@@ -689,12 +693,13 @@
 
 	.c-popover-information {
 		.c-popover__content {
+			width: 350px;
 			left: -280px;
 			padding: 1rem;
 
 			&::before {
 				left: 80px; //90px;
-				margin-top: -158px; //-135px;
+				top: 12px; //-135px;
 			}
 
 			&::after {
