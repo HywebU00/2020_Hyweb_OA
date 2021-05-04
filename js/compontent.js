@@ -142,29 +142,24 @@ header.forEach((item, index) => {
 	});
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   let elems = document.querySelectorAll(".collapsible");
-//   let instances = M.Collapsible.init(elems, open());
-//   let header = document.querySelectorAll(".collapsible-header");
-//   //點擊 o-accordion_arrow 旋轉點擊icon
-//   header.forEach((item, index) => {
-//     item.addEventListener("click", function () {
-//       this.classList.toggle("is-arrow-active");
-//     });
-//   });
-// });
-
 //點擊 accordion-header 增加 c-accordion-addIcon 的圖示
 const accordionIcon = document.querySelectorAll(".c-accordion-addIcon");
 accordionIcon.forEach(function (item, index) {
-	item.addEventListener("click", function () {
-		if (this.classList.contains("is-accordion-active")) {
+	item.addEventListener("click", function (e) {
+		let isActive = this.classList.contains("is-accordion-active");
+		let targetItem = e.target.classList;
+		let isHeader =
+			targetItem.contains("accordion-header") ||
+			targetItem.contains("header__item__title") ||
+			targetItem.contains("arrow-icon");
+		if (isActive === true && isHeader === true) {
 			let div = document.createElement("div");
 			div.setAttribute("class", "collapsible-activeIcon");
 			let li = document.querySelectorAll(".c-accordion-addIcon li");
 			//獲取li裡的第一個children 增加icon
 			li[index].prepend(div);
-			//li[index].children[0].prepend(div);
+		} else if (isActive === true && isHeader === false) {
+			return;
 		} else {
 			//抓出li標籤下有的 collapsible-activeIcon的標籤 並檢查是否是第[0]個 並刪除
 			item.childNodes.forEach(function (item) {
