@@ -10436,6 +10436,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 2rem;
 }
 
 .l-main-content .l-main-content__title button {
@@ -13048,25 +13049,50 @@ body {
 
 .c-accordion-general .accordion-body__title {
   color: #8495a4;
+  padding: 1rem 0.3rem;
+}
+
+.c-accordion-general .accordion-body__title .col {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 0.3rem;
 }
 
 .c-accordion-general .accordion-body__item {
   background: #e2f1fe;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0.3rem;
 }
 
 .c-accordion-general .accordion-body__item .col {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  padding: 0 0.3rem;
 }
 
-.c-accordion-general .row .s1 {
-  width: 12.3333333333%;
+.c-accordion-general .row .s2 {
+  width: 8%;
 }
 
 .c-accordion-general .row .s3 {
-  width: 19%;
+  width: 12%;
+}
+
+.c-accordion-general .row .s4 {
+  width: 16%;
+}
+
+.c-accordion-general .row .s5 {
+  width: 20%;
+}
+
+.c-accordion-general .row .s6 {
+  width: 24%;
+}
+
+.c-accordion-general .row .s7 {
+  width: 28%;
 }
 
 .is-accordion-active {
@@ -13423,7 +13449,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #d2dae0;
-  padding-bottom: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -13510,7 +13535,8 @@ body {
 .c-modal-alert .c-modal-alert__content .c-modal-content__scroll {
   overflow-y: scroll;
   display: block;
-  height: calc(40vh - 120px);
+  height: calc(40vh - 130px);
+  padding-bottom: 0.5rem;
 }
 
 .c-modal-alert .c-modal-alert__content .c-modal-content__scroll p {
@@ -13523,11 +13549,19 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-bottom: 0;
+  padding: 0;
+}
+
+.c-modal-safe .c-modal-title {
+  margin-bottom: 1rem;
 }
 
 .c-modal-alert-scroll {
   height: 40vh;
+}
+
+.c-modal-alert-scroll .c-modal-title {
+  height: 3.733rem;
 }
 
 .c-modal-alert-scroll .c-modal-footer {
@@ -14642,6 +14676,10 @@ body {
   padding: 0;
 }
 
+.c-dropdown-plan .dropdown-content .disabled span, .c-dropdown-page .dropdown-content .disabled span, .c-dropdown-planContent .dropdown-content .disabled span, .c-dropdown-status .dropdown-content .disabled span, .c-dropdown-general .dropdown-content .disabled span, .c-dropdown-department .dropdown-content .disabled span, .c-dropdown-departmentCheck .dropdown-content .disabled span {
+  color: #8495a4;
+}
+
 .c-dropdown-plan label, .c-dropdown-page label, .c-dropdown-planContent label, .c-dropdown-status label, .c-dropdown-general label, .c-dropdown-department label, .c-dropdown-departmentCheck label {
   font-size: 1.06rem;
   color: #042340;
@@ -14664,6 +14702,11 @@ body {
 
 .c-dropdown-planContent .select-wrapper {
   padding-top: 0.5%;
+}
+
+.c-dropdown-planContent .select-wrapper .select-dropdown .disabled {
+  background-color: #fff;
+  color: #8495a4;
 }
 
 .c-dropdown-status .select-wrapper, .c-dropdown-general .select-wrapper, .c-dropdown-department .select-wrapper {
@@ -15562,6 +15605,7 @@ body {
 
 .c-writeHours-title__item .c-writeHours-title__item__hours .hours img {
   padding-bottom: 25%;
+  width: 2.933rem;
 }
 
 .c-writeHours-title__item .c-writeHours-title__tag {

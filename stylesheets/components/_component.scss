@@ -958,25 +958,49 @@
 
 	.accordion-body__title {
 		color: $gray3;
+		padding: 1rem 0.3rem;
+		.col {
+			@include ellipsisText;
+			padding: 0 0.3rem;
+		}
 	}
 
 	.accordion-body__item {
 		background: $hyweb-lighblue;
-		padding: 1rem 1.5rem;
+		padding: 1rem 0.3rem;
 
 		.col {
 			@include ellipsisText;
+			padding: 0 0.3rem;
 		}
 	}
 
 	.row {
-		.s1 {
-			width: 12.3333333333%;
+		.s2 {
+			width: (100%/25)*2;
+
+		}
+		.s3 {
+			width: (100%/25)*3;
+
+		}
+		.s4 {
+			width: (100%/25)*4;
+
+		}
+		.s5 {
+			width: (100%/25)*5;
+
+		}
+		.s6 {
+			width: (100%/25)*6;
+
+		}
+		.s7 {
+			width: (100%/25)*7;
+
 		}
 
-		.s3 {
-			width: 19%;
-		}
 	}
 }
 
@@ -1275,7 +1299,7 @@
 	.c-modal-title {
 		display: flex;
 		border-bottom: 1px solid $gray4;
-		padding-bottom: 1rem;
+		//margin-bottom: 1rem;
 		align-items: center;
 
 		img {
@@ -1355,8 +1379,8 @@
 			@extend .c-modal-content;
 			overflow-y: scroll;
 			display: block;
-			height: calc(40vh - 120px);
-
+			height: calc(40vh - 130px);
+			padding-bottom: 0.5rem;
 			p {
 				line-height: 1.5rem;
 			}
@@ -1366,13 +1390,19 @@
 	.modal-footer {
 		align-self: flex-end;
 		justify-content: flex-end;
-		padding-bottom: 0;
+		padding: 0;
 	}
 }
-
+.c-modal-safe{
+	.c-modal-title{
+		margin-bottom: 1rem;
+	}
+}
 .c-modal-alert-scroll {
 	height: 40vh;
-
+	.c-modal-title{
+	    height: 3.733rem;
+	}
 	.c-modal-footer {
 		height: auto;
 	}
@@ -2373,6 +2403,11 @@
 				padding: 0;
 			}
 		}
+		.disabled{
+			span{
+				color: $gray3;
+			}
+		}
 	}
 
 	label {
@@ -2405,6 +2440,13 @@
 
 	.select-wrapper {
 		padding-top: 0.5%;
+		.select-dropdown{
+			.disabled{
+				background-color: #fff;
+				color: $gray3;
+			}
+		}
+		
 	}
 }
 
@@ -3218,10 +3260,6 @@
 
 	.is-active {
 		background-color: #fff; //$hyweb-waterblue;
-		// .c-writeHours-title__tag {
-		// 	background-color: $gray1;
-		// 	color: #fff;
-		// }
 	}
 
 	.is-today-tag {
@@ -3307,7 +3345,6 @@
 			align-items: flex-end;
 
 			font-weight: 700;
-			//padding-left: 1rem;
 
 			span {
 				font-size: $writeHours-title-hours-s;
@@ -3316,6 +3353,7 @@
 
 			img {
 				padding-bottom: 25%;
+				width: 2.933rem;
 			}
 		}
 	}
