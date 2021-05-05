@@ -3267,6 +3267,7 @@
 
 		.hours {
 			color: $today-tag-blue;
+			
 		}
 
 		&::before {
@@ -3283,6 +3284,13 @@
 			color: #fff;
 			margin-left: -1rem;
 			border-radius: 0 0 5px 5px;
+		}
+		.c-writeHours-title__item__hours{
+			.hours {
+				.o-dayoff{
+					fill: $today-tag-blue;
+				}
+			}
 		}
 	}
 }
@@ -3354,6 +3362,12 @@
 			img {
 				padding-bottom: 25%;
 				width: 2.933rem;
+			}
+			.o-dayoff{
+				// padding-bottom: 25%;
+					width: 2.933rem;
+					height: 4rem;
+					fill: $gray1;
 			}
 		}
 	}

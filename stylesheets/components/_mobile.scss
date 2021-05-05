@@ -151,6 +151,14 @@
                 font-size: 4.28rem;
                 font-family: $english-font;
                 font-weight: 600;
+                height: 4.2666rem;
+                .o-dayoff{
+                    svg{
+                        height: 50px;
+                        width: 44px;
+                        fill: #fff;   
+                    }
+                }
             }
 
             .c-date-select_week {
