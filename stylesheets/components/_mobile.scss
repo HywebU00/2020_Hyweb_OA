@@ -396,10 +396,11 @@
         align-items: flex-end;
         flex-wrap: wrap;
         padding: 0 1.42rem;
-
+       
 
         span {
             font-size: $p;
+            min-width: 6rem;
         }
 
         a {
@@ -415,8 +416,12 @@
 
         .planlist-danger-text {
             color: $danger;
+           
         }
-
+        .planlist-data{
+            @include ellipsisText;
+            width: 100%;
+        }
         button {
             display: flex;
             align-items: center;

@@ -19760,6 +19760,7 @@ body {
 
 .l-mobile-content li span {
   font-size: 1.06rem;
+  min-width: 6rem;
 }
 
 .l-mobile-content li a {
@@ -19779,6 +19780,13 @@ body {
 
 .l-mobile-content li .planlist-danger-text {
   color: #fb5b29;
+}
+
+.l-mobile-content li .planlist-data {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .l-mobile-content li button {
