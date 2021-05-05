@@ -15521,6 +15521,10 @@ body {
   border-radius: 0 0 5px 5px;
 }
 
+.c-writeHours-title .is-today-tag .c-writeHours-title__item__hours .hours .o-dayoff {
+  fill: #0868bd;
+}
+
 .c-writeHours-title__item {
   padding: 0 1rem;
   padding-bottom: 0.5rem;
@@ -15606,6 +15610,12 @@ body {
 .c-writeHours-title__item .c-writeHours-title__item__hours .hours img {
   padding-bottom: 25%;
   width: 2.933rem;
+}
+
+.c-writeHours-title__item .c-writeHours-title__item__hours .hours .o-dayoff {
+  width: 2.933rem;
+  height: 4rem;
+  fill: #042340;
 }
 
 .c-writeHours-title__item .c-writeHours-title__tag {
@@ -19475,6 +19485,13 @@ body {
   font-size: 4.28rem;
   font-family: "Baloo 2", cursive, "Noto Sans TC";
   font-weight: 600;
+  height: 4.2666rem;
+}
+
+.l-mobile-date-navbar .c-date-select .c-date-select_content .c-date-select_date .o-dayoff svg {
+  height: 50px;
+  width: 44px;
+  fill: #fff;
 }
 
 .l-mobile-date-navbar .c-date-select .c-date-select_content .c-date-select_week {
