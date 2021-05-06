@@ -721,6 +721,10 @@
         padding-top: 0.2rem;
         flex-wrap: wrap;
     }
+    .c-card-planHotkey{
+        width: 98%;
+        margin-bottom: 0.5rem;
+    }
 
     .l-mobile-footer-worksheet_calendar {
         align-items: flex-start;
@@ -752,11 +756,7 @@
             }
         }
 
-        .c-card-workHotkey__btn {
-            @extend .c-card-planHotkey__btn;
-            height: 2.57rem;
-            font-weight: bold;
-        }
+    
     }
 
     .c-mobile__calendar {

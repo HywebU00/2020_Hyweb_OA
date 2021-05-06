@@ -12337,7 +12337,7 @@ body {
   padding-left: 10%;
 }
 
-.c-card-planHotkey .c-card-planHotkey__btn, .l-mobile-footer-worksheet .c-card-workHotkey .c-card-planHotkey__btn, .l-mobile-footer-worksheet .c-card-workHotkey .c-card-workHotkey__btn {
+.c-card-planHotkey .c-card-planHotkey__btn, .l-mobile-footer-worksheet .c-card-workHotkey .c-card-planHotkey__btn {
   text-align: center;
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
@@ -14096,7 +14096,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.5rem 1.88rem;
+  padding: 0.5rem 0.5rem 0.5rem 2.2rem;
   background-color: #f7fbff;
   border-radius: 1rem;
   margin: 0;
@@ -14119,10 +14119,10 @@ body {
   font-size: 18px;
   font-weight: bold;
   width: 100%;
+  margin-top: 0.2rem;
 }
 
 .c-modal-personAll .c-modal-features .c-modal-features__user .user__number, .c-modal-personCalendar .c-modal-features .c-modal-features__user .user__number, .c-modal-department .c-modal-features .c-modal-features__user .user__number {
-  margin-top: 0.2rem;
   font-size: 14px;
   font-family: "Baloo 2", cursive, "Noto Sans TC";
   line-height: 18px;
@@ -14148,7 +14148,7 @@ body {
 }
 
 .c-modal-personAll .c-modal-features .c-modal-features__time, .c-modal-personCalendar .c-modal-features .c-modal-features__time, .c-modal-department .c-modal-features .c-modal-features__time {
-  width: 80%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14166,10 +14166,6 @@ body {
 .c-modal-personAll .c-modal-features .c-modal-features__time div:first-child, .c-modal-personCalendar .c-modal-features .c-modal-features__time div:first-child, .c-modal-department .c-modal-features .c-modal-features__time div:first-child {
   font-weight: bold;
   font-family: "Baloo 2", cursive, "Noto Sans TC";
-}
-
-.c-modal-personAll .c-modal-features .c-modal-features__time div:last-child, .c-modal-personCalendar .c-modal-features .c-modal-features__time div:last-child, .c-modal-department .c-modal-features .c-modal-features__time div:last-child {
-  margin-top: 0.2rem;
 }
 
 .c-modal-personAll .c-modal-features .c-modal-features__select, .c-modal-personCalendar .c-modal-features .c-modal-features__select, .c-modal-department .c-modal-features .c-modal-features__select {
@@ -14396,6 +14392,32 @@ body {
 
 .c-modal-personCalendar .c-modal-content .o-calendar .item__date, .c-modal-personCalendar .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .o-calendar .item__date, .c-modal-alert .c-modal-alert__content .c-modal-personCalendar .c-modal-content__scroll .o-calendar .item__date {
   height: 6.66rem;
+}
+
+.c-modal-department .c-modal-features .c-modal-features__information {
+  padding-right: 2.2rem;
+}
+
+.c-modal-department .c-modal-features .c-modal-features__information .c-modal-features__department {
+  border-right: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.c-modal-department .c-modal-features .c-modal-features__information .c-modal-features__department .department__name {
+  font-size: 18px;
+  white-space: nowrap;
+  font-weight: bold;
+  width: 100%;
+  height: 2.66rem;
+  line-height: 2.66rem;
+  margin-right: 1rem;
 }
 
 .c-modal-department .c-modal-content, .c-modal-department .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-department .c-modal-content__scroll {
@@ -20156,6 +20178,11 @@ body {
       flex-wrap: wrap;
 }
 
+.l-mobile-footer-worksheet .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey {
+  width: 98%;
+  margin-bottom: 0.5rem;
+}
+
 .l-mobile-footer-worksheet .l-mobile-footer-worksheet_calendar {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -20185,11 +20212,6 @@ body {
 
 .l-mobile-footer-worksheet .c-card-workHotkey .c-card__content .c-card__development__item span, .c-card-planHotkey .c-card__development .l-mobile-footer-worksheet .c-card-workHotkey .c-card__content .c-card__development__item__subproject span, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__content .c-card__development .c-card__development__item__subproject span, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__development .c-card__content .c-card__development__item__subproject span {
   font-size: 1.14rem;
-}
-
-.l-mobile-footer-worksheet .c-card-workHotkey .c-card-workHotkey__btn {
-  height: 2.57rem;
-  font-weight: bold;
 }
 
 .l-mobile-footer-worksheet .c-mobile__calendar {
