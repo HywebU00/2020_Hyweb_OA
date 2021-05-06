@@ -10,8 +10,16 @@
 		<link rel="stylesheet" href="stylesheets/all.css" />
 		<title>page_13.4.1</title>
 	</head>
+	<style>
+		body {
+			width: 1200px;
+			height: 1000px;
+			margin: 0 auto;
+			overflow-y: scroll;
+		}
+	</style>
 
-	<body style="width: 1200px; margin: 0 auto; overflow: scroll">
+	<body>
 		<h3
 			style="
 				font-size: 18px;
@@ -23,7 +31,28 @@
 		>
 			page_1.3.1離開頁面 (同 page_13.4.2)
 		</h3>
-		<a class="c-modal-alert__trigger modal-trigger" href="#upload">儲存頁面</a>
+		<a class="c-modal-alert__trigger modal-trigger" href="#upload">離開頁面</a>
+
+		<!-- alert modal-->
+		<div id="upload" class="c-modal-alert modal">
+			<div class="c-modal-alert__content">
+				<div class="c-modal-title">
+					<img src="img/o-alert.svg" alt="" />
+					<div class="">離開頁面？</div>
+				</div>
+				<div class="modal-content c-modal-content">
+					<p>請先儲存頁面資料或取消編輯。</p>
+				</div>
+				<div class="modal-footer c-modal-footer">
+					<button class="o-btn-secondary waves-effect waves-blue modal-close">
+						取消編輯
+					</button>
+					<button class="o-btn-primary waves-effect waves-blue modal-close">
+						儲存
+					</button>
+				</div>
+			</div>
+		</div>
 		<h3
 			style="
 				font-size: 18px;
@@ -157,40 +186,6 @@
 				</div>
 			</div>
 		</div>
-
-		<h3
-			style="
-				font-size: 18px;
-				margin: 2% 0;
-				padding: 1% 1%;
-				background: #1d5299;
-				color: #fff;
-			"
-		>
-			page_13.4.2 離開頁面 (同 page_1.3.1)
-		</h3>
-		<a class="c-modal-alert__trigger modal-trigger" href="#upload">儲存頁面</a>
-		<!-- alert modal-->
-		<div id="upload" class="c-modal-alert modal">
-			<div class="c-modal-alert__content">
-				<div class="c-modal-title">
-					<img src="img/o-alert.svg" alt="" />
-					<div class="">離開頁面？</div>
-				</div>
-				<div class="modal-content c-modal-content">
-					<p>請先儲存頁面資料或取消編輯。</p>
-				</div>
-				<div class="modal-footer c-modal-footer">
-					<button class="o-btn-secondary waves-effect waves-blue modal-close">
-						取消編輯
-					</button>
-					<button class="o-btn-primary waves-effect waves-blue modal-close">
-						儲存
-					</button>
-				</div>
-			</div>
-		</div>
-
 		<h3
 			style="
 				font-size: 18px;
