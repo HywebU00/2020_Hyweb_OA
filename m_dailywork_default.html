@@ -1,143 +1,198 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>m_dailywork_default</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="stylesheets/all.css" />
-  </head>
-  <body>
-    <div class="l-mobile-navbar">
-      <button class="l-mobile-navbar-leftbtn waves-effect waves-blue">
-        <img src="img/o-cross-white.svg" alt="" />
-      </button>
-      <div class="l-mobile-navbar_name">2020 / 8 / 28 週三</div>
-      <button
-        class="l-mobile-navbar-rightbtn js-worksheetBtn waves-effect waves-blue"
-      >
-        <img src="img/o-clock.svg" alt="" />
-      </button>
-    </div>
-    <div class="l-mobile-main">
-      <div class="l-mobile-content">
-        <ul class="l-mobile-content_planlist">
-          <li>
-            <a>
-              <span><span class="planlist-danger-text">* </span>計畫名稱</span>
-              <button><img src="img/o-arrowRight-gray.svg" alt="" /></button>
-            </a>
-          </li>
-          <li>
-            <a>
-              <span><span class="planlist-danger-text">* </span>工作階段</span>
-              <button><img src="img/o-arrowRight-gray.svg" alt="" /></button>
-            </a>
-          </li>
-          <li>
-            <a>
-              <span><span class="planlist-danger-text">* </span>工作內容</span>
-              <button><img src="img/o-arrowRight-gray.svg" alt="" /></button>
-            </a>
-          </li>
-          <li>
-            <span><span class="planlist-danger-text">* </span>時數</span>
-            <input
-              class="planlist-input"
-              type="number"
-              placeholder="輸入時數"
-            />
-          </li>
-        </ul>
-        <div class="l-mobile-content_textarea">
-          <textarea name="" id="" placeholder="寫些備註吧..."></textarea>
-        </div>
-      </div>
-    </div>
-    <button class="l-mobile-footer-btn waves-effect waves-blue">
-      <div>儲存</div>
-    </button>
-    <div class="l-mobile-footer-worksheet">
-      <div class="l-mobile-footer-worksheet_title">
-        <div class="c-worksheet-title">
-          <img src="img/o-clock-deep.svg" alt="" />
-          <span>最近填寫工作</span>
-        </div>
-        <button class="js-worksheet-closeBtn">取消</button>
-      </div>
-      <div class="l-mobile-footer-worksheet_content">
-        <div class="c-card-workHotkey">
-          <div class="c-card__content">
-            <h2>
-              2020智慧空間管理系109年台灣國際專業展網站強化案際專業展網站強化案
-            </h2>
-            <div class="c-card__development">
-              <div class="c-card__development__item">
-                <img src="img/o-branch.svg" alt="" />
-                <span>系統開發與設計統系統開發與設計統系統開發與設計統</span>
-              </div>
-              <div class="c-card__development__item__subproject">
-                <img src="img/o-branch.svg" alt="" />
-                <span>網站頁面規劃與網站頁面規劃與網站頁面規劃與</span>
-              </div>
-            </div>
-          </div>
-          <button class="c-card-workHotkey__btn waves-effect waves-blue">
-            加入此工作
-          </button>
-        </div>
-        <div class="c-card-workHotkey">
-          <div class="c-card__content">
-            <h2>
-              2020智慧空間管理系109年台灣國際專業展網站強化案際專業展網站強化案
-            </h2>
-            <div class="c-card__development">
-              <div class="c-card__development__item">
-                <img src="img/o-branch.svg" alt="" />
-                <span>系統開發與設計統系統開發與設計統系統開發與設計統</span>
-              </div>
-              <div class="c-card__development__item__subproject">
-                <img src="img/o-branch.svg" alt="" />
-                <span>網站頁面規劃與網站頁面規劃與網站頁面規劃與</span>
-              </div>
-            </div>
-          </div>
-          <button class="c-card-workHotkey__btn waves-effect waves-blue">
-            加入此工作
-          </button>
-        </div>
-        <div class="c-card-workHotkey">
-          <div class="c-card__content">
-            <h2>
-              2020智慧空間管理系109年台灣國際專業展網站強化案際專業展網站強化案
-            </h2>
-            <div class="c-card__development">
-              <div class="c-card__development__item">
-                <img src="img/o-branch.svg" alt="" />
-                <span>系統開發與設計統系統開發與設計統系統開發與設計統</span>
-              </div>
-              <div class="c-card__development__item__subproject">
-                <img src="img/o-branch.svg" alt="" />
-                <span>網站頁面規劃與網站頁面規劃與網站頁面規劃與</span>
-              </div>
-            </div>
-          </div>
-          <button class="c-card-workHotkey__btn waves-effect waves-blue">
-            加入此工作
-          </button>
-        </div>
-      </div>
-    </div>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- js套件 -->
-    <script src="js/materialize.js"></script>
-    <script src="js/OverlayScrollbars.min.js"></script>
-    <!-- 自定義 js -->
-    <script src="js/layout.js"></script>
-    <script src="js/compontent.js"></script>
-    <script src="js/mobile.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>m_dailywork_default</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="stylesheets/all.css" />
+	</head>
+	<body>
+		<div class="l-mobile-navbar">
+			<button class="l-mobile-navbar-leftbtn waves-effect waves-blue">
+				<img src="img/o-cross-white.svg" alt="" />
+			</button>
+			<div class="l-mobile-navbar_name">2020 / 8 / 28 週三</div>
+			<button
+				class="l-mobile-navbar-rightbtn js-worksheetBtn waves-effect waves-blue"
+			>
+				<img src="img/o-clock.svg" alt="" />
+			</button>
+		</div>
+		<div class="l-mobile-main">
+			<div class="l-mobile-content">
+				<ul class="l-mobile-content_planlist">
+					<li>
+						<a>
+							<span><span class="planlist-danger-text">* </span>計畫名稱</span>
+							<button><img src="img/o-arrowRight-gray.svg" alt="" /></button>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span><span class="planlist-danger-text">* </span>工作階段</span>
+							<button><img src="img/o-arrowRight-gray.svg" alt="" /></button>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span><span class="planlist-danger-text">* </span>工作內容</span>
+							<button><img src="img/o-arrowRight-gray.svg" alt="" /></button>
+						</a>
+					</li>
+					<li>
+						<span><span class="planlist-danger-text">* </span>時數</span>
+						<input
+							class="planlist-input"
+							type="number"
+							placeholder="輸入時數"
+						/>
+					</li>
+				</ul>
+				<div class="l-mobile-content_textarea">
+					<textarea name="" id="" placeholder="寫些備註吧..."></textarea>
+				</div>
+			</div>
+		</div>
+		<button class="l-mobile-footer-btn waves-effect waves-blue">
+			<div>儲存</div>
+		</button>
+		<div class="l-mobile-footer-worksheet">
+			<div class="l-mobile-footer-worksheet_title">
+				<div class="c-worksheet-title">
+					<img src="img/o-clock-deep.svg" alt="" />
+					<span>最近填寫工作</span>
+				</div>
+				<button class="js-worksheet-closeBtn">取消</button>
+			</div>
+			<div class="l-mobile-footer-worksheet_content">
+				<div class="c-card-planHotkey">
+					<button class="c-card__content">
+						<div class="c-card__tag">
+							<span class="">2020WEV24H</span>
+						</div>
+						<div class="c-card__addIcon">
+							<img src="img/o-plus.svg" alt="" />加入
+						</div>
+						<h2>
+							2020智慧空間管理系109年台灣國際專業展網站強化案際專業展網站強化案
+						</h2>
+						<div class="c-card__development">
+							<div class="c-card__development__item">
+								<img src="img/o-branch.svg" alt="" />
+								<span>系統開發與設計統系統開發與設計統系統開發與設計統</span>
+							</div>
+							<div class="c-card__development__item__subproject">
+								<img src="img/o-branch.svg" alt="" />
+								<span>網站頁面規畫與</span>
+							</div>
+						</div>
+					</button>
+				</div>
+				<div class="c-card-planHotkey">
+					<button class="c-card__content">
+						<div class="c-card__tag">
+							<span class="">2020WEV24H</span>
+						</div>
+						<div class="c-card__addIcon">
+							<img src="img/o-plus.svg" alt="" />加入
+						</div>
+						<h2>
+							2020智慧空間管理系109年台灣國際專業展網站強化案際專業展網站強化案
+						</h2>
+						<div class="c-card__development">
+							<div class="c-card__development__item">
+								<img src="img/o-branch.svg" alt="" />
+								<span>系統開發與設計統系統開發與設計統系統開發與設計統</span>
+							</div>
+							<div class="c-card__development__item__subproject">
+								<img src="img/o-branch.svg" alt="" />
+								<span>網站頁面規畫與</span>
+							</div>
+						</div>
+					</button>
+				</div>
+				<div class="c-card-planHotkey">
+					<button class="c-card__content">
+						<div class="c-card__tag">
+							<span class="">2020WEV24H</span>
+						</div>
+						<div class="c-card__addIcon">
+							<img src="img/o-plus.svg" alt="" />加入
+						</div>
+						<h2>
+							2020智慧空間管理系109年台灣國際專業展網站強化案際專業展網站強化案
+						</h2>
+						<div class="c-card__development">
+							<div class="c-card__development__item">
+								<img src="img/o-branch.svg" alt="" />
+								<span>系統開發與設計統系統開發與設計統系統開發與設計統</span>
+							</div>
+							<div class="c-card__development__item__subproject">
+								<img src="img/o-branch.svg" alt="" />
+								<span>網站頁面規畫與</span>
+							</div>
+						</div>
+					</button>
+				</div>
+				<div class="c-card-planHotkey">
+					<button class="c-card__content">
+						<div class="c-card__tag">
+							<span class="">2020WEV24H</span>
+						</div>
+						<div class="c-card__addIcon">
+							<img src="img/o-plus.svg" alt="" />加入
+						</div>
+						<h2>
+							2020智慧空間管理系109年台灣國際專業展網站強化案際專業展網站強化案
+						</h2>
+						<div class="c-card__development">
+							<div class="c-card__development__item">
+								<img src="img/o-branch.svg" alt="" />
+								<span>系統開發與設計統系統開發與設計統系統開發與設計統</span>
+							</div>
+							<div class="c-card__development__item__subproject">
+								<img src="img/o-branch.svg" alt="" />
+								<span>網站頁面規畫與</span>
+							</div>
+						</div>
+					</button>
+				</div>
+				<div class="c-card-planHotkey">
+					<button class="c-card__content">
+						<div class="c-card__tag">
+							<span class="">2020WEV24H</span>
+						</div>
+						<div class="c-card__addIcon">
+							<img src="img/o-plus.svg" alt="" />加入
+						</div>
+						<h2>
+							2020智慧空間管理系109年台灣國際專業展網站強化案際專業展網站強化案
+						</h2>
+						<div class="c-card__development">
+							<div class="c-card__development__item">
+								<img src="img/o-branch.svg" alt="" />
+								<span>系統開發與設計統系統開發與設計統系統開發與設計統</span>
+							</div>
+							<div class="c-card__development__item__subproject">
+								<img src="img/o-branch.svg" alt="" />
+								<span>網站頁面規畫與</span>
+							</div>
+						</div>
+					</button>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<!-- js套件 -->
+		<script src="js/materialize.js"></script>
+		<script src="js/OverlayScrollbars.min.js"></script>
+		<!-- 自定義 js -->
+		<script src="js/layout.js"></script>
+		<script src="js/compontent.js"></script>
+		<script src="js/mobile.js"></script>
+	</body>
 </html>

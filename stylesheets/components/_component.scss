@@ -1828,15 +1828,13 @@
 		.c-modal-features__information {
 			display: flex;
 			align-items: center;
-			//width: 35%;
-			padding: 0.5rem 1.88rem;
+			padding: 0.5rem 0.5rem 0.5rem 2.2rem;
 			background-color: $sec3;
 			border-radius: 1rem;
 			margin: 0;
 			min-height: 54px;
 		}
 		.c-modal-features__user {
-			// width: 50%;
 			border-right: 1px solid;
 			display: flex;
 			justify-content: flex-start;
@@ -1845,9 +1843,10 @@
 				font-size: $font-size-l;
 				font-weight: bold;
 				width: 100%;
+				margin-top: 0.2rem;
 			}
 			.user__number {
-				margin-top: 0.2rem;
+				
 				font-size: $font-size-m;
 				font-family: $english-font;
 				line-height: $font-size-l;
@@ -1866,7 +1865,7 @@
 			}
 		}
 		.c-modal-features__time {
-			width: 80%;
+			width: 70%;
 			display: flex;
 			margin-left: 1rem;
 			line-height: $font-size-l;
@@ -1878,9 +1877,9 @@
 					font-weight: bold;
 					font-family: $english-font;
 				}
-				&:last-child {
-					margin-top: 0.2rem;
-				}
+				// &:last-child {
+				// 	margin-top: 0.2rem;
+				// }
 			}
 		}
 		.c-modal-features__select {
@@ -2109,6 +2108,26 @@
 
 .c-modal-department {
 	@extend .c-modal-personAll;
+	.c-modal-features{
+		.c-modal-features__information{
+			padding-right: 2.2rem;
+			.c-modal-features__department{
+				border-right: 1px solid;
+				display: flex;
+				justify-content: flex-start;
+				flex-wrap: wrap;
+				.department__name {
+					font-size: $font-size-l;
+					white-space: nowrap;
+					font-weight: bold;
+					width: 100%;
+					height: 2.66rem;
+					line-height: 2.66rem;
+					margin-right: 1rem;
+				}
+			}
+		}
+	}
 	.c-modal-content{
 		padding-top: 2rem;
 	}
