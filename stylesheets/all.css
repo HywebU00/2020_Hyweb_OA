@@ -14758,6 +14758,8 @@ body {
 }
 
 .c-dropdown-departmentCheck .c-dropdown__modal .c-dropdown__content li span {
+  white-space: normal;
+  max-width: 350px;
   font-size: 14px;
 }
 
@@ -14866,6 +14868,11 @@ body {
   background-color: #f7fbff;
 }
 
+.c-dropdown__modal .c-dropdown__content li span {
+  white-space: normal;
+  max-width: 350px;
+}
+
 .c-dropdown__modal .c-dropdown__footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14966,6 +14973,8 @@ body {
 
 .c-dropdown-member .c-dropdown__content li span {
   font-size: 14px;
+  white-space: normal;
+  max-width: 350px;
 }
 
 .c-dropdown-member .c-dropdown__title .c-dropdown__title__all {
