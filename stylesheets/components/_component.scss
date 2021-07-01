@@ -2679,6 +2679,7 @@
   .c-dropdown__content__height {
     height: 185px;
     overflow-y: scroll;
+    padding-left: 0.75rem;
   }
 
   .c-dropdown__content {
@@ -2692,7 +2693,7 @@
       width: 33.33333%;
       padding: 0.3rem 0;
       display: flex;
-      justify-content: center;
+      justify-content: right;
 
       span {
         font-size: $font-size-m;
