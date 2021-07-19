@@ -10983,6 +10983,10 @@ body {
   padding-bottom: 1rem;
 }
 
+.l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item {
+  display: block;
+}
+
 .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-datePicker-days .o-input-div, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-datePicker-days .o-input-div, .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-datePicker-months .o-input-div, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-datePicker-months .o-input-div {
   background-color: #fff;
   border: 1px solid #fb5b29;
@@ -11001,7 +11005,7 @@ body {
 
 .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-dropdown-general::after, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-dropdown-general::after {
   color: #fb5b29;
-  content: "請確認項目有在選單內";
+  content: "不可空白";
   font-size: 0.8rem;
 }
 
@@ -11016,7 +11020,7 @@ body {
 
 .l-main-content .l-main-content__wbslist .table-body .is-error-status .is-error-status-item .c-dropdown-member::after, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .is-error-status-item .c-dropdown-member::after {
   color: #fb5b29;
-  content: "請確認成員皆有在選單內且成員間以頓號區隔";
+  content: "不可空白";
   font-size: 0.8rem;
 }
 
@@ -11034,6 +11038,22 @@ body {
   content: "請填阿拉伯數字";
   font-size: 0.8rem;
   display: block;
+  margin-bottom: 0.2rem;
+}
+
+.l-main-content .l-main-content__wbslist .table-body .is-error-status .c-input-content textarea, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .c-input-content textarea {
+  position: relative;
+  margin-top: 1.65rem;
+  background-color: #fff;
+  border: 1px solid #fb5b29;
+}
+
+.l-main-content .l-main-content__wbslist .table-body .is-error-status .c-input-content::after, .l-main-content .l-main-content__workTypelist .table-body .is-error-status .c-input-content::after {
+  color: #fb5b29;
+  content: "不可空白";
+  font-size: 0.8rem;
+  display: block;
+  margin-top: -0.2rem;
   margin-bottom: 0.2rem;
 }
 
@@ -16955,6 +16975,10 @@ body {
 
 #WBS .l-main-content .l-main-content__wbslist .table-body .is-error-status .c-datePicker-days, #WBS .l-main-content .l-main-content__workTypelist .table-body .is-error-status .c-datePicker-days, #WBS .l-main-content .l-main-content__wbslist .table-body .is-error-status .c-datePicker-months, #WBS .l-main-content .l-main-content__workTypelist .table-body .is-error-status .c-datePicker-months {
   margin-top: -1rem;
+}
+
+#WBS .l-main-content .l-main-content__wbslist .table-body .is-error-status .c-input-content.o-input-textarea textarea, #WBS .l-main-content .l-main-content__workTypelist .table-body .is-error-status .c-input-content.o-input-textarea textarea {
+  margin-top: 0.6rem;
 }
 
 #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem {
