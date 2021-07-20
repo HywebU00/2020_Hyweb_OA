@@ -556,10 +556,47 @@
           </button>
         </div>
         <div class="l-main-content">
-          <div class="l-main-content__downloadlink">
+          <div class="l-main-content__downloadlink l-main-content-title">
             <button>
               <a class="" href="#">＊下載WBS Excel範本</a>
             </button>
+            <div class="l-main-content-list">
+            <div>
+              <div class="c-popover-information pop-modal">
+										<button class="waves-effect waves-blue o-information c-popover__btn">
+											<img class="l-main-content-list__img pop-btn" src="img/o-information.svg" alt="">
+										</button>
+										<div class="c-popover__content pop-content ">
+                      <section>
+                        <h3>WBS 功能說明</h3>
+                        <img src="img/o-wbs-Introduction.png" alt="" />
+                      </section>
+                      <section>
+                        <h6>功能說明</h6>
+                        <ul>
+                          <li>編號：可針對每個項目自行定義編號，如：1、1.1、1.2。</li>
+                          <li>工作階段：<span>必填欄位</span>，可將眾多工作內容拆分成不同階段。</li>
+                          <li>工作內容：<span>必填欄位</span>，詳細列出該計畫所有工作內容。</li>
+                          <li>起迄時間：可作為完成各工作項目的參考時間。</li>
+                          <li>工作類型：<span>必填欄位</span>，以工作類型的角度分類各工作內容，系統將自動生成工作類型表以協助專案控管。
+                          </li>
+                          <li>執行成員：<span>必填欄位</span>，負責執行該工作內容的計畫成員。</li>
+                          <li>預估工時：完成各工作內容所需的工時預估，系統將自動統計並顯示實際與預估工時之比較以協助專案控管。
+                          </li>
+                        </ul>
+                        <h6>重要須知</h6>
+                        <ul>
+                          <li>成員在填寫工時的時候，僅能在選單上看見自己被指派的工作內容，而未在WBS上被您指派的成員，將無法填寫該項工時。
+                          </li>
+                          <li>計畫的WBS發布給成員後，您依然可以在此頁面修改WBS，但已被成員填入工時的工作內容將無法刪除。
+                          </li>
+                        </ul>
+                      </section>
+										</div>
+							</div>
+            </div>   
+            </div>
+           
           </div>
           <div class="l-main-content-table l-main-content__wbslist sticky_body">
             <div class="table-thead sticky_head">
@@ -718,7 +755,6 @@
                                 <button type="button" class="waves-effect waves-blue">
                                   <img src="img/o-arrowRight-blue.svg" alt="" />
                                 </button>
-
                               </div>
                               <div class="c-datePicker__content">
                                 <table>

@@ -1,5 +1,98 @@
 #WBS {
   .l-main-content {
+    .l-main-content__downloadlink {
+      .l-main-content-list {
+        div {
+          .pop-content {
+            display: block;
+            transform-origin: top right;
+            max-width: 100vw;
+            //left: -800px; //
+            left: -934px;
+            padding: 2rem;
+
+            &::before {
+              //left: 615px;
+              left: 755px;
+              top: 12px;
+            }
+            &::after {
+              left: 755px;
+              //left: 615px;
+            }
+            h3 {
+              margin-top: 0.5rem;
+              color: $gray1;
+              font-size: $h2;
+              font-weight: bolder;
+            }
+            h6 {
+              color: #fff;
+              background: $hy-background;
+              padding: 0.5rem 0.8rem;
+              border-radius: 1rem;
+              display: inline-block;
+            }
+            section {
+              img {
+                max-height: 220px;
+                margin-bottom: 1rem;
+              }
+              @media screen and (max-width: 1360px) {
+                img {
+                  width: 100%;
+                }
+              }
+            }
+            ul {
+              margin: 0.5rem 0 1rem 0;
+            }
+            li {
+              margin-left: 1rem;
+              border: 0px;
+              line-height: 1.1rem;
+              padding: 0.5rem;
+              span {
+                color: $red;
+              }
+              &:hover,
+              :active {
+                background: #fff;
+              }
+            }
+            li::before {
+              content: "\2022";
+              color: $hyweb-blue;
+              font-weight: bold;
+              display: inline-block;
+              width: 1em;
+              margin-left: -1em;
+            }
+          }
+          @media screen and (max-width: 1360px) {
+            .pop-content {
+              max-width: 80vw;
+              left: -800px;
+              &::before,
+              &::after {
+                left: 615px;
+              }
+            }
+          }
+          @media screen and (max-width: 1220px) {
+            .pop-content {
+              max-width: 535px;
+              left: -500px;
+              &::before,
+              &::after {
+                left: 315px;
+              }
+            }
+          }
+        }
+      }
+    }
+
     .l-main-content__wbslist {
       .table-thead {
         .row {

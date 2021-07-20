@@ -16914,6 +16914,100 @@ body {
   width: auto;
 }
 
+#WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content {
+  display: block;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  max-width: 100vw;
+  left: -934px;
+  padding: 2rem;
+}
+
+#WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content::before {
+  left: 755px;
+  top: 12px;
+}
+
+#WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content::after {
+  left: 755px;
+}
+
+#WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content h3 {
+  margin-top: 0.5rem;
+  color: #042340;
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+#WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content h6 {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
+  padding: 0.5rem 0.8rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+
+#WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content section img {
+  max-height: 220px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1360px) {
+  #WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content section img {
+    width: 100%;
+  }
+}
+
+#WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content ul {
+  margin: 0.5rem 0 1rem 0;
+}
+
+#WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content li {
+  margin-left: 1rem;
+  border: 0px;
+  line-height: 1.1rem;
+  padding: 0.5rem;
+}
+
+#WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content li span {
+  color: #fb5b29;
+}
+
+#WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content li:hover,
+#WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content li :active {
+  background: #fff;
+}
+
+#WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content li::before {
+  content: "\2022";
+  color: #0156a2;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+@media screen and (max-width: 1360px) {
+  #WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content {
+    max-width: 80vw;
+    left: -800px;
+  }
+  #WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content::before, #WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content::after {
+    left: 615px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  #WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content {
+    max-width: 535px;
+    left: -500px;
+  }
+  #WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content::before, #WBS .l-main-content .l-main-content__downloadlink .l-main-content-list div .pop-content::after {
+    left: 315px;
+  }
+}
+
 #WBS .l-main-content .l-main-content__wbslist .table-thead .row .s1, #WBS .l-main-content .l-main-content__workTypelist .table-thead .row .s1 {
   width: 6.8rem;
 }
