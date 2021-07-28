@@ -13,7 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
     ".c-dropdown__content__height"
   );
   let addMember_content = document.querySelectorAll(".addMember-content");
-
+  let c_sidebar_content_listGroup = document.querySelector(
+    ".c_sidebar_content_listGroup"
+  );
   //modal scroll
   OverlayScrollbars(c_modal_content_sidebar, {
     className: "os-theme-dark",
