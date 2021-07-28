@@ -37,6 +37,10 @@ body {
   .c-sidebar-content__user__logout {
     display: none;
   }
+  .c-sidebar-content__listGroup {
+    overflow-y: scroll;
+    height: calc(90vh - 280px);
+  }
   .c-sidebar-content__logo {
     //padding-left: 6%;
     padding-left: 0.3rem;
@@ -142,6 +146,10 @@ body {
     position: absolute;
     bottom: 1.5rem;
     right: 2rem;
+    width: calc(100% - 1.8rem);
+    .c-sidebar-content__list {
+      margin-left: 1.2rem;
+    }
   }
 
   .c-sidebar-btnlist__item {
@@ -149,7 +157,7 @@ body {
     justify-content: center;
     margin-left: 14px;
     margin-bottom: 1rem;
-
+    justify-content: flex-end;
     &:last-child {
       margin-bottom: 0;
     }
@@ -1446,13 +1454,10 @@ body {
     }
 
     .c-sidebar-btnlist {
-      // position: absolute;
-      // bottom: 0;
-      // display: flex;
-      // justify-content: space-between;
-      // width: 80%;
-      // height: 100px;
-
+      .c-sidebar-content__list {
+        margin-left: 0;
+        cursor: pointer;
+      }
       .c-sidebar-btnlist__item {
         display: flex;
         white-space: nowrap;
@@ -1753,5 +1758,31 @@ body {
   .c-submenu-content {
     transition: ease 0.5s;
     width: 0;
+  }
+}
+.l-loader-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffffe0;
+  z-index: 10000;
+  img {
+    width: 25%;
+    max-width: 340px;
+  }
+  &::after {
+    position: absolute;
+    top: 55vh;
+    left: 48vw;
+    content: "Loading . . .";
+    font-size: $font-size-l;
+    font-weight: 600;
+    color: $hyweb-blue;
+    font-family: $english-font;
   }
 }

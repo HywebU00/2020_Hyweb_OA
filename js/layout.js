@@ -384,11 +384,20 @@ MenuOpenScrollThead();
 //++++++++++++++++++++++++
 function getStickyTheadLeftPadding() {
   let sticky_body = $(".active").find(".sticky_body");
-  let sticky_body_left = Math.floor(sticky_body.offset().left);
   let sticky_body_h = Math.floor(sticky_body.offset().top);
   if (sticky_body_h < 0) {
+    let sticky_body_left = Math.floor(sticky_body.offset().left);
     $(".sticky_head").css({
       left: sticky_body_left + "px",
     });
   }
 }
+
+//+++++++++++++++++++++++++
+// loading 圖片
+//+++++++++++++++++++++++++
+$(window).on("load", function () {
+  setTimeout(() => {
+    $(".l-loader-wrapper").fadeOut("slow");
+  }, 3000);
+});
