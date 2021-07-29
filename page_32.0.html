@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-		<link rel="stylesheet" href="stylesheets/all.css" />
-		<title>page_32.0 月曆總覽視窗</title>
-	</head>
-	<!-- +++++++++++ -->
-	<!--  注意事項    -->
-	<!--
+    <link rel="stylesheet" href="stylesheets/all.css" />
+    <!-- favicon -->
+    <link href="img/o-icon.ico" rel="icon" type="image/x-icon" />
+    <title>page_32.0 月曆總覽視窗</title>
+  </head>
+  <!-- +++++++++++ -->
+  <!--  注意事項    -->
+  <!--
     1. 點擊月份按鈕(item__months__btn) 會增添 class“is-month-active” 改變樣式 (component.js--224)
     2. 月曆中系統顯示 當下日期 會增添 class "is-today"
     3. 點擊月份按鈕 會更改右邊視窗的資訊內容
@@ -22,317 +24,321 @@
     6. 點擊專案按鈕(item__projects__btn) 會增添 class "is-project-active" 改變樣式(component.js--244)
     7. 點擊專案按鈕 會更改右邊視窗的資訊內容
   -->
-	<!-- +++++++++++ -->
-	<body style="width: 1200px; margin: 0 auto; overflow-y: scroll">
-		<h3
-			style="
-				font-size: 18px;
-				margin: 2% 0;
-				padding: 1% 1%;
-				background: #1d5299;
-				color: #fff;
-			"
-		>
-			page_32.0 月曆總覽視窗
-		</h3>
-		<!-- modal-department -->
-		<div
-			class=""
-			style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0"
-		>
-			departmentCalendar
-		</div>
-		<div class="c-modal-department">
-			<div class="c-modal-features">
-				<div class="c-modal-features__information row">
-					<div class="c-modal-features__department">
-						<div class="department__name">M10</div>
-						<!-- <div class="user__number">A9005 / M10</div> -->
-					</div>
-					<div class="c-modal-features__time">
-						<div class="">2020/7-2021/8</div>
-						<div class="">
-							<span class="">區間支援工時 <span>17</span></span>
-						</div>
-					</div>
-				</div>
-				<div class="c-modal-features__select row">
-					<div class="col">
-						<div class="input-title">時間</div>
-						<div class="c-datePicker-month pop-modal">
-							<div class="c-datePicker__input">
-								<div class="o-input-div pop-btn"></div>
-							</div>
-							<div class="c-datePicker__modal pop-content">
-								<div class="c-datePicker__yearPicker">
-									<button class="waves-effect waves-blue">
-										<img src="img/o-arrowLeft-blue.svg" alt="" />
-									</button>
-									<div class="">2020</div>
-									<button class="waves-effect waves-blue">
-										<img src="img/o-arrowRight-blue.svg" alt="" />
-									</button>
-								</div>
-								<ul class="c-datePicker__content">
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>1月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>2月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>3月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>4月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>5月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>6月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>7月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>8月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>9月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>10月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>11月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>12月</span>
-										</label>
-									</li>
-								</ul>
-								<div class="c-datePicker__footer">
-									<button
-										class="o-btn-primary waves-effect waves-blue pop-confirm-btn"
-									>
-										確認
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="input-title">計畫</div>
-						<div class="input-field c-dropdown-planContent">
-							<select class="c-dropdown-plan-select">
-								<optgroup label="籌備中">
-									<option value="1">2021UA001 智慧空間管理系統建置</option>
-									<option value="2">2021UA001 智慧空間管理系統建置</option>
-									<option value="3">2021UA001 智慧空間管理系統建置</option>
-									<option value="4">2021UA001 智慧空間管理系統建置</option>
-								</optgroup>
-								<optgroup label="執行中">
-									<option value="5">2021UA001 智慧空間管理系統建置</option>
-									<option value="6">2021UA001 智慧空間管理系統建置</option>
-									<option value="7">2021UA001 智慧空間管理系統建置</option>
-									<option value="8">2021UA001 智慧空間管理系統建置</option>
-								</optgroup>
-								<optgroup label="保固中">
-									<option value="9">2021UA001 智慧空間管理系統建置</option>
-									<option value="10">2021UA001 智慧空間管理系統建置</option>
-									<option value="11">2021UA001 智慧空間管理系統建置</option>
-									<option value="12">2021UA001 智慧空間管理系統建置</option>
-								</optgroup>
-							</select>
-						</div>
-					</div>
-					<div class="col">
-						<button class="o-btn-primary">匯出</button>
-					</div>
-				</div>
-				<div class="c-modal-features__btn">
-					<button type="button"><img src="img/o-cross.svg" alt="" /></button>
-				</div>
-			</div>
-			<div class="c-modal-content row">
-				<div class="c-modal-content__calendar col s12">
-					<div class="c-modal-content__list js-scrollbar-style">
-						<ul class="collapsible c-accordion-plan">
-							<li>
-								<div class="collapsible-header accordion-header">
-									<div class="accordion-header__item">
-										<div class="header__item__departmentNum">U20</div>
-										<div class="header__item__userNum">A9235</div>
-										<div class="header__item__name">蘇紫瑜</div>
-									</div>
-									<div class="accordion-header__item">
-										<div class="accordion-header__item__hour">
-											<div class="accordion-header__item__hour__title">
-												此月填入工時
-											</div>
-											<div class="accordion-header__item__hour__num">12</div>
-										</div>
-										<div class="collapsible-btn">
-											<div class="o-accordion_arrow">
-												<div class="arrow-icon"></div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="collapsible-body accordion-body">
-									<div class="row accordion-body__title">
-										<div class="col s2">填寫日期</div>
-										<div class="col s3">工作階段</div>
-										<div class="col s3">工作內容</div>
-										<div class="col s2">時數</div>
-										<div class="col s2">備註</div>
-									</div>
-									<div class="row accordion-body__item">
-										<div class="col s2">2020/09/15</div>
-										<div class="col s3">網站介面規畫與設計</div>
-										<div class="col s3">網站介面規畫與設計</div>
-										<div class="col s2">4</div>
-										<div class="col s2">5個樣板</div>
-									</div>
-									<div class="row accordion-body__item">
-										<div class="col s2">2020/09/15</div>
-										<div class="col s3">網站介面規畫與設計</div>
-										<div class="col s3">網站介面規畫與設計</div>
-										<div class="col s2">4</div>
-										<div class="col s2">5個樣板</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-						<ul class="collapsible c-accordion-plan">
-							<li>
-								<div class="collapsible-header accordion-header">
-									<div class="accordion-header__item">
-										<div class="header__item__departmentNum">U20</div>
-										<div class="header__item__userNum">A9032</div>
-										<div class="header__item__name">陳國華</div>
-									</div>
-									<div class="accordion-header__item">
-										<div class="accordion-header__item__hour">
-											<div class="accordion-header__item__hour__title">
-												此月填入工時
-											</div>
-											<div class="accordion-header__item__hour__num">19</div>
-										</div>
-										<div class="collapsible-btn">
-											<div class="o-accordion_arrow">
-												<div class="arrow-icon"></div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="collapsible-body accordion-body">
-									<div class="row accordion-body__title">
-										<div class="col s2">填寫日期</div>
-										<div class="col s3">工作階段</div>
-										<div class="col s3">工作內容</div>
-										<div class="col s2">時數</div>
-										<div class="col s2">備註</div>
-									</div>
-									<div class="row accordion-body__item">
-										<div class="col s2">2020/09/15</div>
-										<div class="col s3">網站介面規畫與設計</div>
-										<div class="col s3">網站介面規畫與設計</div>
-										<div class="col s2">4</div>
-										<div class="col s2">5個樣板</div>
-									</div>
-									<div class="row accordion-body__item">
-										<div class="col s2">2020/09/15</div>
-										<div class="col s3">網站介面規畫與設計</div>
-										<div class="col s3">網站介面規畫與設計</div>
-										<div class="col s2">4</div>
-										<div class="col s2">5個樣板</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- accordion general -->
-		<div
-			class=""
-			style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%"
-		>
-			accordion general
-		</div>
-		<div class="c-accordion-general">
-			<div class="accordion-body">
-				<div class="row accordion-body__title">
-					<div class="col s3">支援部門</div>
-					<div class="col s7">計畫名稱</div>
-					<div class="col s5">工作階段</div>
-					<div class="col s5">工作內容</div>
-					<div class="col s2">時數</div>
-					<div class="col s3">備註</div>
-				</div>
-				<div class="row accordion-body__item">
-					<div class="col s3">M10</div>
-					<div class="col s7">2021UA001 109年臺灣國際專業展..</div>
-					<div class="col s5">網站介面規畫與設計</div>
-					<div class="col s5">網站介面規畫與設計</div>
-					<div class="col s2">1000</div>
-					<div class="col s3">5個樣板</div>
-				</div>
-				<div class="row accordion-body__item">
-					<div class="col s3">M10</div>
-					<div class="col s7">2021UA001 109年臺灣國際專業展..</div>
-					<div class="col s5">系統開發與設計與設計</div>
-					<div class="col s5">網站介面規畫與設計</div>
-					<div class="col s2">4</div>
-					<div class="col s3"></div>
-				</div>
-			</div>
-		</div>
-		<script src="js/jquery-3.3.1.min.js"></script>
-		<!-- js套件 -->
-		<script src="js/materialize.js"></script>
-		<script src="js/OverlayScrollbars.min.js"></script>
-		<!-- 自定義 js -->
-		<script src="js/layout.js"></script>
-		<script src="js/compontent.js"></script>
-		<script src="js/scrollbar_setting.js"></script>
-	</body>
+  <!-- +++++++++++ -->
+  <body style="width: 1200px; margin: 0 auto; overflow-y: scroll">
+    <h3
+      style="
+        font-size: 18px;
+        margin: 2% 0;
+        padding: 1% 1%;
+        background: #1d5299;
+        color: #fff;
+      "
+    >
+      page_32.0 月曆總覽視窗
+    </h3>
+    <!-- modal-department -->
+    <div
+      class=""
+      style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0"
+    >
+      departmentCalendar
+    </div>
+    <div class="c-modal-department">
+      <div class="c-modal-features">
+        <div class="c-modal-features__information row">
+          <div class="c-modal-features__department">
+            <div class="department__name">M10</div>
+            <!-- <div class="user__number">A9005 / M10</div> -->
+          </div>
+          <div class="c-modal-features__time">
+            <div class="">2020/7-2021/8</div>
+            <div class="">
+              <span class="">區間支援工時 <span>17</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="c-modal-features__select row">
+          <div class="col">
+            <div class="input-title">時間</div>
+            <div class="c-datePicker-month pop-modal">
+              <div class="c-datePicker__input">
+                <div class="o-input-div pop-btn"></div>
+              </div>
+              <div class="c-datePicker__modal pop-content">
+                <div class="c-datePicker__yearPicker">
+                  <button class="waves-effect waves-blue">
+                    <img src="img/o-arrowLeft-blue.svg" alt="" />
+                  </button>
+                  <div class="">2020</div>
+                  <button class="waves-effect waves-blue">
+                    <img src="img/o-arrowRight-blue.svg" alt="" />
+                  </button>
+                </div>
+                <ul class="c-datePicker__content">
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>1月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>2月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>3月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>4月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>5月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>6月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>7月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>8月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>9月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>10月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>11月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>12月</span>
+                    </label>
+                  </li>
+                </ul>
+                <div class="c-datePicker__footer">
+                  <button
+                    class="
+                      o-btn-primary
+                      waves-effect waves-blue
+                      pop-confirm-btn
+                    "
+                  >
+                    確認
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="input-title">計畫</div>
+            <div class="input-field c-dropdown-planContent">
+              <select class="c-dropdown-plan-select">
+                <optgroup label="籌備中">
+                  <option value="1">2021UA001 智慧空間管理系統建置</option>
+                  <option value="2">2021UA001 智慧空間管理系統建置</option>
+                  <option value="3">2021UA001 智慧空間管理系統建置</option>
+                  <option value="4">2021UA001 智慧空間管理系統建置</option>
+                </optgroup>
+                <optgroup label="執行中">
+                  <option value="5">2021UA001 智慧空間管理系統建置</option>
+                  <option value="6">2021UA001 智慧空間管理系統建置</option>
+                  <option value="7">2021UA001 智慧空間管理系統建置</option>
+                  <option value="8">2021UA001 智慧空間管理系統建置</option>
+                </optgroup>
+                <optgroup label="保固中">
+                  <option value="9">2021UA001 智慧空間管理系統建置</option>
+                  <option value="10">2021UA001 智慧空間管理系統建置</option>
+                  <option value="11">2021UA001 智慧空間管理系統建置</option>
+                  <option value="12">2021UA001 智慧空間管理系統建置</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="col">
+            <button class="o-btn-primary">匯出</button>
+          </div>
+        </div>
+        <div class="c-modal-features__btn">
+          <button type="button"><img src="img/o-cross.svg" alt="" /></button>
+        </div>
+      </div>
+      <div class="c-modal-content row">
+        <div class="c-modal-content__calendar col s12">
+          <div class="c-modal-content__list js-scrollbar-style">
+            <ul class="collapsible c-accordion-plan">
+              <li>
+                <div class="collapsible-header accordion-header">
+                  <div class="accordion-header__item">
+                    <div class="header__item__departmentNum">U20</div>
+                    <div class="header__item__userNum">A9235</div>
+                    <div class="header__item__name">蘇紫瑜</div>
+                  </div>
+                  <div class="accordion-header__item">
+                    <div class="accordion-header__item__hour">
+                      <div class="accordion-header__item__hour__title">
+                        此月填入工時
+                      </div>
+                      <div class="accordion-header__item__hour__num">12</div>
+                    </div>
+                    <div class="collapsible-btn">
+                      <div class="o-accordion_arrow">
+                        <div class="arrow-icon"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-body accordion-body">
+                  <div class="row accordion-body__title">
+                    <div class="col s2">填寫日期</div>
+                    <div class="col s3">工作階段</div>
+                    <div class="col s3">工作內容</div>
+                    <div class="col s2">時數</div>
+                    <div class="col s2">備註</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s2">2020/09/15</div>
+                    <div class="col s3">網站介面規畫與設計</div>
+                    <div class="col s3">網站介面規畫與設計</div>
+                    <div class="col s2">4</div>
+                    <div class="col s2">5個樣板</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s2">2020/09/15</div>
+                    <div class="col s3">網站介面規畫與設計</div>
+                    <div class="col s3">網站介面規畫與設計</div>
+                    <div class="col s2">4</div>
+                    <div class="col s2">5個樣板</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="collapsible c-accordion-plan">
+              <li>
+                <div class="collapsible-header accordion-header">
+                  <div class="accordion-header__item">
+                    <div class="header__item__departmentNum">U20</div>
+                    <div class="header__item__userNum">A9032</div>
+                    <div class="header__item__name">陳國華</div>
+                  </div>
+                  <div class="accordion-header__item">
+                    <div class="accordion-header__item__hour">
+                      <div class="accordion-header__item__hour__title">
+                        此月填入工時
+                      </div>
+                      <div class="accordion-header__item__hour__num">19</div>
+                    </div>
+                    <div class="collapsible-btn">
+                      <div class="o-accordion_arrow">
+                        <div class="arrow-icon"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-body accordion-body">
+                  <div class="row accordion-body__title">
+                    <div class="col s2">填寫日期</div>
+                    <div class="col s3">工作階段</div>
+                    <div class="col s3">工作內容</div>
+                    <div class="col s2">時數</div>
+                    <div class="col s2">備註</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s2">2020/09/15</div>
+                    <div class="col s3">網站介面規畫與設計</div>
+                    <div class="col s3">網站介面規畫與設計</div>
+                    <div class="col s2">4</div>
+                    <div class="col s2">5個樣板</div>
+                  </div>
+                  <div class="row accordion-body__item">
+                    <div class="col s2">2020/09/15</div>
+                    <div class="col s3">網站介面規畫與設計</div>
+                    <div class="col s3">網站介面規畫與設計</div>
+                    <div class="col s2">4</div>
+                    <div class="col s2">5個樣板</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- accordion general -->
+    <div
+      class=""
+      style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%"
+    >
+      accordion general
+    </div>
+    <div class="c-accordion-general">
+      <div class="accordion-body">
+        <div class="row accordion-body__title">
+          <div class="col s3">支援部門</div>
+          <div class="col s7">計畫名稱</div>
+          <div class="col s5">工作階段</div>
+          <div class="col s5">工作內容</div>
+          <div class="col s2">時數</div>
+          <div class="col s3">備註</div>
+        </div>
+        <div class="row accordion-body__item">
+          <div class="col s3">M10</div>
+          <div class="col s7">2021UA001 109年臺灣國際專業展..</div>
+          <div class="col s5">網站介面規畫與設計</div>
+          <div class="col s5">網站介面規畫與設計</div>
+          <div class="col s2">1000</div>
+          <div class="col s3">5個樣板</div>
+        </div>
+        <div class="row accordion-body__item">
+          <div class="col s3">M10</div>
+          <div class="col s7">2021UA001 109年臺灣國際專業展..</div>
+          <div class="col s5">系統開發與設計與設計</div>
+          <div class="col s5">網站介面規畫與設計</div>
+          <div class="col s2">4</div>
+          <div class="col s3"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- js套件 -->
+    <script src="js/materialize.js"></script>
+    <script src="js/OverlayScrollbars.min.js"></script>
+    <!-- 自定義 js -->
+    <script src="js/layout.js"></script>
+    <script src="js/compontent.js"></script>
+    <script src="js/scrollbar_setting.js"></script>
+  </body>
 </html>

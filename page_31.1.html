@@ -1,193 +1,199 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-		<link rel="stylesheet" href="stylesheets/all.css" />
-		<title>page_31.1 統計圖表視窗</title>
-	</head>
-	<!-- +++++++++++ -->
-	<!--  注意事項    -->
-	<!-- +++++++++++ -->
-	<body style="width: 1200px; margin: 0 auto; overflow-y: scroll">
-		<h3
-			style="
-				font-size: 18px;
-				margin: 2% 0;
-				padding: 1% 1%;
-				background: #1d5299;
-				color: #fff;
-			"
-		>
-			page_31.1 統計圖表視窗
-		</h3>
-		<!-- modal-department -->
-		<div
-			class=""
-			style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0"
-		>
-			支援統計圖表
-		</div>
-		<div class="c-modal-department">
-			<div class="c-modal-features">
-				<div class="c-modal-features__information row">
-					<div class="c-modal-features__statistics">
-						<div class="statistics__name">支援統計圖表</div>
-					</div>
-				</div>
-				<div class="c-modal-features__select row">
-					<div class="col">
-						<button class="o-btn-primary">檢視2020/7-2020/8</button>
-						<span>或</span>
-					</div>
-					<div class="col">
-						<div class="input-title">時間</div>
-						<div class="c-datePicker-month pop-modal">
-							<div class="c-datePicker__input">
-								<div class="o-input-div pop-btn"></div>
-							</div>
-							<div class="c-datePicker__modal pop-content">
-								<div class="c-datePicker__yearPicker">
-									<button class="waves-effect waves-blue">
-										<img src="img/o-arrowLeft-blue.svg" alt="" />
-									</button>
-									<div class="">2020</div>
-									<button class="waves-effect waves-blue">
-										<img src="img/o-arrowRight-blue.svg" alt="" />
-									</button>
-								</div>
-								<ul class="c-datePicker__content">
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>1月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>2月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>3月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>4月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>5月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>6月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>7月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>8月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>9月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>10月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>11月</span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input class="with-gap" name="group1" type="radio" />
-											<span>12月</span>
-										</label>
-									</li>
-								</ul>
-								<div class="c-datePicker__footer">
-									<button
-										class="o-btn-primary waves-effect waves-blue pop-confirm-btn"
-									>
-										確認
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<button class="o-btn-primary">匯出</button>
-					</div>
-				</div>
-				<div class="c-modal-features__btn">
-					<button type="button"><img src="img/o-cross.svg" alt="" /></button>
-				</div>
-			</div>
-			<div class="c-modal-content row">
-				<div class="c-modal-content__calendar col s12">
-					<div class="c-card-chart">
-						<div class="c-card-chart__header">總計</div>
-						<div class="c-card-chart__body">
-							<div class="chart__body__item">
-								<div class="">區間工時</div>
-								<div class="">1690.5</div>
-							</div>
-							<div class="chart__body__item">
-								<div class="">工時比例</div>
-								<div class="">100%</div>
-							</div>
-						</div>
-					</div>
-					<div class="c-modal-content c-modal-content__highchart">
-						<div class="">
-							<figure class="highcharts-figure">
-								<div id="container"></div>
-							</figure>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <link rel="stylesheet" href="stylesheets/all.css" />
+    <!-- favicon -->
+    <link href="img/o-icon.ico" rel="icon" type="image/x-icon" />
+    <title>page_31.1 統計圖表視窗</title>
+  </head>
+  <!-- +++++++++++ -->
+  <!--  注意事項    -->
+  <!-- +++++++++++ -->
+  <body style="width: 1200px; margin: 0 auto; overflow-y: scroll">
+    <h3
+      style="
+        font-size: 18px;
+        margin: 2% 0;
+        padding: 1% 1%;
+        background: #1d5299;
+        color: #fff;
+      "
+    >
+      page_31.1 統計圖表視窗
+    </h3>
+    <!-- modal-department -->
+    <div
+      class=""
+      style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1% 0"
+    >
+      支援統計圖表
+    </div>
+    <div class="c-modal-department">
+      <div class="c-modal-features">
+        <div class="c-modal-features__information row">
+          <div class="c-modal-features__statistics">
+            <div class="statistics__name">支援統計圖表</div>
+          </div>
+        </div>
+        <div class="c-modal-features__select row">
+          <div class="col">
+            <button class="o-btn-primary">檢視2020/7-2020/8</button>
+            <span>或</span>
+          </div>
+          <div class="col">
+            <div class="input-title">時間</div>
+            <div class="c-datePicker-month pop-modal">
+              <div class="c-datePicker__input">
+                <div class="o-input-div pop-btn"></div>
+              </div>
+              <div class="c-datePicker__modal pop-content">
+                <div class="c-datePicker__yearPicker">
+                  <button class="waves-effect waves-blue">
+                    <img src="img/o-arrowLeft-blue.svg" alt="" />
+                  </button>
+                  <div class="">2020</div>
+                  <button class="waves-effect waves-blue">
+                    <img src="img/o-arrowRight-blue.svg" alt="" />
+                  </button>
+                </div>
+                <ul class="c-datePicker__content">
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>1月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>2月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>3月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>4月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>5月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>6月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>7月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>8月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>9月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>10月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>11月</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="with-gap" name="group1" type="radio" />
+                      <span>12月</span>
+                    </label>
+                  </li>
+                </ul>
+                <div class="c-datePicker__footer">
+                  <button
+                    class="
+                      o-btn-primary
+                      waves-effect waves-blue
+                      pop-confirm-btn
+                    "
+                  >
+                    確認
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <button class="o-btn-primary">匯出</button>
+          </div>
+        </div>
+        <div class="c-modal-features__btn">
+          <button type="button"><img src="img/o-cross.svg" alt="" /></button>
+        </div>
+      </div>
+      <div class="c-modal-content row">
+        <div class="c-modal-content__calendar col s12">
+          <div class="c-card-chart">
+            <div class="c-card-chart__header">總計</div>
+            <div class="c-card-chart__body">
+              <div class="chart__body__item">
+                <div class="">區間工時</div>
+                <div class="">1690.5</div>
+              </div>
+              <div class="chart__body__item">
+                <div class="">工時比例</div>
+                <div class="">100%</div>
+              </div>
+            </div>
+          </div>
+          <div class="c-modal-content c-modal-content__highchart">
+            <div class="">
+              <figure class="highcharts-figure">
+                <div id="container"></div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<script src="js/jquery-3.3.1.min.js"></script>
-		<!-- js套件 -->
-		<script src="js/materialize.js"></script>
-		<script src="js/Highcharts/highcharts.js"></script>
-		<script src="js/Highcharts/export-data.js"></script>
-		<script src="js/Highcharts/exporting.js"></script>
-		<script src="js/Highcharts/accessibility.js"></script>
-		<!-- 自定義 js -->
-		<script src="js/compontent.js"></script>
-		<script src="js/highcharts__data.js"></script>
-	</body>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- js套件 -->
+    <script src="js/materialize.js"></script>
+    <script src="js/Highcharts/highcharts.js"></script>
+    <script src="js/Highcharts/export-data.js"></script>
+    <script src="js/Highcharts/exporting.js"></script>
+    <script src="js/Highcharts/accessibility.js"></script>
+    <!-- 自定義 js -->
+    <script src="js/compontent.js"></script>
+    <script src="js/highcharts__data.js"></script>
+  </body>
 </html>
