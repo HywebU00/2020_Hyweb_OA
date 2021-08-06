@@ -329,6 +329,36 @@
         transform: translateY(0px) translateX(0px);
       }
     }
+
+    #support_people {
+      .js-c-card__appendUserName {
+        width: 75%;
+      }
+      .listTitle__englishName {
+        width: 56%;
+      }
+      .listTitle__user,
+      .listTitle__userNum {
+        width: 9.5%;
+      }
+    }
+    #support_plan {
+      .l-main-content-item__listTitle {
+        .listTitle__name {
+          width: 60%;
+        }
+        .listTitle__time {
+          width: 15%;
+        }
+      }
+      .c-card-planPerson {
+        a {
+          h2 {
+            width: 60%;
+          }
+        }
+      }
+    }
   }
 }
 
