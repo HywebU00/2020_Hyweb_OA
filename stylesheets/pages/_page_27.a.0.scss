@@ -1,571 +1,585 @@
 #memberstime {
-	.l-main-tabs {
-		margin-bottom: 5px;
-	}
+  .l-main-tabs {
+    margin-bottom: 5px;
+  }
 
-	.c-search-list {
-		.c-dropdown-member {
-			.c-dropdown__input {
-				.o-input-div {
-					background-color: rgba(0, 0, 0, 0);
+  .c-search-list {
+    .c-dropdown-member {
+      .c-dropdown__input {
+        .o-input-div {
+          background-color: rgba(0, 0, 0, 0);
 
-					&::after {
-						background-image: url(../img/o-arrowDown.svg);
-					}
-				}
+          &::after {
+            background-image: url(../img/o-arrowDown.svg);
+          }
+        }
 
-				&::after {
-					background-color: rgba(0, 0, 0, 0);
-					background-image: none;
-					z-index: -1;
-				}
-			}
-		}
-	}
+        &::after {
+          background-color: rgba(0, 0, 0, 0);
+          background-image: none;
+          z-index: -1;
+        }
+      }
+    }
+  }
 
-	.c-card-manhourSearch {
-		margin-bottom: 1rem;
-	}
+  .c-card-manhourSearch {
+    margin-bottom: 1rem;
+  }
 
-	.c-datePicker__modal {
-		.c-datePicker__yearPicker {
-			button {
-				border-radius: 50%;
-			}
-		}
-	}
+  .c-datePicker__modal {
+    .c-datePicker__yearPicker {
+      button {
+        border-radius: 50%;
+      }
+    }
+  }
 
-	.l-main-content-item__listTitle {
-		height: 4rem;
-	}
+  .l-main-content-item__listTitle {
+    height: 4rem;
+  }
 
-	.change-card-to-list {
-		.l-main-content-item__listTitle {
-			padding-left: 3rem;
-		}
+  .change-card-to-list {
+    .l-main-content-item__listTitle {
+      padding-left: 3rem;
+    }
 
-		.l-main-content-item {
-			.c-card-manhourSearch {
-				height: 3.733rem; //4rem;
-				margin-bottom: 0;
-				cursor: default;
+    .l-main-content-item {
+      .c-card-manhourSearch {
+        height: 3.733rem; //4rem;
+        margin-bottom: 0;
+        cursor: default;
 
-				div {
-					cursor: default;
-				}
-			}
-		}
+        div {
+          cursor: default;
+        }
+      }
+    }
 
-		.c-card-manhourSearch__userName {
-			display: none;
-		}
+    .c-card-manhourSearch__userName {
+      display: none;
+    }
 
-		.c-card-manhourSearch__englishName {
-			display: none;
-		}
+    .c-card-manhourSearch__englishName {
+      display: none;
+    }
 
-		.listTitle__user {
-			width: 10%;
-		}
+    .listTitle__user {
+      width: 10%;
+    }
 
-		.listTitle__englishName {
-			width: 60%;
-		}
+    .listTitle__englishName {
+      width: 60%;
+    }
 
-		.listTitle__workTime {
-			width: 10%;
-		}
+    .listTitle__workTime {
+      width: 10%;
+    }
 
-		.js-c-card__appendUserName {
-			width: 80%;
+    .js-c-card__appendUserName {
+      width: 80%;
 
-			h2 {
-				width: 12.5%;
-			}
+      h2 {
+        width: 12.5%;
+      }
 
-			h3 {
-				width: 75%;
-			}
-		}
+      h3 {
+        width: 75%;
+      }
+    }
 
-		.c-card__content {
-			width: 10%;
-		}
+    .c-card__content {
+      width: 10%;
+    }
 
-		.c-card-manhourSearch {
-			&:hover {
-				transition: all 0;
-				transform: translateY(0px) translateX(0px);
-			}
+    .c-card-manhourSearch {
+      &:hover {
+        transition: all 0;
+        transform: translateY(0px) translateX(0px);
+      }
 
-			&:active {
-				transition: all 0;
-				transform: translateY(0px) translateX(0px);
-			}
+      &:active {
+        transition: all 0;
+        transform: translateY(0px) translateX(0px);
+      }
 
-			.c-card__userInformation {
-				h3 {
-					font-family: $font-family;
-				}
-			}
-		}
-	}
+      .c-card__userInformation {
+        h3 {
+          font-family: $font-family;
+        }
+      }
+    }
+  }
 }
 
 #departmenttime {
-	.l-main-tabs {
-		margin-bottom: 5px;
-	}
+  .l-main-tabs {
+    margin-bottom: 5px;
+  }
 
-	.c-datePicker__modal {
-		.c-datePicker__yearPicker {
-			button {
-				border-radius: 50%;
-			}
-		}
-	}
+  .c-datePicker__modal {
+    .c-datePicker__yearPicker {
+      button {
+        border-radius: 50%;
+      }
+    }
+  }
 
-	.change-card-to-list {
-		.c-card-manhourSearch {
-			margin-bottom: 0rem;
+  .change-card-to-list {
+    .c-card-manhourSearch {
+      margin-bottom: 0rem;
 
-			div {
-				cursor: default;
-			}
-		}
+      div {
+        cursor: default;
+      }
+    }
 
-		.c-card-manhourSearch__userName {
-			display: none;
-		}
+    .c-card-manhourSearch__userName {
+      display: none;
+    }
 
-		.c-card-manhourSearch__englishName {
-			display: none;
-		}
+    .c-card-manhourSearch__englishName {
+      display: none;
+    }
 
-		.listTitle__user {
-			width: 10%;
-		}
+    .listTitle__user {
+      width: 10%;
+    }
 
-		.listTitle__englishName {
-			width: 60%;
-		}
+    .listTitle__englishName {
+      width: 60%;
+    }
 
-		.listTitle__workTime {
-			width: 10%;
-		}
+    .listTitle__workTime {
+      width: 10%;
+    }
 
-		.js-c-card__appendUserName {
-			width: 80%;
+    .js-c-card__appendUserName {
+      width: 80%;
 
-			h2 {
-				width: 12.5%;
-			}
+      h2 {
+        width: 12.5%;
+      }
 
-			h3 {
-				width: 75%;
-			}
-		}
+      h3 {
+        width: 75%;
+      }
+    }
 
-		.c-card__content {
-			width: 10%;
-		}
+    .c-card__content {
+      width: 10%;
+    }
 
-		.c-card-manhourSearch {
-			&:hover {
-				transition: all 0;
-				transform: translateY(0px) translateX(0px);
-			}
+    .c-card-manhourSearch {
+      &:hover {
+        transition: all 0;
+        transform: translateY(0px) translateX(0px);
+      }
 
-			&:active {
-				transition: all 0;
-				transform: translateY(0px) translateX(0px);
-			}
-		}
-	}
+      &:active {
+        transition: all 0;
+        transform: translateY(0px) translateX(0px);
+      }
+    }
+  }
 }
 
 #supporttime {
-	.c-card-department {
-		margin-bottom: 1rem;
-	}
+  .c-card-department {
+    margin-bottom: 1rem;
+  }
 
-	.c-card-manhourSearch {
-		margin-bottom: 1rem;
+  .c-card-manhourSearch {
+    margin-bottom: 1rem;
 
-		div {
-			cursor: default;
-		}
-	}
+    div {
+      cursor: default;
+    }
+  }
+  .l-main-content {
+    .c-tabs__content {
+      margin-bottom: 1rem;
+      .active {
+        border-bottom: 4px solid $hyweb-blue;
+      }
+    }
+  }
+  .l-main-content-text__title {
+    margin-bottom: 1rem;
+  }
+  .l-main-tabs {
+    margin-bottom: 5px;
+  }
 
-	.l-main-tabs {
-		margin-bottom: 5px;
-	}
+  .l-main-content-text {
+    .l-main-content-text__title {
+      .o-btn-secondary a {
+        color: $gray1;
+      }
+    }
+  }
 
-	.l-main-content-text {
-		.l-main-content-text__title {
-			.o-btn-secondary a {
-				color: $gray1;
-			}
-		}
-	}
+  .c-datePicker__modal {
+    .c-datePicker__yearPicker {
+      button {
+        border-radius: 50%;
+      }
+    }
+  }
 
-	.c-datePicker__modal {
-		.c-datePicker__yearPicker {
-			button {
-				border-radius: 50%;
-			}
-		}
-	}
+  .change-card-to-list {
+    .c-card-department {
+      cursor: default;
+    }
 
-	.change-card-to-list {
-		.c-card-department {
-			cursor: default;
-		}
+    .c-card-manhourSearch {
+      margin-bottom: 0rem;
 
-		.c-card-manhourSearch {
-			margin-bottom: 0rem;
+      .c-card__userInformation {
+        h3 {
+          font-family: $font-family;
+        }
+      }
+    }
+    .c-card-planPerson {
+      a {
+        padding-left: 3rem;
+      }
+    }
+    .l-main-content-item__listTitle {
+      height: 3.733rem; //4rem;
+      padding-left: 3rem;
+    }
 
-			.c-card__userInformation {
-				h3 {
-					font-family: $font-family;
-				}
-			}
-		}
+    .l-main-content-item {
+      .c-card-department {
+        height: 3.733rem; //4rem;
+        margin-bottom: 0;
 
-		.l-main-content-item__listTitle {
-			height: 3.733rem; //4rem;
-			padding-left: 3rem;
-		}
+        &:hover {
+          transition: all 0;
+          transform: translateY(0px) translateX(0px);
+        }
 
-		.l-main-content-item {
-			.c-card-department {
-				height: 3.733rem; //4rem;
-				margin-bottom: 0;
+        &:active {
+          transition: all 0;
+          transform: translateY(0px) translateX(0px);
+        }
 
-				&:hover {
-					transition: all 0;
-					transform: translateY(0px) translateX(0px);
-				}
+        h2 {
+          font-weight: 400;
+          font-size: $p;
+          width: 10%;
+          font-family: $font-family;
+          line-height: 1.2rem;
+        }
 
-				&:active {
-					transition: all 0;
-					transform: translateY(0px) translateX(0px);
-				}
+        .c-card__userInformation {
+          display: none;
+        }
+      }
+    }
 
-				h2 {
-					font-weight: 400;
-					font-size: $p;
-					width: 10%;
-					font-family: $font-family;
-					line-height: 1.2rem;
-				}
+    .c-card-manhourSearch__userName {
+      display: none;
+    }
 
-				.c-card__userInformation {
-					display: none;
-				}
-			}
-		}
+    .c-card-manhourSearch__englishName {
+      display: none;
+    }
 
-		.c-card-manhourSearch__userName {
-			display: none;
-		}
+    .listTitle__user {
+      width: 10%;
+    }
 
-		.c-card-manhourSearch__englishName {
-			display: none;
-		}
+    .listTitle__englishName {
+      width: 60%;
+    }
 
-		.listTitle__user {
-			width: 10%;
-		}
+    .listTitle__workTime {
+      width: auto;
+    }
 
-		.listTitle__englishName {
-			width: 60%;
-		}
+    .js-c-card__appendUserName {
+      width: 80%;
 
-		.listTitle__workTime {
-			width: auto;
-		}
+      h2 {
+        width: 12.5%;
+      }
 
-		.js-c-card__appendUserName {
-			width: 80%;
+      h3 {
+        width: 75%;
+      }
+    }
 
-			h2 {
-				width: 12.5%;
-			}
+    .c-card__content {
+      width: 10%;
+    }
 
-			h3 {
-				width: 75%;
-			}
-		}
+    .c-card-manhourSearch {
+      height: 3.733rem; //4rem;
 
-		.c-card__content {
-			width: 10%;
-		}
+      &:hover {
+        transition: all 0;
+        transform: translateY(0px) translateX(0px);
+      }
 
-		.c-card-manhourSearch {
-			height: 3.733rem; //4rem;
-
-			&:hover {
-				transition: all 0;
-				transform: translateY(0px) translateX(0px);
-			}
-
-			&:active {
-				transition: all 0;
-				transform: translateY(0px) translateX(0px);
-			}
-		}
-	}
+      &:active {
+        transition: all 0;
+        transform: translateY(0px) translateX(0px);
+      }
+    }
+  }
 }
 
 #notReachedtime {
-	.l-main-tabs {
-		margin-bottom: 5px;
-	}
+  .l-main-tabs {
+    margin-bottom: 5px;
+  }
 
-	.c-search-list {
-		.c-dropdown-member {
-			.c-dropdown__input {
-				.o-input-div {
-					background-color: rgba(0, 0, 0, 0);
+  .c-search-list {
+    .c-dropdown-member {
+      .c-dropdown__input {
+        .o-input-div {
+          background-color: rgba(0, 0, 0, 0);
 
-					&::after {
-						background-image: url(../img/o-arrowDown.svg);
-					}
-				}
+          &::after {
+            background-image: url(../img/o-arrowDown.svg);
+          }
+        }
 
-				&::after {
-					background-color: rgba(0, 0, 0, 0);
-					background-image: none;
-					z-index: -1;
-				}
-			}
-		}
-	}
+        &::after {
+          background-color: rgba(0, 0, 0, 0);
+          background-image: none;
+          z-index: -1;
+        }
+      }
+    }
+  }
 
-	.c-datePicker__modal {
-		.c-datePicker__yearPicker {
-			button {
-				border-radius: 50%;
-			}
-		}
-	}
+  .c-datePicker__modal {
+    .c-datePicker__yearPicker {
+      button {
+        border-radius: 50%;
+      }
+    }
+  }
 
-	.change-card-to-list {
-		.c-card-percent {
-			margin-bottom: 1rem;
-			cursor: default;
+  .change-card-to-list {
+    .c-card-percent {
+      margin-bottom: 1rem;
+      cursor: default;
 
-			div {
-				cursor: default;
-			}
+      div {
+        cursor: default;
+      }
 
-			&:hover {
-				transition: all 0;
-				transform: translateY(0px) translateX(0px);
-			}
+      &:hover {
+        transition: all 0;
+        transform: translateY(0px) translateX(0px);
+      }
 
-			&:active {
-				transition: all 0;
-				transform: translateY(0px) translateX(0px);
-			}
+      &:active {
+        transition: all 0;
+        transform: translateY(0px) translateX(0px);
+      }
 
-			.c-card__item {
-				.c-card__item__title {
-					margin-top: 0.2rem;
-				}
-			}
-		}
+      .c-card__item {
+        .c-card__item__title {
+          margin-top: 0.2rem;
+        }
+      }
+    }
 
-		.l-main-content-item__listTitle {
-			height: 3.733rem; //4rem;
-			padding-left: 3rem;
-		}
+    .l-main-content-item__listTitle {
+      height: 3.733rem; //4rem;
+      padding-left: 3rem;
+    }
 
-		.c-card-percent {
-			margin-bottom: 0rem;
-		}
+    .c-card-percent {
+      margin-bottom: 0rem;
+    }
 
-		.c-card-percent {
-			height: 3.733rem; //4rem;
-		}
+    .c-card-percent {
+      height: 3.733rem; //4rem;
+    }
 
-		.c-card__userInformation {
-			h3 {
-				font-family: $font-family;
-			}
-		}
+    .c-card__userInformation {
+      h3 {
+        font-family: $font-family;
+      }
+    }
 
-		.c-card__item__title {
-			cursor: default;
-		}
+    .c-card__item__title {
+      cursor: default;
+    }
 
-		.c-card-percent__userName {
-			display: none;
-		}
+    .c-card-percent__userName {
+      display: none;
+    }
 
-		.c-card-percent__englishName {
-			display: none;
-		}
+    .c-card-percent__englishName {
+      display: none;
+    }
 
-		.c-card-manhourSearch__userName {
-			display: none;
-		}
+    .c-card-manhourSearch__userName {
+      display: none;
+    }
 
-		.c-card-manhourSearch__englishName {
-			display: none;
-		}
+    .c-card-manhourSearch__englishName {
+      display: none;
+    }
 
-		.listTitle__user {
-			width: 10%;
-		}
+    .listTitle__user {
+      width: 10%;
+    }
 
-		.listTitle__englishName {
-			width: 60%;
-		}
+    .listTitle__englishName {
+      width: 60%;
+    }
 
-		.listTitle__workTime {
-			width: 10%;
-		}
+    .listTitle__workTime {
+      width: 10%;
+    }
 
-		.js-c-card__appendUserName {
-			width: 80%;
+    .js-c-card__appendUserName {
+      width: 80%;
 
-			h2 {
-				width: 12.5%;
-			}
+      h2 {
+        width: 12.5%;
+      }
 
-			h3 {
-				width: 75%;
-			}
-		}
+      h3 {
+        width: 75%;
+      }
+    }
 
-		.c-card__content {
-			width: 10%;
-		}
+    .c-card__content {
+      width: 10%;
+    }
 
-		.card-percent__listTitle {
-			.listTitle__englishName {
-				width: 15%;
-			}
+    .card-percent__listTitle {
+      .listTitle__englishName {
+        width: 15%;
+      }
 
-			.listTitle__workTime {
-				width: 15%;
-			}
+      .listTitle__workTime {
+        width: 15%;
+      }
 
-			.listTitle__leaveTime {
-				width: 30%;
-			}
-		}
+      .listTitle__leaveTime {
+        width: 30%;
+      }
+    }
 
-		.c-card-percent {
-			.js-c-card__appendUserName {
-				width: 35%;
+    .c-card-percent {
+      .js-c-card__appendUserName {
+        width: 35%;
 
-				h2 {
-					width: 28.5714%;
-				}
+        h2 {
+          width: 28.5714%;
+        }
 
-				h3 {
-					width: 42.857142%;
-				}
-			}
+        h3 {
+          width: 42.857142%;
+        }
+      }
 
-			.c-card__content {
-				width: 55%;
+      .c-card__content {
+        width: 55%;
 
-				.c-card__item {
-					width: auto;
-					justify-content: flex-start;
+        .c-card__item {
+          width: auto;
+          justify-content: flex-start;
 
-					div {
-						padding: 0;
-						margin: 0;
-					}
-				}
+          div {
+            padding: 0;
+            margin: 0;
+          }
+        }
 
-				.c-card-percent__workTime {
-					width: 27.272727%;
+        .c-card-percent__workTime {
+          width: 27.272727%;
 
-					.c-card__item__totaltime {
-						font-weight: 400;
-						letter-spacing: 0;
-					}
-				}
+          .c-card__item__totaltime {
+            font-weight: 400;
+            letter-spacing: 0;
+          }
+        }
 
-				.c-card-percent__leaveTime {
-					width: 54.5454545%;
-				}
+        .c-card-percent__leaveTime {
+          width: 54.5454545%;
+        }
 
-				.c-card-percent__percent {
-					width: 18.181818%;
-				}
-			}
-		}
+        .c-card-percent__percent {
+          width: 18.181818%;
+        }
+      }
+    }
 
-		.c-card-percentCheck {
-			&:hover {
-				transition: all 0;
-				transform: translateY(0px) translateX(0px);
-			}
+    .c-card-percentCheck {
+      &:hover {
+        transition: all 0;
+        transform: translateY(0px) translateX(0px);
+      }
 
-			&:active {
-				transition: all 0;
-				transform: translateY(0px) translateX(0px);
-			}
+      &:active {
+        transition: all 0;
+        transform: translateY(0px) translateX(0px);
+      }
 
-			cursor: default;
+      cursor: default;
 
-			div {
-				cursor: default;
-			}
+      div {
+        cursor: default;
+      }
 
-			.c-card-title {
-				span {
-					right: 30px;
-					top: 5px;
-				}
-				form {
-					margin-top: 0rem;
-					margin-right: 0rem;
-				}
-				div {
-					margin-left: 0rem;
-				}
-			}
-		}
+      .c-card-title {
+        span {
+          right: 30px;
+          top: 5px;
+        }
+        form {
+          margin-top: 0rem;
+          margin-right: 0rem;
+        }
+        div {
+          margin-left: 0rem;
+        }
+      }
+    }
 
-		.c-card-manhourSearch {
-			&:hover {
-				transition: all 0;
-				transform: translateY(0px) translateX(0px);
-			}
+    .c-card-manhourSearch {
+      &:hover {
+        transition: all 0;
+        transform: translateY(0px) translateX(0px);
+      }
 
-			&:active {
-				transition: all 0;
-				transform: translateY(0px) translateX(0px);
-			}
-		}
+      &:active {
+        transition: all 0;
+        transform: translateY(0px) translateX(0px);
+      }
+    }
 
-		a {
-			align-items: center;
-		}
-	}
+    a {
+      align-items: center;
+    }
+  }
 
-	.is-error-status {
-		.c-search-list {
-			.c-search-item {
-				.c-search-item__percentTitle {
-					color: $danger;
-				}
+  .is-error-status {
+    .c-search-list {
+      .c-search-item {
+        .c-search-item__percentTitle {
+          color: $danger;
+        }
 
-				.c-search-item__input {
-					input {
-						background-color: #fff;
-						border: 1px solid $danger;
-					}
-				}
-			}
-		}
-	}
+        .c-search-item__input {
+          input {
+            background-color: #fff;
+            border: 1px solid $danger;
+          }
+        }
+      }
+    }
+  }
 }

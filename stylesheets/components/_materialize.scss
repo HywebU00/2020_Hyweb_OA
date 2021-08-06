@@ -5364,7 +5364,7 @@ small {
 .tabs .indicator {
   position: absolute;
   bottom: 0;
-  height: 5px; //2px;
+  height: 4px; //2px;
   background-color: $hyweb-blue; //#f6b2b5;
   border-radius: $tab-radius;
   will-change: left, right;
