@@ -5204,7 +5204,7 @@ small {
 .tabs .indicator {
   position: absolute;
   bottom: 0;
-  height: 5px;
+  height: 4px;
   background-color: #0156a2;
   border-radius: 10px;
   will-change: left, right;
@@ -13977,6 +13977,32 @@ body {
   padding-top: 2rem;
 }
 
+.c-modal-addGroup .keyword_input, .c-modal-usuallyUseMember .keyword_input, .c-modal-sample .keyword_input {
+  position: relative;
+  width: 17.6rem;
+}
+
+.c-modal-addGroup .keyword_input input:first-of-type, .c-modal-usuallyUseMember .keyword_input input:first-of-type, .c-modal-sample .keyword_input input:first-of-type {
+  padding-right: 38px !important;
+}
+
+.c-modal-addGroup .keyword_input :last-child, .c-modal-usuallyUseMember .keyword_input :last-child, .c-modal-sample .keyword_input :last-child {
+  background-image: url(../img/o-keyword.svg);
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  border: none;
+  right: 0.25rem;
+  top: 0.25rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.c-modal-addGroup .keyword_input :last-child:hover, .c-modal-usuallyUseMember .keyword_input :last-child:hover, .c-modal-sample .keyword_input :last-child:hover {
+  -webkit-box-shadow: 0px 0px 0px 2px #1febba;
+          box-shadow: 0px 0px 0px 2px #1febba;
+}
+
 .c-modal-addGroup .c-modal-content, .c-modal-usuallyUseMember .c-modal-content, .c-modal-sample .c-modal-content, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18883,6 +18909,18 @@ body {
   cursor: default;
 }
 
+#supporttime .l-main-content .c-tabs__content {
+  margin-bottom: 1rem;
+}
+
+#supporttime .l-main-content .c-tabs__content .active {
+  border-bottom: 4px solid #0156a2;
+}
+
+#supporttime .l-main-content-text__title, #supporttime .l-main-content .l-main-content-text .l-main-content-text__ListTitle, .l-main-content .l-main-content-text #supporttime .l-main-content-text__ListTitle {
+  margin-bottom: 1rem;
+}
+
 #supporttime .l-main-tabs {
   margin-bottom: 5px;
 }
@@ -18905,6 +18943,10 @@ body {
 
 #supporttime .change-card-to-list .c-card-manhourSearch .c-card__userInformation h3 {
   font-family: "Noto Sans TC", "sans-serif";
+}
+
+#supporttime .change-card-to-list .c-card-planPerson a, #supporttime .change-card-to-list .c-card-planClosed a, #supporttime .change-card-to-list .c-card-planHotkey a, #supporttime .change-card-to-list .l-mobile-footer-worksheet .c-card-workHotkey a, .l-mobile-footer-worksheet #supporttime .change-card-to-list .c-card-workHotkey a, #supporttime .change-card-to-list .c-card-planReport a, #supporttime .change-card-to-list .c-card-planReport-danger a, #supporttime .change-card-to-list .c-card-alertPlan a {
+  padding-left: 3rem;
 }
 
 #supporttime .change-card-to-list .l-main-content-item__listTitle {

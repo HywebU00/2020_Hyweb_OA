@@ -1673,7 +1673,27 @@
       padding-top: 2rem;
     }
   }
-
+  .keyword_input {
+    position: relative;
+    width: 17.6rem;
+    input:first-of-type {
+      padding-right: 38px !important;
+    }
+    :last-child {
+      background-image: url(../img/o-keyword.svg);
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      border: none;
+      right: 0.25rem;
+      top: 0.25rem;
+      cursor: pointer;
+      border-radius: 0.25rem;
+      &:hover {
+        box-shadow: 0px 0px 0px 2px $hyweb-green;
+      }
+    }
+  }
   .c-modal-content {
     // display: block;
     display: flex;

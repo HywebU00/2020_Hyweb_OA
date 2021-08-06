@@ -176,16 +176,16 @@
         <div class="c-tabs__content">
           <ul class="c-tabs__item tabs">
             <li class="c-tabs__item__link tab col s3">
-              <a class="active" href="#memberstime">人員工時</a>
+              <a class="" href="#memberstime">人員工時</a>
             </li>
             <li class="c-tabs__item__link tab col s3">
               <a href="#departmenttime">部門委託工時</a>
             </li>
             <li class="c-tabs__item__link tab col s3">
-              <a href="#supporttime">部門支援工時</a>
+              <a class="active"  href="#supporttime">部門支援工時</a>
             </li>
             <li class="c-tabs__item__link tab col s3">
-              <a class="active" href="#notReachedtime">人員工時填寫比例</a>
+              <a href="#notReachedtime">人員工時填寫比例</a>
             </li>
           </ul>
         </div>
@@ -504,15 +504,11 @@
             </div>
             <div class="c-search-item">
               <div class="c-search-item__title">關鍵字</div>
-              <div class="c-search-item__input">
-                <input type="text" class="" placeholder="人員姓名及工號" />
+              <div class="c-search-item__input keyword_input">
+                <input type="text" class="" placeholder="計畫名稱及代號">
+                <input name="" type="submit" title="" value="">
               </div>
             </div>
-          </div>
-          <div class="c-search-btn">
-            <button class="o-btn-primary waves-effect waves-blue">
-              搜尋
-            </button>
           </div>
         </div>
         <div class="l-main-content l-main-changeStyle l-main-have-nav-height">
@@ -968,11 +964,6 @@
               </div>
             </div>
           </div>
-          <div class="c-search-btn">
-            <button class="o-btn-primary waves-effect waves-blue">
-              搜尋
-            </button>
-          </div>
         </div>
         <div class="l-main-content l-main-changeStyle l-main-have-nav-height">
           <div class="l-main-content-title">
@@ -1422,11 +1413,6 @@
               </div>
             </div>
           </div>
-          <div class="c-search-btn">
-            <button class="o-btn-primary waves-effect waves-blue">
-              搜尋
-            </button>
-          </div>
         </div>
         <div class="l-main-content l-main-changeStyle l-main-have-nav-height">
           <div class="l-main-content-title">
@@ -1453,15 +1439,27 @@
               </div>
             </div>
           </div>
-          <div class="l-main-content-text">
-            <div class="l-main-content-text__title">支援統計
-             <!-- 統計圖表 按鈕點擊出現燈箱內容為page_31.1 -->
-             <a href="#">
-              <button class="o-btn-secondary waves-effect waves-blue">統計圖表</button>
-             </a>
-            </div>
+          <div class="c-tabs__content">
+            <ul class="c-tabs__item tabs">
+              <li class="c-tabs__item__link tab col s3">
+                <a class="active" href="#support_department">支援部門</a>
+              </li>
+              <li class="c-tabs__item__link tab col s3">
+                <a href="#support_people">支援人員</a>
+              </li>
+              <li class="c-tabs__item__link tab col s3">
+                <a href="#support_plan">支援計畫</a>
+              </li>
+            </ul>
           </div>
-          <div class="l-main-content-item">
+          <div id="support_department" class="">
+            <div class="l-main-content-text__title">
+              <!-- 統計圖表 按鈕點擊出現燈箱內容為page_31.1 -->
+              <a href="#">
+                <button class="o-btn-secondary waves-effect waves-blue">統計圖表</button>
+              </a>
+            </div>
+            <div class="l-main-content-item">
             <div class="l-main-content-item__listTitle">
               <div class="listTitle__team">部門</div>
               <div class="listTitle__workTime">區間支援工時</div>
@@ -1513,521 +1511,204 @@
                   <div class="c-card__item__time">60</div>
                 </div>
               </div>
-            </div>   <div class="c-card-department">
-              <h2>M10</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
-                </div>
+            </div>         
+          </div>
+          <div class="l-main-content-pagiation">
+            <div class="l-main-content-pagiation_pageSelect">
+              <span>每頁</span>
+              <div class="input-field c-dropdown-page">
+                <select class="">
+                  <option value="1">50</option>
+                  <option value="2">100</option>
+                  <option value="3">150</option>
+                  <option value="4">200</option>
+                </select>
               </div>
+              <span>筆</span>
             </div>
-            <div class="c-card-department">
-              <h2>K00</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
-                </div>
+            <div class="l-main-content-pagiation_pageInput">
+              <button>
+                <img src="img/o-pagiation_left.svg" alt="" />
+              </button>
+              <div class="o-input">
+                <input type="text" placeholder="1000" />
               </div>
-            </div>   <div class="c-card-department">
-              <h2>M10</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
-                </div>
-              </div>
+              <span>/ 10000頁</span>
+              <button><img src="img/o-pagiation_right.svg" alt="" /></button>
             </div>
-            <div class="c-card-department">
-              <h2>K00</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
-                </div>
+          </div>
+          </div> 
+          <div id="support_people" class="">
+            <div  class="l-main-content-item">
+              <div class="l-main-content-item__listTitle">
+                <div class="listTitle__team">部門</div>
+                <div class="listTitle__userNum">工號</div>
+                <div class="listTitle__user">姓名</div>
+                <div class="listTitle__englishName">英文暱稱</div>
+                <div class="listTitle__workTime">區間工時</div>
               </div>
-            </div>   <div class="c-card-department">
-              <h2>M10</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
+              <div class="c-card-manhourSearch js-c-card-addName">
+                <a href="#">
+                  <h2 class="c-card-manhourSearch__userName js-c-card__userName">王大明</h2>
+                <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
+                <div class="c-card__userInformation">
+                  <h3 class="js-c-card__userNumber">A9005</h3>
+                  <h3>U20</h3>
                 </div>
+                <div class="c-card__content">
+                  <div class="c-card__item">
+                    <div class="c-card__item__title">區間工時</div>
+                    <div class="c-card__item__time">496</div>
+                  </div>
+                </div>
+                </a>
               </div>
+              <div class="c-card-manhourSearch js-c-card-addName">
+                <a href="#">
+                  <h2 class="c-card-manhourSearch__userName js-c-card__userName">王大明</h2>
+                <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
+                <div class="c-card__userInformation">
+                  <h3 class="js-c-card__userNumber">A9005</h3>
+                  <h3>U20</h3>
+                </div>
+                <div class="c-card__content">
+                  <div class="c-card__item">
+                    <div class="c-card__item__title">區間工時</div>
+                    <div class="c-card__item__time">496</div>
+                  </div>
+                </div>
+                </a>
+              </div>  
+              <div class="c-card-manhourSearch js-c-card-addName">
+                <a href="#">
+                  <h2 class="c-card-manhourSearch__userName js-c-card__userName">王大明</h2>
+                <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
+                <div class="c-card__userInformation">
+                  <h3 class="js-c-card__userNumber">A9005</h3>
+                  <h3>U20</h3>
+                </div>
+                <div class="c-card__content">
+                  <div class="c-card__item">
+                    <div class="c-card__item__title">區間工時</div>
+                    <div class="c-card__item__time">496</div>
+                  </div>
+                </div>
+                </a>
+              </div>
+             
             </div>
-            <div class="c-card-department">
-              <h2>K00</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
+            <div class="l-main-content-pagiation">
+              <div class="l-main-content-pagiation_pageSelect">
+                <span>每頁</span>
+                <div class="input-field c-dropdown-page">
+                  <select class="">
+                    <option value="1">50</option>
+                    <option value="2">100</option>
+                    <option value="3">150</option>
+                    <option value="4">200</option>
+                  </select>
                 </div>
+                <span>筆</span>
               </div>
-            </div>   <div class="c-card-department">
-              <h2>M10</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
+              <div class="l-main-content-pagiation_pageInput">
+                <button>
+                  <img src="img/o-pagiation_left.svg" alt="" />
+                </button>
+                <div class="o-input">
+                  <input type="text" placeholder="1000" />
                 </div>
-              </div>
-            </div>
-            <div class="c-card-department">
-              <h2>K00</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
-                </div>
-              </div>
-            </div>   <div class="c-card-department">
-              <h2>M10</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
-                </div>
-              </div>
-            </div>
-            <div class="c-card-department">
-              <h2>K00</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
-                </div>
-              </div>
-            </div>   <div class="c-card-department">
-              <h2>M10</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
-                </div>
-              </div>
-            </div>
-            <div class="c-card-department">
-              <h2>K00</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
-                </div>
-              </div>
-            </div>   <div class="c-card-department">
-              <h2>M10</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
-                </div>
-              </div>
-            </div>
-            <div class="c-card-department">
-              <h2>K00</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
-                </div>
-              </div>
-            </div>   <div class="c-card-department">
-              <h2>M10</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
-                </div>
-              </div>
-            </div>
-            <div class="c-card-department">
-              <h2>K00</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
-                </div>
-              </div>
-            </div>   <div class="c-card-department">
-              <h2>M10</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
-                </div>
-              </div>
-            </div>
-            <div class="c-card-department">
-              <h2>K00</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
-                </div>
-              </div>
-            </div>   <div class="c-card-department">
-              <h2>M10</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
-                </div>
-              </div>
-            </div>
-            <div class="c-card-department">
-              <h2>K00</h2>
-              <div class="c-card__userInformation"></div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">
-                    區間支援工時
-                  </div>
-                  <div class="c-card__item__time">60</div>
-                </div>
+                <span>/ 10000頁</span>
+                <button><img src="img/o-pagiation_right.svg" alt="" /></button>
               </div>
             </div>
           </div>
-          <div class="l-main-content-text">
-            <div class="l-main-content-text__title">支援成員</div>
-          </div>
+          <div id="support_plan">
           <div class="l-main-content-item">
             <div class="l-main-content-item__listTitle">
-              <div class="listTitle__team">部門</div>
-              <div class="listTitle__userNum">工號</div>
-              <div class="listTitle__user">姓名</div>
-              <div class="listTitle__englishName">英文暱稱</div>
-              <div class="listTitle__workTime">區間工時</div>
+              <div class="listTitle__num">計畫代號</div>
+              <div class="listTitle__name">計畫名稱</div>
+              <div class="listTitle__position">PM</div>
+              <div class="listTitle__time">區間工時</div>
             </div>
-            <div class="c-card-manhourSearch js-c-card-addName">
+            <div class="c-card-planPerson">
               <a href="#">
-                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
-              <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
-              <div class="c-card__userInformation">
-                <h3 class="js-c-card__userNumber">A9005</h3>
-                <h3>U20</h3>
-              </div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">區間工時</div>
-                  <div class="c-card__item__time">496</div>
+                <div class="c-card__tag">
+                  <span class="">2020WEV24H</span>
                 </div>
-              </div>
-              </a>
-            </div>
-            <div class="c-card-manhourSearch js-c-card-addName">
-              <a href="#">
-                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
-              <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
-              <div class="c-card__userInformation">
-                <h3 class="js-c-card__userNumber">A9005</h3>
-                <h3>U20</h3>
-              </div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">區間工時</div>
-                  <div class="c-card__item__time">496</div>
+                <h2>109年台灣國際專業展網站強化案際專業展網站強化案</h2>
+                <div class="c-card__userInformation">
+                  <span class="c-card__userInformation__position">PM-</span>
+                  <span>王小明</span>
                 </div>
-              </div>
-              </a>
-            </div> <div class="c-card-manhourSearch js-c-card-addName">
-              <a href="#">
-                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
-              <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
-              <div class="c-card__userInformation">
-                <h3 class="js-c-card__userNumber">A9005</h3>
-                <h3>U20</h3>
-              </div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">區間工時</div>
-                  <div class="c-card__item__time">496</div>
+                <div class="c-card__content">
+                  <div class="c-card__item">
+                    <div class="c-card__item__title">區間工時</div>
+                    <div class="c-card__item__time">2000</div>
+                  </div>
                 </div>
-              </div>
-              </a>
-            </div> <div class="c-card-manhourSearch js-c-card-addName">
-              <a href="#">
-                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
-              <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
-              <div class="c-card__userInformation">
-                <h3 class="js-c-card__userNumber">A9005</h3>
-                <h3>U20</h3>
-              </div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">區間工時</div>
-                  <div class="c-card__item__time">496</div>
-                </div>
-              </div>
-              </a>
-            </div> <div class="c-card-manhourSearch js-c-card-addName">
-              <a href="#">
-                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
-              <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
-              <div class="c-card__userInformation">
-                <h3 class="js-c-card__userNumber">A9005</h3>
-                <h3>U20</h3>
-              </div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">區間工時</div>
-                  <div class="c-card__item__time">496</div>
-                </div>
-              </div>
-              </a>
-            </div> <div class="c-card-manhourSearch js-c-card-addName">
-              <a href="#">
-                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
-              <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
-              <div class="c-card__userInformation">
-                <h3 class="js-c-card__userNumber">A9005</h3>
-                <h3>U20</h3>
-              </div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">區間工時</div>
-                  <div class="c-card__item__time">496</div>
-                </div>
-              </div>
-              </a>
-            </div> <div class="c-card-manhourSearch js-c-card-addName">
-              <a href="#">
-                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
-              <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
-              <div class="c-card__userInformation">
-                <h3 class="js-c-card__userNumber">A9005</h3>
-                <h3>U20</h3>
-              </div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">區間工時</div>
-                  <div class="c-card__item__time">496</div>
-                </div>
-              </div>
-              </a>
-            </div> <div class="c-card-manhourSearch js-c-card-addName">
-              <a href="#">
-                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
-              <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
-              <div class="c-card__userInformation">
-                <h3 class="js-c-card__userNumber">A9005</h3>
-                <h3>U20</h3>
-              </div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">區間工時</div>
-                  <div class="c-card__item__time">496</div>
-                </div>
-              </div>
-              </a>
-            </div> <div class="c-card-manhourSearch js-c-card-addName">
-              <a href="#">
-                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
-              <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
-              <div class="c-card__userInformation">
-                <h3 class="js-c-card__userNumber">A9005</h3>
-                <h3>U20</h3>
-              </div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">區間工時</div>
-                  <div class="c-card__item__time">496</div>
-                </div>
-              </div>
-              </a>
-            </div> <div class="c-card-manhourSearch js-c-card-addName">
-              <a href="#">
-                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
-              <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
-              <div class="c-card__userInformation">
-                <h3 class="js-c-card__userNumber">A9005</h3>
-                <h3>U20</h3>
-              </div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">區間工時</div>
-                  <div class="c-card__item__time">496</div>
-                </div>
-              </div>
-              </a>
-            </div> <div class="c-card-manhourSearch js-c-card-addName">
-              <a href="#">
-                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
-              <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
-              <div class="c-card__userInformation">
-                <h3 class="js-c-card__userNumber">A9005</h3>
-                <h3>U20</h3>
-              </div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">區間工時</div>
-                  <div class="c-card__item__time">496</div>
-                </div>
-              </div>
-              </a>
-            </div> <div class="c-card-manhourSearch js-c-card-addName">
-              <a href="#">
-                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
-              <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
-              <div class="c-card__userInformation">
-                <h3 class="js-c-card__userNumber">A9005</h3>
-                <h3>U20</h3>
-              </div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">區間工時</div>
-                  <div class="c-card__item__time">496</div>
-                </div>
-              </div>
-              </a>
-            </div> <div class="c-card-manhourSearch js-c-card-addName">
-              <a href="#">
-                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
-              <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
-              <div class="c-card__userInformation">
-                <h3 class="js-c-card__userNumber">A9005</h3>
-                <h3>U20</h3>
-              </div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">區間工時</div>
-                  <div class="c-card__item__time">496</div>
-                </div>
-              </div>
-              </a>
-            </div> <div class="c-card-manhourSearch js-c-card-addName">
-              <a href="#">
-                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
-              <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
-              <div class="c-card__userInformation">
-                <h3 class="js-c-card__userNumber">A9005</h3>
-                <h3>U20</h3>
-              </div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">區間工時</div>
-                  <div class="c-card__item__time">496</div>
-                </div>
-              </div>
-              </a>
-            </div> <div class="c-card-manhourSearch js-c-card-addName">
-              <a href="#">
-                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
-              <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
-              <div class="c-card__userInformation">
-                <h3 class="js-c-card__userNumber">A9005</h3>
-                <h3>U20</h3>
-              </div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">區間工時</div>
-                  <div class="c-card__item__time">496</div>
-                </div>
-              </div>
-              </a>
-            </div> <div class="c-card-manhourSearch js-c-card-addName">
-              <a href="#">
-                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
-              <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
-              <div class="c-card__userInformation">
-                <h3 class="js-c-card__userNumber">A9005</h3>
-                <h3>U20</h3>
-              </div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">區間工時</div>
-                  <div class="c-card__item__time">496</div>
-                </div>
-              </div>
-              </a>
-            </div> <div class="c-card-manhourSearch js-c-card-addName">
-              <a href="#">
-                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
-              <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
-              <div class="c-card__userInformation">
-                <h3 class="js-c-card__userNumber">A9005</h3>
-                <h3>U20</h3>
-              </div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">區間工時</div>
-                  <div class="c-card__item__time">496</div>
-                </div>
-              </div>
-              </a>
-            </div> <div class="c-card-manhourSearch js-c-card-addName">
-              <a href="#">
-                <h2 class="c-card-manhourSearch__userName js-c-card__userName">蘇紫瑜</h2>
-              <h3 class="c-card-manhourSearch__englishName js-c-card__englishName">Michelle</h3>
-              <div class="c-card__userInformation">
-                <h3 class="js-c-card__userNumber">A9005</h3>
-                <h3>U20</h3>
-              </div>
-              <div class="c-card__content">
-                <div class="c-card__item">
-                  <div class="c-card__item__title">區間工時</div>
-                  <div class="c-card__item__time">496</div>
-                </div>
-              </div>
               </a>
             </div>
+            <div class="c-card-planPerson">
+              <a href="#">
+                <div class="c-card__tag">
+                  <span class="">2020WEV24H</span>
+                </div>
+                <h2>109年台灣國際專業展網站強化案際專業展網站強化案</h2>
+                <div class="c-card__userInformation">
+                  <span class="c-card__userInformation__position">PM-</span>
+                  <span>王小明</span>
+                </div>
+                <div class="c-card__content">
+                  <div class="c-card__item">
+                    <div class="c-card__item__title">區間工時</div>
+                    <div class="c-card__item__time">2000</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="c-card-planPerson">
+              <a href="#">
+                <div class="c-card__tag">
+                  <span class="">2020WEV24H</span>
+                </div>
+                <h2>109年台灣國際專業展網站強化案際專業展網站強化案</h2>
+                <div class="c-card__userInformation">
+                  <span class="c-card__userInformation__position">PM-</span>
+                  <span>王小明</span>
+                </div>
+                <div class="c-card__content">
+                  <div class="c-card__item">
+                    <div class="c-card__item__title">區間工時</div>
+                    <div class="c-card__item__time">2000</div>
+                  </div>
+                </div>
+              </a>
+            </div>    
+          </div>
+          <div class="l-main-content-pagiation">
+            <div class="l-main-content-pagiation_pageSelect">
+              <span>每頁</span>
+              <div class="input-field c-dropdown-page">
+                <select class="">
+                  <option value="1">50</option>
+                  <option value="2">100</option>
+                  <option value="3">150</option>
+                  <option value="4">200</option>
+                </select>
+              </div>
+              <span>筆</span>
+            </div>
+            <div class="l-main-content-pagiation_pageInput">
+              <button>
+                <img src="img/o-pagiation_left.svg" alt="" />
+              </button>
+              <div class="o-input">
+                <input type="text" placeholder="1000" />
+              </div>
+              <span>/ 10000頁</span>
+              <button><img src="img/o-pagiation_right.svg" alt="" /></button>
+            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -2177,11 +1858,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="c-search-btn">
-            <button class="o-btn-primary waves-effect waves-blue">
-              搜尋
-            </button>
           </div>
         </div>
         <div class="l-main-content l-main-changeStyle l-main-have-nav-height">
