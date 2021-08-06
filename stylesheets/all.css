@@ -19039,6 +19039,31 @@ body {
           transform: translateY(0px) translateX(0px);
 }
 
+#supporttime .change-card-to-list #support_people .js-c-card__appendUserName {
+  width: 75%;
+}
+
+#supporttime .change-card-to-list #support_people .listTitle__englishName {
+  width: 56%;
+}
+
+#supporttime .change-card-to-list #support_people .listTitle__user,
+#supporttime .change-card-to-list #support_people .listTitle__userNum {
+  width: 9.5%;
+}
+
+#supporttime .change-card-to-list #support_plan .l-main-content-item__listTitle .listTitle__name {
+  width: 60%;
+}
+
+#supporttime .change-card-to-list #support_plan .l-main-content-item__listTitle .listTitle__time {
+  width: 15%;
+}
+
+#supporttime .change-card-to-list #support_plan .c-card-planPerson a h2, #supporttime .change-card-to-list #support_plan .c-card-planClosed a h2, #supporttime .change-card-to-list #support_plan .c-card-planHotkey a h2, #supporttime .change-card-to-list #support_plan .l-mobile-footer-worksheet .c-card-workHotkey a h2, .l-mobile-footer-worksheet #supporttime .change-card-to-list #support_plan .c-card-workHotkey a h2, #supporttime .change-card-to-list #support_plan .c-card-planReport a h2, #supporttime .change-card-to-list #support_plan .c-card-planReport-danger a h2, #supporttime .change-card-to-list #support_plan .c-card-alertPlan a h2 {
+  width: 60%;
+}
+
 #notReachedtime .l-main-tabs {
   margin-bottom: 5px;
 }
