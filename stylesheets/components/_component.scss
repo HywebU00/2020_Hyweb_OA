@@ -60,7 +60,7 @@
     margin-top: 1rem;
 
     .c-card__item__title {
-      color: $gray2;
+      color: $gray1;
       font-size: $p;
       font-weight: 400;
     }
@@ -75,6 +75,7 @@
   &:hover {
     transition: all 0.2s;
     transform: translateY(2px) translateX(2px);
+    background-color: #eee;
   }
 
   &:active {
@@ -209,17 +210,22 @@
     display: block;
     padding: 1.333rem; //20px;
   }
+  a:active {
+    color: $gray1 !important;
+  }
 
   .c-card__tag {
-    padding-top: $pd;
+    // padding-top: $pd;
     display: inline-block;
     padding-bottom: 0.8rem; //$pd-2;
 
     span {
       background: $after-blue;
       color: $gray1;
-      padding: 0.2rem 0.5rem;
-      //padding: 0.5rem 1rem;
+      display: inline-block;
+      //padding: 0.2rem 0.5rem;
+      line-height: 24px;
+      padding: 0 0.5rem;
       font-weight: 400;
       border-radius: $tag-radius;
       font-size: $p;
@@ -1133,12 +1139,16 @@
 
     .is-active {
       color: $gray1;
-      border-bottom: 5px solid $hyweb-blue;
+      border-bottom: 4px solid $hyweb-blue;
     }
 
     .active-style {
       color: $gray1;
-      border-bottom: 5px solid $hyweb-blue;
+      border-bottom: 4px solid $hyweb-blue;
+    }
+    .active {
+      color: #042340;
+      border-bottom: 4px solid $hyweb-blue !important;
     }
   }
 
@@ -1564,7 +1574,8 @@
 
     .c-modal-addGroup__content__item {
       width: 100%;
-      padding-top: 1rem;
+      // padding-top: 1rem;
+      background: none;
     }
 
     .c-modal-content__select {
@@ -1636,6 +1647,27 @@
           color: $gray3;
         }
       }
+      .keyword_input {
+        position: relative;
+        width: 17.6rem;
+        input:first-of-type {
+          padding-right: 38px !important;
+        }
+        :last-child {
+          background-image: url(../img/o-keyword.svg);
+          width: 2rem;
+          height: 2rem;
+          position: absolute;
+          border: none;
+          right: 0.25rem;
+          top: 0.25rem;
+          cursor: pointer;
+          border-radius: 0.25rem;
+          &:hover {
+            box-shadow: 0px 0px 0px 2px $hyweb-green;
+          }
+        }
+      }
     }
     .c-modal-footer {
       padding-top: 2rem;
@@ -1664,14 +1696,21 @@
           cursor: pointer;
         }
         + div {
+          // background: olivedrab;
+          border: 1px solid $sec2;
+          border-radius: $modal-radius;
           overflow-y: scroll;
           height: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-content: flex-start;
+
           .chooseMember-tag {
-            background-color: $sec3;
-            margin-bottom: 0.5rem;
-            border-radius: 0.53rem;
+            border-bottom: 1px solid $sec2;
             display: flex;
             align-items: center;
+            width: 90%;
             height: 3.5rem;
             div {
               width: 20%;
@@ -1686,6 +1725,9 @@
             }
           }
         }
+      }
+      .disabled {
+        color: $gray4;
       }
     }
     .c-modal-content__memberList {
@@ -1706,14 +1748,22 @@
         }
         + div {
           overflow-y: scroll;
+          border: 1px solid $sec2;
+          border-radius: $modal-radius;
           height: 100%;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          align-content: flex-start;
           .chooseMember-tag {
-            background-color: $sec3;
-            margin-bottom: 0.5rem;
-            border-radius: 0.53rem;
+            // background-color: $sec3;
+            // margin-bottom: 0.5rem;
+            // border-radius: 0.53rem;
+            border-bottom: 1px solid $sec2;
             display: flex;
             align-items: center;
             height: 3.5rem;
+            width: 90%;
             div {
               width: 20%;
               text-align: center;
@@ -2352,9 +2402,6 @@
       border-bottom: 0px;
       font-size: $font-size-m;
       margin: 0;
-      padding-left: 10px;
-      padding-top: 4px;
-      padding-right: 40px;
       box-sizing: border-box;
 
       li {
@@ -3529,7 +3576,7 @@
   .c-search-item {
     display: flex;
     align-items: center;
-    padding-right: 1.5rem;
+    margin-right: 1.5rem;
     white-space: nowrap;
 
     .c-search-item__title {
@@ -3546,6 +3593,27 @@
       input {
         padding-left: 10px;
         margin: 0;
+      }
+    }
+    .keyword_input {
+      position: relative;
+      width: 17.6rem;
+      input:first-of-type {
+        padding-right: 38px !important;
+      }
+      :last-child {
+        background-image: url(../img/o-keyword.svg);
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        border: none;
+        right: 0.25rem;
+        top: 0.25rem;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        &:hover {
+          box-shadow: 0px 0px 0px 2px $hyweb-green;
+        }
       }
     }
   }
