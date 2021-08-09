@@ -3,19 +3,87 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -25,8 +93,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -34,17 +111,21 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 
@@ -5747,7 +5828,7 @@ body.keyboard-focused .dropdown-content li:focus {
  * Released under the MIT license
  * https://github.com/fians/Waves/blob/master/LICENSE
  */
-.waves-effect, .o-btn, .o-login-btn, .o-btn-primary, .o-btn-secondary {
+.waves-effect, .o-btn, .c-search-list .c-search-item .notSpecify-btn, .o-login-btn, .o-btn-primary, .o-btn-secondary {
   position: relative;
   cursor: pointer;
   display: inline-block;
@@ -5763,7 +5844,7 @@ body.keyboard-focused .dropdown-content li:focus {
   transition: 0.3s ease-out;
 }
 
-.waves-effect .waves-ripple, .o-btn .waves-ripple, .o-login-btn .waves-ripple, .o-btn-primary .waves-ripple, .o-btn-secondary .waves-ripple {
+.waves-effect .waves-ripple, .o-btn .waves-ripple, .c-search-list .c-search-item .notSpecify-btn .waves-ripple, .o-login-btn .waves-ripple, .o-btn-primary .waves-ripple, .o-btn-secondary .waves-ripple {
   position: absolute;
   border-radius: 50%;
   width: 20px;
@@ -5783,46 +5864,48 @@ body.keyboard-focused .dropdown-content li:focus {
   pointer-events: none;
 }
 
-.waves-effect.waves-light .waves-ripple, .waves-light.o-btn .waves-ripple, .waves-light.o-login-btn .waves-ripple, .waves-light.o-btn-primary .waves-ripple, .waves-light.o-btn-secondary .waves-ripple {
+.waves-effect.waves-light .waves-ripple, .waves-light.o-btn .waves-ripple, .c-search-list .c-search-item .waves-light.notSpecify-btn .waves-ripple, .waves-light.o-login-btn .waves-ripple, .waves-light.o-btn-primary .waves-ripple, .waves-light.o-btn-secondary .waves-ripple {
   background-color: rgba(255, 255, 255, 0.45);
 }
 
-.waves-effect.waves-red .waves-ripple, .waves-red.o-btn .waves-ripple, .waves-red.o-login-btn .waves-ripple, .waves-red.o-btn-primary .waves-ripple, .waves-red.o-btn-secondary .waves-ripple {
+.waves-effect.waves-red .waves-ripple, .waves-red.o-btn .waves-ripple, .c-search-list .c-search-item .waves-red.notSpecify-btn .waves-ripple, .waves-red.o-login-btn .waves-ripple, .waves-red.o-btn-primary .waves-ripple, .waves-red.o-btn-secondary .waves-ripple {
   background-color: rgba(244, 67, 54, 0.7);
 }
 
-.waves-effect.waves-yellow .waves-ripple, .waves-yellow.o-btn .waves-ripple, .waves-yellow.o-login-btn .waves-ripple, .waves-yellow.o-btn-primary .waves-ripple, .waves-yellow.o-btn-secondary .waves-ripple {
+.waves-effect.waves-yellow .waves-ripple, .waves-yellow.o-btn .waves-ripple, .c-search-list .c-search-item .waves-yellow.notSpecify-btn .waves-ripple, .waves-yellow.o-login-btn .waves-ripple, .waves-yellow.o-btn-primary .waves-ripple, .waves-yellow.o-btn-secondary .waves-ripple {
   background-color: rgba(255, 235, 59, 0.7);
 }
 
-.waves-effect.waves-orange .waves-ripple, .waves-orange.o-btn .waves-ripple, .waves-orange.o-login-btn .waves-ripple, .waves-orange.o-btn-primary .waves-ripple, .waves-orange.o-btn-secondary .waves-ripple {
+.waves-effect.waves-orange .waves-ripple, .waves-orange.o-btn .waves-ripple, .c-search-list .c-search-item .waves-orange.notSpecify-btn .waves-ripple, .waves-orange.o-login-btn .waves-ripple, .waves-orange.o-btn-primary .waves-ripple, .waves-orange.o-btn-secondary .waves-ripple {
   background-color: rgba(255, 152, 0, 0.7);
 }
 
-.waves-effect.waves-purple .waves-ripple, .waves-purple.o-btn .waves-ripple, .waves-purple.o-login-btn .waves-ripple, .waves-purple.o-btn-primary .waves-ripple, .waves-purple.o-btn-secondary .waves-ripple {
+.waves-effect.waves-purple .waves-ripple, .waves-purple.o-btn .waves-ripple, .c-search-list .c-search-item .waves-purple.notSpecify-btn .waves-ripple, .waves-purple.o-login-btn .waves-ripple, .waves-purple.o-btn-primary .waves-ripple, .waves-purple.o-btn-secondary .waves-ripple {
   background-color: rgba(156, 39, 176, 0.7);
 }
 
-.waves-effect.waves-green .waves-ripple, .waves-green.o-btn .waves-ripple, .waves-green.o-login-btn .waves-ripple, .waves-green.o-btn-primary .waves-ripple, .waves-green.o-btn-secondary .waves-ripple {
+.waves-effect.waves-green .waves-ripple, .waves-green.o-btn .waves-ripple, .c-search-list .c-search-item .waves-green.notSpecify-btn .waves-ripple, .waves-green.o-login-btn .waves-ripple, .waves-green.o-btn-primary .waves-ripple, .waves-green.o-btn-secondary .waves-ripple {
   background-color: rgba(76, 175, 80, 0.7);
 }
 
-.waves-effect.waves-teal .waves-ripple, .waves-teal.o-btn .waves-ripple, .waves-teal.o-login-btn .waves-ripple, .waves-teal.o-btn-primary .waves-ripple, .waves-teal.o-btn-secondary .waves-ripple {
+.waves-effect.waves-teal .waves-ripple, .waves-teal.o-btn .waves-ripple, .c-search-list .c-search-item .waves-teal.notSpecify-btn .waves-ripple, .waves-teal.o-login-btn .waves-ripple, .waves-teal.o-btn-primary .waves-ripple, .waves-teal.o-btn-secondary .waves-ripple {
   background-color: rgba(0, 150, 136, 0.7);
 }
 
-.waves-effect.waves-blue .waves-ripple, .waves-blue.o-btn .waves-ripple, .waves-blue.o-login-btn .waves-ripple, .waves-blue.o-btn-primary .waves-ripple, .waves-blue.o-btn-secondary .waves-ripple {
+.waves-effect.waves-blue .waves-ripple, .waves-blue.o-btn .waves-ripple, .c-search-list .c-search-item .waves-blue.notSpecify-btn .waves-ripple, .waves-blue.o-login-btn .waves-ripple, .waves-blue.o-btn-primary .waves-ripple, .waves-blue.o-btn-secondary .waves-ripple {
   background-color: rgba(153, 202, 255, 0.666);
 }
 
-.waves-effect input[type="button"], .o-btn input[type="button"], .o-login-btn input[type="button"], .o-btn-primary input[type="button"], .o-btn-secondary input[type="button"],
+.waves-effect input[type="button"], .o-btn input[type="button"], .c-search-list .c-search-item .notSpecify-btn input[type="button"], .o-login-btn input[type="button"], .o-btn-primary input[type="button"], .o-btn-secondary input[type="button"],
 .waves-effect input[type="reset"],
 .o-btn input[type="reset"],
+.c-search-list .c-search-item .notSpecify-btn input[type="reset"],
 .o-login-btn input[type="reset"],
 .o-btn-primary input[type="reset"],
 .o-btn-secondary input[type="reset"],
 .waves-effect input[type="submit"],
 .o-btn input[type="submit"],
+.c-search-list .c-search-item .notSpecify-btn input[type="submit"],
 .o-login-btn input[type="submit"],
 .o-btn-primary input[type="submit"],
 .o-btn-secondary input[type="submit"] {
@@ -5833,7 +5916,7 @@ body.keyboard-focused .dropdown-content li:focus {
   background: none;
 }
 
-.waves-effect img, .o-btn img, .o-login-btn img, .o-btn-primary img, .o-btn-secondary img {
+.waves-effect img, .o-btn img, .c-search-list .c-search-item .notSpecify-btn img, .o-login-btn img, .o-btn-primary img, .o-btn-secondary img {
   position: relative;
   z-index: -1;
 }
@@ -5873,7 +5956,7 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 
 /* Firefox Bug: link not triggered */
-.waves-effect .waves-ripple, .o-btn .waves-ripple, .o-login-btn .waves-ripple, .o-btn-primary .waves-ripple, .o-btn-secondary .waves-ripple {
+.waves-effect .waves-ripple, .o-btn .waves-ripple, .c-search-list .c-search-item .notSpecify-btn .waves-ripple, .o-login-btn .waves-ripple, .o-btn-primary .waves-ripple, .o-btn-secondary .waves-ripple {
   z-index: -1;
 }
 
@@ -12023,6 +12106,10 @@ body {
   font-family: "Noto Sans TC", "sans-serif";
 }
 
+* {
+  font-family: "Noto Sans TC", "sans-serif";
+}
+
 .c-card, .c-card-manhourSofar, .c-card-manhourSearch, .c-card-percent, .c-card-percentCheck, .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan, .c-card-department, .c-card-lableGroup, .c-accordion-general, .c-toast-uploadSuccess, .c-toast-uploadFailure, .c-toast-join, .c-toast-joinCancel, .c-card-login {
   border-radius: 0.66rem;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -16013,6 +16100,11 @@ body {
           box-shadow: 0px 0px 0px 2px #1febba;
 }
 
+.c-search-list .c-search-item .notSpecify-btn + span {
+  margin-left: 0.5rem;
+  color: #8495a4;
+}
+
 .c-search-btn a {
   color: #fff;
 }
@@ -16184,7 +16276,7 @@ body {
   background: linear-gradient(180deg, rgba(226, 241, 254, 0.25) 6.31%, rgba(255, 255, 255, 0) 76.98%), #042340;
 }
 
-.o-btn, .o-login-btn, .o-btn-primary, .o-btn-secondary {
+.o-btn, .c-search-list .c-search-item .notSpecify-btn, .o-login-btn, .o-btn-primary, .o-btn-secondary {
   height: 37px;
   padding: 0 25px;
   white-space: nowrap;
@@ -16197,14 +16289,14 @@ body {
   background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
 }
 
-.o-btn:hover, .o-login-btn:hover, .o-btn-primary:hover, .o-btn-secondary:hover {
+.o-btn:hover, .c-search-list .c-search-item .notSpecify-btn:hover, .o-login-btn:hover, .o-btn-primary:hover, .o-btn-secondary:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
   background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.o-btn:focus, .o-login-btn:focus, .o-btn-primary:focus, .o-btn-secondary:focus {
+.o-btn:focus, .c-search-list .c-search-item .notSpecify-btn:focus, .o-login-btn:focus, .o-btn-primary:focus, .o-btn-secondary:focus {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
   background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
 }
@@ -17472,6 +17564,10 @@ body {
   padding-left: 0;
 }
 
+#todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport .c-card__star__btn, #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-planReport-danger .c-card__star__btn, #todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__star__btn {
+  background: none !important;
+}
+
 #todo .change-card-to-list .l-main-content-item__listGroup {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -17485,7 +17581,7 @@ body {
 }
 
 #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__title .c-card__tag__num .c-card__tag__status, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__title .c-card__tag__num .c-card__tag__status, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__content .c-card__tag__num .c-card__tag__status, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__content .c-card__tag__num .c-card__tag__status, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-planReport-danger .c-card__item .c-card__item__footer .c-card__tag__num .c-card__tag__status, #todo .change-card-to-list .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__tag__num .c-card__tag__status {
-  background: #fff;
+  background: none;
   color: #042340;
 }
 
@@ -17790,6 +17886,7 @@ body {
 
 #todo .change-card-to-list .c-card-planReport .c-card__item .c-card__star__btn, #todo .change-card-to-list .c-card-planReport-danger .c-card__item .c-card__star__btn, #todo .change-card-to-list .c-card-alertPlan .c-card__item .c-card__star__btn {
   margin: 0;
+  background: none;
 }
 
 #todo .change-card-to-list .l-main-content-item__listTitle div {
@@ -17955,6 +18052,7 @@ body {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  color: #042340;
 }
 
 #safe .c-modal-content p span, #safe .c-modal-alert .c-modal-alert__content .c-modal-content__scroll p span, .c-modal-alert .c-modal-alert__content #safe .c-modal-content__scroll p span {
@@ -18451,6 +18549,7 @@ body {
 
 #alertPlen .change-card-to-list .c-card-planReport .c-card__item .c-card__star__btn, #alertPlen .change-card-to-list .c-card-planReport-danger .c-card__item .c-card__star__btn, #alertPlen .change-card-to-list .c-card-alertPlan .c-card__item .c-card__star__btn {
   margin: 0;
+  background: none;
 }
 
 #alertPlen .change-card-to-list .l-main-content-item__listTitle div {
@@ -20640,5 +20739,52 @@ body {
 
 .l-mobile-mask-none {
   display: none;
+}
+
+.c-card-planHotkey h2, .l-mobile-footer-worksheet .c-card-workHotkey h2,
+.c-card-planHotkey span,
+.l-mobile-footer-worksheet .c-card-workHotkey span {
+  color: #042340 !important;
+}
+
+.change-card-to-list .c-card-planPerson h2, .change-card-to-list .c-card-planClosed h2, .change-card-to-list .c-card-planHotkey h2, .change-card-to-list .l-mobile-footer-worksheet .c-card-workHotkey h2, .l-mobile-footer-worksheet .change-card-to-list .c-card-workHotkey h2, .change-card-to-list .c-card-planReport h2, .change-card-to-list .c-card-planReport-danger h2, .change-card-to-list .c-card-alertPlan h2 {
+  margin-bottom: 0 !important;
+}
+
+.c-modal-chooseGroup .c-modal-content__inputSpe .s1 {
+  width: 3rem;
+  padding: 0 0.2rem;
+  margin-left: 0;
+  text-align: center;
+}
+
+.c-modal-chooseGroup .c-modal-content__inputSpe .s4 {
+  width: calc(50% - 3rem);
+  padding: 0;
+  margin: 0;
+}
+
+.c-modal-chooseGroup .c-modal-content__inputSpe .s4 .input-field {
+  width: 100%;
+}
+
+.c-modal-chooseGroup .c-modal-content__inputSpe .s2 {
+  width: 5rem;
+  margin: 0;
+}
+
+.c-modal-chooseGroup .c-modal-content__inputSpe .s3 {
+  width: calc(50% - 5rem);
+  padding: 0;
+  margin: 0;
+}
+
+.c-modal-chooseGroup .c-modal-content__inputSpe .s3 input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.tooltip {
+  border-bottom: 0px;
 }
 /*# sourceMappingURL=all.css.map */

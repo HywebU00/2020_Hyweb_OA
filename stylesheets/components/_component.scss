@@ -3,6 +3,9 @@
 //====================
 // default state
 // card
+* {
+  font-family: $font-family;
+}
 .c-card {
   border-radius: $card-radius;
   box-shadow: $box-shadow;
@@ -3649,6 +3652,13 @@
         &:hover {
           box-shadow: 0px 0px 0px 2px $hyweb-green;
         }
+      }
+    }
+    .notSpecify-btn {
+      @extend .o-btn;
+      + span {
+        margin-left: 0.5rem;
+        color: $gray3;
       }
     }
   }
