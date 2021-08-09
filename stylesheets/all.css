@@ -14086,6 +14086,11 @@ body {
   color: #d2dae0;
 }
 
+.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .no-member-notice, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .no-member-notice, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .no-member-notice, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .no-member-notice, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember .no-member-notice, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .no-member-notice, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember .no-member-notice, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .no-member-notice, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember .no-member-notice {
+  color: #8495a4;
+  margin: 1.6rem 0 0 2rem;
+}
+
 .c-modal-addGroup .c-modal-content .c-modal-content__memberList, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList, .c-modal-sample .c-modal-content .c-modal-content__memberList, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList {
   width: 50%;
   padding-left: 1rem;
@@ -15148,6 +15153,24 @@ body {
 .c-dropdown-member .c-dropdown__footer .o-btn-secondary {
   height: 32px;
   padding: 0 20px;
+}
+
+.c-dropdown-member .no-member {
+  height: 77px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-dropdown-member .no-member .c-dropdown__title {
+  margin-bottom: 0;
+  font-size: 0.93rem;
 }
 
 .c-datePicker, .c-datePicker-day, .c-datePicker-days, .c-datePicker-months, .c-datePicker-month {
@@ -19044,12 +19067,12 @@ body {
 }
 
 #supporttime .change-card-to-list #support_people .listTitle__englishName {
-  width: 56%;
+  width: 56.5%;
 }
 
 #supporttime .change-card-to-list #support_people .listTitle__user,
 #supporttime .change-card-to-list #support_people .listTitle__userNum {
-  width: 9.5%;
+  width: 9.4%;
 }
 
 #supporttime .change-card-to-list #support_plan .l-main-content-item__listTitle .listTitle__name {
@@ -19291,6 +19314,10 @@ body {
           align-items: center;
 }
 
+#notReachedtime .is-error-status {
+  padding: 0.8rem 0.2rem 1.4rem 0.5rem;
+}
+
 #notReachedtime .is-error-status .c-search-list .c-search-item .c-search-item__percentTitle {
   color: #fb5b29;
 }
@@ -19298,6 +19325,20 @@ body {
 #notReachedtime .is-error-status .c-search-list .c-search-item .c-search-item__input input {
   background-color: #fff;
   border: 1px solid #fb5b29;
+}
+
+#notReachedtime .is-error-status .c-search-list .c-search-item .c-search-item__input input[type="submit"] {
+  border: 0px;
+}
+
+#notReachedtime .is-error-status .c-search-list .c-search-item .c-search-item__input:after {
+  position: absolute;
+  content: "請填0~100的阿拉伯數字";
+  color: #fb5b29;
+  font-size: 12px;
+  display: block;
+  right: 0;
+  margin: 4px 0;
 }
 
 #memberstime_execute .change-card-to-list .c-card-manhourSearch:hover {
