@@ -1749,6 +1749,10 @@
       .disabled {
         color: $gray4;
       }
+      .no-member-notice {
+        color: $gray3;
+        margin: 1.6rem 0 0 2rem;
+      }
     }
     .c-modal-content__memberList {
       width: 50%;
@@ -2785,6 +2789,17 @@
     .o-btn-secondary {
       height: 32px;
       padding: 0 20px;
+    }
+  }
+  .no-member {
+    height: 77px;
+    // width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .c-dropdown__title {
+      margin-bottom: 0;
+      font-size: 0.93rem;
     }
   }
 }

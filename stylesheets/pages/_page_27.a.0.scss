@@ -335,11 +335,11 @@
         width: 75%;
       }
       .listTitle__englishName {
-        width: 56%;
+        width: 56.5%;
       }
       .listTitle__user,
       .listTitle__userNum {
-        width: 9.5%;
+        width: 9.4%;
       }
     }
     #support_plan {
@@ -597,6 +597,7 @@
   }
 
   .is-error-status {
+    padding: 0.8rem 0.2rem 1.4rem 0.5rem;
     .c-search-list {
       .c-search-item {
         .c-search-item__percentTitle {
@@ -607,6 +608,18 @@
           input {
             background-color: #fff;
             border: 1px solid $danger;
+          }
+          input[type="submit"] {
+            border: 0px;
+          }
+          &:after {
+            position: absolute;
+            content: "請填0~100的阿拉伯數字";
+            color: $danger;
+            font-size: 12px;
+            display: block;
+            right: 0;
+            margin: 4px 0;
           }
         }
       }
