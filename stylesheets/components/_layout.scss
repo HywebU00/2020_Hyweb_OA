@@ -83,7 +83,6 @@ body {
     font-weight: 700;
     font-size: $a;
     font-family: $english-font;
-    // padding-bottom: $pd/2;
     overflow: hidden;
     display: none;
     transition: ease 0.5s;
@@ -196,7 +195,7 @@ body {
     content: "";
     right: 0;
     top: 0;
-    width: 40px;
+    width: 38px;
     height: 100vh;
     background-color: #fff;
     z-index: 99;
@@ -307,6 +306,9 @@ body {
 
     img {
       margin-right: 0.3rem;
+    }
+    &:hover {
+      background: $hyweb-lighblue;
     }
   }
 
@@ -435,6 +437,9 @@ body {
       img {
         margin-right: 0.2rem;
       }
+      &:hover {
+        background: $hyweb-lighblue;
+      }
     }
   }
   &:first-child {
@@ -559,6 +564,9 @@ body {
 
           img {
             padding: 0;
+          }
+          &:hover {
+            background-color: darken($hyweb-lighblue, 10%);
           }
         }
       }
@@ -1273,6 +1281,10 @@ body {
           padding: 2% 0;
           white-space: nowrap;
           border-radius: $btn-radius;
+
+          &:hover {
+            background: $hyweb-lighblue;
+          }
         }
 
         img {
@@ -1301,6 +1313,11 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      button {
+        &:hover {
+          background-color: $hyweb-lighblue;
+        }
+      }
     }
 
     .delete-icon {
@@ -1553,7 +1570,7 @@ body {
   z-index: 98;
 
   &:hover {
-    background-color: #fff;
+    background-color: $hyweb-lighblue;
     box-shadow: rgba(60, 64, 67, 0.3) -2px 0px 2px 0px;
   }
 }
@@ -1599,6 +1616,9 @@ body {
 
         &:last-child {
           margin: 0;
+        }
+        &:hover {
+          background-color: $hyweb-lighblue;
         }
       }
 

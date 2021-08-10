@@ -218,7 +218,6 @@
   }
 
   .c-card__tag {
-    // padding-top: $pd;
     display: inline-block;
     padding-bottom: 0.8rem; //$pd-2;
 
@@ -226,7 +225,6 @@
       background: $after-blue;
       color: $gray1;
       display: inline-block;
-      //padding: 0.2rem 0.5rem;
       line-height: 24px;
       padding: 0 0.5rem;
       font-weight: 400;
@@ -249,6 +247,10 @@
     margin-top: 0.5rem;
     justify-content: flex-start;
     line-height: 1.66rem;
+  }
+  .c-card__item__title {
+    display: inline-block;
+    margin-bottom: 0.3rem;
   }
 }
 
@@ -383,8 +385,6 @@
   @extend .c-card-planPerson;
   width: 100%;
   max-width: 1000px;
-  // min-width: 879px;
-  // min-height: 166px;
   display: flex;
   padding: 0px;
 
@@ -544,7 +544,7 @@
         form {
           p {
             span {
-              background-color: #fff;
+              background: none; //#fff;
             }
           }
         }
@@ -652,7 +652,7 @@
           form {
             p {
               span {
-                background-color: #fff;
+                background: none;
               }
             }
           }
@@ -745,6 +745,10 @@
         padding: 0.1rem;
         border-radius: 50%;
         cursor: pointer;
+        margin-right: 0.5rem;
+        &:hover {
+          background-color: $hyweb-lighblue;
+        }
       }
     }
   }
@@ -794,6 +798,7 @@
   &:hover {
     transition: all 0.2s;
     transform: translateY(2px) translateX(2px);
+    background: #eee;
   }
 
   &:active {
@@ -1201,6 +1206,9 @@
       padding: 0.5rem;
       display: flex;
       align-items: center;
+      &:hover {
+        background-color: $hyweb-lighblue;
+      }
     }
 
     a {
@@ -1274,6 +1282,9 @@
     padding: 1.5rem;
     background-color: $hyweb-lighblue;
     border-radius: 50%;
+    &:hover {
+      background-color: darken($hyweb-lighblue, 3%);
+    }
   }
 
   .c-fileInput__title {
@@ -1493,6 +1504,9 @@
         button {
           border-radius: 40px;
           margin-left: 1.2rem;
+          &:hover {
+            background-color: $hyweb-lighblue;
+          }
 
           a {
             padding: 0.5rem;
@@ -3363,7 +3377,10 @@
   }
 
   .is-active {
-    background-color: #fff; //$hyweb-waterblue;
+    background-color: #fff;
+    &:hover {
+      background-color: #fff;
+    }
   }
 
   .is-today-tag {
@@ -3414,7 +3431,12 @@
   &:last-child {
     border-radius: 0 $card-radius 0 0;
   }
-
+  &:hover {
+    background-color: lighten($gray6, 3%);
+  }
+  &:active {
+    background-color: #ffff;
+  }
   .c-writeHours-title__item__date {
     display: flex;
     justify-content: center;
@@ -3832,7 +3854,7 @@
   background: $hy-background;
 
   &:hover {
-    background: $hy-background;
+    background: $hy-background-light;
     transition: all 0.5s ease;
   }
 
@@ -4004,6 +4026,9 @@
     border-bottom: 0;
     padding: 0.2rem 0.5rem;
     box-sizing: border-box;
+    &:focus {
+      outline: none;
+    }
   }
 }
 
