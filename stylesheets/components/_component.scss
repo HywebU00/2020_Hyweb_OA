@@ -4265,3 +4265,16 @@
     background-color: $sec2;
   }
 }
+//tooltipped
+.material-tooltip {
+  color: $gray1;
+  background-color: #fff;
+  border: 1px solid #bad4e5;
+  box-shadow: 0px 2px 3px 0px rgba(1, 27, 49, 0.2);
+  border-radius: 10px;
+  max-width: 300px;
+  font-size: 16px;
+  letter-spacing: 0.03rem;
+  line-height: 1.5rem;
+  text-align: left;
+}
