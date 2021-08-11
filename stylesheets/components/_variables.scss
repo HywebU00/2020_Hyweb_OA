@@ -34,6 +34,12 @@ $hy-background: linear-gradient(
     rgba(9, 101, 186, 0) 96.35%
   ),
   #0868bd;
+$hy-background-light: linear-gradient(
+    180deg,
+    rgba(30, 215, 239, 0.5) 0%,
+    rgba(9, 101, 186, 0.64) 50.35%
+  ),
+  #006dce;
 $hy-background-danger: linear-gradient(
     180deg,
     rgba(245, 170, 101, 0.3) 0%,
@@ -98,7 +104,7 @@ $textarea-radius: 0.66rem; //10px;
 $upload-radius: 0.66rem; //10px;
 //fontfamily
 $english-font: "Baloo 2", cursive, "Noto Sans TC";
-$font-family: "Noto Sans TC", "sans-serif";
+$font-family: "sans-serif", "Noto Sans TC";
 //text
 $font-size: 12px;
 $font-size-m: 14px;

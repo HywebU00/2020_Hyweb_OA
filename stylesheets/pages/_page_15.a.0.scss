@@ -860,7 +860,7 @@
           .c-card__item__title {
             .c-card__tag__num {
               .c-card__tag__status {
-                background: #fff;
+                background: none;
                 color: $gray1;
               }
             }
@@ -1260,13 +1260,7 @@
               form {
                 p {
                   span {
-                    background-color: #fff;
-                    background: linear-gradient(
-                        180deg,
-                        rgba(255, 255, 255, 0) 0%,
-                        rgba(255, 255, 255, 0) 0%
-                      ),
-                      #ffffff;
+                    background: none;
                   }
                 }
               }
