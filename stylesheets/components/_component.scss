@@ -963,6 +963,14 @@
 }
 
 .c-accordion-general {
+  button {
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    &:hover {
+      cursor: pointer;
+    }
+  }
   @extend.c-card;
   @extend .c-accordion-plan;
   width: 70%;
@@ -970,6 +978,7 @@
   max-width: 1000px;
   border: 0;
   box-shadow: $box-shadow;
+  background: #fff;
 
   .accordion-body__title {
     color: $gray3;

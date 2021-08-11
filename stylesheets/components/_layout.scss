@@ -1230,6 +1230,13 @@ body {
 
     .row {
       margin-bottom: 0;
+      button {
+        img {
+          &:hover {
+            filter: opacity(0.6);
+          }
+        }
+      }
     }
   }
 
