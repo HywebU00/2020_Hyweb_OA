@@ -38,6 +38,19 @@
 
   a {
     color: $gray1;
+    .c-card-manhourSofar__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .c-card-manhourSofar__Resign {
+      color: $gray3;
+      font-size: 14px;
+      line-height: 20px;
+      ~ .c-card__userInformation {
+        margin-top: calc(2rem - 20px);
+      }
+    }
   }
 
   .c-card__userInformation {
@@ -2262,7 +2275,11 @@
       }
     }
   }
-
+  .header__item__resign {
+    color: $gray3;
+    margin-left: 1.5rem;
+    font-weight: 500;
+  }
   .c-modal-content__sidebar__months {
     .sidebar__project__item {
       @extend .sidebar__months__item;

@@ -11557,6 +11557,12 @@ body {
           align-items: center;
 }
 
+.l-main-content-table .table-body .deleteBtn-position span {
+  display: inline-block;
+  margin-right: 1.2rem;
+  color: #8495a4;
+}
+
 .l-main-content-table .table-body .deleteBtn-position button:hover {
   background-color: #e2f1fe;
 }
@@ -12177,6 +12183,28 @@ body {
 
 .c-card-manhourSofar a, .c-card-manhourSearch a, .c-card-percent a, .c-card-percentCheck a, .c-card-planPerson a, .c-card-planClosed a, .c-card-planHotkey a, .l-mobile-footer-worksheet .c-card-workHotkey a, .c-card-planReport a, .c-card-planReport-danger a, .c-card-alertPlan a, .c-card-department a {
   color: #042340;
+}
+
+.c-card-manhourSofar a .c-card-manhourSofar__title, .c-card-manhourSearch a .c-card-manhourSofar__title, .c-card-percent a .c-card-manhourSofar__title, .c-card-percentCheck a .c-card-manhourSofar__title, .c-card-planPerson a .c-card-manhourSofar__title, .c-card-planClosed a .c-card-manhourSofar__title, .c-card-planHotkey a .c-card-manhourSofar__title, .l-mobile-footer-worksheet .c-card-workHotkey a .c-card-manhourSofar__title, .c-card-planReport a .c-card-manhourSofar__title, .c-card-planReport-danger a .c-card-manhourSofar__title, .c-card-alertPlan a .c-card-manhourSofar__title, .c-card-department a .c-card-manhourSofar__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.c-card-manhourSofar a .c-card-manhourSofar__Resign, .c-card-manhourSearch a .c-card-manhourSofar__Resign, .c-card-percent a .c-card-manhourSofar__Resign, .c-card-percentCheck a .c-card-manhourSofar__Resign, .c-card-planPerson a .c-card-manhourSofar__Resign, .c-card-planClosed a .c-card-manhourSofar__Resign, .c-card-planHotkey a .c-card-manhourSofar__Resign, .l-mobile-footer-worksheet .c-card-workHotkey a .c-card-manhourSofar__Resign, .c-card-planReport a .c-card-manhourSofar__Resign, .c-card-planReport-danger a .c-card-manhourSofar__Resign, .c-card-alertPlan a .c-card-manhourSofar__Resign, .c-card-department a .c-card-manhourSofar__Resign {
+  color: #8495a4;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.c-card-manhourSofar a .c-card-manhourSofar__Resign ~ .c-card__userInformation, .c-card-manhourSearch a .c-card-manhourSofar__Resign ~ .c-card__userInformation, .c-card-percent a .c-card-manhourSofar__Resign ~ .c-card__userInformation, .c-card-percentCheck a .c-card-manhourSofar__Resign ~ .c-card__userInformation, .c-card-planPerson a .c-card-manhourSofar__Resign ~ .c-card__userInformation, .c-card-planClosed a .c-card-manhourSofar__Resign ~ .c-card__userInformation, .c-card-planHotkey a .c-card-manhourSofar__Resign ~ .c-card__userInformation, .l-mobile-footer-worksheet .c-card-workHotkey a .c-card-manhourSofar__Resign ~ .c-card__userInformation, .c-card-planReport a .c-card-manhourSofar__Resign ~ .c-card__userInformation, .c-card-planReport-danger a .c-card-manhourSofar__Resign ~ .c-card__userInformation, .c-card-alertPlan a .c-card-manhourSofar__Resign ~ .c-card__userInformation, .c-card-department a .c-card-manhourSofar__Resign ~ .c-card__userInformation {
+  margin-top: calc(2rem - 20px);
 }
 
 .c-card-manhourSofar .c-card__userInformation, .c-card-manhourSearch .c-card__userInformation, .c-card-percent .c-card__userInformation, .c-card-percentCheck .c-card__userInformation, .c-card-planPerson .c-card__userInformation, .c-card-planClosed .c-card__userInformation, .c-card-planHotkey .c-card__userInformation, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__userInformation, .c-card-planReport .c-card__userInformation, .c-card-planReport-danger .c-card__userInformation, .c-card-alertPlan .c-card__userInformation, .c-card-department .c-card__userInformation {
@@ -14769,6 +14797,12 @@ body {
 
 .c-modal-department .c-modal-content__sidebar .c-modal-content__sidebar__user .user__department {
   margin-bottom: 2rem;
+}
+
+.c-modal-department .header__item__resign {
+  color: #8495a4;
+  margin-left: 1.5rem;
+  font-weight: 500;
 }
 
 .c-modal-department .c-modal-content__sidebar__months .sidebar__project__item .item__projects button {
@@ -18743,6 +18777,10 @@ body {
   padding-left: 3rem;
 }
 
+#membertime .change-card-to-list .c-card-manhourSofar, #membertime .change-card-to-list .c-card-manhourSearch, #membertime .change-card-to-list .c-card-percent, #membertime .change-card-to-list .c-card-percentCheck, #membertime .change-card-to-list .c-card-planPerson, #membertime .change-card-to-list .c-card-planClosed, #membertime .change-card-to-list .c-card-planHotkey, #membertime .change-card-to-list .l-mobile-footer-worksheet .c-card-workHotkey, .l-mobile-footer-worksheet #membertime .change-card-to-list .c-card-workHotkey, #membertime .change-card-to-list .c-card-planReport, #membertime .change-card-to-list .c-card-planReport-danger, #membertime .change-card-to-list .c-card-alertPlan, #membertime .change-card-to-list .c-card-department {
+  margin-bottom: 0rem;
+}
+
 #membertime .change-card-to-list .c-card-manhourSofar:hover, #membertime .change-card-to-list .c-card-manhourSearch:hover, #membertime .change-card-to-list .c-card-percent:hover, #membertime .change-card-to-list .c-card-percentCheck:hover, #membertime .change-card-to-list .c-card-planPerson:hover, #membertime .change-card-to-list .c-card-planClosed:hover, #membertime .change-card-to-list .c-card-planHotkey:hover, #membertime .change-card-to-list .l-mobile-footer-worksheet .c-card-workHotkey:hover, .l-mobile-footer-worksheet #membertime .change-card-to-list .c-card-workHotkey:hover, #membertime .change-card-to-list .c-card-planReport:hover, #membertime .change-card-to-list .c-card-planReport-danger:hover, #membertime .change-card-to-list .c-card-alertPlan:hover, #membertime .change-card-to-list .c-card-department:hover {
   -webkit-transition: all 0;
   transition: all 0;
@@ -18760,6 +18798,28 @@ body {
 #membertime .change-card-to-list .c-card-manhourSofar .c-card__userInformation h3, #membertime .change-card-to-list .c-card-manhourSearch .c-card__userInformation h3, #membertime .change-card-to-list .c-card-percent .c-card__userInformation h3, #membertime .change-card-to-list .c-card-percentCheck .c-card__userInformation h3, #membertime .change-card-to-list .c-card-planPerson .c-card__userInformation h3, #membertime .change-card-to-list .c-card-planClosed .c-card__userInformation h3, #membertime .change-card-to-list .c-card-planHotkey .c-card__userInformation h3, #membertime .change-card-to-list .l-mobile-footer-worksheet .c-card-workHotkey .c-card__userInformation h3, .l-mobile-footer-worksheet #membertime .change-card-to-list .c-card-workHotkey .c-card__userInformation h3, #membertime .change-card-to-list .c-card-planReport .c-card__userInformation h3, #membertime .change-card-to-list .c-card-planReport-danger .c-card__userInformation h3, #membertime .change-card-to-list .c-card-alertPlan .c-card__userInformation h3, #membertime .change-card-to-list .c-card-department .c-card__userInformation h3 {
   font-family: "sans-serif", "Noto Sans TC";
   line-height: 1rem;
+}
+
+#membertime .change-card-to-list .c-card-manhourSofar .c-card-manhourSofar__Resign, #membertime .change-card-to-list .c-card-manhourSearch .c-card-manhourSofar__Resign, #membertime .change-card-to-list .c-card-percent .c-card-manhourSofar__Resign, #membertime .change-card-to-list .c-card-percentCheck .c-card-manhourSofar__Resign, #membertime .change-card-to-list .c-card-planPerson .c-card-manhourSofar__Resign, #membertime .change-card-to-list .c-card-planClosed .c-card-manhourSofar__Resign, #membertime .change-card-to-list .c-card-planHotkey .c-card-manhourSofar__Resign, #membertime .change-card-to-list .l-mobile-footer-worksheet .c-card-workHotkey .c-card-manhourSofar__Resign, .l-mobile-footer-worksheet #membertime .change-card-to-list .c-card-workHotkey .c-card-manhourSofar__Resign, #membertime .change-card-to-list .c-card-planReport .c-card-manhourSofar__Resign, #membertime .change-card-to-list .c-card-planReport-danger .c-card-manhourSofar__Resign, #membertime .change-card-to-list .c-card-alertPlan .c-card-manhourSofar__Resign, #membertime .change-card-to-list .c-card-department .c-card-manhourSofar__Resign {
+  display: none;
+}
+
+#membertime .change-card-to-list .c-card-manhourSofar .c-card__userInformation, #membertime .change-card-to-list .c-card-manhourSearch .c-card__userInformation, #membertime .change-card-to-list .c-card-percent .c-card__userInformation, #membertime .change-card-to-list .c-card-percentCheck .c-card__userInformation, #membertime .change-card-to-list .c-card-planPerson .c-card__userInformation, #membertime .change-card-to-list .c-card-planClosed .c-card__userInformation, #membertime .change-card-to-list .c-card-planHotkey .c-card__userInformation, #membertime .change-card-to-list .l-mobile-footer-worksheet .c-card-workHotkey .c-card__userInformation, .l-mobile-footer-worksheet #membertime .change-card-to-list .c-card-workHotkey .c-card__userInformation, #membertime .change-card-to-list .c-card-planReport .c-card__userInformation, #membertime .change-card-to-list .c-card-planReport-danger .c-card__userInformation, #membertime .change-card-to-list .c-card-alertPlan .c-card__userInformation, #membertime .change-card-to-list .c-card-department .c-card__userInformation {
+  margin-top: 0;
+}
+
+#membertime .change-card-to-list .c-card-manhourSofar .js-c-card__appendUserName h3, #membertime .change-card-to-list .c-card-manhourSearch .js-c-card__appendUserName h3, #membertime .change-card-to-list .c-card-percent .js-c-card__appendUserName h3, #membertime .change-card-to-list .c-card-percentCheck .js-c-card__appendUserName h3, #membertime .change-card-to-list .c-card-planPerson .js-c-card__appendUserName h3, #membertime .change-card-to-list .c-card-planClosed .js-c-card__appendUserName h3, #membertime .change-card-to-list .c-card-planHotkey .js-c-card__appendUserName h3, #membertime .change-card-to-list .l-mobile-footer-worksheet .c-card-workHotkey .js-c-card__appendUserName h3, .l-mobile-footer-worksheet #membertime .change-card-to-list .c-card-workHotkey .js-c-card__appendUserName h3, #membertime .change-card-to-list .c-card-planReport .js-c-card__appendUserName h3, #membertime .change-card-to-list .c-card-planReport-danger .js-c-card__appendUserName h3, #membertime .change-card-to-list .c-card-alertPlan .js-c-card__appendUserName h3, #membertime .change-card-to-list .c-card-department .js-c-card__appendUserName h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#membertime .change-card-to-list .c-card-manhourSofar .js-c-card__appendUserName span:last-child, #membertime .change-card-to-list .c-card-manhourSearch .js-c-card__appendUserName span:last-child, #membertime .change-card-to-list .c-card-percent .js-c-card__appendUserName span:last-child, #membertime .change-card-to-list .c-card-percentCheck .js-c-card__appendUserName span:last-child, #membertime .change-card-to-list .c-card-planPerson .js-c-card__appendUserName span:last-child, #membertime .change-card-to-list .c-card-planClosed .js-c-card__appendUserName span:last-child, #membertime .change-card-to-list .c-card-planHotkey .js-c-card__appendUserName span:last-child, #membertime .change-card-to-list .l-mobile-footer-worksheet .c-card-workHotkey .js-c-card__appendUserName span:last-child, .l-mobile-footer-worksheet #membertime .change-card-to-list .c-card-workHotkey .js-c-card__appendUserName span:last-child, #membertime .change-card-to-list .c-card-planReport .js-c-card__appendUserName span:last-child, #membertime .change-card-to-list .c-card-planReport-danger .js-c-card__appendUserName span:last-child, #membertime .change-card-to-list .c-card-alertPlan .js-c-card__appendUserName span:last-child, #membertime .change-card-to-list .c-card-department .js-c-card__appendUserName span:last-child {
+  margin-right: 1.5rem;
+  color: #8495a4;
 }
 
 #membertime .change-card-to-list .l-main-content-item {
@@ -18990,6 +19050,14 @@ body {
   cursor: default;
 }
 
+#memberstime .change-card-to-list .l-main-content-item .c-card-manhourSearch .c-card__userInformation, #departmenttime .change-card-to-list .l-main-content-item .c-card-manhourSearch .c-card__userInformation, #universalPlan .change-card-to-list .l-main-content-item .c-card-manhourSearch .c-card__userInformation {
+  margin-top: 0;
+}
+
+#memberstime .change-card-to-list .c-card-manhourSofar__Resign, #departmenttime .change-card-to-list .c-card-manhourSofar__Resign, #universalPlan .change-card-to-list .c-card-manhourSofar__Resign {
+  display: none;
+}
+
 #memberstime .change-card-to-list .c-card-manhourSearch__userName, #departmenttime .change-card-to-list .c-card-manhourSearch__userName, #universalPlan .change-card-to-list .c-card-manhourSearch__userName {
   display: none;
 }
@@ -19020,6 +19088,17 @@ body {
 
 #memberstime .change-card-to-list .js-c-card__appendUserName h3, #departmenttime .change-card-to-list .js-c-card__appendUserName h3, #universalPlan .change-card-to-list .js-c-card__appendUserName h3 {
   width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#memberstime .change-card-to-list .js-c-card__appendUserName h3 span:last-child, #departmenttime .change-card-to-list .js-c-card__appendUserName h3 span:last-child, #universalPlan .change-card-to-list .js-c-card__appendUserName h3 span:last-child {
+  color: #8495a4;
+  margin-right: 1.5rem;
 }
 
 #memberstime .change-card-to-list .c-card__content, #departmenttime .change-card-to-list .c-card__content, #universalPlan .change-card-to-list .c-card__content {
@@ -19050,6 +19129,14 @@ body {
 
 #departmenttime .c-datePicker__modal .c-datePicker__yearPicker button {
   border-radius: 50%;
+}
+
+#departmenttime .change-card-to-list .c-card__userInformation {
+  margin-top: 0;
+}
+
+#departmenttime .change-card-to-list .c-card-manhourSofar__Resign {
+  display: none;
 }
 
 #departmenttime .change-card-to-list .c-card-manhourSearch {
@@ -19090,6 +19177,17 @@ body {
 
 #departmenttime .change-card-to-list .js-c-card__appendUserName h3 {
   width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#departmenttime .change-card-to-list .js-c-card__appendUserName h3 span:last-child {
+  margin-right: 1.5rem;
+  color: #8495a4;
 }
 
 #departmenttime .change-card-to-list .c-card__content {
@@ -19156,6 +19254,12 @@ body {
 
 #supporttime .change-card-to-list .c-card-manhourSearch .c-card__userInformation h3 {
   font-family: "sans-serif", "Noto Sans TC";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #supporttime .change-card-to-list .c-card-planPerson a, #supporttime .change-card-to-list .c-card-planClosed a, #supporttime .change-card-to-list .c-card-planHotkey a, #supporttime .change-card-to-list .l-mobile-footer-worksheet .c-card-workHotkey a, .l-mobile-footer-worksheet #supporttime .change-card-to-list .c-card-workHotkey a, #supporttime .change-card-to-list .c-card-planReport a, #supporttime .change-card-to-list .c-card-planReport-danger a, #supporttime .change-card-to-list .c-card-alertPlan a {
@@ -19252,6 +19356,14 @@ body {
           transform: translateY(0px) translateX(0px);
 }
 
+#supporttime .change-card-to-list #support_people .c-card-manhourSofar__Resign {
+  display: none;
+}
+
+#supporttime .change-card-to-list #support_people .js-c-card__userNumber {
+  display: none;
+}
+
 #supporttime .change-card-to-list #support_people .js-c-card__appendUserName {
   width: 75%;
 }
@@ -19263,6 +19375,24 @@ body {
 #supporttime .change-card-to-list #support_people .listTitle__user,
 #supporttime .change-card-to-list #support_people .listTitle__userNum {
   width: 9.4%;
+}
+
+#supporttime .change-card-to-list #support_people .c-card__userInformation {
+  margin-top: 0;
+}
+
+#supporttime .change-card-to-list #support_people .js-c-card__appendUserName h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#supporttime .change-card-to-list #support_people .js-c-card__appendUserName h3 span:last-child {
+  margin-right: 1.5rem;
+  color: #8495a4;
 }
 
 #supporttime .change-card-to-list #support_plan .l-main-content-item__listTitle .listTitle__name {
@@ -19324,6 +19454,14 @@ body {
 
 #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__title, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__title, #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__content, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__content, .c-card-planReport #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__content, #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__content, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__content, .c-card-planReport-danger #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__content, #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-alertPlan #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__content, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__content, .c-card-alertPlan #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__content, #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planReport #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card-planReport .c-card__item__footer, .c-card-planReport #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card-planReport-danger .c-card__item__footer, .c-card-planReport-danger #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan #notReachedtime .change-card-to-list .c-card-percent .c-card__item .c-card__item__footer, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card-alertPlan .c-card__item__footer, .c-card-alertPlan #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__item .c-card__item__footer {
   margin-top: 0.2rem;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent .c-card-manhourSofar__Resign, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card-manhourSofar__Resign {
+  display: none;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent .c-card__userInformation, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__userInformation {
+  margin-top: 0;
 }
 
 #notReachedtime .change-card-to-list .l-main-content-item__listTitle {
@@ -19442,6 +19580,16 @@ body {
 
 #notReachedtime .change-card-to-list .c-card-percent .c-card__content .c-card-percent__leaveTime, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__content .c-card-percent__leaveTime {
   width: 54.5454545%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#notReachedtime .change-card-to-list .c-card-percent .c-card__content .c-card-percent__leaveTime .js-c-card__appendResignDiv, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__content .c-card-percent__leaveTime .js-c-card__appendResignDiv {
+  display: inline-block;
+  margin-right: 1.5rem;
+  font-size: 1.06rem;
+  color: #8495a4;
 }
 
 #notReachedtime .change-card-to-list .c-card-percent .c-card__content .c-card-percent__percent, #notReachedtime .change-card-to-list .c-card-percentCheck .c-card__content .c-card-percent__percent {

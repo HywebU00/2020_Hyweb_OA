@@ -1320,6 +1320,11 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      span {
+        display: inline-block;
+        margin-right: 1.2rem;
+        color: $gray3;
+      }
       button {
         &:hover {
           background-color: $hyweb-lighblue;
