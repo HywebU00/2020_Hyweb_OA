@@ -30,11 +30,40 @@ let addUserName = function () {
     let chineseName = arr[a].querySelector(".js-c-card__userName").innerHTML;
     let englishName = arr[a].querySelector(".js-c-card__englishName").innerHTML;
     let userNumber = arr[a].querySelector(".js-c-card__userNumber").innerHTML;
+    let ResignTextDom = arr[a].querySelector(".c-card-manhourSofar__Resign");
+
+    let ResignText;
+    // 已離職的ＤＯＭ元素
+    if (ResignTextDom !== null) {
+      ResignText = ResignTextDom.innerHTML;
+    } else {
+      ResignText = "";
+    }
+
     let beforeChild = arr[a].querySelector(".c-card__content");
     let div = document.createElement("div");
     //將陣列中尚未append姓名的卡片抓出來 塞入姓名
     div.setAttribute("class", "js-c-card__appendUserName");
-    div.innerHTML = `<h2>${userNumber}</h2><h2>${chineseName}</h2><h3>${englishName}</h3>`;
+    div.innerHTML = `<h2>${userNumber}</h2><h2>${chineseName}</h2><h3><span>${englishName}</span><span>${ResignText}</span></h3>`;
+
+    //檢查是否為 人員工時的卡片 c-card-percent
+    let percentCard = arr[a]
+      .querySelector(".js-c-card__userName")
+      .parentElement.parentElement.parentElement.parentElement.classList.contains(
+        "c-card-percent"
+      );
+    if (percentCard === true) {
+      div.innerHTML = `<h2>${userNumber}</h2><h2>${chineseName}</h2><h3><span>${englishName}</span></h3>`;
+
+      //抓取 c-card__item__time請假時間的節點
+      let timeDom = arr[a].querySelector(".c-card-percent__leaveTime");
+      let ResignDiv = document.createElement("div");
+      ResignDiv.setAttribute("class", "js-c-card__appendResignDiv");
+      ResignDiv.textContent = ResignText;
+      timeDom.appendChild(ResignDiv);
+    }
+
+    //將Dom字串放入
     if (arr[a].querySelector(".js-c-card__appendUserName") === null) {
       arr[a].children[0].insertBefore(div, beforeChild);
     }
@@ -51,8 +80,19 @@ let removeAppendName = function () {
     ) {
       //抓到有append姓名的並刪除
       let append = addNameCard[b].querySelector(".js-c-card__appendUserName");
-      if (append != null) {
+      if (append !== null) {
         addNameCard[b].children[0].removeChild(append);
+      }
+      //抓到有 "已離職" 字樣
+      let appendResign = addNameCard[b].querySelector(
+        ".js-c-card__appendResignDiv"
+      );
+      if (appendResign !== null) {
+        //抓取 c-card__item__time請假時間的節點
+        let timeDom = addNameCard[b].querySelector(
+          ".c-card-percent__leaveTime"
+        );
+        timeDom.removeChild(appendResign);
       }
     }
   }
