@@ -106,7 +106,8 @@
         .table-body__item {
           .s1 {
             width: 6.8rem;
-            padding: 0;
+            // padding: 0;
+            padding-right: 1rem;
             max-height: 5.3rem;
 
             .o-input {
@@ -183,10 +184,6 @@
           }
         }
       }
-
-      // .table-footer {
-      // 	padding: 1rem 0 1rem 0;
-      // }
 
       .is-error-status-item {
         .o-input-div {

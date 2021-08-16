@@ -735,8 +735,8 @@ body {
         }
 
         .num-position {
-          justify-content: center;
-
+          justify-content: flex-end;
+          // justify-content: center;
           button {
             justify-content: center;
             display: flex;
@@ -787,12 +787,12 @@ body {
           }
 
           .total__allTime {
-            text-align: center;
+            text-align: end;
             width: 120px;
           }
 
           .total__time {
-            text-align: center;
+            text-align: end;
           }
         }
       }
@@ -806,7 +806,6 @@ body {
 
       .col {
         margin: 0;
-
         .c-popover-checkPoint {
           display: flex;
           align-items: center;
@@ -847,7 +846,7 @@ body {
       }
 
       .num-position {
-        text-align: center;
+        text-align: end;
       }
 
       .c-datePicker-days {
@@ -1127,7 +1126,8 @@ body {
         .col {
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-end;
+          // justify-content: center;
 
           button {
             display: flex;
@@ -1175,7 +1175,8 @@ body {
         .col {
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-end;
+          // justify-content: center;
         }
       }
     }

@@ -10898,9 +10898,9 @@ body {
 }
 
 .l-main-content .l-main-content__wbslist .table-thead .row .num-position, .l-main-content .l-main-content__workTypelist .table-thead .row .num-position {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .l-main-content .l-main-content__wbslist .table-thead .row .num-position button, .l-main-content .l-main-content__workTypelist .table-thead .row .num-position button {
@@ -10964,12 +10964,12 @@ body {
 }
 
 .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__total .total__allTime, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__total .total__allTime {
-  text-align: center;
+  text-align: end;
   width: 120px;
 }
 
 .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .table-body__item__total .total__time, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .table-body__item__total .total__time {
-  text-align: center;
+  text-align: end;
 }
 
 .l-main-content .l-main-content__wbslist .table-body .row, .l-main-content .l-main-content__workTypelist .table-body .row {
@@ -11028,7 +11028,7 @@ body {
 }
 
 .l-main-content .l-main-content__wbslist .table-body .num-position, .l-main-content .l-main-content__workTypelist .table-body .num-position {
-  text-align: center;
+  text-align: end;
 }
 
 .l-main-content .l-main-content__wbslist .table-body .c-datePicker-days, .l-main-content .l-main-content__workTypelist .table-body .c-datePicker-days, .l-main-content .l-main-content__wbslist .table-body .c-datePicker-months, .l-main-content .l-main-content__workTypelist .table-body .c-datePicker-months {
@@ -11331,9 +11331,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .l-main-content .l-main-content__workTypelist .table-thead .row .col button {
@@ -11381,9 +11381,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .l-main-content .l-main-content__workTypelist .table-footer {
@@ -17440,7 +17440,7 @@ body {
 
 #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .s1, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .s1, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .s1, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .s1 {
   width: 6.8rem;
-  padding: 0;
+  padding-right: 1rem;
   max-height: 5.3rem;
 }
 
