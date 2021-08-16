@@ -1,21 +1,26 @@
 @charset "UTF-8";
 
-
-.modalCenter{
- position: absolute;
- left: 50%;
- top: 50%;
- -webkit-transform: translate(-50%,-50%);
- -moz-transform: translate(-50%,-50%);
- transform:translate(-50%,-50%);
+.modalCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-#notReachedtime .is-error-status .c-search-item__input::after {
-  color: #fb5b29;
-  content: "請填0~100之間的阿拉伯數字";
-  font-size: 0.8rem;
-  display: block;
-  margin-top: 0.2rem;
+#notReachedtime {
+  .is-error-status {
+    .c-search-item__input {
+      &::after {
+        color: #fb5b29 !important;
+        content: "請填0~100之間的阿拉伯數字";
+        font-size: 0.8rem;
+        display: block;
+        margin-top: 0.2rem;
+      }
+    }
+  }
 }
 
 /* Checkboxes only for disabled
@@ -27,12 +32,14 @@
 
 [type="checkbox"].filled-disabled + span:not(.lever):before,
 [type="checkbox"].filled-disabled + span:not(.lever):after {
-  content: '';
+  content: "";
   left: 0;
   position: absolute;
   /* .1s delay is for check animation */
-  -webkit-transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
-  transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+  -webkit-transition: border 0.25s, background-color 0.25s, width 0.2s 0.1s,
+    height 0.2s 0.1s, top 0.2s 0.1s, left 0.2s 0.1s;
+  transition: border 0.25s, background-color 0.25s, width 0.2s 0.1s,
+    height 0.2s 0.1s, top 0.2s 0.1s, left 0.2s 0.1s;
   z-index: 1;
 }
 
@@ -87,18 +94,21 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-[type="checkbox"].filled-disabled.tabbed:checked:focus + span:not(.lever):after {
+[type="checkbox"].filled-disabled.tabbed:checked:focus
+  + span:not(.lever):after {
   border-radius: 2px;
   background-color: #26a69a;
   border-color: #26a69a;
 }
 
-[type="checkbox"].filled-disabled:disabled:not(:checked) + span:not(.lever):before {
+[type="checkbox"].filled-disabled:disabled:not(:checked)
+  + span:not(.lever):before {
   background-color: transparent;
   border: 2px solid transparent;
 }
 
-[type="checkbox"].filled-disabled:disabled:not(:checked) + span:not(.lever):after {
+[type="checkbox"].filled-disabled:disabled:not(:checked)
+  + span:not(.lever):after {
   background-color: transparent;
   border: 2px solid #5a5a5a;
 }
@@ -112,10 +122,9 @@
   border-color: #0156a2;
 }
 
-
 .input-wbs-member {
-  font-size: 1.0rem;
-  padding: 0 2.0rem 0 0.5rem;
+  font-size: 1rem;
+  padding: 0 2rem 0 0.5rem;
   line-height: 20px;
   overflow-y: scroll;
 }
@@ -137,8 +146,20 @@
   white-space: nowrap;
   height: 37px;
   padding: 0.5rem 2rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
-  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(32, 215, 240, 0.5)),
+      color-stop(96.35%, rgba(9, 101, 186, 0))
+    ),
+    #0868bd;
+  background: linear-gradient(
+      180deg,
+      rgba(32, 215, 240, 0.5) 0%,
+      rgba(9, 101, 186, 0) 96.35%
+    ),
+    #0868bd;
   border-radius: 2.66rem;
   margin-left: -0.75rem;
   margin-right: 0.5rem;
@@ -149,8 +170,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #042340;
   font-size: 1.06rem;
   font-weight: 700;
@@ -162,11 +183,48 @@
   color: #042340;
 }
 
-.c-modal-chooseGroup .c-modal-content .c-modal-content__inputSpe .o-input input, .c-modal-chooseGroup .c-modal-content .c-modal-content__inputSpe .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-chooseGroup .c-modal-content .c-modal-content__inputSpe .hoursInput input, .c-modal-chooseGroup .c-modal-content .c-modal-content__inputSpe .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-chooseGroup .c-modal-content .c-modal-content__inputSpe .otherInput input, .c-modal-chooseGroup .c-modal-content .c-modal-content__inputSpe .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-chooseGroup .c-modal-content .c-modal-content__inputSpe .c-search-item__input input {
+.c-modal-chooseGroup .c-modal-content .c-modal-content__inputSpe .o-input input,
+.c-modal-chooseGroup
+  .c-modal-content
+  .c-modal-content__inputSpe
+  .c-writeHours-content__select
+  .hoursInput
+  input,
+.c-writeHours-content__select
+  .c-modal-chooseGroup
+  .c-modal-content
+  .c-modal-content__inputSpe
+  .hoursInput
+  input,
+.c-modal-chooseGroup
+  .c-modal-content
+  .c-modal-content__inputSpe
+  .c-writeHours-content__select
+  .otherInput
+  input,
+.c-writeHours-content__select
+  .c-modal-chooseGroup
+  .c-modal-content
+  .c-modal-content__inputSpe
+  .otherInput
+  input,
+.c-modal-chooseGroup
+  .c-modal-content
+  .c-modal-content__inputSpe
+  .c-search-list
+  .c-search-item
+  .c-search-item__input
+  input,
+.c-search-list
+  .c-search-item
+  .c-modal-chooseGroup
+  .c-modal-content
+  .c-modal-content__inputSpe
+  .c-search-item__input
+  input {
   background-color: #fff;
   margin: 0 0 0 1rem;
 }
-
 
 .c-dropdown-deptSelect .select-wrapper {
   height: 38px;
@@ -194,7 +252,7 @@
   padding-top: 4px;
   padding-right: 40px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .c-dropdown-deptSelect .select-wrapper .select-dropdown li {
@@ -239,8 +297,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c-dropdown-deptSelect .dropdown-content li span {
@@ -272,7 +330,11 @@
   width: 24rem;
 }
 
-.c-modal-department .c-modal-features .col .c-dropdown-planContentSpe .select-dropdown {
+.c-modal-department
+  .c-modal-features
+  .col
+  .c-dropdown-planContentSpe
+  .select-dropdown {
   width: 100%;
 }
 
@@ -302,7 +364,7 @@
   padding-top: 4px;
   padding-right: 40px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .c-dropdown-planContentSpe .select-wrapper .select-dropdown li {
@@ -318,7 +380,11 @@
   border-bottom: 0;
 }
 
-.c-dropdown-planContentSpe .select-wrapper .select-dropdown li .optgroup-option {
+.c-dropdown-planContentSpe
+  .select-wrapper
+  .select-dropdown
+  li
+  .optgroup-option {
   padding-left: 0;
 }
 
@@ -347,8 +413,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c-dropdown-planContentSpe .dropdown-content li span {
@@ -385,7 +451,6 @@
   color: #8495a4;
 }
 
-
 .mobile-div-hide-down {
   position: fixed;
   bottom: -100%;
@@ -418,16 +483,16 @@
 
 .drag-up {
   -webkit-animation: dragup ease 0.2s 1;
-          animation: dragup ease 0.2s 1;
+  animation: dragup ease 0.2s 1;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   background-color: #ffccbc !important;
 }
 .drag-down {
   -webkit-animation: dragdown ease 0.2s 1;
-          animation: dragdown ease 0.2s 1;
+  animation: dragdown ease 0.2s 1;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   background-color: #dcedc8 !important;
 }
 @-webkit-keyframes dragup {
@@ -465,4 +530,29 @@
     margin-bottom: 60px;
     margin-top: 10px;
   }
+}
+// modify.txt
+.c-dropdown-departmentCheck .c-dropdown__modal .c-dropdown__content__height {
+  position: relative;
+  top: 5px;
+  height: 230px;
+  width: 250px;
+  overflow-y: scroll;
+}
+
+#todo
+  .change-card-to-list
+  .l-main-content-item
+  .l-main-content-item__listGroup
+  .c-card-alertPlan
+  .c-card__item
+  .c-card__item__footer
+  .c-card__item__content__list
+  .list__item__percent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-end;
 }

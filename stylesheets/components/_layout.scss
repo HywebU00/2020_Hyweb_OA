@@ -1275,6 +1275,10 @@ body {
         button {
           display: flex;
           align-items: center;
+
+          &:hover {
+            background-color: $hyweb-lighblue;
+          }
         }
 
         .table-body-item__member__name {
@@ -1319,6 +1323,7 @@ body {
     .deleteBtn-position {
       display: flex;
       justify-content: space-between;
+
       align-items: center;
       span {
         display: inline-block;
@@ -1326,6 +1331,7 @@ body {
         color: $gray3;
       }
       button {
+        padding: 0.3rem 0.5rem;
         &:hover {
           background-color: $hyweb-lighblue;
         }
@@ -1361,7 +1367,10 @@ body {
     //min-height: calc(100% - 50px);
 
     .c-writeHours-content {
-      .is-error-status {
+      // .is-error-status {
+      //   padding-bottom: 1.3rem;
+      // }
+      .is-error-number {
         padding-bottom: 1.3rem;
       }
     }
