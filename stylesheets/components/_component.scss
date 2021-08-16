@@ -486,7 +486,8 @@
       color: $gray3;
       font-size: $p;
       font-weight: 600;
-      padding: 0.5rem;
+      // padding: 0.5rem;
+      padding-left: 0;
     }
 
     div {
@@ -552,7 +553,7 @@
 
       .c-card__tag__input {
         //margin-left: 55%;
-        margin-right: 1rem;
+        margin-right: 1.5rem;
         margin-top: 0.5rem; //0.2rem;
         form {
           p {
@@ -640,13 +641,15 @@
       font-size: $h2;
       font-weight: 700;
       letter-spacing: 0.02rem;
+      width: 120px;
+      text-align: end;
     }
 
     .c-card__item__content__list {
       .list__item {
         align-items: center;
         .list__item__num {
-          text-align: center;
+          text-align: end;
           font-size: $p;
         }
       }
@@ -661,7 +664,6 @@
     .c-card__tag {
       .c-card__tag__num {
         .c-card__tag__input {
-          // margin-left: 55%;
           form {
             p {
               span {
@@ -1771,6 +1773,7 @@
             align-items: center;
             width: 90%;
             height: 3.5rem;
+            margin: 0 auto;
             div {
               width: 20%;
               text-align: center;
@@ -1819,13 +1822,11 @@
           flex-wrap: wrap;
           align-content: flex-start;
           .chooseMember-tag {
-            // background-color: $sec3;
-            // margin-bottom: 0.5rem;
-            // border-radius: 0.53rem;
             border-bottom: 1px solid $sec2;
             display: flex;
             align-items: center;
             height: 3.5rem;
+            margin: 0 auto;
             width: 90%;
             div {
               width: 20%;
@@ -2372,10 +2373,15 @@
 
     .accordion-body__title {
       padding: 0;
+      margin-left: 0.8rem;
+      margin-right: 0.8rem;
     }
     .accordion-body {
       .accordion-body__item {
         padding: 0.8rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -2414,7 +2420,6 @@
 
     .accordion-body__item {
       margin-bottom: 0.66rem;
-
       .col {
         font-size: $p;
       }
@@ -2549,7 +2554,7 @@
     width: 3.66rem;
 
     .select-dropdown {
-      padding-right: 0rem;
+      padding-right: 1rem;
       padding-left: 1rem;
     }
 
@@ -2690,6 +2695,8 @@
   .c-dropdown__content {
     [type="checkbox"] + span:not(.lever) {
       padding-left: 25px;
+      line-height: 18px;
+      padding-top: 3px;
     }
 
     [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
@@ -3554,8 +3561,7 @@
   .is-active {
     display: block;
   }
-
-  .is-error-status {
+  .is-error {
     .col {
       .input-title {
         color: $danger;
@@ -3598,6 +3604,49 @@
       }
     }
   }
+  // .is-error-status {
+  //   .col {
+  //     .input-title {
+  //       color: $danger;
+  //     }
+
+  //     .select-wrapper {
+  //       background-color: #fff;
+  //       border: 1px solid $danger;
+  //     }
+  //   }
+
+  //   .hoursInput {
+  //     input {
+  //       border: 1px solid $danger;
+  //       border-bottom: 1px solid $danger;
+  //       box-sizing: border-box;
+  //     }
+
+  //     input[type="text"]:not(.browser-default) {
+  //       border-bottom: 1px solid $danger;
+  //       background-color: #fff;
+  //     }
+
+  //     position: relative;
+
+  //     &:after {
+  //       position: absolute;
+  //       white-space: nowrap;
+  //       color: $danger;
+  //       font-size: 12px;
+  //       padding-top: 0.01rem;
+  //       margin-top: 0.2rem;
+  //       content: "僅能填寫至小數點第一位及阿拉伯數字";
+  //     }
+  //   }
+
+  //   .otherInput {
+  //     .input-title {
+  //       color: $gray1;
+  //     }
+  //   }
+  // }
 }
 
 .c-writeHours-content__select {
