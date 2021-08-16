@@ -10915,6 +10915,7 @@ body {
           align-items: center;
   font-weight: 700;
   cursor: pointer;
+  padding: 0;
 }
 
 .l-main-content .l-main-content__wbslist .table-thead .row .num-position button img, .l-main-content .l-main-content__workTypelist .table-thead .row .num-position button img {
@@ -11236,9 +11237,9 @@ body {
 }
 
 .l-main-content .l-main-content__wbslist .table-footer .row .num-position, .l-main-content .l-main-content__workTypelist .table-footer .row .num-position {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .l-main-content .l-main-content-pagiation {
@@ -11336,6 +11337,12 @@ body {
           justify-content: flex-end;
 }
 
+.l-main-content .l-main-content__workTypelist .table-thead .row .col:first-child, .l-main-content .l-main-content__workTypelist .table-thead .row .col:nth-child(2) {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .l-main-content .l-main-content__workTypelist .table-thead .row .col button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11348,6 +11355,7 @@ body {
           align-items: center;
   font-weight: 700;
   cursor: pointer;
+  padding: 0;
 }
 
 .l-main-content .l-main-content__workTypelist .table-thead .row .col img {
@@ -11372,6 +11380,12 @@ body {
 
 .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .col span, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .col span {
   color: #8495a4;
+}
+
+.l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .col:first-child, .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .col:first-child, .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .col:nth-child(2), .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .col:nth-child(2) {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .l-main-content .l-main-content__workTypelist .table-body .row .col {
