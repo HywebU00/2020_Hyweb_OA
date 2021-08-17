@@ -10309,6 +10309,12 @@ body {
   }
 }
 
+.l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__select {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__select .col {
   padding-left: 0;
 }
@@ -16102,6 +16108,10 @@ body {
   position: relative;
 }
 
+.c-writeHours-content .is-error.hoursInput div {
+  margin-bottom: 0.52rem;
+}
+
 .c-writeHours-content .is-error.hoursInput input {
   border: 1px solid #fb5b29;
   border-bottom: 1px solid #fb5b29;
@@ -16120,7 +16130,7 @@ body {
   color: #fb5b29;
   font-size: 12px;
   padding-top: 0.01rem;
-  margin-top: 0.2rem;
+  margin-top: -0.2rem;
   content: "僅能填寫至小數點第一位及阿拉伯數字";
 }
 
@@ -16137,7 +16147,7 @@ body {
 }
 
 .c-writeHours-content__select div {
-  padding: 0 0.3%;
+  padding: 0 0.1rem;
 }
 
 .c-writeHours-content__select .input-title {

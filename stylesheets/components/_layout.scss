@@ -274,7 +274,7 @@ body {
 
       .c-writeHours-content__select {
         @extend .c-writeHours-content__item;
-
+        align-items: flex-start;
         .col {
           padding-left: 0;
           input[type="text"] {
@@ -1383,9 +1383,6 @@ body {
     //min-height: calc(100% - 50px);
 
     .c-writeHours-content {
-      // .is-error-status {
-      //   padding-bottom: 1.3rem;
-      // }
       .is-error-number {
         padding-bottom: 1.3rem;
       }
