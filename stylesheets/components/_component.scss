@@ -3577,6 +3577,9 @@
     }
   }
   .is-error.hoursInput {
+    div {
+      margin-bottom: 0.52rem;
+    }
     input {
       border: 1px solid $danger;
       border-bottom: 1px solid $danger;
@@ -3596,7 +3599,7 @@
       color: $danger;
       font-size: 12px;
       padding-top: 0.01rem;
-      margin-top: 0.2rem;
+      margin-top: -0.2rem;
       content: "僅能填寫至小數點第一位及阿拉伯數字";
     }
   }
@@ -3656,7 +3659,7 @@
   border-bottom: 1px solid $gray3;
 
   div {
-    padding: 0 0.3%;
+    padding: 0 0.1rem; //0 0.3%;
   }
 
   .input-title {
