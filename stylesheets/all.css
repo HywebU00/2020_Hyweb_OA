@@ -24229,7 +24229,7 @@ html {
 }
 
 .tooltip-win-small {
-  width: 80% !important;
+  width: 100% !important;
   word-break: break-all !important;
   padding-left: 8px !important;
   padding-right: 5px !important;
