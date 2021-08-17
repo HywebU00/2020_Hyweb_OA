@@ -3509,9 +3509,14 @@
       font-family: $english-font;
       display: flex;
       align-items: flex-end;
-
       font-weight: 700;
-
+      @include Ipad11 {
+        font-size: 3rem;
+        span {
+          font-size: 2.5rem;
+          padding-bottom: 0;
+        }
+      }
       span {
         font-size: $writeHours-title-hours-s;
         padding-bottom: 5%;
@@ -3561,47 +3566,43 @@
   .is-active {
     display: block;
   }
-  .is-error {
-    .col {
-      .input-title {
-        color: $danger;
-      }
-
-      .select-wrapper {
-        background-color: #fff;
-        border: 1px solid $danger;
-      }
+  .is-error.col {
+    .input-title {
+      color: $danger;
     }
 
-    .hoursInput {
-      input {
-        border: 1px solid $danger;
-        border-bottom: 1px solid $danger;
-        box-sizing: border-box;
-      }
-
-      input[type="text"]:not(.browser-default) {
-        border-bottom: 1px solid $danger;
-        background-color: #fff;
-      }
-
-      position: relative;
-
-      &:after {
-        position: absolute;
-        white-space: nowrap;
-        color: $danger;
-        font-size: 12px;
-        padding-top: 0.01rem;
-        margin-top: 0.2rem;
-        content: "僅能填寫至小數點第一位及阿拉伯數字";
-      }
+    .select-wrapper {
+      background-color: #fff;
+      border: 1px solid $danger;
+    }
+  }
+  .is-error.hoursInput {
+    input {
+      border: 1px solid $danger;
+      border-bottom: 1px solid $danger;
+      box-sizing: border-box;
     }
 
-    .otherInput {
-      .input-title {
-        color: $gray1;
-      }
+    input[type="text"]:not(.browser-default) {
+      border-bottom: 1px solid $danger;
+      background-color: #fff;
+    }
+
+    position: relative;
+
+    &:after {
+      position: absolute;
+      white-space: nowrap;
+      color: $danger;
+      font-size: 12px;
+      padding-top: 0.01rem;
+      margin-top: 0.2rem;
+      content: "僅能填寫至小數點第一位及阿拉伯數字";
+    }
+  }
+  .is-error .otherInput {
+    .input-title {
+      color: $gray1;
     }
   }
   // .is-error-status {
@@ -3689,6 +3690,9 @@
   button {
     margin-left: 0.8%;
     margin-top: 1.6rem;
+    @include Ipad11 {
+      padding: 0 10px;
+    }
   }
 
   input[type="text"]:not(.browser-default) {

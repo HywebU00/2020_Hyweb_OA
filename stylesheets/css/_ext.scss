@@ -453,7 +453,7 @@
 
 .mobile-div-hide-down {
   position: fixed;
-  bottom: -100%;
+  bottom: -200%;
   z-index: 101;
   transition: ease 0.6s;
 }
@@ -467,7 +467,7 @@
 
 .mobile-div-hide-right {
   position: fixed;
-  right: -100%;
+  right: -200%;
   bottom: 0%;
   z-index: 102;
   transition: ease 0.6s;
@@ -555,4 +555,19 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-end;
+}
+///tooltip樣式
+
+.tooltip-win-small {
+  width: 80% !important;
+  word-break: break-all !important;
+  padding-left: 8px !important;
+  padding-right: 5px !important;
+  font-size: 1rem !important;
+  color: $gray1;
+  background-color: #fff !important;
+  opacity: 1;
+  border: 1px solid #bad4e5;
+  box-shadow: 0px 2px 3px 0px rgba(1, 27, 49, 0.2) !important;
+  border-radius: 10px !important;
 }

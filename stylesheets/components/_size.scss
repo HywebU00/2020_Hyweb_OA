@@ -1,29 +1,34 @@
 @mixin ExtraLarge {
-	@media (max-width: 1440px) {
-		@content;
-	}
+  @media (max-width: 1440px) {
+    @content;
+  }
 }
 
 @mixin Max_Large {
-	@media (max-width: 1200px) {
-		@content;
-	}
+  @media (max-width: 1200px) {
+    @content;
+  }
 }
 
 @mixin Large {
-	@media (max-width: 992px) {
-		@content;
-	}
+  @media (max-width: 992px) {
+    @content;
+  }
 }
 
 @mixin Medium {
-	@media (max-width: 768px) {
-		@content;
-	}
+  @media (max-width: 768px) {
+    @content;
+  }
 }
 
 @mixin Small {
-	@media (max-width: 576px) {
-		@content;
-	}
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+@mixin Ipad11 {
+  @media (max-width: 836px) {
+    @content;
+  }
 }
