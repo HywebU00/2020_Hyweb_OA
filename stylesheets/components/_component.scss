@@ -105,17 +105,39 @@
   @extend .c-card-manhourSofar;
 
   a {
+    // display: flex;
+    // height: 100%;
+    // flex-wrap: wrap;
+    // align-content: space-between;
+
     h2 {
       color: $gray1;
+      // width: 100%;
     }
 
     h3 {
       color: $gray1;
+      // width: 100%;
     }
 
     .c-card__item__time {
       color: $gray1;
     }
+    // .c-card__userInformation {
+    //   width: 100%;
+    //   height: 28px;
+    //   h3 {
+    //     &:last-child {
+    //       text-align: end;
+    //     }
+    //   }
+    // }
+    // .c-card__content {
+    //   width: 100%;
+    //   .c-card__item {
+    //     margin-top: 0;
+    //   }
+    // }
   }
 }
 
@@ -748,9 +770,8 @@
     justify-content: space-between;
 
     div {
-      //line-height: 1.6rem;
       line-height: 1.5rem;
-      //@include ellipsisText;
+      text-align: start;
     }
 
     .c-card-lablePerson-item__btn {
@@ -1220,6 +1241,17 @@
       font-size: $h2;
       font-weight: 700;
       margin: 0.8rem 0 0.8rem 0;
+    }
+    button {
+      &:hover {
+        border-radius: 24px;
+        background-color: $hyweb-lighblue;
+      }
+    }
+    .o-input {
+      input {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -2803,6 +2835,7 @@
     height: 185px;
     overflow-y: scroll;
     padding-left: 0.75rem;
+    position: relative;
   }
 
   .c-dropdown__content {

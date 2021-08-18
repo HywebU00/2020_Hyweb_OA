@@ -876,6 +876,7 @@ body {
       }
 
       .table-body__subtitle {
+        background: #edf2f5;
         .o-input-textarea {
           textarea {
             background-color: $sec2;
@@ -896,6 +897,7 @@ body {
         .row {
           padding-top: 0.3rem;
           padding-bottom: 0.3rem;
+          margin-left: 0;
         }
         .table-body__item__project {
           display: flex;
@@ -911,6 +913,9 @@ body {
           .table-body__item__project__title {
             padding: 0 0.75rem;
           }
+        }
+        .table-body__item__total {
+          margin-left: auto;
         }
       }
 
@@ -1073,8 +1078,8 @@ body {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      position: relative;
-      z-index: -1;
+      // position: relative;
+      // z-index: -1;
       .c-dropdown-page {
         margin: 0 0.5rem;
       }
@@ -1327,7 +1332,6 @@ body {
       min-height: 3.733rem;
       padding: 0.3rem 0 0.3rem 1.5rem; // 0.83rem 0 0.83rem 1.5rem;
       height: auto;
-      //height: 3.733rem; //60px;
       border-bottom: 1px solid $gray-blue;
       display: flex;
       align-items: center;
@@ -1336,7 +1340,13 @@ body {
         border-radius: 2.666rem; //40px;
       }
     }
-
+    a {
+      .row {
+        &:hover {
+          background-color: #eee;
+        }
+      }
+    }
     .deleteBtn-position {
       display: flex;
       justify-content: space-between;

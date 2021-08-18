@@ -34,7 +34,9 @@
       }
     }
   }
-
+  .l-main-content-item {
+    justify-content: flex-start;
+  }
   .l-main-content-item__listTitle {
     height: 4rem;
   }
