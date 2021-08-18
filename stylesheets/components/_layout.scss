@@ -1073,7 +1073,8 @@ body {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-
+      position: relative;
+      z-index: -1;
       .c-dropdown-page {
         margin: 0 0.5rem;
       }
