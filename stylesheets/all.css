@@ -11255,6 +11255,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: -1;
 }
 
 .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageSelect .c-dropdown-page {
@@ -12162,6 +12164,7 @@ body {
 
 .c-card, .c-card-manhourSofar, .c-card-manhourSearch, .c-card-percent, .c-card-percentCheck, .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan, .c-card-department, .c-card-lableGroup, .c-accordion-general, .c-toast-uploadSuccess, .c-toast-uploadFailure, .c-toast-join, .c-toast-joinCancel, .c-card-login {
   border-radius: 0.66rem;
+  background: #fff;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   padding: 1.32rem;
@@ -16370,11 +16373,11 @@ body {
 }
 
 .c-card-login .c-card-login__content .login__eyeClose {
-  background-image: url(../img/o-hide.svg);
+  background: url(../img/o-hide.svg) no-repeat;
 }
 
 .c-card-login .c-card-login__content .login__eyeOpen {
-  background-image: url(../img/o-perspective.svg);
+  background: url(../img/o-perspective.svg) no-repeat;
 }
 
 .c-card-login .o-password-btn {
@@ -24240,8 +24243,25 @@ html {
 }
 
 .tooltip-win {
+  width: inherit !important;
+  word-break: break-all !important;
+  white-space: pre-wrap !important;
+  padding-left: 8px !important;
+  padding-right: 5px !important;
+  font-size: 1rem !important;
+  color: #042340 !important;
+  background-color: #fff !important;
+  opacity: 1 !important;
+  border: 1px solid #bad4e5 !important;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(1, 27, 49, 0.2) !important;
+          box-shadow: 0px 2px 3px 0px rgba(1, 27, 49, 0.2) !important;
+  border-radius: 10px !important;
+}
+
+.tooltip-win-full {
   width: 100% !important;
   word-break: break-all !important;
+  white-space: pre-wrap !important;
   padding-left: 8px !important;
   padding-right: 5px !important;
   font-size: 1rem !important;

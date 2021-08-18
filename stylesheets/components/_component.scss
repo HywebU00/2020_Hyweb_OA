@@ -8,6 +8,7 @@
 }
 .c-card {
   border-radius: $card-radius;
+  background: #fff;
   box-shadow: $box-shadow;
   padding: $pd-2;
   width: 17%; //274px;
@@ -3865,11 +3866,11 @@
     }
 
     .login__eyeClose {
-      background-image: url(../img/o-hide.svg);
+      background: url(../img/o-hide.svg) no-repeat;
     }
 
     .login__eyeOpen {
-      background-image: url(../img/o-perspective.svg);
+      background: url(../img/o-perspective.svg) no-repeat;
     }
   }
 
