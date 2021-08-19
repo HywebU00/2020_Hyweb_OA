@@ -28,6 +28,7 @@
 }
 
 .c-card-manhourSofar {
+  position: relative;
   @extend .c-card;
   width: calc(20% - 0.7rem);
   @include Max_Large {
@@ -36,8 +37,10 @@
   @include Large {
     width: calc(33.3% - 0.7rem);
   }
-
+  min-height: 230px;
   a {
+    width: 100%;
+    height: 100%;
     color: $gray1;
     .c-card-manhourSofar__title {
       display: flex;
@@ -64,10 +67,16 @@
     border-bottom: 1px solid #bdbdbd;
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    width: calc(100% - 2.666rem);
+    bottom: 6rem;
   }
 
   .c-card__content {
     margin-top: $m;
+    position: absolute;
+    width: calc(100% - 2.666rem);
+    bottom: 1.3rem;
   }
 
   .c-card__item {
@@ -103,60 +112,45 @@
 
 .c-card-manhourSearch {
   @extend .c-card-manhourSofar;
-
+  min-height: 200px;
   a {
-    // display: flex;
-    // height: 100%;
-    // flex-wrap: wrap;
-    // align-content: space-between;
-
+    min-height: 200px;
     h2 {
       color: $gray1;
-      // width: 100%;
     }
 
     h3 {
       color: $gray1;
-      // width: 100%;
     }
 
     .c-card__item__time {
       color: $gray1;
     }
-    // .c-card__userInformation {
-    //   width: 100%;
-    //   height: 28px;
-    //   h3 {
-    //     &:last-child {
-    //       text-align: end;
-    //     }
-    //   }
-    // }
-    // .c-card__content {
-    //   width: 100%;
-    //   .c-card__item {
-    //     margin-top: 0;
-    //   }
-    // }
+    .c-card__userInformation {
+      bottom: 3rem;
+    }
   }
 }
 
 .c-card-percent {
   @extend .c-card-manhourSofar;
   width: calc(14.285% - 0.7rem);
-  @media (max-width: 1750px) {
+  @media (max-width: 1830px) {
+    width: calc(100% / 6 - 0.7rem);
+  }
+  @media (max-width: 1620px) {
     width: calc(20% - 0.7rem);
   }
-  @media (max-width: 1520px) {
-    width: calc(20% - 0.7rem);
+  @media (max-width: 1400px) {
+    width: calc(25% - 0.7rem);
   }
   @media (max-width: 1300px) {
-    width: calc(25% - 0.7rem);
+    width: calc(33.3% - 0.7rem);
   }
   @include Large {
     width: calc(33.3% - 0.7rem);
   }
-
+  min-height: 264px;
   a {
     h2 {
       color: $gray1;
@@ -170,14 +164,15 @@
       color: $gray1;
     }
   }
-
+  .c-card__userInformation {
+    bottom: 8.5rem;
+  }
   .c-card__item {
     justify-content: center;
     align-items: end;
 
     .c-card__item__title {
       width: 50%;
-      //text-align: end;
       line-height: 1.46rem;
       padding-right: 0.25rem;
     }
@@ -217,7 +212,7 @@
   @extend .c-card-manhourSofar;
   padding: 0;
   width: calc(20% - 1rem);
-  min-width: auto;
+  min-height: 200px;
   max-width: auto;
   @include ExtraLarge {
     width: calc(25% - 1rem);
@@ -247,7 +242,10 @@
   a {
     color: $gray1;
     display: block;
-    padding: 1.333rem; //20px;
+    padding: 1.333rem;
+    position: relative;
+    height: 100%;
+    min-height: 200px;
   }
   a:active {
     color: $gray1 !important;
@@ -283,16 +281,30 @@
     margin-top: 0.5rem;
     justify-content: flex-start;
     line-height: 1.66rem;
+    position: absolute;
+    width: calc(100% - 2.666rem);
+    bottom: 3.2rem;
+  }
+  .c-card__content {
+    position: absolute;
+    width: calc(100% - 2.666rem);
+    bottom: 1rem;
+    .c-card__item__time {
+      right: 0;
+    }
   }
   .c-card__item__title {
     display: inline-block;
     margin-bottom: 0.3rem;
+    white-space: nowrap;
   }
 }
 
 .c-card-planClosed {
   @extend .c-card-planPerson;
-
+  a {
+    min-height: 210px;
+  }
   .c-card__userInformation {
     margin: 0;
     line-height: 30px;
@@ -315,6 +327,8 @@
   .c-card__date {
     margin-top: 10px;
     color: $gray3;
+    position: absolute;
+    bottom: 5rem;
   }
 }
 
@@ -399,6 +413,7 @@
   @include Large {
     width: calc(50% - 0.7rem);
   }
+  min-height: 130px;
 
   h2 {
     font-family: $english-font;
@@ -410,6 +425,7 @@
 
   .c-card__userInformation {
     margin-top: 15px;
+    bottom: 4rem;
   }
 
   .c-card__content {
@@ -423,9 +439,10 @@
   max-width: 1000px;
   display: flex;
   padding: 0px;
-
+  min-height: 180px;
   a {
     padding: 0px;
+    min-height: 180px;
     .is-changeBackground {
       .c-card__tag__num {
         div {
@@ -682,7 +699,7 @@
 
 .c-card-planReport-danger {
   @extend .c-card-planReport;
-
+  min-height: 180px;
   .c-card__item__title {
     .c-card__tag {
       .c-card__tag__num {
@@ -710,6 +727,12 @@
   }
 }
 
+.c-card-planReport-checkbox {
+  min-height: 180px;
+  a {
+    min-height: 180px;
+  }
+}
 .c-card-alertPlan {
   @extend .c-card-planReport-danger;
 
@@ -3822,8 +3845,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-
-    margin-bottom: 2.5rem;
+    height: 5rem;
+    margin-bottom: 2rem;
 
     img {
       width: 50%;
