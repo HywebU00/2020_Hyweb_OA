@@ -135,14 +135,17 @@
 .c-card-percent {
   @extend .c-card-manhourSofar;
   width: calc(14.285% - 0.7rem);
-  @media (max-width: 1750px) {
+  @media (max-width: 1830px) {
+    width: calc(100% / 6 - 0.7rem);
+  }
+  @media (max-width: 1620px) {
     width: calc(20% - 0.7rem);
   }
-  @media (max-width: 1520px) {
-    width: calc(20% - 0.7rem);
+  @media (max-width: 1400px) {
+    width: calc(25% - 0.7rem);
   }
   @media (max-width: 1300px) {
-    width: calc(25% - 0.7rem);
+    width: calc(33.3% - 0.7rem);
   }
   @include Large {
     width: calc(33.3% - 0.7rem);

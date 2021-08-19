@@ -12336,21 +12336,27 @@ body {
   min-height: 264px;
 }
 
-@media (max-width: 1750px) {
+@media (max-width: 1830px) {
+  .c-card-percent, .c-card-percentCheck {
+    width: calc(100% / 6 - 0.7rem);
+  }
+}
+
+@media (max-width: 1620px) {
   .c-card-percent, .c-card-percentCheck {
     width: calc(20% - 0.7rem);
   }
 }
 
-@media (max-width: 1520px) {
+@media (max-width: 1400px) {
   .c-card-percent, .c-card-percentCheck {
-    width: calc(20% - 0.7rem);
+    width: calc(25% - 0.7rem);
   }
 }
 
 @media (max-width: 1300px) {
   .c-card-percent, .c-card-percentCheck {
-    width: calc(25% - 0.7rem);
+    width: calc(33.3% - 0.7rem);
   }
 }
 
