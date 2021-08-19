@@ -77,18 +77,18 @@
 }
 .ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single):not(.ant-picker-cell-range-end)
   .ant-picker-cell-inner {
-  border-radius: 5px;
+  border-radius: 12px;
   background: $hyweb-blue;
 }
 .ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single):not(.ant-picker-cell-range-start)
   .ant-picker-cell-inner {
-  border-radius: 5px;
+  border-radius: 8px;
   background: $hyweb-blue;
 }
 .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner {
   &::before {
     border: 1px solid $hyweb-blue;
-    border-radius: 50%;
+    // border-radius: 50%;
   }
 }
 .ant-picker-cell {
@@ -96,7 +96,7 @@
     height: 0px !important;
   }
   .ant-picker-cell-inner {
-    border-radius: 12px;
+    border-radius: 8px;
   }
 }
 .ant-picker-header {
@@ -143,7 +143,7 @@
 .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
 .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
   background: $hy-background;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 .ant-picker-cell-in-view {
   color: $gray1;
@@ -158,7 +158,7 @@
 .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
 .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
   background: $hy-background !important;
-  border-radius: 50%;
+  // border-radius: 50%;
 }
 .ant-picker-today-btn {
   color: $hyweb-blue;

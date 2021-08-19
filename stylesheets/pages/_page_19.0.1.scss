@@ -25,6 +25,9 @@
 
     .c-card-manhourSofar {
       margin-bottom: 0rem;
+      min-height: auto;
+      height: 4rem;
+
       &:hover {
         transition: all 0;
         transform: translateY(0px) translateX(0px);
@@ -36,6 +39,8 @@
       }
 
       .c-card__userInformation {
+        position: relative;
+        bottom: 0;
         h3 {
           font-family: $font-family;
           line-height: 1rem;
@@ -48,6 +53,8 @@
         margin-top: 0;
       }
       .js-c-card__appendUserName {
+        position: relative;
+        bottom: 0;
         h3 {
           display: flex;
           justify-content: space-between;
@@ -59,6 +66,10 @@
           }
         }
       }
+      .c-card__content {
+        position: relative;
+        bottom: 0;
+      }
     }
 
     .l-main-content-item {
@@ -68,6 +79,11 @@
         height: 3.733rem; //4rem;
         margin-bottom: 0;
         cursor: default;
+      }
+    }
+    .c-card-manhourSearch {
+      a {
+        min-height: auto;
       }
     }
   }

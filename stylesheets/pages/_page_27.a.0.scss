@@ -51,12 +51,21 @@
         height: 3.733rem; //4rem;
         margin-bottom: 0;
         cursor: default;
-
+        min-height: auto;
+        a {
+          min-height: auto;
+        }
         div {
           cursor: default;
         }
+        .c-card__content {
+          position: relative;
+          bottom: 0;
+        }
         .c-card__userInformation {
           margin-top: 0;
+          position: relative;
+          bottom: 0;
         }
       }
     }
@@ -259,6 +268,11 @@
   .change-card-to-list {
     .c-card-department {
       cursor: default;
+      min-height: auto;
+      .c-card__content {
+        position: relative;
+        bottom: 0;
+      }
     }
 
     .c-card-manhourSearch {
@@ -352,7 +366,7 @@
 
     .c-card-manhourSearch {
       height: 3.733rem; //4rem;
-
+      min-height: auto;
       &:hover {
         transition: all 0;
         transform: translateY(0px) translateX(0px);
@@ -362,11 +376,36 @@
         transition: all 0;
         transform: translateY(0px) translateX(0px);
       }
+      a {
+        min-height: auto;
+      }
+      .c-card__userInformation {
+        position: relative;
+        bottom: 0;
+      }
+      .c-card__content {
+        position: relative;
+        bottom: 0;
+      }
     }
-
+    #support_department {
+      .c-card-department {
+        min-height: auto;
+        .c-card__content {
+          position: relative;
+          bottom: 0;
+        }
+      }
+    }
     #support_people {
       .c-card-manhourSofar__Resign {
         display: none;
+      }
+      .c-card-manhourSearch {
+        min-height: auto;
+        a {
+          min-height: auto;
+        }
       }
       .js-c-card__userNumber {
         display: none;
@@ -383,6 +422,12 @@
       }
       .c-card__userInformation {
         margin-top: 0;
+        position: relative;
+        bottom: 0;
+      }
+      .c-card__content {
+        position: relative;
+        bottom: 0;
       }
       .js-c-card__appendUserName {
         h3 {
@@ -407,7 +452,9 @@
         }
       }
       .c-card-planPerson {
+        min-height: auto;
         a {
+          min-height: auto;
           h2 {
             width: 60%;
           }
@@ -454,7 +501,7 @@
     .c-card-percent {
       margin-bottom: 1rem;
       cursor: default;
-
+      min-height: auto;
       div {
         cursor: default;
       }
@@ -479,6 +526,12 @@
       }
       .c-card__userInformation {
         margin-top: 0;
+        position: relative;
+        bottom: 0;
+      }
+      .c-card__content {
+        position: relative;
+        bottom: 0;
       }
     }
 
