@@ -12587,6 +12587,7 @@ body {
   position: relative;
   width: 100%;
   cursor: pointer;
+  bottom: 0;
 }
 
 .c-card-planHotkey .c-card__content .c-card__addIcon, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__content .c-card__addIcon {
