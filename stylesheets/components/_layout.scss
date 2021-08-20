@@ -386,7 +386,7 @@ body {
   .l-main-content-title {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     font-size: $p;
     margin-bottom: 0.5rem;
 
