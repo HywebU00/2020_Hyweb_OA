@@ -12578,7 +12578,7 @@ body {
   padding: 0;
   width: 100%;
   max-width: 22rem;
-  min-width: auto;
+  min-height: auto;
 }
 
 .c-card-planHotkey .c-card__content, .l-mobile-footer-worksheet .c-card-workHotkey .c-card__content {
@@ -14656,6 +14656,12 @@ body {
 
 .c-modal-personAll .c-modal-features .c-modal-features__btn, .c-modal-personCalendar .c-modal-features .c-modal-features__btn, .c-modal-department .c-modal-features .c-modal-features__btn {
   padding: 0 1.33rem;
+}
+
+.c-modal-personAll .c-modal-features .c-modal-features__btn img:hover, .c-modal-personCalendar .c-modal-features .c-modal-features__btn img:hover, .c-modal-department .c-modal-features .c-modal-features__btn img:hover {
+  -webkit-filter: opacity(0.6);
+          filter: opacity(0.6);
+  cursor: pointer;
 }
 
 .c-modal-personAll .c-modal-content__sidebar, .c-modal-personCalendar .c-modal-content__sidebar, .c-modal-department .c-modal-content__sidebar {
@@ -24677,8 +24683,36 @@ html {
   padding: 0 6px;
 }
 
+.ant-picker-month-panel {
+  width: 200px !important;
+}
+
 .ant-picker-month-panel .ant-picker-content {
   height: 200px !important;
+}
+
+.ant-picker-month-panel .ant-picker-content td {
+  padding-top: 0.6rem;
+}
+
+.ant-picker-month-panel .ant-picker-cell .ant-picker-cell-inne {
+  height: 30px;
+}
+
+.ant-picker-month-panel .ant-picker-cell::before {
+  height: 30px;
+}
+
+.ant-picker-year-panel {
+  width: 250px !important;
+}
+
+.ant-picker-year-panel .ant-picker-content {
+  height: 200px;
+}
+
+.ant-picker-decade-panel {
+  width: 300px !important;
 }
 
 .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner,
@@ -24686,7 +24720,7 @@ html {
 .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
   background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
-  border-radius: 8px;
+  border-radius: 8px !important;
 }
 
 .ant-picker-cell-in-view {

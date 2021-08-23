@@ -337,7 +337,7 @@
   padding: 0;
   width: 100%;
   max-width: 22rem;
-  min-width: auto;
+  min-height: auto;
 
   .c-card__content {
     margin-top: 0px;
@@ -2071,13 +2071,18 @@
     }
     .c-modal-features__btn {
       padding: 0 1.33rem;
+      img {
+        &:hover {
+          filter: opacity(0.6);
+          cursor: pointer;
+        }
+      }
     }
   }
 
   .c-modal-content__sidebar {
     padding: 1rem 1rem 1rem 2rem;
     background-color: $sec3;
-
     height: 100%;
     overflow-y: scroll;
 
