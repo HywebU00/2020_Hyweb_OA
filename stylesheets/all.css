@@ -10475,6 +10475,7 @@ body {
           align-items: flex-start;
   font-size: 1.06rem;
   margin-bottom: 0.5rem;
+  width: 100%;
 }
 
 .l-main-content .l-main-content-title .l-main-content-text, .l-main-content .l-main-content-data .l-main-content-text, .l-main-content .l-main-content-between-title .l-main-content-text {
@@ -10801,7 +10802,6 @@ body {
 
 .l-main-content .l-main-content__planlist .table-body .row .select-wrapper .select-dropdown, .l-main-content .l-main-content__wbslist .table-body .row .select-wrapper .select-dropdown, .l-main-content .l-main-content__workTypelist .table-body .row .select-wrapper .select-dropdown, .l-main-content .l-main-content__statisticsPlan .table-body .row .select-wrapper .select-dropdown {
   padding-top: 1rem;
-  padding-right: 2rem;
 }
 
 .l-main-content .l-main-content__planlist .table-body .row .is-popmodal-show, .l-main-content .l-main-content__wbslist .table-body .row .is-popmodal-show, .l-main-content .l-main-content__workTypelist .table-body .row .is-popmodal-show, .l-main-content .l-main-content__statisticsPlan .table-body .row .is-popmodal-show {
@@ -11489,7 +11489,7 @@ body {
 }
 
 .l-main-content-table .table-body .table-body-subtitle {
-  background-color: #f7fbff;
+  background-color: #edf2f5;
   line-height: 24px;
 }
 
@@ -12328,7 +12328,7 @@ body {
 }
 
 .c-card-manhourSearch a .c-card__userInformation {
-  bottom: 3rem;
+  bottom: 3.5rem;
 }
 
 .c-card-percent, .c-card-percentCheck {
@@ -13181,7 +13181,6 @@ body {
 }
 
 .c-card-lableGroup .c-card-lableGroup__item {
-  width: 60%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -17160,9 +17159,9 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .l-main-content .l-main-content-item .l-main-content-item__listTitle {
@@ -17619,6 +17618,10 @@ body {
 
 #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .s1 .o-input input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .s1 .o-input input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .s1 .o-input input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .s1 .o-input input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .s1 .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .s1 .hoursInput input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .s1 .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .s1 .hoursInput input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .s1 .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .s1 .hoursInput input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .s1 .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .s1 .hoursInput input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .s1 .c-writeHours-content__select .otherInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .s1 .otherInput input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .s1 .c-writeHours-content__select .otherInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .s1 .otherInput input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .s1 .c-writeHours-content__select .otherInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .s1 .otherInput input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .s1 .c-writeHours-content__select .otherInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .s1 .otherInput input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .s1 .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .s1 .c-search-item__input input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .s1 .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .s1 .c-search-item__input input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .s1 .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .s1 .c-search-item__input input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .s1 .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .s1 .c-search-item__input input {
   text-align: end;
+}
+
+#WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .col .ant-picker-suffix, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .col .ant-picker-suffix, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .col .ant-picker-suffix, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .col .ant-picker-suffix {
+  color: #0868bd;
 }
 
 #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .c-datePicker-days .c-datePicker__modal, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .c-datePicker-months .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .c-datePicker-months .c-datePicker__modal, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .c-datePicker-months .c-datePicker__modal, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .c-datePicker-months .c-datePicker__modal {
@@ -20471,7 +20474,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
 }
 
 .l-mobile-main-login .c-login__title img {
@@ -20846,7 +20849,7 @@ body {
 
 .l-mobile-content .l-mobile-content_list li::after {
   position: relative;
-  content: '';
+  content: "";
   border-bottom: 1px solid #cfe3f5;
   width: 100%;
   height: 1px;
@@ -20955,7 +20958,7 @@ body {
 
 .l-mobile-content li::after {
   position: relative;
-  content: '';
+  content: "";
   border-bottom: 1px solid #cfe3f5;
   width: 100%;
   height: 1px;
@@ -21103,7 +21106,7 @@ body {
 }
 
 .is-error-time_input ul::after {
-  content: '僅能填寫至小數點第一位及阿拉伯數字';
+  content: "僅能填寫至小數點第一位及阿拉伯數字";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24563,6 +24566,10 @@ html {
   border: 1px solid rgba(255, 255, 255, 0);
 }
 
+.ant-picker .ant-picker-input input {
+  margin: 0;
+}
+
 .ant-picker .ant-picker-input input::-webkit-input-placeholder {
   color: #8495a4;
 }
@@ -24602,8 +24609,12 @@ html {
   vertical-align: middle !important;
 }
 
+.ant-picker-content th {
+  padding-top: 0.8rem;
+}
+
 .ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single):not(.ant-picker-cell-range-end) .ant-picker-cell-inner {
-  border-radius: 12px;
+  border-radius: 8px;
   background: #0156a2;
 }
 
@@ -24614,10 +24625,6 @@ html {
 
 .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
   border: 1px solid #0156a2;
-}
-
-.ant-picker-cell::before {
-  height: 0px !important;
 }
 
 .ant-picker-cell .ant-picker-cell-inner {
