@@ -127,7 +127,7 @@
       color: $gray1;
     }
     .c-card__userInformation {
-      bottom: 3rem;
+      bottom: 3.5rem;
     }
   }
 }
@@ -345,6 +345,7 @@
     position: relative;
     width: 100%;
     cursor: pointer;
+    bottom: 0;
     .c-card__addIcon {
       position: absolute;
       right: 0.7rem;
@@ -851,7 +852,7 @@
   }
 
   .c-card-lableGroup__item {
-    width: 60%;
+    // width: 60%;
     @include ellipsisText;
     font-size: $p;
   }

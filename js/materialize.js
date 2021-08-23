@@ -189,15 +189,19 @@ function _classCallCheck(instance, Constructor) {
     return new Init(selector, context);
   }
 
-  var fn = (cash.fn = cash.prototype = Init.prototype = {
-    // jshint ignore:line
-    cash: true,
-    length: 0,
-    push: push,
-    splice: ArrayProto.splice,
-    map: ArrayProto.map,
-    init: Init,
-  });
+  var fn =
+    (cash.fn =
+    cash.prototype =
+    Init.prototype =
+      {
+        // jshint ignore:line
+        cash: true,
+        length: 0,
+        push: push,
+        splice: ArrayProto.splice,
+        map: ArrayProto.map,
+        init: Init,
+      });
 
   Object.defineProperty(fn, "constructor", { value: cash });
 
@@ -1884,9 +1888,10 @@ var $jscomp$this = this;
   }
   function y(a) {
     if (
-      (a = /([\+\-]?[0-9#\.]+)(%|px|pt|em|rem|in|cm|mm|ex|ch|pc|vw|vh|vmin|vmax|deg|rad|turn)?$/.exec(
-        a
-      ))
+      (a =
+        /([\+\-]?[0-9#\.]+)(%|px|pt|em|rem|in|cm|mm|ex|ch|pc|vw|vh|vmin|vmax|deg|rad|turn)?$/.exec(
+          a
+        ))
     )
       return a[2];
   }
@@ -2332,9 +2337,10 @@ var $jscomp$this = this;
       elasticity: 500,
       round: 0,
     },
-    W = "translateX translateY translateZ rotate rotateX rotateY rotateZ scale scaleX scaleY scaleZ skewX skewY perspective".split(
-      " "
-    ),
+    W =
+      "translateX translateY translateZ rotate rotateX rotateY rotateZ scale scaleX scaleY scaleZ skewX skewY perspective".split(
+        " "
+      ),
     H,
     h = {
       arr: function (a) {
@@ -2689,12 +2695,10 @@ var $jscomp$this = this;
           value: function _setupEventHandlers() {
             var _this4 = this;
 
-            this._handleCollapsibleClickBound = this._handleCollapsibleClick.bind(
-              this
-            );
-            this._handleCollapsibleKeydownBound = this._handleCollapsibleKeydown.bind(
-              this
-            );
+            this._handleCollapsibleClickBound =
+              this._handleCollapsibleClick.bind(this);
+            this._handleCollapsibleKeydownBound =
+              this._handleCollapsibleKeydown.bind(this);
             this.el.addEventListener(
               "click",
               this._handleCollapsibleClickBound
@@ -3060,21 +3064,16 @@ var $jscomp$this = this;
 
       _this9._makeDropdownFocusable();
       _this9._resetFilterQueryBound = _this9._resetFilterQuery.bind(_this9);
-      _this9._handleDocumentClickBound = _this9._handleDocumentClick.bind(
-        _this9
-      );
-      _this9._handleDocumentTouchmoveBound = _this9._handleDocumentTouchmove.bind(
-        _this9
-      );
-      _this9._handleDropdownClickBound = _this9._handleDropdownClick.bind(
-        _this9
-      );
-      _this9._handleDropdownKeydownBound = _this9._handleDropdownKeydown.bind(
-        _this9
-      );
-      _this9._handleTriggerKeydownBound = _this9._handleTriggerKeydown.bind(
-        _this9
-      );
+      _this9._handleDocumentClickBound =
+        _this9._handleDocumentClick.bind(_this9);
+      _this9._handleDocumentTouchmoveBound =
+        _this9._handleDocumentTouchmove.bind(_this9);
+      _this9._handleDropdownClickBound =
+        _this9._handleDropdownClick.bind(_this9);
+      _this9._handleDropdownKeydownBound =
+        _this9._handleDropdownKeydown.bind(_this9);
+      _this9._handleTriggerKeydownBound =
+        _this9._handleTriggerKeydown.bind(_this9);
       _this9._setupEventHandlers();
       return _this9;
     }
@@ -3235,8 +3234,8 @@ var $jscomp$this = this;
           key: "_handleMouseLeave",
           value: function _handleMouseLeave(e) {
             var toEl = e.toElement || e.relatedTarget;
-            var leaveToDropdownContent = !!$(toEl).closest(".dropdown-content")
-              .length;
+            var leaveToDropdownContent =
+              !!$(toEl).closest(".dropdown-content").length;
             var leaveToActiveDropdownTrigger = false;
 
             var $closestTrigger = $(toEl).closest(".dropdown-trigger");
@@ -3462,7 +3461,8 @@ var $jscomp$this = this;
         {
           key: "_getDropdownPosition",
           value: function _getDropdownPosition() {
-            var offsetParentBRect = this.el.offsetParent.getBoundingClientRect();
+            var offsetParentBRect =
+              this.el.offsetParent.getBoundingClientRect();
             var triggerBRect = this.el.getBoundingClientRect();
             var dropdownBRect = this.dropdownEl.getBoundingClientRect();
 
@@ -3633,8 +3633,8 @@ var $jscomp$this = this;
             this.dropdownEl.style.left = positionInfo.x + "px";
             this.dropdownEl.style.top = "30px"; //positionInfo.y - 20 + "px";
             //如果是“部門”的select寬度依照預設
-            let selectTitile = this.el.parentNode.parentNode
-              .previousElementSibling;
+            let selectTitile =
+              this.el.parentNode.parentNode.previousElementSibling;
             if (selectTitile != null) {
               if (selectTitile.innerHTML === "部門") {
                 this.dropdownEl.style.width = positionInfo.width + "px";
@@ -3883,9 +3883,8 @@ var $jscomp$this = this;
           key: "_setupEventHandlers",
           value: function _setupEventHandlers() {
             this._handleOverlayClickBound = this._handleOverlayClick.bind(this);
-            this._handleModalCloseClickBound = this._handleModalCloseClick.bind(
-              this
-            );
+            this._handleModalCloseClickBound =
+              this._handleModalCloseClick.bind(this);
 
             if (Modal._count === 1) {
               document.body.addEventListener("click", this._handleTriggerClick);
@@ -4361,9 +4360,8 @@ var $jscomp$this = this;
         {
           key: "_setupEventHandlers",
           value: function _setupEventHandlers() {
-            this._handleMaterialboxClickBound = this._handleMaterialboxClick.bind(
-              this
-            );
+            this._handleMaterialboxClickBound =
+              this._handleMaterialboxClick.bind(this);
             this.el.addEventListener(
               "click",
               this._handleMaterialboxClickBound
@@ -5618,9 +5616,8 @@ var $jscomp$this = this;
         {
           key: "_updateTooltipContent",
           value: function _updateTooltipContent() {
-            this.tooltipEl.querySelector(
-              ".tooltip-content"
-            ).innerHTML = this.options.html;
+            this.tooltipEl.querySelector(".tooltip-content").innerHTML =
+              this.options.html;
           },
         },
         {
@@ -6778,17 +6775,14 @@ var $jscomp$this = this;
               document.body.addEventListener("click", this._handleTriggerClick);
             }
 
-            this._handleDragTargetDragBound = this._handleDragTargetDrag.bind(
-              this
-            );
-            this._handleDragTargetReleaseBound = this._handleDragTargetRelease.bind(
-              this
-            );
+            this._handleDragTargetDragBound =
+              this._handleDragTargetDrag.bind(this);
+            this._handleDragTargetReleaseBound =
+              this._handleDragTargetRelease.bind(this);
             this._handleCloseDragBound = this._handleCloseDrag.bind(this);
             this._handleCloseReleaseBound = this._handleCloseRelease.bind(this);
-            this._handleCloseTriggerClickBound = this._handleCloseTriggerClick.bind(
-              this
-            );
+            this._handleCloseTriggerClickBound =
+              this._handleCloseTriggerClick.bind(this);
 
             this.dragTarget.addEventListener(
               "touchmove",
@@ -6815,9 +6809,8 @@ var $jscomp$this = this;
 
             // Add resize for side nav fixed
             if (this.isFixed) {
-              this._handleWindowResizeBound = this._handleWindowResize.bind(
-                this
-              );
+              this._handleWindowResizeBound =
+                this._handleWindowResize.bind(this);
               window.addEventListener("resize", this._handleWindowResizeBound);
             }
           },
@@ -6882,8 +6875,8 @@ var $jscomp$this = this;
             if (e.target && $trigger.length) {
               var sidenavId = M.getIdFromTrigger($trigger[0]);
 
-              var sidenavInstance = document.getElementById(sidenavId)
-                .M_Sidenav;
+              var sidenavInstance =
+                document.getElementById(sidenavId).M_Sidenav;
               if (sidenavInstance) {
                 sidenavInstance.open($trigger);
               }
@@ -7885,17 +7878,14 @@ var $jscomp$this = this;
           key: "_setupEventHandlers",
           value: function _setupEventHandlers() {
             this._handleInputBlurBound = this._handleInputBlur.bind(this);
-            this._handleInputKeyupAndFocusBound = this._handleInputKeyupAndFocus.bind(
-              this
-            );
+            this._handleInputKeyupAndFocusBound =
+              this._handleInputKeyupAndFocus.bind(this);
             this._handleInputKeydownBound = this._handleInputKeydown.bind(this);
             this._handleInputClickBound = this._handleInputClick.bind(this);
-            this._handleContainerMousedownAndTouchstartBound = this._handleContainerMousedownAndTouchstart.bind(
-              this
-            );
-            this._handleContainerMouseupAndTouchendBound = this._handleContainerMouseupAndTouchend.bind(
-              this
-            );
+            this._handleContainerMousedownAndTouchstartBound =
+              this._handleContainerMousedownAndTouchstart.bind(this);
+            this._handleContainerMouseupAndTouchendBound =
+              this._handleContainerMouseupAndTouchend.bind(this);
 
             this.el.addEventListener("blur", this._handleInputBlurBound);
             this.el.addEventListener(
@@ -8803,9 +8793,8 @@ var $jscomp$this = this;
             var _this41 = this;
 
             this._handleIntervalBound = this._handleInterval.bind(this);
-            this._handleIndicatorClickBound = this._handleIndicatorClick.bind(
-              this
-            );
+            this._handleIndicatorClickBound =
+              this._handleIndicatorClick.bind(this);
 
             if (this.options.indicators) {
               this.$indicators.each(function (el) {
@@ -10281,9 +10270,8 @@ var $jscomp$this = this;
                 });
 
                 // Scroll to close.
-                _this51._handleDocumentClickBound = _this51._handleDocumentClick.bind(
-                  _this51
-                );
+                _this51._handleDocumentClickBound =
+                  _this51._handleDocumentClick.bind(_this51);
                 window.addEventListener(
                   "scroll",
                   _this51._handleCloseBound,
@@ -10625,15 +10613,13 @@ var $jscomp$this = this;
         {
           key: "destroySelects",
           value: function destroySelects() {
-            var oldYearSelect = this.calendarEl.querySelector(
-              ".orig-select-year"
-            );
+            var oldYearSelect =
+              this.calendarEl.querySelector(".orig-select-year");
             if (oldYearSelect) {
               M.FormSelect.getInstance(oldYearSelect).destroy();
             }
-            var oldMonthSelect = this.calendarEl.querySelector(
-              ".orig-select-month"
-            );
+            var oldMonthSelect =
+              this.calendarEl.querySelector(".orig-select-month");
             if (oldMonthSelect) {
               M.FormSelect.getInstance(oldMonthSelect).destroy();
             }
@@ -11213,9 +11199,8 @@ var $jscomp$this = this;
 
             // Init Materialize Select
             var yearSelect = this.calendarEl.querySelector(".orig-select-year");
-            var monthSelect = this.calendarEl.querySelector(
-              ".orig-select-month"
-            );
+            var monthSelect =
+              this.calendarEl.querySelector(".orig-select-month");
             M.FormSelect.init(yearSelect, {
               classes: "select-year",
               dropdownOptions: {
@@ -11256,9 +11241,8 @@ var $jscomp$this = this;
             this._handleInputKeydownBound = this._handleInputKeydown.bind(this);
             this._handleInputClickBound = this._handleInputClick.bind(this);
             this._handleInputChangeBound = this._handleInputChange.bind(this);
-            this._handleCalendarClickBound = this._handleCalendarClick.bind(
-              this
-            );
+            this._handleCalendarClickBound =
+              this._handleCalendarClick.bind(this);
             this._finishSelectionBound = this._finishSelection.bind(this);
             this._handleMonthChange = this._handleMonthChange.bind(this);
             this._closeBound = this.close.bind(this);
@@ -11753,15 +11737,12 @@ var $jscomp$this = this;
           value: function _setupEventHandlers() {
             this._handleInputKeydownBound = this._handleInputKeydown.bind(this);
             this._handleInputClickBound = this._handleInputClick.bind(this);
-            this._handleClockClickStartBound = this._handleClockClickStart.bind(
-              this
-            );
-            this._handleDocumentClickMoveBound = this._handleDocumentClickMove.bind(
-              this
-            );
-            this._handleDocumentClickEndBound = this._handleDocumentClickEnd.bind(
-              this
-            );
+            this._handleClockClickStartBound =
+              this._handleClockClickStart.bind(this);
+            this._handleDocumentClickMoveBound =
+              this._handleDocumentClickMove.bind(this);
+            this._handleDocumentClickEndBound =
+              this._handleDocumentClickEnd.bind(this);
 
             this.el.addEventListener("click", this._handleInputClickBound);
             this.el.addEventListener("keydown", this._handleInputKeydownBound);
@@ -12874,12 +12855,10 @@ var $jscomp$this = this;
 
             this._handleCarouselTapBound = this._handleCarouselTap.bind(this);
             this._handleCarouselDragBound = this._handleCarouselDrag.bind(this);
-            this._handleCarouselReleaseBound = this._handleCarouselRelease.bind(
-              this
-            );
-            this._handleCarouselClickBound = this._handleCarouselClick.bind(
-              this
-            );
+            this._handleCarouselReleaseBound =
+              this._handleCarouselRelease.bind(this);
+            this._handleCarouselClickBound =
+              this._handleCarouselClick.bind(this);
 
             if (typeof window.ontouchstart !== "undefined") {
               this.el.addEventListener(
@@ -12912,9 +12891,8 @@ var $jscomp$this = this;
             this.el.addEventListener("click", this._handleCarouselClickBound);
 
             if (this.showIndicators && this.$indicators) {
-              this._handleIndicatorClickBound = this._handleIndicatorClick.bind(
-                this
-              );
+              this._handleIndicatorClickBound =
+                this._handleIndicatorClick.bind(this);
               this.$indicators.find(".indicator-item").each(function (el, i) {
                 el.addEventListener(
                   "click",
@@ -13745,9 +13723,8 @@ var $jscomp$this = this;
         {
           key: "_setupEventHandlers",
           value: function _setupEventHandlers() {
-            this._handleDocumentClickBound = this._handleDocumentClick.bind(
-              this
-            );
+            this._handleDocumentClickBound =
+              this._handleDocumentClick.bind(this);
             this._handleTargetClickBound = this._handleTargetClick.bind(this);
             this._handleOriginClickBound = this._handleOriginClick.bind(this);
 
@@ -14713,18 +14690,14 @@ var $jscomp$this = this;
           key: "_setupEventHandlers",
           value: function _setupEventHandlers() {
             this._handleRangeChangeBound = this._handleRangeChange.bind(this);
-            this._handleRangeMousedownTouchstartBound = this._handleRangeMousedownTouchstart.bind(
-              this
-            );
-            this._handleRangeInputMousemoveTouchmoveBound = this._handleRangeInputMousemoveTouchmove.bind(
-              this
-            );
-            this._handleRangeMouseupTouchendBound = this._handleRangeMouseupTouchend.bind(
-              this
-            );
-            this._handleRangeBlurMouseoutTouchleaveBound = this._handleRangeBlurMouseoutTouchleave.bind(
-              this
-            );
+            this._handleRangeMousedownTouchstartBound =
+              this._handleRangeMousedownTouchstart.bind(this);
+            this._handleRangeInputMousemoveTouchmoveBound =
+              this._handleRangeInputMousemoveTouchmove.bind(this);
+            this._handleRangeMouseupTouchendBound =
+              this._handleRangeMouseupTouchend.bind(this);
+            this._handleRangeBlurMouseoutTouchleaveBound =
+              this._handleRangeBlurMouseoutTouchleave.bind(this);
 
             this.el.addEventListener("change", this._handleRangeChangeBound);
 

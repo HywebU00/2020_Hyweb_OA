@@ -389,6 +389,7 @@ body {
     align-items: flex-start;
     font-size: $p;
     margin-bottom: 0.5rem;
+    width: 100%;
 
     .l-main-content-text {
       display: flex;
@@ -659,7 +660,7 @@ body {
 
           .select-dropdown {
             padding-top: 1rem;
-            padding-right: 2rem;
+            // padding-right: 2rem;
           }
         }
 
@@ -1279,7 +1280,7 @@ body {
     }
 
     .table-body-subtitle {
-      background-color: $sec3;
+      background-color: $gray5;
       line-height: 24px;
     }
 
