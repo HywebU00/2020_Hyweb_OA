@@ -139,15 +139,36 @@
 }
 
 .ant-picker-month-panel {
+  width: 200px !important;
   .ant-picker-content {
     height: 200px !important;
+    td {
+      padding-top: 0.6rem;
+    }
   }
+  .ant-picker-cell {
+    .ant-picker-cell-inne {
+      height: 30px;
+    }
+    &::before {
+      height: 30px;
+    }
+  }
+}
+.ant-picker-year-panel {
+  width: 250px !important;
+  .ant-picker-content {
+    height: 200px;
+  }
+}
+.ant-picker-decade-panel {
+  width: 300px !important;
 }
 .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner,
 .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
 .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
   background: $hy-background;
-  border-radius: 8px;
+  border-radius: 8px !important;
 }
 .ant-picker-cell-in-view {
   color: $gray1;
