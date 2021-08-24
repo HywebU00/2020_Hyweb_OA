@@ -151,7 +151,16 @@
       height: 30px;
     }
     &::before {
-      height: 30px;
+      height: 24px;
+    }
+  }
+}
+.ant-picker-panels {
+  .ant-picker-month-panel {
+    .ant-picker-content {
+      td {
+        padding-top: 0.8rem;
+      }
     }
   }
 }
@@ -159,6 +168,9 @@
   width: 250px !important;
   .ant-picker-content {
     height: 200px;
+    td {
+      padding-top: 0.8rem;
+    }
   }
 }
 .ant-picker-decade-panel {

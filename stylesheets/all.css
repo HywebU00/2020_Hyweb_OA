@@ -13821,6 +13821,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #d2dae0;
+  min-height: 2.36rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -16147,15 +16148,18 @@ body {
   .c-writeHours-title__item .c-writeHours-title__item__hours .hours {
     font-size: 3rem;
   }
-  .c-writeHours-title__item .c-writeHours-title__item__hours .hours span {
-    font-size: 2.5rem;
-    padding-bottom: 0;
-  }
 }
 
 .c-writeHours-title__item .c-writeHours-title__item__hours .hours span {
   font-size: 2.8rem;
   padding-bottom: 5%;
+}
+
+@media (max-width: 836px) {
+  .c-writeHours-title__item .c-writeHours-title__item__hours .hours span {
+    font-size: 2.5rem;
+    padding-bottom: 0;
+  }
 }
 
 .c-writeHours-title__item .c-writeHours-title__item__hours .hours img {
@@ -17590,6 +17594,10 @@ body {
 #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .s1 .o-input input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .s1 .o-input input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .s1 .o-input input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .s1 .o-input input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .s1 .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .s1 .hoursInput input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .s1 .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .s1 .hoursInput input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .s1 .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .s1 .hoursInput input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .s1 .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .s1 .hoursInput input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .s1 .c-writeHours-content__select .otherInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .s1 .otherInput input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .s1 .c-writeHours-content__select .otherInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .s1 .otherInput input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .s1 .c-writeHours-content__select .otherInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .s1 .otherInput input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .s1 .c-writeHours-content__select .otherInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .s1 .otherInput input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .s1 .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .s1 .c-search-item__input input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .s1 .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .s1 .c-search-item__input input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .s1 .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .s1 .c-search-item__input input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .s1 .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .s1 .c-search-item__input input {
   margin-left: 0.8rem;
   width: 4rem;
+}
+
+#WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row {
+  margin-right: 0;
 }
 
 #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .o-input input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .o-input input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .o-input input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .o-input input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .hoursInput input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .hoursInput input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .hoursInput input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .hoursInput input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .c-writeHours-content__select .otherInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .otherInput input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .c-writeHours-content__select .otherInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .otherInput input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .c-writeHours-content__select .otherInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .otherInput input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .c-writeHours-content__select .otherInput input, .c-writeHours-content__select #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .otherInput input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__item .row .is-error-status-item .c-search-item__input input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__item .row .is-error-status-item .c-search-item__input input, #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .is-error-status-item .c-search-item__input input, #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item #WBS .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .is-error-status-item .c-search-item__input input {
@@ -19304,7 +19312,7 @@ body {
 }
 
 #WBS .l-main-content__wbslist .table-footer .row .s1, #WBS .l-main-content .l-main-content__workTypelist .table-footer .row .s1, .l-main-content #WBS .l-main-content__workTypelist .table-footer .row .s1 {
-  width: 102px;
+  width: 6.8rem;
 }
 
 #memberstime .l-main-tabs, #departmenttime .l-main-tabs, #universalPlan .l-main-tabs {
@@ -24700,7 +24708,11 @@ html {
 }
 
 .ant-picker-month-panel .ant-picker-cell::before {
-  height: 30px;
+  height: 24px;
+}
+
+.ant-picker-panels .ant-picker-month-panel .ant-picker-content td {
+  padding-top: 0.8rem;
 }
 
 .ant-picker-year-panel {
@@ -24709,6 +24721,10 @@ html {
 
 .ant-picker-year-panel .ant-picker-content {
   height: 200px;
+}
+
+.ant-picker-year-panel .ant-picker-content td {
+  padding-top: 0.8rem;
 }
 
 .ant-picker-decade-panel {
