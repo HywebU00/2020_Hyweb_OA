@@ -1399,7 +1399,7 @@
   .c-modal-title {
     display: flex;
     border-bottom: 1px solid $gray4;
-    //margin-bottom: 1rem;
+    min-height: 2.36rem;
     align-items: center;
 
     img {
@@ -3576,14 +3576,14 @@
       font-weight: 700;
       @include Ipad11 {
         font-size: 3rem;
-        span {
-          font-size: 2.5rem;
-          padding-bottom: 0;
-        }
       }
       span {
         font-size: $writeHours-title-hours-s;
         padding-bottom: 5%;
+        @include Ipad11 {
+          font-size: 2.5rem;
+          padding-bottom: 0;
+        }
       }
 
       img {
