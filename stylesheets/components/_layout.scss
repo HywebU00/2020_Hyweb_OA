@@ -1270,7 +1270,9 @@ body {
 
     .col {
       line-height: 1.33rem; // 1.5rem;
-      //@include db_ellipsisText;
+      @include Ipad11 {
+        display: flex;
+      }
     }
 
     .table-body__tag-item {

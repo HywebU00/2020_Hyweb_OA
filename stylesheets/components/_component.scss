@@ -302,6 +302,9 @@
 
 .c-card-planClosed {
   @extend .c-card-planPerson;
+  @include Large {
+    width: calc(50% - 1rem);
+  }
   a {
     min-height: 210px;
   }
@@ -1203,6 +1206,11 @@
     justify-content: space-between;
     align-items: flex-end;
     border-bottom: 1px solid $gray4;
+    @include Ipad11 {
+      .c-tabs__item {
+        width: calc(100% - 260px);
+      }
+    }
   }
 
   .c-tabs__title {
@@ -1576,7 +1584,7 @@
 
           display: flex;
           align-items: center;
-          color: $gray3;
+          color: $gray1;
 
           img {
             margin-right: 0.5rem;
@@ -3582,7 +3590,6 @@
         padding-bottom: 5%;
         @include Ipad11 {
           font-size: 2.5rem;
-          padding-bottom: 0;
         }
       }
 
@@ -3672,56 +3679,12 @@
       color: $gray1;
     }
   }
-  // .is-error-status {
-  //   .col {
-  //     .input-title {
-  //       color: $danger;
-  //     }
-
-  //     .select-wrapper {
-  //       background-color: #fff;
-  //       border: 1px solid $danger;
-  //     }
-  //   }
-
-  //   .hoursInput {
-  //     input {
-  //       border: 1px solid $danger;
-  //       border-bottom: 1px solid $danger;
-  //       box-sizing: border-box;
-  //     }
-
-  //     input[type="text"]:not(.browser-default) {
-  //       border-bottom: 1px solid $danger;
-  //       background-color: #fff;
-  //     }
-
-  //     position: relative;
-
-  //     &:after {
-  //       position: absolute;
-  //       white-space: nowrap;
-  //       color: $danger;
-  //       font-size: 12px;
-  //       padding-top: 0.01rem;
-  //       margin-top: 0.2rem;
-  //       content: "僅能填寫至小數點第一位及阿拉伯數字";
-  //     }
-  //   }
-
-  //   .otherInput {
-  //     .input-title {
-  //       color: $gray1;
-  //     }
-  //   }
-  // }
 }
 
 .c-writeHours-content__select {
   display: flex;
   padding-bottom: 1.2rem;
   border-bottom: 1px solid $gray3;
-
   div {
     padding: 0 0.1rem; //0 0.3%;
   }
