@@ -13055,7 +13055,6 @@ body {
 }
 
 .c-card-lablePerson {
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13886,6 +13885,11 @@ body {
   margin: 0 0.5rem;
 }
 
+.c-modal .c-modal-btnList button:hover, .c-modal-systemDialog .c-modal-btnList button:hover, .c-modal-alert .c-modal-btnList button:hover, .c-modal-chooseGroup .c-modal-btnList button:hover, .c-modal-addGroup .c-modal-btnList button:hover, .c-modal-usuallyUseMember .c-modal-btnList button:hover, .c-modal-sample .c-modal-btnList button:hover {
+  -webkit-filter: opacity(0.6);
+          filter: opacity(0.6);
+}
+
 .c-modal-alert {
   width: 50%;
   height: 30vh;
@@ -13979,6 +13983,11 @@ body {
 
 .c-modal-chooseGroup .c-modal-closeBtn button {
   padding: 0;
+}
+
+.c-modal-chooseGroup .c-modal-closeBtn button:hover {
+  -webkit-filter: opacity(0.6);
+          filter: opacity(0.6);
 }
 
 .c-modal-chooseGroup .c-modal-btnList {
@@ -14216,6 +14225,13 @@ body {
 
 .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .o-input input, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .o-input input, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .o-input input, .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .hoursInput input, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .hoursInput input, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .hoursInput input, .c-writeHours-content__select .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .hoursInput input, .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .otherInput input, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .otherInput input, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .otherInput input, .c-writeHours-content__select .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .otherInput input, .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-search-item__input input, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-search-item__input input, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input, .c-search-list .c-search-item .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-search-item__input input {
   margin-bottom: 0;
+}
+
+.c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .o-input input:focus, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .o-input input:focus, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .o-input input:focus, .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .hoursInput input:focus, .c-writeHours-content__select .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .hoursInput input:focus, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .hoursInput input:focus, .c-writeHours-content__select .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .hoursInput input:focus, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .hoursInput input:focus, .c-writeHours-content__select .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .hoursInput input:focus, .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .otherInput input:focus, .c-writeHours-content__select .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .otherInput input:focus, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .otherInput input:focus, .c-writeHours-content__select .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .otherInput input:focus, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-writeHours-content__select .otherInput input:focus, .c-writeHours-content__select .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .otherInput input:focus, .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input:focus, .c-search-list .c-search-item .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .c-search-item__input input:focus, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input:focus, .c-search-list .c-search-item .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .c-search-item__input input:focus, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-search-list .c-search-item .c-search-item__input input:focus, .c-search-list .c-search-item .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .c-search-item__input input:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+          box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+  opacity: 1;
+  border-radius: 5px;
 }
 
 .c-modal-addGroup .c-modal-addGroup__content .c-modal-content__select .input-title span, .c-modal-usuallyUseMember .c-modal-addGroup__content .c-modal-content__select .input-title span, .c-modal-sample .c-modal-addGroup__content .c-modal-content__select .input-title span {
@@ -14685,6 +14701,13 @@ body {
   cursor: pointer;
 }
 
+.c-modal-personAll .c-modal-features .c-modal-features__btn img:active, .c-modal-personCalendar .c-modal-features .c-modal-features__btn img:active, .c-modal-department .c-modal-features .c-modal-features__btn img:active {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+          box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+  opacity: 1;
+  border-radius: 5px;
+}
+
 .c-modal-personAll .c-modal-content__sidebar, .c-modal-personCalendar .c-modal-content__sidebar, .c-modal-department .c-modal-content__sidebar {
   padding: 1rem 1rem 1rem 2rem;
   background-color: #f7fbff;
@@ -14824,6 +14847,10 @@ body {
 
 .c-modal-personAll .c-modal-content__calendar .o-calendar .item__date, .c-modal-personCalendar .c-modal-content__calendar .o-calendar .item__date, .c-modal-department .c-modal-content__calendar .o-calendar .item__date {
   height: 5.33rem;
+}
+
+.c-modal-personAll .c-modal-content__calendar .o-calendar .item__date:hover, .c-modal-personCalendar .c-modal-content__calendar .o-calendar .item__date:hover, .c-modal-department .c-modal-content__calendar .o-calendar .item__date:hover {
+  background-color: #e2f1fe;
 }
 
 .c-modal-personAll .c-modal-content__list, .c-modal-personCalendar .c-modal-content__list, .c-modal-department .c-modal-content__list {
@@ -15119,6 +15146,18 @@ body {
 
 .c-dropdown-plan .select-wrapper .caret, .c-dropdown-page .select-wrapper .caret, .c-dropdown-planContent .select-wrapper .caret, .c-dropdown-status .select-wrapper .caret, .c-dropdown-general .select-wrapper .caret, .c-dropdown-department .select-wrapper .caret, .c-dropdown-departmentCheck .select-wrapper .caret {
   z-index: 0;
+}
+
+.c-dropdown-plan .select-wrapper:active, .c-dropdown-page .select-wrapper:active, .c-dropdown-planContent .select-wrapper:active, .c-dropdown-status .select-wrapper:active, .c-dropdown-general .select-wrapper:active, .c-dropdown-department .select-wrapper:active, .c-dropdown-departmentCheck .select-wrapper:active {
+  border-color: #86b7fe;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+          box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+}
+
+.c-dropdown-plan .select-wrapper:focus, .c-dropdown-page .select-wrapper:focus, .c-dropdown-planContent .select-wrapper:focus, .c-dropdown-status .select-wrapper:focus, .c-dropdown-general .select-wrapper:focus, .c-dropdown-department .select-wrapper:focus, .c-dropdown-departmentCheck .select-wrapper:focus {
+  border-color: #86b7fe;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+          box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
 }
 
 .c-dropdown-plan .select-wrapper ul, .c-dropdown-page .select-wrapper ul, .c-dropdown-planContent .select-wrapper ul, .c-dropdown-status .select-wrapper ul, .c-dropdown-general .select-wrapper ul, .c-dropdown-department .select-wrapper ul, .c-dropdown-departmentCheck .select-wrapper ul {
@@ -16292,11 +16331,23 @@ body {
   padding-left: 10px;
 }
 
+.c-writeHours-content__select .hoursInput input:focus {
+  border-color: #86b7fe;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+          box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+}
+
 .c-writeHours-content__select .otherInput input {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-left: 10px;
+}
+
+.c-writeHours-content__select .otherInput input:focus {
+  border-color: #86b7fe;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+          box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
 }
 
 .c-writeHours-content__select button {
@@ -16364,6 +16415,12 @@ body {
 
 .c-search-list .c-search-item .keyword_input input:first-of-type {
   padding-right: 38px !important;
+}
+
+.c-search-list .c-search-item .keyword_input input:first-of-type:focus {
+  border-color: #86b7fe;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+          box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
 }
 
 .c-search-list .c-search-item .keyword_input :last-child {
