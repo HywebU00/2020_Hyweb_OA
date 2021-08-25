@@ -24537,6 +24537,8 @@ html {
   padding-left: 8px !important;
   padding-right: 5px !important;
   font-size: 1rem !important;
+  font-weight: normal !important;
+  line-height: 130% !important;
   color: #042340 !important;
   background-color: #fff !important;
   opacity: 1 !important;
@@ -24553,6 +24555,8 @@ html {
   padding-left: 8px !important;
   padding-right: 5px !important;
   font-size: 1rem !important;
+  font-weight: normal !important;
+  line-height: 130% !important;
   color: #042340 !important;
   background-color: #fff !important;
   opacity: 1 !important;
