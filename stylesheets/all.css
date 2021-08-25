@@ -11477,6 +11477,14 @@ body {
   line-height: 1.33rem;
 }
 
+@media (max-width: 836px) {
+  .l-main-content-table .table-body .col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .l-main-content-table .table-body .table-body__tag-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12542,6 +12550,12 @@ body {
   white-space: nowrap;
 }
 
+@media (max-width: 992px) {
+  .c-card-planClosed {
+    width: calc(50% - 1rem);
+  }
+}
+
 .c-card-planClosed a {
   min-height: 210px;
 }
@@ -13590,6 +13604,12 @@ body {
   border-bottom: 1px solid #d2dae0;
 }
 
+@media (max-width: 836px) {
+  .c-tabs .c-tabs__content .c-tabs__item {
+    width: calc(100% - 260px);
+  }
+}
+
 .c-tabs .c-tabs__title {
   font-size: 22px;
   font-weight: 700;
@@ -14030,7 +14050,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #8495a4;
+  color: #042340;
 }
 
 .c-modal-chooseGroup .c-modal-content .c-modal-content__addMember .addMember-title a img, .c-modal-chooseGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__addMember .addMember-title a img, .c-modal-alert .c-modal-alert__content .c-modal-chooseGroup .c-modal-content__scroll .c-modal-content__addMember .addMember-title a img {
@@ -16158,7 +16178,6 @@ body {
 @media (max-width: 836px) {
   .c-writeHours-title__item .c-writeHours-title__item__hours .hours span {
     font-size: 2.5rem;
-    padding-bottom: 0;
   }
 }
 
@@ -20164,6 +20183,13 @@ body {
   padding: 0.5rem;
 }
 
+@media (max-width: 836px) {
+  .l-main-content__cardGroup {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .l-main-content__cardGroup .l-main-content__card, .l-main-content__cardGroup .l-main-content__dbcard {
   margin-bottom: 0;
   border-radius: 0.66rem;
@@ -20180,6 +20206,13 @@ body {
 
 .l-main-content__cardGroup .l-main-content__cardGroup__item .l-main-content__card, .l-main-content__cardGroup .l-main-content__cardGroup__item .l-main-content__dbcard {
   height: 12rem;
+}
+
+@media (max-width: 836px) {
+  .l-main-content__cardGroup .l-main-content__cardGroup__item {
+    margin-right: 0;
+    width: 100%;
+  }
 }
 
 .l-main-content__cardGroup .l-main-content__cardGroup__item:last-child {
