@@ -757,7 +757,6 @@
 }
 
 .c-card-lablePerson {
-  cursor: pointer;
   display: flex;
   width: calc(25% - 0.5rem);
   height: 4.5rem;
@@ -1441,6 +1440,18 @@
       margin: 0 0.5rem;
     }
   }
+  .c-modal-btnList {
+    button {
+      &:hover {
+        filter: opacity(0.6);
+      }
+      // &:active {
+      //   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.2);
+      //   opacity: 1;
+      //   border-radius: 5px;
+      // }
+    }
+  }
 }
 
 .c-modal-systemDialog {
@@ -1529,6 +1540,14 @@
 
     button {
       padding: 0;
+      &:hover {
+        filter: opacity(0.6);
+      }
+      // &:active {
+      //   box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+      //   opacity: 1;
+      //   border-radius: 5px;
+      // }
     }
   }
 
@@ -1717,6 +1736,11 @@
         width: 90%;
         input {
           margin-bottom: 0;
+          &:focus {
+            box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+            opacity: 1;
+            border-radius: 5px;
+          }
         }
       }
 
@@ -1760,6 +1784,7 @@
         input:first-of-type {
           padding-right: 38px !important;
         }
+
         :last-child {
           background-image: url(../img/o-keyword.svg);
           width: 2rem;
@@ -2084,6 +2109,11 @@
           filter: opacity(0.6);
           cursor: pointer;
         }
+        &:active {
+          box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+          opacity: 1;
+          border-radius: 5px;
+        }
       }
     }
   }
@@ -2222,6 +2252,9 @@
     .o-calendar {
       .item__date {
         height: 5.33rem;
+        &:hover {
+          background-color: $hyweb-lighblue;
+        }
       }
     }
   }
@@ -2533,6 +2566,14 @@
 
     .caret {
       z-index: 0;
+    }
+    &:active {
+      border-color: #86b7fe;
+      box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+    }
+    &:focus {
+      border-color: #86b7fe;
+      box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
     }
 
     ul {
@@ -3704,6 +3745,10 @@
       width: 100%;
       box-sizing: border-box;
       padding-left: 10px;
+      &:focus {
+        border-color: #86b7fe;
+        box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+      }
     }
   }
 
@@ -3714,6 +3759,10 @@
       width: 100%;
       box-sizing: border-box;
       padding-left: 10px;
+      &:focus {
+        border-color: #86b7fe;
+        box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+      }
     }
   }
 
@@ -3769,6 +3818,10 @@
       width: 17.6rem;
       input:first-of-type {
         padding-right: 38px !important;
+        &:focus {
+          border-color: #86b7fe;
+          box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+        }
       }
       :last-child {
         background-image: url(../img/o-keyword.svg);
