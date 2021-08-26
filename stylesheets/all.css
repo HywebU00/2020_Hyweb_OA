@@ -10494,6 +10494,7 @@ body {
 .l-main-content .l-main-content-title .l-main-content-text .l-main-content-text__inputText, .l-main-content .l-main-content-data .l-main-content-text .l-main-content-text__inputText, .l-main-content .l-main-content-between-title .l-main-content-text .l-main-content-text__inputText {
   margin-left: 1.8rem;
   font-weight: 400;
+  margin-top: 3px;
 }
 
 .l-main-content .l-main-content-title .is-display-none, .l-main-content .l-main-content-data .is-display-none, .l-main-content .l-main-content-between-title .is-display-none {
@@ -11604,6 +11605,14 @@ body {
   background-color: #e2f1fe;
 }
 
+.l-main-content-table .table-body .deleteBtn button {
+  padding: 0.3rem 0.5rem;
+}
+
+.l-main-content-table .table-body .deleteBtn button:hover {
+  background-color: #e2f1fe;
+}
+
 .l-main-content-table .table-body .delete-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12205,6 +12214,7 @@ body {
 
 .c-card-manhourSofar, .c-card-manhourSearch, .c-card-percent, .c-card-percentCheck, .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan, .c-card-department {
   position: relative;
+  cursor: pointer;
   width: calc(20% - 0.7rem);
   min-height: 230px;
 }
@@ -12317,6 +12327,7 @@ body {
 
 .c-card-manhourSearch {
   min-height: 200px;
+  cursor: pointer;
 }
 
 .c-card-manhourSearch a {
@@ -14404,7 +14415,16 @@ body {
 
 .c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button {
   cursor: pointer;
-  width: 20%;
+  position: absolute;
+  right: 10%;
+  border-radius: 50%;
+  padding: 0;
+  height: 24px;
+  width: 24px;
+}
+
+.c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button:hover, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button:hover, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button:hover, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button:hover, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button:hover, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button:hover, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button:hover, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button:hover, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button:hover {
+  background-color: #e2f1fe;
 }
 
 .c-modal-addGroup .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button img, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button img, .c-modal-sample .c-modal-content .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button img, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button img, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button img, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button img, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button img, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button img, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__chooseMember .chooseMember__title + div .chooseMember-tag button img {
@@ -14484,7 +14504,16 @@ body {
 
 .c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag button, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag button, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag button, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button {
   cursor: pointer;
-  width: 20%;
+  position: absolute;
+  right: 10%;
+  border-radius: 50%;
+  padding: 0;
+  height: 24px;
+  width: 24px;
+}
+
+.c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag button:hover, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag button:hover, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag button:hover, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button:hover, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button:hover, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button:hover, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button:hover, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button:hover, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button:hover {
+  background-color: #e2f1fe;
 }
 
 .c-modal-addGroup .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag button img, .c-modal-usuallyUseMember .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag button img, .c-modal-sample .c-modal-content .c-modal-content__memberList .memberList__title + div .chooseMember-tag button img, .c-modal-addGroup .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button img, .c-modal-alert .c-modal-alert__content .c-modal-addGroup .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button img, .c-modal-usuallyUseMember .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button img, .c-modal-alert .c-modal-alert__content .c-modal-usuallyUseMember .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button img, .c-modal-sample .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button img, .c-modal-alert .c-modal-alert__content .c-modal-sample .c-modal-content__scroll .c-modal-content__memberList .memberList__title + div .chooseMember-tag button img {
@@ -19211,7 +19240,6 @@ body {
   margin-bottom: 0rem;
   height: 3.733rem;
   margin-bottom: 0;
-  cursor: default;
 }
 
 #membertime .change-card-to-list .c-card-manhourSearch a {
@@ -24733,6 +24761,7 @@ html {
 
 .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
   border: 1px solid #0156a2;
+  border-radius: 8px;
 }
 
 .ant-picker-cell .ant-picker-cell-inner {
@@ -24794,7 +24823,7 @@ html {
 }
 
 .ant-picker-month-panel .ant-picker-content td {
-  padding-top: 0.6rem;
+  padding-top: 0.8rem;
 }
 
 .ant-picker-month-panel .ant-picker-cell .ant-picker-cell-inne {
@@ -24845,6 +24874,10 @@ html {
   height: 28px;
 }
 
+.ant-picker-suffix span {
+  color: #0868bd;
+}
+
 .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner,
 .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
 .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
@@ -24858,5 +24891,14 @@ html {
 
 .ant-picker-range .ant-picker-active-bar {
   background: #0156a2;
+}
+
+.css-1pmkbgy-control {
+  border: 0;
+}
+
+.css-14yr1de-control {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*# sourceMappingURL=all.css.map */

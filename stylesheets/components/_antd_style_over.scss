@@ -92,7 +92,7 @@
 .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner {
   &::before {
     border: 1px solid $hyweb-blue;
-    // border-radius: 50%;
+    border-radius: 8px;
   }
 }
 .ant-picker-cell {
@@ -143,7 +143,7 @@
   .ant-picker-content {
     height: 200px !important;
     td {
-      padding-top: 0.6rem;
+      padding-top: 0.8rem;
     }
   }
   .ant-picker-cell {
@@ -190,6 +190,9 @@
   svg {
     height: 28px;
   }
+  span {
+    color: $today-tag-blue;
+  }
 }
 .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner,
 .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
@@ -202,4 +205,10 @@
 }
 .ant-picker-range .ant-picker-active-bar {
   background: $hyweb-blue;
+}
+.css-1pmkbgy-control {
+  border: 0;
+}
+.css-14yr1de-control {
+  box-shadow: none;
 }
