@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="stylesheets/all.css" />
     <!-- favicon -->
     <link href="img/o-icon.ico" rel="icon" type="image/x-icon" />
-    <title>page_33.0 月曆總覽視窗</title>
+    <title>page_33.0 『新增』月曆總覽視窗</title>
   </head>
 
   <body style="width: 1200px; margin: 0 auto; overflow-y: scroll">
@@ -21,7 +21,7 @@
         font-size: 18px;
         margin: 2% 0;
         padding: 1% 1%;
-        background: #1d5299;
+        background: #511d99;
         color: #fff;
       "
     >
@@ -34,6 +34,7 @@
     >
       personAllCalendar
     </div>
+
     <!-- +++++++++++ -->
     <!--  注意事項    -->
     <!--
@@ -44,8 +45,12 @@
     5. 點擊日曆中的日期(item__date) 會增添 class "is-date-active" 改變樣式(component.js--232)
     6. 點擊日曆中的日期 會出現 元件 accordion general(視窗出現位置會因點選的位置不同 而有不同位置）
     -->
+
+    <a class="c-modal-alert__trigger modal-trigger" href="#personAllCalendar"
+      >月曆總覽視窗</a
+    >
     <!-- +++++++++++ -->
-    <div class="c-modal-personAll">
+    <div class="c-modal-personAll modal" id="personAllCalendar">
       <div class="c-modal-features">
         <div class="c-modal-features__information row">
           <div class="c-modal-features__user">
@@ -170,7 +175,9 @@
           </div>
         </div>
         <div class="c-modal-features__btn">
-          <button type="button"><img src="img/o-cross.svg" alt="" /></button>
+          <button type="button " class="modal-close">
+            <img src="img/o-cross.svg" alt="" />
+          </button>
         </div>
       </div>
       <div class="c-modal-content row js-scrollbar-style">
@@ -500,38 +507,49 @@
         </div>
       </div>
     </div>
-    <!-- accordion general -->
-    <div
-      class=""
-      style="font-size: 25px; color: rgba(242, 153, 74, 1); padding: 1%"
-    >
-      accordion general
-    </div>
-    <div class="c-accordion-general">
-      <div class="accordion-body">
-        <div class="row accordion-body__title">
-          <div class="col s3">計畫部門</div>
-          <div class="col s7">計畫名稱</div>
-          <div class="col s5">工作階段</div>
-          <div class="col s5">工作內容</div>
-          <div class="col s2">時數</div>
-          <div class="col s3">備註</div>
-        </div>
-        <div class="row accordion-body__item">
-          <div class="col s3">M10</div>
-          <div class="col s7">2021UA001 109年臺灣國際專業展..</div>
-          <div class="col s5">網站介面規畫與設計</div>
-          <div class="col s5">網站介面規畫與設計</div>
-          <div class="col s2">1000</div>
-          <div class="col s3">5個樣板</div>
-        </div>
-        <div class="row accordion-body__item">
-          <div class="col s3">M10</div>
-          <div class="col s7">2021UA001 109年臺灣國際專業展..</div>
-          <div class="col s5">系統開發與設計與設計</div>
-          <div class="col s5">網站介面規畫與設計</div>
-          <div class="col s2">4</div>
-          <div class="col s3"></div>
+    <div id="template" class="c-tippy" style="display: none">
+      <div class="c-accordion-general c-accordion-general-tip">
+        <div class="accordion-body">
+          <div class="row accordion-body__title">
+            <div class="col s3">計畫部門</div>
+            <div class="col s7">計畫名稱</div>
+            <div class="col s5">工作階段</div>
+            <div class="col s5">工作內容</div>
+            <div class="col s2">時數</div>
+            <div class="col s3">備註</div>
+          </div>
+          <div class="row accordion-body__item">
+            <div class="col s3">M10</div>
+            <div class="col s7">2021UA001 109年臺灣國際專業展..</div>
+            <div class="col s5">網站介面規畫與設計</div>
+            <div class="col s5">網站介面規畫與設計</div>
+            <div class="col s2">1000</div>
+            <div class="col s3">5個樣板</div>
+          </div>
+          <div class="row accordion-body__item">
+            <div class="col s3">M10</div>
+            <div class="col s7">2021UA001 109年臺灣國際專業展..</div>
+            <div class="col s5">網站介面規畫與設計</div>
+            <div class="col s5">網站介面規畫與設計</div>
+            <div class="col s2">1000</div>
+            <div class="col s3">5個樣板</div>
+          </div>
+          <div class="row accordion-body__item">
+            <div class="col s3">M10</div>
+            <div class="col s7">2021UA001 109年臺灣國際專業展..</div>
+            <div class="col s5">網站介面規畫與設計</div>
+            <div class="col s5">網站介面規畫與設計</div>
+            <div class="col s2">1000</div>
+            <div class="col s3">5個樣板</div>
+          </div>
+          <div class="row accordion-body__item">
+            <div class="col s3">M10</div>
+            <div class="col s7">2021UA001 109年臺灣國際專業展..</div>
+            <div class="col s5">系統開發與設計與設計</div>
+            <div class="col s5">網站介面規畫與設計</div>
+            <div class="col s2">4</div>
+            <div class="col s3"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -543,5 +561,20 @@
     <script src="js/layout.js"></script>
     <script src="js/compontent.js"></script>
     <script src="js/scrollbar_setting.js"></script>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <script>
+      // 引用 tippy.js 套件
+      const template = document.getElementById("template");
+      tippy(".item__date", {
+        content: template.innerHTML,
+        allowHTML: true,
+        interactive: true,
+        trigger: "click",
+        placement: "bottom",
+      });
+    </script>
   </body>
 </html>

@@ -24631,8 +24631,6 @@ html {
   -webkit-box-shadow: 0px 2px 3px 0px rgba(1, 27, 49, 0.2) !important;
           box-shadow: 0px 2px 3px 0px rgba(1, 27, 49, 0.2) !important;
   border-radius: 10px !important;
-  width: auto !important;
-  max-width: 250px;
 }
 
 .tooltip-win-full {
@@ -24650,6 +24648,26 @@ html {
   border: 1px solid #bad4e5 !important;
   -webkit-box-shadow: 0px 2px 3px 0px rgba(1, 27, 49, 0.2) !important;
           box-shadow: 0px 2px 3px 0px rgba(1, 27, 49, 0.2) !important;
+  border-radius: 10px !important;
+}
+
+.tooltip-win-fit {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  word-break: break-all !important;
+  white-space: pre-wrap !important;
+  padding-left: 8px !important;
+  padding-right: 5px !important;
+  font-size: 1rem !important;
+  font-weight: normal !important;
+  line-height: 130% !important;
+  color: #042340 !important;
+  background-color: #fff !important;
+  opacity: 1 !important;
+  border: 1px solid #bad4e5 !important;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(1, 27, 49, 0.2) !important;
+  box-shadow: 0px 2px 3px 0px rgba(1, 27, 49, 0.2) !important;
   border-radius: 10px !important;
 }
 
@@ -24902,5 +24920,36 @@ html {
 .css-14yr1de-control {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.c-accordion-general-tip {
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  max-height: 35vh;
+  overflow: scroll;
+}
+
+.tippy-box {
+  width: 100%;
+  max-width: 100% !important;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 0.66rem;
+}
+
+.c-tippy {
+  width: 100% !important;
+}
+
+.tippy-arrow {
+  opacity: 0 !important;
+}
+
+.tippy-content {
+  margin-bottom: 0.5rem;
 }
 /*# sourceMappingURL=all.css.map */

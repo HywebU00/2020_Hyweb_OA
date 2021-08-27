@@ -1,0 +1,24 @@
+.c-accordion-general-tip {
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+  box-shadow: none;
+  max-height: 35vh;
+  overflow: scroll;
+}
+.tippy-box {
+  width: 100%;
+  max-width: 100% !important;
+  background-color: #fff;
+  box-shadow: $box-shadow;
+  border-radius: $card-radius;
+}
+.c-tippy {
+  width: 100% !important;
+}
+.tippy-arrow {
+  opacity: 0 !important;
+}
+.tippy-content {
+  margin-bottom: 0.5rem;
+}
