@@ -15335,6 +15335,10 @@ body {
   overflow-y: scroll;
 }
 
+.c-dropdown-departmentCheck .c-dropdown__modal .c-dropdown__footer {
+  margin-top: 1rem;
+}
+
 .c-dropdown-departmentCheck .c-dropdown__modal .c-dropdown__footer .o-btn-primary {
   height: 32px;
   padding: 0 20px;
