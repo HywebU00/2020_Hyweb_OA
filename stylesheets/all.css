@@ -12746,6 +12746,10 @@ body {
   border-radius: 0.66rem;
 }
 
+.c-card-planReport a .is-changeBackground .c-card__tag__num, .c-card-planReport-danger a .is-changeBackground .c-card__tag__num, .c-card-alertPlan a .is-changeBackground .c-card__tag__num {
+  width: 100%;
+}
+
 .c-card-planReport a .is-changeBackground .c-card__tag__num div span, .c-card-planReport-danger a .is-changeBackground .c-card__tag__num div span, .c-card-alertPlan a .is-changeBackground .c-card__tag__num div span {
   background-color: #f7fbff;
 }
@@ -12787,11 +12791,8 @@ body {
   background-image: url(../img/o-star_default.svg);
 }
 
-.c-card-planReport h2, .c-card-planReport-danger h2, .c-card-alertPlan h2 {
-  color: #042340;
-}
-
 .c-card-planReport .c-card__tag, .c-card-planReport-danger .c-card__tag, .c-card-alertPlan .c-card__tag {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12883,6 +12884,8 @@ body {
 .c-card-planReport .c-card__item__title h2, .c-card-planReport-danger .c-card__item__title h2, .c-card-alertPlan .c-card__item__title h2, .c-card-planReport .c-card__item__content h2, .c-card-planReport-danger .c-card__item__content h2, .c-card-alertPlan .c-card__item__content h2, .c-card-planReport .c-card__item__footer h2, .c-card-planReport-danger .c-card__item__footer h2, .c-card-alertPlan .c-card__item__footer h2 {
   line-height: 26px;
   margin-bottom: 1rem;
+  color: #042340;
+  display: block;
 }
 
 .c-card-planReport .c-card__item__title .c-card__text__startTime div, .c-card-planReport-danger .c-card__item__title .c-card__text__startTime div, .c-card-alertPlan .c-card__item__title .c-card__text__startTime div, .c-card-planReport .c-card__item__content .c-card__text__startTime div, .c-card-planReport-danger .c-card__item__content .c-card__text__startTime div, .c-card-alertPlan .c-card__item__content .c-card__text__startTime div, .c-card-planReport .c-card__item__footer .c-card__text__startTime div, .c-card-planReport-danger .c-card__item__footer .c-card__text__startTime div, .c-card-alertPlan .c-card__item__footer .c-card__text__startTime div {
@@ -24619,8 +24622,7 @@ html {
   width: inherit !important;
   word-break: break-all !important;
   white-space: pre-wrap !important;
-  padding-left: 8px !important;
-  padding-right: 5px !important;
+  padding: 8px 5px 8px 8px !important;
   font-size: 1rem !important;
   font-weight: normal !important;
   line-height: 130% !important;
@@ -24637,8 +24639,7 @@ html {
   width: 100% !important;
   word-break: break-all !important;
   white-space: pre-wrap !important;
-  padding-left: 8px !important;
-  padding-right: 5px !important;
+  padding: 8px 5px 8px 8px !important;
   font-size: 1rem !important;
   font-weight: normal !important;
   line-height: 130% !important;

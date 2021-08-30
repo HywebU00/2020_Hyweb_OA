@@ -451,6 +451,7 @@
     min-height: 180px;
     .is-changeBackground {
       .c-card__tag__num {
+        width: 100%;
         div {
           span {
             background-color: $sec3;
@@ -497,11 +498,13 @@
     background-image: url(../img/o-star_default.svg);
   }
 
-  h2 {
-    color: $gray1;
-  }
+  // h2 {
+  //   color: $gray1;
+
+  // }
 
   .c-card__tag {
+    width: 100%;
     div {
       align-items: center;
     }
@@ -575,6 +578,8 @@
     h2 {
       line-height: 26px;
       margin-bottom: 1rem;
+      color: $gray1;
+      display: block;
     }
 
     .c-card__text__startTime {
