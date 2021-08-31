@@ -563,8 +563,7 @@
   word-break: break-all !important;
   white-space: pre-wrap !important;
   padding: 8px 5px 8px 8px !important;
-  // padding-left: 8px !important;
-  // padding-right: 5px !important;
+  max-width: 400px;
   font-size: 1rem !important;
   font-weight: normal !important;
   line-height: 130% !important;
@@ -580,8 +579,7 @@
   word-break: break-all !important;
   white-space: pre-wrap !important;
   padding: 8px 5px 8px 8px !important;
-  // padding-left: 8px !important;
-  // padding-right: 5px !important;
+  max-width: 400px;
   font-size: 1rem !important;
   font-weight: normal !important;
   line-height: 130% !important;
@@ -596,6 +594,7 @@
   width: fit-content !important;
   word-break: break-all !important;
   white-space: pre-wrap !important;
+  max-width: 400px;
   padding-left: 8px !important;
   padding-right: 5px !important;
   font-size: 1rem !important;
