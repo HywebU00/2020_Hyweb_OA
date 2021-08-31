@@ -10016,6 +10016,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 
 .l-side {
@@ -10389,6 +10390,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.l-side-left {
+  position: relative;
 }
 
 .l-main-content {
@@ -15168,6 +15173,22 @@ body {
   margin-top: -1rem;
 }
 
+.c-modal-data {
+  height: 36vh !important;
+}
+
+.c-modal-data .c-modal-alert__content .c-modal-content, .c-modal-data .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-data .c-modal-alert__content .c-modal-content__scroll {
+  min-height: -webkit-fit-content !important;
+  min-height: -moz-fit-content !important;
+  min-height: fit-content !important;
+}
+
+.c-modal-data .c-modal-alert__content .c-modal-content .row :nth-child(3), .c-modal-data .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .row :nth-child(3), .c-modal-alert .c-modal-data .c-modal-alert__content .c-modal-content__scroll .row :nth-child(3) {
+  position: absolute;
+  right: 2rem;
+  bottom: 0;
+}
+
 .c-dropdown-plan .select-wrapper, .c-dropdown-page .select-wrapper, .c-dropdown-planContent .select-wrapper, .c-dropdown-status .select-wrapper, .c-dropdown-general .select-wrapper, .c-dropdown-department .select-wrapper, .c-dropdown-departmentCheck .select-wrapper {
   height: 38px;
   width: 100%;
@@ -15450,7 +15471,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -20638,7 +20659,8 @@ body {
           align-items: start;
   padding-top: 3.14rem;
   padding-bottom: 4.28rem;
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
   background: #edf2f5;
 }
 
@@ -21315,6 +21337,7 @@ body {
       -ms-flex-pack: right;
           justify-content: right;
   color: #edf2f5;
+  overflow-y: hidden;
 }
 
 .l-mobile-footer-time .l-mobile-footer-time_title {
