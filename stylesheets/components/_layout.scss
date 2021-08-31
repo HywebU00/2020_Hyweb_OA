@@ -4,6 +4,7 @@ body {
 
 .l-container {
   display: flex;
+  overflow: hidden;
 }
 
 .l-side {
@@ -329,7 +330,9 @@ body {
     align-items: center;
   }
 }
-
+.l-side-left {
+  position: relative;
+}
 .l-main-content {
   margin-top: 0.5rem;
   padding: 0 0.2rem;

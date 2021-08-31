@@ -78,7 +78,8 @@
   align-items: start;
   padding-top: 3.14rem;
   padding-bottom: 4.28rem;
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
   background: $gray5;
 }
 
@@ -620,6 +621,7 @@
   @extend .l-mobile-footer-btn;
   justify-content: right;
   color: $gray5;
+  overflow-y: hidden;
 
   .l-mobile-footer-time_title {
     font-size: 1.14rem;

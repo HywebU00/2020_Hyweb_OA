@@ -2590,6 +2590,22 @@
   }
 }
 
+.c-modal-data {
+  height: 36vh !important;
+  .c-modal-alert__content {
+    .c-modal-content {
+      min-height: fit-content !important;
+      .row {
+        :nth-child(3) {
+          position: absolute;
+          right: 2rem;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+
 //dropdown
 
 .c-dropdown-plan {
@@ -2886,7 +2902,7 @@
 
   .c-dropdown__footer {
     display: flex;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     justify-content: flex-end;
 
     button {
