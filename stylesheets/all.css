@@ -21290,14 +21290,14 @@ body {
 .l-mobile-content_textarea {
   position: absolute;
   width: 100%;
-  height: calc(100vh - 17.5rem);
+  height: calc(100vh - 18.5rem);
   bottom: 0;
   background: #fff;
   padding: 1.42rem 1.42rem 0 1.42rem;
 }
 
 .l-mobile-content_textarea textarea {
-  height: 100%;
+  height: calc(100% - 60px);
   border: 0;
 }
 
