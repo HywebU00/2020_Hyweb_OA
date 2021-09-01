@@ -576,7 +576,8 @@
   }
 
   .l-mobile-content_textarea {
-    height: calc(100vh - 19.62rem);
+    // height: calc(100vh - 19.62rem);
+    height: calc(100vh - 24.62rem);
   }
 }
 
@@ -584,7 +585,7 @@
   position: absolute;
   width: 100%;
   // height: calc(100vh - 17.5rem);
-  height: calc(100vh - 18.5rem);
+  height: calc(100vh - 22.5rem);
   bottom: 0;
   background: #fff;
   padding: 1.42rem 1.42rem 0 1.42rem;
