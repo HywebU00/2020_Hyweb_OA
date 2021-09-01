@@ -11180,7 +11180,7 @@ body {
 }
 
 .l-main-content .l-main-content__wbslist .s1, .l-main-content .l-main-content__workTypelist .s1 {
-  width: 75px;
+  width: 6.8rem;
 }
 
 .l-main-content .l-main-content__wbslist .s2, .l-main-content .l-main-content__workTypelist .s2 {
@@ -24143,6 +24143,7 @@ html {
   position: absolute;
   left: 50%;
   top: 50%;
+  z-index: 2;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -24650,7 +24651,7 @@ html {
   word-break: break-all !important;
   white-space: pre-wrap !important;
   padding: 8px 5px 8px 8px !important;
-  max-width: 400px;
+  max-width: 400px !important;
   font-size: 1rem !important;
   font-weight: normal !important;
   line-height: 130% !important;
@@ -24668,7 +24669,7 @@ html {
   word-break: break-all !important;
   white-space: pre-wrap !important;
   padding: 8px 5px 8px 8px !important;
-  max-width: 400px;
+  max-width: 400px !important;
   font-size: 1rem !important;
   font-weight: normal !important;
   line-height: 130% !important;
@@ -24687,7 +24688,7 @@ html {
   width: fit-content !important;
   word-break: break-all !important;
   white-space: pre-wrap !important;
-  max-width: 400px;
+  max-width: 400px !important;
   padding-left: 8px !important;
   padding-right: 5px !important;
   font-size: 1rem !important;
