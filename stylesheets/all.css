@@ -15183,7 +15183,7 @@ body {
   min-height: fit-content !important;
 }
 
-.c-modal-data .c-modal-alert__content .c-modal-content .row :nth-child(3), .c-modal-data .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .row :nth-child(3), .c-modal-alert .c-modal-data .c-modal-alert__content .c-modal-content__scroll .row :nth-child(3) {
+.c-modal-data .c-modal-alert__content .c-modal-content .row:nth-child(3), .c-modal-data .c-modal-alert .c-modal-alert__content .c-modal-content__scroll .row:nth-child(3), .c-modal-alert .c-modal-data .c-modal-alert__content .c-modal-content__scroll .row:nth-child(3) {
   position: absolute;
   right: 2rem;
   bottom: 0;

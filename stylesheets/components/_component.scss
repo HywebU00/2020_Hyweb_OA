@@ -2596,7 +2596,7 @@
     .c-modal-content {
       min-height: fit-content !important;
       .row {
-        :nth-child(3) {
+        &:nth-child(3) {
           position: absolute;
           right: 2rem;
           bottom: 0;
