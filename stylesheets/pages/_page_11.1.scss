@@ -274,6 +274,12 @@
           div {
             width: auto;
           }
+          .ant-picker {
+            width: 100% !important;
+            .ant-picker-input {
+              width: 100% !important;
+            }
+          }
         }
       }
     }

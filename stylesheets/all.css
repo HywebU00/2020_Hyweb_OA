@@ -15174,7 +15174,7 @@ body {
 }
 
 .c-modal-data {
-  height: 36vh !important;
+  height: 17rem !important;
 }
 
 .c-modal-data .c-modal-alert__content .c-modal-content, .c-modal-data .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-data .c-modal-alert__content .c-modal-content__scroll {
@@ -15187,6 +15187,10 @@ body {
   position: absolute;
   right: 2rem;
   bottom: 0;
+}
+
+.c-modal-data .c-modal-title {
+  min-height: 3.36rem !important;
 }
 
 .c-dropdown-plan .select-wrapper, .c-dropdown-page .select-wrapper, .c-dropdown-planContent .select-wrapper, .c-dropdown-status .select-wrapper, .c-dropdown-general .select-wrapper, .c-dropdown-department .select-wrapper, .c-dropdown-departmentCheck .select-wrapper {
@@ -15225,10 +15229,6 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.c-dropdown-plan .select-wrapper .select-dropdown li, .c-dropdown-page .select-wrapper .select-dropdown li, .c-dropdown-planContent .select-wrapper .select-dropdown li, .c-dropdown-status .select-wrapper .select-dropdown li, .c-dropdown-general .select-wrapper .select-dropdown li, .c-dropdown-department .select-wrapper .select-dropdown li, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li {
-  height: 40px;
 }
 
 .c-dropdown-plan .select-wrapper .select-dropdown li:first-child, .c-dropdown-page .select-wrapper .select-dropdown li:first-child, .c-dropdown-planContent .select-wrapper .select-dropdown li:first-child, .c-dropdown-status .select-wrapper .select-dropdown li:first-child, .c-dropdown-general .select-wrapper .select-dropdown li:first-child, .c-dropdown-department .select-wrapper .select-dropdown li:first-child, .c-dropdown-departmentCheck .select-wrapper .select-dropdown li:first-child {
@@ -15315,6 +15315,11 @@ body {
   padding-top: 0.5%;
 }
 
+.c-dropdown-planContent .select-wrapper .select-dropdown li span {
+  white-space: normal;
+  line-height: 1.5rem;
+}
+
 .c-dropdown-planContent .select-wrapper .select-dropdown .disabled {
   background-color: #fff;
   color: #8495a4;
@@ -15399,7 +15404,6 @@ body {
           justify-content: space-between;
   color: #8495a4;
   font-size: 1.06rem;
-  margin-bottom: 1rem;
   cursor: pointer;
 }
 
@@ -15411,6 +15415,7 @@ body {
 
 .c-dropdown__modal .c-dropdown__title .c-dropdown__title__all {
   margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .c-dropdown__modal .c-dropdown__title .c-dropdown__title__all:hover {
@@ -17868,6 +17873,14 @@ body {
 
 #introduction .l-main-content__planlist .table-thead .row .col div, #introduction .l-main-content .l-main-content__wbslist .table-thead .row .col div, .l-main-content #introduction .l-main-content__wbslist .table-thead .row .col div, #introduction .l-main-content .l-main-content__workTypelist .table-thead .row .col div, .l-main-content #introduction .l-main-content__workTypelist .table-thead .row .col div, #introduction .l-main-content__statisticsPlan .table-thead .row .col div {
   width: auto;
+}
+
+#introduction .l-main-content__planlist .table-thead .row .col .ant-picker, #introduction .l-main-content .l-main-content__wbslist .table-thead .row .col .ant-picker, .l-main-content #introduction .l-main-content__wbslist .table-thead .row .col .ant-picker, #introduction .l-main-content .l-main-content__workTypelist .table-thead .row .col .ant-picker, .l-main-content #introduction .l-main-content__workTypelist .table-thead .row .col .ant-picker, #introduction .l-main-content__statisticsPlan .table-thead .row .col .ant-picker {
+  width: 100% !important;
+}
+
+#introduction .l-main-content__planlist .table-thead .row .col .ant-picker .ant-picker-input, #introduction .l-main-content .l-main-content__wbslist .table-thead .row .col .ant-picker .ant-picker-input, .l-main-content #introduction .l-main-content__wbslist .table-thead .row .col .ant-picker .ant-picker-input, #introduction .l-main-content .l-main-content__workTypelist .table-thead .row .col .ant-picker .ant-picker-input, .l-main-content #introduction .l-main-content__workTypelist .table-thead .row .col .ant-picker .ant-picker-input, #introduction .l-main-content__statisticsPlan .table-thead .row .col .ant-picker .ant-picker-input {
+  width: 100% !important;
 }
 
 #introduction .l-main-content__planlist .table-body .row .col, #introduction .l-main-content .l-main-content__wbslist .table-body .row .col, .l-main-content #introduction .l-main-content__wbslist .table-body .row .col, #introduction .l-main-content .l-main-content__workTypelist .table-body .row .col, .l-main-content #introduction .l-main-content__workTypelist .table-body .row .col, #introduction .l-main-content__statisticsPlan .table-body .row .col {
