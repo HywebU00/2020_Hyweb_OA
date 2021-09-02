@@ -2591,7 +2591,7 @@
 }
 
 .c-modal-data {
-  height: 36vh !important;
+  height: 17rem !important;
   .c-modal-alert__content {
     .c-modal-content {
       min-height: fit-content !important;
@@ -2603,6 +2603,9 @@
         }
       }
     }
+  }
+  .c-modal-title {
+    min-height: 3.36rem !important;
   }
 }
 
@@ -2641,7 +2644,7 @@
       box-sizing: border-box;
 
       li {
-        height: 40px;
+        // height: 40px;
 
         &:first-child {
           border-top: 0;
@@ -2734,6 +2737,12 @@
   .select-wrapper {
     padding-top: 0.5%;
     .select-dropdown {
+      li {
+        span {
+          white-space: normal;
+          line-height: 1.5rem;
+        }
+      }
       .disabled {
         background-color: #fff;
         color: $gray3;
@@ -2829,7 +2838,7 @@
     justify-content: space-between;
     color: $gray3;
     font-size: $p;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
     cursor: pointer;
 
     div {
@@ -2842,6 +2851,7 @@
       }
 
       margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
     }
 
     .c-dropdown__title__clear {
