@@ -2682,7 +2682,7 @@
 
   .dropdown-content {
     li {
-      min-height: 36px;
+      // min-height: 36px;
       border-bottom: 1px solid $sec2;
       display: flex;
       align-items: center;
@@ -2740,7 +2740,8 @@
       li {
         span {
           white-space: normal;
-          line-height: 1.5rem;
+          line-height: 1.2rem;
+          margin: 0.5rem 0;
         }
       }
       .disabled {
