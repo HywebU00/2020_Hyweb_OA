@@ -15221,6 +15221,7 @@ body {
   border-radius: 0.66rem;
   padding: 0.99rem;
   max-height: 635px;
+  max-width: 55vw;
 }
 
 .c-dropdown-plan .select-wrapper .select-dropdown, .c-dropdown-page .select-wrapper .select-dropdown, .c-dropdown-planContent .select-wrapper .select-dropdown, .c-dropdown-status .select-wrapper .select-dropdown, .c-dropdown-general .select-wrapper .select-dropdown, .c-dropdown-department .select-wrapper .select-dropdown, .c-dropdown-departmentCheck .select-wrapper .select-dropdown {
@@ -15354,6 +15355,9 @@ body {
   white-space: normal;
   max-width: 350px;
   font-size: 14px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .c-dropdown-departmentCheck .c-dropdown__modal .c-dropdown__content__height {
