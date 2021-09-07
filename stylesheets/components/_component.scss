@@ -2635,6 +2635,7 @@
       border-radius: $dropdown-radius;
       padding: $pd-3/2;
       max-height: 635px;
+      max-width: 55vw;
     }
 
     .select-dropdown {
@@ -2793,6 +2794,7 @@
           white-space: normal;
           max-width: 350px;
           font-size: $font-size-m;
+          width: max-content;
         }
       }
     }
