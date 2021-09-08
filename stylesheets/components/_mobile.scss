@@ -1,5 +1,6 @@
 .l-mobile-main-login {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   background: $hy-background url(../img/loginPage_bg.png) top left no-repeat;
   display: flex;
   flex-wrap: wrap;
@@ -74,6 +75,7 @@
   width: 100vw;
   display: flex;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   justify-content: center;
   align-items: start;
   padding-top: 3.14rem;
