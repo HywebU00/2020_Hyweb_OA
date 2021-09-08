@@ -20585,6 +20585,7 @@ body {
 
 .l-mobile-main-login {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd url(../img/loginPage_bg.png) top left no-repeat;
   background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd url(../img/loginPage_bg.png) top left no-repeat;
   display: -webkit-box;
@@ -20668,6 +20669,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
