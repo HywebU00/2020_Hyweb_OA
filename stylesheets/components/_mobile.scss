@@ -91,7 +91,8 @@
 
 .l-mobile-navbar {
   height: 3.14rem;
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
   position: absolute;
   top: 0;
   background: $hy-background;
@@ -604,7 +605,7 @@
 }
 
 .l-mobile-footer-btn {
-  width: 100%;
+  width: 100vw;
   height: 3.9rem;
   background: $hy-background;
   display: flex;
@@ -616,6 +617,7 @@
   font-family: $font-family;
   font-size: $p;
   border-radius: 1rem 1rem 0 0;
+  overflow-x: hidden;
 
   &:hover {
     background: $hy-background;
