@@ -21313,7 +21313,7 @@ body {
 .l-mobile-content_textarea {
   position: absolute;
   width: 100%;
-  height: calc(100vh - 22.5rem);
+  height: calc((var(--vh, 1vh) * 100) - 17.5rem);
   bottom: 0;
   background: #fff;
   padding: 1.42rem 1.42rem 0 1.42rem;
