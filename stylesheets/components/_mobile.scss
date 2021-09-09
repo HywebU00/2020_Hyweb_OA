@@ -209,6 +209,7 @@
   position: absolute;
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
   height: calc(var(--vh, 1vh) * 100);
   background: $hy-background url(../img/loginPage_bg.png) top left no-repeat;
   justify-content: center;
