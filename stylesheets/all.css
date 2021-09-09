@@ -20688,7 +20688,8 @@ body {
 
 .l-mobile-navbar {
   height: 3.14rem;
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
   position: absolute;
   top: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
@@ -21325,7 +21326,7 @@ body {
 }
 
 .l-mobile-footer-btn, .l-mobile-footer-time {
-  width: 100%;
+  width: 100vw;
   height: 3.9rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
   background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
@@ -21344,6 +21345,7 @@ body {
   font-family: "sans-serif", "Noto Sans TC";
   font-size: 1.06rem;
   border-radius: 1rem 1rem 0 0;
+  overflow-x: hidden;
 }
 
 .l-mobile-footer-btn:hover, .l-mobile-footer-time:hover {
