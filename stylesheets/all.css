@@ -20677,8 +20677,8 @@ body {
           align-items: start;
   padding-top: 3.14rem;
   padding-bottom: 4.28rem;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   background: #edf2f5;
 }
 
