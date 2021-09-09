@@ -95,11 +95,11 @@ document.documentElement.style.setProperty("--vh", `${vh}px`);
 //+++++++++++++++++++++++++++++++
 // ios 輸入匡不向上推
 //+++++++++++++++++++++++++++++++
-document.ontouchmove = function (e) {
-  e.preventDefault();
-};
-let mobile_input = document.querySelector("textarea");
-mobile_input.onfocus = function () {
-  window.scrollTo(0, 0);
-  document.body.scrollTop = 0;
-};
+// document.ontouchmove = function (e) {
+//   e.preventDefault();
+// };
+// let mobile_input = document.querySelector("textarea");
+// mobile_input.onfocus = function () {
+//   window.scrollTo(0, 0);
+//   document.body.scrollTop = 0;
+// };
