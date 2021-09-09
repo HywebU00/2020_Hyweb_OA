@@ -15221,7 +15221,7 @@ body {
   border-radius: 0.66rem;
   padding: 0.99rem;
   max-height: 635px;
-  max-width: 55vw;
+  max-width: 40vw;
 }
 
 .c-dropdown-plan .select-wrapper .select-dropdown, .c-dropdown-page .select-wrapper .select-dropdown, .c-dropdown-planContent .select-wrapper .select-dropdown, .c-dropdown-status .select-wrapper .select-dropdown, .c-dropdown-general .select-wrapper .select-dropdown, .c-dropdown-department .select-wrapper .select-dropdown, .c-dropdown-departmentCheck .select-wrapper .select-dropdown {
@@ -15316,7 +15316,6 @@ body {
 }
 
 .c-dropdown-planContent .select-wrapper .select-dropdown li span {
-  white-space: normal;
   line-height: 1.2rem;
   margin: 0.5rem 0;
 }
@@ -21353,9 +21352,9 @@ body {
 }
 
 .l-mobile-footer-time {
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   color: #edf2f5;
   overflow-y: hidden;
 }
