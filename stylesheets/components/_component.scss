@@ -3843,6 +3843,16 @@
   input[type="text"]:not(.browser-default) {
     margin: 1px;
   }
+
+  .c-dropdown-plan {
+    .select-dropdown {
+      li {
+        span {
+          white-space: normal;
+        }
+      }
+    }
+  }
 }
 
 .c-search {

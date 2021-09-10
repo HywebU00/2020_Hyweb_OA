@@ -16431,6 +16431,10 @@ body {
   margin: 1px;
 }
 
+.c-writeHours-content__select .c-dropdown-plan .select-dropdown li span, .c-writeHours-content__select .c-dropdown-page .select-dropdown li span, .c-writeHours-content__select .c-dropdown-planContent .select-dropdown li span, .c-writeHours-content__select .c-dropdown-status .select-dropdown li span, .c-writeHours-content__select .c-dropdown-general .select-dropdown li span, .c-writeHours-content__select .c-dropdown-department .select-dropdown li span, .c-writeHours-content__select .c-dropdown-departmentCheck .select-dropdown li span {
+  white-space: normal;
+}
+
 .c-search {
   display: -webkit-box;
   display: -ms-flexbox;
