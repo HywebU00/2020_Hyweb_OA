@@ -16433,6 +16433,8 @@ body {
 
 .c-writeHours-content__select .c-dropdown-plan .select-dropdown li span, .c-writeHours-content__select .c-dropdown-page .select-dropdown li span, .c-writeHours-content__select .c-dropdown-planContent .select-dropdown li span, .c-writeHours-content__select .c-dropdown-status .select-dropdown li span, .c-writeHours-content__select .c-dropdown-general .select-dropdown li span, .c-writeHours-content__select .c-dropdown-department .select-dropdown li span, .c-writeHours-content__select .c-dropdown-departmentCheck .select-dropdown li span {
   white-space: normal;
+  line-height: 1.2rem;
+  margin: 0.5rem 0;
 }
 
 .c-search {
