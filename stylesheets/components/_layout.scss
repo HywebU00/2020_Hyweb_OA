@@ -286,6 +286,21 @@ body {
           display: flex;
           justify-content: center;
         }
+        .select-wrapper {
+          .optgroup:nth-child(2) {
+            span {
+              display: flex;
+              justify-content: center;
+              &::before {
+                content: "";
+                background: url(../img/o-star_deep.svg);
+                width: 17px;
+                height: 17px;
+                margin-right: 0rem;
+              }
+            }
+          }
+        }
       }
 
       .c-writeHours-content__text {

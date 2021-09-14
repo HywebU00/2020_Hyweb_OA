@@ -10333,6 +10333,23 @@ body {
           justify-content: center;
 }
 
+.l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__select .select-wrapper .optgroup:nth-child(2) span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__select .select-wrapper .optgroup:nth-child(2) span::before {
+  content: "";
+  background: url(../img/o-star_deep.svg);
+  width: 17px;
+  height: 17px;
+  margin-right: 0rem;
+}
+
 .l-main .c-writeHours .c-writeHours-content__list .c-writeHours-content__text {
   color: #8495a4;
   margin-top: 3rem;
@@ -16138,6 +16155,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .c-writeHours-title .is-no-this-months {
@@ -16183,6 +16201,27 @@ body {
   fill: #0868bd;
 }
 
+.c-writeHours-title button {
+  position: absolute;
+  cursor: pointer;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0;
+  margin-top: 5rem;
+  left: 0.5rem;
+}
+
+.c-writeHours-title button:last-child {
+  margin-left: 0rem;
+  right: 0.5rem;
+  left: auto;
+}
+
+.c-writeHours-title button:hover {
+  -webkit-filter: opacity(0.6);
+          filter: opacity(0.6);
+}
+
 .c-writeHours-title__item {
   padding: 0 1rem;
   padding-bottom: 0.5rem;
@@ -16197,7 +16236,7 @@ body {
   border-radius: 0.66rem 0 0 0;
 }
 
-.c-writeHours-title__item:last-child {
+.c-writeHours-title__item:nth-child(7) {
   border-radius: 0 0.66rem 0 0;
 }
 
