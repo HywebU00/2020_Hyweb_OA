@@ -11271,9 +11271,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageSelect {
@@ -11299,6 +11296,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 1.5rem;
 }
 
 .l-main-content .l-main-content-pagiation .l-main-content-pagiation_pageInput button {
@@ -11459,6 +11457,30 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+}
+
+.l-main-float-button {
+  position: fixed;
+  bottom: 2rem;
+  z-index: 99;
+  right: 3rem;
+}
+
+.l-main-float-button button {
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  z-index: 999;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.l-main-float-button button:hover {
+  background: #f1f8ff;
 }
 
 .l-main-content-table {
