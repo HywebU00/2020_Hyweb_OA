@@ -12555,7 +12555,7 @@ body {
   background: #cfe3f5;
   color: #042340;
   display: inline-block;
-  line-height: 24px;
+  line-height: 30px;
   padding: 0 0.5rem;
   font-weight: 400;
   border-radius: 0.33rem;
@@ -12602,6 +12602,32 @@ body {
   display: inline-block;
   margin-bottom: 0.3rem;
   white-space: nowrap;
+}
+
+.c-card-plan-starBtn .c-card__star__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-card-plan-starBtn .o-card__star-active {
+  background-image: url(../img/o-star_active.svg);
+  height: 2rem;
+  width: 2rem;
+}
+
+.c-card-plan-starBtn .o-card__iconBtn {
+  margin-right: 0.5rem;
+}
+
+.c-card-plan-starBtn .o-card__star-default {
+  background-image: url(../img/o-star_default.svg);
+  height: 2rem;
+  width: 2rem;
+}
+
+.c-card-plan-starBtn .c-card__star__btn span {
+  line-height: 2rem;
 }
 
 @media (max-width: 992px) {
@@ -15114,6 +15140,27 @@ body {
   width: auto;
 }
 
+.c-modal-list .is-error-status {
+  color: #fb5b29;
+}
+
+.c-modal-list .is-error-status .dropdown-input {
+  border: #fb5b29 1px solid;
+  background: #fff;
+}
+
+.c-modal-list .is-error-status .o-input-div {
+  background: none;
+}
+
+.c-modal-list .is-error-status .o-input-div::after {
+  background-image: none;
+}
+
+.c-modal-list .is-error-status .c-dropdown__input:after {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .c-modal-list-single {
   height: 15rem;
 }
@@ -17576,6 +17623,10 @@ body {
 
 .change-card-to-list .l-main-content-item .l-main-content-item__listTitle .listTitle__time {
   width: 10%;
+}
+
+.change-card-to-list .l-main-content-item .l-main-content-item__planPerson .listTitle__num {
+  padding-left: 2.2rem;
 }
 
 .change-card-to-list .l-main-content-item a {
