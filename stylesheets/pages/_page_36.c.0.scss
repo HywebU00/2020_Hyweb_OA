@@ -1,97 +1,87 @@
-#memberstime{
-    .c-search-item__departmentTitle{
-        @extend .c-search-item__title
-    }
-    .table-body{
-        .table-body__item{
-            .row{
-                .col{
-                    div{
-                        display: flex;
-                    align-items: center;
-                    }
-                }
-            }
-            
+#memberstime {
+  .c-search-item__departmentTitle {
+    @extend .c-search-item__title;
+  }
+  .table-body {
+    .table-body__item {
+      .row {
+        .col {
+          div {
+            display: flex;
+            align-items: center;
+          }
         }
+      }
     }
-    .is-error-status{
-        .c-dropdown-departmentCheck{
-            .c-dropdown__input{
-                background-color: #fff;
-                .o-input-div{
-                    background-color: #fff;
-                    border: 1px $danger solid;
-                    &::after{
-                        background-image:none;
-                    }
-                }
-               
-                &::after{
-                    background-color: rgba(0,0,0,0);
-                }
-            }
+  }
+  .is-error-status {
+    .c-dropdown-departmentCheck {
+      .c-dropdown__input {
+        background-color: #fff;
+        .o-input-div {
+          background-color: #fff;
+          border: 1px $danger solid;
+          &::after {
+            background-image: none;
+          }
         }
-        
-        .c-search-list{
-            .c-search-item__departmentTitle{
-                color: $danger;
-               
-            }
-            
+
+        &::after {
+          background-color: rgba(0, 0, 0, 0);
         }
+      }
     }
-    .c-dropdown-departmentCheck{
-        .c-dropdown__input{
-            
-            .o-input-div{
-                background-color: rgba(0,0,0,0);
-                &::after{
-                    background-image:url(../img/o-arrowDown.svg);
-                    
-                }
-            }
-            &::after{
-                background-color: rgba(0,0,0,0);
-                background-image: none;
-                z-index: -1;
-            }
-            
-            
-         
-        }
-       
+
+    .c-search-list {
+      .c-search-item__departmentTitle {
+        color: $danger;
+      }
     }
-    
+  }
+  .c-dropdown-departmentCheck {
+    .c-dropdown__input {
+      .o-input-div {
+        background-color: rgba(0, 0, 0, 0);
+        &::after {
+          background-image: url(../img/o-arrowDown.svg);
+        }
+      }
+      &::after {
+        background-color: rgba(0, 0, 0, 0);
+        background-image: none;
+        z-index: -1;
+      }
+    }
+  }
 }
-#departmenttime{
-    @extend #memberstime;     
+#departmenttime,
+#worktime {
+  @extend #memberstime;
 }
-#universalPlan{
-    @extend #memberstime;    
+#universalPlan {
+  @extend #memberstime;
 }
-.l-main-content__statisticsPlan{
-    @extend .l-main-content__planlist;
-    .table-body{
-        .table-body__item{
-            .row{
-                padding: 0 0 0 1.5rem;
-                img{
-                    margin-right: 0.5rem;
-                }
-                button{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                }
-                .s11{
-                    width: 87.6666666667%;
-                }
-                .s1{
-                    width: 12.3333333333%;
-                }
+.l-main-content__statisticsPlan {
+  @extend .l-main-content__planlist;
+  .table-body {
+    .table-body__item {
+      .row {
+        padding: 0 0 0 1.5rem;
+        img {
+          margin-right: 0.5rem;
         }
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .s11 {
+        width: 87.6666666667%;
+      }
+      .s1 {
+        width: 12.3333333333%;
+      }
     }
-  
+  }
 }

@@ -12233,7 +12233,7 @@ body {
   font-family: "sans-serif", "Noto Sans TC";
 }
 
-.c-card, .c-card-manhourSofar, .c-card-manhourSearch, .c-card-percent, .c-card-percentCheck, .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan, .c-card-department, .c-card-lableGroup, .c-accordion-general, .c-toast-uploadSuccess, .c-toast-uploadFailure, .c-toast-join, .c-toast-joinCancel, .c-card-login {
+.c-card, .c-card-manhourSofar, .c-card-manhourSearch, .c-card-percent, .c-card-percentCheck, .c-card-planPerson, .c-card-planClosed, .c-card-planHotkey, .l-mobile-footer-worksheet .c-card-workHotkey, .c-card-planReport, .c-card-planReport-danger, .c-card-alertPlan, .c-card-department, .c-card-lableGroup, .c-card-list, .c-accordion-general, .c-toast-uploadSuccess, .c-toast-uploadFailure, .c-toast-join, .c-toast-joinCancel, .c-card-login {
   border-radius: 0.66rem;
   background: #fff;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -12242,13 +12242,13 @@ body {
   width: 17%;
 }
 
-.c-card h2, .c-card-manhourSofar h2, .c-card-manhourSearch h2, .c-card-percent h2, .c-card-percentCheck h2, .c-card-planPerson h2, .c-card-planClosed h2, .c-card-planHotkey h2, .l-mobile-footer-worksheet .c-card-workHotkey h2, .c-card-planReport h2, .c-card-planReport-danger h2, .c-card-alertPlan h2, .c-card-department h2, .c-card-lableGroup h2, .c-accordion-general h2, .c-toast-uploadSuccess h2, .c-toast-uploadFailure h2, .c-toast-join h2, .c-toast-joinCancel h2, .c-card-login h2 {
+.c-card h2, .c-card-manhourSofar h2, .c-card-manhourSearch h2, .c-card-percent h2, .c-card-percentCheck h2, .c-card-planPerson h2, .c-card-planClosed h2, .c-card-planHotkey h2, .l-mobile-footer-worksheet .c-card-workHotkey h2, .c-card-planReport h2, .c-card-planReport-danger h2, .c-card-alertPlan h2, .c-card-department h2, .c-card-lableGroup h2, .c-card-list h2, .c-accordion-general h2, .c-toast-uploadSuccess h2, .c-toast-uploadFailure h2, .c-toast-join h2, .c-toast-joinCancel h2, .c-card-login h2 {
   font-size: 22px;
   font-weight: 700;
   line-height: 32px;
 }
 
-.c-card h3, .c-card-manhourSofar h3, .c-card-manhourSearch h3, .c-card-percent h3, .c-card-percentCheck h3, .c-card-planPerson h3, .c-card-planClosed h3, .c-card-planHotkey h3, .l-mobile-footer-worksheet .c-card-workHotkey h3, .c-card-planReport h3, .c-card-planReport-danger h3, .c-card-alertPlan h3, .c-card-department h3, .c-card-lableGroup h3, .c-accordion-general h3, .c-toast-uploadSuccess h3, .c-toast-uploadFailure h3, .c-toast-join h3, .c-toast-joinCancel h3, .c-card-login h3 {
+.c-card h3, .c-card-manhourSofar h3, .c-card-manhourSearch h3, .c-card-percent h3, .c-card-percentCheck h3, .c-card-planPerson h3, .c-card-planClosed h3, .c-card-planHotkey h3, .l-mobile-footer-worksheet .c-card-workHotkey h3, .c-card-planReport h3, .c-card-planReport-danger h3, .c-card-alertPlan h3, .c-card-department h3, .c-card-lableGroup h3, .c-card-list h3, .c-accordion-general h3, .c-toast-uploadSuccess h3, .c-toast-uploadFailure h3, .c-toast-join h3, .c-toast-joinCancel h3, .c-card-login h3 {
   font-size: 1.06rem;
   font-weight: 500;
   line-height: 25px;
@@ -13272,6 +13272,83 @@ body {
           transform: translateY(4px) translateX(4px);
 }
 
+.c-card-list {
+  cursor: pointer;
+  width: calc(25% - 0.5rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.66rem;
+  margin: 0.2rem 0 0 0.2rem;
+  padding: 0;
+}
+
+@media (max-width: 1200px) {
+  .c-card-list {
+    width: calc(33% - 0.5rem);
+  }
+}
+
+@media (max-width: 992px) {
+  .c-card-list {
+    width: calc(50% - 0.5rem);
+  }
+}
+
+.c-card-list .c-card-list__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #042340;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 0.5rem;
+}
+
+.c-card-list .c-card-list__icon img {
+  height: 1.8rem;
+}
+
+.c-card-list .c-card-list__item {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1.06rem;
+}
+
+.c-card-list a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0.66rem 1.32rem;
+  height: 63px;
+  min-width: 230px;
+  color: #042340;
+}
+
+.c-card-list:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: translateY(2px) translateX(2px);
+          transform: translateY(2px) translateX(2px);
+  background: #eee;
+}
+
+.c-card-list:active {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: translateY(4px) translateX(4px);
+          transform: translateY(4px) translateX(4px);
+}
+
 .c-breadcrumb {
   margin-top: 0.5rem;
   margin-left: 0.5rem;
@@ -13882,7 +13959,7 @@ body {
   padding: 6rem 1.33rem;
 }
 
-.c-modal, .c-modal-systemDialog, .c-modal-alert, .c-modal-chooseGroup, .c-modal-addGroup, .c-modal-usuallyUseMember, .c-modal-sample {
+.c-modal, .c-modal-systemDialog, .c-modal-alert, .c-modal-chooseGroup, .c-modal-addGroup, .c-modal-usuallyUseMember, .c-modal-sample, .c-modal-list {
   width: 41%;
   height: 40%;
   padding: 1rem;
@@ -13892,7 +13969,7 @@ body {
   background-color: #fff;
 }
 
-.c-modal .c-modal-title, .c-modal-systemDialog .c-modal-title, .c-modal-alert .c-modal-title, .c-modal-chooseGroup .c-modal-title, .c-modal-addGroup .c-modal-title, .c-modal-usuallyUseMember .c-modal-title, .c-modal-sample .c-modal-title {
+.c-modal .c-modal-title, .c-modal-systemDialog .c-modal-title, .c-modal-alert .c-modal-title, .c-modal-chooseGroup .c-modal-title, .c-modal-addGroup .c-modal-title, .c-modal-usuallyUseMember .c-modal-title, .c-modal-sample .c-modal-title, .c-modal-list .c-modal-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13903,28 +13980,28 @@ body {
           align-items: center;
 }
 
-.c-modal .c-modal-title img, .c-modal-systemDialog .c-modal-title img, .c-modal-alert .c-modal-title img, .c-modal-chooseGroup .c-modal-title img, .c-modal-addGroup .c-modal-title img, .c-modal-usuallyUseMember .c-modal-title img, .c-modal-sample .c-modal-title img {
+.c-modal .c-modal-title img, .c-modal-systemDialog .c-modal-title img, .c-modal-alert .c-modal-title img, .c-modal-chooseGroup .c-modal-title img, .c-modal-addGroup .c-modal-title img, .c-modal-usuallyUseMember .c-modal-title img, .c-modal-sample .c-modal-title img, .c-modal-list .c-modal-title img {
   margin-right: 1rem;
 }
 
-.c-modal .c-modal-title div, .c-modal-systemDialog .c-modal-title div, .c-modal-alert .c-modal-title div, .c-modal-chooseGroup .c-modal-title div, .c-modal-addGroup .c-modal-title div, .c-modal-usuallyUseMember .c-modal-title div, .c-modal-sample .c-modal-title div {
+.c-modal .c-modal-title div, .c-modal-systemDialog .c-modal-title div, .c-modal-alert .c-modal-title div, .c-modal-chooseGroup .c-modal-title div, .c-modal-addGroup .c-modal-title div, .c-modal-usuallyUseMember .c-modal-title div, .c-modal-sample .c-modal-title div, .c-modal-list .c-modal-title div {
   color: #042340;
   font-size: 22px;
   font-weight: 700;
 }
 
-.c-modal .c-modal-content, .c-modal-systemDialog .c-modal-content, .c-modal-alert .c-modal-content, .c-modal-chooseGroup .c-modal-content, .c-modal-addGroup .c-modal-content, .c-modal-usuallyUseMember .c-modal-content, .c-modal-sample .c-modal-content, .c-modal-alert .c-modal-alert__content .c-modal-content__scroll {
+.c-modal .c-modal-content, .c-modal-systemDialog .c-modal-content, .c-modal-alert .c-modal-content, .c-modal-chooseGroup .c-modal-content, .c-modal-addGroup .c-modal-content, .c-modal-usuallyUseMember .c-modal-content, .c-modal-sample .c-modal-content, .c-modal-list .c-modal-content, .c-modal-alert .c-modal-alert__content .c-modal-content__scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1.6rem 0;
 }
 
-.c-modal .c-modal-content p, .c-modal-systemDialog .c-modal-content p, .c-modal-alert .c-modal-content p, .c-modal-chooseGroup .c-modal-content p, .c-modal-addGroup .c-modal-content p, .c-modal-usuallyUseMember .c-modal-content p, .c-modal-sample .c-modal-content p, .c-modal-alert .c-modal-alert__content .c-modal-content__scroll p {
+.c-modal .c-modal-content p, .c-modal-systemDialog .c-modal-content p, .c-modal-alert .c-modal-content p, .c-modal-chooseGroup .c-modal-content p, .c-modal-addGroup .c-modal-content p, .c-modal-usuallyUseMember .c-modal-content p, .c-modal-sample .c-modal-content p, .c-modal-list .c-modal-content p, .c-modal-alert .c-modal-alert__content .c-modal-content__scroll p {
   font-size: 1.06rem;
 }
 
-.c-modal .c-modal-footer, .c-modal-systemDialog .c-modal-footer, .c-modal-alert .c-modal-footer, .c-modal-chooseGroup .c-modal-footer, .c-modal-addGroup .c-modal-footer, .c-modal-usuallyUseMember .c-modal-footer, .c-modal-sample .c-modal-footer {
+.c-modal .c-modal-footer, .c-modal-systemDialog .c-modal-footer, .c-modal-alert .c-modal-footer, .c-modal-chooseGroup .c-modal-footer, .c-modal-addGroup .c-modal-footer, .c-modal-usuallyUseMember .c-modal-footer, .c-modal-sample .c-modal-footer, .c-modal-list .c-modal-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13938,11 +14015,11 @@ body {
   height: auto;
 }
 
-.c-modal .c-modal-footer button, .c-modal-systemDialog .c-modal-footer button, .c-modal-alert .c-modal-footer button, .c-modal-chooseGroup .c-modal-footer button, .c-modal-addGroup .c-modal-footer button, .c-modal-usuallyUseMember .c-modal-footer button, .c-modal-sample .c-modal-footer button {
+.c-modal .c-modal-footer button, .c-modal-systemDialog .c-modal-footer button, .c-modal-alert .c-modal-footer button, .c-modal-chooseGroup .c-modal-footer button, .c-modal-addGroup .c-modal-footer button, .c-modal-usuallyUseMember .c-modal-footer button, .c-modal-sample .c-modal-footer button, .c-modal-list .c-modal-footer button {
   margin: 0 0.5rem;
 }
 
-.c-modal .c-modal-btnList button:hover, .c-modal-systemDialog .c-modal-btnList button:hover, .c-modal-alert .c-modal-btnList button:hover, .c-modal-chooseGroup .c-modal-btnList button:hover, .c-modal-addGroup .c-modal-btnList button:hover, .c-modal-usuallyUseMember .c-modal-btnList button:hover, .c-modal-sample .c-modal-btnList button:hover {
+.c-modal .c-modal-btnList button:hover, .c-modal-systemDialog .c-modal-btnList button:hover, .c-modal-alert .c-modal-btnList button:hover, .c-modal-chooseGroup .c-modal-btnList button:hover, .c-modal-addGroup .c-modal-btnList button:hover, .c-modal-usuallyUseMember .c-modal-btnList button:hover, .c-modal-sample .c-modal-btnList button:hover, .c-modal-list .c-modal-btnList button:hover {
   -webkit-filter: opacity(0.6);
           filter: opacity(0.6);
 }
@@ -14984,6 +15061,63 @@ body {
   height: 6.66rem;
 }
 
+.c-modal-list {
+  width: 31rem;
+  height: 18rem;
+  overflow-y: visible;
+}
+
+.c-modal-list .c-modal-btnList {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+
+.c-modal-list .c-modal-title,
+.c-modal-list .c-search {
+  border: 0px;
+}
+
+.c-modal-list .c-search {
+  padding-top: 0;
+  padding-left: 0;
+}
+
+.c-modal-list .c-modal-alert__content div {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.c-modal-list .c-modal-alert__content .c-search-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.c-modal-list .c-modal-alert__content .c-search-item__title, .c-modal-list .c-modal-alert__content #memberstime .c-search-item__departmentTitle, #memberstime .c-modal-list .c-modal-alert__content .c-search-item__departmentTitle, .c-modal-list .c-modal-alert__content #departmenttime .c-search-item__departmentTitle, #departmenttime .c-modal-list .c-modal-alert__content .c-search-item__departmentTitle, .c-modal-list .c-modal-alert__content #worktime .c-search-item__departmentTitle, #worktime .c-modal-list .c-modal-alert__content .c-search-item__departmentTitle, .c-modal-list .c-modal-alert__content #universalPlan .c-search-item__departmentTitle, #universalPlan .c-modal-list .c-modal-alert__content .c-search-item__departmentTitle {
+  width: 5.5rem;
+  line-height: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+.c-modal-list .c-modal-content, .c-modal-list .c-modal-alert .c-modal-alert__content .c-modal-content__scroll, .c-modal-alert .c-modal-alert__content .c-modal-list .c-modal-content__scroll {
+  padding-top: 2rem;
+}
+
+.c-modal-list .c-datePicker__yearPicker div {
+  width: auto;
+}
+
+.c-modal-list .c-dropdown-departmentCheck .c-dropdown__modal .c-dropdown__content__height {
+  width: auto;
+}
+
+.c-modal-list-single {
+  height: 15rem;
+}
+
 .c-modal-department .c-modal-features .c-modal-features__information {
   padding-right: 2.2rem;
 }
@@ -15203,7 +15337,7 @@ body {
   min-width: 20rem;
 }
 
-.c-modal-select .c-search-item__title, .c-modal-select #memberstime .c-search-item__departmentTitle, #memberstime .c-modal-select .c-search-item__departmentTitle, .c-modal-select #departmenttime .c-search-item__departmentTitle, #departmenttime .c-modal-select .c-search-item__departmentTitle, .c-modal-select #universalPlan .c-search-item__departmentTitle, #universalPlan .c-modal-select .c-search-item__departmentTitle {
+.c-modal-select .c-search-item__title, .c-modal-select #memberstime .c-search-item__departmentTitle, #memberstime .c-modal-select .c-search-item__departmentTitle, .c-modal-select #departmenttime .c-search-item__departmentTitle, #departmenttime .c-modal-select .c-search-item__departmentTitle, .c-modal-select #worktime .c-search-item__departmentTitle, #worktime .c-modal-select .c-search-item__departmentTitle, .c-modal-select #universalPlan .c-search-item__departmentTitle, #universalPlan .c-modal-select .c-search-item__departmentTitle {
   margin-left: 0;
 }
 
@@ -16527,7 +16661,7 @@ body {
   white-space: nowrap;
 }
 
-.c-search-list .c-search-item .c-search-item__title, .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime .c-search-list .c-search-item .c-search-item__departmentTitle, .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime .c-search-list .c-search-item .c-search-item__departmentTitle, .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan .c-search-list .c-search-item .c-search-item__departmentTitle {
+.c-search-list .c-search-item .c-search-item__title, .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime .c-search-list .c-search-item .c-search-item__departmentTitle, .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime .c-search-list .c-search-item .c-search-item__departmentTitle, .c-search-list .c-search-item #worktime .c-search-item__departmentTitle, #worktime .c-search-list .c-search-item .c-search-item__departmentTitle, .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan .c-search-list .c-search-item .c-search-item__departmentTitle {
   padding-right: 0.5rem;
 }
 
@@ -17646,7 +17780,8 @@ body {
       flex-wrap: wrap;
 }
 
-.l-main-content__lableGroup .c-card-lableGroup {
+.l-main-content__lableGroup .c-card-lableGroup,
+.l-main-content__lableGroup .c-card-list {
   margin: 0.3rem 0 0.5rem 0.5rem;
 }
 
@@ -19247,7 +19382,7 @@ body {
   width: auto;
 }
 
-#execute .c-search .c-search-list .c-search-item .c-search-item__title, #memberstime_execute .c-search .c-search-list .c-search-item .c-search-item__title, #departmenttime_execute .c-search .c-search-list .c-search-item .c-search-item__title, #supporttime_execute .c-search .c-search-list .c-search-item .c-search-item__title, #notReachedtime_execute .c-search .c-search-list .c-search-item .c-search-item__title, #member_execute .c-search .c-search-list .c-search-item .c-search-item__title, #commission__execute .c-search .c-search-list .c-search-item .c-search-item__title, #support__execute .c-search .c-search-list .c-search-item .c-search-item__title, #worktime__execute .c-search .c-search-list .c-search-item .c-search-item__title, #execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #memberstime_execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #memberstime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #departmenttime_execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #departmenttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #supporttime_execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #supporttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #notReachedtime_execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #notReachedtime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #member_execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #member_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #commission__execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #commission__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #support__execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #support__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #worktime__execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #worktime__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #memberstime_execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #memberstime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #departmenttime_execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #departmenttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #supporttime_execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #supporttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #notReachedtime_execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #notReachedtime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #member_execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #member_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #commission__execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #commission__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #support__execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #support__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #worktime__execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #worktime__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #memberstime_execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #memberstime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #departmenttime_execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #departmenttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #supporttime_execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #supporttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #notReachedtime_execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #notReachedtime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #member_execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #member_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #commission__execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #commission__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #support__execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #support__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #worktime__execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #worktime__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle {
+#execute .c-search .c-search-list .c-search-item .c-search-item__title, #memberstime_execute .c-search .c-search-list .c-search-item .c-search-item__title, #departmenttime_execute .c-search .c-search-list .c-search-item .c-search-item__title, #supporttime_execute .c-search .c-search-list .c-search-item .c-search-item__title, #notReachedtime_execute .c-search .c-search-list .c-search-item .c-search-item__title, #member_execute .c-search .c-search-list .c-search-item .c-search-item__title, #commission__execute .c-search .c-search-list .c-search-item .c-search-item__title, #support__execute .c-search .c-search-list .c-search-item .c-search-item__title, #worktime__execute .c-search .c-search-list .c-search-item .c-search-item__title, #execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #memberstime_execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #memberstime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #departmenttime_execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #departmenttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #supporttime_execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #supporttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #notReachedtime_execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #notReachedtime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #member_execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #member_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #commission__execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #commission__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #support__execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #support__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #worktime__execute .c-search .c-search-list .c-search-item #memberstime .c-search-item__departmentTitle, #memberstime #worktime__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #memberstime_execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #memberstime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #departmenttime_execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #departmenttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #supporttime_execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #supporttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #notReachedtime_execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #notReachedtime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #member_execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #member_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #commission__execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #commission__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #support__execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #support__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #worktime__execute .c-search .c-search-list .c-search-item #departmenttime .c-search-item__departmentTitle, #departmenttime #worktime__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #execute .c-search .c-search-list .c-search-item #worktime .c-search-item__departmentTitle, #worktime #execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #memberstime_execute .c-search .c-search-list .c-search-item #worktime .c-search-item__departmentTitle, #worktime #memberstime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #departmenttime_execute .c-search .c-search-list .c-search-item #worktime .c-search-item__departmentTitle, #worktime #departmenttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #supporttime_execute .c-search .c-search-list .c-search-item #worktime .c-search-item__departmentTitle, #worktime #supporttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #notReachedtime_execute .c-search .c-search-list .c-search-item #worktime .c-search-item__departmentTitle, #worktime #notReachedtime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #member_execute .c-search .c-search-list .c-search-item #worktime .c-search-item__departmentTitle, #worktime #member_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #commission__execute .c-search .c-search-list .c-search-item #worktime .c-search-item__departmentTitle, #worktime #commission__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #support__execute .c-search .c-search-list .c-search-item #worktime .c-search-item__departmentTitle, #worktime #support__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #worktime__execute .c-search .c-search-list .c-search-item #worktime .c-search-item__departmentTitle, #worktime #worktime__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #memberstime_execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #memberstime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #departmenttime_execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #departmenttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #supporttime_execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #supporttime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #notReachedtime_execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #notReachedtime_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #member_execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #member_execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #commission__execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #commission__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #support__execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #support__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle, #worktime__execute .c-search .c-search-list .c-search-item #universalPlan .c-search-item__departmentTitle, #universalPlan #worktime__execute .c-search .c-search-list .c-search-item .c-search-item__departmentTitle {
   margin: 0 1rem;
   padding: 0;
   font-weight: 700;
@@ -19530,105 +19665,105 @@ body {
   width: 6.8rem;
 }
 
-#memberstime .l-main-tabs, #departmenttime .l-main-tabs, #universalPlan .l-main-tabs {
+#memberstime .l-main-tabs, #departmenttime .l-main-tabs, #worktime .l-main-tabs, #universalPlan .l-main-tabs {
   margin-bottom: 5px;
 }
 
-#memberstime .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div, #departmenttime .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div, #universalPlan .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div {
+#memberstime .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div, #departmenttime .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div, #worktime .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div, #universalPlan .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div {
   background-color: rgba(0, 0, 0, 0);
 }
 
-#memberstime .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div::after, #departmenttime .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div::after, #universalPlan .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div::after {
+#memberstime .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div::after, #departmenttime .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div::after, #worktime .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div::after, #universalPlan .c-search-list .c-dropdown-member .c-dropdown__input .o-input-div::after {
   background-image: url(../img/o-arrowDown.svg);
 }
 
-#memberstime .c-search-list .c-dropdown-member .c-dropdown__input::after, #departmenttime .c-search-list .c-dropdown-member .c-dropdown__input::after, #universalPlan .c-search-list .c-dropdown-member .c-dropdown__input::after {
+#memberstime .c-search-list .c-dropdown-member .c-dropdown__input::after, #departmenttime .c-search-list .c-dropdown-member .c-dropdown__input::after, #worktime .c-search-list .c-dropdown-member .c-dropdown__input::after, #universalPlan .c-search-list .c-dropdown-member .c-dropdown__input::after {
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   z-index: -1;
 }
 
-#memberstime .c-card-manhourSearch, #departmenttime .c-card-manhourSearch, #universalPlan .c-card-manhourSearch {
+#memberstime .c-card-manhourSearch, #departmenttime .c-card-manhourSearch, #worktime .c-card-manhourSearch, #universalPlan .c-card-manhourSearch {
   margin-bottom: 1rem;
 }
 
-#memberstime .c-datePicker__modal .c-datePicker__yearPicker button, #departmenttime .c-datePicker__modal .c-datePicker__yearPicker button, #universalPlan .c-datePicker__modal .c-datePicker__yearPicker button {
+#memberstime .c-datePicker__modal .c-datePicker__yearPicker button, #departmenttime .c-datePicker__modal .c-datePicker__yearPicker button, #worktime .c-datePicker__modal .c-datePicker__yearPicker button, #universalPlan .c-datePicker__modal .c-datePicker__yearPicker button {
   border-radius: 50%;
 }
 
-#memberstime .l-main-content-item, #departmenttime .l-main-content-item, #universalPlan .l-main-content-item {
+#memberstime .l-main-content-item, #departmenttime .l-main-content-item, #worktime .l-main-content-item, #universalPlan .l-main-content-item {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
 
-#memberstime .l-main-content-item__listTitle, #departmenttime .l-main-content-item__listTitle, #universalPlan .l-main-content-item__listTitle {
+#memberstime .l-main-content-item__listTitle, #departmenttime .l-main-content-item__listTitle, #worktime .l-main-content-item__listTitle, #universalPlan .l-main-content-item__listTitle {
   height: 4rem;
 }
 
-#memberstime .change-card-to-list .l-main-content-item__listTitle, #departmenttime .change-card-to-list .l-main-content-item__listTitle, #universalPlan .change-card-to-list .l-main-content-item__listTitle {
+#memberstime .change-card-to-list .l-main-content-item__listTitle, #departmenttime .change-card-to-list .l-main-content-item__listTitle, #worktime .change-card-to-list .l-main-content-item__listTitle, #universalPlan .change-card-to-list .l-main-content-item__listTitle {
   padding-left: 3rem;
 }
 
-#memberstime .change-card-to-list .l-main-content-item .c-card-manhourSearch, #departmenttime .change-card-to-list .l-main-content-item .c-card-manhourSearch, #universalPlan .change-card-to-list .l-main-content-item .c-card-manhourSearch {
+#memberstime .change-card-to-list .l-main-content-item .c-card-manhourSearch, #departmenttime .change-card-to-list .l-main-content-item .c-card-manhourSearch, #worktime .change-card-to-list .l-main-content-item .c-card-manhourSearch, #universalPlan .change-card-to-list .l-main-content-item .c-card-manhourSearch {
   height: 3.733rem;
   margin-bottom: 0;
   cursor: default;
   min-height: auto;
 }
 
-#memberstime .change-card-to-list .l-main-content-item .c-card-manhourSearch a, #departmenttime .change-card-to-list .l-main-content-item .c-card-manhourSearch a, #universalPlan .change-card-to-list .l-main-content-item .c-card-manhourSearch a {
+#memberstime .change-card-to-list .l-main-content-item .c-card-manhourSearch a, #departmenttime .change-card-to-list .l-main-content-item .c-card-manhourSearch a, #worktime .change-card-to-list .l-main-content-item .c-card-manhourSearch a, #universalPlan .change-card-to-list .l-main-content-item .c-card-manhourSearch a {
   min-height: auto;
 }
 
-#memberstime .change-card-to-list .l-main-content-item .c-card-manhourSearch div, #departmenttime .change-card-to-list .l-main-content-item .c-card-manhourSearch div, #universalPlan .change-card-to-list .l-main-content-item .c-card-manhourSearch div {
+#memberstime .change-card-to-list .l-main-content-item .c-card-manhourSearch div, #departmenttime .change-card-to-list .l-main-content-item .c-card-manhourSearch div, #worktime .change-card-to-list .l-main-content-item .c-card-manhourSearch div, #universalPlan .change-card-to-list .l-main-content-item .c-card-manhourSearch div {
   cursor: default;
 }
 
-#memberstime .change-card-to-list .l-main-content-item .c-card-manhourSearch .c-card__content, #departmenttime .change-card-to-list .l-main-content-item .c-card-manhourSearch .c-card__content, #universalPlan .change-card-to-list .l-main-content-item .c-card-manhourSearch .c-card__content {
+#memberstime .change-card-to-list .l-main-content-item .c-card-manhourSearch .c-card__content, #departmenttime .change-card-to-list .l-main-content-item .c-card-manhourSearch .c-card__content, #worktime .change-card-to-list .l-main-content-item .c-card-manhourSearch .c-card__content, #universalPlan .change-card-to-list .l-main-content-item .c-card-manhourSearch .c-card__content {
   position: relative;
   bottom: 0;
 }
 
-#memberstime .change-card-to-list .l-main-content-item .c-card-manhourSearch .c-card__userInformation, #departmenttime .change-card-to-list .l-main-content-item .c-card-manhourSearch .c-card__userInformation, #universalPlan .change-card-to-list .l-main-content-item .c-card-manhourSearch .c-card__userInformation {
+#memberstime .change-card-to-list .l-main-content-item .c-card-manhourSearch .c-card__userInformation, #departmenttime .change-card-to-list .l-main-content-item .c-card-manhourSearch .c-card__userInformation, #worktime .change-card-to-list .l-main-content-item .c-card-manhourSearch .c-card__userInformation, #universalPlan .change-card-to-list .l-main-content-item .c-card-manhourSearch .c-card__userInformation {
   margin-top: 0;
   position: relative;
   bottom: 0;
 }
 
-#memberstime .change-card-to-list .c-card-manhourSofar__Resign, #departmenttime .change-card-to-list .c-card-manhourSofar__Resign, #universalPlan .change-card-to-list .c-card-manhourSofar__Resign {
+#memberstime .change-card-to-list .c-card-manhourSofar__Resign, #departmenttime .change-card-to-list .c-card-manhourSofar__Resign, #worktime .change-card-to-list .c-card-manhourSofar__Resign, #universalPlan .change-card-to-list .c-card-manhourSofar__Resign {
   display: none;
 }
 
-#memberstime .change-card-to-list .c-card-manhourSearch__userName, #departmenttime .change-card-to-list .c-card-manhourSearch__userName, #universalPlan .change-card-to-list .c-card-manhourSearch__userName {
+#memberstime .change-card-to-list .c-card-manhourSearch__userName, #departmenttime .change-card-to-list .c-card-manhourSearch__userName, #worktime .change-card-to-list .c-card-manhourSearch__userName, #universalPlan .change-card-to-list .c-card-manhourSearch__userName {
   display: none;
 }
 
-#memberstime .change-card-to-list .c-card-manhourSearch__englishName, #departmenttime .change-card-to-list .c-card-manhourSearch__englishName, #universalPlan .change-card-to-list .c-card-manhourSearch__englishName {
+#memberstime .change-card-to-list .c-card-manhourSearch__englishName, #departmenttime .change-card-to-list .c-card-manhourSearch__englishName, #worktime .change-card-to-list .c-card-manhourSearch__englishName, #universalPlan .change-card-to-list .c-card-manhourSearch__englishName {
   display: none;
 }
 
-#memberstime .change-card-to-list .listTitle__user, #departmenttime .change-card-to-list .listTitle__user, #universalPlan .change-card-to-list .listTitle__user {
+#memberstime .change-card-to-list .listTitle__user, #departmenttime .change-card-to-list .listTitle__user, #worktime .change-card-to-list .listTitle__user, #universalPlan .change-card-to-list .listTitle__user {
   width: 10%;
 }
 
-#memberstime .change-card-to-list .listTitle__englishName, #departmenttime .change-card-to-list .listTitle__englishName, #universalPlan .change-card-to-list .listTitle__englishName {
+#memberstime .change-card-to-list .listTitle__englishName, #departmenttime .change-card-to-list .listTitle__englishName, #worktime .change-card-to-list .listTitle__englishName, #universalPlan .change-card-to-list .listTitle__englishName {
   width: 60%;
 }
 
-#memberstime .change-card-to-list .listTitle__workTime, #departmenttime .change-card-to-list .listTitle__workTime, #universalPlan .change-card-to-list .listTitle__workTime {
+#memberstime .change-card-to-list .listTitle__workTime, #departmenttime .change-card-to-list .listTitle__workTime, #worktime .change-card-to-list .listTitle__workTime, #universalPlan .change-card-to-list .listTitle__workTime {
   width: 10%;
 }
 
-#memberstime .change-card-to-list .js-c-card__appendUserName, #departmenttime .change-card-to-list .js-c-card__appendUserName, #universalPlan .change-card-to-list .js-c-card__appendUserName {
+#memberstime .change-card-to-list .js-c-card__appendUserName, #departmenttime .change-card-to-list .js-c-card__appendUserName, #worktime .change-card-to-list .js-c-card__appendUserName, #universalPlan .change-card-to-list .js-c-card__appendUserName {
   width: 80%;
 }
 
-#memberstime .change-card-to-list .js-c-card__appendUserName h2, #departmenttime .change-card-to-list .js-c-card__appendUserName h2, #universalPlan .change-card-to-list .js-c-card__appendUserName h2 {
+#memberstime .change-card-to-list .js-c-card__appendUserName h2, #departmenttime .change-card-to-list .js-c-card__appendUserName h2, #worktime .change-card-to-list .js-c-card__appendUserName h2, #universalPlan .change-card-to-list .js-c-card__appendUserName h2 {
   width: 12.5%;
 }
 
-#memberstime .change-card-to-list .js-c-card__appendUserName h3, #departmenttime .change-card-to-list .js-c-card__appendUserName h3, #universalPlan .change-card-to-list .js-c-card__appendUserName h3 {
+#memberstime .change-card-to-list .js-c-card__appendUserName h3, #departmenttime .change-card-to-list .js-c-card__appendUserName h3, #worktime .change-card-to-list .js-c-card__appendUserName h3, #universalPlan .change-card-to-list .js-c-card__appendUserName h3 {
   width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19638,30 +19773,30 @@ body {
           justify-content: space-between;
 }
 
-#memberstime .change-card-to-list .js-c-card__appendUserName h3 span:last-child, #departmenttime .change-card-to-list .js-c-card__appendUserName h3 span:last-child, #universalPlan .change-card-to-list .js-c-card__appendUserName h3 span:last-child {
+#memberstime .change-card-to-list .js-c-card__appendUserName h3 span:last-child, #departmenttime .change-card-to-list .js-c-card__appendUserName h3 span:last-child, #worktime .change-card-to-list .js-c-card__appendUserName h3 span:last-child, #universalPlan .change-card-to-list .js-c-card__appendUserName h3 span:last-child {
   color: #8495a4;
   margin-right: 1.5rem;
 }
 
-#memberstime .change-card-to-list .c-card__content, #departmenttime .change-card-to-list .c-card__content, #universalPlan .change-card-to-list .c-card__content {
+#memberstime .change-card-to-list .c-card__content, #departmenttime .change-card-to-list .c-card__content, #worktime .change-card-to-list .c-card__content, #universalPlan .change-card-to-list .c-card__content {
   width: 10%;
 }
 
-#memberstime .change-card-to-list .c-card-manhourSearch:hover, #departmenttime .change-card-to-list .c-card-manhourSearch:hover, #universalPlan .change-card-to-list .c-card-manhourSearch:hover {
+#memberstime .change-card-to-list .c-card-manhourSearch:hover, #departmenttime .change-card-to-list .c-card-manhourSearch:hover, #worktime .change-card-to-list .c-card-manhourSearch:hover, #universalPlan .change-card-to-list .c-card-manhourSearch:hover {
   -webkit-transition: all 0;
   transition: all 0;
   -webkit-transform: translateY(0px) translateX(0px);
           transform: translateY(0px) translateX(0px);
 }
 
-#memberstime .change-card-to-list .c-card-manhourSearch:active, #departmenttime .change-card-to-list .c-card-manhourSearch:active, #universalPlan .change-card-to-list .c-card-manhourSearch:active {
+#memberstime .change-card-to-list .c-card-manhourSearch:active, #departmenttime .change-card-to-list .c-card-manhourSearch:active, #worktime .change-card-to-list .c-card-manhourSearch:active, #universalPlan .change-card-to-list .c-card-manhourSearch:active {
   -webkit-transition: all 0;
   transition: all 0;
   -webkit-transform: translateY(0px) translateX(0px);
           transform: translateY(0px) translateX(0px);
 }
 
-#memberstime .change-card-to-list .c-card-manhourSearch .c-card__userInformation h3, #departmenttime .change-card-to-list .c-card-manhourSearch .c-card__userInformation h3, #universalPlan .change-card-to-list .c-card-manhourSearch .c-card__userInformation h3 {
+#memberstime .change-card-to-list .c-card-manhourSearch .c-card__userInformation h3, #departmenttime .change-card-to-list .c-card-manhourSearch .c-card__userInformation h3, #worktime .change-card-to-list .c-card-manhourSearch .c-card__userInformation h3, #universalPlan .change-card-to-list .c-card-manhourSearch .c-card__userInformation h3 {
   font-family: "sans-serif", "Noto Sans TC";
 }
 
@@ -20296,7 +20431,7 @@ body {
           transform: translateY(0px) translateX(0px);
 }
 
-#memberstime .table-body .table-body__item .row .col div, #departmenttime .table-body .table-body__item .row .col div, #universalPlan .table-body .table-body__item .row .col div, #memberstime .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__wbslist #memberstime .table-body .table-body__conutItem .row .col div, #departmenttime .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__wbslist #departmenttime .table-body .table-body__conutItem .row .col div, #universalPlan .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__wbslist #universalPlan .table-body .table-body__conutItem .row .col div, #memberstime .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__workTypelist #memberstime .table-body .table-body__conutItem .row .col div, #departmenttime .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__workTypelist #departmenttime .table-body .table-body__conutItem .row .col div, #universalPlan .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__workTypelist #universalPlan .table-body .table-body__conutItem .row .col div {
+#memberstime .table-body .table-body__item .row .col div, #departmenttime .table-body .table-body__item .row .col div, #worktime .table-body .table-body__item .row .col div, #universalPlan .table-body .table-body__item .row .col div, #memberstime .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__wbslist #memberstime .table-body .table-body__conutItem .row .col div, #departmenttime .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__wbslist #departmenttime .table-body .table-body__conutItem .row .col div, #worktime .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__wbslist #worktime .table-body .table-body__conutItem .row .col div, #universalPlan .l-main-content .l-main-content__wbslist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__wbslist #universalPlan .table-body .table-body__conutItem .row .col div, #memberstime .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__workTypelist #memberstime .table-body .table-body__conutItem .row .col div, #departmenttime .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__workTypelist #departmenttime .table-body .table-body__conutItem .row .col div, #worktime .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__workTypelist #worktime .table-body .table-body__conutItem .row .col div, #universalPlan .l-main-content .l-main-content__workTypelist .table-body .table-body__conutItem .row .col div, .l-main-content .l-main-content__workTypelist #universalPlan .table-body .table-body__conutItem .row .col div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20305,36 +20440,36 @@ body {
           align-items: center;
 }
 
-#memberstime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input, #departmenttime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input, #universalPlan .is-error-status .c-dropdown-departmentCheck .c-dropdown__input {
+#memberstime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input, #departmenttime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input, #worktime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input, #universalPlan .is-error-status .c-dropdown-departmentCheck .c-dropdown__input {
   background-color: #fff;
 }
 
-#memberstime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div, #departmenttime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div, #universalPlan .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div {
+#memberstime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div, #departmenttime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div, #worktime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div, #universalPlan .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div {
   background-color: #fff;
   border: 1px #fb5b29 solid;
 }
 
-#memberstime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after, #departmenttime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after, #universalPlan .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after {
+#memberstime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after, #departmenttime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after, #worktime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after, #universalPlan .is-error-status .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after {
   background-image: none;
 }
 
-#memberstime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input::after, #departmenttime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input::after, #universalPlan .is-error-status .c-dropdown-departmentCheck .c-dropdown__input::after {
+#memberstime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input::after, #departmenttime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input::after, #worktime .is-error-status .c-dropdown-departmentCheck .c-dropdown__input::after, #universalPlan .is-error-status .c-dropdown-departmentCheck .c-dropdown__input::after {
   background-color: rgba(0, 0, 0, 0);
 }
 
-#memberstime .is-error-status .c-search-list .c-search-item__departmentTitle, #departmenttime .is-error-status .c-search-list .c-search-item__departmentTitle, #universalPlan .is-error-status .c-search-list .c-search-item__departmentTitle {
+#memberstime .is-error-status .c-search-list .c-search-item__departmentTitle, #departmenttime .is-error-status .c-search-list .c-search-item__departmentTitle, #worktime .is-error-status .c-search-list .c-search-item__departmentTitle, #universalPlan .is-error-status .c-search-list .c-search-item__departmentTitle {
   color: #fb5b29;
 }
 
-#memberstime .c-dropdown-departmentCheck .c-dropdown__input .o-input-div, #departmenttime .c-dropdown-departmentCheck .c-dropdown__input .o-input-div, #universalPlan .c-dropdown-departmentCheck .c-dropdown__input .o-input-div {
+#memberstime .c-dropdown-departmentCheck .c-dropdown__input .o-input-div, #departmenttime .c-dropdown-departmentCheck .c-dropdown__input .o-input-div, #worktime .c-dropdown-departmentCheck .c-dropdown__input .o-input-div, #universalPlan .c-dropdown-departmentCheck .c-dropdown__input .o-input-div {
   background-color: rgba(0, 0, 0, 0);
 }
 
-#memberstime .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after, #departmenttime .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after, #universalPlan .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after {
+#memberstime .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after, #departmenttime .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after, #worktime .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after, #universalPlan .c-dropdown-departmentCheck .c-dropdown__input .o-input-div::after {
   background-image: url(../img/o-arrowDown.svg);
 }
 
-#memberstime .c-dropdown-departmentCheck .c-dropdown__input::after, #departmenttime .c-dropdown-departmentCheck .c-dropdown__input::after, #universalPlan .c-dropdown-departmentCheck .c-dropdown__input::after {
+#memberstime .c-dropdown-departmentCheck .c-dropdown__input::after, #departmenttime .c-dropdown-departmentCheck .c-dropdown__input::after, #worktime .c-dropdown-departmentCheck .c-dropdown__input::after, #universalPlan .c-dropdown-departmentCheck .c-dropdown__input::after {
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   z-index: -1;

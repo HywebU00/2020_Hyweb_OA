@@ -876,7 +876,57 @@
     transform: translateY(4px) translateX(4px);
   }
 }
+.c-card-list {
+  cursor: pointer;
+  @extend .c-card;
+  width: calc(25% - 0.5rem);
+  display: flex;
+  align-items: center;
+  border-radius: $card-lableGroup;
+  margin: 0.2rem 0 0 0.2rem;
+  padding: 0;
+  @include Max_Large {
+    width: calc(33% - 0.5rem);
+  }
+  @include Large {
+    width: calc(50% - 0.5rem);
+  }
+  .c-card-list__icon {
+    display: flex;
+    color: $gray1;
+    align-items: center;
+    padding-right: 0.5rem;
 
+    img {
+      // padding-right: 1.5rem;
+      height: 1.8rem;
+    }
+  }
+
+  .c-card-list__item {
+    @include ellipsisText;
+    font-size: $p;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: $pd $pd-2;
+    height: 63px;
+    min-width: 230px;
+    color: $gray1;
+  }
+  &:hover {
+    transition: all 0.2s;
+    transform: translateY(2px) translateX(2px);
+    background: #eee;
+  }
+
+  &:active {
+    transition: all 0.2s;
+    transform: translateY(4px) translateX(4px);
+  }
+}
 //breadcrumb
 .c-breadcrumb {
   margin-top: 0.5rem;
@@ -2348,6 +2398,57 @@
       }
     }
   }
+}
+.c-modal-list {
+  width: 31rem;
+  height: 18rem;
+  overflow-y: visible;
+  @extend .c-modal;
+  .c-modal-btnList {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+  }
+  .c-modal-title,
+  .c-search {
+    border: 0px;
+  }
+  .c-search {
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .c-modal-alert__content {
+    div {
+      flex-wrap: wrap;
+    }
+    .c-search-item {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .c-search-item__title {
+      width: 5.5rem;
+      line-height: 2.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+  .c-modal-content {
+    padding-top: 2rem;
+  }
+  .c-datePicker__yearPicker {
+    div {
+      width: auto;
+    }
+  }
+  .c-dropdown-departmentCheck {
+    .c-dropdown__modal {
+      .c-dropdown__content__height {
+        width: auto;
+      }
+    }
+  }
+}
+.c-modal-list-single {
+  height: 15rem;
 }
 
 .c-modal-department {
