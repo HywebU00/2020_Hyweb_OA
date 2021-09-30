@@ -55,7 +55,8 @@
   }
 }
 #departmenttime,
-#worktime {
+#worktime,
+#immediate {
   @extend #memberstime;
 }
 #universalPlan {
