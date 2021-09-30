@@ -1414,6 +1414,23 @@
     font-weight: 400;
     color: $gray3;
   }
+  .c-general__btn {
+    button {
+      padding: 0.5rem;
+      border-radius: 40px;
+      &:hover {
+        background: $hyweb-lighblue;
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+      color: $gray1;
+      img {
+        margin-right: 0.3rem;
+      }
+    }
+  }
 }
 
 .c-content {
