@@ -1246,7 +1246,7 @@ body {
 .l-main-float-button {
   position: fixed;
   bottom: 2rem;
-  z-index: 99;
+  z-index: 1000;
   right: 3rem;
   button {
     width: 3rem;
@@ -1825,6 +1825,7 @@ body {
     height: calc(100vh - 300px);
     width: 100%;
     overflow-y: scroll;
+    padding-bottom: 50px;
   }
 
   .c-card-planHotkey {

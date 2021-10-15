@@ -11462,7 +11462,7 @@ body {
 .l-main-float-button {
   position: fixed;
   bottom: 2rem;
-  z-index: 99;
+  z-index: 1000;
   right: 3rem;
 }
 
@@ -12122,6 +12122,7 @@ body {
   height: calc(100vh - 300px);
   width: 100%;
   overflow-y: scroll;
+  padding-bottom: 50px;
 }
 
 .c-submenu-content__cardList .c-card-planHotkey, .c-submenu-content__cardList .l-mobile-footer-worksheet .c-card-workHotkey, .l-mobile-footer-worksheet .c-submenu-content__cardList .c-card-workHotkey {
@@ -15111,7 +15112,7 @@ body {
 }
 
 .c-modal-list {
-  width: 31rem;
+  width: 40rem;
   height: 18rem;
   overflow-y: visible;
 }
