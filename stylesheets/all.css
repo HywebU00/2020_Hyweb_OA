@@ -14984,7 +14984,7 @@ body {
 
 .c-modal-personAll .c-modal-content__calendar, .c-modal-personCalendar .c-modal-content__calendar, .c-modal-department .c-modal-content__calendar {
   max-height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .c-modal-personAll .c-modal-content__calendar #plan .c-modal-content__list__title, .c-modal-personCalendar .c-modal-content__calendar #plan .c-modal-content__list__title, .c-modal-department .c-modal-content__calendar #plan .c-modal-content__list__title {
