@@ -14984,6 +14984,7 @@ body {
 
 .c-modal-personAll .c-modal-content__calendar, .c-modal-personCalendar .c-modal-content__calendar, .c-modal-department .c-modal-content__calendar {
   max-height: 100%;
+  overflow: scroll;
 }
 
 .c-modal-personAll .c-modal-content__calendar #plan .c-modal-content__list__title, .c-modal-personCalendar .c-modal-content__calendar #plan .c-modal-content__list__title, .c-modal-department .c-modal-content__calendar #plan .c-modal-content__list__title {
@@ -15056,8 +15057,9 @@ body {
 }
 
 .c-modal-personAll .c-modal-content__list, .c-modal-personCalendar .c-modal-content__list, .c-modal-department .c-modal-content__list {
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   padding: 0 0.2rem;
+  padding-bottom: 0.5rem;
 }
 
 .c-modal-personAll .c-modal-content__list .c-accordion-plan .accordion-header__item .header__item__title, .c-modal-personCalendar .c-modal-content__list .c-accordion-plan .accordion-header__item .header__item__title, .c-modal-department .c-modal-content__list .c-accordion-plan .accordion-header__item .header__item__title, .c-modal-personAll .c-modal-content__list .c-accordion-general .accordion-header__item .header__item__title, .c-modal-personCalendar .c-modal-content__list .c-accordion-general .accordion-header__item .header__item__title, .c-modal-department .c-modal-content__list .c-accordion-general .accordion-header__item .header__item__title {
@@ -15232,6 +15234,7 @@ body {
   padding-top: 0.5rem;
   height: 100%;
   overflow-y: scroll;
+  padding-bottom: 0.5rem;
 }
 
 .c-modal-department .c-modal-content__list .accordion-body {

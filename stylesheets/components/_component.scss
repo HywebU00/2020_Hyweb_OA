@@ -2316,7 +2316,7 @@
 
   .c-modal-content__calendar {
     max-height: 100%; // 926px;
-
+    overflow-y: scroll;
     #plan {
       .c-modal-content__list__title {
         padding-bottom: 0.5rem;
@@ -2385,9 +2385,9 @@
   }
 
   .c-modal-content__list {
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     padding: 0 0.2rem;
-
+    padding-bottom: 0.5rem;
     .c-accordion-plan {
       .accordion-header__item {
         .header__item__title {
@@ -2548,7 +2548,7 @@
     padding-top: 0.5rem;
     height: 100%;
     overflow-y: scroll;
-
+    padding-bottom: 0.5rem;
     .accordion-body {
       padding-bottom: 0.2rem;
     }
