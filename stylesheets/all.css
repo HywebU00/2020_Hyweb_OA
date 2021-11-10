@@ -17186,7 +17186,6 @@ body {
   top: 0;
   margin-right: 0.5rem;
   margin-top: 8px;
-  background-image: url(../img/o-date.svg);
 }
 
 .input-title {
@@ -25011,6 +25010,23 @@ html {
   -webkit-box-shadow: 0px 2px 3px 0px rgba(1, 27, 49, 0.2) !important;
   box-shadow: 0px 2px 3px 0px rgba(1, 27, 49, 0.2) !important;
   border-radius: 10px !important;
+}
+
+#planList .c-modal-alert.modal .ant-picker {
+  width: 100% !important;
+}
+
+#planList .c-modal-alert.modal .c-search-item__departmentTitle {
+  margin-right: 0.5rem !important;
+}
+
+#planList .c-modal-alert.modal .o-input-div {
+  width: 100% !important;
+}
+
+#planList .c-modal-alert.modal .ant-picker-suffix {
+  position: absolute !important;
+  right: 0.5rem !important;
 }
 
 .c-card-planHotkey h2, .l-mobile-footer-worksheet .c-card-workHotkey h2,
