@@ -2464,6 +2464,9 @@
     .c-search-item {
       display: flex;
       flex-wrap: nowrap;
+      div{
+        flex-wrap: nowrap;
+      }
     }
     .c-search-item__title {
       width: 5.5rem;

@@ -15148,6 +15148,11 @@ body {
       flex-wrap: nowrap;
 }
 
+.c-modal-list .c-modal-alert__content .c-search-item div {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
 .c-modal-list .c-modal-alert__content .c-search-item__title, .c-modal-list .c-modal-alert__content #memberstime .c-search-item__departmentTitle, #memberstime .c-modal-list .c-modal-alert__content .c-search-item__departmentTitle, .c-modal-list .c-modal-alert__content #departmenttime .c-search-item__departmentTitle, #departmenttime .c-modal-list .c-modal-alert__content .c-search-item__departmentTitle, .c-modal-list .c-modal-alert__content #worktime .c-search-item__departmentTitle, #worktime .c-modal-list .c-modal-alert__content .c-search-item__departmentTitle, .c-modal-list .c-modal-alert__content #immediate .c-search-item__departmentTitle, #immediate .c-modal-list .c-modal-alert__content .c-search-item__departmentTitle, .c-modal-list .c-modal-alert__content #universalPlan .c-search-item__departmentTitle, #universalPlan .c-modal-list .c-modal-alert__content .c-search-item__departmentTitle {
   width: 5.5rem;
   line-height: 2.5rem;
