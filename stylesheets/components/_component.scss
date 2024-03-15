@@ -1144,22 +1144,22 @@
 
   .row {
     .s2 {
-      width: (100%/25) * 2;
+      width: calc(100% / 25) * 2;
     }
     .s3 {
-      width: (100%/25) * 3;
+      width: calc(100% / 25) * 3;
     }
     .s4 {
-      width: (100%/25) * 4;
+      width: calc(100% / 25) * 4;
     }
     .s5 {
-      width: (100%/25) * 5;
+      width: calc(100% / 25) * 5;
     }
     .s6 {
-      width: (100%/25) * 6;
+      width: calc(100% / 25) * 6;
     }
     .s7 {
-      width: (100%/25) * 7;
+      width: calc(100% / 25) * 7;
     }
   }
 }
@@ -2102,7 +2102,7 @@
         position: relative;
         &::after {
           font-size: 0.8rem;
-          content: "請選擇部門或輸入關鍵字";
+          content: '請選擇部門或輸入關鍵字';
           font-weight: 400;
           position: absolute;
           right: 0;
@@ -2464,7 +2464,7 @@
     .c-search-item {
       display: flex;
       flex-wrap: nowrap;
-      div{
+      div {
         flex-wrap: nowrap;
       }
     }
@@ -3030,25 +3030,25 @@
   }
 
   .c-dropdown__content {
-    [type="checkbox"] + span:not(.lever) {
+    [type='checkbox'] + span:not(.lever) {
       padding-left: 25px;
       line-height: 18px;
       padding-top: 3px;
     }
 
-    [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
+    [type='checkbox'].filled-in:not(:checked) + span:not(.lever):after {
       width: 18px;
       height: 18px;
       margin-top: 3px;
     }
 
-    [type="checkbox"].filled-in:checked + span:not(.lever):after {
+    [type='checkbox'].filled-in:checked + span:not(.lever):after {
       width: 18px;
       height: 18px;
       margin-top: 3px;
     }
 
-    [type="checkbox"].filled-in:checked + span:not(.lever):before {
+    [type='checkbox'].filled-in:checked + span:not(.lever):before {
       width: 7px;
       height: 15px;
     }
@@ -3091,11 +3091,11 @@
   border-radius: $select-radius;
   position: relative;
 
-  input[type="text"]:not(.browser-default) {
+  input[type='text']:not(.browser-default) {
     border-bottom: 0;
   }
 
-  input[type="text"]:not(.browser-default):focus:not([readonly]) {
+  input[type='text']:not(.browser-default):focus:not([readonly]) {
     border-bottom: 0;
     box-shadow: none;
   }
@@ -3106,7 +3106,7 @@
   }
 
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     display: block;
     right: 0px;
@@ -3374,7 +3374,7 @@
       position: relative;
 
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         display: block;
         width: 28px;
@@ -3549,7 +3549,7 @@
     }
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       display: block;
       left: 25%;
@@ -3563,7 +3563,7 @@
     }
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       display: block;
       left: 25%;
@@ -3762,7 +3762,7 @@
     }
 
     &::before {
-      content: "Today";
+      content: 'Today';
       position: absolute;
       text-align: center;
       // display: flex;
@@ -3940,7 +3940,7 @@
       box-sizing: border-box;
     }
 
-    input[type="text"]:not(.browser-default) {
+    input[type='text']:not(.browser-default) {
       border-bottom: 1px solid $danger;
       background-color: #fff;
     }
@@ -3954,7 +3954,7 @@
       font-size: 12px;
       padding-top: 0.01rem;
       margin-top: -0.2rem;
-      content: "僅能填寫至小數點第一位及阿拉伯數字";
+      content: '僅能填寫至小數點第一位及阿拉伯數字';
     }
   }
   .is-error .otherInput {
@@ -4016,7 +4016,7 @@
     }
   }
 
-  input[type="text"]:not(.browser-default) {
+  input[type='text']:not(.browser-default) {
     margin: 1px;
   }
 
@@ -4139,8 +4139,7 @@
   padding: 2rem;
   width: 100%;
   min-width: 50rem;
-  background: $hyweb-waterblue url(../img/loginPage_card.png) right bottom
-    no-repeat;
+  background: $hyweb-waterblue url(../img/loginPage_card.png) right bottom no-repeat;
 
   .c-card-login__title {
     text-align: center;
@@ -4419,7 +4418,7 @@
 }
 
 .o-input {
-  input[type="text"]:not(.browser-default) {
+  input[type='text']:not(.browser-default) {
     height: 38px;
     border-radius: $input-radius;
     background-color: $hyweb-lighblue;
@@ -4459,7 +4458,7 @@
   line-height: 29px;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 20px;
     height: 1.66rem; //20px;
@@ -4525,24 +4524,24 @@
       }
     }
 
-    input[type="checkbox"]:checked + .lever:after {
+    input[type='checkbox']:checked + .lever:after {
       background-color: #fff;
       border: $hyweb-blue 1px solid;
       left: 32px;
       top: 0;
     }
 
-    input[type="checkbox"]:checked + .lever:before {
+    input[type='checkbox']:checked + .lever:before {
       left: 32px;
       top: 0;
     }
 
-    input[type="checkbox"]:checked + .lever {
+    input[type='checkbox']:checked + .lever {
       background: $hy-background;
       margin: 0;
     }
 
-    input[type="checkbox"]:checked:not(:disabled) ~ .lever:active::before {
+    input[type='checkbox']:checked:not(:disabled) ~ .lever:active::before {
       background-color: $hyweb-lighblue;
     }
   }
