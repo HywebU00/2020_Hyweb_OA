@@ -1,25 +1,29 @@
-*{
+* {
   box-sizing: border-box;
-  font-family: 'Noto Sans TC'," sans-serif";
-}
-::-webkit-input-placeholder { /* Edge */
-  color: $gray3;
-  font-weight: 400;
-  font-family:$font-family;
-
+  font-family: 'Noto Sans TC', ' sans-serif';
 }
 
-:-ms-input-placeholder { /* Internet Explorer */
+::-webkit-input-placeholder {
+  /* Edge */
   color: $gray3;
   font-weight: 400;
-  font-family:$font-family;
+  font-family: $font-family;
+}
 
+:-ms-input-placeholder {
+  /* Internet Explorer */
+  color: $gray3;
+  font-weight: 400;
+  font-family: $font-family;
 }
 
 ::placeholder {
   color: $gray3;
   font-weight: 400;
-  font-family:$font-family;
-
+  font-family: $font-family;
 }
-
+// fix css test
+.select-wrapper * {
+  transition: none !important;
+  transform: none !important;
+}
