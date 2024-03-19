@@ -15,7 +15,7 @@
     .c-search-item__input {
       &::after {
         color: #fb5b29 !important;
-        content: "請填0~100之間的阿拉伯數字";
+        content: '請填0~100之間的阿拉伯數字';
         font-size: 0.8rem;
         display: block;
         margin-top: 0.2rem;
@@ -27,24 +27,22 @@
 /* Checkboxes only for disabled
    ========================================================================== */
 /* Remove default checkbox */
-[type="checkbox"].filled-disabled + span:not(.lever):after {
+[type='checkbox'].filled-disabled + span:not(.lever):after {
   border-radius: 5px;
 }
 
-[type="checkbox"].filled-disabled + span:not(.lever):before,
-[type="checkbox"].filled-disabled + span:not(.lever):after {
-  content: "";
+[type='checkbox'].filled-disabled + span:not(.lever):before,
+[type='checkbox'].filled-disabled + span:not(.lever):after {
+  content: '';
   left: 0;
   position: absolute;
   /* .1s delay is for check animation */
-  -webkit-transition: border 0.25s, background-color 0.25s, width 0.2s 0.1s,
-    height 0.2s 0.1s, top 0.2s 0.1s, left 0.2s 0.1s;
-  transition: border 0.25s, background-color 0.25s, width 0.2s 0.1s,
-    height 0.2s 0.1s, top 0.2s 0.1s, left 0.2s 0.1s;
+  -webkit-transition: border 0.25s, background-color 0.25s, width 0.2s 0.1s, height 0.2s 0.1s, top 0.2s 0.1s, left 0.2s 0.1s;
+  transition: border 0.25s, background-color 0.25s, width 0.2s 0.1s, height 0.2s 0.1s, top 0.2s 0.1s, left 0.2s 0.1s;
   z-index: 1;
 }
 
-[type="checkbox"].filled-disabled:not(:checked) + span:not(.lever):before {
+[type='checkbox'].filled-disabled:not(:checked) + span:not(.lever):before {
   width: 0;
   height: 0;
   border: 3px solid transparent;
@@ -56,7 +54,7 @@
   transform-origin: 100% 100%;
 }
 
-[type="checkbox"].filled-disabled:not(:checked) + span:not(.lever):after {
+[type='checkbox'].filled-disabled:not(:checked) + span:not(.lever):after {
   height: 20px;
   width: 20px;
   background-color: transparent;
@@ -65,7 +63,7 @@
   z-index: 0;
 }
 
-[type="checkbox"].filled-disabled:checked + span:not(.lever):before {
+[type='checkbox'].filled-disabled:checked + span:not(.lever):before {
   top: 0;
   left: 1px;
   width: 8px;
@@ -80,7 +78,7 @@
   transform-origin: 100% 100%;
 }
 
-[type="checkbox"].filled-disabled:checked + span:not(.lever):after {
+[type='checkbox'].filled-disabled:checked + span:not(.lever):after {
   top: 0;
   width: 20px;
   height: 20px;
@@ -89,45 +87,44 @@
   z-index: 0;
 }
 
-[type="checkbox"].filled-disabled.tabbed:focus + span:not(.lever):after {
+[type='checkbox'].filled-disabled.tabbed:focus + span:not(.lever):after {
   border-radius: 2px;
   border-color: #5a5a5a;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-[type="checkbox"].filled-disabled.tabbed:checked:focus
-  + span:not(.lever):after {
+[type='checkbox'].filled-disabled.tabbed:checked:focus + span:not(.lever):after {
   border-radius: 2px;
   background-color: #26a69a;
   border-color: #26a69a;
 }
 
-[type="checkbox"].filled-disabled:disabled:not(:checked)
-  + span:not(.lever):before {
+[type='checkbox'].filled-disabled:disabled:not(:checked) + span:not(.lever):before {
   background-color: transparent;
   border: 2px solid transparent;
 }
 
-[type="checkbox"].filled-disabled:disabled:not(:checked)
-  + span:not(.lever):after {
+[type='checkbox'].filled-disabled:disabled:not(:checked) + span:not(.lever):after {
   background-color: transparent;
   border: 2px solid #5a5a5a;
 }
 
-[type="checkbox"].filled-disabled:disabled:checked + span:not(.lever):before {
+[type='checkbox'].filled-disabled:disabled:checked + span:not(.lever):before {
   background-color: transparent;
 }
 
-[type="checkbox"].filled-disabled:disabled:checked + span:not(.lever):after {
+[type='checkbox'].filled-disabled:disabled:checked + span:not(.lever):after {
   background-color: #0156a2;
   border-color: #0156a2;
 }
 
 .input-wbs-member {
   font-size: 1rem;
-  padding: 0 2rem 0 0.5rem;
-  line-height: 20px;
-  overflow-y: scroll;
+  padding: 4px 2rem 4px 0.5rem;
+  line-height: 28px;
+  text-overflow: ellipsis;
+  overflow-y: hidden;
+  white-space: nowrap !important;
 }
 
 .input-error-number {
@@ -147,20 +144,8 @@
   white-space: nowrap;
   height: 37px;
   padding: 0.5rem 2rem;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(32, 215, 240, 0.5)),
-      color-stop(96.35%, rgba(9, 101, 186, 0))
-    ),
-    #0868bd;
-  background: linear-gradient(
-      180deg,
-      rgba(32, 215, 240, 0.5) 0%,
-      rgba(9, 101, 186, 0) 96.35%
-    ),
-    #0868bd;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(32, 215, 240, 0.5)), color-stop(96.35%, rgba(9, 101, 186, 0))), #0868bd;
+  background: linear-gradient(180deg, rgba(32, 215, 240, 0.5) 0%, rgba(9, 101, 186, 0) 96.35%), #0868bd;
   border-radius: 2.66rem;
   margin-left: -0.75rem;
   margin-right: 0.5rem;
@@ -185,44 +170,12 @@
 }
 
 .c-modal-chooseGroup .c-modal-content .c-modal-content__inputSpe .o-input input,
-.c-modal-chooseGroup
-  .c-modal-content
-  .c-modal-content__inputSpe
-  .c-writeHours-content__select
-  .hoursInput
-  input,
-.c-writeHours-content__select
-  .c-modal-chooseGroup
-  .c-modal-content
-  .c-modal-content__inputSpe
-  .hoursInput
-  input,
-.c-modal-chooseGroup
-  .c-modal-content
-  .c-modal-content__inputSpe
-  .c-writeHours-content__select
-  .otherInput
-  input,
-.c-writeHours-content__select
-  .c-modal-chooseGroup
-  .c-modal-content
-  .c-modal-content__inputSpe
-  .otherInput
-  input,
-.c-modal-chooseGroup
-  .c-modal-content
-  .c-modal-content__inputSpe
-  .c-search-list
-  .c-search-item
-  .c-search-item__input
-  input,
-.c-search-list
-  .c-search-item
-  .c-modal-chooseGroup
-  .c-modal-content
-  .c-modal-content__inputSpe
-  .c-search-item__input
-  input {
+.c-modal-chooseGroup .c-modal-content .c-modal-content__inputSpe .c-writeHours-content__select .hoursInput input,
+.c-writeHours-content__select .c-modal-chooseGroup .c-modal-content .c-modal-content__inputSpe .hoursInput input,
+.c-modal-chooseGroup .c-modal-content .c-modal-content__inputSpe .c-writeHours-content__select .otherInput input,
+.c-writeHours-content__select .c-modal-chooseGroup .c-modal-content .c-modal-content__inputSpe .otherInput input,
+.c-modal-chooseGroup .c-modal-content .c-modal-content__inputSpe .c-search-list .c-search-item .c-search-item__input input,
+.c-search-list .c-search-item .c-modal-chooseGroup .c-modal-content .c-modal-content__inputSpe .c-search-item__input input {
   background-color: #fff;
   margin: 0 0 0 1rem;
 }
@@ -324,18 +277,14 @@
   font-size: 1.06rem;
   color: #042340;
   font-weight: 700;
-  font-family: "Noto Sans TC", "sans-serif";
+  font-family: 'Noto Sans TC', 'sans-serif';
 }
 
 .c-modal-department .c-modal-features .col .c-dropdown-planContentSpe {
   width: 24rem;
 }
 
-.c-modal-department
-  .c-modal-features
-  .col
-  .c-dropdown-planContentSpe
-  .select-dropdown {
+.c-modal-department .c-modal-features .col .c-dropdown-planContentSpe .select-dropdown {
   width: 100%;
 }
 
@@ -381,11 +330,7 @@
   border-bottom: 0;
 }
 
-.c-dropdown-planContentSpe
-  .select-wrapper
-  .select-dropdown
-  li
-  .optgroup-option {
+.c-dropdown-planContentSpe .select-wrapper .select-dropdown li .optgroup-option {
   padding-left: 0;
 }
 
@@ -440,7 +385,7 @@
   font-size: 1.06rem;
   color: #042340;
   font-weight: 700;
-  font-family: "Noto Sans TC", "sans-serif";
+  font-family: 'Noto Sans TC', 'sans-serif';
 }
 
 .c-dropdown-planContentSpe .select-wrapper {
@@ -541,15 +486,7 @@
   overflow-y: scroll;
 }
 
-#todo
-  .change-card-to-list
-  .l-main-content-item
-  .l-main-content-item__listGroup
-  .c-card-alertPlan
-  .c-card__item
-  .c-card__item__footer
-  .c-card__item__content__list
-  .list__item__percent {
+#todo .change-card-to-list .l-main-content-item .l-main-content-item__listGroup .c-card-alertPlan .c-card__item .c-card__item__footer .c-card__item__content__list .list__item__percent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,23 +547,22 @@
   border-radius: 10px !important;
 }
 
-//工程師 新增視窗 ＣＳＳ 
+//工程師 新增視窗 ＣＳＳ
 
 // 人員計畫工時清單 視窗修正
 
-#planList .c-modal-alert.modal{
-  .ant-picker{
+#planList .c-modal-alert.modal {
+  .ant-picker {
     width: 100% !important;
   }
-  .c-search-item__departmentTitle{
+  .c-search-item__departmentTitle {
     margin-right: 0.5rem !important;
   }
   .o-input-div {
     width: 100% !important;
   }
-  .ant-picker-suffix{
+  .ant-picker-suffix {
     position: absolute !important;
     right: 0.5rem !important;
-    
   }
 }
